@@ -4942,4 +4942,10 @@ textarea::placeholder { color: #999; }
 .manage__inquire-btn { display:block; width:100%; padding:1rem; border:1px solid #acacac; color:#666; font-size:1.6rem; }
 .float-right {float:right !important;}
 .float-left {float:left !important;}
+.qnalistitem > button {position: relative;padding: 1.5rem 1.5rem 1.5rem 4.1rem !important;display: block !important;width: 100%;height: auto !important;cursor: pointer;border-bottom: 1px solid #d3d4d6;text-align: left;}
+.qnalistitem > button::before {position:absolute;padding-right:15px;display: inline-block;width: 1.6rem;height: 1.6rem;top: 2.1rem;left: 0rem;content: '';font-size: 0;background-image: url(../img/icons/icon_qna_q.svg);background-size: contain;background-repeat: no-repeat;background-position: 50% 50%;}
+.qnalistitem > button > ul > li {border-width:0px !important}
+.qnalistitem > button > ul > li > span {width:100%;}
+.bottom-border0{border-bottom-width:0px !important;}
+.all-border-no{border-width:0px !important;}
 /*# sourceMappingURL=maps/base.css.map */
