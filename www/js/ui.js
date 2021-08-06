@@ -251,7 +251,7 @@ var modal = (function () {
     if (link) { links.push(link); }
     openSet($alert);
 
-    /* 2021.08.05 수정 (multiple 케이스 추가) */
+    /* 2021.08.06 수정 (multiple, cancle 추가) */
     $alert.find('button').off('click').on('click', function () {
       if(!config.mode == "multiple"){ close($alert); }
 
@@ -265,26 +265,32 @@ var modal = (function () {
             }else{
               $alert.find(".alert-popup__cancel").remove();
             }
-        //2021.08.05 multiple 조건 추가
         }else{
           close($alert);
           setTimeout(function () { $alert.remove(); }, 300);
         }
       } else if ($(this).hasClass('alert-popup__cancel')) {
         if (alertSet.cancel) { alertSet.cancel(link); }
+        if (config.mode == "multipleCancle" ){
+          $alert.find(".multiple__change-text").html(config.modeChangeText);
+          if($alert.find(".alert-popup__cancel").length == 0){
+            close($alert);
+            setTimeout(function () { $alert.remove(); }, 300);
+          }else{
+            $alert.find(".alert-popup__cancel").remove();
+          }
+        }else{
           close($alert);
           setTimeout(function () { $alert.remove(); }, 300);
+        }
       }
 
       if(!config.mode == "multiple"){
-        setTimeout(function () {
-          $alert.remove(); }, 300);
-          console.log("aaa");
-         }
+        setTimeout(function () { $alert.remove(); }, 300); }
       return false;
     });
   }
-  /* EOD : 2021.08.05 수정 (multiple 케이스 추가) */
+  /* EOD : 2021.08.06 수정 (multiple, cancle 케이스 추가) */
 
   return {open: open, close: close, alert: alert}
 })();

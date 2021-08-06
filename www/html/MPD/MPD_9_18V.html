@@ -95,7 +95,31 @@
         <button type="button" class="block small inline">상담접수지 작성하기</button>
       </div>
 
-
+      <div class="manage-h3 mt30"><strong>상담 회차를 선택해 주세요.</strong></div>
+      <div class="counseling-type">
+        <div class="counseling-type-item mt15">
+          <label class="input-radio">
+            <input type="radio" name="consultingGroup"><i></i>
+            <span>대면상담 1회권 80,000원</span>
+          </label>
+        </div>
+      </div>
+      <div class="counseling-type">
+        <div class="counseling-type-item mt15">
+          <label class="input-radio">
+            <input type="radio" name="consultingGroup"><i></i>
+            <span>대면상담 3회권 228,000원(5% 할인)<em>구입일로부터 5주 동안 이용 가능합니다.</em></span>
+          </label>
+        </div>
+      </div>
+      <div class="counseling-type">
+        <div class="counseling-type-item mt15">
+          <label class="input-radio">
+            <input type="radio" name="consultingGroup"><i></i>
+            <span>대면상담 5회권 360,000원(10% 할인)</span>
+          </label>
+        </div>
+      </div>
     </div>
     <!-- EOD : scrollBox -->
   </div>
@@ -103,7 +127,7 @@
 
   <!-- footer -->
   <div class="footer footer__button-nav">
-    <button type="button" class="block" onclick="modal.alert($(this), programChangeConfig, true)">프로그램 변경하기</button>
+    <button type="button" class="block">선택하기</button>
     <nav>
       <ul>
         <li class="on">
@@ -134,38 +158,7 @@
     </nav>
   </div>
   <!-- EOD : footer -->
-
 </div>
 
-<script>
-  var cancelConfig = {
-    type: 'alert',
-    text: '상담 신청이 취소되었습니다.',
-    ok: handleOk
-  }
-
-  function handleOk() {
-    console.log('확인');
-  }
-</script>
-
-<script>
-  var programChangeConfig = {
-    type: 'confirm',
-    text: '<div class="multiple__change"><p class="manage-h3 mb15">인터벌 트레드밀 한 달 완성</p><p class="multiple__change-text">프로그램을 변경하시겠습니까?</p></div>',
-    mode: "multiple",
-    modeChangeText:'프로그램이 변경되었습니다.<br/>변경된 프로그램은 내일(8/5)부터 적용됩니다.',
-    ok: handleOk,
-    cancel: handleCancel,
-  }
-
-  function handleOk() {
-    console.log('확인');
-  }
-
-  function handleCancel() {
-    console.log('취소');
-  }
-</script>
 </body>
 </html>
