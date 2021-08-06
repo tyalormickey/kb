@@ -4950,5 +4950,9 @@ textarea::placeholder { color: #999; }
 .qnalistitem > button > ul > li > span {width:100%;}
 .bottom-border0{border-bottom-width:0px !important;}
 .all-border-no{border-width:0px !important;}
+.form-input_calender { position:relative; }
+.form-input_calender i { position:absolute; top:50%; margin:-0.9rem 0 0 0; right:1.5rem; }
+.form-input_time { position:relative; }
+.form-input_time i { position:absolute; top:50%; margin:-0.9rem 0 0 0; right:1.5rem; }
 .width12{width:12.2rem !important;}
 /*# sourceMappingURL=maps/base.css.map */
