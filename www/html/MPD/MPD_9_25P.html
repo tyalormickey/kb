@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
+    <link rel='stylesheet' type='text/css' href='../../css/morpheus-reset.min.css'/>
+    <link rel='stylesheet' type='text/css' href='../../css/morpheus-common.css'/>
+    <link rel='stylesheet' type='text/css' href='../../css/morpheus-style.css'/>
+
+    <script src='../../js/libs/jquery-3.1.1.min.js'></script>
+    <script src='../../js/swiper.min.js'></script>
+    <script src='../../js/ui.js'></script>
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="header">
+        <header>
+            <div class="header__title">
+                <div class="title">
+                </div>
+                <div class="header__title--close">
+                    <button class="only-icon" type="button">
+                        <i class="icon-x icon-20">닫기</i>
+                    </button>
+                </div>
+            </div>
+        </header>
+    </div>
+    <div class="content-wrap bottom-button-fixed">
+        <div class="scrollBox">
+            <div class="delivery-process__now">
+                <div class="manage-h3 center">
+                    <strong>
+                        [우리 아이 바로 알기 패키지]
+                    </strong>
+                </div>
+            </div>
+            <div class="delivery-process__title mt20">
+            </div>
+            <div class="delivery-process__table mt15">
+                <div class="table-data lined">
+                    <dl>
+                        <dt>패키지 내용</dt>
+                        <dd>
+                            아동기질검사 CTI 1회 해석<br>
+                            상담 1회 (화상)
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>상담가격</dt>
+                        <dd>
+                            87,000 원
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>사용기간</dt>
+                        <dd>
+                            4주
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>검사시간</dt>
+                        <dd>
+                            30분
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+            <section class="term-detail__section">
+                <div class="term-detail__sub-title">
+                    심리검사 설명
+                </div>
+                <div class="term-detail__text">
+                    아이들이 가지고 있는 가장 핵심적인 5가지<br>
+                    기질요인에 대한 해석과 이에 따른 교육 및<br>
+                    양육방식을 제공해주는 검사
+                </div>
+            </section>
+            <section class="term-detail__section">
+                <div class="term-detail__sub-title">
+                    검사 실시자
+                </div>
+                <div class="term-detail__text">
+                    6개월 이상의 영유아 ~ 초등학생 자녀를 둔 부모가<br>
+                    검사 실시
+                </div>
+            </section>
+        </div>
+    </div>
+    <div class="button__flex-wrap bottom-fixed">
+        <button type="button" class="block gray" onClick="modal.alert($(this), closePop);">
+            닫기
+        </button>
+        <button type="button" class="block" onClick="modal.alert($(this), buyBtn);">
+            구매하기
+        </button>
+    </div>
+</div>
+
+<script>
+    var closePop = {
+        type: 'alert',
+        text: '구매를 취소하셨습니다.',
+        ok: handleOk
+    }
+
+    var buyBtn = {
+        type: 'confirm',
+        text: '구매하시겠습니까?',
+        okText: '구매하기',
+        ok: buyOk,
+        cancel: cancelOk
+    }
+    function handleOk() {
+        console.log('취소');
+    }
+
+    function buyOk() {
+        console.log('구매');
+    }
+    function cancelOk() {
+        console.log('취소');
+    }
+</script>
+</body>
+</html>
