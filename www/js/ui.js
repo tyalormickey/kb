@@ -271,6 +271,7 @@ var modal = (function () {
         }
       } else if ($(this).hasClass('alert-popup__cancel')) {
         if (alertSet.cancel) { alertSet.cancel(link); }
+<<<<<<< HEAD
         if (config.mode == "multipleCancle" ){
           $alert.find(".multiple__change-text").html(config.modeChangeText);
           if($alert.find(".alert-popup__cancel").length == 0){
@@ -280,13 +281,21 @@ var modal = (function () {
             $alert.find(".alert-popup__cancel").remove();
           }
         }else{
+=======
+>>>>>>> origin/master
           close($alert);
           setTimeout(function () { $alert.remove(); }, 300);
-        }
       }
 
       if(!config.mode == "multiple"){
+<<<<<<< HEAD
         setTimeout(function () { $alert.remove(); }, 300); }
+=======
+        setTimeout(function () {
+          $alert.remove(); }, 300);
+          console.log("aaa");
+         }
+>>>>>>> origin/master
       return false;
     });
   }
