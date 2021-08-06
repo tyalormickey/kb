@@ -4940,5 +4940,6 @@ textarea::placeholder { color: #999; }
 .manage__inquire-list li { margin:1.25rem 0 0 0; }
 .manage__inquire-list li:first-child { margin:0; }
 .manage__inquire-btn { display:block; width:100%; padding:1rem; border:1px solid #acacac; color:#666; font-size:1.6rem; }
-
+.float-right {float:right !important;}
+.float-left {float:left !important;}
 /*# sourceMappingURL=maps/base.css.map */
