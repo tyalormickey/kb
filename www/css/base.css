@@ -4908,6 +4908,7 @@ textarea::placeholder { color: #999; }
 .gray-icon-9 { background:#999;}
 
 .h20{height:20px;background:#f6f7fa;}
+.h120{height:120px;}
 .display_flex{display: flex;align-items: center}
 .display_grid{display: grid;align-items: center;align-content: center;padding:0px !important;}
 .pal5{padding-left:5rem !important;}
@@ -4949,4 +4950,5 @@ textarea::placeholder { color: #999; }
 .qnalistitem > button > ul > li > span {width:100%;}
 .bottom-border0{border-bottom-width:0px !important;}
 .all-border-no{border-width:0px !important;}
+.width12{width:12.2rem !important;}
 /*# sourceMappingURL=maps/base.css.map */
