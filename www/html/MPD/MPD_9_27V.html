@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-reset.min.css'/>
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-common.css'/>
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-style.css'/>
+
+  <script src='../../js/libs/jquery-3.1.1.min.js'></script>
+  <script src='../../js/swiper.min.js'></script>
+  <script src='../../js/ui.js'></script>
+</head>
+<body>
+
+<div class="wrapper">
+  <div class="header">
+    <header>
+      <div class="header__back">
+        <div class="back">
+          <button type="button" class="only-icon">
+            <i class="icon-arrow_left icon-20">뒤로가기</i>
+          </button>
+        </div>
+        <div class="title">
+          심리검사
+        </div>
+      </div>
+    </header>
+  </div>
+  <div class="content-wrap bottom-button-fixed">
+    <div class="scrollBox">
+      <div class="delivery-process__now">
+        <div class="manage-h3 center">
+          <strong>
+            성인행동평가척도 자기보고용(ASR)
+          </strong>
+        </div>
+      </div>
+      <div class="delivery-process__title mt20">
+      </div>
+      <div class="delivery-process__table mt15">
+        <section class="term-detail__section">
+          <div class="term-detail__sub-title">
+            검사 소개
+          </div>
+          <div class="term-detail__text">
+            성인의 정서 및 행동문제 뿐만 아니라<br>
+            정응상태 및 흡연, 알코올 등의 물질사용 정도를<br>
+            함께 파악할 수 있는 표준화된 자기보고식<br>
+            평가도구입니다.
+          </div>
+        </section>
+        <section class="term-detail__section">
+          <div class="term-detail__sub-title">
+            검사 검사 구성
+          </div>
+          <div class="term-detail__text">
+            <ul class="list-type-circle">
+              <li>검사구성 : 문제행동척도, 물질사용척도</li>
+              <li>문항수 &nbsp; &nbsp; : 134문항</li>
+            </ul>
+          </div>
+        </section>
+        <section class="term-detail__section">
+          <div class="term-detail__sub-title">
+            주의사항
+          </div>
+          <div class="term-detail__text">
+            각 페이지의 지시문을 꼭 읽고 한 문항도<br>
+            빠짐없이 진행해주시기 바랍니다.
+          </div>
+        </section>
+    </div>
+  </div>
+  <div class="button__flex-wrap bottom-fixed">
+    <button type="button" class="block gray" onClick="modal.alert($(this), closePop);">
+      취소
+    </button>
+    <button type="button" class="block" onClick="modal.alert($(this), buyBtn);">
+      구매하기
+    </button>
+  </div>
+</div>
+
+<script>
+  var changePop = {
+    type: 'confirm',
+    text: '상담권을 변경하시겠습니까?',
+    cancelText: '아니오',
+    okText: '예',
+    ok: changeOk
+  }
+
+  var closePop = {
+    type: 'alert',
+    text: '상담 신청을 취소하셨습니다.',
+    ok: handleOk
+  }
+
+  var buyBtn = {
+    type: 'confirm',
+    text: '상담 신청을 구매하시겠습니까?',
+    okText: '구매하기',
+    ok: buyOk,
+    cancel: cancelOk
+  }
+
+  function changeOk() {
+    console.log('변경');
+  }
+  function handleOk() {
+    console.log('취소');
+  }
+
+  function buyOk() {
+    console.log('구매');
+  }
+  function cancelOk() {
+    console.log('취소');
+  }
+</script>
+</body>
+</html>

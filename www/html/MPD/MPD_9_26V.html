@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
+    <link rel='stylesheet' type='text/css' href='../../css/morpheus-reset.min.css'/>
+    <link rel='stylesheet' type='text/css' href='../../css/morpheus-common.css'/>
+    <link rel='stylesheet' type='text/css' href='../../css/morpheus-style.css'/>
+
+    <script src='../../js/libs/jquery-3.1.1.min.js'></script>
+    <script src='../../js/swiper.min.js'></script>
+    <script src='../../js/ui.js'></script>
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="header">
+        <header>
+            <div class="header__back">
+                <div class="back">
+                    <button type="button" class="only-icon">
+                        <i class="icon-arrow_left icon-20">뒤로가기</i>
+                    </button>
+                </div>
+                <div class="title">
+                    상담권 구매
+                </div>
+            </div>
+        </header>
+    </div>
+    <div class="content-wrap bottom-button-fixed">
+        <div class="scrollBox">
+            <div class="delivery-process__title mt20">
+            </div>
+            <div class="delivery-process__table mt15">
+                <div class="table-data lined">
+                    <dl>
+                        <dt>서비스 유형</dt>
+                        <dd>
+                            검사+상담 패키지
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>패키지 상품</dt>
+                        <dd>
+                            <strong>[우리 아이 바로 알기 패키지]</strong><br>
+                            아동기질검사 CTI 1회 해석상담<br>
+                            1회(화상)
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>사용 기간</dt>
+                        <dd>
+                            4주<br>
+                            <p class="point-r-font ">결제 후 24시간 이내에 검사를
+                                진행하셔야 합니다.</p>
+                            <button type="button" class="block inline small tooltip-button float-right"  onClick="modal.alert($(this), changePop);">
+                                변경
+                            </button>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>서비스 이용료</dt>
+                        <dd>
+                            87,000 원
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+            <section class="term-detail__section">
+                <div class="survary-guide__box">
+                    결제 후 상담접수지를 작성해 주십시오.<br>
+                    상담권은 사용기간 내에 사용해 주십시오.<br>
+                    사용기간이 지난 상담권은 소멸됩니다.<br>
+                    서비스를 구매하시겠습니까?<br>
+                    결제 화면으로 이동합니다.
+                </div>
+            </section>
+        </div>
+    </div>
+    <div class="button__flex-wrap bottom-fixed">
+        <button type="button" class="block gray" onClick="modal.alert($(this), closePop);">
+            취소
+        </button>
+        <button type="button" class="block" onClick="modal.alert($(this), buyBtn);">
+            구매하기
+        </button>
+    </div>
+</div>
+
+<script>
+    var changePop = {
+        type: 'confirm',
+        text: '상담권을 변경하시겠습니까?',
+        cancelText: '아니오',
+        okText: '예',
+        ok: changeOk
+    }
+
+    var closePop = {
+        type: 'alert',
+        text: '상담 신청을 취소하셨습니다.',
+        ok: handleOk
+    }
+
+    var buyBtn = {
+        type: 'confirm',
+        text: '상담 신청을 구매하시겠습니까?',
+        okText: '구매하기',
+        ok: buyOk,
+        cancel: cancelOk
+    }
+
+    function changeOk() {
+        console.log('변경');
+    }
+    function handleOk() {
+        console.log('취소');
+    }
+
+    function buyOk() {
+        console.log('구매');
+    }
+    function cancelOk() {
+        console.log('취소');
+    }
+</script>
+</body>
+</html>
