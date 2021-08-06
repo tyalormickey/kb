@@ -260,25 +260,33 @@ var modal = (function () {
         if (config.mode == "multiple" ){
             $alert.find(".multiple__change-text").html(config.modeChangeText);
             if($alert.find(".alert-popup__cancel").length == 0){
-              close($alert); 
-              setTimeout(function () { $alert.remove(); }, 300);              
+              close($alert);
+              setTimeout(function () { $alert.remove(); }, 300);
             }else{
               $alert.find(".alert-popup__cancel").remove();
             }
-        //2021.08.05 multiple 조건 추가
         }else{
-          close($alert); 
+          close($alert);
           setTimeout(function () { $alert.remove(); }, 300);
         }
       } else if ($(this).hasClass('alert-popup__cancel')) {
         if (alertSet.cancel) { alertSet.cancel(link); }
-        if (config.mode == "multiple"){
-          close($alert); 
+        if (config.mode == "multipleCancle" ){
+          $alert.find(".multiple__change-text").html(config.modeChangeText);
+          if($alert.find(".alert-popup__cancel").length == 0){
+            close($alert);
+            setTimeout(function () { $alert.remove(); }, 300);
+          }else{
+            $alert.find(".alert-popup__cancel").remove();
+          }
+        }else{
+          close($alert);
           setTimeout(function () { $alert.remove(); }, 300);
         }
       }
 
-      if(!config.mode == "multiple"){ setTimeout(function () { $alert.remove(); }, 300); }
+      if(!config.mode == "multiple"){
+        setTimeout(function () { $alert.remove(); }, 300); }
       return false;
     });
   }

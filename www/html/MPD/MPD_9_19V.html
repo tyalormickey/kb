@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="format-detection" content="telephone=no"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-reset.min.css'/>
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-common.css'/>
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-style.css'/>
+
+  <script src='../../js/libs/jquery-3.1.1.min.js'></script>
+  <script src='../../js/swiper.min.js'></script>
+  <script src='../../js/ui.js'></script>
+</head>
+<body>
+
+<div class="wrapper">
+  <div class="header">
+    <header>
+      <div class="header__back">
+        <div class="back">
+          <button type="button" class="only-icon">
+            <i class="icon-arrow_left icon-20">뒤로가기</i>
+          </button>
+        </div>
+        <div class="title">
+          상담권 구매
+        </div>
+      </div>
+    </header>
+  </div>
+
+  <!-- content-wrap -->
+  <div class="content-wrap bottom-button-fixed">
+    <!-- scrollBox -->
+    <div class="scrollBox">
+
+      <div class="delivery-process__table">
+        <div class="table-data lined">
+          <dl>
+            <dt>서비스 유형</dt>
+            <dd>채팅 상담</dd>
+          </dl>
+          <dl>
+            <dt>상담 횟수</dt>
+            <dd>3회</dd>
+          </dl>
+          <dl>
+            <dt>상담 지역</dt>
+            <dd>서울,강남</dd>
+          </dl>
+          <dl>
+            <dt>사용기간</dt>
+            <dd>5주
+              <div class="table-data__button-ab">
+                <button type="button" class="block small inline" onclick="modal.alert($(this), fnTicketChange)">변경</button>
+              </div>
+            </dd>
+          </dl>
+          <dl>
+            <dt>서비스 이용료</dt>
+            <dd><b>199,500 원</b></dd>
+          </dl>
+        </div>
+      </div>
+
+      <div class="delivery-process__gray-box gene-product__pre-info mt40">
+        결제 후, 요청하신 상담에 가장 적합한 상담사가 연락을 드리겠습니다.<br/>
+        상담권은 사용기간 내에 사용해 주십시오.<br/>
+        사용기간이 지난 상담권은 소멸됩니다.<br/>
+        서비스를 구매하시겠습니까?<br/>
+        결제 화면으로 이동합니다.
+      </div>
+
+    </div>
+    <!-- EOD : scrollBox -->
+  </div>
+  <!-- EOD : content-wrap -->
+  <div class="button__flex-wrap bottom-fixed">
+    <button type="button" class="block gray" onclick="modal.alert($(this), fnTicketCancel)">
+      취소
+    </button>
+    <button type="button" class="block" onclick="modal.alert($(this), fnTicketBuying)">
+      구매하기
+    </button>
+  </div>
+</div>
+<script>
+  // 사용기간 변경
+  var fnTicketChange = {
+    type: 'confirm',
+    text: '상담권을 변경하시겠습니까?',
+    ok: handleOk,
+    cancel: handleCancel,
+  }
+
+  // 상담신청 취소
+  var fnTicketCancel = {
+    type: 'confirm',
+    text: '<span class="multiple__change-text">상담 신청을 취소하시겠습니까?</span>',
+    mode: "multiple",
+    modeChangeText:'상담 신청을 취소하였습니다.',
+    ok: handleOk,
+    cancel: handleCancel,
+  }
+
+  // 상담신청 구매
+  var fnTicketBuying = {
+    type: 'confirm',
+    text: '<span class="multiple__change-text">구매하시겠습니까?</span>',
+    mode: "multipleCancle",
+    modeChangeText:'구매를 취소하셨습니다.',
+    ok: handleOk,
+    cancel: handleCancel,
+  }
+
+  function handleOk() {
+    console.log('확인');
+  }
+
+  function handleCancel() {
+    console.log('취소');
+  }
+</script>
+</body>
+</html>
