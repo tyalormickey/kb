@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="icon_m__goal" width="40" height="56" viewBox="0 0 40 56">
+    <defs>
+        <style>
+            .cls-1{fill:#fff}
+        </style>
+    </defs>
+    <path id="Rectangle_325" d="M0 0H11.034V4H0z" class="cls-1" transform="translate(21.379 24.762)"/>
+    <path id="Rectangle_326" d="M0 0H11.034V4H0z" class="cls-1" transform="translate(21.379 33.016)"/>
+    <path id="Path_198" d="M103.45 766.666l-4.756-3.541 2.525-3.169 2.222 1.653 4.038-3.03 2.537 3.16z" class="cls-1" transform="translate(-91.25 -736)"/>
+    <path id="Path_199" d="M103.45 774.919l-4.757-3.538 2.524-3.17 2.222 1.653 4.038-3.031 2.537 3.16z" class="cls-1" transform="translate(-91.25 -736)"/>
+    <path id="Path_200" d="M130.561 792H98.836a7.553 7.553 0 0 1-7.586-7.5v-43.272h11.307v4h-7.169V784.5a3.48 3.48 0 0 0 3.448 3.5h31.725zm.689-8.6h-4.138v-34.67a3.479 3.479 0 0 0-3.448-3.5H120.9v-4h2.759a7.553 7.553 0 0 1 7.586 7.5z" class="cls-1" transform="translate(-91.25 -736)"/>
+    <path id="Path_201" d="M122.974 748.254H99.526v-3.376a8.932 8.932 0 0 1 8.965-8.878h5.518a8.932 8.932 0 0 1 8.965 8.878zm-19.271-4H118.8a4.852 4.852 0 0 0-4.791-4.254h-5.518a4.852 4.852 0 0 0-4.791 4.254z" class="cls-1" transform="translate(-91.25 -736)"/>
+</svg>

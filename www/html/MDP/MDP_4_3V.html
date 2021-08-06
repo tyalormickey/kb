@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-reset.min.css'/>
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-common.css'/>
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-style.css'/>
+
+  <script src='../../js/libs/jquery-3.1.1.min.js'></script>
+  <script src='../../js/swiper.min.js'></script>
+  <script src='../../js/ui.js'></script>
+</head>
+<body>
+
+<div class="wrapper">
+  <div class="header">
+    <header>
+      <div class="header__back">
+        <div class="back">
+          <button type="button" class="only-icon">
+            <i class="icon-arrow_left icon-20">뒤로가기</i>
+          </button>
+        </div>
+        <div class="title">
+          성취 당첨결과
+        </div>
+        <div class="right-icons">
+          <button type="button" class="only-icon">
+            <i class="icon-camera_02 icon-20">카메라</i>
+          </button>
+          <button type="button" class="only-icon">
+            <i class="icon-alarm on icon-20">알람</i>
+          </button>
+        </div>
+      </div>
+    </header>
+  </div>
+  <div class="content-wrap">
+    <div class="scrollBox">
+      <section class="goal-winning-result">
+        <div class="goal-winning-result__text-box">
+          <p class="goal-winning-result__text1">
+            <i class="icon-gift icon-80"></i>
+            <span>당첨포인트 도전하기</span>
+          </p>
+          <!--
+          <p class="goal-winning-result__text1">
+            <i class="icon-entertainment icon-80"></i>
+            <span>1000P가 지급되었습니다.</span>
+          </p>
+          -->
+          <p class="goal-winning-result__text2">
+            지급된 포인트는 <strong>마이페이지 ><br />
+            포인트 현황조회</strong>에서 확인할 수 있습니다.
+          </p>
+        </div>
+
+        <div class="goal-winning-result__swiper">
+          <div class="goal-winning-result__swiper-box">
+            <div class="goal-winning-result__swiper-box-inner">
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">1000</div>
+                  <div class="swiper-slide">100</div>
+                  <div class="swiper-slide">200</div>
+                  <div class="swiper-slide">400</div>
+                  <div class="swiper-slide">500</div>
+                  <div class="swiper-slide">600</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+  <div class="footer">
+    <nav>
+        <ul>
+            <li class="on">
+                <button type="button">
+                    <i class="icon-home icon-16"></i>
+                    <span>홈</span>
+                </button>
+            </li>
+            <li>
+                <button type="button">
+                    <i class="icon-pro icon-16"></i>
+            <span>프로그램</span>
+          </button>
+        </li>
+        <li>
+          <button type="button">
+            <i class="icon-info icon-16"></i>
+            <span>증상ㆍ병원</span>
+          </button>
+        </li>
+        <li>
+          <button type="button">
+            <i class="icon-my icon-16"></i>
+            <span>MY</span>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+
+
+<!-- 팝업 // -->
+<div class="modal-popup modal-goal-event">
+  <div class="modal-popup__outer">
+    <section class="modal-popup__container">
+      <article class="modal-popup__header">
+        <h3 class="modal-popup__title">
+          일일 성취 달성 이벤트
+        </h3>
+      </article>
+      <article class="modal-popup__body">
+        <div class="modal-goal-event__text">
+          설정하신 일일 성취 목표를 달성하셨습니다.<br />
+          100P를 획득 하시거나 x20배 획득 찬스에<br />
+          도전하실 수 있습니다.
+        </div>
+      </article>
+      <article class="modal-popup__footer">
+        <button class="block small inline" onclick="paid();">
+          100P 획득하기
+        </button>
+        <button class="block small inline" onclick="paid();">
+          도전하기
+        </button>
+      </article>
+    </section>
+  </div>
+</div>
+<!-- // 팝업 -->
+
+<script>
+  setTimeout(function () {
+    modal.open(false, '.modal-goal-event')
+  }, 1000)
+
+  function paid () {
+    toast.open('일일 성취 달성 리워드 포인트가 지급 되었습니다.', 100);
+    setTimeout(function () {
+      modal.close($('.modal-goal-event'))
+    }, 300);
+  }
+
+  var swiperResult = new Swiper(".swiper-container", {
+    direction: "vertical",
+    slidesPerView: 3,
+    loop: true,
+    spaceBetween: 0,
+    mousewheel: false,
+    centeredSlides: true,
+    autoplay: {
+      delay: 10,
+      disableOnInteraction: true,
+    }
+  });
+</script>
+</body>
+</html>

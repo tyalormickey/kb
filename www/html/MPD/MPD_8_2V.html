@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-reset.min.css'/>
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-common.css'/>
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-style.css'/>
+
+  <script src='../../js/libs/jquery-3.1.1.min.js'></script>
+  <script src='../../js/swiper.min.js'></script>
+  <script src='../../js/ui.js'></script>
+</head>
+<body>
+
+<div class="wrapper">
+  <div class="header">
+    <header>
+      <div class="header__back">
+        <div class="back">
+          <button type="button" class="only-icon">
+            <i class="icon-arrow_left icon-20">뒤로가기</i>
+          </button>
+        </div>
+        <div class="title">
+          구매하기
+        </div>
+      </div>
+    </header>
+  </div>
+  <div class="content-wrap bottom-button-fixed">
+    <div class="scrollBox gene-payment">
+
+      <div class="manage-h3">
+        <strong>기본 고객정보</strong>
+      </div>
+      <ul class="manage-list mt15">
+        <li>
+          <div class="gray small">이름</div>
+          <div class="right">홍길동</div>
+        </li>
+        <li>
+          <div class="gray small">생년월일</div>
+          <div class="right">2000.01.01</div>
+        </li>
+        <li>
+          <div class="gray small">성별</div>
+          <div class="right">남성</div>
+        </li>
+        <li>
+          <div class="gray small">전화번호</div>
+          <div class="right">010-0000-0000</div>
+        </li>
+      </ul>
+
+      <div class="manage-h3 mt40">
+        <strong>추가 고객정보</strong>
+      </div>
+      <div class="manage-h4 with-tag mt20">
+        <strong>배송 주소</strong>
+        <p class="sub-text">
+          검사 키트를 받으실 주소를 입력해주세요.
+        </p>
+      </div>
+      <div class="table-form gene-product__address mt12">
+        <div class="table-form__item">
+          <div class="form-item__flex">
+            <div class="custom-input post-input">
+              <input type="text"/>
+            </div>
+            <div class="custom-input post-search-button">
+              <button type="button" class="block medium">
+                우편번호 검색
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="table-form__item">
+          <div class="form-item">
+            <div class="custom-input">
+              <input type="text"/>
+            </div>
+          </div>
+        </div>
+        <div class="table-form__item">
+          <div class="form-item">
+            <div class="custom-input">
+              <input type="text" placeholder="상세주소"/>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="gene-payment__agree mt35">
+        <label class="input-checkbox">
+          <input type="checkbox" />
+          <i></i>
+          <span>개인정보의 제3자 제공 동의</span>
+        </label>
+      </div>
+      <div class="manage-sub-text mt10">
+        우편물(검사채취키트) 발송을 위해 개인정보의 제3자 제공 동의가 필요합니다.
+      </div>
+    </div>
+  </div>
+  <div class="button__flex-wrap bottom-fixed">
+    <button type="button" class="block" onclick="modal.alert($(this), paymentConfirmConfig)">
+      다음
+    </button>
+  </div>
+</div>
+
+<script>
+  var orderConfirmConfig = {
+    type: 'alert',
+    text: '배송 주소를 입력해 주세요.',
+    ok: handleOk
+  }
+  var paymentConfirmConfig = {
+    type: 'alert',
+    text: '개인정보 제3자 제공 동의를 체크해 주세요.',
+    ok: handleOk
+  }
+
+  function handleOk() {
+    console.log('확인');
+  }
+  
+</script>
+</body>
+</html>

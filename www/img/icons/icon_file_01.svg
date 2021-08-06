@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 52">
+    <defs>
+        <style>
+            .cls-1{fill:#333}
+        </style>
+    </defs>
+    <g id="icon_m_document_l_24" transform="translate(-349.962 -1.962)">
+        <path id="Path_193" d="M405.668 53.962h-46.754a9.225 9.225 0 0 1-8.952-9.456V1.962h42.994l13.006 16.862v27.828h-4.052V20.22L390.972 6.038h-36.958v38.468a5.164 5.164 0 0 0 4.9 5.38h46.754z" class="cls-1"/>
+        <path id="Rectangle_316" d="M0 0H21.87V4.076H0z" class="cls-1" transform="translate(367.894 15.397)"/>
+        <path id="Rectangle_317" d="M0 0H3.976V12H0z" class="cls-1" transform="translate(367.894 6.077)"/>
+        <path id="Rectangle_318" d="M0 0H3.976V12H0z" class="cls-1" transform="translate(385.786 6.077)"/>
+        <path id="Rectangle_319" d="M0 0H26.84V4H0z" class="cls-1" transform="translate(365.408 36.999)"/>
+        <path id="Rectangle_320" d="M0 0H3.908V10.878H0z" class="cls-1" transform="translate(388.306 38.999)"/>
+        <path id="Rectangle_321" d="M0 0H3.908V10.878H0z" class="cls-1" transform="translate(365.442 38.999)"/>
+    </g>
+</svg>

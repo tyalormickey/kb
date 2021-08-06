@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-reset.min.css'/>
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-common.css'/>
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-style.css'/>
+
+  <script src='../../js/libs/jquery-3.1.1.min.js'></script>
+  <script src='../../js/swiper.min.js'></script>
+  <script src='../../js/ui.js'></script>
+</head>
+<body>
+
+<div class="wrapper">
+  <div class="header">
+    <header>
+      <div class="header__back">
+        <div class="back">
+          <button type="button" class="only-icon">
+            <i class="icon-arrow_left icon-20">뒤로가기</i>
+          </button>
+        </div>
+        <div class="title">
+          사운드짐
+        </div>
+        <div class="right-icons">
+          <button type="button" class="only-icon">
+            <i class="icon-camera_02 icon-20">카메라</i>
+          </button>
+          <button type="button" class="only-icon">
+            <i class="icon-alarm on icon-20">알람</i>
+          </button>
+        </div>
+      </div>
+    </header>
+  </div>
+  <div class="content-wrap footer-button"><!-- 2021.08.05 class 추가 -->
+    <div class="scrollBox page-sound-gym">
+      <section class="sound-gym__visual">
+        <img src="../../img/soundgym/visual_soundgym.png" alt="sound gym"/>
+        <p>사운드짐과 함께하는 활동관리 서비스</p>
+      </section>
+
+      <section class="sound-gym__category">
+        <div class="sound-gym__keyword">
+          <ul>
+            <li>
+              <button type="button" class="recommend">추천</button>
+            </li>
+            <li>
+              <button type="button" class="recommend active">추천</button>
+            </li>
+            <li>
+              <button type="button">인기</button>
+            </li>
+            <li>
+              <button type="button" class="active">달리기</button>
+            </li>
+            <li>
+              <button type="button">자전거</button>
+            </li>
+            <li>
+              <button type="button">명상</button>
+            </li>
+            <li>
+              <button type="button">명상</button>
+            </li>
+          </ul>
+        </div>
+
+        <div class="sound-gym__keyword-program">
+          <ul>
+            <li>
+              <button type="button">
+              <span class="sound-gym__keyword-program-item"
+                    style="background-image: url('../../img/soundgym/sound_gym1.jpg')">
+                <i>달리기</i>
+              </span>
+              </button>
+            </li>
+            <li>
+              <button type="button">
+              <span class="sound-gym__keyword-program-item"
+                    style="background-image: url('../../img/soundgym/sound_gym2.jpg')">
+                <i>자전거</i>
+              </span>
+              </button>
+            </li>
+            <li>
+              <button type="button">
+              <span class="sound-gym__keyword-program-item"
+                    style="background-image: url('../../img/soundgym/sound_gym3.jpg')">
+                <i>요가</i>
+              </span>
+              </button>
+            </li>
+            <li>
+              <button type="button">
+              <span class="sound-gym__keyword-program-item"
+                    style="background-image: url('../../img/soundgym/sound_gym4.jpg')">
+                <i>명상</i>
+              </span>
+              </button>
+            </li>
+          </ul>
+        </div>
+
+        <div class="sound-gym__buttons">
+          <button type="button" class="block small inline">전체 프로그램 목록보기</button>
+        </div>
+      </section>
+
+      <div class="program-list__main-title mt40">나의 프로그램</div>
+      <!-- start: if data length > 0 -->
+      <div class="program-list mt15">
+        <button type="button" class="program-list__item">
+          <div class="program-list__thumb">
+            <img src="../../img/soundgym/temp_program.jpg" alt=""/>
+          </div>
+          <div class="program-list__info">
+            <p class="program-list__title">
+              하루 10분으로 나의 건강운동
+            </p>
+            <p class="program-list__subtitle">
+              입문자를 위한 최적의 구성
+            </p>
+            <div class="program-list__progress">
+              <span class="program-list__progress-count"><em>4</em>/24</span>
+              <div class="program-list__progress-bar">
+                <span style="width: 440%;"></span>
+              </div>
+            </div>
+          </div>
+        </button>
+        <button type="button" class="program-list__item">
+          <div class="program-list__thumb">
+            <img src="../../img/soundgym/temp_program.jpg" alt=""/>
+          </div>
+          <div class="program-list__info">
+            <p class="program-list__title">
+              하루 10분으로 나의 건강운동
+            </p>
+            <p class="program-list__subtitle">
+              입문자를 위한 최적의 구성
+            </p>
+            <div class="program-list__progress">
+              <span class="program-list__progress-count"><em>4</em>/24</span>
+              <div class="program-list__progress-bar">
+                <span style="width: 440%;"></span>
+              </div>
+            </div>
+          </div>
+        </button>
+        <button type="button" class="program-list__item">
+          <div class="program-list__thumb">
+            <img src="../../img/soundgym/temp_program.jpg" alt=""/>
+          </div>
+          <div class="program-list__info">
+            <p class="program-list__title">
+              하루 10분으로 나의 건강운동
+            </p>
+            <p class="program-list__subtitle">
+              입문자를 위한 최적의 구성
+            </p>
+            <div class="program-list__progress">
+              <span class="program-list__progress-count"><em>4</em>/24</span>
+              <div class="program-list__progress-bar">
+                <span style="width: 440%;"></span>
+              </div>
+            </div>
+          </div>
+        </button>
+      </div>
+      <!-- end: if data length > 0 -->
+
+      <!-- start: else no-data -->
+      <!--<div class="message-box">
+        <div class="message-box__wrap">
+          <div class="message-box__icon">
+            <i class="icon-nodata icon-40"></i>
+          </div>
+          <div class="message-box__sub-title">
+            참여한 프로그램이 없습니다.
+          </div>
+        </div>
+      </div>-->
+      <!-- end: else no-data -->
+    </div>
+  </div>
+  <div class="footer footer__button-nav"> <!-- 2021.08.05 class 수정 -->
+    <!-- 2021.08.05 추가 -->
+    <button class="block" type="button">프로그램 변경</button>
+    <!-- EOD : 2021.08.05 추가 -->
+    <nav>
+      <ul>
+        <li class="on">
+          <button type="button">
+            <i class="icon-home icon-16"></i>
+            <span>홈</span>
+          </button>
+        </li>
+        <li>
+          <button type="button">
+            <i class="icon-pro icon-16"></i>
+            <span>프로그램</span>
+          </button>
+        </li>
+        <li>
+          <button type="button">
+            <i class="icon-info icon-16"></i>
+            <span>증상ㆍ병원</span>
+          </button>
+        </li>
+        <li>
+          <button type="button">
+            <i class="icon-my icon-16"></i>
+            <span>MY</span>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+
+<script>
+</script>
+</body>
+</html>

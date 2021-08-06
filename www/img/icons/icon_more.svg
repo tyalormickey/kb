@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="icon_m_more" width="16" height="80" viewBox="0 0 16 80">
+    <defs>
+        <style>
+            .cls-1{fill:#333}
+        </style>
+    </defs>
+    <circle id="타원_23" cx="8" cy="8" r="8" class="cls-1"/>
+    <circle id="타원_24" cx="8" cy="8" r="8" class="cls-1" transform="translate(0 32)"/>
+    <circle id="타원_25" cx="8" cy="8" r="8" class="cls-1" transform="translate(0 64)"/>
+</svg>

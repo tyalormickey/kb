@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-reset.min.css'/>
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-common.css'/>
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-style.css'/>
+
+  <script src='../../js/libs/jquery-3.1.1.min.js'></script>
+  <script src='../../js/swiper.min.js'></script>
+  <script src='../../js/ui.js'></script>
+</head>
+<body>
+
+<div class="wrapper">
+  <div class="header">
+    <header>
+      <div class="header__back">
+        <div class="back">
+          <button type="button" class="only-icon">
+            <i class="icon-arrow_left icon-20">뒤로가기</i>
+          </button>
+        </div>
+        <div class="title">
+          주문 / 결제
+        </div>
+      </div>
+    </header>
+  </div>
+  <div class="content-wrap bottom-button-fixed">
+    <div class="scrollBox order-payment">
+      <div class="order-payment__main-box">
+        <p class="mb-text1">
+          제조사 : 사운드짐
+        </p>
+        <div class="mb-text2">
+          하루 10분으로 운동 끝하루 10분으로 운동 끝<br/>
+          하루 10분으로 운동 끝
+        </div>
+      </div>
+
+      <div class="order-payment__title">
+        결제금액
+      </div>
+      <ul class="manage-list no-border">
+        <li>
+          <div class="gray small">상품가격</div>
+          <div class="right"><strong>9,900원</strong></div>
+        </li>
+        <li>
+          <div class="gray small">배송비</div>
+          <div class="right">0원</div>
+        </li>
+      </ul>
+
+      <div class="order-payment__title">
+        결제수단
+      </div>
+      <section class="table-form">
+        <div class="table-form__item">
+          <div class="table-form__item-label bold">
+            <div class="tooltip-button" data-title="스타" data-text="설명넣기 미확정">
+              <label>스타</label>
+              <button type="button" class="only-icon">
+                <i class="icon-i icon-16" onclick="tooltip.open($(this), '#modal-reward2');"></i>
+              </button>
+            </div>
+          </div>
+          <div class="form-item">
+            <div class="custom-input">
+              <input type="text" value="-2,000" class="number pr85"/>
+              <div class="custom-input__suffix">
+                <button type="button" class="only-icon">
+                  <i class="icon-del icon-16">지우기</i>
+                </button>
+                <span class="custom-input__unit">스타</span>
+              </div>
+            </div>
+            <p class="form-item__guide">보유 : 12,000스타</p>
+          </div>
+        </div>
+        <div class="table-form__item">
+          <div class="table-form__item-label bold">
+            <div class="tooltip-button" data-title="포인트" data-text="설명넣기 미확정">
+              <label>포인트</label>
+              <button type="button" class="only-icon">
+                <i class="icon-i icon-16" onclick="tooltip.open($(this), '#modal-reward2');"></i>
+              </button>
+            </div>
+          </div>
+          <div class="form-item">
+            <div class="custom-input">
+              <div class="custom-input">
+                <input type="text" value="-2,000" class="number pr100"/>
+                <div class="custom-input__suffix">
+                  <button type="button" class="only-icon">
+                    <i class="icon-del icon-16">지우기</i>
+                  </button>
+                  <span class="custom-input__unit">포인트</span>
+                </div>
+              </div>
+            </div>
+            <p class="form-item__guide">보유 : 12,000포인트</p>
+          </div>
+        </div>
+        <div class="table-form__item">
+          <div class="table-form__item-label bold">
+            <div class="tooltip-button" data-title="쿠폰" data-text="설명넣기 미확정">
+              <label>쿠폰</label>
+              <button type="button" class="only-icon">
+                <i class="icon-i icon-16" onclick="tooltip.open($(this), '#modal-reward2');"></i>
+              </button>
+            </div>
+            <span class="sub-text">적용된 쿠폰이 없습니다.</span>
+          </div>
+          <div class="form-item">
+            <div class="custom-input">
+              <input type="text" value="-2,000" class="number pr70" disabled/>
+              <div class="custom-input__suffix">
+                <button type="button" class="only-icon" disabled>
+                  <i class="icon-del icon-16">지우기</i>
+                </button>
+                <span class="custom-input__unit">원</span>
+              </div>
+            </div>
+
+            <div class="order-payment__box">
+              <div class="b-text-button">
+                <span>사용가능 : 3장</span>
+                <button type="button" class="block small inline">
+                  쿠폰선택
+                </button>
+              </div>
+            </div>
+
+            <div class="order-payment__box">
+              <div class="b-text-button">
+                <span>사용가능한 쿠폰이 없습니다.</span>
+                <button type="button" class="block small inline" disabled>
+                  쿠폰선택
+                </button>
+              </div>
+            </div>
+
+            <div class="order-payment__box">
+              <div class="b-title">쿠폰정보</div>
+              <ul class="b-list">
+                <li>
+                  <span>쿠폰명</span>
+                  <em>KB 이벤트 당첨 할인 쿠폰 01</em>
+                </li>
+                <li>
+                  <span>쿠폰금액</span>
+                  <em>3,000원 (할인)</em>
+                </li>
+                <li>
+                  <span>사용컨텐츠</span>
+                  <em>활동관리 컨텐츠</em>
+                </li>
+                <li>
+                  <span>사용기간</span>
+                  <em>
+                    2021.06.01 부터<br/>
+                    2021.12.31까지
+                  </em>
+                </li>
+              </ul>
+              <ul class="b-list">
+                <li>
+                  <span>쿠폰명</span>
+                  <em>KB 이벤트 당첨 할인 쿠폰 01</em>
+                </li>
+                <li>
+                  <span>쿠폰금액</span>
+                  <em>3,000원 (할인)</em>
+                </li>
+                <li>
+                  <span>사용컨텐츠</span>
+                  <em>활동관리 컨텐츠</em>
+                </li>
+                <li>
+                  <span>사용기간</span>
+                  <em>
+                    2021.06.01 부터<br/>
+                    2021.12.31까지
+                  </em>
+                </li>
+              </ul>
+              <div class="b-text-button">
+                <span>사용가능 : 3장</span>
+                <button type="button" class="block small inline">
+                  쿠폰선택
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="order-payment__box mt40">
+          <div class="sb-texts">
+            <em>총 결제금액</em>
+            <strong>9,900원</strong>
+          </div>
+        </div>
+        <div class="order-payment__box mt40">
+          <div class="sb-texts main">
+            <em>총 결제금액</em>
+            <strong>9,900원</strong>
+          </div>
+          <div class="sb-texts">
+            <em>총 결제금액</em>
+            <strong>
+              2,000스타<br/>
+              3,900포인트<br/>
+              3,000쿠폰할인<br/>
+            </strong>
+          </div>
+        </div>
+        <div class="table-form__item mt40">
+          <div class="table-form__item-label bold">
+            <label>배송 요청 사항</label>
+          </div>
+          <div class="form-item">
+            <div class="custom-input">
+              <input type="text" value=""/>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+  <div class="button__flex-wrap bottom-fixed">
+    <button type="button" class="block" onclick="modal.alert($(this), paymentConfirmConfig)">
+      결제하기
+    </button>
+  </div>
+</div>
+
+<script>
+  var orderConfirmConfig = {
+    type: 'confirm',
+    text: '주문하신 상품을 결제하시겠습니까?',
+    ok: handleOk,
+    cancel: handleCancel
+  }
+  var paymentConfirmConfig = {
+    type: 'confirm',
+    text: '결제 페이지로 이동합니다.<br />주문하신 상품을 결제하시겠습니까?',
+    ok: handleOk,
+    cancel: handleCancel
+  }
+
+  function handleOk() {
+    console.log('확인'); 
+  }
+
+  function handleCancel() {
+    console.log('취소');
+  }
+</script>
+</body>
+</html>

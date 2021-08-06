@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-reset.min.css'/>
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-common.css'/>
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-style.css'/>
+
+  <script src='../../js/libs/jquery-3.1.1.min.js'></script>
+  <script src='../../js/swiper.min.js'></script>
+  <script src='../../js/ui.js'></script>
+</head>
+<body>
+
+<div class="wrapper">
+  <div class="header">
+    <header>
+      <div class="header__back">
+        <div class="back">
+          <button type="button" class="only-icon">
+            <i class="icon-arrow_left icon-20">뒤로가기</i>
+          </button>
+        </div>
+        <div class="title">
+          운동정보
+        </div>
+        <div class="right-icons">
+          <button type="button" class="only-icon">
+            <i class="icon-camera_02 icon-20">카메라</i>
+          </button>
+          <button type="button" class="only-icon">
+            <i class="icon-alarm on icon-20">알람</i>
+          </button>
+        </div>
+      </div>
+    </header>
+  </div>
+  <div class="content-wrap">
+    <div class="scrollBox page-mpd-61">
+      <div class="tab__wrap">
+        <ul class="tab button-type">
+          <li class="tab__item">
+            <button type="button">
+              <span>일</span>
+            </button>
+          </li>
+          <li class="tab__item">
+            <button type="button">
+              <span>주</span>
+            </button>
+          </li>
+          <li class="tab__item">
+            <button type="button">
+              <span>월</span>
+            </button>
+          </li>
+          <li class="tab__item">
+            <button type="button">
+              <span>년</span>
+            </button>
+          </li>
+        </ul>
+        <div class="tab__content-wrap">
+          <div class="tab__content">
+            <div class="manage-select-date mt25">
+              <button type="button" class="left-icon only-icon">
+                <i class="icon-arrow_left icon-20"></i>
+              </button>
+              <div class="date">
+                2021.06.11
+              </div>
+              <button type="button" class="right-icon only-icon">
+                <i class="icon-arrow_right icon-20"></i>
+              </button>
+            </div>
+            <div class="manage-gray-box center mt40">
+              <span class="middle-title">
+                총 <b>3,500</b> Kcal
+              </span>
+            </div>
+            <ul class="manage-list mt25">
+              <li>
+                <div class="gray small">이동거리</div>
+                <div class="right">21.1km</div>
+              </li>
+              <li>
+                <div class="gray small">운동시간</div>
+                <div class="right">8시간 30분</div>
+              </li>
+            </ul>
+
+            <!-- 걷기 -->
+            <div class="manage-h3 with-tag mt35">
+              걷기
+              <button type="button">
+                <i class="tag-pick tag-pick--main">Main 성취</i>
+                <i class="icon-arrow_right icon-18">바로가기</i>
+              </button>
+            </div>
+            <div class="manage-light-box mt10">
+              총 <b>1,000</b>Kcal
+            </div>
+            <div class="manage-h4 with-tag mt20">
+              <strong>걸음수</strong>
+              <p>
+                목표 4,500
+              </p>
+            </div>
+            <div class="manage-average-bar mt25">
+              <ul>
+                <li>
+                  <em>최소 78</em>
+                </li>
+                <li class="active">
+                  <strong>현재 4,500</strong>
+                </li>
+                <li>
+                  <em>최대 100</em>
+                </li>
+              </ul>
+            </div>
+
+            <!-- 달리기 -->
+            <div class="manage-h3 with-tag mt35">
+              달리기
+              <button type="button">
+                <i class="icon-arrow_right icon-18">바로가기</i>
+              </button>
+            </div>
+            <div class="manage-light-box mt10">
+              총 <b>1,000</b>Kcal
+            </div>
+            <ul class="manage-list mt25">
+              <li>
+                <div class="gray small">이동거리</div>
+                <div class="right">21.1km</div>
+              </li>
+              <li>
+                <div class="gray small">운동시간</div>
+                <div class="right">8시간 30분</div>
+              </li>
+            </ul>
+
+            <!-- 자전거 -->
+            <div class="manage-h3 with-tag mt35">
+              자전거
+              <button type="button">
+                <i class="icon-arrow_right icon-18">바로가기</i>
+              </button>
+            </div>
+            <div class="manage-light-box mt10">
+              총 <b>1,000</b>Kcal
+            </div>
+            <ul class="manage-list mt25">
+              <li>
+                <div class="gray small">이동거리</div>
+                <div class="right">21.1km</div>
+              </li>
+              <li>
+                <div class="gray small">운동시간</div>
+                <div class="right">8시간 30분</div>
+              </li>
+            </ul>
+
+            <!-- 하이킹 -->
+            <div class="manage-h3 with-tag mt35">
+              하이킹
+              <button type="button">
+                <i class="icon-arrow_right icon-18">바로가기</i>
+              </button>
+            </div>
+            <div class="manage-light-box mt10">
+              총 <b>1,000</b>Kcal
+            </div>
+            <ul class="manage-list mt25">
+              <li>
+                <div class="gray small">이동거리</div>
+                <div class="right">21.1km</div>
+              </li>
+              <li>
+                <div class="gray small">운동시간</div>
+                <div class="right">8시간 30분</div>
+              </li>
+            </ul>
+
+            <!-- Start: no-data -->
+            <!--
+            <div class="message-box">
+              <div class="message-box__wrap">
+                <div class="message-box__icon">
+                  <i class="icon-nodata icon-40"></i>
+                </div>
+                <div class="message-box__sub-title">
+                  등록된 운동정보가 없습니다.
+                </div>
+                <div class="message-box__btn-wrap mt30">
+                  <button type="button" class="block small inline">
+                    데이터 연동하기
+                  </button>
+                </div>
+              </div>
+            </div>
+            -->
+            <!-- End: no-data -->
+          </div>
+          <div class="tab__content">
+            <div class="manage-select-date mt25">
+              <button type="button" class="left-icon only-icon">
+                <i class="icon-arrow_left icon-20"></i>
+              </button>
+              <div class="date">
+                2021.05.27 ~ 2021.06.11
+              </div>
+              <button type="button" class="right-icon only-icon">
+                <i class="icon-arrow_right icon-20"></i>
+              </button>
+            </div>
+            <div class="manage-gray-box center mt40">
+              <span class="middle-title">
+                총 <b>3,500</b> Kcal
+              </span>
+            </div>
+            <ul class="manage-list mt25">
+              <li>
+                <div class="gray small">이동거리</div>
+                <div class="right">21.1km</div>
+              </li>
+              <li>
+                <div class="gray small">운동시간</div>
+                <div class="right">8시간 30분</div>
+              </li>
+            </ul>
+
+            <!-- 걷기 -->
+            <div class="manage-h3 with-tag mt35">
+              걷기
+              <button type="button">
+                <i class="tag-pick tag-pick--sub">Sub 성취</i>
+                <i class="icon-arrow_right icon-18">바로가기</i>
+              </button>
+            </div>
+            <div class="manage-light-box mt10">
+              총 <b>1,000</b>Kcal
+            </div>
+            <div class="manage-h4 with-tag mt20">
+              <strong>걸음수</strong>
+              <p>
+                목표 4,500
+              </p>
+            </div>
+            <div class="manage-average-bar mt25">
+              <ul>
+                <li>
+                  <em>최소 78</em>
+                </li>
+                <li class="active">
+                  <strong>현재 4,500</strong>
+                </li>
+                <li>
+                  <em>최대 100</em>
+                </li>
+              </ul>
+            </div>
+
+            <!-- 달리기 -->
+            <div class="manage-h3 with-tag mt35">
+              달리기
+              <button type="button">
+                <i class="icon-arrow_right icon-18">바로가기</i>
+              </button>
+            </div>
+            <div class="manage-light-box mt10">
+              총 <b>1,000</b>Kcal
+            </div>
+            <ul class="manage-list mt25">
+              <li>
+                <div class="gray small">이동거리</div>
+                <div class="right">21.1km</div>
+              </li>
+              <li>
+                <div class="gray small">운동시간</div>
+                <div class="right">8시간 30분</div>
+              </li>
+            </ul>
+
+            <!-- 자전거 -->
+            <div class="manage-h3 with-tag mt35">
+              자전거
+              <button type="button">
+                <i class="icon-arrow_right icon-18">바로가기</i>
+              </button>
+            </div>
+            <div class="manage-light-box mt10">
+              총 <b>1,000</b>Kcal
+            </div>
+            <ul class="manage-list mt25">
+              <li>
+                <div class="gray small">이동거리</div>
+                <div class="right">21.1km</div>
+              </li>
+              <li>
+                <div class="gray small">운동시간</div>
+                <div class="right">8시간 30분</div>
+              </li>
+            </ul>
+
+            <!-- 하이킹 -->
+            <div class="manage-h3 with-tag mt35">
+              하이킹
+              <button type="button">
+                <i class="icon-arrow_right icon-18">바로가기</i>
+              </button>
+            </div>
+            <div class="manage-light-box mt10">
+              총 <b>1,000</b>Kcal
+            </div>
+            <ul class="manage-list mt25">
+              <li>
+                <div class="gray small">이동거리</div>
+                <div class="right">21.1km</div>
+              </li>
+              <li>
+                <div class="gray small">운동시간</div>
+                <div class="right">8시간 30분</div>
+              </li>
+            </ul>
+          </div>
+          <div class="tab__content">
+            <div class="manage-select-date mt25">
+              <button type="button" class="left-icon only-icon">
+                <i class="icon-arrow_left icon-20"></i>
+              </button>
+              <div class="date">
+                2021.06
+              </div>
+              <button type="button" class="right-icon only-icon">
+                <i class="icon-arrow_right icon-20"></i>
+              </button>
+            </div>
+            <div class="manage-gray-box center mt40">
+              <span class="middle-title">
+                총 <b>3,500</b> Kcal
+              </span>
+            </div>
+            <ul class="manage-list mt25">
+              <li>
+                <div class="gray small">이동거리</div>
+                <div class="right">21.1km</div>
+              </li>
+              <li>
+                <div class="gray small">운동시간</div>
+                <div class="right">8시간 30분</div>
+              </li>
+            </ul>
+
+            <!-- 걷기 -->
+            <div class="manage-h3 with-tag mt35">
+              걷기
+              <button type="button">
+                <i class="tag-pick tag-pick--main">Main 성취</i>
+                <i class="icon-arrow_right icon-18">바로가기</i>
+              </button>
+            </div>
+            <div class="manage-light-box mt10">
+              총 <b>1,000</b>Kcal
+            </div>
+            <div class="manage-h4 with-tag mt20">
+              <strong>걸음수</strong>
+              <p>
+                목표 4,500
+              </p>
+            </div>
+            <div class="manage-average-bar mt25">
+              <ul>
+                <li>
+                  <em>최소 78</em>
+                </li>
+                <li class="active">
+                  <strong>현재 4,500</strong>
+                </li>
+                <li>
+                  <em>최대 100</em>
+                </li>
+              </ul>
+            </div>
+
+            <!-- 달리기 -->
+            <div class="manage-h3 with-tag mt35">
+              달리기
+              <button type="button">
+                <i class="icon-arrow_right icon-18">바로가기</i>
+              </button>
+            </div>
+            <div class="manage-light-box mt10">
+              총 <b>1,000</b>Kcal
+            </div>
+            <ul class="manage-list mt25">
+              <li>
+                <div class="gray small">평균 이동거리</div>
+                <div class="right">21.1km</div>
+              </li>
+              <li>
+                <div class="gray small">평균 운동시간</div>
+                <div class="right">8시간 30분</div>
+              </li>
+            </ul>
+
+            <!-- 자전거 -->
+            <div class="manage-h3 with-tag mt35">
+              자전거
+              <button type="button">
+                <i class="icon-arrow_right icon-18">바로가기</i>
+              </button>
+            </div>
+            <div class="manage-light-box mt10">
+              총 <b>1,000</b>Kcal
+            </div>
+            <ul class="manage-list mt25">
+              <li>
+                <div class="gray small">평균 이동거리</div>
+                <div class="right">21.1km</div>
+              </li>
+              <li>
+                <div class="gray small">평균 운동시간</div>
+                <div class="right">8시간 30분</div>
+              </li>
+            </ul>
+
+            <!-- 하이킹 -->
+            <div class="manage-h3 with-tag mt35">
+              하이킹
+              <button type="button">
+                <i class="icon-arrow_right icon-18">바로가기</i>
+              </button>
+            </div>
+            <div class="manage-light-box mt10">
+              총 <b>1,000</b>Kcal
+            </div>
+            <ul class="manage-list mt25">
+              <li>
+                <div class="gray small">평균 이동거리</div>
+                <div class="right">21.1km</div>
+              </li>
+              <li>
+                <div class="gray small">평균 운동시간</div>
+                <div class="right">8시간 30분</div>
+              </li>
+            </ul>
+          </div>
+          <div class="tab__content">
+            <div class="manage-select-date mt25">
+              <button type="button" class="left-icon only-icon">
+                <i class="icon-arrow_left icon-20"></i>
+              </button>
+              <div class="date">
+                2021
+              </div>
+              <button type="button" class="right-icon only-icon">
+                <i class="icon-arrow_right icon-20"></i>
+              </button>
+            </div>
+            <div class="manage-gray-box center mt40">
+              <span class="middle-title">
+                총 <b>3,500</b> Kcal
+              </span>
+            </div>
+            <ul class="manage-list mt25">
+              <li>
+                <div class="gray small">평균 이동거리</div>
+                <div class="right">21.1km</div>
+              </li>
+              <li>
+                <div class="gray small">평균 운동시간</div>
+                <div class="right">8시간 30분</div>
+              </li>
+            </ul>
+
+            <!-- 걷기 -->
+            <div class="manage-h3 with-tag mt35">
+              걷기
+              <button type="button">
+                <i class="tag-pick tag-pick--main">Main 성취</i>
+                <i class="icon-arrow_right icon-18">바로가기</i>
+              </button>
+            </div>
+            <div class="manage-light-box mt10">
+              총 <b>1,000</b>Kcal
+            </div>
+            <div class="manage-h4 with-tag mt20">
+              <strong>걸음수</strong>
+              <p>
+                목표 4,500
+              </p>
+            </div>
+            <div class="manage-average-bar mt25">
+              <ul>
+                <li>
+                  <em>최소 78</em>
+                </li>
+                <li class="active">
+                  <strong>현재 4,500</strong>
+                </li>
+                <li>
+                  <em>최대 100</em>
+                </li>
+              </ul>
+            </div>
+
+            <!-- 달리기 -->
+            <div class="manage-h3 with-tag mt35">
+              달리기
+              <button type="button">
+                <i class="icon-arrow_right icon-18">바로가기</i>
+              </button>
+            </div>
+            <div class="manage-light-box mt10">
+              총 <b>1,000</b>Kcal
+            </div>
+            <ul class="manage-list mt25">
+              <li>
+                <div class="gray small">평균 이동거리</div>
+                <div class="right">21.1km</div>
+              </li>
+              <li>
+                <div class="gray small">평균 운동시간</div>
+                <div class="right">8시간 30분</div>
+              </li>
+            </ul>
+
+            <!-- 자전거 -->
+            <div class="manage-h3 with-tag mt35">
+              자전거
+              <button type="button">
+                <i class="icon-arrow_right icon-18">바로가기</i>
+              </button>
+            </div>
+            <div class="manage-light-box mt10">
+              총 <b>1,000</b>Kcal
+            </div>
+            <ul class="manage-list mt25">
+              <li>
+                <div class="gray small">평균 이동거리</div>
+                <div class="right">21.1km</div>
+              </li>
+              <li>
+                <div class="gray small">평균 운동시간</div>
+                <div class="right">8시간 30분</div>
+              </li>
+            </ul>
+
+            <!-- 하이킹 -->
+            <div class="manage-h3 with-tag mt35">
+              하이킹
+              <button type="button">
+                <i class="icon-arrow_right icon-18">바로가기</i>
+              </button>
+            </div>
+            <div class="manage-light-box mt10">
+              총 <b>1,000</b>Kcal
+            </div>
+            <ul class="manage-list mt25">
+              <li>
+                <div class="gray small">평균 이동거리</div>
+                <div class="right">21.1km</div>
+              </li>
+              <li>
+                <div class="gray small">평균 운동시간</div>
+                <div class="right">8시간 30분</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer footer__nav">
+    <nav>
+      <ul>
+        <li class="on">
+          <button type="button">
+            <i class="icon-home icon-16"></i>
+            <span>홈</span>
+          </button>
+        </li>
+        <li>
+          <button type="button">
+            <i class="icon-pro icon-16"></i>
+            <span>프로그램</span>
+          </button>
+        </li>
+        <li>
+          <button type="button">
+            <i class="icon-info icon-16"></i>
+            <span>증상ㆍ병원</span>
+          </button>
+        </li>
+        <li>
+          <button type="button">
+            <i class="icon-my icon-16"></i>
+            <span>MY</span>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+
+<script>
+  tab.reset();
+  setTimeout(function() {
+    $('.tab__item').click(function() {
+      tab.action($(this))
+    });
+  }, 100);
+
+</script>
+</body>
+</html>

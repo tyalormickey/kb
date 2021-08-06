@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-reset.min.css'/>
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-common.css'/>
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-style.css'/>
+
+  <script src='../../js/libs/jquery-3.1.1.min.js'></script>
+  <script src='../../js/swiper.min.js'></script>
+  <script src='../../js/ui.js'></script>
+</head>
+<body>
+
+<div class="wrapper">
+  <div class="scrollBox today-weather">
+    <div class="today-weather__close">
+      <button class="only-icon" type="button">
+        <i class="icon-x icon-20">닫기</i>
+      </button>
+    </div>
+
+    <section class="today-weather__title">
+      <em>TODAY</em>
+      <span>2021.6.22 11:00</span>
+    </section>
+
+    <section class="today-weather__main-info">
+      <div>
+        <strong>27℃</strong>
+        <i class="icon-weather_sun2 icon-75"></i>
+        <!--
+        <i class="icon-weather_rain2 icon-75"></i>
+        <i class="icon-weather_cloud2 icon-75"></i>
+        <i class="icon-weather_shower2 icon-75"></i>
+        <i class="icon-weather_blur2 icon-75"></i>
+        <i class="icon-weather_snow2 icon-75"></i>
+        <i class="icon-weather_snowrain2 icon-75"></i>
+        -->
+      </div>
+      <span>습도 60%</span>
+      <p>서울특별시 강남구 역삼2동</p>
+    </section>
+
+    <section class="today-weather__boxes">
+      <dl>
+        <dt>코로나19</dt>
+        <dd>
+          <div class="tooltip-button" data-title="미세먼지(μm)" data-text="입자의 크기가 10μm 이하인 먼지">
+            <span>미세먼지</span>
+            <button type="button" class="only-icon" onclick="tooltip.open($(this));">
+              <i class="icon-caution icon-16">설명</i>
+            </button>
+          </div>
+          <strong>10 μg/m3</strong>
+          <p><i class="icon-state_good icon-20"></i>좋음</p>
+          <div class="tooltip-add">
+            <ul class="today-weather__state">
+              <li><i class="icon-state_good icon-20"></i>좋음 (0~30)</li>
+              <li><i class="icon-state_so icon-20"></i>보통 (31~80)</li>
+              <li><i class="icon-state_bad icon-20"></i>나쁨 (81~150)</li>
+              <li><i class="icon-state_vbad icon-20"></i>매우나쁨 (151~)</li>
+            </ul>
+          </div>
+        </dd>
+      </dl>
+      <dl>
+        <dt>
+          <!-- <span class="down">▼ 395</span> -->
+          <span class="up">▲ 200</span>
+        </dt>
+        <dd>
+          <div class="tooltip-button" data-title="초미세먼지(μm)" data-text="입자의 크기가 10μm 이하인 먼지">
+            <span>초미세먼지</span>
+            <button type="button" class="only-icon" onclick="tooltip.open($(this));">
+              <i class="icon-caution icon-16">설명</i>
+            </button>
+          </div>
+          <strong>31 μg/m3</strong>
+          <p><i class="icon-state_so icon-20"></i>보통</p>
+          <div class="tooltip-add">
+            <ul class="today-weather__state">
+              <li><i class="icon-state_good icon-20"></i>좋음(0~15)</li>
+              <li><i class="icon-state_so icon-20"></i>보통 (16~35)</li>
+              <li><i class="icon-state_bad icon-20"></i>나쁨 (16~35)</li>
+              <li><i class="icon-state_vbad icon-20"></i>매우나쁨 (76~)</li>
+            </ul>
+          </div>
+        </dd>
+      </dl>
+      <dl>
+        <dt>총 151,901명</dt>
+        <dd>
+          <div class="tooltip-button" data-title="오존(ppm)">
+            <span>오존</span>
+            <button type="button" class="only-icon" onclick="tooltip.open($(this));">
+              <i class="icon-caution icon-16">설명</i>
+            </button>
+          </div>
+          <strong>0.091 ppm</strong>
+          <p><i class="icon-state_vbad icon-20"></i>매우나쁨</p>
+          <div class="tooltip-add">
+            <ul class="today-weather__state">
+              <li><i class="icon-state_good icon-20"></i>좋음(0~0.03)</li>
+              <li><i class="icon-state_so icon-20"></i>보통(0.031~0.09)</li>
+              <li><i class="icon-state_bad icon-20"></i>나쁨(0.091~0.15)</li>
+              <li><i class="icon-state_vbad icon-20"></i>매우나쁨(0.151~)</li>
+            </ul>
+          </div>
+        </dd>
+      </dl>
+    </section>
+
+    <section class="today-weather__list">
+      <ul>
+        <li>
+          <div class="today-weather__list-title">
+            <strong>눈병</strong>
+            <i class="tag tag--care-step1">관심</i>
+          </div>
+          <p class="today-weather__list-text">
+            비누를 사용하여 흐르는 수돗물에 손을 자주 씻고,
+            수건이나 개인 소지품 등은 다른 사람과 함께 사용
+            하지 않습니다.
+          </p>
+        </li>
+        <li>
+          <div class="today-weather__list-title">
+            <strong>식중독</strong>
+            <i class="tag tag--care-step2">주의</i>
+          </div>
+          <p class="today-weather__list-text">
+            식중독 발생가능성이 높으므로 식중독 예방에 경계
+            가 요망됩니다. 조리도구는 세척, 소독 등을 거쳐
+            세균오염을 방지하고 유통기한, 보관방법등을 확인
+            하여 음식물 조리, 보관에 각별히 주의합니다.
+          </p>
+        </li>
+        <li>
+          <div class="today-weather__list-title">
+            <strong>천식</strong>
+            <i class="tag tag--care-step3">경고</i>
+          </div>
+          <p class="today-weather__list-text">
+            비누를 사용하여 흐르는 수돗물에 손을 자주 씻고,
+            수건이나 개인 소지품 등은 다른 사람과 함께 사용
+            하지 않습니다.
+          </p>
+        </li>
+        <li>
+          <div class="today-weather__list-title">
+            <strong>피부염</strong>
+            <i class="tag tag--care-step4">위험</i>
+          </div>
+          <p class="today-weather__list-text">
+            비누를 사용하여 흐르는 수돗물에 손을 자주 씻고,
+            수건이나 개인 소지품 등은 다른 사람과 함께 사용
+            하지 않습니다.
+          </p>
+        </li>
+        <li>
+          <div class="today-weather__list-title">
+            <strong>감기</strong>
+            <i class="tag tag--care-step4">위험</i>
+          </div>
+          <p class="today-weather__list-text">
+            비누를 사용하여 흐르는 수돗물에 손을 자주 씻고,
+            수건이나 개인 소지품 등은 다른 사람과 함께 사용
+            하지 않습니다.
+          </p>
+        </li>
+      </ul>
+      <p class="today-weather__list-add">
+        본 자료의 질병예측정보, 날씨 및 미세먼지 정보는 국민
+        건강보험공단, 기상청, 한국환경공단에서 제공합니다.
+      </p>
+    </section>
+
+  </div>
+</div>
+
+<!-- 팝업 // -->
+<div class="modal-goal-set modal-popup">
+  <div class="modal-popup__outer">
+    <section class="modal-popup__container">
+      <article class="modal-popup__header">
+        <h3 class="modal-popup__title">
+          걷기 목표 설정
+        </h3>
+        <button class="modal-popup__close only-icon">
+          <i class="icon-x icon-20">닫기</i>
+        </button>
+      </article>
+      <article class="modal-goal-set__body">
+        <p class="modal-goal-set__title">
+          일상 생활 습관에 맞는 걸음 목표를<br />
+          설정하세요.
+        </p>
+        <ul class="modal-goal-set__selector">
+          <li class="active">
+            <button type="button">
+              <span>7,500 걸음(Normal)</span>
+              <i class="icon-check_line icon-18"></i>
+            </button>
+          </li>
+          <li>
+            <button type="button">
+              <span>10,000 걸음(Hard)</span>
+              <i class="icon-check_line icon-18"></i>
+            </button>
+          </li>
+          <li>
+            <button type="button">
+              <span>12,500 걸음(Expert)</span>
+              <i class="icon-check_line icon-18"></i>
+            </button>
+          </li>
+        </ul>
+      </article>
+    </section>
+  </div>
+</div>
+<!-- // 팝업 -->
+
+<script>
+  var $selector = $('.modal-goal-set__selector');
+
+  $selector.find('button').off('click').on('click', function() {
+    var $parent = $(this).parent();
+    if (!$parent.hasClass('active')) {
+      if ($selector.find('li.active').length <= 1) {
+        $parent.addClass('active');
+      } else {
+        toast.open('최대 2개 항목 선택이 가능합니다.');
+      }
+    } else {
+      $parent.removeClass('active')
+    }
+
+  });
+</script>
+</body>
+</html>

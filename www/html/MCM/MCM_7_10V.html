@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-reset.min.css'/>
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-common.css'/>
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-style.css'/>
+
+  <script src='../../js/libs/jquery-3.1.1.min.js'></script>
+  <script src='../../js/swiper.min.js'></script>
+  <script src='../../js/ui.js'></script>
+</head>
+<body>
+
+<div class="wrapper">
+  <div class="header">
+    <header>
+      <div class="header__back">
+        <div class="back">
+          <button type="button" class="only-icon">
+            <i class="icon-arrow_left icon-20">뒤로가기</i>
+          </button>
+        </div>
+        <div class="title">
+          건강 정보 연동
+        </div>
+        <div class="right-icons">
+          <button type="button" class="only-icon">
+            <i class="icon-camera_02 icon-20">카메라</i>
+          </button>
+          <button type="button" class="only-icon">
+            <i class="icon-alarm on icon-20">알람</i>
+          </button>
+        </div>
+      </div>
+    </header>
+  </div>
+  <div class="content-wrap">
+    <div class="scrollBox">
+      <div class="health-info__info">
+        나의 건강정보를 직접 입력하지 않고, 사용하시는 Wearable 기기 또는 건강서비스와 연결하여 자동으로 기록할 수 있습니다.
+      </div>
+      <section class="health-info__section">
+        <div class="health-info__sub-title">
+          플랫폼
+        </div>
+        <ul class="switch-list">
+          <li class="switch-list__item">
+            <div class="switch-list__item-icon">
+              <img src="../../img/icons/samsung_health.png" alt="Samsung Health" />
+            </div>
+            <div class="switch-list__item-title">
+              Samsung Health
+            </div>
+            <div class="switch-list__item-button">
+              <label class="input-switch">
+                <input type="checkbox" value="samsung" />
+                <i></i>
+              </label>
+            </div>
+          </li>
+          <li class="switch-list__item">
+            <div class="switch-list__item-icon">
+              <img src="../../img/icons/google.png" alt="google fitness" />
+            </div>
+            <div class="switch-list__item-title">
+              Google 피트니스
+              <p class="switch-list__item-sub-title">
+                2021.06.02 연결됨
+              </p>
+            </div>
+            <div class="switch-list__item-button">
+              <label class="input-switch">
+                <input type="checkbox" checked />
+                <i></i>
+              </label>
+            </div>
+          </li>
+          <li class="switch-list__item">
+            <div class="switch-list__item-icon">
+              <img src="../../img/icons/invalid_name.png" alt="health" />
+            </div>
+            <div class="switch-list__item-title">
+              건강
+            </div>
+            <div class="switch-list__item-button">
+              <label class="input-switch">
+                <input type="checkbox" />
+                <i></i>
+              </label>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="health-info__section">
+        <div class="health-info__sub-title">
+          혈당계
+        </div>
+        <ul class="switch-list">
+          <li class="switch-list__item">
+            <div class="switch-list__item-icon">
+              <img src="../../img/icons/google.png" alt="google fitness" />
+            </div>
+            <div class="switch-list__item-title">
+              CareSens N Premier BLE
+              <p class="switch-list__item-sub-title">
+                2021.06.02 연결됨
+              </p>
+            </div>
+            <div class="switch-list__item-button">
+              <label class="input-switch">
+                <input type="checkbox" checked />
+                <i></i>
+              </label>
+            </div>
+          </li>
+          <li class="switch-list__item">
+            <div class="switch-list__item-icon">
+              <img src="../../img/icons/samsung_health.png" alt="Samsung Health" />
+            </div>
+            <div class="switch-list__item-title">
+              CareSens N Premier BLE
+            </div>
+            <div class="switch-list__item-button">
+              <label class="input-switch">
+                <input type="checkbox" />
+                <i></i>
+              </label>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="health-info__section">
+        <div class="health-info__sub-title">
+          혈압계
+        </div>
+        <ul class="switch-list">
+          <li class="switch-list__item">
+            <div class="switch-list__item-icon">
+              <img src="../../img/icons/google.png" alt="google fitness" />
+            </div>
+            <div class="switch-list__item-title">
+              Omron HEM-9200T
+              <p class="switch-list__item-sub-title">
+                2021.06.02 연결됨
+              </p>
+            </div>
+            <div class="switch-list__item-button">
+              <label class="input-switch">
+                <input type="checkbox" checked />
+                <i></i>
+              </label>
+            </div>
+          </li>
+          <li class="switch-list__item">
+            <div class="switch-list__item-icon">
+              <img src="../../img/icons/samsung_health.png" alt="Samsung Health" />
+            </div>
+            <div class="switch-list__item-title">
+              Omron HEM-9200T
+            </div>
+            <div class="switch-list__item-button">
+              <label class="input-switch">
+                <input type="checkbox" />
+                <i></i>
+              </label>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="health-info__section">
+        <div class="health-info__sub-title">
+          체중계
+        </div>
+        <ul class="switch-list">
+          <li class="switch-list__item">
+            <div class="switch-list__item-icon">
+              <img src="../../img/icons/samsung_health.png" alt="Samsung Health" />
+            </div>
+            <div class="switch-list__item-title">
+              Omron HEM-9200T
+            </div>
+            <div class="switch-list__item-button">
+              <label class="input-switch">
+                <input type="checkbox" />
+                <i></i>
+              </label>
+            </div>
+          </li>
+        </ul>
+        <div class="health-info__no-device">
+          <i class="icon-no icon-16"></i>
+          내가 보유한 기기는 목록에 없어요.
+        </div>
+      </section>
+    </div>
+  </div>
+  <div class="footer footer__nav">
+    <nav>
+        <ul>
+            <li class="on">
+                <button type="button">
+                    <i class="icon-home icon-16"></i>
+                    <span>홈</span>
+                </button>
+            </li>
+            <li>
+                <button type="button">
+                    <i class="icon-pro icon-16"></i>
+            <span>프로그램</span>
+          </button>
+        </li>
+        <li>
+          <button type="button">
+            <i class="icon-info icon-16"></i>
+            <span>증상ㆍ병원</span>
+          </button>
+        </li>
+        <li>
+          <button type="button">
+            <i class="icon-my icon-16"></i>
+            <span>MY</span>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+
+<script>
+  var connectChange = {
+    type: 'confirm',
+    text: 'Google 피트니스와 연결을 해제하고<br/>Samsung Helath와 연결 하시겠습니까?',
+    ok: handleOk,
+    cancel: handleCancel
+  }
+  var connectCancel = {
+    type: 'confirm',
+    text: '연결을 해제하실 경우<br/>O-care에서 제공하는 서비스에<br/>제한이 있을 수 있습니다.',
+    ok: handleOk,
+    cancel: handleCancel
+  }
+  var bluetoothRequest = {
+    type: 'confirm',
+    text: 'O-care앱에서 블루투스 켜기를<br/>요청합니다.',
+    ok: handleOk,
+    cancel: handleCancel
+  }
+  var contactOk = {
+    type: 'alert',
+    text: '정상적으로 연결되었습니다.',
+    ok: handleOk
+  }
+  var contactCancel = {
+    type: 'alert',
+    text: '정상적으로 해제되었습니다.',
+    ok: handleOk
+  }
+  function handleOk () {
+    console.log('확인')
+  }
+  function handleCancel () {
+    console.log('취소')
+  }
+  $('input[value="samsung"]').click(function () {
+    if($(this).val()){
+      modal.alert($(this), connectChange)
+    }
+  })
+</script>
+</body>
+</html>

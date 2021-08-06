@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-reset.min.css'/>
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-common.css'/>
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-style.css'/>
+
+  <script src='../../js/libs/jquery-3.1.1.min.js'></script>
+  <script src='../../js/swiper.min.js'></script>
+  <script src='../../js/ui.js'></script>
+</head>
+<body>
+
+<div class="wrapper">
+  <div class="header">
+    <header>
+      <div class="header__back">
+        <div class="back">
+          <button type="button" class="only-icon">
+            <i class="icon-arrow_left icon-20">뒤로가기</i>
+          </button>
+        </div>
+        <div class="title">
+          심박수
+        </div>
+        <div class="right-icons">
+          <button type="button" class="only-icon">
+            <i class="icon-camera_02 icon-20">카메라</i>
+          </button>
+          <button type="button" class="only-icon">
+            <i class="icon-alarm on icon-20">알람</i>
+          </button>
+          <button type="button" class="only-icon" onclick="modal.open($(this), '.mpd_718__popup');">
+            <i class="icon-more icon-20">메뉴</i>
+          </button>
+        </div>
+      </div>
+    </header>
+  </div>
+  <div class="content-wrap">
+    <div class="scrollBox">
+      <div class="tab__wrap">
+        <ul class="tab button-type">
+          <li class="tab__item">
+            <button type="button">
+              <span>일</span>
+            </button>
+          </li>
+          <li class="tab__item">
+            <button type="button">
+              <span>주</span>
+            </button>
+          </li>
+          <li class="tab__item">
+            <button type="button">
+              <span>월</span>
+            </button>
+          </li>
+          <li class="tab__item">
+            <button type="button">
+              <span>년</span>
+            </button>
+          </li>
+        </ul>
+        <div class="tab__content-wrap">
+          <div class="tab__content">
+            <section class="manage-select-date mt25">
+              <button type="button" class="left-icon only-icon">
+                <i class="icon-arrow_left icon-20"></i>
+              </button>
+              <div class="date">
+                2021.06.11
+              </div>
+              <button type="button" class="right-icon only-icon">
+                <i class="icon-arrow_right icon-20"></i>
+              </button>
+            </section>
+            <section class="manage-gray-box pd20 center mt40">
+              <span class="middle-title">
+                현재 <b>73</b> BPM
+              </span>
+              <p class="small mt15">
+                기록 시간: 오후 4시 30분
+              </p>
+            </section>
+            <div class="manage-h3 with-tag mt40">
+              <strong>심박수 정보</strong>
+            </div>
+            <div class="manage-message-box black16 mt15">
+              관리 메시지 영역
+            </div>
+            <div class="manage-h4 with-tag mt25">
+              <strong>일일 심박수</strong>
+              <p>
+                단위: bpm
+              </p>
+            </div>
+            <section class="manage-average-bar mt25">
+              <ul>
+                <li>
+                  <em>최소 78</em>
+                </li>
+                <li class="active">
+                  <strong>평균 91</strong>
+                </li>
+                <li>
+                  <em>최대 100</em>
+                </li>
+              </ul>
+            </section>
+            <div class="manage-graph show-number mt15">
+              <div class="manage-graph__box">
+                <ul class="manage-graph__grid small">
+                  <li><span>200</span></li>
+                  <li><span>160</span></li>
+                  <li><span>120</span></li>
+                  <li><span>80</span></li>
+                  <li><span>40</span></li>
+                  <li><span>0</span></li>
+                </ul>
+                <div class="manage-graph__table-dot">
+                  <ul>
+                    <li class="width-line" style="bottom: 50%; background: #fcaf17;"></li>
+                    <li>
+                      <span><b>월</b></span>
+                      <div style="bottom: 50%;"><i style="background: #fcaf17;"></i></div>
+                    </li>
+                    <li>
+                      <span><b>화</b></span>
+                      <div style="bottom: 50%;"><i style="background: #fcaf17;"></i></div>
+                    </li>
+                    <li>
+                      <span><b>수</b></span>
+                      <div style="bottom: 50%;"><i style="background: #fcaf17;"></i></div>
+                    </li>
+                    <li>
+                      <span><b>목</b></span>
+                      <div style="bottom: 50%;"><i style="background: #fcaf17;"></i></div>
+                    </li>
+                    <li>
+                      <span><b>금</b></span>
+                      <div style="bottom: 50%;"><i style="background: #fcaf17;"></i></div>
+                    </li>
+                    <li>
+                      <span><b>토</b></span>
+                      <div style="bottom: 50%;"><i style="background: #fcaf17;"></i></div>
+                    </li>
+                    <li>
+                      <span><b>일</b></span>
+                      <div style="bottom: 50%;"><i style="background: #fcaf17;"></i></div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="manage-super-text mt25">
+              2021년 06월 14일 오후 14 ~ 15시
+            </div>
+            <ul class="manage-list mt10 mb40">
+              <li>
+                <div class="gray small">기록 시간</div>
+                <div class="right"> 2021년 06월 14일 오후 14</div>
+              </li>
+              <li>
+                <div class="gray small">심박수</div>
+                <div class="right">78bpm</div>
+              </li>
+            </ul>
+            <!-- Start: no-data -->
+            <!-- <div class="message-box">
+              <div class="message-box__wrap">
+                <div class="message-box__sub-title">
+                  등록된 심박수 데이터가 없습니다.
+                </div>
+                <div class="message-box__btn-wrap mt20">
+                  <button type="button" class="block small inline">
+                    데이터 연동하기
+                  </button>
+                </div>
+              </div>
+            </div> -->
+            <!-- End: no-data -->
+          </div>
+          <div class="tab__content">
+            <section class="manage-select-date mt25">
+              <button type="button" class="left-icon only-icon">
+                <i class="icon-arrow_left icon-20"></i>
+              </button>
+              <div class="date">
+                2021.05.27 ~ 2021.06.11
+              </div>
+              <button type="button" class="right-icon only-icon">
+                <i class="icon-arrow_right icon-20"></i>
+              </button>
+            </section>
+            <section class="manage-gray-box pd20 center mt40">
+              <span class="middle-title">
+                평균 <b>108</b> BPM
+              </span>
+            </section>
+            <div class="manage-h3 with-tag mt40">
+              <strong>심박수 정보</strong>
+            </div>
+            <div class="manage-message-box black16 mt15">
+              관리 메시지 영역
+            </div>
+            <div class="manage-h4 with-tag mt25">
+              <strong>주간 심박수</strong>
+              <p>
+                단위: bpm
+              </p>
+            </div>
+            <section class="manage-average-bar mt25">
+              <ul>
+                <li>
+                  <em>최소 78</em>
+                </li>
+                <li class="active">
+                  <strong>평균 91</strong>
+                </li>
+                <li>
+                  <em>최대 100</em>
+                </li>
+              </ul>
+            </section>
+            <div class="manage-graph show-number mt15">
+              <div class="manage-graph__label">
+                <label class="red">최저 심박수</label>
+                <label class="yellow">평균 심박수</label>
+                <label class="blue">최고 심박수</label>
+              </div>
+              <div class="manage-graph__box">
+                <ul class="manage-graph__grid small">
+                  <li><span>200</span></li>
+                  <li><span>160</span></li>
+                  <li><span>120</span></li>
+                  <li><span>80</span></li>
+                  <li><span>40</span></li>
+                  <li><span>0</span></li>
+                </ul>
+                <div class="manage-graph__table-dot">
+                  <ul>
+                    <li class="width-line" style="bottom: 95%; background: #22a2d1;"></li>
+                    <li class="width-line" style="bottom: 70%; background: #ff0000;"></li>
+                    <li class="width-line" style="bottom: 50%; background: #fcaf17;"></li>
+                    <li>
+                      <span><b>월</b></span>
+                      <div style="bottom: 95%;"><i style="background: #22a2d1;"></i></div>
+                      <div style="bottom: 70%;"><i style="background: #ff0000;"></i></div>
+                      <div style="bottom: 50%;"><i style="background: #fcaf17;"></i></div>
+                    </li>
+                    <li>
+                      <span><b>화</b></span>
+                      <div style="bottom: 95%;"><i style="background: #22a2d1;"></i></div>
+                      <div style="bottom: 70%;"><i style="background: #ff0000;"></i></div>
+                      <div style="bottom: 50%;"><i style="background: #fcaf17;"></i></div>
+                    </li>
+                    <li>
+                      <span><b>수</b></span>
+                      <div style="bottom: 95%;"><i style="background: #22a2d1;"></i></div>
+                      <div style="bottom: 70%;"><i style="background: #ff0000;"></i></div>
+                      <div style="bottom: 50%;"><i style="background: #fcaf17;"></i></div>
+                    </li>
+                    <li>
+                      <span><b>목</b></span>
+                      <div style="bottom: 95%;"><i style="background: #22a2d1;"></i></div>
+                      <div style="bottom: 70%;"><i style="background: #ff0000;"></i></div>
+                      <div style="bottom: 50%;"><i style="background: #fcaf17;"></i></div>
+                    </li>
+                    <li>
+                      <span><b>금</b></span>
+                      <div style="bottom: 95%;"><i style="background: #22a2d1;"></i></div>
+                      <div style="bottom: 70%;"><i style="background: #ff0000;"></i></div>
+                      <div style="bottom: 50%;"><i style="background: #fcaf17;"></i></div>
+                    </li>
+                    <li>
+                      <span><b>토</b></span>
+                      <div style="bottom: 95%;"><i style="background: #22a2d1;"></i></div>
+                      <div style="bottom: 70%;"><i style="background: #ff0000;"></i></div>
+                      <div style="bottom: 50%;"><i style="background: #fcaf17;"></i></div>
+                    </li>
+                    <li>
+                      <span><b>일</b></span>
+                      <div style="bottom: 95%;"><i style="background: #22a2d1;"></i></div>
+                      <div style="bottom: 70%;"><i style="background: #ff0000;"></i></div>
+                      <div style="bottom: 50%;"><i style="background: #fcaf17;"></i></div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="manage-super-text mt25">
+              2021.06.13 토
+            </div>
+            <ul class="manage-list mt10 mb40">
+              <li>
+                <div class="gray small">평균 심박수</div>
+                <div class="right">78bpm</div>
+              </li>
+              <li>
+                <div class="gray small">최소 심박수</div>
+                <div class="right">80bpm</div>
+              </li>
+              <li>
+                <div class="gray small">최대 심박수</div>
+                <div class="right">120bpm</div>
+              </li>
+            </ul>
+          </div>
+          <div class="tab__content">
+            <section class="manage-select-date mt25">
+              <button type="button" class="left-icon only-icon">
+                <i class="icon-arrow_left icon-20"></i>
+              </button>
+              <div class="date">
+                2021.06
+              </div>
+              <button type="button" class="right-icon only-icon">
+                <i class="icon-arrow_right icon-20"></i>
+              </button>
+            </section>
+            <section class="manage-gray-box pd20 center mt40">
+              <span class="middle-title">
+                평균 <b>108</b> BPM
+              </span>
+            </section>
+            <div class="manage-h3 with-tag mt40">
+              <strong>심박수 정보</strong>
+            </div>
+            <div class="manage-message-box black16 mt15">
+              관리 메시지 영역
+            </div>
+            <div class="manage-h4 with-tag mt25">
+              <strong>월간 심박수</strong>
+              <p>
+                단위: bpm
+              </p>
+            </div>
+            <section class="manage-average-bar mt25">
+              <ul>
+                <li>
+                  <em>최소 78</em>
+                </li>
+                <li class="active">
+                  <strong>평균 91</strong>
+                </li>
+                <li>
+                  <em>최대 100</em>
+                </li>
+              </ul>
+            </section>
+            <div class="manage-graph show-number mt15">
+              <div class="manage-graph__label">
+                <label class="red">최저 심박수</label>
+                <label class="yellow">평균 심박수</label>
+                <label class="blue">최고 심박수</label>
+              </div>
+              <div class="manage-graph__box">
+                <ul class="manage-graph__grid small">
+                  <li><span>200</span></li>
+                  <li><span>160</span></li>
+                  <li><span>120</span></li>
+                  <li><span>80</span></li>
+                  <li><span>40</span></li>
+                  <li><span>0</span></li>
+                </ul>
+                <div class="manage-graph__table-dot">
+                  <ul>
+                    <li class="width-line" style="bottom: 95%; background: #22a2d1;"></li>
+                    <li class="width-line" style="bottom: 70%; background: #ff0000;"></li>
+                    <li class="width-line" style="bottom: 50%; background: #fcaf17;"></li>
+                    <li>
+                      <span><b>월</b></span>
+                      <div style="bottom: 95%;"><i style="background: #22a2d1;"></i></div>
+                      <div style="bottom: 70%;"><i style="background: #ff0000;"></i></div>
+                      <div style="bottom: 50%;"><i style="background: #fcaf17;"></i></div>
+                    </li>
+                    <li>
+                      <span><b>화</b></span>
+                      <div style="bottom: 95%;"><i style="background: #22a2d1;"></i></div>
+                      <div style="bottom: 70%;"><i style="background: #ff0000;"></i></div>
+                      <div style="bottom: 50%;"><i style="background: #fcaf17;"></i></div>
+                    </li>
+                    <li>
+                      <span><b>수</b></span>
+                      <div style="bottom: 95%;"><i style="background: #22a2d1;"></i></div>
+                      <div style="bottom: 70%;"><i style="background: #ff0000;"></i></div>
+                      <div style="bottom: 50%;"><i style="background: #fcaf17;"></i></div>
+                    </li>
+                    <li>
+                      <span><b>목</b></span>
+                      <div style="bottom: 95%;"><i style="background: #22a2d1;"></i></div>
+                      <div style="bottom: 70%;"><i style="background: #ff0000;"></i></div>
+                      <div style="bottom: 50%;"><i style="background: #fcaf17;"></i></div>
+                    </li>
+                    <li>
+                      <span><b>금</b></span>
+                      <div style="bottom: 95%;"><i style="background: #22a2d1;"></i></div>
+                      <div style="bottom: 70%;"><i style="background: #ff0000;"></i></div>
+                      <div style="bottom: 50%;"><i style="background: #fcaf17;"></i></div>
+                    </li>
+                    <li>
+                      <span><b>토</b></span>
+                      <div style="bottom: 95%;"><i style="background: #22a2d1;"></i></div>
+                      <div style="bottom: 70%;"><i style="background: #ff0000;"></i></div>
+                      <div style="bottom: 50%;"><i style="background: #fcaf17;"></i></div>
+                    </li>
+                    <li>
+                      <span><b>일</b></span>
+                      <div style="bottom: 95%;"><i style="background: #22a2d1;"></i></div>
+                      <div style="bottom: 70%;"><i style="background: #ff0000;"></i></div>
+                      <div style="bottom: 50%;"><i style="background: #fcaf17;"></i></div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="manage-super-text mt25">
+              2021년 06월 14일 5주차 (20일 ~ 26일)
+            </div>
+            <ul class="manage-list mt10 mb40">
+              <li>
+                <div class="gray small">평균 심박수</div>
+                <div class="right">78bpm</div>
+              </li>
+              <li>
+                <div class="gray small">최소 심박수</div>
+                <div class="right">80bpm</div>
+              </li>
+              <li>
+                <div class="gray small">최대 심박수</div>
+                <div class="right">120bpm</div>
+              </li>
+            </ul>
+          </div>
+          <div class="tab__content">
+            <section class="manage-select-date mt25">
+              <button type="button" class="left-icon only-icon">
+                <i class="icon-arrow_left icon-20"></i>
+              </button>
+              <div class="date">
+                2021
+              </div>
+              <button type="button" class="right-icon only-icon">
+                <i class="icon-arrow_right icon-20"></i>
+              </button>
+            </section>
+            <section class="manage-gray-box pd20 center mt40">
+              <span class="middle-title">
+                평균 <b>108</b> BPM
+              </span>
+            </section>
+            <div class="manage-h3 with-tag mt40">
+              <strong>심박수 정보</strong>
+            </div>
+            <div class="manage-message-box black16 mt15">
+              관리 메시지 영역
+            </div>
+            <div class="manage-h4 with-tag mt25">
+              <strong>연간 심박수</strong>
+              <p>
+                단위: bpm
+              </p>
+            </div>
+            <section class="manage-average-bar mt25">
+              <ul>
+                <li>
+                  <em>최소 78</em>
+                </li>
+                <li class="active">
+                  <strong>평균 91</strong>
+                </li>
+                <li>
+                  <em>최대 100</em>
+                </li>
+              </ul>
+            </section>
+            <div class="manage-graph show-number mt15">
+              <div class="manage-graph__label">
+                <label class="red">최저 심박수</label>
+                <label class="yellow">평균 심박수</label>
+                <label class="blue">최고 심박수</label>
+              </div>
+              <div class="manage-graph__box">
+                <ul class="manage-graph__grid small">
+                  <li><span>200</span></li>
+                  <li><span>160</span></li>
+                  <li><span>120</span></li>
+                  <li><span>80</span></li>
+                  <li><span>40</span></li>
+                  <li><span>0</span></li>
+                </ul>
+                <div class="manage-graph__table-dot">
+                  <ul>
+                    <li class="width-line" style="bottom: 95%; background: #22a2d1;"></li>
+                    <li class="width-line" style="bottom: 70%; background: #ff0000;"></li>
+                    <li class="width-line" style="bottom: 50%; background: #fcaf17;"></li>
+                    <li>
+                      <span><b>월</b></span>
+                      <div style="bottom: 95%;"><i style="background: #22a2d1;"></i></div>
+                      <div style="bottom: 70%;"><i style="background: #ff0000;"></i></div>
+                      <div style="bottom: 50%;"><i style="background: #fcaf17;"></i></div>
+                    </li>
+                    <li>
+                      <span><b>화</b></span>
+                      <div style="bottom: 95%;"><i style="background: #22a2d1;"></i></div>
+                      <div style="bottom: 70%;"><i style="background: #ff0000;"></i></div>
+                      <div style="bottom: 50%;"><i style="background: #fcaf17;"></i></div>
+                    </li>
+                    <li>
+                      <span><b>수</b></span>
+                      <div style="bottom: 95%;"><i style="background: #22a2d1;"></i></div>
+                      <div style="bottom: 70%;"><i style="background: #ff0000;"></i></div>
+                      <div style="bottom: 50%;"><i style="background: #fcaf17;"></i></div>
+                    </li>
+                    <li>
+                      <span><b>목</b></span>
+                      <div style="bottom: 95%;"><i style="background: #22a2d1;"></i></div>
+                      <div style="bottom: 70%;"><i style="background: #ff0000;"></i></div>
+                      <div style="bottom: 50%;"><i style="background: #fcaf17;"></i></div>
+                    </li>
+                    <li>
+                      <span><b>금</b></span>
+                      <div style="bottom: 95%;"><i style="background: #22a2d1;"></i></div>
+                      <div style="bottom: 70%;"><i style="background: #ff0000;"></i></div>
+                      <div style="bottom: 50%;"><i style="background: #fcaf17;"></i></div>
+                    </li>
+                    <li>
+                      <span><b>토</b></span>
+                      <div style="bottom: 95%;"><i style="background: #22a2d1;"></i></div>
+                      <div style="bottom: 70%;"><i style="background: #ff0000;"></i></div>
+                      <div style="bottom: 50%;"><i style="background: #fcaf17;"></i></div>
+                    </li>
+                    <li>
+                      <span><b>일</b></span>
+                      <div style="bottom: 95%;"><i style="background: #22a2d1;"></i></div>
+                      <div style="bottom: 70%;"><i style="background: #ff0000;"></i></div>
+                      <div style="bottom: 50%;"><i style="background: #fcaf17;"></i></div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="manage-super-text mt25">
+              2021년 06월
+            </div>
+            <ul class="manage-list mt10 mb40">
+              <li>
+                <div class="gray small">평균 심박수</div>
+                <div class="right">78bpm</div>
+              </li>
+              <li>
+                <div class="gray small">최소 심박수</div>
+                <div class="right">80bpm</div>
+              </li>
+              <li>
+                <div class="gray small">최대 심박수</div>
+                <div class="right">120bpm</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer footer__nav">
+    <nav>
+      <ul>
+        <li class="on">
+          <button type="button">
+            <i class="icon-home icon-16"></i>
+            <span>홈</span>
+          </button>
+        </li>
+        <li>
+          <button type="button">
+            <i class="icon-pro icon-16"></i>
+            <span>프로그램</span>
+          </button>
+        </li>
+        <li>
+          <button type="button">
+            <i class="icon-info icon-16"></i>
+            <span>증상ㆍ병원</span>
+          </button>
+        </li>
+        <li>
+          <button type="button">
+            <i class="icon-my icon-16"></i>
+            <span>MY</span>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+
+<!-- 팝업 // -->
+<div class="modal-popup mpd_718__popup">
+  <div class="modal-popup__outer">
+    <section class="modal-popup__container">
+      <article class="modal-popup__header">
+        <button class="modal-popup__close only-icon">
+          <i class="icon-x icon-20">닫기</i>
+        </button>
+      </article>
+      <div class="mdp_72__popup-cont">
+        <ul class="mdp_72__popup-button">
+          <li>
+            <button type="button">
+              데이터 연동
+            </button>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </div>
+</div>
+<!-- // 팝업 -->
+
+
+<script>
+  tab.reset();
+  $('.tab__item').click(function () {
+    tab.action($(this));
+  })
+
+</script>
+</body>
+</html>

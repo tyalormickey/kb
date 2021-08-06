@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
+    <link rel='stylesheet' type='text/css' href='../../css/morpheus-reset.min.css'/>
+    <link rel='stylesheet' type='text/css' href='../../css/morpheus-common.css'/>
+    <link rel='stylesheet' type='text/css' href='../../css/morpheus-style.css'/>
+
+    <script src='../../js/libs/jquery-3.1.1.min.js'></script>
+    <script src='../../js/swiper.min.js'></script>
+    <script src='../../js/ui.js'></script>
+</head>
+<body>
+
+<div class="wrapper">
+  <div class="header">
+    <header>
+      <div class="header__back">
+        <div class="back">
+          <button type="button" class="only-icon">
+            <i class="icon-arrow_left icon-20">뒤로가기</i>
+          </button>
+        </div>
+        <div class="title">
+          건강검진 결과
+        </div>
+        <div class="right-icons">
+          <button type="button" class="only-icon">
+            <i class="icon-camera_02 icon-20">카메라</i>
+          </button>
+          <button type="button" class="only-icon">
+            <i class="icon-alarm on icon-20">알람</i>
+          </button>
+        </div>
+      </div>
+    </header>
+  </div>
+  <div class="content-wrap">
+    <div class="scrollBox">
+      <section class="checkup-result__top">
+        <ul>
+          <li>
+            <p>건강검진조회</p>
+            <div>
+              <!-- 2020.08.05 툴팁 -->
+              <button type="button" class="block inline small tooltip-button" onclick="tooltip.open($(this));" data-title="건강검진조회 방식을 선택해주세요" data-text="건강분석질문 100점 단위로 건강점수만 제공합니다. 일반검진(공동인증서 필요), 종합검진 조회를 하시면 보다 자세한 정보를 확인할 수 있습니다.">
+                업데이트
+              </button>
+              <div class="tooltip-add">
+                <ul class="manage__inquire-list">
+                  <li><button class="manage__inquire-btn" type="button">일반검진 조회</button></li>
+                  <li><button class="manage__inquire-btn" type="button">GC 녹십자 종합검진 조회</button></li>
+                  <li><button class="manage__inquire-btn" type="button">건강분석 질문</button></li>
+                </ul>
+              </div>
+              <!-- EOD : 2020.08.05 툴팁 -->
+            </div>
+          </li>
+          <li>
+            <p>검진일</p>
+            <div>
+              <div class="custom-select">
+                <dl class="default">
+                  <dt>
+                    <button type="button">
+                      <span>선택해주세요.선택해주세요.선택해주세요.</span>
+                    </button>
+                  </dt>
+                  <dd>
+                    <ul>
+                      <li class="selected"><button type="button">2021.04.16 종합검진</button></li>
+                      <li><button type="button">2021.04.16 종합검진</button></li>
+                    </ul>
+                  </dd>
+                </dl>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="checkup-result__contents">
+        <div class="manage-h3 mt40">
+          <strong>검진기관</strong>
+        </div>
+        <div class="manage-text black mt15">
+          (재)한국의학연구소한국중부의원
+        </div>
+        <div class="manage-h3 mt40">
+          <strong>종합소견</strong>
+        </div>
+        <div class="checkup-result__box mt15">
+          종합소견 노출 종합소견 노출 종합소견 노출 종합소견 노출 종합소견 노출 종합소견 노출 종합소견 노출 종합소견 노출 종합소견 노출 종합소견 노출 종합소견 노출 종합소견 노출 종합소견 노출 종합소견 노출 종합소견 노출
+        </div>
+        
+        <div>
+          <div class="manage-h4 with-tag mt25">
+            <strong>비만</strong>
+            <button type="button">
+              <i class="icon-arrow_right icon-18">바로가기</i>
+            </button>
+          </div>
+          <div class="checkup-result__box mt12">
+            <dl>
+              <dt>정상</dt>
+              <dd>체질량 31kg/m2</dd>
+            </dl>
+            <dl>
+              <dt>정상</dt>
+              <dd>허리둘레 89cm</dd>
+            </dl>
+          </div>
+
+          <div class="manage-h4 with-tag mt25">
+            <strong>당뇨</strong>
+            <button type="button">
+              <i class="icon-arrow_right icon-18">바로가기</i>
+            </button>
+          </div>
+          <div class="checkup-result__box mt12">
+            <dl>
+              <dt>정상</dt>
+              <dd>공복시혈당 120mg/dL</dd>
+            </dl>
+          </div>
+
+          <div class="manage-h4 with-tag mt25">
+            <strong>고혈압</strong>
+            <button type="button">
+              <i class="icon-arrow_right icon-18">바로가기</i>
+            </button>
+          </div>
+          <div class="checkup-result__box mt12">
+            <dl>
+              <dt>정상</dt>
+              <dd>수축기혈압 119mm/Hg</dd>
+            </dl>
+            <dl>
+              <dt>정상</dt>
+              <dd>이완기혈압 78mm/hg</dd>
+            </dl>
+          </div>
+
+          <div class="manage-h4 with-tag mt25">
+            <strong>이상지질혈증</strong>
+            <button type="button">
+              <i class="icon-arrow_right icon-18">바로가기</i>
+            </button>
+          </div>
+          <div class="checkup-result__box mt12">
+            <dl>
+              <dt class="red">위험</dt>
+              <dd>총콜레스테롤 200mg/dL</dd>
+            </dl>
+            <dl>
+              <dt class="yellow">주의</dt>
+              <dd>HDL콜레스테롤 60mg/dL</dd>
+            </dl>
+            <dl>
+              <dt class="yellow">주의</dt>
+              <dd>중성지방 149mg/dL</dd>
+            </dl>
+            <dl>
+              <dt>정상</dt>
+              <dd>LDL콜레스테롤 1129mg/dL</dd>
+            </dl>
+          </div>
+
+          <div class="manage-h4 with-tag mt25">
+            <strong>간장질환</strong>
+            <button type="button">
+              <i class="icon-arrow_right icon-18">바로가기</i>
+            </button>
+          </div>
+          <div class="checkup-result__box mt12">
+            <dl>
+              <dt class="red">위험</dt>
+              <dd>ALT(SGOT) 200U/L</dd>
+            </dl>
+            <dl>
+              <dt class="yellow">주의</dt>
+              <dd>AST(SGPT) 60U/L</dd>
+            </dl>
+            <dl>
+              <dt class="yellow">주의</dt>
+              <dd>y-GTP 149U/L</dd>
+            </dl>
+          </div>
+
+          <div class="manage-h4 with-tag mt25">
+            <strong>신장질환</strong>
+            <button type="button">
+              <i class="icon-arrow_right icon-18">바로가기</i>
+            </button>
+          </div>
+          <div class="checkup-result__box mt12">
+            <dl>
+              <dt>정상</dt>
+              <dd>신사구체여과율 72mL/min</dd>
+            </dl>
+            <dl>
+              <dt class="coral">주의</dt>
+              <dd>혈청크레아티닌 1.5mg/dL</dd>
+            </dl>
+            <dl>
+              <dt>정상</dt>
+              <dd>LDL콜레스테롤 1129mg/dL</dd>
+            </dl>
+          </div>
+        </div>
+
+        <div class="manage-h3 mt40">
+          <strong>검진결과 비교</strong>
+        </div>
+        <div class="checkup-result__text mt15">
+          Peer 그룹은 <strong>서울시 마포구, 40대, 남성 </strong> <br>기준입니다.
+        </div>
+        <div class="manage-table checkup-result__table no-border mt12 mb30">
+          <table>
+            <colgroup>
+              <col width="*" />
+              <col width="22%" />
+              <col width="22%" />
+              <col width="22%" />
+            </colgroup>
+            <tbody>
+              <tr>
+                <th>검사항목</th>
+                <th>2021년</th>
+                <th>2019년</th>
+                <th>Peer 비교</th>
+              </tr>
+              <tr>
+                <td>
+                  신장(cm)
+                </td>
+                <td class="black center">
+                  178
+                </td>
+                <td class="black center">
+                  64
+                </td>
+                <td class="black center">
+                  -
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  체중(kg)
+                </td>
+                <td class="black center">
+                  72.9
+                </td>
+                <td class="black center">
+                  87.0
+                </td>
+                <td class="black center">
+                  -
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  허리둘레(cm)
+                </td>
+                <td class="black center">
+                  72.9
+                </td>
+                <td class="black center">
+                  3432
+                </td>
+                <td class="black center">
+                  3432
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  체질량지수<br/>(Kg/m2)
+                </td>
+                <td class="red center">
+                  72.9
+                </td>
+                <td class="black center">
+                  3432
+                </td>
+                <td class="black center">
+                  3432
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  공복혈당<br/>(mg/dL)
+                </td>
+                <td class="black center">
+                  72.9
+                </td>
+                <td class="black center">
+                  3432
+                </td>
+                <td class="black center">
+                  3432
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  수축기혈압<br/>(mmHg)
+                </td>
+                <td class="red center">
+                  72.9
+                </td>
+                <td class="black center">
+                  3432
+                </td>
+                <td class="black center">
+                  3432
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  이완기혈압<br/>(mmHg)
+                </td>
+                <td class="black center">
+                  72.9
+                </td>
+                <td class="red center">
+                  3432
+                </td>
+                <td class="black center">
+                  3432
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  총콜레스테롤<br/>(mg/dL)
+                </td>
+                <td class="black center">
+                  72.9
+                </td>
+                <td class="black center">
+                  3432
+                </td>
+                <td class="black center">
+                  3432
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  혈색소(g/dL)
+                </td>
+                <td class="black center">
+                  72.9
+                </td>
+                <td class="black center">
+                  3432
+                </td>
+                <td class="black center">
+                  3432
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  SGOT(AST)<br/>(U/L)
+                </td>
+                <td class="black center">
+                  72.9
+                </td>
+                <td class="black center">
+                  3432
+                </td>
+                <td class="black center">
+                  3432
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  SGPT(ALT)<br/>(U/L)
+                </td>
+                <td class="black center">
+                  72.9
+                </td>
+                <td class="black center">
+                  3432
+                </td>
+                <td class="black center">
+                  3432
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  γ-GTP(U/L)
+                </td>
+                <td class="black center">
+                  3432
+                </td>
+                <td class="black center">
+                  3432
+                </td>
+                <td class="black center">
+                  3432
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- start: no-data -->
+      <!-- <div class="checkup-result__no message-box">
+        <div class="message-box__wrap">
+          <div class="message-box__icon">
+            <i class="icon-nodata icon-40"></i>
+          </div>
+          <div class="message-box__sub-title">
+            건강검진 결과 내역이 없습니다.<br>
+            업데이트를 선택하시면  건강정보를<br>
+            조회할 수 있습니다.
+          </div>
+        </div>
+      </div> -->
+      <!-- end: no-data -->
+    </div>
+  </div>
+  <div class="footer footer__nav">
+    <nav>
+      <ul>
+        <li class="on">
+          <button type="button">
+            <i class="icon-home icon-16"></i>
+            <span>홈</span>
+          </button>
+        </li>
+        <li>
+          <button type="button">
+            <i class="icon-pro icon-16"></i>
+            <span>프로그램</span>
+          </button>
+        </li>
+        <li>
+          <button type="button">
+            <i class="icon-info icon-16"></i>
+            <span>증상ㆍ병원</span>
+          </button>
+        </li>
+        <li>
+          <button type="button">
+            <i class="icon-my icon-16"></i>
+            <span>MY</span>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+
+<div class="text__flicking">
+  <a href="">링크1</a>
+  <a href="">링크2</a>
+  <a href="">링크3</a>
+  <div>text</div>
+  <div>dd!!@#</div>
+
+</div>
+
+<script>
+  var deleteConfig = {
+      type: 'confirm',
+      text: '데이터를 제거하시겠습니까?',
+      ok: deleteOk
+  }
+
+  function deleteOk() {
+      console.log('제거')
+  }
+
+  // setTimeout(function() {
+    var massageHi = $('.scrollBox').height() - $('.checkup-result__top').height()
+    $('.message-box').each(function() {
+      $(this).css('height', massageHi - 40)
+    })
+  // }, 100)
+</script>
+</body>
+</html>

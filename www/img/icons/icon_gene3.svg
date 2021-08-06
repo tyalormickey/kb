@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="icon_f_insurance-application_l_24" width="64" height="64" viewBox="0 0 64 64">
+    <defs>
+        <style>
+            .cls-2{fill:#333}
+        </style>
+    </defs>
+    <path id="사각형_631" fill="none" d="M0 0H64V64H0z"/>
+    <path id="패스_518" d="M706.864 1233.244h-34.429a8.325 8.325 0 0 1-8.316-8.315v-55.674h36.546l14.827 14.367v17.627h-4v-15.934l-12.446-12.06h-30.927v51.674a4.321 4.321 0 0 0 4.316 4.316h34.429z" class="cls-2" transform="translate(-662.119 -1169.255)"/>
+    <path id="패스_519" d="M712.544 1187.458h-6.316a8.324 8.324 0 0 1-8.317-8.312v-6.313h4v6.313a4.32 4.32 0 0 0 4.316 4.313h6.316z" class="cls-2" transform="translate(-662.119 -1169.255)"/>
+    <path id="사각형_628" d="M0 0H18.949V3.994H0z" class="cls-2" transform="translate(18.212 22.104)"/>
+    <path id="사각형_629" d="M0 0H18.949V3.994H0z" class="cls-2" transform="translate(18.212 31.576)"/>
+    <path id="패스_520" d="M707.667 1233.255l-11.966-.091v-11.626l20.773-20.462 4.746 4.743a9.889 9.889 0 0 1 0 13.99l-10.353 10.349zm-7.966-4.06l6.36.048 2-1.935 10.33-10.327a5.89 5.89 0 0 0 0-8.333l-1.937-1.937-16.753 16.5z" class="cls-2" transform="translate(-662.119 -1169.255)"/>
+    <path id="사각형_630" d="M0 0H4.003V13.472H0z" class="cls-2" transform="matrix(0.707, -0.707, 0.707, 0.707, 47.315, 41.188)"/>
+</svg>

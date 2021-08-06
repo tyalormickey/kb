@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-reset.min.css'/>
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-common.css'/>
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-style.css'/>
+
+  <script src='../../js/libs/jquery-3.1.1.min.js'></script>
+  <script src='../../js/swiper.min.js'></script>
+  <script src='../../js/ui.js'></script>
+</head>
+<body>
+
+<div class="wrapper">
+  <div class="header">
+    <header>
+      <div class="header__back">
+        <div class="back">
+          <button type="button" class="only-icon">
+            <i class="icon-arrow_left icon-20">뒤로가기</i>
+          </button>
+        </div>
+        <div class="title">
+          쿠폰함
+        </div>
+        <div class="right-icons">
+          <button type="button" class="only-icon">
+            <i class="icon-camera_02 icon-20">카메라</i>
+          </button>
+          <button type="button" class="only-icon">
+            <i class="icon-alarm on icon-20">알람</i>
+          </button>
+        </div>
+      </div>
+    </header>
+  </div>
+  <div class="content-wrap">
+    <div class="scrollBox my-page">
+      <div class="tab__wrap my-coupon">
+        <ul class="tab">
+          <li class="tab__item">
+            <button type="button">
+              <span>서비스 이용권(2)</span>
+            </button>
+          </li>
+          <li class="tab__item">
+            <button type="button">
+              <span>상품 교환권(0)</span>
+            </button>
+          </li>
+        </ul>
+        <div class="tab__swiper swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide my-page__wrap">
+              <!-- start: if data length > 0 -->
+              <div class="my-coupon__list">
+                <div class="card-item">
+                  <button type="button">
+                    <span class="card-item__tag">
+                      <div class="tag">
+                        D-41
+                      </div>
+                      <div class="card-item__tag-info">
+                        케어 & 힙업 다이어트 클래스
+                      </div>
+                    </span>
+                    <span class="card-item__title">
+                      케어니스 3회 이용권케어니스 3회 이용권케어니스 3회 이용권
+                    </span>
+                    <span class="card-item__date">
+                      2021.06.30까지 사용 가능
+                    </span>
+                  </button>
+                </div>
+                <div class="card-item disabled">
+                  <button type="button" disabled>
+                    <span class="card-item__tag">
+                      <div class="tag">
+                        사용완료
+                      </div>
+                      <div class="card-item__tag-info">
+                        스쿼트 클래스
+                      </div>
+                    </span>
+                    <span class="card-item__title">
+                      프로그램 50,000원 할인권
+                    </span>
+                    <span class="card-item__date">
+                      2021.06.30까지 사용 가능
+                    </span>
+                    <span class="card-item__stamp">
+                      <img src="../../img/icon_finsh.svg" alt="사용완료" />
+                    </span>
+                  </button>
+                </div>
+                <div class="card-item disabled">
+                  <button type="button" disabled>
+                    <span class="card-item__tag">
+                      <div class="tag">
+                        기간만료
+                      </div>
+                      <div class="card-item__tag-info">
+                        스쿼트 클래스
+                      </div>
+                    </span>
+                    <span class="card-item__title">
+                      프로그램 50,000원 할인권
+                    </span>
+                    <span class="card-item__date">
+                      2021.06.30까지 사용 가능
+                    </span>
+                    <span class="card-item__stamp">
+                      <img src="../../img/icon_end_date.svg" alt="기간만료" />
+                    </span>
+                  </button>
+                </div>
+              </div>
+              <!-- end: if data length > 0 -->
+              <!-- start: else no-data -->
+              <!-- <div class="message-box">
+                <div class="message-box__wrap">
+                  <div class="message-box__icon">
+                    <i class="icon-nodata icon-40"></i>
+                  </div>
+                  <div class="message-box__sub-title">
+                    이용권이 없습니다.
+                  </div>
+                </div>
+              </div> -->
+              <!-- end: else no-data -->
+            </div>
+            <div class="swiper-slide my-page__wrap">
+              <!-- start: if data length > 0 -->
+              <div class="my-coupon__list my-product">
+                <div class="card-item">
+                  <button type="button">
+                    <dl class="my-product__item">
+                      <dt>
+                        <img src="../../img/coffee_icon.png" />
+                      </dt>
+                      <dd>
+                        <span class="card-item__tag">
+                          <div class="card-item__tag-info">
+                            스타벅스
+                          </div>
+                        </span>
+                        <span class="card-item__title">
+                          아이스 카페 아메리카노 Tall아이스 카페 아메리카노 Tall
+                        </span>
+                        <span class="card-item__date">
+                          2021.06.30까지 사용 가능
+                        </span>
+                      </dd>
+                    </dl>
+                  </button>
+                </div>
+                <div class="card-item disabled">
+                  <button type="button" disabled>
+                    <dl class="my-product__item">
+                      <dt>
+                        <img src="../../img/coffee_icon.png" />
+                      </dt>
+                      <dd>
+                        <span class="card-item__tag">
+                          <div class="card-item__tag-info">
+                            스타벅스
+                          </div>
+                        </span>
+                        <span class="card-item__title">
+                          아이스 카페 아메리카노 Tall
+                        </span>
+                        <span class="card-item__date">
+                          2021.06.30까지 사용 가능
+                        </span>
+                      </dd>
+                    </dl>
+                    <span class="card-item__stamp">
+                      <img src="../../img/icon_finsh.svg" alt="사용완료" />
+                    </span>
+                  </button>
+                </div>
+                <div class="card-item disabled">
+                  <button type="button" disabled>
+                    <dl class="my-product__item">
+                      <dt>
+                        <img src="../../img/coffee_icon.png" />
+                      </dt>
+                      <dd>
+                        <span class="card-item__tag">
+                          <div class="card-item__tag-info">
+                            스타벅스
+                          </div>
+                        </span>
+                        <span class="card-item__title">
+                          아이스 카페 아메리카노 Tall
+                        </span>
+                        <span class="card-item__date">
+                          2021.06.30까지 사용 가능
+                        </span>
+                      </dd>
+                    </dl>
+                    <span class="card-item__stamp">
+                      <img src="../../img/icon_end_date.svg" alt="기간만료" />
+                    </span>
+                  </button>
+                </div>
+              </div>
+              <!-- end: if data length > 0 -->
+              <!-- start: else no-data -->
+              <!-- <div class="message-box">
+                <div class="message-box__wrap">
+                  <div class="message-box__icon">
+                    <i class="icon-nodata icon-40"></i>
+                  </div>
+                  <div class="message-box__sub-title">
+                    교환권이 없습니다.
+                  </div>
+                </div>
+              </div> -->
+              <!-- end: else no-data -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer footer__nav">
+    <nav>
+        <ul>
+            <li class="on">
+                <button type="button">
+                    <i class="icon-home icon-16"></i>
+                    <span>홈</span>
+                </button>
+            </li>
+            <li>
+                <button type="button">
+                    <i class="icon-pro icon-16"></i>
+            <span>프로그램</span>
+          </button>
+        </li>
+        <li>
+          <button type="button">
+            <i class="icon-info icon-16"></i>
+            <span>증상ㆍ병원</span>
+          </button>
+        </li>
+        <li>
+          <button type="button">
+            <i class="icon-my icon-16"></i>
+            <span>MY</span>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+
+<script>
+  tab.reset();
+  setTimeout(function() {
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 1,
+      autoHeight: true
+    });
+    $('.tab__item').click(function() {
+      tab.action($(this), true, swiper)
+    });
+    swiper.on('slideChangeTransitionEnd', function() {
+      var onItem = 'tab__item--on'
+      const tabs = swiper.$el.prev('.tab').children('.tab__item')
+      tabs.removeClass(onItem)
+      tabs.eq(swiper.realIndex).addClass(onItem)
+    });
+    var massageHi = $('.tab__wrap').height() - $('.tab').height()
+    console.log(massageHi)
+    $('.message-box').each(function() {
+      $(this).css('height', massageHi - 40)
+    })
+  }, 100);
+
+</script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="icon_m_news" width="52" height="64" viewBox="0 0 52 64">
+    <defs>
+        <style>
+            .cls-1{fill:#fff}
+        </style>
+    </defs>
+    <path id="Path_185" d="M206.594 698.262h-42.1a9.93 9.93 0 0 1-9.9-9.94v-26.661h4.01v26.661a5.917 5.917 0 0 0 5.889 5.931h38.091V644.2a5.916 5.916 0 0 0-5.888-5.931H158.6v13.868h-4.01v-17.875h42.1a9.93 9.93 0 0 1 9.9 9.94z" class="cls-1" transform="translate(-154.594 -634.262)"/>
+    <path id="Rectangle_311" d="M0 0H28V4H0z" class="cls-1" transform="translate(12.105 17.82)"/>
+    <path id="Rectangle_312" d="M0 0H28V4H0z" class="cls-1" transform="translate(12.105 41.817)"/>
+    <path id="Rectangle_313" d="M0 0H28V4H0z" class="cls-1" transform="translate(12.105 29.818)"/>
+</svg>

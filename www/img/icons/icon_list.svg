@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="icon_m__list" width="64" height="64" viewBox="0 0 64 55.999">
+    <defs>
+        <style>
+            .cls-1{fill:#333}
+        </style>
+    </defs>
+    <g id="icon_m_pc_l_24" transform="translate(-148.04 -2.369)">
+        <path id="Path_206" d="M212.04 49.186h-54.1a9.779 9.779 0 0 1-9.9-9.635V2.369h54.105A9.779 9.779 0 0 1 212.04 12v18.127h-4V12a5.791 5.791 0 0 0-5.895-5.668H152.04v33.219a5.792 5.792 0 0 0 5.9 5.668h50.1v-8.727h4z" class="cls-1"/>
+        <path id="Rectangle_332" d="M0 0H58.421V3.968H0z" class="cls-1" transform="translate(150.04 36.428)"/>
+        <path id="Rectangle_333" d="M0 0H4V9.182H0z" class="cls-1" transform="translate(178.04 48.732)"/>
+        <path id="Rectangle_334" d="M0 0H37.896V3.968H0z" class="cls-1" transform="translate(161.092 54.4)"/>
+    </g>
+</svg>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-reset.min.css'/>
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-common.css'/>
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-style.css'/>
+
+  <script src='../../js/libs/jquery-3.1.1.min.js'></script>
+  <script src='../../js/swiper.min.js'></script>
+  <script src='../../js/ui.js'></script>
+</head>
+<body>
+
+<div class="wrapper">
+</div>
+
+<div class="modal-popup photo-popup-buttons">
+  <div class="photo-popup-buttons__box">
+    <ul class="photo-popup-buttons__list">
+      <li>
+        <button type="button">사진촬영</button>
+      </li>
+      <li>
+        <button type="button">갤러리</button>
+      </li>
+      <li>
+        <button type="button">기본 이미지로 변경</button>
+      </li>
+    </ul>
+    <div class="photo-popup-buttons__cancel">
+      <button type="button" onclick="modal.close($('.photo-popup-buttons'))">
+        취소
+      </button>
+    </div>
+  </div>
+</div>
+
+<script>
+  var logout = {
+    type: 'confirm',
+    text: '로그아웃 하시겠습니까?',
+    okText: '로그아웃',
+    cancelText: '취소',
+    ok: handleOk,
+    cancel: handleCancel
+  }
+
+  // modal.alert(false, logout);
+
+  modal.open($('.photo-popup-buttons__box button'), '.photo-popup-buttons')
+
+  function handleOk () {
+    console.log('로그아웃')
+  }
+
+  function handleCancel () {
+    console.log('취소')
+  }
+</script>
+</body>
+</html>

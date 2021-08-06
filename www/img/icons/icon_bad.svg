@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="icon_m_bad01_160" width="160" height="160" viewBox="0 0 160 160">
+    <defs>
+        <clipPath id="clip-path">
+            <path id="사각형_578" d="M0 0H72.002V24.001H0z" class="cls-1" transform="translate(0 0)"/>
+        </clipPath>
+        <style>
+            .cls-1{fill:#333;stroke:transparent;stroke-miterlimit:10}
+        </style>
+    </defs>
+    <path id="패스_472" fill="#333" d="M812.5 1965.1a79.979 79.979 0 1 1 66.765-35.912l-.21.288-.447.559-6.251-4.991.333-.417a72 72 0 1 0-17.922 18.768l4.7 6.472A79.413 79.413 0 0 1 812.5 1965.1z" transform="translate(-732.5 -1805.099)"/>
+    <g id="마스크_그룹_9" clip-path="url(#clip-path)" transform="translate(43.997 92.002)">
+        <path id="패스_473" d="M57.991 95.9a34 34 0 1 1 34-34 34.039 34.039 0 0 1-34 34zm0-59.48a25.479 25.479 0 1 0 25.48 25.48 25.507 25.507 0 0 0-25.48-25.476z" class="cls-1" transform="translate(-22.993 -27.903)"/>
+    </g>
+    <path id="사각형_579" d="M0 0H44.001V8H0z" class="cls-1" transform="translate(27.997 54.001)"/>
+    <path id="사각형_580" d="M0 0H44.001V8H0z" class="cls-1" transform="translate(87.998 54.001)"/>
+    <path id="사각형_581" d="M0 0H8V16H0z" class="cls-1" transform="translate(35.997 62.002)"/>
+    <path id="사각형_582" d="M0 0H8V16H0z" class="cls-1" transform="translate(95.998 62.002)"/>
+    <path id="사각형_583" d="M0 0H8V16H0z" class="cls-1" transform="translate(55.997 62.002)"/>
+    <path id="사각형_584" d="M0 0H8V16H0z" class="cls-1" transform="translate(115.999 62.002)"/>
+</svg>

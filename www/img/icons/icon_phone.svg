@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="iconm_m_phone01" width="64" height="64" viewBox="0 0 64 64">
+    <defs>
+        <style>
+            .cls-2{fill:#333}
+        </style>
+    </defs>
+    <path id="Rectangle_345" fill="none" d="M0 0H64V64H0z"/>
+    <g id="Group_181" transform="translate(10)">
+        <path id="Rectangle_335" d="M0 0H2.5V5.763H0z" class="cls-2" transform="translate(27.189 19.439)"/>
+        <path id="Rectangle_336" d="M0 0H5.763V2.5H0z" class="cls-2" transform="translate(26.837 23.281) rotate(-20.06)"/>
+        <path id="Rectangle_337" d="M0 0H2.5V5.763H0z" class="cls-2" transform="translate(23.771 23.652) rotate(-69.931)"/>
+        <path id="Rectangle_338" d="M0 0H2.5V5.763H0z" class="cls-2" transform="matrix(0.767, -0.642, 0.642, 0.767, 26.721, 23.828)"/>
+        <path id="Rectangle_339" d="M0 0H5.764V2.5H0z" class="cls-2" transform="translate(24.543 26.646) rotate(-50.111)"/>
+        <path id="Rectangle_340" d="M0 0H2.5V5.763H0z" class="cls-2" transform="translate(14.189 19.439)"/>
+        <path id="Rectangle_341" d="M0 0H5.763V2.5H0z" class="cls-2" transform="translate(13.837 23.281) rotate(-20.06)"/>
+        <path id="Rectangle_342" d="M0 0H2.5V5.763H0z" class="cls-2" transform="translate(10.771 23.652) rotate(-69.931)"/>
+        <path id="Rectangle_343" d="M0 0H2.5V5.763H0z" class="cls-2" transform="matrix(0.767, -0.642, 0.642, 0.767, 13.721, 23.828)"/>
+        <path id="Rectangle_344" d="M0 0H5.764V2.5H0z" class="cls-2" transform="translate(11.543 26.646) rotate(-50.111)"/>
+        <path id="Path_210" d="M475.842 56.192a2.5 2.5 0 1 1 2.436-2.5 2.469 2.469 0 0 1-2.436 2.5z" class="cls-2" transform="translate(-454.665)"/>
+        <path id="Path_211" d="M498.665 64h-34.308a9.806 9.806 0 0 1-9.692-9.9v-9.9h34.77v4h-30.77v5.9a5.8 5.8 0 0 0 5.692 5.9h30.308V9.9a5.8 5.8 0 0 0-5.692-5.9h-30.308v35.08h-4V0h34.308a9.806 9.806 0 0 1 9.692 9.9z" class="cls-2" transform="translate(-454.665)"/>
+    </g>
+</svg>

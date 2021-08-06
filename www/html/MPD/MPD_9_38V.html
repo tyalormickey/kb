@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-reset.min.css'/>
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-common.css'/>
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-style.css'/>
+
+  <script src='../../js/libs/jquery-3.1.1.min.js'></script>
+  <script src='../../js/swiper.min.js'></script>
+  <script src='../../js/ui.js'></script>
+</head>
+<body>
+
+<div class="wrapper">
+  <div class="header">
+    <header>
+      <div class="header__back">
+        <div class="back">
+          <button type="button" class="only-icon">
+            <i class="icon-arrow_left icon-20">뒤로가기</i>
+          </button>
+        </div>
+        <div class="title">
+          프로그램 변경
+        </div>
+        <div class="right-icons">
+          <button type="button" class="only-icon">
+            <i class="icon-camera_02 icon-20">카메라</i>
+          </button>
+          <button type="button" class="only-icon">
+            <i class="icon-alarm on icon-20">알람</i>
+          </button>
+        </div>
+      </div>
+    </header>
+  </div>
+  <!-- content-wrap -->
+  <div class="content-wrap footer-button">
+    <!-- scrollBox -->
+    <div class="scrollBox">
+      <div class="manage-h3 mb15">
+        <strong>사용 중인 프로그램</strong>
+      </div>
+      <button type="button" class="program-list__item">
+        <div class="program-list__thumb">
+          <img src="../../img/6.png" alt=""/>
+        </div>
+        <div class="program-list__info">
+          <p class="program-list__title">
+            하루 10분으로 나의 건강운동
+          </p>
+          <p class="program-list__subtitle">
+            입문자를 위한 최적의 구성
+          </p>
+          <div class="program-list__icons">
+            <span><i class="icon-cal icon-14"></i> 4주</span>
+          </div>
+        </div>
+      </button>
+
+      <div class="manage-h3 mt30 mb15">
+        <strong>변경 가능한 프로그램</strong>
+      </div>
+
+      <!-- has-coupon-list -->
+      <div class="has-coupon-list type02">
+        <!-- has-coupon-list__item -->
+        <div class="has-coupon-list__item">
+          <label class="input-radio">
+            <input type="radio" name="program"/>
+            <i></i>
+            <div class="box">
+              <button type="button" class="program-list__item">
+                <div class="program-list__thumb">
+                  <img src="../../img/6.png" alt=""/>
+                </div>
+                <div class="program-list__info">
+                  <p class="program-list__title">
+                    인터벌 트레드밀 한 달 완성
+                  </p>
+                  <div class="program-list__icons">
+                    <span><i class="icon-cal icon-14"></i> 4주</span>
+                  </div>
+                </div>
+              </button>
+            </div>
+          </label>
+        </div>
+        <!-- EOD : has-coupon-list__item -->
+      </div>
+      <!-- EOD : has-coupon-list -->
+
+      <!-- has-coupon-list -->
+      <div class="has-coupon-list type02">
+        <!-- has-coupon-list__item -->
+        <div class="has-coupon-list__item">
+          <label class="input-radio">
+            <input type="radio" name="program"/>
+            <i></i>
+            <div class="box">
+              <button type="button" class="program-list__item">
+                <div class="program-list__thumb">
+                  <img src="../../img/6.png" alt=""/>
+                </div>
+                <div class="program-list__info">
+                  <p class="program-list__title">
+                    딱 한 달로 끝내는 홈 트레이닝
+                  </p>
+                  <div class="program-list__icons">
+                    <span><i class="icon-cal icon-14"></i> 2주</span>
+                  </div>
+                </div>
+              </button>
+            </div>
+          </label>
+        </div>
+        <!-- EOD : has-coupon-list__item -->
+      </div>
+      <!-- EOD : has-coupon-list -->
+
+      <!-- has-coupon-list -->
+      <div class="has-coupon-list type02">
+        <!-- has-coupon-list__item -->
+        <div class="has-coupon-list__item">
+          <label class="input-radio">
+            <input type="radio" name="program"/>
+            <i></i>
+            <div class="box">
+              <button type="button" class="program-list__item">
+                <div class="program-list__thumb">
+                  <img src="../../img/6.png" alt=""/>
+                </div>
+                <div class="program-list__info">
+                  <p class="program-list__title">
+                    2주 헬스장 다이어트
+                  </p>
+                  <div class="program-list__icons">
+                    <span><i class="icon-cal icon-14"></i> 2주</span>
+                  </div>
+                </div>
+              </button>
+            </div>
+          </label>
+        </div>
+        <!-- EOD : has-coupon-list__item -->
+      </div>
+      <!-- EOD : has-coupon-list -->
+      <p class="program__sub-info mt15">변경된 프로그램은 내일(신청일의 익일)부터 적용됩니다.</p>
+    </div>
+    <!-- EOD : scrollBox -->
+  </div>
+  <!-- EOD : content-wrap -->
+
+  <div class="footer footer__button-nav">
+    <button type="button" class="block" onclick="modal.alert($(this), programChangeConfig, true)">프로그램 변경하기</button>
+    <nav>
+      <ul>
+        <li class="on">
+          <button type="button">
+            <i class="icon-home icon-16"></i>
+            <span>홈</span>
+          </button>
+        </li>
+        <li>
+          <button type="button">
+            <i class="icon-pro icon-16"></i>
+            <span>프로그램</span>
+          </button>
+        </li>
+        <li>
+          <button type="button">
+            <i class="icon-info icon-16"></i>
+            <span>증상ㆍ병원</span>
+          </button>
+        </li>
+        <li>
+          <button type="button">
+            <i class="icon-my icon-16"></i>
+            <span>MY</span>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+
+<script>
+  var programChangeConfig = {
+    type: 'confirm',
+    text: '<div class="multiple__change"><p class="manage-h3 mb15">인터벌 트레드밀 한 달 완성</p><p class="multiple__change-text">프로그램을 변경하시겠습니까?</p></div>',
+    mode: "multiple",
+    modeChangeText:'프로그램이 변경되었습니다.<br/>변경된 프로그램은 내일(8/5)부터 적용됩니다.',
+    ok: handleOk,
+    cancel: handleCancel,
+  }
+
+  function handleOk() {
+    console.log('확인'); 
+  }
+
+  function handleCancel() {
+    console.log('취소');
+  }
+</script>
+</body>
+</html>

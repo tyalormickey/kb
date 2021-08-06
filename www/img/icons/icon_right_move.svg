@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="icon_m_right_move" width="64" height="46" viewBox="0 0 64 46">
+    <defs>
+        <style>
+            .cls-1{fill:#fff}
+        </style>
+    </defs>
+    <path id="Rectangle_308" d="M0 0H60V3.938H0z" class="cls-1" transform="translate(0 21)"/>
+    <path id="Path_184" d="M2.818 670.188l23.9-23-23.9-23L0 627.118l20.852 20.07L0 667.259z" class="cls-1" transform="translate(37.285 -624.188)"/>
+</svg>

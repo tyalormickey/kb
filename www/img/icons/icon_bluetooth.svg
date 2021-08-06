@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="icon_m_bluetooch" width="72" height="72" viewBox="0 0 72 72">
+    <defs>
+        <style>
+            .cls-2{fill:#333}
+        </style>
+    </defs>
+    <path id="Rectangle_370" fill="none" d="M0 0H72V72H0z"/>
+    <g id="icon_m_upload_l_24" transform="translate(-359.216 -82)">
+        <path id="Rectangle_369" d="M0 0H3.979V72H0z" class="cls-2" transform="translate(393.47 82)"/>
+        <path id="Path_257" d="M375.819 138.3l-2.6-3.025L393.072 118l-19.856-17.271 2.6-3.024L399.154 118z" class="cls-2"/>
+        <path id="Path_258" d="M397.439 119.539l-2.724-2.915 16.689-15.76L394.715 85.1l2.724-2.915 19.777 18.675z" class="cls-2"/>
+        <path id="Path_259" d="M397.439 153.811l-2.724-2.915 16.689-15.76-16.689-15.76 2.724-2.915 19.777 18.675z" class="cls-2"/>
+    </g>
+</svg>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
+    <link rel='stylesheet' type='text/css' href='../../css/morpheus-reset.min.css'/>
+    <link rel='stylesheet' type='text/css' href='../../css/morpheus-common.css'/>
+    <link rel='stylesheet' type='text/css' href='../../css/morpheus-style.css'/>
+
+    <script src='../../js/libs/jquery-3.1.1.min.js'></script>
+    <script src='../../js/swiper.min.js'></script>
+    <script src='../../js/ui.js'></script>
+</head>
+<body>
+
+<div class="wrapper">
+  <div class="header">
+    <header>
+      <div class="header__title">
+        <div class="title">
+          수면 기록 편집
+        </div>
+        <div class="header__title--close">
+          <button type="button" class="only-icon">
+            <i class="icon-x icon-20">닫기</i>
+          </button>
+        </div>
+      </div>
+    </header>
+  </div>
+  <div class="content-wrap footer-none">
+    <div class="scrollBox">
+      <section class="page-diet__top-date">
+        <strong>2021.06.20~2021.06.20</strong>
+      </section>
+      <section class="manage-recode__label mt40">
+          <div class="item red">디바이스</div>
+          <div class="item green">플랫폼</div>
+          <div class="item blue">직접 입력</div>
+      </section>
+      <section class="manage-list-row mt12">
+        <div class="manage-list-row__item">
+          <div class="manage-recode__list-top">
+            <div class="manage-recode__list-top-label blue">
+              <div class="manage-star">
+                <i class="icon-star03"></i>
+                <i class="icon-star03"></i>
+                <i class="icon-star03"></i>
+                <i class="icon-star03"></i>
+                <i class="icon-star02"></i>
+              </div>
+            </div>
+            <div class="manage-recode__list-top-icons">
+              <button type="button" class="only-icon">
+                  <i class="icon-edit icon-16">수정</i>
+              </button>
+              <button type="button" class="only-icon" onclick="modal.alert($(this), deleteConfig)">
+                  <i class="icon-remove icon-16">제거</i>
+              </button>
+            </div>
+          </div>
+          <p class="manage-text black mt10">
+            8시간 30분
+          </p>
+          <p class="manage-sub-text line-height-14 mt10">
+            수면 시작 2021.05.26 오후 3시 20분<br/>
+            수면 종료 2021.05.27 오전 9시 30분
+          </p>
+          <p class="manage-sub-text mt10">
+            2021.05.12(화) 오전 10:23
+          </p>
+        </div>
+        <div class="manage-list-row__item">
+          <div class="manage-recode__list-top">
+            <div class="manage-recode__list-top-label green">
+              <div class="manage-star">
+                <i class="icon-star03"></i>
+                <i class="icon-star03"></i>
+                <i class="icon-star03"></i>
+                <i class="icon-star03"></i>
+                <i class="icon-star02"></i>
+              </div>
+            </div>
+            <div class="manage-recode__list-top-icons">
+              <button type="button" class="only-icon">
+                <i class="icon-edit icon-16">수정</i>
+              </button>
+              <button type="button" class="only-icon" onclick="modal.alert($(this), deleteConfig)">
+                <i class="icon-remove icon-16">제거</i>
+              </button>
+            </div>
+          </div>
+          <p class="manage-text black mt10">
+            8시간 30분
+          </p>
+          <p class="manage-sub-text line-height-14 mt10">
+            수면 시작 2021.05.26 오후 3시 20분<br/>
+            수면 종료 2021.05.27 오전 9시 30분
+          </p>
+          <p class="manage-sub-text mt10">
+            2021.05.12(화) 오전 10:23
+          </p>
+        </div>
+        <div class="manage-list-row__item">
+          <div class="manage-recode__list-top">
+            <div class="manage-recode__list-top-label red">
+              <div class="manage-star">
+                <i class="icon-star03"></i>
+                <i class="icon-star03"></i>
+                <i class="icon-star03"></i>
+                <i class="icon-star03"></i>
+                <i class="icon-star02"></i>
+              </div>
+            </div>
+            <div class="manage-recode__list-top-icons">
+              <button type="button" class="only-icon">
+                <i class="icon-edit icon-16">수정</i>
+              </button>
+              <button type="button" class="only-icon" onclick="modal.alert($(this), deleteConfig)">
+                <i class="icon-remove icon-16">제거</i>
+              </button>
+            </div>
+          </div>
+          <p class="manage-text black mt10">
+            8시간 30분
+          </p>
+          <p class="manage-sub-text line-height-14 mt10">
+            수면 시작 2021.05.26 오후 3시 20분<br/>
+            수면 종료 2021.05.27 오전 9시 30분
+          </p>
+          <p class="manage-sub-text mt10">
+            2021.05.12(화) 오전 10:23
+          </p>
+        </div>
+      </section>
+      <section class="mt30">
+        <button type="button" class="block medium">
+            확인
+        </button>
+      </section>
+    </div>
+  </div>
+</div>
+
+
+<script>
+    var deleteConfig = {
+        type: 'confirm',
+        text: '데이터를 제거하시겠습니까?',
+        ok: deleteOk
+    }
+
+    function deleteOk() {
+        console.log('제거')
+    }
+</script>
+</body>
+</html>

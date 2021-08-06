@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-reset.min.css'/>
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-common.css'/>
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-style.css'/>
+
+  <script src='../../js/libs/jquery-3.1.1.min.js'></script>
+  <script src='../../js/swiper.min.js'></script>
+  <script src='../../js/ui.js'></script>
+</head>
+<body>
+
+<div class="wrapper">
+  <div class="header">
+    <header>
+      <div class="header__back">
+        <div class="back">
+          <button type="button" class="only-icon">
+            <i class="icon-arrow_left icon-20">뒤로가기</i>
+          </button>
+        </div>
+        <div class="title">
+          제품등록
+        </div>
+      </div>
+    </header>
+  </div>
+  <div class="content-wrap footer-none">
+    <div class="scrollBox gene-product">
+
+      <div class="gene-product__logo mt60">
+        <img src="../../img/genestyle-logo.png" />
+      </div>
+
+      <div class="gene-product__title mt40">
+        진스타일 60을 구매해 주셔서 <br>감사합니다.
+      </div>
+      <div class="gene-product__subtitle mt10">
+        수령하신 검사 채취 키트의 바코드를<br>
+        등록해 주세요. 검사 채취 키트에 동봉된<br>
+        설명서를 참조하십시오.
+      </div>
+
+      <div class="manage-h3 mt40">
+        <strong>바코드(10자리) 등록</strong>
+      </div>
+
+      <!-- Start: 등록 전 -->
+      <div class="gene-product__form table-form mt12">
+        <div class="table-form__item">
+          <div class="form-item__flex">
+            <div class="custom-input">
+              <input type="text" placeholder="바코드를 입력하세요"/>
+            </div>
+            <div class="custom-input gene-button">
+              <button type="button" class="block medium" onclick="modal.alert($(this), barCordFalse);">
+                확인
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End: 등록 전 -->
+      <!-- Start: 등록 후 -->
+      <div class="gene-product__form table-form mt12">
+        <div class="table-form__item">
+          <div class="form-item__flex">
+            <div class="custom-input">
+              <input type="text" value="TRG1234567890"/>
+            </div>
+          </div>
+          <div class="gene-product__form-success">
+            확인되었습니다.
+          </div>
+        </div>
+      </div>
+      <!-- End: 등록 후 -->
+      
+      <div class="delivery-process__gray-box gene-product__pre-info mt40">
+        유전자 검사 의뢰서를 작성하기 전에 <br>
+        <strong>사전 설명문</strong>의 내용을 반드시 읽어 보시기 <br>바랍니다.
+      </div>
+
+      <div class="gene-product__info-text mt12">
+        본 설명문은 (주)테라젠바이오에서 제공하는 '소비자 대상 직접 유전자 검사 서비스' 이용 전, 소비자가 해당 서비스의 임상적 유용성, 유전자 검사의 한계 등에 대해 충분한 이해를 가지고 자발적 동의 후 검사를 할 수 있도록 돕기 위해 제공되고 있습니다.
+      </div>
+
+      <button type="button" class="block medium mt30">
+        사전 설명문
+      </button>
+
+      <div class="gene-product__info-text mt40">
+        유전자검사 의뢰서를 작성해주세요.
+      </div>
+      <button type="button" disabled class="block medium mt12">
+        유전자검사 의뢰서 작성하기
+      </button>
+      <button type="button" class="block medium mt12">
+        유전자검사 의뢰서 작성하기
+      </button>
+    </div>
+  </div>
+</div>
+
+<script>
+  var barCord = {
+    type: 'alert',
+    text: '바코드 검증이 확인되었습니다.',
+    ok: handleOk
+  }
+  var barCordFalse = {
+    type: 'alert',
+    text: '바르지 않은 바코드입니다. <br>확인 후, 다시 입력해주세요.',
+    okText: '다시 입력',
+    ok: handleOk
+  }
+
+  function handleOk() {
+    console.log('확인');
+  }
+  
+</script>
+</body>
+</html>

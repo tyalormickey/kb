@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-reset.min.css'/>
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-common.css'/>
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-style.css'/>
+
+  <script src='../../js/libs/jquery-3.1.1.min.js'></script>
+  <script src='../../js/swiper.min.js'></script>
+  <script src='../../js/ui.js'></script>
+</head>
+<body>
+
+<div class="wrapper">
+  <div class="scrollBox page-auth-email">
+    <h3 class="page-auth-email__title">
+      이메일인증
+    </h3>
+    <ul class="page-auth-email__guide">
+      <li>
+        최초 가입 (필수)<br />
+        회사에서 사용하는 이메일을 입력해 주세요.
+      </li>
+      <li>
+        개인 이메일 변경할 경우<br/>자주 사용하는 이메일을 입력해 주세요.
+      </li>
+    </ul>
+
+    <section class="page-auth-email__form">
+      <div class="table-form error-fixed">
+        <!-- 정상 -->
+        <div class="table-form__item">
+          <span class="table-form__item-label es">
+            <label>이메일</label>
+          </span>
+          <div class="form-item">
+            <!-- 에러 시 error 추가 -->
+            <div class="custom-input">
+              <input type="email" />
+            </div>
+            <div class="form-item__error">올바른 이메일 주소를 입력해 주세요</div>
+          </div>
+        </div>
+        <div class="table-form__item">
+          <span class="table-form__item-label es">
+            <label>인증코드</label>
+          </span>
+          <div class="form-item">
+            <div class="custom-input error">
+              <input type="text" />
+            </div>
+            <div class="form-item__error">올바른 인증코드를 입력해 주세요</div>
+          </div>
+        </div>
+        <!-- 에러 -->
+      </div>
+      <div class="page-auth-email__form-buttons">
+        <button class="block medium" disabled onclick="modal.alert(false, emailSendConfig)">이메일 발송</button>
+      </div>
+    </section>
+
+    <button class="block bottom-fixed">
+      이메일 인증
+    </button>
+  </div>
+</div>
+
+<script>
+  var emailSendConfig = {
+    type: 'alert',
+    text: '입력한 이메일 계정으로<br />인증코드를 발송하였습니다',
+    ok: emailSend
+  }
+
+  function emailSend() {
+    console.log('이메일 발송 완료');
+  }
+
+  $('input').on('change keyup input', function() {
+    var currentVal = $(this).val();
+    if(currentVal) {
+      $('button').attr('disabled', false);
+    }
+  });
+</script>
+</body>
+</html>

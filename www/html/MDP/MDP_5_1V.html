@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-reset.min.css'/>
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-common.css'/>
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-style.css'/>
+
+  <script src='../../js/libs/jquery-3.1.1.min.js'></script>
+  <script src='../../js/swiper.min.js'></script>
+  <script src='../../js/ui.js'></script>
+</head>
+<body>
+
+<div class="wrapper main-home">
+  <div class="header">
+    <header id="header">
+      <div class="header__logo">
+        <div class="logo">
+          <img src="../../img/logo.svg"/>
+        </div>
+        <div class="right-icons">
+          <button type="button" class="only-icon">
+            <i class="icon-camera_02 icon-20"></i>
+          </button>
+          <button type="button" class="only-icon">
+            <i class="icon-alarm on icon-20"></i>
+          </button>
+          <button type="button" class="only-icon" data-button="menu">
+            <i class="icon-menu icon-20"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+  </div>
+  <div class="content-wrap">
+    <div class="scrollBox">
+      <section class="home-top-buttons">
+        <button type="button">
+          <i class="icon-left_move icon-16"></i>
+          <span>Reward</span>
+        </button>
+        <button type="button">
+          <span>건강정보 Hub</span>
+          <i class="icon-right_move icon-16"></i>
+        </button>
+      </section>
+
+      <section class="home-info">
+        <div class="home-info__inner">
+          <article class="home-info__top-buttons">
+            <button type="button" class="text-icon small-01">
+              <i class="icon-attendance"></i>
+              출석체크
+            </button>
+            <button type="button" class="text-icon small-01">
+              <i class="icon-news icon-16"></i>
+              라이프 뉴스
+            </button>
+          </article>
+          <article class="home-info__top">
+            <strong class="home-info__top-name">김국민님</strong>
+            <strong class="home-info__top-weather">
+              9	&deg;C
+              <i class="icon-weather_sun icon-16">맑음</i>
+              <!--
+              <i class="icon-weather_rain icon-16">비</i>
+              <i class="icon-weather_cloud icon-16">구름많음</i>
+              <i class="icon-weather_shower icon-16">소나기</i>
+              <i class="icon-weather_blur icon-16">흐림</i>
+              <i class="icon-weather_snowrain icon-16">비/눈</i>
+              <i class="icon-weather_snow icon-16">눈</i>
+              -->
+            </strong>
+          </article>
+          <article class="home-info__weather-text">
+            <p>
+              오늘은 어제보다 5&deg;C 낮아요
+            </p>
+            <button class="only-icon">
+              <i class="icon-register icon-16">더보기</i>
+            </button>
+          </article>
+          <article class="home-info__weather-etc">
+            <ul>
+              <li>
+                <span>초미세먼지</span>
+                <em>나쁨</em>
+              </li>
+              <li>
+                <span>눈병</span>
+                <em>주의</em>
+              </li>
+              <li>
+                <span>코로나</span>
+                <em>+2,389명</em>
+              </li>
+            </ul>
+          </article>
+          <article class="home-info__active-progress">
+            <!-- start : 진행중인 성취(식단) -->
+            <!--
+            <div class="home-info__active-progress-title">
+              <em>진행중인 성취(식단)</em>
+              <button type="button" class="only-icon">
+                <i class="icon-arrow_right icon-18">상세 페이지로 이동</i>
+              </button>
+            </div>
+            <div class="home-info__active-progress-data">
+              <span>지금 성취를 달성하고 리워드를 획득해보세요</span>
+            </div>
+            -->
+            <!-- end : 진행중인 성취(식단) -->
+            <!-- start : 진행중인 성취 -->
+            <div class="home-info__active-progress-title">
+              <em>진행중인 성취</em>
+              <button type="button" class="text-icon small-02">
+                <i class="icon-goal"></i>
+                성취목표설정
+              </button>
+            </div>
+            <div class="home-info__active-progress-data">
+              <span>지금 성취를 달성하고 리워드를 획득해보세요</span>
+            </div>
+            <!-- end : 진행중인 성취 -->
+            <!-- start : 진행중인 성취(체중) -->
+            <!--
+            <div class="home-info__active-progress-title">
+              <em>진행중인 성취(체중)</em>
+              <button type="button" class="only-icon">
+                <i class="icon-arrow_right icon-18">상세 페이지로 이동</i>
+              </button>
+            </div>
+            <div class="home-info__active-progress-data">
+              <span>오전 00:00</span>
+              <span>120/80mmHg</span>
+              <span>20P</span>
+            </div>
+            -->
+            <!-- end : 진행중인 성취(체중) -->
+          </article>
+        </div>
+      </section>
+
+      <section class="home-health-compare">
+        <div class="home-health-compare__inner">
+          <div class="home-health-compare__title">
+            <button type="button">
+              Daily 건강정보 비교
+            </button>
+          </div>
+          <div class="home-health-compare__content">
+            <div class="tab__wrap">
+              <ul class="tab">
+                <li class="tab__item">
+                  <button type="button" onclick="changeSwipe(0, $(this))">
+                    <span>수면</span>
+                  </button>
+                </li>
+                <li class="tab__item">
+                  <button type="button" onclick="changeSwipe(1, $(this))">
+                    <span>걸음</span>
+                  </button>
+                </li>
+                <li class="tab__item">
+                  <button type="button" onclick="changeSwipe(2, $(this))">
+                    <span>식단</span>
+                  </button>
+                </li>
+                <li class="tab__item">
+                  <button type="button" onclick="changeSwipe(3, $(this))">
+                    <span>혈압</span>
+                  </button>
+                </li>
+                <li class="tab__item">
+                  <button type="button" onclick="changeSwipe(4, $(this))">
+                    <span>혈당</span>
+                  </button>
+                </li>
+              </ul>
+              <div class="tab__swiper swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <article class="home-health-info">
+                      <div class="home-health-info__text1">
+                        김국민님은 어제보다 <em>1시간 12분</em> 덜 주무셨어요.
+                      </div>
+                      <div class="home-health-info__text2">
+                        <span>오늘 실제 수면 시간</span>
+                        <em>10시간</em>
+                      </div>
+                      <div class="home-health-info__text3">
+                        <span>전일 실제 수면 시간</span>
+                        <em>7시간30분</em>
+                      </div>
+                      <ul class="home-health-info__time">
+                        <li>
+                          취침 오후 12시30분
+                        </li>
+                        <li>
+                          취침 오후 12시30분
+                        </li>
+                      </ul>
+                      <div class="home-health-info__star">
+                        <span>수면평가</span>
+                        <div>
+                          <i class="icon-star01 icon-14"></i>
+                          <i class="icon-star01 icon-14"></i>
+                          <i class="icon-star01 icon-14"></i>
+                          <i class="icon-star01 icon-14"></i>
+                          <i class="icon-star02 icon-14"></i>
+                        </div>
+                      </div>
+                      <div class="home-health-info__progress">
+                        <ul>
+                          <li>
+                            <label>어제</label>
+                            <p class="home-health-info__progress-bar">
+                              <span style="width: 50%;"><strong>7시간30분</strong></span>
+                            </p>
+                          </li>
+                          <li>
+                            <label>오늘</label>
+                            <p class="home-health-info__progress-bar today">
+                              <span style="width: 100%;"><strong>10시간</strong></span>
+                            </p>
+                          </li>
+                        </ul>
+                      </div>
+                    </article>
+                    <!--
+                    <article class="message-box">
+                      <div class="message-box__wrap">
+                        <div class="message-box__icon">
+                          <i class="icon-nodata_white icon-40"></i>
+                        </div>
+                        <div class="message-box__sub-title">
+                          등록된 수면 데이터가 없습니다.
+                        </div>
+                        <div class="message-box__btn-wrap">
+                          <button type="button" class="block small inline">
+                            데이터 연동하기
+                          </button>
+                          <button type="button" class="block small inline">
+                            수면관리
+                          </button>
+                        </div>
+                      </div>
+                    </article>
+                    -->
+                  </div>
+                  <div class="swiper-slide">
+                    <article class="home-health-info">
+                      <div class="home-health-info__text1">
+                        김국민님은 어제보다 <em>2,500</em>걸음 더 걸으셨어요.
+                      </div>
+                      <div class="home-health-info__text2">
+                        <span>오늘 걸음수</span>
+                        <em>10,000</em>
+                      </div>
+                      <div class="home-health-info__text3">
+                        <span>전일 걸음수</span>
+                        <em>7,500</em>
+                      </div>
+                      <ul class="home-health-info__time">
+                        <li>
+                          소모칼로리 5,000
+                        </li>
+                        <li>
+                          이동거리(km) 20.5
+                        </li>
+                      </ul>
+                      <div class="home-health-info__progress">
+                        <ul>
+                          <li>
+                            <label>어제</label>
+                            <p class="home-health-info__progress-bar">
+                              <span style="width: 50%;"><strong>7,500</strong></span>
+                            </p>
+                          </li>
+                          <li>
+                            <label>오늘</label>
+                            <p class="home-health-info__progress-bar today">
+                              <span style="width: 100%;"><strong>10,000</strong></span>
+                            </p>
+                          </li>
+                        </ul>
+                      </div>
+                    </article>
+                    <!--
+                    <article class="message-box">
+                      <div class="message-box__wrap">
+                        <div class="message-box__icon">
+                          <i class="icon-nodata_white icon-40"></i>
+                        </div>
+                        <div class="message-box__sub-title">
+                          등록된 걸음 데이터가 없습니다.
+                        </div>
+                        <div class="message-box__btn-wrap">
+                          <button type="button" class="block small inline">
+                            데이터 연동하기
+                          </button>
+                        </div>
+                      </div>
+                    </article>
+                    -->
+                  </div>
+                  <div class="swiper-slide">
+                    <article class="home-health-info">
+                      <div class="home-health-info__text1">
+                        김국민님은 어제보다 <em>250kcal</em> 덜 드셨어요.
+                      </div>
+                      <div class="home-health-info__text2">
+                        <span>오늘 섭취 kcal</span>
+                        <em>10,000</em>
+                      </div>
+                      <div class="home-health-info__text3">
+                        <span>전일 섭취 kcal</span>
+                        <em>7,500</em>
+                      </div>
+                      <ul class="home-health-info__time">
+                        <li>
+                          권장 Kcal 12,000
+                        </li>
+                        <li>
+                          잔여 kcal +2,000
+                        </li>
+                      </ul>
+                      <div class="home-health-info__progress">
+                        <ul>
+                          <li>
+                            <label>어제</label>
+                            <p class="home-health-info__progress-bar">
+                              <span style="width: 50%;"><strong>7,500</strong></span>
+                            </p>
+                          </li>
+                          <li>
+                            <label>오늘</label>
+                            <p class="home-health-info__progress-bar today">
+                              <span style="width: 100%;"><strong>10,000</strong></span>
+                            </p>
+                          </li>
+                        </ul>
+                      </div>
+                    </article>
+                    <!--
+                    <article class="message-box">
+                      <div class="message-box__wrap">
+                        <div class="message-box__icon">
+                          <i class="icon-nodata_white icon-40"></i>
+                        </div>
+                        <div class="message-box__sub-title">
+                          등록된 식단 데이터가 없습니다.
+                        </div>
+                        <div class="message-box__btn-wrap">
+                          <button type="button" class="block small inline">
+                            식단관리하기
+                          </button>
+                        </div>
+                      </div>
+                    </article>
+                    -->
+                  </div>
+                  <div class="swiper-slide">
+                    <article class="home-health-info">
+                      <div class="home-health-info__text1">
+                        김국민님의 오늘 혈압은 “<em>정상</em>”이네요.
+                        김국민님의 오늘 혈압은 “<em>정상</em>”이네요.
+                      </div>
+                      <div class="home-health-info__text2">
+                        <span>오늘 혈압</span>
+                        <em>120/84 mmHg</em>
+                      </div>
+                      <div class="home-health-info__text3">
+                        <span>전일 혈압</span>
+                        <em>120/84mmHg</em>
+                      </div>
+                      <ul class="home-health-info__time">
+                        <li>
+                          수축기 최고 혈압 120
+                        </li>
+                        <li>
+                          이완기 최고 혈압 120
+                        </li>
+                      </ul>
+
+                      <div class="home-health-info__graph">
+                        <div class="home-health-info__graph-label">
+                          <span>평균 혈압(mmHg)</span>
+                          <label>어제</label>
+                          <label>오늘</label>
+                        </div>
+                        <div class="home-health-info__graph-box">
+                          <ul class="home-health-info__graph-grid">
+                            <li>100%</li>
+                            <li>75%</li>
+                            <li>50%</li>
+                            <li>25%</li>
+                            <li>0%</li>
+                          </ul>
+                          <div class="home-health-info__graph-table">
+                            <ul>
+                              <li>
+                                <span>수축기 혈압</span>
+                                <div>
+                                  <i style="height: 50%;"><strong>320</strong></i>
+                                  <i style="height: 50%;"><strong>320</strong></i>
+                                </div>
+                              </li>
+                              <li>
+                                <span>이완기 혈압</span>
+                                <div>
+                                  <i style="height: 100%;"><strong>640</strong></i>
+                                  <i style="height: 100%;"><strong>640</strong></i>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </article>
+                    <!--
+                    <article class="message-box">
+                      <div class="message-box__wrap">
+                        <div class="message-box__icon">
+                          <i class="icon-nodata_white icon-40"></i>
+                        </div>
+                        <div class="message-box__sub-title">
+                          등록된 혈압 데이터가 없습니다.
+                        </div>
+                        <div class="message-box__btn-wrap">
+                          <button type="button" class="block small inline">
+                            데이터 연동하기
+                          </button>
+                        </div>
+                      </div>
+                    </article>
+                    -->
+                  </div>
+                  <div class="swiper-slide">
+                    <article class="home-health-info">
+                      <div class="home-health-info__text1">
+                        김국민님의 오늘 혈당은 “<em>주의</em>”로 관리가 필요해요.
+                      </div>
+                      <div class="home-health-info__text2">
+                        <span>오늘 혈당</span>
+                        <em>120 mm/dL</em>
+                      </div>
+                      <div class="home-health-info__text3">
+                        <span>전일 혈당 </span>
+                        <em>80 mmHg</em>
+                      </div>
+                      <ul class="home-health-info__time">
+                        <li>
+                          최고 혈당 120
+                        </li>
+                        <li>
+                          최저 혈당 80
+                        </li>
+                      </ul>
+
+                      <div class="home-health-info__graph">
+                        <div class="home-health-info__graph-label">
+                          <span>평균 혈당(mmHg)</span>
+                          <label>어제</label>
+                          <label>오늘</label>
+                        </div>
+                        <div class="home-health-info__graph-box">
+                          <ul class="home-health-info__graph-grid">
+                            <li>100%</li>
+                            <li>75%</li>
+                            <li>50%</li>
+                            <li>25%</li>
+                            <li>0%</li>
+                          </ul>
+                          <div class="home-health-info__graph-table">
+                            <ul>
+                              <li>
+                                <span>공복</span>
+                                <div>
+                                  <i style="height: 25%;"><strong>160</strong></i>
+                                  <i style="height: 25%;"><strong>160</strong></i>
+                                </div>
+                              </li>
+                              <li>
+                                <span>식전</span>
+                                <div>
+                                  <i style="height: 50%;"><strong>320</strong></i>
+                                  <i style="height: 50%;"><strong>320</strong></i>
+                                </div>
+                              </li>
+                              <li>
+                                <span>식후</span>
+                                <div>
+                                  <i style="height: 100%;"><strong>640</strong></i>
+                                  <i style="height: 100%;"><strong>640</strong></i>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </article>
+                    <!--
+                    <article class="message-box">
+                      <div class="message-box__wrap">
+                        <div class="message-box__icon">
+                          <i class="icon-nodata_white icon-40"></i>
+                        </div>
+                        <div class="message-box__sub-title">
+                          등록된 혈당 데이터가 없습니다.
+                        </div>
+                        <div class="message-box__btn-wrap">
+                          <button type="button" class="block small inline">
+                            데이터 연동하기
+                          </button>
+                        </div>
+                      </div>
+                    </article>
+                    -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+  <div class="footer footer__nav">
+    <nav>
+      <ul>
+        <li class="on">
+          <button type="button">
+            <i class="icon-home icon-16"></i>
+            <span>홈</span>
+          </button>
+        </li>
+        <li>
+          <button type="button">
+            <i class="icon-pro icon-16"></i>
+            <span>프로그램</span>
+          </button>
+        </li>
+        <li>
+          <button type="button">
+            <i class="icon-info icon-16"></i>
+            <span>증상ㆍ병원</span>
+          </button>
+        </li>
+        <li>
+          <button type="button">
+            <i class="icon-my icon-16"></i>
+            <span>MY</span>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+
+<aside class="wrapper-full-popup left-padding">
+  <div class="wrapper-full-popup__inner">
+    <div class="header">
+      <header>
+        <div class="header__back">
+          <div class="back">
+            <button type="button" class="only-icon">
+              <i class="icon-arrow_left icon-20">뒤로가기</i>
+            </button>
+          </div>
+          <div class="title">
+            전체메뉴
+          </div>
+          <div class="right-icons">
+            <button type="button" class="only-icon" data-button="menu-close">
+              <i class="icon-x on icon-20">닫기</i>
+            </button>
+          </div>
+        </div>
+      </header>
+    </div>
+    <div class="content-wrap footer-none">
+      <div class="scrollBox all-menu">
+        <section class="all-menu__top">
+          <ul>
+            <li>
+              <button type="button">
+                <i class="icon-menu_mypage icon-30"></i>
+                <span>마이페이지</span>
+              </button>
+            </li>
+            <li>
+              <button type="button">
+                <i class="icon-menu_point icon-30"></i>
+                <span>포인트</span>
+              </button>
+            </li>
+            <li>
+              <button type="button">
+                <i class="icon-menu_star icon-30"></i>
+                <span>Star</span>
+              </button>
+            </li>
+            <li>
+              <button type="button">
+                <i class="icon-menu_coupon icon-30"></i>
+                <span>쿠폰</span>
+              </button>
+            </li>
+          </ul>
+        </section>
+        <section class="all-menu__nav">
+          <dl>
+            <dt>
+              <button type="button">건강 Hub</button>
+            </dt>
+            <dd>
+              <button type="button">건강점수</button>
+            </dd>
+            <dd>
+              <button type="button">의료비 예측</button>
+            </dd>
+            <dd>
+              <button type="button">시뮬레이션</button>
+            </dd>
+            <dd>
+              <button type="button">활동 리포트</button>
+            </dd>
+          </dl>
+          <dl>
+            <dt>
+              <button type="button">건강검진/유전자 검사</button>
+            </dt>
+            <dd>
+              <button type="button">건강검진 결과 조회</button>
+            </dd>
+            <dd>
+              <button type="button">검강검진 정보 입력</button>
+            </dd>
+            <dd>
+              <button type="button">유전자 검사 신청 및 조회</button>
+            </dd>
+          </dl>
+          <dl>
+            <dt>
+              <button type="button">건강 관리</button>
+            </dt>
+            <dd>
+              <button type="button">운동 관리</button>
+            </dd>
+            <dd>
+              <button type="button">식단 관리</button>
+            </dd>
+            <dd>
+              <button type="button">복약 관리</button>
+            </dd>
+            <dd>
+              <button type="button">증상 체크</button>
+            </dd>
+            <dd>
+              <button type="button">성취 결과</button>
+            </dd>
+          </dl>
+          <dl>
+            <dt>
+              <button type="button">병원/약국 정보</button>
+            </dt>
+            <dd>
+              <button type="button">병원/약국 찾기</button>
+            </dd>
+          </dl>
+          <dl>
+            <dt>
+              <button type="button">프로그램</button>
+            </dt>
+            <dd>
+              <button type="button">만성질환 관리</button>
+            </dd>
+            <dd>
+              <button type="button">디지털 운동 관리</button>
+            </dd>
+            <dd>
+              <button type="button">마음 건강 관리</button>
+            </dd>
+          </dl>
+          <dl>
+            <dt>
+              <button type="button">설정</button>
+            </dt>
+            <dd>
+              <button type="button">로그인 인증 관리</button>
+            </dd>
+            <dd>
+              <button type="button">공동인증서 가져오기</button>
+            </dd>
+            <dd>
+              <button type="button">공동인증서 삭제</button>
+            </dd>
+            <dd>
+              <button type="button">건강정보 연동</button>
+            </dd>
+          </dl>
+          <dl>
+            <dt>
+              <button type="button">이벤트</button>
+            </dt>
+            <dd>
+              <button type="button">출석 체크</button>
+            </dd>
+          </dl>
+          <dl>
+            <dt>
+              <button type="button">고객센터</button>
+            </dt>
+            <dd>
+              <button type="button">공지사항</button>
+            </dd>
+            <dd>
+              <button type="button">자주 찾는 질문</button>
+            </dd>
+            <dd>
+              <button type="button">1:1 문의하기</button>
+            </dd>
+            <dd>
+              <button type="button">튜토리얼</button>
+            </dd>
+          </dl>
+        </section>
+      </div>
+    </div>
+  </div>
+</aside>
+
+<script>
+
+  /* swiper action */
+  var tabActiveAction = function (idx) {
+    var onItem = 'tab__item--on';
+    const tabs = $('.home-health-compare__content .tab__item');
+    tabs.removeClass(onItem);
+    tabs.eq(idx).addClass(onItem);
+  }
+  var swiper = new Swiper('.swiper-container', {
+    slidesPerView: 1,
+    observer: true,
+    init: false,
+    on: {
+      slideChangeTransitionStart: function () {
+        tabActiveAction(swiper.realIndex);
+      },
+      init: function () {
+        tabActiveAction(0);
+      }
+    },
+  });
+
+  function changeSwipe (i) {
+    swiper.slideTo(i, 300)
+  }
+
+  $('.home-health-compare__title').off('click').on('click', function () {
+    $('.home-health-compare').toggleClass('active');
+    $('.home-health-compare__content').stop().slideToggle(200);
+    if ($('.home-health-compare').hasClass('active')) {
+      $('.main-home').addClass('active-sleep');
+      swiper.init();
+    } else {
+      $('.main-home').removeClass('active-sleep');
+    }
+  });
+</script>
+
+</body>
+</html>
+

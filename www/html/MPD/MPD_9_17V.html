@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
+    <link rel='stylesheet' type='text/css' href='../../css/morpheus-reset.min.css'/>
+    <link rel='stylesheet' type='text/css' href='../../css/morpheus-common.css'/>
+    <link rel='stylesheet' type='text/css' href='../../css/morpheus-style.css'/>
+
+    <script src='../../js/libs/jquery-3.1.1.min.js'></script>
+    <script src='../../js/swiper.min.js'></script>
+    <script src='../../js/ui.js'></script>
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="header">
+        <header>
+            <div class="header__back">
+                <div class="back">
+                    <button type="button" class="only-icon">
+                        <i class="icon-arrow_left icon-20">뒤로가기</i>
+                    </button>
+                </div>
+                <div class="title">
+                    심리 상담
+                </div>
+                <div class="right-icons">
+                    <button type="button" class="only-icon">
+                        <i class="icon-camera_02 icon-20">카메라</i>
+                    </button>
+                    <button type="button" class="only-icon">
+                        <i class="icon-alarm on icon-20">알람</i>
+                    </button>
+                </div>
+            </div>
+        </header>
+    </div>
+    <div class="content-wrap">
+        <div class="scrollBox no-padding">
+            <div class="full-schedule__title">
+                <div class="full-schedule__title-img">
+                    <img src="../../img/health/huno_main.png">
+                </div>
+                <div class="full-schedule__title-text display_grid pal5">
+                    <div class="title w100">
+                        HUNO 심리검사 및 <br>상담 서비스 입니다.
+                    </div>
+                    <div class="subcontent w100">
+                        <p>새로운 상담을 하시거나<br>상담과 관련된 이력을 확인할 수 있습니다.</p>
+                    </div>
+                </div>
+            </div>
+
+            <section class="main-reward__boxes color_gray">
+                <article class="main-reward__box">
+                    <p class="main-reward__box-title">
+                        원하시는 상담 방법을 선택해 주세요.
+                    </p>
+                </article>
+            </section>
+            <section class="manage-gray-box box_margin mt0">
+                <div class="title">
+                    대면상담
+                </div>
+                <div class="sub-title mb0">
+                    <div class="flex_box justify-space-between">
+                        <div class="flex_box_text">
+                            가까운 상담센터에서 상담사와 만나서 상담이
+                            진행됩니다.
+                        </div>
+                        <div>
+                            <button type="button" class="only-icon">
+                                <i class="icon-arrow_right icon-20 color_white">뒤로가기</i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="manage-gray-box mt30 box_margin">
+                <div class="title">
+                    비대면상담
+                </div>
+                <div class="sub-title mb0">
+                    <div class="flex_box justify-space-between">
+                        <div class="flex_box_text">
+                            화상상담, 전화상담, 채팅상담을 하실 수
+                            있습니다.
+                        </div>
+                        <div>
+                            <button type="button" class="only-icon">
+                                <i class="icon-arrow_right icon-20 color_white">뒤로가기</i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="manage-gray-box mt30 box_margin">
+                <div class="title">
+                    심리검사+상담
+                </div>
+                <div class="sub-title mb0">
+                    <div class="flex_box justify-space-between">
+                        <div class="flex_box_text">
+                            심리검사를 실시한 후 상담이 진행됩니다.
+                            상담은 비대면으로 진행됩니다.
+                        </div>
+                        <div>
+                            <button type="button" class="only-icon">
+                                <i class="icon-arrow_right icon-20 color_white">뒤로가기</i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="main-reward__boxes color_black">
+                <article class="main-reward__box">
+                    <p class="main-reward__box-title">
+                        나의 상담
+                    </p>
+                </article>
+            </section>
+
+            <!--신청중인 상담-->
+            <section class="manage-gray-box box_margin mt0 pa0">
+                <div class="title pa24 mb0">
+                    신청 중인 상담
+                    <div class="tag">
+                        1건
+                    </div>
+                </div>
+                <div class="sub-title mb0">
+                    <ul class="box_list">
+                        <li>
+                            <span>상담 신청일</span>
+                            <p>2021.07.29 오전 11:30</p>
+                        </li>
+                        <li>
+                            <span>상담유형</span>
+                            <div>채팅
+                                <div class="tag tag--sub gray-icon">
+                                    3회중 1회
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <span>상담사</span>
+                            <p>김상담 상담사</p>
+                        </li>
+                        <li>
+                            <span>상담 예정 일시</span>
+                            <p>2021.07.29 오전 11:30</p>
+                        </li>
+                        <li class="gray_line">
+                            <div></div>
+                        </li>
+                    </ul>
+                    <ul class="box_list">
+                        <li class="box__title">
+                            사전 상담접수지 작성 안내
+                        </li>
+                        <li class="box__contents">
+                            <b class="color_black">김국민</b>님 아직 사전상담 접수지를 작성하지<br>
+                            않으셨습니다. 접수지를 작성하시면 더욱<br>
+                            원활한 상담이 가능합니다.
+                        </li>
+                        <li class="center">
+                            <button type="button" class="block small inline color_black">
+                                사전 상담 접수지를 작성하겠습니다
+                            </button>
+                        </li>
+                        <li class="gray_line">
+                            <div></div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="box_btn">
+                    <ul class="box_list no_border">
+                        <li>
+                            <ul class="flex_box w100">
+                                <li class="w50 right">
+                                    <button type="button" class="block small inline graybtn color_black">
+                                        취소
+                                    </button>
+                                </li>
+                                <li class="w50 right">
+                                    <button type="button" class="block small inline color_black">
+                                        일정변경
+                                    </button>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+
+            <!--신청중인 상담-->
+            <section class="manage-gray-box box_margin mt0 pa0">
+                <div class="title pa24 mb0">
+                    진행 중인 상담
+                    <div class="tag">
+                        2건
+                    </div>
+                </div>
+                <div class="sub-title mb0">
+                    <ul class="box_list">
+                        <li>
+                            <span>상담 신청일</span>
+                            <p>2021.07.29 오전 11:30</p>
+                        </li>
+                        <li>
+                            <span>상담유형</span>
+                            <div>채팅
+                                <div class="tag tag--sub gray-icon">
+                                    3회중 1회
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <span>상담사</span>
+                            <div>김상담 상담사
+                                <div class="tag tag--sub only-icon">
+                                    상담예정
+                                </div>
+
+                                <div class="tag tag--sub gray-icon-9">
+                                    상담완료
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <span>상담 예정 일시</span>
+                            <p>2021.07.29 오전 11:30</p>
+                        </li>
+                        <li class="gray_line">
+                            <div></div>
+                        </li>
+                    </ul>
+
+                    <div class="box_mid_btn">
+                        <ul class="box_list no_border">
+                            <li>
+                                <ul class="flex_box w100">
+                                    <li class="w50 right">
+                                        <button type="button" class="block small inline graybtn color_black">
+                                            상담취소
+                                        </button>
+                                        <button type="button" class="block small inline graybtn color_black">
+                                            취소
+                                        </button>
+                                    </li>
+                                    <li class="w50 right">
+                                        <button type="button" class="block small inline color_black">
+                                            채팅창 열기
+                                        </button>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="h20"></div>
+
+
+                    <ul class="box_list">
+                        <li>
+                            <span>상담 신청일</span>
+                            <p>2021.07.29 오전 11:30</p>
+                        </li>
+                        <li>
+                            <span>상담유형</span>
+                            <div>화상
+                                <div class="tag tag--sub gray-icon">
+                                    1회중 1회
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <span>상담사</span>
+                            <div>김상담 상담사
+                                <div class="tag tag--sub only-icon">
+                                    상담예정
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <span>상담 예정 일시</span>
+                            <p>2021.07.29 오전 11:30</p>
+                        </li>
+                        <li class="gray_line">
+                            <div></div>
+                        </li>
+                    </ul>
+
+                    <ul class="box_list">
+                        <li class="box__title">
+                            사전 상담접수지 작성 안내
+                        </li>
+                        <li class="box__contents">
+                            <b class="color_black">김국민</b>님 아직 사전상담 접수지를 작성하지<br>
+                            않으셨습니다. 접수지를 작성하시면 더욱<br>
+                            원활한 상담이 가능합니다.
+                        </li>
+                        <li class="center">
+                            <button type="button" class="block small inline color_black">
+                                사전 상담 접수지를 작성하겠습니다
+                            </button>
+                        </li>
+                        <li class="gray_line">
+                            <div></div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="box_btn">
+                    <ul class="box_list no_border">
+                        <li>
+                            <ul class="flex_box w100">
+                                <li class="w50 right">
+                                    <button type="button" class="block small inline graybtn color_black">
+                                        취소
+                                    </button>
+                                </li>
+                                <li class="w50 right">
+                                    <button type="button" class="block small inline color_black">
+                                        일정변경
+                                    </button>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+
+
+
+
+            <!--서브메인 케이스-->
+            <!--대면상담-->
+            <section class="manage-gray-box box_margin mt0">
+                <div class="title">
+                    대면상담
+                </div>
+                <div class="sub-title mb0">
+                    <div class="flex_box justify-space-between">
+                        <div class="flex_box_text">
+                            화상상담, 전화상담, 채팅상담을 하실 수<br>
+                            있습니다.
+                        </div>
+                        <div>
+                            <button type="button" class="only-icon">
+                                <i class="icon-arrow_right icon-20 color_white">뒤로가기</i>
+                            </button>
+                        </div>
+                    </div>
+                    <ul class="pt10 pb10">
+                        <li class="gray_line">
+                            <div></div>
+                        </li>
+                    </ul>
+                    <div class="flex_box justify-space-between">
+                        <div class="flex_box_text">
+                            채팅 상담이 예약되어 있습니다.<br>
+                            채팅 화면을 여시겠습니까?
+                        </div>
+                    </div>
+                    <div class="flex_box justify-space-between pt15">
+                        <div class="flex_box_text">
+                            23:00:00 남음
+                        </div>
+                    </div>
+
+                    <div class="flex_box justify-center pt15">
+                        <button type="button" class="block small inline color_black">
+                            채팅창열기
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <!--신청중인 상담-->
+            <section class="manage-gray-box box_margin mt0 pa0">
+                <div class="title pa24 mb0">
+                    신청 중인 상담
+                </div>
+                <div class="box_btn">
+                    <ul class="box_list no_border color_gray font-size-18">
+                        <li class="justify-center pa24">
+                            신청중인 상담이 없습니다.
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!--신청중인 상담-->
+            <section class="manage-gray-box box_margin mt0 pa0">
+                <div class="title pa24 mb0">
+                    신청 중인 상담
+                </div>
+                <div class="box_btn">
+                    <ul class="box_list no_border color_gray font-size-18">
+                        <li class="justify-center pa24">
+                            신청중인 상담이 없습니다.
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+
+
+
+
+
+
+
+        </div>
+    </div>
+    <div class="footer footer__nav">
+        <nav>
+            <ul>
+                <li class="on">
+                    <button type="button">
+                        <i class="icon-home icon-16"></i>
+                        <span>홈</span>
+                    </button>
+                </li>
+                <li>
+                    <button type="button">
+                        <i class="icon-pro icon-16"></i>
+                        <span>프로그램</span>
+                    </button>
+                </li>
+                <li>
+                    <button type="button">
+                        <i class="icon-info icon-16"></i>
+                        <span>증상ㆍ병원</span>
+                    </button>
+                </li>
+                <li>
+                    <button type="button">
+                        <i class="icon-my icon-16"></i>
+                        <span>MY</span>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>
+<!-- 팝업 // -->
+<div class="point-info modal-popup">
+    <div class="modal-popup__outer">
+        <section class="modal-popup__container">
+            <article class="modal-popup__header">
+                <h3 class="modal-popup__title">
+                    포인트 정책 안내
+                </h3>
+                <button class="modal-popup__close only-icon">
+                    <i class="icon-x icon-20">닫기</i>
+                </button>
+            </article>
+            <article>
+                <div class="point-info__popup">
+                    <dl>
+                        <dt>포인트 유효기간</dt>
+                        <dd>적립된 날로부터 1년(365일) </dd>
+                    </dl>
+                    <dl>
+                        <dt>포인트 소멸</dt>
+                        <dd>적립된 날로부터 1년(365일) 뒤 소멸</dd>
+                        <dd>회원탈퇴 시 소멸</dd>
+                    </dl>
+                </div>
+            </article>
+            <article class="modal-popup__footer">
+                <button class="block medium inline" onclick="modal.close($(this))">
+                    확인
+                </button>
+            </article>
+        </section>
+    </div>
+</div>
+<!-- // 팝업 -->
+
+</body>
+</html>

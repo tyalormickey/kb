@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="icon_m_sun" width="64" height="64" viewBox="0 0 64 64">
+    <defs>
+        <style>
+            .cls-1{fill:none;stroke:#fff;stroke-width:4px}
+        </style>
+    </defs>
+    <path id="Stroke-3" d="M350.319 665.681l-5.359 5.358" class="cls-1" transform="translate(-337 -615)"/>
+    <path id="Stroke-5" d="M392.879 623.12l-5.358 5.358" class="cls-1" transform="translate(-337 -615)"/>
+    <path id="Stroke-7" d="M344.578 647.271H337" class="cls-1" transform="translate(-337 -615)"/>
+    <path id="Stroke-9" d="M401 647.271h-7.578" class="cls-1" transform="translate(-337 -615)"/>
+    <path id="Stroke-11" d="M392.879 671.422l-5.359-5.357" class="cls-1" transform="translate(-337 -615)"/>
+    <path id="Stroke-13" d="M368.728 671.422V679" class="cls-1" transform="translate(-337 -615)"/>
+    <path id="Stroke-16" d="M350.319 628.862l-5.358-5.358" class="cls-1" transform="translate(-337 -615)"/>
+    <path id="Stroke-18" d="M368.728 615v7.578" class="cls-1" transform="translate(-337 -615)"/>
+    <path id="Stroke-21" d="M384.954 646.786a16.672 16.672 0 1 0-3.976 10.8" class="cls-1" transform="translate(-337 -615)"/>
+</svg>

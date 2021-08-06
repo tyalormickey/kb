@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-reset.min.css'/>
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-common.css'/>
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-style.css'/>
+
+  <script src='../../js/libs/jquery-3.1.1.min.js'></script>
+  <script src='../../js/swiper.min.js'></script>
+  <script src='../../js/ui.js'></script>
+</head>
+<body>
+
+<div class="wrapper">
+  <div class="header">
+    <header>
+      <div class="header__back">
+        <div class="back">
+          <button type="button" class="only-icon">
+            <i class="icon-arrow_left icon-20">뒤로가기</i>
+          </button>
+        </div>
+        <div class="title">
+          상담 취소
+        </div>
+      </div>
+    </header>
+  </div>
+  <div class="content-wrap bottom-button-fixed">
+    <div class="scrollBox">
+      <div class="manage-h3">
+        <strong>신청한 상담</strong>
+      </div>
+      <div class="delivery-process__table mt15">
+        <div class="table-data lined">
+          <dl>
+            <dt>서비스 유형</dt>
+            <dd>
+              채팅 상담  
+            </dd>
+          </dl>
+          <dl>
+            <dt>상담 주제</dt>
+            <dd>
+              직장 내 대인관계
+            </dd>
+          </dl>
+          <!-- 패키지 -->
+          <dl>
+            <dt>패키지 명</dt>
+            <dd>
+              우리 아이 바로 알기 패키지] <br>아동기질검사 CTI 1회<br> 해석상담 1회 (화상)
+            </dd>
+          </dl>
+          <!-- 패키지 -->
+          <dl>
+            <dt>상담권</dt>
+            <dd>
+              3회권 중 <b>2회차</b>
+            </dd>
+          </dl>
+          <dl>
+            <dt>상담 예정일</dt>
+            <dd>
+              2021.06.26(금) 오후 3:00  
+            </dd>
+          </dl>
+          <dl>
+            <dt>상담사</dt>
+            <dd>
+              이상담
+            </dd>
+          </dl>
+          <dl>
+            <dt>결제 수단</dt>
+            <dd>
+              카드, 스타, 포인트, 쿠폰
+            </dd>
+          </dl>
+        </div>
+      </div>
+
+      <div class="delivery-process__gray-box gene-product__pre-info mt25">
+        쿠폰을 사용하여 상담신청(구매)을 하신 경우, 쿠폰의 지급 방법 또는 유효기간 등의 사유로 인해 해당 쿠폰의 재사용이 불가할 수 도 있습니다.
+      </div>
+      
+      <div class="manage-h3 mt40">
+        <strong>결제 후 취소의 조건</strong>
+      </div>
+
+      <div class="manage-h4 mt20">
+        <strong>대면상담</strong>
+      </div>
+      <div class="gene-product__info-text mt12">
+        상담접수지 제출 & 결제<br>
+        1회차 상담 <span class="red">시작 24시간</span> 전까지 가능
+      </div>
+
+      <div class="manage-h4 mt25">
+        <strong>비대면상담</strong>
+      </div>
+      <div class="gene-product__info-text mt12">
+        결제 & 상담접수지 제출<br>
+        1회차 상담 <span class="red">시작 24시간</span> 전까지 가능
+      </div>
+
+      <div class="manage-h4 mt25">
+        <strong>패키지상담</strong>
+      </div>
+      <div class="gene-product__info-text mt12">
+        상담접수지 제출<br>
+        검사 <span class="red">시작</span>전까지 가능<span class="red">(검사를 완료하지 않았더라도. 시작했으면 취소 불가)</span>
+      </div>
+
+      <div class="manage-h3 mt40">
+        <strong>환불 정책 확인 필요</strong>
+      </div>
+
+      <div class="manage-h4 mt20">
+        <strong>쿠폰의 경우</strong>
+      </div>
+      <div class="gene-product__info-text mt12">
+        다음의 조건에 해당하는지 확인한다.
+      </div>
+      <ul class="list-type-circle mt12">
+        <li>
+          취소 후 다시 사용 가능
+        </li>
+        <li>
+          취소 후 쿠폰 삭제 & 재발급
+        </li>
+        <li>
+          취소 후 쿠폰 소멸
+        </li>
+      </ul>
+      <div class="gene-product__info-text mt12">
+        특히 취소 시점의 쿠폰 유효기간을 확인하여 처리한다.
+      </div>
+
+    </div>
+  </div>
+  <div class="button__flex-wrap bottom-fixed">
+    <button type="button" class="block" onclick="modal.alert($(this), cancelConfig)">
+      상담취소
+    </button>
+  </div>
+</div>
+
+<script>
+  var cancelConfig = {
+    type: 'alert',
+    text: '상담 신청이 취소되었습니다.',
+    ok: handleOk
+  }
+
+  function handleOk() {
+    console.log('확인');
+  }
+</script>
+</body>
+</html>

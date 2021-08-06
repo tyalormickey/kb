@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="icon_m_calendar" width="72" height="72" viewBox="0 0 72 72">
+    <defs>
+        <style>
+            .cls-1{fill:#000}
+        </style>
+    </defs>
+    <g id="icon_m_calendar_l_24" transform="translate(-268 -0.178)">
+        <path id="Rectangle_356" d="M0 0H7.158V7.179H0z" class="cls-1" transform="translate(286.105 43.255)"/>
+        <path id="Rectangle_357" d="M0 0H7.158V7.179H0z" class="cls-1" transform="translate(300.421 43.255)"/>
+        <path id="Rectangle_358" d="M0 0H7.158V7.179H0z" class="cls-1" transform="translate(314.736 43.255)"/>
+        <path id="Path_247" d="M340 72.178h-61.053A10.973 10.973 0 0 1 268 61.2V37.872h4V61.2a6.968 6.968 0 0 0 6.947 6.974H336V18.126a6.968 6.968 0 0 0-6.947-6.974H272V27.1h-4V7.152h61.053A10.973 10.973 0 0 1 340 18.126z" class="cls-1"/>
+        <path id="Rectangle_359" d="M0 0H72V4H0z" class="cls-1" transform="translate(268 25.102)"/>
+        <path id="Rectangle_360" d="M0 0H4V14.359H0z" class="cls-1" transform="translate(284.105 0.178)"/>
+        <path id="Rectangle_361" d="M0 0H4V14.359H0z" class="cls-1" transform="translate(316.315 0.178)"/>
+    </g>
+</svg>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-reset.min.css'/>
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-common.css'/>
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-style.css'/>
+
+  <script src='../../js/libs/jquery-3.1.1.min.js'></script>
+  <script src='../../js/swiper.min.js'></script>
+  <script src='../../js/ui.js'></script>
+</head>
+<body>
+<div class="wrapper">
+  <div class="header">
+    <header>
+      <div class="header__back">
+        <div class="back">
+          <button type="button" class="only-icon">
+            <i class="icon-arrow_left icon-20">뒤로가기</i>
+          </button>
+        </div>
+        <div class="title">
+          검사 동의 및 서명
+        </div>
+      </div>
+    </header>
+  </div>
+  <div class="content-wrap footer-none">
+    <div class="scrollBox">
+      <div class="gene-product__title-sub">
+        아래의 내용을 확인하신 후 동의 여부를 선택해 주세요.
+      </div>
+
+      <article class="service-agree__article lined mt25">
+        <ul class="service-agree__list">
+          <li class="service-agree__item">
+            <button type="button">
+              <label class="input-checkbox only-check">
+                <input type="checkbox" checked />
+                <i></i>
+                <span>유전자 검사 의뢰서(필수)</span>
+              </label>
+            </button>
+          </li>
+          <li class="service-agree__item">
+            <button type="button">
+              <label class="input-checkbox only-check">
+                <input type="checkbox" />
+                <i></i>
+                <span>유전자 검사 동의서(필수)</span>
+              </label>
+            </button>
+          </li>
+          <li class="service-agree__item">
+            <button type="button">
+              <label class="input-checkbox only-check">
+                <input type="checkbox" />
+                <i></i>
+                <span>개인정보 수집 및 이용 동의(필수)</span>
+              </label>
+            </button>
+          </li>
+          <li class="service-agree__item">
+            <button type="button">
+              <label class="input-checkbox only-check">
+                <input type="checkbox" />
+                <i></i>
+                <span>데이터 보관 및 추가 분석 동의서(필수)</span>
+              </label>
+            </button>
+          </li>
+        </ul>
+      </article>
+      <article class="service-agree__article">
+        <ul class="service-agree__list">
+          <li class="service-agree__item">
+            <button type="button">
+              <label class="input-checkbox only-check">
+                <input type="checkbox" />
+                <i></i>
+                <span>민감정보 수집 및 이용에 대한 동의(선택)</span>
+              </label>
+            </button>
+          </li>
+          <li class="service-agree__item flex-start">
+            <button type="button">
+              <label class="input-checkbox only-check">
+                <input type="checkbox" />
+                <i></i>
+                <span>제3자 정보 제공 및 이용에 관한 동의서 (선택)</span>
+              </label>
+            </button>
+          </li>
+          <li class="service-agree__item">
+            <button type="button">
+              <label class="input-checkbox only-check">
+                <input type="checkbox" />
+                <i></i>
+                <span>개인 정보의 위탁에 관한 동의(선택)</span>
+              </label>
+            </button>
+          </li>
+        </ul>
+      </article>
+
+      <div class="delivery-process__gray-box gene-product__pre-info red mt25">
+        유전자 검사 의뢰서는 필수 동의 항목입니다.
+      </div>
+
+      <div class="manage-h3 mt40">
+        <strong>홍길동님, 서명해 주세요.</strong>
+      </div>
+
+      <div class="gene-product__sign">
+        <div class="gene-product__sign-part mt15">
+          <canvas></canvas>
+        </div>
+        <div class="gene-product__sign-reset mt10">
+          <button type="button" class="text-icon small-01">
+            <i class="icon-reset"></i>
+            서명 초기화
+          </button>
+        </div>
+      </div>
+      
+      <div class="mt30">
+        <button type="button" class="block medium" onclick="modal.alert($(this), applyConfig);">
+          확인
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  var applyConfig = {
+    type: 'alert',
+    text: '유전자 검사 신청이 완료되었습니다.<br>감사합니다.',
+    ok: applyConfig
+  }
+  function applyConfig () {
+    console.log('완료')
+  }
+</script>
+</body>
+</html>

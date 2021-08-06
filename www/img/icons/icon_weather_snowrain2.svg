@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="264" height="300" viewBox="0 0 264 300">
+    <defs>
+        <style>
+            .cls-1{fill:#333}
+        </style>
+    </defs>
+    <g id="_06" transform="translate(-1833.522 -986.907)">
+        <path id="Path_410" d="M1939.722 1286.907c-18.567 0-33.672-14.2-33.672-31.657h14.744c0 9.386 8.491 17.023 18.928 17.023s18.928-7.637 18.928-17.023v-51.406h14.744v51.406c0 17.456-15.105 31.657-33.672 31.657z" class="cls-1"/>
+        <path id="Rectangle_507" d="M0 0H14.744V17.038H0z" class="cls-1" transform="translate(1958.649 1062.438)"/>
+        <path id="Path_411" fill="#fcaf17" d="M2087.109 1172.332c-13.737-52.675-62.74-91.64-121.087-91.64-68.994 0-124.926 54.486-124.926 121.7h256.426"/>
+        <path id="Path_412" d="M2097.522 1209.906h-264v-7.518c0-71.248 59.439-129.213 132.5-129.213 60.676 0 113.484 40 128.419 97.274l-14.665 3.766c-13.206-50.638-59.983-86.005-113.754-86.005-62.112 0-113.109 47.192-117.1 106.661h248.6z" class="cls-1"/>
+        <ellipse id="Ellipse_39" cx="9.513" cy="9.441" class="cls-1" rx="9.513" ry="9.441" transform="translate(2009.896 1032.424)"/>
+        <ellipse id="Ellipse_40" cx="9.513" cy="9.441" class="cls-1" rx="9.513" ry="9.441" transform="translate(2043.189 1056.027)"/>
+        <ellipse id="Ellipse_41" cx="9.513" cy="9.441" class="cls-1" rx="9.513" ry="9.441" transform="translate(1857.692 1051.306)"/>
+        <ellipse id="Ellipse_42" cx="9.513" cy="9.441" class="cls-1" rx="9.513" ry="9.441" transform="translate(1995.626 986.907)"/>
+        <ellipse id="Ellipse_43" cx="9.513" cy="9.441" class="cls-1" rx="9.513" ry="9.441" transform="translate(1926.868 1012.296)"/>
+        <ellipse id="Ellipse_44" cx="9.513" cy="9.441" class="cls-1" rx="9.513" ry="9.441" transform="translate(1966.029 1011.676)"/>
+        <ellipse id="Ellipse_45" cx="9.513" cy="9.441" class="cls-1" rx="9.513" ry="9.441" transform="translate(1899.44 992.793)"/>
+        <ellipse id="Ellipse_46" cx="9.513" cy="9.441" class="cls-1" rx="9.513" ry="9.441" transform="translate(1899.557 1049.986)"/>
+    </g>
+</svg>

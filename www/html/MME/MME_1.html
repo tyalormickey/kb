@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-reset.min.css'/>
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-common.css'/>
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-style.css'/>
+
+  <script src='../../js/libs/jquery-3.1.1.min.js'></script>
+  <script src='../../js/swiper.min.js'></script>
+  <script src='../../js/ui.js'></script>
+</head>
+<body>
+
+<div class="wrapper">
+</div>
+
+<script>
+  var alertDormantMember = {
+    type: 'alert',
+    text: '회원님의 계정이 180일 이상 미사용으로 휴면 상태로 전환되었습니다.<br />' +
+      '휴면 회원은 서비스 이용이 제한 됩니다.<br />' +
+      '휴면 상태를 해지 후 다양한 혜택을<br />' +
+      '받으세요.',
+    closeIcon: true,
+    buttonSize: 'medium',
+    okText: '휴면 회원 해제',
+    ok: dormantMemberOk
+  }
+
+  function dormantMemberOk () {
+    console.log('휴면 회원 해제')
+  }
+
+  modal.alert(false, alertDormantMember);
+  toast.open('본인인증이 완료되었습니다.');
+  toast.open('본인인증이 실패하였습니다.<br />본인 인증 후 휴면 회원 해제가 가능합니다.');
+</script>
+
+</body>
+</html>
+

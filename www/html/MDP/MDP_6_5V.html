@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-reset.min.css'/>
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-common.css'/>
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-style.css'/>
+
+  <script src='../../js/libs/jquery-3.1.1.min.js'></script>
+  <script src='../../js/swiper.min.js'></script>
+  <script src='../../js/ui.js'></script>
+</head>
+<body>
+
+<div class="wrapper">
+  <div class="header">
+    <header>
+      <div class="header__back">
+        <div class="back">
+          <button type="button" class="only-icon">
+            <i class="icon-arrow_left icon-20">뒤로가기</i>
+          </button>
+        </div>
+        <div class="title">
+          포인트 전환
+        </div>
+        <div class="right-icons">
+          <button type="button" class="only-icon">
+            <i class="icon-camera_02 icon-20">카메라</i>
+          </button>
+          <button type="button" class="only-icon">
+            <i class="icon-alarm on icon-20">알람</i>
+          </button>
+        </div>
+      </div>
+    </header>
+  </div>
+  <div class="content-wrap footer-button">
+    <div class="scrollBox">
+      <section class="point-change-title">
+        <i class="point-change-title__icon"></i>
+        <p class="point-change-title__text">
+          포인트 전환 서비스를 위해 아래 동의가 필요합니다. 반드시 확인해 주세요.
+        </p>
+      </section>
+      <section class="point-change-contents">
+        <div class="point-change-agree__all">
+          <label class="input-checkbox">
+            <input type="checkbox" checked />
+            <i></i>
+            <span>
+              전체 약관 동의
+            </span>
+          </label>
+        </div>
+        <ul class="point-change-agree__list">
+          <li class="point-change-agree__item">
+            <button type="button">
+              <label class="input-checkbox">
+                <input type="checkbox" />
+                <i></i>
+                <span>
+                  (필수) 개인(신용)정보 제 3자 제공동의
+                  <em>O-care에서 ㈜KB국민카드로 제공</em>
+                </span>
+              </label>
+            </button>
+          </li>
+          <li class="point-change-agree__item">
+            <button type="button">
+              <label class="input-checkbox">
+                <input type="checkbox" />
+                <i></i>
+                <span>
+                  (필수) 개인정보 수집 및 이용 동의
+                  <em>O-care에서 ㈜KB국민카드로 제공</em>
+                </span>
+              </label>
+            </button>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </div>
+  <div class="footer footer__button-nav">
+    <button class="block" type="button" onclick="modal.alert(false, noMember)">
+      동의하기
+    </button>
+    <nav>
+        <ul>
+            <li class="on">
+                <button type="button">
+                    <i class="icon-home icon-16"></i>
+                    <span>홈</span>
+                </button>
+            </li>
+            <li>
+                <button type="button">
+                    <i class="icon-pro icon-16"></i>
+            <span>프로그램</span>
+          </button>
+        </li>
+        <li>
+          <button type="button">
+            <i class="icon-info icon-16"></i>
+            <span>증상ㆍ병원</span>
+          </button>
+        </li>
+        <li>
+          <button type="button">
+            <i class="icon-my icon-16"></i>
+            <span>MY</span>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+
+<script>
+  var noMember = {
+    type: 'alert',
+    text: 'KB포인트리 회원이 아닙니다.<br/>리브메이트 회원가입 후 다시 이용해 주세요.',
+    ok: handleOk
+  }
+  function handleOk () {
+    console.log('확인')
+  }
+</script>
+</body>
+</html>

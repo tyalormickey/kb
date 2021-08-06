@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-reset.min.css'/>
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-common.css'/>
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-style.css'/>
+
+  <script src='../../js/libs/jquery-3.1.1.min.js'></script>
+  <script src='../../js/swiper.min.js'></script>
+  <script src='../../js/ui.js'></script>
+</head>
+<body>
+
+<div class="wrapper">
+  <div class="header">
+    <header>
+      <div class="header__title">
+        <div class="title">
+          가입설문
+        </div>
+      </div>
+    </header>
+  </div>
+
+  <div class="content-wrap bottom-button-fixed">
+    <div class="scrollBox no-padding survey__wrap">
+      <section class="survey__content">
+        <div class="survary-selector">
+          <div class="survary-selector__title">
+            김국민님이<br/>
+            <strong>현재 본인의 건강 관리</strong>를<br/>
+            어떻게 하고 계시는지 궁금해요!
+          </div>
+          <div class="survary-selector__list" data-active-count="1">
+            <button type="button" class="survary-selector__list-item">
+              <p>건강이 좋지 않아 건강관리가 필요해요</p>
+              <span><i>체크</i></span>
+            </button>
+            <button type="button" class="survary-selector__list-item">
+              <p>건강 관리가 중요한 것을 알고 있고 관리도 열심히 하는 편이에요</p>
+              <span><i>체크</i></span>
+            </button>
+            <button type="button" class="survary-selector__list-item">
+              <p>건강 관리가 중요한 건 알고 있지만 시간적 여유가 없어요</p>
+              <span><i>체크</i></span>
+            </button>
+            <button type="button" class="survary-selector__list-item">
+              <p>건강 관리가 중요한 것을 알고 있고 관리 방법을 모르겠어요</p>
+              <span><i>체크</i></span>
+            </button>
+            <button type="button" class="survary-selector__list-item">
+              <p>건강 관리의 필요성을 못 느끼고 있어요</p>
+              <span><i>체크</i></span>
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- fixed -->
+      <section class="survey__progress">
+        <div class="survey__progress--active" style="width: 10%;"></div>
+      </section>
+    </div>
+  </div>
+
+  <div class="button__flex-wrap bottom-fixed">
+    <button type="button" class="block" disabled> <!-- disabled 제거 -->
+      다음
+    </button>
+  </div>
+</div>
+
+<script>
+  $('.survary-selector__list').each(function () {
+    var $item = $(this).find('.survary-selector__list-item');
+    var count = parseInt($(this).data('active-count'));
+
+    $item.off('click').on('click', function () {
+      if (count === 1 || parseInt($(this).data('value')) === 0) {
+        $(this).toggleClass('active').siblings().removeClass('active');
+      } else {
+        if ($(this).hasClass('active')) {
+          $(this).removeClass('active');
+        } else if ($item.filter('.active').length < count) {
+          $(this).addClass('active');
+          $item.filter('.only').removeClass('active');
+        }
+      }
+      var $nextBtn = $('.bottom-fixed button[data-button="next"]');
+      var $activeCount = $item.filter('.active').length
+      if ($activeCount >= 1 && $activeCount <= count) {
+        $nextBtn.attr('disabled', false)
+      } else {
+        $nextBtn.attr('disabled', true)
+      }
+    })
+  });
+</script>
+</body>
+</html>

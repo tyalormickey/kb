@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-reset.min.css'/>
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-common.css'/>
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-style.css'/>
+
+  <script src='../../js/libs/jquery-3.1.1.min.js'></script>
+  <script src='../../js/swiper.min.js'></script>
+  <script src='../../js/ui.js'></script>
+</head>
+<body>
+
+<div class="wrapper">
+  <div class="header">
+    <header>
+      <div class="header__back">
+        <div class="back">
+          <button type="button" class="only-icon">
+            <i class="icon-arrow_left icon-20">뒤로가기</i>
+          </button>
+        </div>
+        <div class="title">
+          공동인증서 가져오기
+        </div>
+        <div class="right-icons">
+          <button type="button" class="only-icon">
+            <i class="icon-camera_02 icon-20">카메라</i>
+          </button>
+          <button type="button" class="only-icon">
+            <i class="icon-alarm on icon-20">알람</i>
+          </button>
+        </div>
+      </div>
+    </header>
+  </div>
+  <div class="content-wrap">
+    <div class="scrollBox">
+      <div class="certificate-import">
+        <div class="certificate-import__title">
+          PC 공동인증서(구 공인인증서) 가져오기 안내
+        </div>
+        <ul class="certificate-import__list">
+          <li>사용자 PC에서 www.o-care.co.kr 사이트에
+            접속합니다.</li>
+          <li>사용자 PC에서 “인증서 복사하기“ 버튼을 클릭
+            합니다.</li>
+          <li>PC에서 스마트폰으로 복사할 인증서를 선택하
+            고 인증합니다.</li>
+          <li>공동인증서 인증 완료 후 O-Care App에서 발
+            급한 승인번호를 PC 화면에 입력합니다.</li>
+          <li>인증서 가져오기 완료 안내가 나타나면 서비스
+            를 정상적으로 이용할 수 있습니다.</li>
+        </ul>
+        <dl class="certificate-import__number">
+          <dt>승인번호</dt>
+          <dd>
+            <input type="text"/>
+            <input type="text"/>
+            <input type="text"/>
+          </dd>
+        </dl>
+        <div class="ertificate-import__button">
+          <button class="block medium" type="button" onclick="modal.alert($(this), importItem);">
+            인증서 가져오기
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer footer__nav">
+    <nav>
+        <ul>
+            <li class="on">
+                <button type="button">
+                    <i class="icon-home icon-16"></i>
+                    <span>홈</span>
+                </button>
+            </li>
+            <li>
+                <button type="button">
+                    <i class="icon-pro icon-16"></i>
+            <span>프로그램</span>
+          </button>
+        </li>
+        <li>
+          <button type="button">
+            <i class="icon-info icon-16"></i>
+            <span>증상ㆍ병원</span>
+          </button>
+        </li>
+        <li>
+          <button type="button">
+            <i class="icon-my icon-16"></i>
+            <span>MY</span>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+
+<script>
+  var importItem = {
+    type: 'alert',
+    text: '공동인증서 가져오기가 완료 되었습니다.',
+    ok: handleOk
+  }
+  function handleOk () {
+    console.log('확인')
+  }
+</script>
+</body>
+</html>

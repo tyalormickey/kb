@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-reset.min.css'/>
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-common.css'/>
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-style.css'/>
+
+  <script src='../../js/libs/jquery-3.1.1.min.js'></script>
+  <script src='../../js/swiper.min.js'></script>
+  <script src='../../js/ui.js'></script>
+</head>
+<body>
+
+<div class="wrapper">
+  <div class="header">
+    <header>
+      <div class="header__back">
+        <div class="back">
+          <button type="button" class="only-icon">
+            <i class="icon-arrow_left icon-20">뒤로가기</i>
+          </button>
+        </div>
+        <div class="title">
+          건강분석질문
+        </div>
+        <div class="right-icons">
+          <button type="button" class="only-icon">
+            <i class="icon-camera_02 icon-20">카메라</i>
+          </button>
+          <button type="button" class="only-icon">
+            <i class="icon-alarm on icon-20">알람</i>
+          </button>
+        </div>
+      </div>
+    </header>
+  </div>
+
+  <div class="content-wrap footer-button">
+    <div class="scrollBox no-padding page-health-qs">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <!-- MPD.5.17V 질문 1-->
+          <div class="swiper-slide">
+            <section class="survey__content">
+              <div class="survary-selector">
+                <div class="survary-selector__title">
+                  <strong>최근 2년 동안</strong> 건강을 위해<br/>
+                  <strong>건강검진을 받은 적이</strong> 있습니까?
+                </div>
+                <div class="survary-selector__list" data-active-count="1">
+                  <button type="button" class="survary-selector__list-item">
+                    <p>예</p>
+                    <span><i>체크</i></span>
+                  </button>
+                  <button type="button" class="survary-selector__list-item">
+                    <p>아니요</p>
+                    <span><i>체크</i></span>
+                  </button>
+                </div>
+              </div>
+            </section>
+          </div>
+          <!-- MPD.5.17V 질문 2-->
+          <div class="swiper-slide">
+            <section class="survey__content">
+              <div class="survary-selector">
+                <div class="survary-selector__title">
+                  지금까지 <strong>평생 총 5갑(100개비) 이상의</strong><br/>
+                  일반담배를 피운 적이 있습니까?
+                </div>
+                <div class="survary-selector__list" data-active-count="1">
+                  <button type="button" class="survary-selector__list-item">
+                    <p>예</p>
+                    <span><i>체크</i></span>
+                  </button>
+                  <button type="button" class="survary-selector__list-item">
+                    <p>아니요</p>
+                    <span><i>체크</i></span>
+                  </button>
+                </div>
+              </div>
+            </section>
+          </div>
+          <!-- MPD.5.17V 질문 3-->
+          <div class="swiper-slide">
+            <section class="survey__content">
+              <div class="survary-selector">
+                <div class="survary-selector__title">
+                  현재 <strong>일반담배</strong>를 피우십니까?
+                </div>
+                <div class="survary-selector__list" data-active-count="1">
+                  <button type="button" class="survary-selector__list-item">
+                    <p>현재 피움</p>
+                    <span><i>체크</i></span>
+                  </button>
+                  <button type="button" class="survary-selector__list-item">
+                    <p>과거에는 피웠으나 현재 피우지 않음</p>
+                    <span><i>체크</i></span>
+                  </button>
+                </div>
+              </div>
+            </section>
+          </div>
+          <!-- MPD.5.18V 질문 1-->
+          <div class="swiper-slide">
+            <section class="survey__content">
+              <div class="survary-selector">
+                <div class="survary-selector__title">
+                  얼마나 피우셨습니까?
+                </div>
+                <div class="survary-selector__body">
+                  <div class="form-item">
+                    <div class="custom-input">
+                      <input type="text" placeholder="총 00년(숫자만 입력)"/>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+          <!-- MPD.5.18V 질문 2-->
+          <div class="swiper-slide">
+            <section class="survey__content">
+              <div class="survary-selector">
+                <div class="survary-selector__title">
+                  하루 평균 00개비 피시나요?
+                </div>
+                <div class="survary-selector__body">
+                  <div class="form-item">
+                    <div class="custom-input">
+                      <input type="text" placeholder="하루평균 00개피(숫자만 입력)"/>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+          <!-- MPD.5.18V 질문 3-->
+          <div class="swiper-slide">
+            <section class="survey__content">
+              <div class="survary-selector">
+                <div class="survary-selector__title">
+                  흡연했을 때 하루 평균 00개피 피셨나요?
+                </div>
+                <div class="survary-selector__body">
+                  <div class="form-item">
+                    <div class="custom-input">
+                      <input type="text" placeholder="하루평균 00개피(숫자만 입력)"/>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+          <!-- MPD.5.18V 질문 4-->
+          <div class="swiper-slide">
+            <section class="survey__content">
+              <div class="survary-selector">
+                <div class="survary-selector__title">
+                  지난 <strong>1년간 술을 마시는 횟수</strong>는<br/>
+                  어느 정도입니까?
+                </div>
+                <div class="survary-selector__list" data-active-count="1">
+                  <button type="button" class="survary-selector__list-item">
+                    <p>일주일에 00번</p>
+                    <span><i>체크</i></span>
+                  </button>
+                  <button type="button" class="survary-selector__list-item">
+                    <p>한 달에 00번</p>
+                    <span><i>체크</i></span>
+                  </button>
+                  <button type="button" class="survary-selector__list-item">
+                    <p>1년에 00번</p>
+                    <span><i>체크</i></span>
+                  </button>
+                  <button type="button" class="survary-selector__list-item">
+                    <p>술을 마시지 않는다</p>
+                    <span><i>체크</i></span>
+                  </button>
+                </div>
+              </div>
+            </section>
+          </div>
+          <!-- MPD.5.19V 질문 1-->
+          <div class="swiper-slide">
+            <section class="survey__content">
+              <div class="survary-selector">
+                <div class="survary-selector__title">
+                  자주 드시는 <strong>주종은</strong>?
+                </div>
+                <div class="survary-selector__list" data-active-count="1">
+                  <button type="button" class="survary-selector__list-item">
+                    <p>소주</p>
+                    <span><i>체크</i></span>
+                  </button>
+                  <button type="button" class="survary-selector__list-item">
+                    <p>맥주</p>
+                    <span><i>체크</i></span>
+                  </button>
+                  <button type="button" class="survary-selector__list-item">
+                    <p>양주</p>
+                    <span><i>체크</i></span>
+                  </button>
+                  <button type="button" class="survary-selector__list-item">
+                    <p>막걸리</p>
+                    <span><i>체크</i></span>
+                  </button>
+                  <button type="button" class="survary-selector__list-item">
+                    <p>와인</p>
+                    <span><i>체크</i></span>
+                  </button>
+                </div>
+              </div>
+            </section>
+          </div>
+          <!-- MPD.5.19V 질문 2-->
+          <div class="swiper-slide">
+            <section class="survey__content">
+              <div class="survary-selector">
+                <div class="survary-selector__title">
+                  <strong>술을 마시는 날은 보통</strong> 어느 정도
+                  마십니까?
+                </div>
+                <div class="survary-selector__body">
+                  <div class="form-item">
+                    <div class="custom-select">
+                      <dl class="default">
+                        <dt>
+                          <button type="button">
+                            <span>선택해주세요.</span>
+                          </button>
+                        </dt>
+                        <dd>
+                          <ul>
+                            <li class="selected">
+                              <button type="button">50ml 소주 잔으로 00잔</button>
+                            </li>
+                          </ul>
+                        </dd>
+                      </dl>
+                    </div>
+                  </div>
+                  <div class="form-item">
+                    <div class="custom-input">
+                      <input type="text" placeholder="숫자만 입력"/>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+          <!-- MPD.5.20V 질문 1-->
+          <div class="swiper-slide">
+            <section class="survey__content">
+              <div class="survary-selector">
+                <div class="survary-selector__title">
+                  평소 1주일간, <strong>한 번에 적어도 10분날<br/>
+                  이상</strong> 걸은 이 며칠입니까?
+                </div>
+                <div class="survary-selector__list" data-active-count="1">
+                  <button type="button" class="survary-selector__list-item">
+                    <p>0일</p>
+                    <span><i>체크</i></span>
+                  </button>
+                  <button type="button" class="survary-selector__list-item">
+                    <p>1일</p>
+                    <span><i>체크</i></span>
+                  </button>
+                  <button type="button" class="survary-selector__list-item">
+                    <p>2일</p>
+                    <span><i>체크</i></span>
+                  </button>
+                  <button type="button" class="survary-selector__list-item">
+                    <p>3일</p>
+                    <span><i>체크</i></span>
+                  </button>
+                  <button type="button" class="survary-selector__list-item">
+                    <p>4일</p>
+                    <span><i>체크</i></span>
+                  </button>
+                  <button type="button" class="survary-selector__list-item">
+                    <p>5일</p>
+                    <span><i>체크</i></span>
+                  </button>
+                  <button type="button" class="survary-selector__list-item">
+                    <p>6일</p>
+                    <span><i>체크</i></span>
+                  </button>
+                  <button type="button" class="survary-selector__list-item">
+                    <p>7일</p>
+                    <span><i>체크</i></span>
+                  </button>
+                </div>
+              </div>
+            </section>
+          </div>
+          <!-- MPD.5.20V 질문 2-->
+          <div class="swiper-slide">
+            <section class="survey__content">
+              <div class="survary-selector">
+                <div class="survary-selector__title">
+                  걷기를 <strong>한 날 하루에 몇 시간</strong><br/>
+                  걸으십니까?
+                </div>
+                <div class="survary-selector__body">
+                  <div class="form-item">
+                    <div class="custom-select">
+                      <dl class="default">
+                        <dt>
+                          <button type="button">
+                            <span>운동시간 선택</span>
+                          </button>
+                        </dt>
+                        <dd>
+                          <ul>
+                            <li>
+                              <button type="button">1시간 30분</button>
+                            </li>
+                            <li>
+                              <button type="button">2시간 30분</button>
+                            </li>
+                            <li>
+                              <button type="button">3시간 30분</button>
+                            </li>
+                          </ul>
+                        </dd>
+                      </dl>
+                    </div>
+                  </div>
+                  <div class="form-item">
+                    <div class="custom-input">
+                      <input type="text" placeholder="숫자만 입력"/>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+          <!-- MPD.5.20V 질문 3-->
+          <div class="swiper-slide">
+            <section class="survey__content">
+              <div class="survary-selector">
+                <div class="survary-selector__title">
+                  평소 1주일간, <strong>주중에 앉아서 보낸<br/>
+                  시간이</strong> 보통 얼마나 됩니까?
+                </div>
+                <div class="survary-selector__body">
+                  <div class="form-item">
+                    <div class="custom-select">
+                      <dl class="default">
+                        <dt>
+                          <button type="button">
+                            <span>시간 선택</span>
+                          </button>
+                        </dt>
+                        <dd>
+                          <ul>
+                            <li>
+                              <button type="button">1시간 30분</button>
+                            </li>
+                            <li>
+                              <button type="button">2시간 30분</button>
+                            </li>
+                            <li>
+                              <button type="button">3시간 30분</button>
+                            </li>
+                          </ul>
+                        </dd>
+                      </dl>
+                    </div>
+                  </div>
+                  <div class="form-item">
+                    <div class="custom-input">
+                      <input type="text" placeholder="숫자만 입력"/>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+          <!-- MPD.5.20V 질문 4-->
+          <div class="swiper-slide">
+            <section class="survey__content">
+              <div class="survary-selector">
+                <div class="survary-selector__title">
+                  <strong>평소 일상생활 중에 스트레스</strong>를<br/>
+                  어느 정도 느끼고 있습니까?
+                </div>
+                <div class="survary-selector__list" data-active-count="1">
+                  <button type="button" class="survary-selector__list-item">
+                    <p>대단히 많이 느낀다</p>
+                    <span><i>체크</i></span>
+                  </button>
+                  <button type="button" class="survary-selector__list-item">
+                    <p>많이 느끼는 편이다</p>
+                    <span><i>체크</i></span>
+                  </button>
+                  <button type="button" class="survary-selector__list-item">
+                    <p>조금 느끼는 편이다</p>
+                    <span><i>체크</i></span>
+                  </button>
+                  <button type="button" class="survary-selector__list-item">
+                    <p>거의 느끼지 않는다</p>
+                    <span><i>체크</i></span>
+                  </button>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer footer__button-nav">
+    <section class="survey__progress">
+      <div class="survey__progress--active" style="width: 10%;"></div>
+    </section>
+    <div class="button__flex-wrap">
+      <button type="button" class="block gray" data-button="prev">
+        이전
+      </button>
+      <button type="button" class="block" data-button="next">
+        다음
+      </button>
+    </div>
+    <nav>
+      <ul>
+        <li class="on">
+          <button type="button">
+            <i class="icon-home icon-16"></i>
+            <span>홈</span>
+          </button>
+        </li>
+        <li>
+          <button type="button">
+            <i class="icon-pro icon-16"></i>
+            <span>프로그램</span>
+          </button>
+        </li>
+        <li>
+          <button type="button">
+            <i class="icon-info icon-16"></i>
+            <span>증상ㆍ병원</span>
+          </button>
+        </li>
+        <li>
+          <button type="button">
+            <i class="icon-my icon-16"></i>
+            <span>MY</span>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+
+<script>
+  var $prevButton = $('button[data-button="prev"]');
+  var $nextButton = $('button[data-button="next"]');
+  var completeNum = []
+
+  var swiper = new Swiper('.swiper-container', {
+    effect: 'fade',
+    allowTouchMove: false,
+    on: {
+      init: function () {
+        $prevButton.hide();
+        $nextButton.attr('disabled', true);
+      },
+      slideChangeTransitionEnd: function () {
+        if (this.activeIndex > 0) {
+          $prevButton.show();
+        } else {
+          $prevButton.hide();
+        }
+        if (completeNum.includes(this.activeIndex)) {
+          $nextButton.attr('disabled', false);
+        } else {
+          $nextButton.attr('disabled', true);
+        }
+      },
+    }
+  });
+
+  var confirmConfig = {
+    type: 'confirm',
+    text: '건강분석질문이 완료 되었습니다.<br />건강 점수를 확인하시겠습니까?',
+    ok: function () {
+      console.log('확인');
+    },
+    cancel: function () {
+      console.log('취소');
+    },
+  }
+
+  $prevButton.off('click').on('click', function () {
+    if (swiper.activeIndex < swiper.slides.length - 1) {
+      swiper.slideTo(swiper.activeIndex - 1);
+    } else {
+      console.log('첫화면')
+    }
+  });
+
+  $nextButton.off('click').on('click', function () {
+    if (swiper.activeIndex < swiper.slides.length - 1) {
+      completeNum.push(swiper.activeIndex);
+      swiper.slideTo(swiper.activeIndex + 1);
+    } else {
+      modal.alert(false, confirmConfig);
+      console.log('결과보기')
+    }
+  });
+
+  $('.survary-selector__body').each(function () {
+    var $item = $(this).find('input');
+    $item.off('input').on('input', function (e) {
+      e.preventDefault();
+      if (e.target.value) {
+        $nextButton.attr('disabled', false)
+      } else {
+        $nextButton.attr('disabled', true)
+      }
+    })
+  });
+
+  $('.survary-selector__list').each(function () {
+    var $item = $(this).find('.survary-selector__list-item');
+    var count = parseInt($(this).data('active-count'));
+
+    $item.off('click').on('click', function () {
+      if (count === 1 || $(this).hasClass('only')) {
+        $(this).toggleClass('active').siblings().removeClass('active');
+      } else {
+        if ($(this).hasClass('active')) {
+          $(this).removeClass('active');
+        } else if ($item.filter('.active').length < count) {
+          $(this).addClass('active');
+          $item.filter('.only').removeClass('active');
+        }
+      }
+
+      var $activeCount = $item.filter('.active').length
+      if ($activeCount >= 1 && $activeCount <= count) {
+        $nextButton.attr('disabled', false)
+      } else {
+        $nextButton.attr('disabled', true)
+      }
+    })
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-reset.min.css'/>
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-common.css'/>
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-style.css'/>
+
+  <script src='../../js/libs/jquery-3.1.1.min.js'></script>
+  <script src='../../js/swiper.min.js'></script>
+  <script src='../../js/ui.js'></script>
+</head>
+<body>
+
+<div class="wrapper">
+  <div class="header">
+    <header>
+      <div class="header__back">
+        <div class="back">
+          <button type="button" class="only-icon">
+            <i class="icon-arrow_left icon-20">뒤로가기</i>
+          </button>
+        </div>
+        <div class="title">
+          수면
+        </div>
+        <div class="right-icons">
+          <button type="button" class="only-icon">
+            <i class="icon-camera_02 icon-20">카메라</i>
+          </button>
+          <button type="button" class="only-icon">
+            <i class="icon-alarm on icon-20">알람</i>
+          </button>
+          <button type="button" class="only-icon narrow" onclick="modal.open($(this), '.mpd_770__popup');">
+            <i class="icon-more icon-20">메뉴</i>
+          </button>
+        </div>
+      </div>
+    </header>
+  </div>
+  <div class="content-wrap">
+    <div class="scrollBox page-mpd-61">
+      <div class="tab__wrap">
+        <ul class="tab button-type">
+          <li class="tab__item">
+            <button type="button">
+              <span>일</span>
+            </button>
+          </li>
+          <li class="tab__item">
+            <button type="button">
+              <span>주</span>
+            </button>
+          </li>
+          <li class="tab__item">
+            <button type="button">
+              <span>월</span>
+            </button>
+          </li>
+          <li class="tab__item">
+            <button type="button">
+              <span>년</span>
+            </button>
+          </li>
+        </ul>
+        <div class="tab__content-wrap">
+          <div class="tab__content">
+
+            <div class="manage-select-date mt25">
+              <button type="button" class="left-icon only-icon">
+                <i class="icon-arrow_left icon-20"></i>
+              </button>
+              <div class="date">
+                2021.06.11
+              </div>
+              <button type="button" class="right-icon only-icon">
+                <i class="icon-arrow_right icon-20"></i>
+              </button>
+            </div>
+            <section class="manage-gray-box pd20 center mt40">
+              <div class="flex-sb">
+                <div class="small">
+                  총 수면시간
+                </div>
+                <div class="middle-title">
+                  <b>11</b>시간 <b>05</b>분
+                </div>
+              </div>
+            </section>
+
+            <div class="manage-h3 with-tag mt40">
+              <strong>수면 평가</strong>
+            </div>
+            <div class="manage-message-box black16 mt15 center">
+              <div class="manage-star star-large">
+                <button type="button" class="only-icon">
+                  <i class="icon-star03"></i>
+                </button>
+                <button type="button" class="only-icon">
+                  <i class="icon-star03"></i>
+                </button>
+                <button type="button" class="only-icon">
+                  <i class="icon-star03"></i>
+                </button>
+                <button type="button" class="only-icon">
+                  <i class="icon-star03"></i>
+                </button>
+                <button type="button" class="only-icon">
+                  <i class="icon-star02"></i>
+                </button>
+              </div>
+            </div>
+            <div class="manage-h3 with-tag mt40">
+              <strong>수면 정보</strong>
+              <div class="tag tag--sub">
+                Main 성취
+              </div>
+            </div>
+            <div class="manage-message-box black16 mt15">
+              관리 메시지 영역
+            </div>
+
+            <div class="manage-h4 with-tag mt25">
+              <strong>일일 수면 시간</strong>
+              <p>
+                단위: 시간, 분
+              </p>
+            </div>
+            <section class="manage-average-bar mt25">
+              <ul>
+                <li>
+                  <em>최소 78</em>
+                </li>
+                <li class="active">
+                  <strong>평균 91</strong>
+                </li>
+              </ul>
+            </section>
+
+            <div class="manage-super-text mt25">
+              <button type="button" class="text-icon small-01">
+                <i class="icon-edit"></i>
+                기록관리
+              </button>
+            </div>
+            <div class="manage-time-graph mt10">
+              <div class="manage-time-graph__bar">
+                <span style="width: 50%; margin-right: 10.67%;"></span>
+                <span style="width: 7.28%; margin-right: 24.77%;"></span>
+                <span style="width: 7.28%;"></span>
+              </div>
+              <div class="manage-time-graph__time">
+                <span>오전24</span>
+                <span>06</span>
+                <span>오후12</span>
+                <span>18</span>
+                <span>21</span>
+              </div>
+            </div>
+
+            <section class="manage-list-row mt20">
+              <div class="manage-list-row__item no-border">
+                <p class="manage-text black">7시간</p>
+                <p class="manage-sub-text black mt5">
+                  수면 시작 2021.05.26 오후 3시 20분<br/>
+                  수면 종료 2021.05.27 오전 10시 00분
+                </p>
+                <p class="manage-super-text mt10 mb5 left">2021.05.12(화) 오전 10:23</p>
+              </div>
+              <div class="manage-list-row__item">
+                <p class="manage-text black">7시간</p>
+                <p class="manage-sub-text black mt5">
+                  수면 시작 2021.05.26 오후 3시 20분<br/>
+                  수면 종료 2021.05.27 오전 10시 00분
+                </p>
+                <p class="manage-super-text mt10 mb5 left">2021.05.12(화) 오전 10:23</p>
+              </div>
+              <div class="manage-list-row__item">
+                <p class="manage-text black">7시간</p>
+                <p class="manage-sub-text black mt5">
+                  수면 시작 2021.05.26 오후 3시 20분<br/>
+                  수면 종료 2021.05.27 오전 10시 00분
+                </p>
+                <p class="manage-super-text mt10 mb5 left">2021.05.12(화) 오전 10:23</p>
+              </div>
+            </section>
+
+            <!--
+            <div class="manage-super-text mt25">
+              2021.06.13
+            </div>
+            <ul class="manage-list mt10 mb40">
+              <li>
+                <div class="gray small">수면 시간</div>
+                <div class="right">9 시간</div>
+              </li>
+              <li>
+                <div class="gray small">취침 시간</div>
+                <div class="right">오후 10시</div>
+              </li>
+              <li>
+                <div class="gray small">기상 시간</div>
+                <div class="right">오전 07시</div>
+              </li>
+            </ul>
+            -->
+
+            <!-- Start: no-data -->
+            <!--
+            <div class="message-box">
+              <div class="message-box__wrap">
+                <div class="message-box__icon">
+                  <i class="icon-nodata icon-40"></i>
+                </div>
+                <div class="message-box__sub-title">
+                  등록된 수면 데이터가 없습니다.
+                </div>
+                <div class="message-box__btn-wrap mt30">
+                  <button type="button" class="block small inline">
+                    데이터 연동하기
+                  </button>
+                </div>
+              </div>
+            </div>
+            -->
+            <!-- End: no-data -->
+          </div>
+          <div class="tab__content">
+            <div class="manage-select-date mt25">
+              <button type="button" class="left-icon only-icon">
+                <i class="icon-arrow_left icon-20"></i>
+              </button>
+              <div class="date">
+                2021.05.27 ~ 2021.06.11
+              </div>
+              <button type="button" class="right-icon only-icon">
+                <i class="icon-arrow_right icon-20"></i>
+              </button>
+            </div>
+            <section class="manage-gray-box pd20 center mt40">
+              <div class="flex-sb">
+                <div class="small">
+                  총 수면시간
+                </div>
+                <div class="middle-title">
+                  <b>11</b>시간 <b>05</b>분
+                </div>
+              </div>
+            </section>
+
+            <div class="manage-h3 with-tag mt40">
+              <strong>수면 평가</strong>
+            </div>
+            <div class="manage-message-box black16 mt15 center">
+              <div class="manage-star star-large">
+                <button type="button" class="only-icon">
+                  <i class="icon-star03"></i>
+                </button>
+                <button type="button" class="only-icon">
+                  <i class="icon-star03"></i>
+                </button>
+                <button type="button" class="only-icon">
+                  <i class="icon-star03"></i>
+                </button>
+                <button type="button" class="only-icon">
+                  <i class="icon-star03"></i>
+                </button>
+                <button type="button" class="only-icon">
+                  <i class="icon-star02"></i>
+                </button>
+              </div>
+            </div>
+            <div class="manage-h3 with-tag mt40">
+              <strong>수면 정보</strong>
+              <div class="tag tag--sub">
+                Main 성취
+              </div>
+            </div>
+            <div class="manage-message-box black16 mt15">
+              관리 메시지 영역
+            </div>
+
+            <div class="manage-h4 with-tag mt25">
+              <strong>주간 수면 시간</strong>
+              <p>
+                단위: 시간, 분
+              </p>
+            </div>
+            <section class="manage-average-bar mt25">
+              <ul>
+                <li>
+                  <em>최소 78</em>
+                </li>
+                <li class="active">
+                  <strong>평균 91</strong>
+                </li>
+                <li>
+                  <em>최대 100</em>
+                </li>
+              </ul>
+            </section>
+
+            <div class="manage-super-text mt25">
+              <button type="button" class="text-icon small-01">
+                <i class="icon-edit"></i>
+                기록관리
+              </button>
+            </div>
+            <div class="manage-graph show-number">
+              <div class="manage-graph__box small">
+                <ul class="manage-graph__grid small">
+                  <li><span>10</span></li>
+                  <li><span>8</span></li>
+                  <li><span>6</span></li>
+                  <li><span>4</span></li>
+                  <li><span>2</span></li>
+                  <li><span>0</span></li>
+                </ul>
+                <div class="manage-graph__table">
+                  <ul>
+                    <li>
+                      <span><b>월</b></span>
+                      <div class="full-bar">
+                        <span style="height: 10%; background: #b47c1a"></span>
+                        <span style="height: 80%; background: #fcaf2a"></span>
+                      </div>
+                    </li>
+                    <li>
+                      <span><b>화</b></span>
+                      <div class="full-bar">
+                        <span style="height: 10%; background: #b47c1a"></span>
+                        <span style="height: 80%; background: #fcaf2a"></span>
+                      </div>
+                    </li>
+                    <li>
+                      <span><b>수</b></span>
+                      <div class="full-bar">
+                        <span style="height: 10%; background: #b47c1a"></span>
+                        <span style="height: 80%; background: #fcaf2a"></span>
+                      </div>
+                    </li>
+                    <li>
+                      <span><b>목</b></span>
+                      <div class="full-bar">
+                        <span style="height: 10%; background: #b47c1a"></span>
+                        <span style="height: 50%; background: #fcaf2a"></span>
+                      </div>
+                    </li>
+                    <li>
+                      <span><b>금</b></span>
+                      <div class="full-bar">
+                        <span style="height: 10%; background: #b47c1a"></span>
+                        <span style="height: 80%; background: #fcaf2a"></span>
+                      </div>
+                    </li>
+                    <li>
+                      <span><b>토</b></span>
+                      <div class="full-bar">
+                        <span style="height: 10%; background: #b47c1a"></span>
+                        <span style="height: 60%; background: #fcaf2a"></span>
+                      </div>
+                    </li>
+                    <li>
+                      <span><b>일</b></span>
+                      <div class="full-bar">
+                        <span style="height: 10%; background: #b47c1a"></span>
+                        <span style="height: 70%; background: #fcaf2a"></span>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="manage-super-text mt25">
+              2021.06.13 토
+            </div>
+            <ul class="manage-list mt10 mb40">
+              <li>
+                <div class="gray small">총 수면 시간</div>
+                <div class="right">9 시간</div>
+              </li>
+            </ul>
+          </div>
+          <div class="tab__content">
+            <div class="manage-select-date mt25">
+              <button type="button" class="left-icon only-icon">
+                <i class="icon-arrow_left icon-20"></i>
+              </button>
+              <div class="date">
+                2021.06
+              </div>
+              <button type="button" class="right-icon only-icon">
+                <i class="icon-arrow_right icon-20"></i>
+              </button>
+            </div>
+            <section class="manage-gray-box pd20 center mt40">
+              <div class="flex-sb">
+                <div class="small">
+                  총 수면시간
+                </div>
+                <div class="middle-title">
+                  <b>11</b>시간 <b>05</b>분
+                </div>
+              </div>
+            </section>
+
+            <div class="manage-h3 with-tag mt40">
+              <strong>수면 평가</strong>
+            </div>
+            <div class="manage-message-box black16 mt15 center">
+              <div class="manage-star star-large">
+                <button type="button" class="only-icon">
+                  <i class="icon-star03"></i>
+                </button>
+                <button type="button" class="only-icon">
+                  <i class="icon-star03"></i>
+                </button>
+                <button type="button" class="only-icon">
+                  <i class="icon-star03"></i>
+                </button>
+                <button type="button" class="only-icon">
+                  <i class="icon-star03"></i>
+                </button>
+                <button type="button" class="only-icon">
+                  <i class="icon-star02"></i>
+                </button>
+              </div>
+            </div>
+            <div class="manage-h3 with-tag mt40">
+              <strong>수면 정보</strong>
+              <div class="tag tag--sub">
+                Main 성취
+              </div>
+            </div>
+            <div class="manage-message-box black16 mt15">
+              관리 메시지 영역
+            </div>
+
+            <div class="manage-h4 with-tag mt25">
+              <strong>월간 수면 시간</strong>
+              <p>
+                단위: 시간, 분
+              </p>
+            </div>
+            <section class="manage-average-bar mt25">
+              <ul>
+                <li>
+                  <em>최소 78</em>
+                </li>
+                <li class="active">
+                  <strong>평균 91</strong>
+                </li>
+                <li>
+                  <em>최대 100</em>
+                </li>
+              </ul>
+            </section>
+
+            <div class="manage-super-text mt25">
+              <button type="button" class="text-icon small-01">
+                <i class="icon-edit"></i>
+                기록관리
+              </button>
+            </div>
+            <div class="manage-graph show-number">
+              <div class="manage-graph__box small">
+                <ul class="manage-graph__grid small">
+                  <li><span>10</span></li>
+                  <li><span>8</span></li>
+                  <li><span>6</span></li>
+                  <li><span>4</span></li>
+                  <li><span>2</span></li>
+                  <li><span>0</span></li>
+                </ul>
+                <div class="manage-graph__table">
+                  <ul>
+                    <li>
+                      <span><b>월</b></span>
+                      <div class="full-bar">
+                        <span style="height: 10%; background: #b47c1a"></span>
+                        <span style="height: 80%; background: #fcaf2a"></span>
+                      </div>
+                    </li>
+                    <li>
+                      <span><b>화</b></span>
+                      <div class="full-bar">
+                        <span style="height: 10%; background: #b47c1a"></span>
+                        <span style="height: 80%; background: #fcaf2a"></span>
+                      </div>
+                    </li>
+                    <li>
+                      <span><b>수</b></span>
+                      <div class="full-bar">
+                        <span style="height: 10%; background: #b47c1a"></span>
+                        <span style="height: 80%; background: #fcaf2a"></span>
+                      </div>
+                    </li>
+                    <li>
+                      <span><b>목</b></span>
+                      <div class="full-bar">
+                        <span style="height: 10%; background: #b47c1a"></span>
+                        <span style="height: 50%; background: #fcaf2a"></span>
+                      </div>
+                    </li>
+                    <li>
+                      <span><b>금</b></span>
+                      <div class="full-bar">
+                        <span style="height: 10%; background: #b47c1a"></span>
+                        <span style="height: 80%; background: #fcaf2a"></span>
+                      </div>
+                    </li>
+                    <li>
+                      <span><b>토</b></span>
+                      <div class="full-bar">
+                        <span style="height: 10%; background: #b47c1a"></span>
+                        <span style="height: 60%; background: #fcaf2a"></span>
+                      </div>
+                    </li>
+                    <li>
+                      <span><b>일</b></span>
+                      <div class="full-bar">
+                        <span style="height: 10%; background: #b47c1a"></span>
+                        <span style="height: 70%; background: #fcaf2a"></span>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="manage-super-text mt25">
+              2021.06 4주차(20일 ~ 26일)
+            </div>
+            <ul class="manage-list mt10 mb40">
+              <li>
+                <div class="gray small">총 수면 시간</div>
+                <div class="right">9 시간</div>
+              </li>
+            </ul>
+          </div>
+          <div class="tab__content">
+            <div class="manage-select-date mt25">
+              <button type="button" class="left-icon only-icon">
+                <i class="icon-arrow_left icon-20"></i>
+              </button>
+              <div class="date">
+                2021
+              </div>
+              <button type="button" class="right-icon only-icon">
+                <i class="icon-arrow_right icon-20"></i>
+              </button>
+            </div>
+            <section class="manage-gray-box pd20 center mt40">
+              <div class="flex-sb">
+                <div class="small">
+                  총 수면시간
+                </div>
+                <div class="middle-title">
+                  <b>11</b>시간 <b>05</b>분
+                </div>
+              </div>
+            </section>
+
+            <div class="manage-h3 with-tag mt40">
+              <strong>수면 평가</strong>
+            </div>
+            <div class="manage-message-box black16 mt15 center">
+              <div class="manage-star star-large">
+                <button type="button" class="only-icon">
+                  <i class="icon-star03"></i>
+                </button>
+                <button type="button" class="only-icon">
+                  <i class="icon-star03"></i>
+                </button>
+                <button type="button" class="only-icon">
+                  <i class="icon-star03"></i>
+                </button>
+                <button type="button" class="only-icon">
+                  <i class="icon-star03"></i>
+                </button>
+                <button type="button" class="only-icon">
+                  <i class="icon-star02"></i>
+                </button>
+              </div>
+            </div>
+            <div class="manage-h3 with-tag mt40">
+              <strong>수면 정보</strong>
+              <div class="tag tag--sub">
+                Main 성취
+              </div>
+            </div>
+            <div class="manage-message-box black16 mt15">
+              관리 메시지 영역
+            </div>
+
+            <div class="manage-h4 with-tag mt25">
+              <strong>연간 수면 시간</strong>
+              <p>
+                단위: 시간, 분
+              </p>
+            </div>
+            <section class="manage-average-bar mt25">
+              <ul>
+                <li>
+                  <em>최소 78</em>
+                </li>
+                <li class="active">
+                  <strong>평균 91</strong>
+                </li>
+                <li>
+                  <em>최대 100</em>
+                </li>
+              </ul>
+            </section>
+
+            <div class="manage-super-text mt25">
+              <button type="button" class="text-icon small-01">
+                <i class="icon-edit"></i>
+                기록관리
+              </button>
+            </div>
+            <div class="manage-graph show-number">
+              <div class="manage-graph__box small">
+                <ul class="manage-graph__grid small">
+                  <li><span>10</span></li>
+                  <li><span>8</span></li>
+                  <li><span>6</span></li>
+                  <li><span>4</span></li>
+                  <li><span>2</span></li>
+                  <li><span>0</span></li>
+                </ul>
+                <div class="manage-graph__table">
+                  <ul>
+                    <li>
+                      <span><b>월</b></span>
+                      <div class="full-bar">
+                        <span style="height: 10%; background: #b47c1a"></span>
+                        <span style="height: 80%; background: #fcaf2a"></span>
+                      </div>
+                    </li>
+                    <li>
+                      <span><b>화</b></span>
+                      <div class="full-bar">
+                        <span style="height: 10%; background: #b47c1a"></span>
+                        <span style="height: 80%; background: #fcaf2a"></span>
+                      </div>
+                    </li>
+                    <li>
+                      <span><b>수</b></span>
+                      <div class="full-bar">
+                        <span style="height: 10%; background: #b47c1a"></span>
+                        <span style="height: 80%; background: #fcaf2a"></span>
+                      </div>
+                    </li>
+                    <li>
+                      <span><b>목</b></span>
+                      <div class="full-bar">
+                        <span style="height: 10%; background: #b47c1a"></span>
+                        <span style="height: 50%; background: #fcaf2a"></span>
+                      </div>
+                    </li>
+                    <li>
+                      <span><b>금</b></span>
+                      <div class="full-bar">
+                        <span style="height: 10%; background: #b47c1a"></span>
+                        <span style="height: 80%; background: #fcaf2a"></span>
+                      </div>
+                    </li>
+                    <li>
+                      <span><b>토</b></span>
+                      <div class="full-bar">
+                        <span style="height: 10%; background: #b47c1a"></span>
+                        <span style="height: 60%; background: #fcaf2a"></span>
+                      </div>
+                    </li>
+                    <li>
+                      <span><b>일</b></span>
+                      <div class="full-bar">
+                        <span style="height: 10%; background: #b47c1a"></span>
+                        <span style="height: 70%; background: #fcaf2a"></span>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="manage-super-text mt25">
+              2021.06
+            </div>
+            <ul class="manage-list mt10 mb40">
+              <li>
+                <div class="gray small">총 수면 시간</div>
+                <div class="right">9 시간</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer footer__nav">
+    <nav>
+      <ul>
+        <li class="on">
+          <button type="button">
+            <i class="icon-home icon-16"></i>
+            <span>홈</span>
+          </button>
+        </li>
+        <li>
+          <button type="button">
+            <i class="icon-pro icon-16"></i>
+            <span>프로그램</span>
+          </button>
+        </li>
+        <li>
+          <button type="button">
+            <i class="icon-info icon-16"></i>
+            <span>증상ㆍ병원</span>
+          </button>
+        </li>
+        <li>
+          <button type="button">
+            <i class="icon-my icon-16"></i>
+            <span>MY</span>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+
+<!-- 메뉴 팝업 // -->
+<div class="modal-popup mpd_770__popup">
+  <div class="modal-popup__outer">
+    <section class="modal-popup__container">
+      <article class="modal-popup__header">
+        <button class="modal-popup__close only-icon">
+          <i class="icon-x icon-20">닫기</i>
+        </button>
+      </article>
+      <div class="mdp_72__popup-cont">
+        <ul class="mdp_72__popup-button">
+          <li>
+            <button type="button">
+              데이터 연동
+            </button>
+          </li>
+          <li>
+            <button type="button">
+              데이터 입력
+            </button>
+          </li>
+          <li>
+            <button type="button">
+              데이터 편집
+            </button>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </div>
+</div>
+<!-- // 메뉴 팝업 -->
+
+<script>
+  tab.reset();
+  setTimeout(function() {
+    $('.tab__item').click(function() {
+      tab.action($(this))
+    });
+  }, 100);
+
+</script>
+</body>
+</html>

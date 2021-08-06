@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="icon_m_so_160_y" width="160" height="160" viewBox="0 0 160 160">
+    <defs>
+        <style>
+            .cls-3{fill:#333;stroke:transparent;stroke-miterlimit:10}
+        </style>
+    </defs>
+    <ellipse id="타원_31" cx="73" cy="72.5" fill="#fcaf17" rx="73" ry="72.5" transform="translate(7 7)"/>
+    <path id="패스_472" fill="#333" d="M812.5 1965.1a79.979 79.979 0 1 1 66.765-35.912l-.21.288-.447.559-6.251-4.991.333-.417a72 72 0 1 0-17.922 18.768l4.7 6.472A79.413 79.413 0 0 1 812.5 1965.1z" transform="translate(-732.5 -1805.099)"/>
+    <circle id="타원_27" cx="10" cy="10" r="10" class="cls-3" transform="translate(40.001 47.999)"/>
+    <circle id="타원_28" cx="10" cy="10" r="10" class="cls-3" transform="translate(100.001 47.999)"/>
+    <path id="사각형_572" d="M0 0H63.999V8H0z" class="cls-3" transform="translate(48.001 99.999)"/>
+</svg>

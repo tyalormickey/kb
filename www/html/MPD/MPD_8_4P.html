@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-reset.min.css'/>
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-common.css'/>
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-style.css'/>
+
+  <script src='../../js/libs/jquery-3.1.1.min.js'></script>
+  <script src='../../js/swiper.min.js'></script>
+  <script src='../../js/ui.js'></script>
+</head>
+<body>
+
+<div class="wrapper">
+  <div class="header">
+    <header>
+      <div class="header__title">
+        <div class="title">
+          주소검색
+        </div>
+        <div class="header__title--close">
+          <button class="only-icon" type="button">
+            <i class="icon-x icon-20">닫기</i>
+          </button>
+        </div>
+      </div>
+    </header>
+  </div>
+  <div class="content-wrap footer-none">
+    <div class="scrollBox page-post-search">
+      <section class="post-search__input">
+        <div class="custom-input">
+          <input type="text" placeholder="도로명, 건물명, 번지 검색" class="pr70"/>
+          <div class="custom-input__suffix">
+            <button type="button" class="only-icon">
+              <i class="icon-del icon-16">지우기</i>
+            </button>
+            <button type="button" class="only-icon">
+              <i class="icon-search icon-18">검색</i>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="post-search__guide">
+        <div class="post-search__guide-title">우편번호 통합검색 예시</div>
+        <div class="post-search__guide-text">
+          도로명 + 건물번호 (예: 테헤란로 334)
+        </div>
+        <div class="post-search__guide-text">
+          동/읍/면/리 + 번지 (예: 역삼동 708-6)
+        </div>
+        <div class="post-search__guide-text">
+          건물명, 아파트명 (예: 교정공제회 역삼빌딩)
+        </div>
+      </section>
+
+      <section class="post-search__filter">
+        <button type="button" class="active" onclick="modal.open($(this), '.modal-address-select');">
+          시/도
+        </button>
+        <button type="button" disabled>
+          시/군/구
+        </button>
+      </section>
+
+      <section class="post-search__result">
+        <div class="post-search__count">0건</div>
+        <div class="post-search__list">
+          <button type="button" class="post-search__list-item">
+            <span class="post-number">06212</span>
+            <p class="address">
+              <span class="tag tag--fixed">도로명</span>
+              <em>서울특별시 강남구 테헤란로 334</em>
+            </p>
+            <p class="address">
+              <span class="tag tag--fixed">지번</span>
+              <em>서울특별시 강남구 역삼동 708-6 교정공제회 역삼빌딩</em>
+            </p>
+          </button>
+          <button type="button" class="post-search__list-item">
+            <span class="post-number">06212</span>
+            <p class="address">
+              <span class="tag tag--fixed">도로명</span>
+              <em>서울특별시 강남구 테헤란로 334</em>
+            </p>
+            <p class="address">
+              <span class="tag tag--fixed">지번</span>
+              <em>서울특별시 강남구 역삼동 708-6 교정공제회 역삼빌딩</em>
+            </p>
+          </button>
+          <button type="button" class="post-search__list-item">
+            <span class="post-number">06212</span>
+            <p class="address">
+              <span class="tag tag--fixed">도로명</span>
+              <em>서울특별시 강남구 테헤란로 334</em>
+            </p>
+            <p class="address">
+              <span class="tag tag--fixed">지번</span>
+              <em>서울특별시 강남구 역삼동 708-6 교정공제회 역삼빌딩</em>
+            </p>
+          </button>
+        </div>
+        <div class="post-search__page">
+          <em>1</em>/1
+        </div>
+        <!-- start: else no-data -->
+        <div class="message-box">
+          <div class="message-box__wrap">
+            <div class="message-box__icon">
+              <i class="icon-nodata icon-40"></i>
+            </div>
+            <div class="message-box__sub-title bold">
+              검색 결과가 없습니다.
+            </div>
+            <div class="message-box__text">
+              찾으시려는 도로명주소 또는 지번 주소, 건물명을<br/>
+              상세히 입력한 후 검색해 주세요.
+            </div>
+          </div>
+        </div>
+        <!-- end: else no-data -->
+      </section>
+    </div>
+  </div>
+</div>
+
+
+<!-- 팝업 // -->
+<div class="modal-popup modal-address-select">
+  <div class="modal-popup__outer">
+    <section class="modal-popup__container">
+      <article class="modal-popup__body">
+        <div class="modal-address-select__body">
+          <ul class="modal-address-select__lists">
+            <li>
+              <button type="button" class="modal-address-select__button active">
+                <span>시/도</span>
+              </button>
+            </li>
+            <li>
+              <button type="button" class="modal-address-select__button">
+                <span>서울특별시(38)</span>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </article>
+    </section>
+  </div>
+</div>
+<!-- // 팝업 -->
+
+<script>
+  // 팝업 스크립트
+  $('.modal-address-select__button').off('click').on('click', function () {
+    if (!$(this).hasClass('active')) {
+      $(this).addClass('active').parent().siblings().find('button').removeClass('active');
+      modal.close($('.modal-address-select'));
+    }
+  });
+</script>
+</body>
+</html>

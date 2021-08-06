@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-reset.min.css'/>
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-common.css'/>
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-style.css'/>
+
+  <script src='../../js/libs/jquery-3.1.1.min.js'></script>
+  <script src='../../js/swiper.min.js'></script>
+  <script src='../../js/ui.js'></script>
+</head>
+<body>
+
+<div class="wrapper">
+  <div class="header">
+    <header>
+      <div class="header__title">
+        <div class="title">
+          체성분 입력
+        </div>
+        <div class="header__title--close">
+          <button class="only-icon" type="button">
+            <i class="icon-x icon-20">닫기</i>
+          </button>
+        </div>
+      </div>
+    </header>
+  </div>
+  <div class="content-wrap footer-none">
+    <div class="scrollBox page-mpd-716">
+      <section class="table-form">
+        <div class="table-form__item">
+          <span class="table-form__item-label"><label>수면 시작 일시</label></span>
+          <div class="form-item">
+            <div class="custom-input">
+              <input type="text" value="2021년 5월 27일" readonly
+                     onclick="modal.open($(this), '.modal-calender.month', calenderSelectMonthOpen)"/>
+            </div>
+          </div>
+          <div class="form-item__flex mt15">
+            <div class="custom-input">
+              <input type="text" value="10" class="center"/>
+            </div>
+            <span class="narrow-space">:</span>
+            <div class="custom-input">
+              <input type="text" value="10" class="center"/>
+            </div>
+            <label class="input-switch-text">
+              <input type="checkbox"/>
+              <span>
+                <em>오전</em>
+                <em>오후</em>
+              </span>
+            </label>
+          </div>
+        </div>
+        <div class="table-form__item">
+          <span class="table-form__item-label"><label>수면 종료 일시</label></span>
+          <div class="form-item">
+            <div class="custom-input">
+              <input type="text" value="2021년 5월 27일" readonly
+                     onclick="modal.open($(this), '.modal-calender.month', calenderSelectMonthOpen)"/>
+            </div>
+          </div>
+          <div class="form-item__flex mt15">
+            <div class="custom-input">
+              <input type="text" value="10" class="center"/>
+            </div>
+            <span class="narrow-space">:</span>
+            <div class="custom-input">
+              <input type="text" value="10" class="center"/>
+            </div>
+            <label class="input-switch-text">
+              <input type="checkbox"/>
+              <span>
+                <em>오전</em>
+                <em>오후</em>
+              </span>
+            </label>
+          </div>
+        </div>
+      </section>
+      <div class="button__wrap">
+        <button type="button" class="block gray medium inline">
+          취소
+        </button>
+        <button type="button" class="block medium inline">
+          저장
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- 팝업 // -->
+<div class="modal-popup modal-calender month">
+  <div class="modal-popup__outer">
+    <section class="modal-popup__container">
+      <article class="modal-popup__header">
+        <h3 class="modal-popup__title">
+          날짜 선택
+        </h3>
+        <button class="modal-popup__close only-icon">
+          <i class="icon-x icon-20">닫기</i>
+        </button>
+      </article>
+      <article class="modal-popup__body">
+        <div class="modal-calender__container">
+          <article class="calender-swiper">
+            <div class="swiper-container calender-swiper--year">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">2013</div>
+                <div class="swiper-slide">2014</div>
+                <div class="swiper-slide">2015</div>
+                <div class="swiper-slide">2016</div>
+                <div class="swiper-slide">2017</div>
+                <div class="swiper-slide">2018</div>
+                <div class="swiper-slide">2019</div>
+                <div class="swiper-slide">2020</div>
+                <div class="swiper-slide">2021</div>
+              </div>
+            </div>
+          </article>
+          <article class="calender-swiper">
+            <div class="swiper-container calender-swiper--month">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">01</div>
+                <div class="swiper-slide">02</div>
+                <div class="swiper-slide">03</div>
+                <div class="swiper-slide">04</div>
+                <div class="swiper-slide">05</div>
+                <div class="swiper-slide">06</div>
+                <div class="swiper-slide">07</div>
+                <div class="swiper-slide">08</div>
+                <div class="swiper-slide">09</div>
+                <div class="swiper-slide">10</div>
+                <div class="swiper-slide">11</div>
+                <div class="swiper-slide">12</div>
+              </div>
+            </div>
+          </article>
+          <article class="calender-swiper">
+            <div class="swiper-container calender-swiper--day">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">01</div>
+                <div class="swiper-slide">02</div>
+                <div class="swiper-slide">03</div>
+                <div class="swiper-slide">04</div>
+                <div class="swiper-slide">05</div>
+                <div class="swiper-slide">06</div>
+                <div class="swiper-slide">07</div>
+                <div class="swiper-slide">08</div>
+                <div class="swiper-slide">09</div>
+                <div class="swiper-slide">10</div>
+                <div class="swiper-slide">11</div>
+                <div class="swiper-slide">12</div>
+                <div class="swiper-slide">13</div>
+                <div class="swiper-slide">14</div>
+                <div class="swiper-slide">15</div>
+                <div class="swiper-slide">16</div>
+                <div class="swiper-slide">17</div>
+                <div class="swiper-slide">18</div>
+                <div class="swiper-slide">19</div>
+                <div class="swiper-slide">20</div>
+                <div class="swiper-slide">21</div>
+                <div class="swiper-slide">22</div>
+                <div class="swiper-slide">23</div>
+                <div class="swiper-slide">24</div>
+                <div class="swiper-slide">25</div>
+                <div class="swiper-slide">26</div>
+                <div class="swiper-slide">27</div>
+                <div class="swiper-slide">28</div>
+                <div class="swiper-slide">29</div>
+                <div class="swiper-slide">30</div>
+                <div class="swiper-slide">31</div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </article>
+      <article class="modal-popup__footer">
+        <button class="block gray medium inline" onclick="modal.close($(this))">
+          취소
+        </button>
+        <button class="block medium inline" onclick="modal.close($(this))">
+          확인
+        </button>
+      </article>
+    </section>
+  </div>
+</div>
+<!-- // 팝업 -->
+
+<script>
+  toast.open('수면 시간은 24시간을 넘을 수 없습니다.');
+  toast.open('동일한 시간에 데이터가 존재합니다.');
+  toast.open('오늘보다 미래의 데이터는 입력할 수 없습니다.');
+  toast.open('종료 일시가 시작 일시 보다 과거일 수 없습니다.');
+  toast.open('2021년 05월 27일 10시 34분 수면 시간이 입력되었습니다.');
+
+  var calenderSwiperOption = {
+    direction: "vertical",
+    slidesPerView: 3,
+    loop: false,
+    spaceBetween: 0,
+    mousewheel: true,
+    centeredSlides: true,
+    init: false,
+    observer: true
+  }
+
+  var swiperYear = new Swiper(".month .calender-swiper--year", calenderSwiperOption);
+  var swiperMonth = new Swiper(".month .calender-swiper--month", calenderSwiperOption);
+  var swiperDay = new Swiper(".month .calender-swiper--day", calenderSwiperOption);
+
+  function calenderSelectMonthOpen() {
+    swiperYear.init();
+    swiperMonth.init();
+    swiperDay.init();
+  }
+</script>
+</body>
+</html>

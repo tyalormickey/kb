@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="icon_error" width="64" height="64" viewBox="0 0 16 64">
+    <defs>
+        <style>
+            .cls-1{fill:#ff0b0b}
+        </style>
+    </defs>
+    <path id="Rectangle_11" d="M0 0H16V40H0z" class="cls-1"/>
+    <path id="Rectangle_12" d="M0 0H16V16H0z" class="cls-1" transform="translate(0 48)"/>
+</svg>

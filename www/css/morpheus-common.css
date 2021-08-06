@@ -1,0 +1,80 @@
+@charset "utf-8";
+/* uracle pjt-team */
+
+@import "morpheus-reset.min.css";
+
+/*
+	CSS order:
+	1. clear/display/position/z-index/overflow/float
+	2. width/height
+	3. margin/padding
+	4. color/font/line-height/text/letter-spacing/vertical-align/white-spacing/word-spacing
+	5. etc
+	6. border/background
+
+ */
+
+html {
+    font-size: 62.5%;
+}
+
+/* rem 기준 폰트 사이즈 */
+body {
+    position: relative;
+    min-height: 100%;
+    line-height: 1.1;
+    color: #000;
+}
+
+* {
+    word-break: break-word;
+    font-family: inherit;
+}
+
+/*  Media Query */
+/* Phone */
+@media only screen and (min-width: 320px) {
+    html {
+        font-size: 62.5%;
+    }
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) {
+    html {
+        font-size: 77%;
+    }
+
+    /* 임의 조정 */
+}
+
+/*=== GUIDE TEMPLATE LAYOUT ===*/
+body, .wrapper {
+    height: 100%;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.content {
+    height: 100%;
+    padding: 2rem 1.5rem 1.5rem;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    display: -moz-box;
+    -moz-box-orient: vertical;
+    display: box;
+    box-orient: vertical;
+}
+
+.scrollBox {
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.content > * {
+    display: block;
+}

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="icon_m_del" width="64" height="64" viewBox="0 0 64 64">
+    <defs>
+        <style>
+            .cls-1{fill:#333}
+        </style>
+    </defs>
+    <g id="Group_185" transform="translate(-518 -74)">
+        <path id="Path_240" d="M550 138a31.992 31.992 0 1 1 26.706-14.365l-.283.367-3.123-2.5.119-.148a28 28 0 1 0-6.982 7.316l2.351 3.236A31.765 31.765 0 0 1 550 138z" class="cls-1"/>
+        <path id="Rectangle_353" d="M0 0H31.579V4H0z" class="cls-1" transform="translate(537.421 115.751) rotate(-45)"/>
+        <path id="Rectangle_354" d="M0 0H4V31.579H0z" class="cls-1" transform="translate(537.421 96.25) rotate(-45.001)"/>
+    </g>
+</svg>

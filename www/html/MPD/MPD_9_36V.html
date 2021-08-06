@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="format-detection" content="telephone=no"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-reset.min.css'/>
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-common.css'/>
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-style.css'/>
+
+  <script src='../../js/libs/jquery-3.1.1.min.js'></script>
+  <script src='../../js/swiper.min.js'></script>
+  <script src='../../js/ui.js'></script>
+</head>
+<body>
+
+<div class="wrapper">
+  <div class="header">
+    <header>
+      <div class="header__back">
+        <div class="back">
+          <button type="button" class="only-icon">
+            <i class="icon-arrow_left icon-20">뒤로가기</i>
+          </button>
+        </div>
+        <div class="title">
+          상담 완료
+        </div>
+      </div>
+    </header>
+  </div>
+  <div class="content-wrap bottom-button-fixed">
+    <div class="scrollBox">
+      <div class="delivery-process__now">
+        <div class="manage-h3 center">
+          <strong>
+            김국민님. 상담이 완료되었습니다.
+          </strong>
+        </div>
+      </div>
+
+      <div class="consult-reception">
+        <div class="delivery-process__table mt40">
+          <div class="table-data lined">
+            <dl>
+              <dt>상담 유형</dt>
+              <dd>채팅 상담</dd>
+            </dl>
+            <dl>
+              <dt>상담 일시</dt>
+              <dd>2021.06.26 오후 3:00</dd>
+            </dl>
+            <dl>
+              <dt>사용 기간</dt>
+              <dd>4주</dd>
+            </dl>
+            <dl>
+              <dt>상담사</dt>
+              <dd>이상담</dd>
+            </dl>
+            <dl>
+              <dt>상담 지역</dt>
+              <dd>서울 강남</dd>
+            </dl>
+          </div>
+        </div>
+
+        <div class="manage-h3 mt40">
+          오늘 상담 어땠나요?
+        </div>
+        <div class="exercise-score mt15">
+          <ul>
+            <li>
+              <i class="icon-bad">매우 나쁨</i>
+            </li>
+            <li>
+              <i class="icon-soso">나쁨</i>
+            </li>
+            <li>
+              <i class="icon-normal">보통</i>
+            </li>
+            <li>
+              <i class="icon-good">좋음</i>
+            </li>
+            <li>
+              <i class="icon-great">매우 좋음</i>
+            </li>
+          </ul>
+        </div>
+        <div class="manage-h3 mt40">
+          상담 받으신 느낌이나 남기실 말씀이 있으면
+          적어주세요.
+        </div>
+        <div class="manage-text mt5">
+          김국민님과 비슷한 고민을 하시는 분들에게
+          큰 도움이 될 수 있습니다.
+        </div>
+        <div class="form-item mt15">
+          <div class="custom-input">
+            <textarea rows="4"></textarea>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="button__flex-wrap bottom-fixed">
+    <button type="button" class="block">
+      작성
+    </button>
+  </div>
+</div>
+
+<script>
+  $('.exercise-score li').click(function () {
+    var $icon = $(this).find('i')
+    var $iconClass = $(this).find('i').attr('class')
+    var iconList = ['bad', 'soso', 'normal', 'good', 'great']
+    if ($iconClass.indexOf('_on') > -1) {
+      $icon.attr('class', 'icon-' + iconList[$(this).index()])
+    } else {
+      // 형제 reset
+      $(this).siblings().each(function () {
+        $(this).find('i').attr('class', 'icon-' + iconList[$(this).index()])
+      })
+      $icon.attr('class', $iconClass + '_on')
+    }
+  })
+</script>
+</body>
+</html>

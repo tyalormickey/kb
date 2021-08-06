@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="icon_f_invest_64" width="52" height="64" viewBox="0 0 52 64">
+    <defs>
+        <style>
+            .cls-1{fill:#333}
+        </style>
+    </defs>
+    <path id="패스_378" d="M203.755 240.21h-7.991a8.376 8.376 0 0 1-8.419-8.315V224h4.049v7.9a4.348 4.348 0 0 0 4.37 4.315h7.991z" class="cls-1" transform="translate(-153.78 -222)"/>
+    <path id="패스_379" d="M205.354 286H162.2a8.376 8.376 0 0 1-8.418-8.316V222h36.992l15.008 14.37v39.735h-4.049v-38.042L189.131 226h-31.3v51.684A4.348 4.348 0 0 0 162.2 282h43.156z" class="cls-1" transform="translate(-153.78 -222)"/>
+    <path id="사각형_481" d="M0 0H29.624V4H0z" class="cls-1" transform="translate(11.377 40.701) rotate(-0.17)"/>
+    <path id="사각형_482" d="M0 0H4.049V16.632H0z" class="cls-1" transform="translate(33.565 26.842)"/>
+    <path id="사각형_483" d="M0 0H4.049V10.316H0z" class="cls-1" transform="translate(14.385 33.158)"/>
+    <path id="사각형_484" d="M0 0H4.049V22.947H0z" class="cls-1" transform="translate(23.975 20.526)"/>
+</svg>

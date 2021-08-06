@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="icon_m_upload" width="72" height="72" viewBox="0 0 72 68">
+    <defs>
+        <style>
+            .cls-1{fill:#333}
+        </style>
+    </defs>
+    <g id="icon_m_upload_l_24" transform="translate(-88 -83.5)">
+        <path id="Path_251" d="M160 151.5H97.158A9.157 9.157 0 0 1 88 142.365v-7.136h4v7.136a5.152 5.152 0 0 0 5.158 5.135H156v-12.271h4z" class="cls-1"/>
+        <path id="Rectangle_364" d="M0 0H4V49.946H0z" class="cls-1" transform="translate(121.435 83.5)"/>
+        <path id="Path_252" d="M123.717 136.33l-22.632-23.514 2.883-2.773 19.749 20.519 19.75-20.519 2.883 2.773z" class="cls-1"/>
+    </g>
+</svg>

@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="icon_m_snow" width="64" height="63.999" viewBox="0 0 64 63.999">
+    <defs>
+        <style>
+            .cls-1{fill:#fff}
+        </style>
+    </defs>
+    <g id="Group_1" transform="translate(41.841 52.989)">
+        <circle id="Ellipse_21" cx="2.002" cy="2.002" r="2.002" class="cls-1"/>
+    </g>
+    <g id="Group_2" transform="translate(48.841 46.983)">
+        <circle id="Ellipse_22" cx="2.002" cy="2.002" r="2.002" class="cls-1"/>
+    </g>
+    <g id="Group_3" transform="translate(12.844 47.984)">
+        <circle id="Ellipse_23" cx="2.002" cy="2.002" r="2.002" class="cls-1"/>
+    </g>
+    <g id="Group_4" transform="translate(37.842 59.996)">
+        <circle id="Ellipse_24" cx="2.002" cy="2.002" r="2.002" class="cls-1"/>
+    </g>
+    <g id="Group_5" transform="translate(27.386 54.254)">
+        <circle id="Ellipse_25" cx="2.002" cy="2.002" r="2.002" class="cls-1"/>
+    </g>
+    <g id="Group_6" transform="translate(32.619 46.378)">
+        <circle id="Ellipse_26" cx="2.002" cy="2.002" r="2.002" class="cls-1"/>
+    </g>
+    <g id="Group_7">
+        <path id="Path_348" d="M567.785 432.08v-4a9.667 9.667 0 0 0 1.177-19.256l-1.641-.2-.11-1.651a7.251 7.251 0 0 0-8.763-6.658l-1.473.312-.707-1.328a13.621 13.621 0 0 0-25.659 6.16l-.033 1.492-1.439.394a10.56 10.56 0 0 0 2.76 20.737h29.435v4H531.9a14.567 14.567 0 0 1-5.2-28.149 17.782 17.782 0 0 1 17.536-15.892 17.6 17.6 0 0 1 14.842 8.14q.442-.036.884-.036a11.317 11.317 0 0 1 11.021 8.981 13.675 13.675 0 0 1-3.2 26.956z" class="cls-1" transform="translate(-517.398 -388.039)"/>
+    </g>
+    <g id="Group_8" transform="translate(15.621 55.386)">
+        <circle id="Ellipse_27" cx="2.002" cy="2.002" r="2.002" class="cls-1"/>
+    </g>
+</svg>

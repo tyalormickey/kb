@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="64" viewBox="0 0 80 64">
+    <defs>
+        <style>
+            .cls-1{fill:#333}
+        </style>
+    </defs>
+    <g id="icon_m_camera_l_24" transform="translate(0.006 -7.906)">
+        <path id="Path_267" d="M39.994 59.908a16 16 0 1 1 16-16 16.021 16.021 0 0 1-16 16zm0-28A11.992 11.992 0 1 0 51.987 43.9a12.005 12.005 0 0 0-11.993-11.987z" class="cls-1"/>
+        <path id="Path_268" d="M79.994 71.906H12a12.018 12.018 0 0 1-12-12v-18h4.005v18A8 8 0 0 0 12 67.895h63.983V27.908a8 8 0 0 0-7.993-7.993H52.064l-4.112-8H32l-3.925 8H4.005v11.992H-.006v-16h25.579l3.926-8H50.4l4.112 8H67.99a12.018 12.018 0 0 1 12 12z" class="cls-1"/>
+        <path id="Rectangle_378" d="M0 0H12.01V4.011H0z" class="cls-1" transform="translate(-0.006 39.9)"/>
+    </g>
+</svg>

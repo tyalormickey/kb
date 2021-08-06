@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="icon_m_countdown_l_24" width="64" height="64" viewBox="0 0 64 64">
+    <defs>
+        <style>
+            .cls-1{fill:#333}
+        </style>
+    </defs>
+    <g id="Oval" transform="translate(-541.5 -1758.099)">
+        <path id="패스_440"
+              d="M573.5 1822.1a31.992 31.992 0 1 1 26.706-14.365l-.281.365-3.125-2.5.12-.151a28 28 0 1 0-6.981 7.316l2.351 3.236a31.771 31.771 0 0 1-18.79 6.099z"
+              class="cls-1"/>
+    </g>
+    <g id="Path-4" transform="translate(-541.5 -1758.099)">
+        <path id="패스_441" d="M561.573 1804.672l-2.829-2.829 13.1-13.1v-16.014h4v17.67z" class="cls-1"/>
+    </g>
+</svg>

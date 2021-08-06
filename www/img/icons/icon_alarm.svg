@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="icon_m_alram" width="80" height="80" viewBox="0 0 80 80">
+    <defs>
+        <style>
+            .cls-2{fill:#333}
+        </style>
+    </defs>
+    <path id="Rectangle_379" fill="none" d="M0 0H80V80H0z"/>
+    <g id="icon_m_alram_l_24" transform="translate(-100)">
+        <path id="Path_269" d="M140.4 80a10.012 10.012 0 0 1-10-10h4a6 6 0 0 0 12 0h4a10.011 10.011 0 0 1-10 10z" class="cls-2"/>
+        <path id="Path_270" d="M176 72h-10v-4h6v-5.671l-8.5-12.621V27.5a23.5 23.5 0 0 0-47 0v22.035l-8.5 12.66V68h46v4h-50V60.978l8.5-12.661V27.5a27.5 27.5 0 0 1 55 0v20.987l8.5 12.62z" class="cls-2"/>
+    </g>
+</svg>

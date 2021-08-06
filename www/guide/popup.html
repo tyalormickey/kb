@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0">
+  <link rel='stylesheet' type='text/css' href='../css/morpheus-reset.min.css'/>
+  <link rel='stylesheet' type='text/css' href='../css/morpheus-common.css'/>
+  <link rel='stylesheet' type='text/css' href='../css/morpheus-style.css'/>
+
+  <script src='../js/libs/jquery-3.1.1.min.js'></script>
+  <script src='../js/swiper.min.js'></script>
+  <script src='../js/ui.js'></script>
+</head>
+<body>
+
+<style>
+  body {
+    padding: 20px;
+  }
+</style>
+
+<button class="block small inline" onclick="modal.open($(this), '#popup-guide');" title="레이어 팝업 열기">
+  팝업 열기
+</button>
+
+<br/><br/>
+
+<button class="block small inline" onclick="modal.alert($(this), testAlertConfig);">
+  알럿 열기
+</button>
+
+<button class="block small inline" onclick="modal.alert($(this), testConfirmConfig);">
+  확인 창 열기
+</button>
+
+<button class="block small inline" onclick="modal.alert($(this), testConfirmConfig2);">
+  확인 창 열기
+</button>
+
+<br/><br/>
+
+<button class="block small inline" onclick="toast.open('BLEsmart_0000116B495FO80CD 가 연결되었습니다.')">
+  토스트 팝업
+</button>
+
+<div class="tooltip-button" data-text="운행거리가 초과한 경우라도 고객님께서 부담하실 추가비용은 발생되지 않습니다.">
+  <button class="only-icon" onclick="tooltip.open($(this));">
+    <i class="icon-i icon-14">
+      tooltip
+    </i>
+  </button>
+</div>
+
+<script>
+  var testAlertConfig = {
+    type: 'alert',
+    text: '알럿창 확인되었습니까?',
+    ok: test
+  }
+  var testConfirmConfig = {
+    type: 'confirm',
+    text: '컨펌창 확인되었습니까?',
+    ok: test,
+    cancel: cancel
+  }
+  var testConfirmConfig2 = {
+    type: 'confirm',
+    text: '버튼 명 변경 컨펌창 확인되었습니까?',
+    okText: '거부',
+    cancelText: '적용',
+    ok: test,
+    cancel: cancel
+  }
+
+  function test() {
+    console.log('확인되었지롱');
+  }
+
+  function cancel() {
+    console.log('취소');
+  }
+</script>
+
+<br />
+<br />
+
+<div class="accordion accordion--case1">
+  <dl class="">
+    <dt>
+      <button type="button">
+        <span>TITLE명이 한줄로 노출됩니다</span>
+        <i>열기</i>
+      </button>
+    </dt>
+    <dd class="accordion__text-list">
+      <p>내용이 노출됩니다. 내용이 노출됩니다...</p>
+      <p>내용이 노출됩니다. 내용이 노출됩니다...</p>
+      <p>내용이 노출됩니다. 내용이 노출됩니다...</p>
+    </dd>
+  </dl>
+</div>
+
+<br />
+<br />
+
+<div class="accordion accordion--case2">
+  <dl>
+    <dt>
+      <button type="button">
+        <span>TITLE명이 한줄로 노출됩니다</span>
+        <i>열기</i>
+      </button>
+    </dt>
+    <dd class="accordion__button-list">
+      <button onclick="console.log('1');">공동인증서 가져오기</button>
+      <button onclick="console.log('2');">공동인증서 삭제</button>
+    </dd>
+  </dl>
+  <dl>
+    <dt>
+      <button type="button">
+        <span>TITLE명이 한줄로 노출됩니다</span>
+        <i>열기</i>
+      </button>
+    </dt>
+    <dd class="accordion__button-list">
+      <button onclick="console.log('1');">공동인증서 가져오기</button>
+      <button onclick="console.log('2');">공동인증서 삭제</button>
+    </dd>
+  </dl>
+</div>
+
+<br />
+<br />
+
+<div class="accordion accordion--case3">
+  <dl>
+    <dt>
+      <span><em>3</em>개의 스토리</span>
+      <button type="button" class="only-icon"><i>열기</i></button>
+    </dt>
+    <dd class="accordion__box-list">
+      <div class="accordion__box-list-item">
+        <button type="button" class="accordion__box-list-text">
+          내용이 노출됩니다.내용이 노출됩니다.
+        </button>
+        <p class="accordion__box-list-info">
+          <span>2021.12.25</span>
+          <span>김국민</span>
+        </p>
+      </div>
+      <div class="accordion__box-list-item">
+        <button type="button" class="accordion__box-list-text">
+          내용이 노출됩니다.내용이 노출됩니다.
+        </button>
+        <p class="accordion__box-list-info">
+          <span>2021.12.25</span>
+          <span>김국민</span>
+        </p>
+      </div>
+    </dd>
+  </dl>
+</div>
+
+<br />
+<br />
+<!-- lined -->
+<div class="table-form">
+  <div class="table-form__item">
+    <span class="table-form__item-label es">
+      <label>이메일</label>
+    </span>
+    <div class="form-item">
+      <div class="custom-select">
+        <dl class="default">
+          <dt>
+            <button type="button">
+              <span>선택해주세요.선택해주세요.선택해주세요.</span>
+            </button>
+          </dt>
+          <dd>
+            <ul>
+              <li>
+                <button type="button">시작전</button>
+              </li>
+              <li class="selected">
+                <button type="button">시작전1</button>
+              </li>
+              <li>
+                <button type="button">시작전2</button>
+              </li>
+              <li>
+                <button type="button">시작전3</button>
+              </li>
+              <li>
+                <button type="button">시작전3</button>
+              </li>
+              <li>
+                <button type="button">시작전3</button>
+              </li>
+            </ul>
+          </dd>
+        </dl>
+      </div>
+      <br />
+      <div class="custom-select">
+        <dl>
+          <dt>
+            <button type="button">
+              <span>선택해주세요.선택해주세요.선택해주세요.</span>
+            </button>
+          </dt>
+          <dd>
+            <ul>
+              <li>
+                <button type="button" onclick="changeTest('시작전1')">시작전1</button>
+              </li>
+              <li>
+                <button type="button" onclick="changeTest('시작전2')">시작전2</button>
+              </li>
+              <li>
+                <button type="button" onclick="changeTest('시작전3')">시작전3</button>
+              </li>
+              <li>
+                <button type="button" onclick="changeTest('시작전4')">시작전4</button>
+              </li>
+            </ul>
+          </dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+  <div class="table-form__item">
+    <span class="table-form__item-label es">
+      <label>이메일</label>
+    </span>
+    <div class="form-item">
+      <div class="custom-input">
+        <input type="text"/>
+      </div>
+    </div>
+  </div>
+  <div class="table-form__item">
+    <span class="table-form__item-label es">
+      <label>이메일</label>
+    </span>
+    <div class="form-item">
+      <div class="custom-input">
+        <input type="text" disabled/>
+      </div>
+    </div>
+  </div>
+  <div class="table-form__item">
+    <span class="table-form__item-label es">
+      <label>이메일</label>
+    </span>
+    <div class="form-item">
+      <div class="custom-input error"><input type="text"/></div>
+      <div class="form-item__error">Enter valid emall address</div>
+    </div>
+  </div>
+  <div class="table-form__item">
+    <span class="table-form__item-label es">
+      <label>이메일</label>
+    </span>
+    <div class="form-item">
+      <div class="custom-textarea"><textarea rows="3"></textarea></div>
+    </div>
+  </div>
+  <div class="table-form__item">
+    <span class="table-form__item-label es">
+      <label>이메일</label>
+    </span>
+    <div class="form-item">
+      <div class="custom-textarea error"><textarea rows="3"></textarea></div>
+      <div class="form-item__error">Enter valid emall address</div>
+    </div>
+  </div>
+  <div class="table-form__item">
+    <span class="table-form__item-label es">
+      <label>이메일</label>
+    </span>
+    <div class="form-item">
+      김국민
+    </div>
+  </div>
+</div>
+
+<br /><br /><br /><br /><br />
+
+<div class="table-data">
+  <dl>
+    <dt>보험명</dt>
+    <dd>커넥티드카 안전운전할인특약 커넥
+      티드카 안전운전할인특약커넥티드카
+      안전운전할인특약</dd>
+  </dl>
+  <dl>
+    <dt>적용대상</dt>
+    <dd>개인용자동차보험</dd>
+  </dl>
+  <dl>
+    <dt>가입대상</dt>
+    <dd>
+      <div class="table-data__gray-box">
+        <p>개인용 일반물건으로 제휴</p>
+        <p>개인용 일반물건으로 제휴</p>
+      </div>
+      <span class="table-data__showing">
+        할인대상 : 대인배상, 대물배상, 자기신체사고, 무보험차상해, 자기차량손해
+      </span>
+    </dd>
+  </dl>
+</div>
+
+<br /><br /><br /><br /><br />
+
+<div class="table-data lined">
+  <dl>
+    <dt>보험명</dt>
+    <dd>커넥티드카 안전운전할인특약 커넥
+      티드카 안전운전할인특약커넥티드카
+      안전운전할인특약</dd>
+  </dl>
+  <dl>
+    <dt>적용대상</dt>
+    <dd>개인용자동차보험</dd>
+  </dl>
+  <dl>
+    <dt>가입대상</dt>
+    <dd>
+      <div class="table-data__gray-box">
+        <p>개인용 일반물건으로 제휴</p>
+        <p>개인용 일반물건으로 제휴</p>
+      </div>
+      <span class="table-data__showing">
+        할인대상 : 대인배상, 대물배상, 자기신체사고, 무보험차상해, 자기차량손해
+      </span>
+    </dd>
+  </dl>
+</div>
+
+<!-- 팝업 // -->
+<div class="modal-popup" id="popup-guide">
+  <div class="modal-popup__outer">
+    <section class="modal-popup__container">
+      <article class="modal-popup__header">
+        <h3 class="modal-popup__title">
+          공지사항
+        </h3>
+        <button class="modal-popup__close only-icon">
+          <i class="icon-x icon-20">닫기</i>
+        </button>
+      </article>
+      <article class="modal-popup__body">
+        <div style="background: #eee; height: 400px;"></div>
+      </article>
+      <article class="modal-popup__footer">
+        <button class="block gray medium inline" onclick="modal.close($(this))">
+          취소
+        </button>
+        <button class="block medium inline" onclick="modal.close($(this))">
+          확인
+        </button>
+      </article>
+    </section>
+  </div>
+</div>
+<!-- // 팝업 -->
+
+<script>
+  function changeTest(val) {
+    console.log(val)
+  }
+</script>
+</body>
+</html>
+

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-reset.min.css'/>
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-common.css'/>
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-style.css'/>
+
+  <script src='../../js/libs/jquery-3.1.1.min.js'></script>
+  <script src='../../js/swiper.min.js'></script>
+  <script src='../../js/ui.js'></script>
+</head>
+<body>
+
+<div class="wrapper">
+  <div class="header">
+    <header>
+      <div class="header__title">
+        <div class="title">
+          미입력 기록
+        </div>
+        <div class="header__title--close">
+          <button class="only-icon" type="button">
+            <i class="icon-x icon-20">닫기</i>
+          </button>
+        </div>
+      </div>
+    </header>
+  </div>
+  <div class="content-wrap footer-none">
+    <div class="scrollBox page-mpd-79">
+      <div class="manage-text">
+        데이터가 불완전하여 적용되지 않은 누적 데이터
+        입니다. 연동할 데이터만 편집하여 저장하세요.
+      </div>
+      <section class="manage-list-row mt12">
+        <div class="manage-list-row__item">
+          <ul class="button-selector">
+            <li>
+              <button type="button" class="active">공복</button>
+            </li>
+            <li>
+              <button type="button">식전</button>
+            </li>
+            <li>
+              <button type="button">식후</button>
+            </li>
+          </ul>
+          <p class="manage-text black mt15">혈당 71 mg/dL (NFC)</p>
+          <p class="manage-sub-text mt5">2021.05.12(화) 오전 10:23</p>
+          <div class="manage-list-row__remove">
+            <button type="button" class="only-icon" onclick="modal.alert($(this), deleteConfig)">
+              <i class="icon-remove icon-16">제거</i>
+            </button>
+          </div>
+        </div>
+        <div class="manage-list-row__item">
+          <ul class="button-selector">
+            <li>
+              <button type="button" class="active">공복</button>
+            </li>
+            <li>
+              <button type="button">식전</button>
+            </li>
+            <li>
+              <button type="button">식후</button>
+            </li>
+          </ul>
+          <p class="manage-text black mt15">혈당 71 mg/dL (NFC)</p>
+          <p class="manage-sub-text mt5">2021.05.12(화) 오전 10:23</p>
+          <div class="manage-list-row__remove">
+            <button type="button" class="only-icon" onclick="modal.alert($(this), deleteConfig)">
+              <i class="icon-remove icon-16">제거</i>
+            </button>
+          </div>
+        </div>
+        <div class="manage-list-row__item">
+          <ul class="button-selector">
+            <li>
+              <button type="button" class="active">공복</button>
+            </li>
+            <li>
+              <button type="button">식전</button>
+            </li>
+            <li>
+              <button type="button">식후</button>
+            </li>
+          </ul>
+          <p class="manage-text black mt15">혈당 71 mg/dL (NFC)</p>
+          <p class="manage-sub-text mt5">2021.05.12(화) 오전 10:23</p>
+          <div class="manage-list-row__remove">
+            <button type="button" class="only-icon" onclick="modal.alert($(this), deleteConfig)">
+              <i class="icon-remove icon-16">제거</i>
+            </button>
+          </div>
+        </div>
+      </section>
+      <div class="button__wrap">
+        <button type="button" class="block gray medium inline">
+          취소
+        </button>
+        <button type="button" class="block medium inline" onclick="modal.alert($(this), saveConfig)">
+          저장
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  var deleteConfig = {
+    type: 'confirm',
+    text: '데이터를 제거하시겠습니까?',
+    ok: deleteOk
+  }
+
+  function deleteOk() {
+    console.log('제거')
+  }
+
+  var saveConfig = {
+    type: 'confirm',
+    text: '측정 시기가 선택된 데이터만 적용됩니다.<br />저장 하시겠습니까?',
+    ok: saveOk
+  }
+
+  function saveOk() {
+    console.log('저장')
+  }
+</script>
+</body>
+</html>

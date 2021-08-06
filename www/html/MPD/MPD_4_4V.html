@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-reset.min.css'/>
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-common.css'/>
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-style.css'/>
+
+  <script src='../../js/libs/jquery-3.1.1.min.js'></script>
+  <script src='../../js/swiper.min.js'></script>
+  <script src='../../js/ui.js'></script>
+</head>
+<body>
+
+<div class="wrapper">
+  <div class="header">
+    <header>
+      <div class="header__back">
+        <div class="back">
+          <button type="button" class="only-icon">
+            <i class="icon-arrow_left icon-20">뒤로가기</i>
+          </button>
+        </div>
+        <div class="title">
+          식단 입력
+        </div>
+        <div class="right-icons">
+          <button type="button" class="only-icon">
+            <i class="icon-camera_02 icon-20">카메라</i>
+          </button>
+          <button type="button" class="only-icon">
+            <i class="icon-alarm on icon-20">알람</i>
+          </button>
+        </div>
+      </div>
+    </header>
+  </div>
+  <div class="content-wrap">
+    <div class="scrollBox page-diet">
+      <section class="page-diet__top-date">
+        <strong>2021.06.20</strong>
+        <button type="button" class="icon-only">
+          <i class="icon-cal icon-18">달력</i>
+        </button>
+      </section>
+
+      <section class="diet-statistics">
+        <div class="diet-statistics__selector">
+          <p>식단을 선택하면 상세 영양 정보를 볼 수 있습니다.</p>
+          <div class="diet-statistics__selector-buttons">
+            <button type="button">아침</button>
+            <button type="button">점심</button>
+            <button type="button" class="inactive">저녁</button>
+            <button type="button" class="inactive">간식</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="diet-main-title">
+        <i class="diet-main-title__icon"></i>
+        <p class="diet-main-title__text">
+          <strong>건강 관리의 시작</strong>은 좋은 것을 적절히 먹는
+          것이에요. 무엇을 얼마나 드시나요?
+        </p>
+      </section>
+    </div>
+  </div>
+  <div class="footer footer__nav">
+    <nav>
+      <ul>
+        <li class="on">
+          <button type="button">
+            <i class="icon-home icon-16"></i>
+            <span>홈</span>
+          </button>
+        </li>
+        <li>
+          <button type="button">
+            <i class="icon-pro icon-16"></i>
+            <span>프로그램</span>
+          </button>
+        </li>
+        <li>
+          <button type="button">
+            <i class="icon-info icon-16"></i>
+            <span>증상ㆍ병원</span>
+          </button>
+        </li>
+        <li>
+          <button type="button">
+            <i class="icon-my icon-16"></i>
+            <span>MY</span>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+
+<div class="diet-input-popup active">
+  <div class="diet-input-popup__outer">
+    <div class="diet-input-popup__inner">
+      <div class="diet-input-popup__title">
+        <h1>
+          식단 입력 안내
+        </h1>
+        <p>식단을 입력하는 방법이 궁금하신가요?</p>
+      </div>
+      <div class="diet-input-popup__guide">
+        <div class="diet-input-popup__image">
+          <img src="../../img/diet_input_popup.png" alt="식단 입력 안내 이미지" />
+        </div>
+        <ul>
+          <li>
+            <span>1.</span>
+            [x] 카메라 창을 닫습니다.
+          </li>
+          <li>
+            <span>2.</span>
+            [icon] 카메라의 플래시를 조정합니다.
+          </li>
+          <li>
+            <span>3.</span>
+            갤러리(사진첩)에 저장된 사진을 선택할 수 있습니다.
+          </li>
+          <li>
+            <span>4.</span>
+            카메라로 직접 촬영해서 전송합니다.
+          </li>
+          <li>
+            <span>5.</span>
+            검색을 이용하거나 직접 입력할 수 있습니다.
+          </li>
+        </ul>
+      </div>
+      <div class="diet-input-popup__buttons">
+        <button type="button">
+          다시 보지 않기
+        </button>
+        <button type="button" onclick="popupClose()">
+          닫기
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  function popupClose () {
+    var $dietPop = $('.diet-input-popup');
+    $dietPop.removeClass('active')
+  }
+</script>
+</body>
+</html>

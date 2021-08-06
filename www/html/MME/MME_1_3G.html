@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-reset.min.css'/>
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-common.css'/>
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-style.css'/>
+
+  <script src='../../js/libs/jquery-3.1.1.min.js'></script>
+  <script src='../../js/swiper.min.js'></script>
+  <script src='../../js/ui.js'></script>
+</head>
+<body>
+
+<div class="wrapper">
+  <div class="content-wrap bottom-button-fixed">
+    <div class="scrollBox pass-agree">
+      <div class="pass-agree__title">
+        PASS인증을 위해<br/>
+        다음 정보를 입력해 주세요
+      </div>
+      <article>
+        <ul class="service-agree__list">
+          <li class="service-agree__item">
+            <button type="button">
+              <label class="input-checkbox only-check">
+                <input type="checkbox" checked/>
+                <i></i>
+                <span>(필수) 개인정보 수집 및 이용 동의</span>
+              </label>
+            </button>
+          </li>
+          <li class="service-agree__item">
+            <button type="button">
+              <label class="input-checkbox only-check">
+                <input type="checkbox"/>
+                <i></i>
+                <span>(필수) 개인정보 제3자 제공 동의</span>
+              </label>
+            </button>
+          </li>
+        </ul>
+      </article>
+      <article class="pass-agree__form">
+        <div class="table-form">
+          <div class="table-form__item">
+          <span class="table-form__item-label es">
+            <label>이름</label>
+          </span>
+            <div class="form-item">
+              <div class="custom-input">
+                <input type="text" placeholder="이름 입력"/>
+              </div>
+            </div>
+          </div>
+          <div class="table-form__item">
+          <span class="table-form__item-label es">
+            <label>휴대폰번호</label>
+          </span>
+            <div class="form-item">
+              <div class="custom-input">
+                <input type="tel" placeholder="휴대폰번호 입력"/>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+  <button type="button" class="block bottom-fixed" onclick="modal.alert($(this), alreadySignIn);">
+    Pass 인증하기
+  </button>
+</div>
+
+<script>
+  var alreadySignIn = {
+    type: 'alert',
+    text: '이미 가입된 고객님입니다.<br/>비밀번호 재설정 후 이용하실 수 있습니다.',
+    ok: agreeHandleOk
+  }
+  var reJoin = {
+    type: 'confirm',
+    text: '재가입 회원에게는<br/>웰컴 포인트를 지급하지 않습니다.',
+    okText: '회원가입',
+    cancelText: '종료',
+    ok: agreeHandleOk,
+    cancel: agreeHandleCancel
+  }
+  var serviceStop = {
+    type: 'alert',
+    text: '김국민 고객님은<br/>서비스 이용 정지된 회원입니다.<br/>관리자에게 문의 : 02-0000-0000',
+    ok: agreeHandleOk
+  }
+  var withdraw = {
+    type: 'alert',
+    text: '김국민 고객님은 관리자에 의한<br/>강제 탈퇴된 회원입니다.<br/>관리자에게 문의 : 02-0000-0000',
+    ok: agreeHandleOk
+  }
+  var ageReject = {
+    type: 'alert',
+    text: '14세 미만은 회원가입이 불가능합니다.',
+    ok: agreeHandleOk
+  }
+  var infoDiscord = {
+    type: 'alert',
+    text: '입력한 정보가 불일치합니다.'
+  }
+
+  function agreeHandleOk() {
+    console.log('동의')
+  }
+
+  function agreeHandleCancel() {
+    console.log('취소')
+  }
+</script>
+</body>
+</html>
+

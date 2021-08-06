@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="icon_m_blur" width="64" height="48" viewBox="0 0 64 48">
+    <defs>
+        <style>
+            .cls-1{fill:#fff}
+        </style>
+    </defs>
+    <g id="Group_24" transform="translate(-349.02 -396.373)">
+        <path id="Path_353" d="M401.353 444.373v-4a8.064 8.064 0 0 0 .93-16.009l-1.636-.208-.107-1.647a5.861 5.861 0 0 0-5.7-5.6 5.477 5.477 0 0 0-1.178.129l-1.5.331-.706-1.369a10.964 10.964 0 0 0-9.711-6.065 11.327 11.327 0 0 0-11.013 11.26l-.032 1.479-1.423.4a8.759 8.759 0 0 0-6.216 8.49 8.625 8.625 0 0 0 8.41 8.8h24.509v4h-24.509a12.625 12.625 0 0 1-12.406-12.8 12.838 12.838 0 0 1 7.764-11.865 15.3 15.3 0 0 1 14.916-13.766 14.881 14.881 0 0 1 12.548 6.987 9.819 9.819 0 0 1 10.014 7.771 12.082 12.082 0 0 1-2.954 23.678z" class="cls-1"/>
+    </g>
+    <g id="icon_visual_sunny" transform="translate(-349.02 -396.373)">
+        <g id="icon">
+            <g id="Stroke-3">
+                <path id="Rectangle_436" d="M0 0H3.787V3.778H0z" class="cls-1" transform="translate(351.661 423.054) rotate(-44.955)"/>
+            </g>
+            <g id="Stroke-5">
+                <path id="Rectangle_437" d="M0 0H3.787V3.777H0z" class="cls-1" transform="matrix(0.707, -0.707, 0.707, 0.707, 372.923, 401.774)"/>
+            </g>
+            <g id="Stroke-7">
+                <path id="Rectangle_438" d="M0 0H3.786V3.779H0z" class="cls-1" transform="translate(349.02 410.618)"/>
+            </g>
+            <g id="Stroke-16">
+                <path id="Rectangle_439" d="M0 0H3.778V3.788H0z" class="cls-1" transform="translate(351.661 401.959) rotate(-44.981)"/>
+            </g>
+            <g id="Stroke-18">
+                <path id="Rectangle_440" d="M0 0H3.776V3.789H0z" class="cls-1" transform="translate(362.982 396.373)"/>
+            </g>
+            <g id="Stroke-21">
+                <path id="Path_354" d="M364.648 422.491a10.225 10.225 0 1 1 10.217-10.226h-3.776a6.44 6.44 0 1 0-6.441 6.446 6.386 6.386 0 0 0 2.276-.414l1.339 3.534a10.144 10.144 0 0 1-3.615.66z" class="cls-1"/>
+            </g>
+        </g>
+    </g>
+</svg>

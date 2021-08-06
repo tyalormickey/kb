@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="ICON_finsh01" width="240" height="240" viewBox="0 0 240 240">
+    <defs>
+        <style>
+            .cls-5{fill:none}.cls-4{stroke:none}
+        </style>
+    </defs>
+    <g id="Ellipse_21" fill="none" stroke="#645b4c" stroke-width="8px">
+        <circle cx="120" cy="120" r="120" class="cls-4"/>
+        <circle cx="120" cy="120" r="116" class="cls-5"/>
+    </g>
+    <g id="Ellipse_22" fill="none" stroke="#645b4c" stroke-width="4px" transform="translate(16 16)">
+        <circle cx="104" cy="104" r="104" class="cls-4"/>
+        <circle cx="104" cy="104" r="102" class="cls-5"/>
+    </g>
+    <text id="기간_만료" fill="#645b4c" font-family="NotoSansCJKkr-Bold, Noto Sans CJK KR" font-size="56px" font-weight="700" transform="translate(70.231 134.308) rotate(-20)">
+        <tspan x="0" y="0">기간</tspan><tspan x="0" y="54">만료</tspan>
+    </text>
+</svg>

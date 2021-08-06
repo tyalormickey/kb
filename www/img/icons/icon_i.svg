@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56">
+    <defs>
+        <style>
+            .cls-1{fill:#333}
+        </style>
+    </defs>
+    <g id="icon_m_guide_l_24" transform="translate(-140)">
+        <path id="Path_188" d="M168 56a27.994 27.994 0 1 1 23.367-12.569l-.258.336-3.126-2.5.1-.121a24 24 0 1 0-5.991 6.282l2.35 3.236A27.794 27.794 0 0 1 168 56z" class="cls-1"/>
+        <rect id="Rectangle_315" width="5.474" height="19.158" class="cls-1" rx="1.368" transform="translate(165.264 22.526)"/>
+        <circle id="Ellipse_20" cx="2.737" cy="2.737" r="2.737" class="cls-1" transform="translate(165.264 14.316)"/>
+    </g>
+</svg>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-reset.min.css'/>
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-common.css'/>
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-style.css'/>
+
+  <script src='../../js/libs/jquery-3.1.1.min.js'></script>
+  <script src='../../js/swiper.min.js'></script>
+  <script src='../../js/ui.js'></script>
+</head>
+<body>
+
+<div class="wrapper">
+  <div class="header">
+    <header>
+      <div class="header__back">
+        <div class="back">
+          <button type="button" class="only-icon">
+            <i class="icon-arrow_left icon-20">뒤로가기</i>
+          </button>
+        </div>
+        <div class="title">
+          공동인증서 삭제
+        </div>
+        <div class="right-icons">
+          <button type="button" class="only-icon">
+            <i class="icon-camera_02 icon-20">카메라</i>
+          </button>
+          <button type="button" class="only-icon">
+            <i class="icon-alarm on icon-20">알람</i>
+          </button>
+        </div>
+      </div>
+    </header>
+  </div>
+  <div class="content-wrap">
+    <div class="scrollBox">
+      <div class="certificate__list">
+        <div class="certificate__card">
+          <div class="certificate__card-inner">
+            <span class="certificate__card-icon">
+              <i class="icon-certificate icon-40"></i>
+            </span>
+            <span class="certificate__card-text">
+              <span class="certificate__card-code">
+                09077878767656745488
+              </span>
+              <span class="certificate__card-name">
+                홍길동
+              </span>
+              <span class="certificate__card-info">
+                <em>개인/은행/보험용</em>
+                <time>만료일 :2022.01.25</time>
+              </span>
+            </span>
+          </div>
+          <button class="certificate__card-del" type="button" onclick="modal.alert($(this), certificateDeleteConfig);">
+            <i class="icon-del icon-16"></i>
+            삭제
+          </button>
+        </div>
+        <div class="certificate__card">
+          <div class="certificate__card-inner">
+            <span class="certificate__card-icon">
+              <i class="icon-certificate icon-40"></i>
+            </span>
+            <span class="certificate__card-text">
+              <span class="certificate__card-code">
+                09077878767656745488
+              </span>
+              <span class="certificate__card-name">
+                홍길동
+              </span>
+              <span class="certificate__card-info">
+                <em>개인/은행/보험용</em>
+                <time>만료일 :2022.01.25</time>
+              </span>
+            </span>
+          </div>
+          <button class="certificate__card-del" type="button" onclick="modal.alert($(this), certificateDeleteConfig);">
+            <i class="icon-del icon-16"></i>
+            삭제
+          </button>
+        </div>
+        <div class="certificate__card">
+          <div class="certificate__card-inner disabled">
+            <span class="certificate__card-icon">
+              <i class="icon-certificate icon-40"></i>
+            </span>
+            <span class="certificate__card-text">
+              <span class="certificate__card-code">
+                09077878767656745488
+              </span>
+              <span class="certificate__card-name">
+                홍길동
+              </span>
+              <span class="certificate__card-info">
+                <em>개인/은행/보험용</em>
+                <time>만료일 :2022.01.25</time>
+              </span>
+            </span>
+          </div>
+          <button class="certificate__card-del" type="button" onclick="modal.alert($(this), certificateDeleteConfig);">
+            <i class="icon-del icon-16"></i>
+            삭제
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer footer__nav">
+    <nav>
+        <ul>
+            <li class="on">
+                <button type="button">
+                    <i class="icon-home icon-16"></i>
+                    <span>홈</span>
+                </button>
+            </li>
+            <li>
+                <button type="button">
+                    <i class="icon-pro icon-16"></i>
+            <span>프로그램</span>
+          </button>
+        </li>
+        <li>
+          <button type="button">
+            <i class="icon-info icon-16"></i>
+            <span>증상ㆍ병원</span>
+          </button>
+        </li>
+        <li>
+          <button type="button">
+            <i class="icon-my icon-16"></i>
+            <span>MY</span>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+
+<script>
+  var certificateDeleteConfig = {
+    type: 'confirm',
+    text: '선택하신 인증서를 삭제하시겠습니까?',
+    ok: certificateDeleteOk,
+    cancel: certificateDeleteCancel
+  }
+  var certificateDeleteCompleteConfig = {
+    type: 'alert',
+    text: '인증서가 삭제 되었습니다.',
+    ok: deleteCompleteOk,
+  }
+
+  function certificateDeleteOk (target) {
+    modal.alert(target, certificateDeleteCompleteConfig)
+  }
+  function certificateDeleteCancel () {
+    console.log('인증서 삭제 취소')
+  }
+
+  function deleteCompleteOk () {
+    console.log('인증서 삭제 완료')
+  }
+</script>
+</body>
+</html>

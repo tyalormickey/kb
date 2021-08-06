@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
+    <defs>
+        <style>
+            .cls-2{fill:#333}
+        </style>
+    </defs>
+    <path fill="none" d="M0 0H80V80H0z"/>
+    <rect width="6" height="107" class="cls-2" rx="3" transform="translate(75.66) rotate(45)"/>
+    <rect width="6" height="107" class="cls-2" rx="3" transform="translate(0 4.244) rotate(-45)"/>
+</svg>

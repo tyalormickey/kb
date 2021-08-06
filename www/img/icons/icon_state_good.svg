@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="icon_m_good" width="80" height="80" viewBox="0 0 80 80">
+    <defs>
+        <clipPath id="clip-path">
+            <path id="Rectangle_423" d="M0 0H50V12H0z" class="cls-1" transform="translate(15 48)"/>
+        </clipPath>
+        <clipPath id="clip-path-2">
+            <path id="Rectangle_429" d="M0 0H54V11H0z" class="cls-1" transform="translate(13 23)"/>
+        </clipPath>
+        <style>
+            .cls-1{fill:#fff}.cls-2{fill:#333}
+        </style>
+    </defs>
+    <path id="Path_243" d="M128 80a39.991 39.991 0 1 1 33.382-17.957l-3.707-2.452a35.549 35.549 0 1 0-8.8 9.2l2.611 3.6A39.715 39.715 0 0 1 128 80z" class="cls-2" transform="translate(-88)"/>
+    <g id="Mask_Group_8" clip-path="url(#clip-path)">
+        <path id="Path_333" d="M40.99 61.9a17 17 0 1 1 17-17 17.019 17.019 0 0 1-17 17zm0-29.739A12.739 12.739 0 1 0 53.73 44.9a12.753 12.753 0 0 0-12.74-12.737z" class="cls-2" transform="translate(-1.492 -1.902)"/>
+    </g>
+    <g id="Mask_Group_7" clip-path="url(#clip-path-2)">
+        <path id="Path_334" d="M33.991 47.9a10 10 0 1 1 10-10 10.011 10.011 0 0 1-10 10zm0-17.494a7.494 7.494 0 1 0 7.494 7.494 7.5 7.5 0 0 0-7.494-7.492z" class="cls-2" transform="translate(-8.991 -3.902)"/>
+        <path id="Path_335" fill="#333" stroke="#333" d="M33.991 47.9a10 10 0 1 1 10-10 10.011 10.011 0 0 1-10 10zm0-17.494a7.494 7.494 0 1 0 7.494 7.494 7.5 7.5 0 0 0-7.494-7.492z" transform="translate(21.009 -3.902)"/>
+    </g>
+</svg>

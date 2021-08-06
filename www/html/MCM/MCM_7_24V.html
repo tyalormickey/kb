@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-reset.min.css'/>
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-common.css'/>
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-style.css'/>
+
+  <script src='../../js/libs/jquery-3.1.1.min.js'></script>
+  <script src='../../js/swiper.min.js'></script>
+  <script src='../../js/ui.js'></script>
+</head>
+<body>
+
+<div class="wrapper">
+  <div class="page-results-searching">
+    <p class="page-results-searching__number">
+      검진걸과 50%
+    </p>
+    <div class="page-results-searching__progress">
+      <span style="width: 50%;"></span>
+    </div>
+    <p class="page-results-searching__text">
+      검진결과 조회가 완료되기 까지<br />
+      다소 시간이 걸릴 수 있습니다.<br />
+      조금만 더 기다려 주세요!
+    </p>
+
+  </div>
+</div>
+
+<script>
+  setTimeout(function () {
+    modal.alert(false, searchingCompleteConfig)
+  }, 1000)
+
+  var searchingCompleteConfig = {
+    type: 'alert',
+    text: '검진결과 조회가 완료되었습니다.',
+    ok: searchingCompleteHandleOk
+  }
+
+  function searchingCompleteHandleOk () {
+    console.log('동의')
+  }
+</script>
+</body>
+</html>

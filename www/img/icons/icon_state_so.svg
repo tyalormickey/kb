@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="icon_m_so" width="80" height="80" viewBox="0 0 80 80">
+    <defs>
+        <style>
+            .cls-1{fill:#333}
+        </style>
+    </defs>
+    <path id="Path_243" d="M128 80a39.991 39.991 0 1 1 33.382-17.957l-3.707-2.452a35.549 35.549 0 1 0-8.8 9.2l2.611 3.6A39.715 39.715 0 0 1 128 80z" class="cls-1" transform="translate(-88)"/>
+    <circle id="Ellipse_21" cx="5" cy="5" r="5" class="cls-1" transform="translate(20 24)"/>
+    <circle id="Ellipse_22" cx="5" cy="5" r="5" class="cls-1" transform="translate(50 24)"/>
+    <path id="Rectangle_426" d="M0 0H32V4H0z" class="cls-1" transform="translate(24 50)"/>
+</svg>

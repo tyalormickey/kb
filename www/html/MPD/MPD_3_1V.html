@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-reset.min.css'/>
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-common.css'/>
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-style.css'/>
+
+  <script src='../../js/libs/jquery-3.1.1.min.js'></script>
+  <script src='../../js/swiper.min.js'></script>
+  <script src='../../js/ui.js'></script>
+</head>
+<body>
+
+<div class="wrapper">
+  <div class="header">
+    <header>
+      <div class="header__back">
+        <div class="back">
+          <button type="button" class="only-icon">
+            <i class="icon-arrow_left icon-20">뒤로가기</i>
+          </button>
+        </div>
+        <div class="title">
+          증상ㆍ병원
+        </div>
+        <div class="right-icons">
+          <button type="button" class="only-icon">
+            <i class="icon-camera_02 icon-20">카메라</i>
+          </button>
+          <button type="button" class="only-icon">
+            <i class="icon-alarm on icon-20">알람</i>
+          </button>
+        </div>
+      </div>
+    </header>
+  </div>
+  <div class="content-wrap">
+    <div class="scrollBox page-mpd-31">
+      <div class="search-sec">
+        <div class="search-sec__title">
+          병원ㆍ약국을 찾고 <br>
+          계신가요?
+        </div>
+        <div class="custom-input with-prefix mt30">
+          <button type="button" class="custom-input__prefix">
+            <i class="icon-search icon-18">검색</i>
+          </button>
+          <input type="text" placeholder="병원찾기 힘들지 않아요"/>
+        </div>
+      </div>
+
+      <div class="manage-h4 mt40">
+        어떤 병원으로 가야 하는지 판단이 어려우신가요?
+      </div>
+      <ul class="list__warp list-border mt12">
+        <li class="list-item">
+          <button type="button">
+            <span class="list-item__title">
+              <i class="icon-circle_check2 icon-16"></i>
+              증상 체크 하기
+            </span>
+          </button>
+        </li>
+        <li class="list-item">
+          <button type="button" onclick="modal.alert($(this), confirmConfig)">
+            <span class="list-item__title">
+              <i class="icon-counseling icon-16"></i>
+              증상 체크 결과(0건)
+            </span>
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer footer__nav">
+    <nav>
+      <ul>
+        <li class="on">
+          <button type="button">
+            <i class="icon-home icon-16"></i>
+            <span>홈</span>
+          </button>
+        </li>
+        <li>
+          <button type="button">
+            <i class="icon-pro icon-16"></i>
+            <span>프로그램</span>
+          </button>
+        </li>
+        <li>
+          <button type="button">
+            <i class="icon-info icon-16"></i>
+            <span>증상ㆍ병원</span>
+          </button>
+        </li>
+        <li>
+          <button type="button">
+            <i class="icon-my icon-16"></i>
+            <span>MY</span>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+
+<script>
+  var confirmConfig = {
+    type: 'confirm',
+    text: '증상 체크 결과가 없습니다.<br />건강상태가 걱정된다면 증상을<br />체크해 보세요.',
+    ok: handleOk,
+    cancel: handleCancel
+  }
+
+  function handleOk() {
+    console.log('확인')
+  }
+
+  function handleCancel() {
+    console.log('취소')
+  }
+</script>
+</body>
+</html>

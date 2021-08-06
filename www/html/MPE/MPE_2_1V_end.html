@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-reset.min.css'/>
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-common.css'/>
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-style.css'/>
+
+  <script src='../../js/libs/jquery-3.1.1.min.js'></script>
+  <script src='../../js/swiper.min.js'></script>
+  <script src='../../js/ui.js'></script>
+</head>
+<body>
+
+<div class="wrapper">
+  <div class="header">
+    <header>
+      <div class="header__back">
+        <div class="back">
+          <button type="button" class="only-icon">
+            <i class="icon-arrow_left icon-20">뒤로가기</i>
+          </button>
+        </div>
+        <div class="title">
+          이벤트 상세
+        </div>
+      </div>
+    </header>
+  </div>
+  <div class="content-wrap">
+    <div class="scrollBox event_21">
+      <div class="board">
+        <div class="board__top">
+          <div class="board__title">
+            룰렛을 돌려라! 돌리기만 해도 리워드 주는 이벤트 (최대 500P)
+          </div>
+          <div class="board__sub-text">
+            이벤트 기간: 2021.08.02 ~ 2021.08.31
+          </div>
+          <div class="board__sub-text-and">
+            발표일: 2021.09.01
+          </div>
+          <div class="board__sub-text-and on">
+            당첨 : 500P (2021.06.30 지급완료)
+          </div>
+        </div>
+        <div class="board__content bg pa0">
+          <img src="../../img/event/eventdetail2.jpg">
+        </div>
+      </div>
+      <div class="event_21__button">
+        <button class="block medium" type="button" onclick="modal.alert(false, alert)" disabled>
+          응모완료
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="footer footer__nav">
+    <nav>
+        <ul>
+            <li class="on">
+                <button type="button">
+                    <i class="icon-home icon-16"></i>
+                    <span>홈</span>
+                </button>
+            </li>
+            <li>
+                <button type="button">
+                    <i class="icon-pro icon-16"></i>
+            <span>프로그램</span>
+          </button>
+        </li>
+        <li>
+          <button type="button">
+            <i class="icon-info icon-16"></i>
+            <span>증상ㆍ병원</span>
+          </button>
+        </li>
+        <li>
+          <button type="button">
+            <i class="icon-my icon-16"></i>
+            <span>MY</span>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+
+<script>
+  var alert = {
+    type: 'alert',
+    text: '이벤트에 응모하셨습니다.'
+  }
+</script>
+</body>
+</html>

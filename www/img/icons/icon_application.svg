@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="icon_visual_application" width="320" height="320" viewBox="0 0 320 292">
+    <defs>
+        <style>
+            .cls-2{fill:#333}
+        </style>
+    </defs>
+    <path id="Path_360" fill="#fcaf17" d="M216.534 1086.636H34.481c-12.536 0-26.008-13.13-26.008-25.452V806.671h182.053c12.536 0 26.008 13.128 26.008 25.451" transform="translate(-2.511 -800.653)"/>
+    <path id="Path_361" d="M224.24 1092.653H34.366c-15.779 0-31.855-15.882-31.855-31.469V800.653h187.206c7.81 0 15.979 3.767 22.414 10.334 6.081 6.208 9.522 13.937 9.441 21.2v203.542h-11.926V832.121c.046-4.081-2.2-8.793-6-12.671-4.147-4.234-9.356-6.761-13.933-6.761H14.436v248.495c0 8.9 10.8 19.434 19.93 19.434H224.24z" class="cls-2" transform="translate(-2.511 -800.653)"/>
+    <path id="Rectangle_457" d="M0 0H84.765V12.035H0z" class="cls-2" transform="translate(83.022 202.198)"/>
+    <path id="Rectangle_458" d="M0 0H15.412V12.035H0z" class="cls-2" transform="translate(52.198 202.198)"/>
+    <path id="Rectangle_459" d="M0 0H84.765V12.035H0z" class="cls-2" transform="translate(83.022 155.536)"/>
+    <path id="Rectangle_460" d="M0 0H15.412V12.035H0z" class="cls-2" transform="translate(52.198 155.536)"/>
+    <path id="Rectangle_461" d="M0 0H84.765V12.035H0z" class="cls-2" transform="translate(83.022 108.875)"/>
+    <path id="Rectangle_462" d="M0 0H15.412V12.035H0z" class="cls-2" transform="translate(52.198 108.875)"/>
+    <path id="Rectangle_463" d="M0 0H84.765V12.035H0z" class="cls-2" transform="translate(83.022 62.214)"/>
+    <path id="Rectangle_464" d="M0 0H15.412V12.035H0z" class="cls-2" transform="translate(52.198 62.214)"/>
+    <path id="Path_362" fill="#fff" d="M228.14 983.365l80.2-83.682a22.88 22.88 0 0 0 .359-33.05l-13.441-13.3-131.383 132.273-13.979 42.7 44.275-12.7 10.528-9.983z" transform="translate(-2.511 -800.653)"/>
+    <path id="Path_363" d="M137.752 1041.714l19.629-59.428 1-1 135.212-136.465 19.388 19.566a25.75 25.75 0 0 1 9.529 20.3 25.325 25.325 0 0 1-9.556 19.826L196.637 1021.9zm30.048-52.926l-11.2 33.9 33.586-11.3 114.891-115.941.324-.248a13.331 13.331 0 0 0 5.184-10.594 13.758 13.758 0 0 0-5.252-10.98l-.543-.485-11.2-11.3z" class="cls-2" transform="translate(-2.511 -800.653)"/>
+</svg>

@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="56" height="64.003" viewBox="0 0 56 64.003">
+    <defs>
+        <style>
+            .cls-1{fill:#fff}
+        </style>
+    </defs>
+    <g id="icon_m_rain_snow" transform="translate(-424.653 -384.262)">
+        <g id="icon_f_pension_l_24">
+            <g id="Stroke6">
+                <path id="Path_355" d="M447.425 448.265a7.365 7.365 0 0 1-7.542-7.156v-2h4.006v2a3.558 3.558 0 0 0 7.071 0v-12.89h4.005v12.89a7.364 7.364 0 0 1-7.54 7.156z" class="cls-1"/>
+            </g>
+            <g id="Stroke4">
+                <path id="Rectangle_441" d="M0 0H4.006V7.609H0z" class="cls-1" transform="translate(450.96 398.265)"/>
+            </g>
+            <g id="Oval9">
+                <path id="Path_356" d="M480.653 431.911h-54a2 2 0 0 1-2-2c0-15.317 12.7-27.779 28.309-27.779a28.186 28.186 0 0 1 27.438 20.911l-3.878 1a24.4 24.4 0 0 0-47.776 3.865h51.908z" class="cls-1"/>
+            </g>
+        </g>
+        <g id="Group_25">
+            <circle id="Ellipse_43" cx="2.003" cy="2.003" r="2.003" class="cls-1" transform="translate(462.201 393.904)"/>
+        </g>
+        <g id="Group_26">
+            <circle id="Ellipse_44" cx="2.003" cy="2.003" r="2.003" class="cls-1" transform="translate(469.212 398.904)"/>
+        </g>
+        <g id="Group_27">
+            <circle id="Ellipse_45" cx="2.003" cy="2.003" r="2.003" class="cls-1" transform="translate(430.151 397.904)"/>
+        </g>
+        <g id="Group_28">
+            <circle id="Ellipse_46" cx="2.003" cy="2.003" r="2.003" class="cls-1" transform="translate(459.196 384.262)"/>
+        </g>
+        <g id="Group_29">
+            <circle id="Ellipse_47" cx="2.003" cy="2.003" r="2.003" class="cls-1" transform="translate(444.717 389.64)"/>
+        </g>
+        <g id="Group_30">
+            <circle id="Ellipse_48" cx="2.003" cy="2.003" r="2.003" class="cls-1" transform="translate(452.964 389.509)"/>
+        </g>
+        <g id="Group_31">
+            <circle id="Ellipse_49" cx="2.003" cy="2.003" r="2.003" class="cls-1" transform="translate(438.942 385.509)"/>
+        </g>
+        <g id="Group_32">
+            <circle id="Ellipse_50" cx="2.003" cy="2.003" r="2.003" class="cls-1" transform="translate(438.966 397.624)"/>
+        </g>
+    </g>
+</svg>

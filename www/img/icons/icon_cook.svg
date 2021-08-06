@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="icon_visual_cook" width="64" height="39.524" viewBox="0 0 64 39.524">
+    <defs>
+        <style>
+            .cls-1{fill:#333}
+        </style>
+    </defs>
+    <g id="icon" transform="translate(-700.286 -2351.873)">
+        <g id="Stroke-3">
+            <path id="사각형_556" d="M0 0H64V4H0z" class="cls-1" transform="translate(700.286 2387.397)"/>
+        </g>
+        <g id="Stroke-6">
+            <path id="패스_447" d="M714.477 2387.4h-4a24.548 24.548 0 0 1 4.988-14.935l3.168 2.442a20.528 20.528 0 0 0-4.156 12.493z" class="cls-1"/>
+        </g>
+        <g id="Stroke-8">
+            <path id="사각형_557" d="M0 0H4V6.095H0z" class="cls-1" transform="translate(730.286 2351.873)"/>
+        </g>
+        <g id="Stroke-10">
+            <path id="패스_448" d="M706.858 2387.4h-4c0-16.226 13.51-29.428 30.117-29.428a29.989 29.989 0 0 1 28.637 20.3l-3.794 1.266a26 26 0 0 0-24.843-17.562c-14.401-.007-26.117 11.4-26.117 25.424z" class="cls-1"/>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-reset.min.css'/>
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-common.css'/>
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-style.css'/>
+
+  <script src='../../js/libs/jquery-3.1.1.min.js'></script>
+  <script src='../../js/swiper.min.js'></script>
+  <script src='../../js/ui.js'></script>
+</head>
+<body>
+
+<div class="wrapper">
+  <div class="header">
+    <header>
+      <div class="header__back">
+        <div class="back">
+          <button type="button" class="only-icon">
+            <i class="icon-arrow_left icon-20">뒤로가기</i>
+          </button>
+        </div>
+        <div class="title">
+          포인트 현황 조회
+        </div>
+        <div class="right-icons">
+          <button type="button" class="only-icon">
+            <i class="icon-camera_02 icon-20">카메라</i>
+          </button>
+          <button type="button" class="only-icon">
+            <i class="icon-alarm on icon-20">알람</i>
+          </button>
+        </div>
+      </div>
+    </header>
+  </div>
+  <div class="content-wrap">
+    <div class="scrollBox no-padding">
+      <div class="my-page__point-box">
+        <div class="my-page__point-care">
+          <p class="my-page__point-care-title">
+            총 <strong>300,000</strong> P
+          </p>
+          <p class="my-page__point-care-sub">
+            (당월 소멸 예정 80,000 P) <i class="icon-i icon-14" onclick="modal.open($(this), '.point-info');"></i>
+          </p>
+        </div>
+      </div>
+      <div class="tab__wrap my-care">
+        <ul class="tab">
+          <li class="tab__item">
+            <button type="button">
+              <span>적립</span>
+            </button>
+          </li>
+          <li class="tab__item">
+            <button type="button">
+              <span>사용</span>
+            </button>
+          </li>
+        </ul>
+        <div class="tab__swiper swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide contents-padding">
+              <!-- start: if data length > 0 -->
+              <ul class="list__wrap no-icon my-care__list">
+                <li class="list-item">
+                  <button type="button">
+                    <ul class="my-care__item">
+                      <li>2월 감사 포인트 적립</li>
+                      <li class="fixed increase">+ 50,000 P</li>
+                    </ul>
+                    <ul class="my-care__item sub">
+                      <li class="fixed">2021.05.30</li>
+                      <li>2021.12.30 소멸예정</li>
+                    </ul>
+                  </button>
+                </li>
+                <li class="list-item">
+                  <button type="button">
+                    <ul class="my-care__item">
+                      <li>성취 포인트 적립</li>
+                      <li class="fixed increase">+ 70,000 P</li>
+                    </ul>
+                    <ul class="my-care__item sub">
+                      <li class="fixed">2021.05.30</li>
+                      <li>2021.12.30 소멸예정</li>
+                    </ul>
+                  </button>
+                </li>
+                <li class="list-item">
+                  <button type="button">
+                    <ul class="my-care__item">
+                      <li>친구 추천 포인트 적립</li>
+                      <li class="fixed increase">+ 50,000 P</li>
+                    </ul>
+                    <ul class="my-care__item sub">
+                      <li class="fixed">2021.05.30</li>
+                      <li>2021.12.30 소멸예정</li>
+                    </ul>
+                  </button>
+                </li>
+              </ul>
+              <!-- end: if data length > 0 -->
+              <!-- start: else no-data -->
+              <!-- <div class="message-box">
+                <div class="message-box__wrap">
+                  <div class="message-box__icon">
+                    <i class="icon-nodata icon-40"></i>
+                  </div>
+                  <div class="message-box__sub-title">
+                    포인트 적립 이력이 없습니다.
+                  </div>
+                </div>
+              </div> -->
+              <!-- end: else no-data -->
+            </div>
+            <div class="swiper-slide contents-padding">
+              <!-- start: if data length > 0 -->
+              <ul class="list__wrap no-icon my-care__list">
+                <li class="list-item">
+                  <button type="button">
+                    <ul class="my-care__item">
+                      <li>스타벅스 아메리카노 Tall</li>
+                      <li class="fixed decrease">- 50,000 P</li>
+                    </ul>
+                    <ul class="my-care__item sub">
+                      <li>2021.05.30</li>
+                    </ul>
+                  </button>
+                </li>
+                <li class="list-item">
+                  <button type="button">
+                    <ul class="my-care__item">
+                      <li>포인트 소멸</li>
+                      <li class="fixed decrease">- 70,000 P</li>
+                    </ul>
+                    <ul class="my-care__item sub">
+                      <li>2021.05.30</li>
+                    </ul>
+                  </button>
+                </li>
+                <li class="list-item">
+                  <button type="button">
+                    <ul class="my-care__item">
+                      <li>포인트 소멸</li>
+                      <li class="fixed decrease">- 50,000 F</li>
+                    </ul>
+                    <ul class="my-care__item sub">
+                      <li>2021.05.30</li>
+                    </ul>
+                  </button>
+                </li>
+              </ul>
+              <!-- end: if data length > 0 -->
+              <!-- start: else no-data -->
+              <!-- <div class="message-box">
+                <div class="message-box__wrap">
+                  <div class="message-box__icon">
+                    <i class="icon-nodata icon-40"></i>
+                  </div>
+                  <div class="message-box__sub-title">
+                    포인트 사용 이력이 없습니다.
+                  </div>
+                </div>
+              </div> -->
+              <!-- end: else no-data -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer footer__nav">
+    <nav>
+        <ul>
+            <li class="on">
+                <button type="button">
+                    <i class="icon-home icon-16"></i>
+                    <span>홈</span>
+                </button>
+            </li>
+            <li>
+                <button type="button">
+                    <i class="icon-pro icon-16"></i>
+            <span>프로그램</span>
+          </button>
+        </li>
+        <li>
+          <button type="button">
+            <i class="icon-info icon-16"></i>
+            <span>증상ㆍ병원</span>
+          </button>
+        </li>
+        <li>
+          <button type="button">
+            <i class="icon-my icon-16"></i>
+            <span>MY</span>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+<!-- 팝업 // -->
+<div class="point-info modal-popup">
+  <div class="modal-popup__outer">
+    <section class="modal-popup__container">
+      <article class="modal-popup__header">
+        <h3 class="modal-popup__title">
+          포인트 정책 안내
+        </h3>
+        <button class="modal-popup__close only-icon">
+          <i class="icon-x icon-20">닫기</i>
+        </button>
+      </article>
+      <article>
+        <div class="point-info__popup">
+          <dl>
+            <dt>포인트 유효기간</dt>
+            <dd>적립된 날로부터 1년(365일) </dd>
+          </dl>
+          <dl>
+            <dt>포인트 소멸</dt>
+            <dd>적립된 날로부터 1년(365일) 뒤 소멸</dd>
+            <dd>회원탈퇴 시 소멸</dd>
+          </dl>
+        </div>
+      </article>
+      <article class="modal-popup__footer">
+        <button class="block medium inline" onclick="modal.close($(this))">
+          확인
+        </button>
+      </article>
+    </section>
+  </div>
+</div>
+<!-- // 팝업 -->
+
+<script>
+  tab.reset();
+  setTimeout(function() {
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 1,
+      autoHeight: true
+    });
+    $('.tab__item').click(function() {
+      tab.action($(this), true, swiper)
+    });
+    swiper.on('slideChangeTransitionEnd', function() {
+      var onItem = 'tab__item--on'
+      const tabs = swiper.$el.prev('.tab').children('.tab__item')
+      tabs.removeClass(onItem)
+      tabs.eq(swiper.realIndex).addClass(onItem)
+    });
+    var massageHi = $('.tab__wrap').height() - $('.tab').height()
+    console.log(massageHi)
+    $('.message-box').each(function() {
+      $(this).css('height', massageHi - 40)
+    })
+  }, 100);
+  var info = {
+    type: 'alert',
+    text: '결제 취소가 완료되었습니다.',
+    ok: handleOk
+  }
+</script>
+</body>
+</html>

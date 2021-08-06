@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="icon_m_explain_01" width="80" height="80" viewBox="0 0 64 80">
+    <defs>
+        <style>
+            .cls-2{fill:#070607}
+        </style>
+    </defs>
+    <g id="icon" transform="translate(-8 -487)">
+        <g id="Fill-1">
+            <path id="Path_184" fill="#ffbf00" d="M69.879 547.539v-49.147a8.07 8.07 0 0 0-8.295-7.821H16.015v67.406a8.066 8.066 0 0 0 8.292 7.819h45.572v-7.314"/>
+        </g>
+        <g id="Stroke-3">
+            <path id="Path_185" d="M72 567H23.986a10.492 10.492 0 0 1-10.734-10.207V487h48.012A10.494 10.494 0 0 1 72 497.209v49.147h-4.885v-49.147a5.661 5.661 0 0 0-5.851-5.434H18.137v65.018a5.659 5.659 0 0 0 5.849 5.432h43.129V557.3H72z" class="cls-2"/>
+        </g>
+        <g id="Stroke-5">
+            <path id="Rectangle_306" d="M0 0H15.389V4.775H0z" class="cls-2" transform="translate(8 500.165)"/>
+        </g>
+        <g id="Stroke-8">
+            <path id="Rectangle_307" d="M0 0H15.389V4.775H0z" class="cls-2" transform="translate(8 515.209)"/>
+        </g>
+        <g id="Stroke-11">
+            <path id="Rectangle_308" d="M0 0H15.389V4.775H0z" class="cls-2" transform="translate(8 530.254)"/>
+        </g>
+        <g id="Stroke-14">
+            <path id="Rectangle_309" d="M0 0H15.389V4.775H0z" class="cls-2" transform="translate(8 545.299)"/>
+        </g>
+        <g id="Group_180" style="isolation:isolate">
+            <g id="Group_179">
+                <path id="Path_186" d="M44.626 516.378a2.478 2.478 0 0 1-4.954 0 2.41 2.41 0 0 1 2.5-2.444 2.347 2.347 0 0 1 2.454 2.444zm-4.454 27.548v-21.505h4v21.505z" class="cls-2"/>
+                <path id="Path_187" fill="#161615" d="M44.782 544.523h-5.221v-22.7h5.221zm-4-1.194h2.779v-20.311h-2.779zm1.3-23.955a2.942 2.942 0 0 1-3.02-3 3.009 3.009 0 0 1 3.111-3.041 2.953 2.953 0 0 1 3.065 3.031 2.824 2.824 0 0 1-.805 2.1 3.263 3.263 0 0 1-2.352.91zm.091-4.843a1.807 1.807 0 0 0-1.889 1.847 1.741 1.741 0 0 0 1.8 1.8 2.016 2.016 0 0 0 1.473-.544 1.658 1.658 0 0 0 .462-1.239v-.02a1.747 1.747 0 0 0-1.847-1.844z"/>
+            </g>
+        </g>
+    </g>
+</svg>

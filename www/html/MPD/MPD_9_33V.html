@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="format-detection" content="telephone=no"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-reset.min.css'/>
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-common.css'/>
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-style.css'/>
+
+  <script src='../../js/libs/jquery-3.1.1.min.js'></script>
+  <script src='../../js/swiper.min.js'></script>
+  <script src='../../js/ui.js'></script>
+</head>
+<body>
+
+<div class="wrapper">
+  <div class="header">
+    <header>
+      <div class="header__back">
+        <div class="back">
+          <button type="button" class="only-icon">
+            <i class="icon-arrow_left icon-20">뒤로가기</i>
+          </button>
+        </div>
+        <div class="title">
+          일정 변경
+        </div>
+      </div>
+    </header>
+  </div>
+  <div class="content-wrap bottom-button-fixed">
+    <div class="scrollBox">
+      <div class="manage-h3">
+        <strong>신청한 상담</strong>
+      </div>
+      <div class="delivery-process__table mt15">
+        <div class="table-data lined">
+          <dl>
+            <dt>서비스 유형</dt>
+            <dd>
+              채팅 상담
+            </dd>
+          </dl>
+          <dl>
+            <dt>상담 주제</dt>
+            <dd>
+              직장 내 대인관계
+            </dd>
+          </dl>
+          <!-- 패키지 -->
+          <dl>
+            <dt>패키지 명</dt>
+            <dd>
+              우리 아이 바로 알기 패키지] <br>아동기질검사 CTI 1회<br> 해석상담 1회 (화상)
+            </dd>
+          </dl>
+          <!-- 패키지 -->
+          <dl>
+            <dt>상담권</dt>
+            <dd>
+              3회권 중 <b>2회차</b>
+            </dd>
+          </dl>
+          <dl>
+            <dt>상담 예정일</dt>
+            <dd>
+              2021.06.26(금) 오후 3:00
+            </dd>
+          </dl>
+          <dl>
+            <dt>상담사</dt>
+            <dd>
+              이상담
+              <button type="button" class="only-icon">
+                <i class="icon-personal icon-16">프로필 가기</i>
+              </button>
+              <div class="table-data__button-ab">
+                <button type="button" class="block small inline">
+                  변경
+                </button>
+              </div>
+            </dd>
+          </dl>
+        </div>
+      </div>
+
+      <div class="manage-h3 mt40">
+        <strong>변경할 상담 일자를 선택해 주세요.</strong>
+      </div>
+      <article class="program-calendar">
+        <dl>
+          <dt>
+            <div>월</div>
+            <div>화</div>
+            <div>수</div>
+            <div>목</div>
+            <div>금</div>
+            <div>토</div>
+            <div>일</div>
+          </dt>
+          <dd class="lined">
+            <div>
+              <em>6월</em>
+              <button type="button" disabled>20</button>
+            </div>
+            <div>
+              <button type="button" disabled>21</button>
+            </div>
+            <div>
+              <button type="button" disabled>22</button>
+            </div>
+            <div>
+              <button type="button" disabled>23</button>
+            </div>
+            <div>
+              <button type="button" disabled>24</button>
+            </div>
+            <div>
+              <button type="button">25</button>
+            </div>
+            <div>
+              <button type="button">26</button>
+            </div>
+          </dd>
+          <dd class="lined">
+            <div>
+              <button type="button">27</button>
+            </div>
+            <div>
+              <button type="button">28</button>
+            </div>
+            <div>
+              <button type="button">29</button>
+            </div>
+            <div>
+              <button type="button" class="active">30</button>
+            </div>
+            <div>
+              <em>7월</em>
+              <button type="button">1</button>
+            </div>
+            <div>
+              <button type="button" disabled>7</button>
+            </div>
+            <div>
+              <button type="button" disabled>8</button>
+            </div>
+          </dd>
+        </dl>
+      </article>
+
+      <div class="manage-h3 mt40">
+        <strong>상담 시작 시간을 선택해 주세요.<br/>(1시간 단위입니다.)</strong>
+      </div>
+      <article class="consult-time-selector">
+        <div class="consult-time-selector__label">
+          <span class="active">상담가능</span>
+          <span class="disabled">상담불가능</span>
+        </div>
+        <div class="consult-time-selector__list">
+          <button type="button" class="consult-time-selector__item active">
+            <span>오전</span>
+            <em>0:00</em>
+          </button>
+          <button type="button" class="consult-time-selector__item" disabled>
+            <span>오전</span>
+            <em>1:00</em>
+          </button>
+          <button type="button" class="consult-time-selector__item" disabled>
+            <span>오전</span>
+            <em>3:00</em>
+          </button>
+          <button type="button" class="consult-time-selector__item" disabled>
+            <span>오전</span>
+            <em>4:00</em>
+          </button>
+          <button type="button" class="consult-time-selector__item">
+            <span>오전</span>
+            <em>5:00</em>
+          </button>
+          <button type="button" class="consult-time-selector__item" disabled>
+            <span>오전</span>
+            <em>6:00</em>
+          </button>
+          <button type="button" class="consult-time-selector__item">
+            <span>오전</span>
+            <em>7:00</em>
+          </button>
+          <button type="button" class="consult-time-selector__item">
+            <span>오전</span>
+            <em>8:00</em>
+          </button>
+          <button type="button" class="consult-time-selector__item" disabled>
+            <span>오전</span>
+            <em>9:00</em>
+          </button>
+          <button type="button" class="consult-time-selector__item">
+            <span>오전</span>
+            <em>10:00</em>
+          </button>
+          <button type="button" class="consult-time-selector__item">
+            <span>오전</span>
+            <em>11:00</em>
+          </button>
+          <button type="button" class="consult-time-selector__item">
+            <span>오전</span>
+            <em>12:00</em>
+          </button>
+          <button type="button" class="consult-time-selector__item">
+            <span>오후</span>
+            <em>1:00</em>
+          </button>
+          <button type="button" class="consult-time-selector__item">
+            <span>오후</span>
+            <em>2:00</em>
+          </button>
+          <button type="button" class="consult-time-selector__item">
+            <span>오후</span>
+            <em>3:00</em>
+          </button>
+          <button type="button" class="consult-time-selector__item">
+            <span>오후</span>
+            <em>4:00</em>
+          </button>
+          <button type="button" class="consult-time-selector__item">
+            <span>오후</span>
+            <em>5:00</em>
+          </button>
+          <button type="button" class="consult-time-selector__item">
+            <span>오후</span>
+            <em>6:00</em>
+          </button>
+          <button type="button" class="consult-time-selector__item">
+            <span>오후</span>
+            <em>7:00</em>
+          </button>
+          <button type="button" class="consult-time-selector__item">
+            <span>오후</span>
+            <em>8:00</em>
+          </button>
+          <button type="button" class="consult-time-selector__item">
+            <span>오후</span>
+            <em>9:00</em>
+          </button>
+          <button type="button" class="consult-time-selector__item">
+            <span>오후</span>
+            <em>10:00</em>
+          </button>
+          <button type="button" class="consult-time-selector__item">
+            <span>오후</span>
+            <em>11:00</em>
+          </button>
+          <button type="button" class="consult-time-selector__item">
+            <span>오후</span>
+            <em>12:00</em>
+          </button>
+        </div>
+      </article>
+    </div>
+  </div>
+  <div class="button__flex-wrap bottom-fixed">
+    <button type="button" class="block gray">
+      취소
+    </button>
+    <button type="button" class="block" onclick="modal.alert($(this), selectedAlertConfig)">
+      선택하기
+    </button>
+  </div>
+</div>
+
+<script>
+  var selectedAlertConfig = {
+    type: 'alert',
+    text: '상담 신청이 변경되었습니다.<br />상담일시는 2021.7.7 오후 5:00 입니다.<br />감사합니다.',
+    ok: handleOk
+  }
+
+  function handleOk() {
+    console.log('확인');
+  }
+
+  $('.program-calendar button').not(':disabled').off('click').on('click', function () {
+    $('.program-calendar button').removeClass('active');
+    $(this).addClass('active');
+  });
+
+  $('.consult-time-selector__item').not(':disabled').off('click').on('click', function () {
+    $(this).addClass('active').siblings().removeClass('active');
+  });
+
+</script>
+</body>
+</html>

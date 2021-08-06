@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="icon_m__dielectric" width="96" height="120" viewBox="0 0 96 120">
+    <defs>
+        <style>
+            .cls-1{fill:#fff}
+        </style>
+    </defs>
+    <g id="Stroke-3" transform="translate(-892.656 -659.705)">
+        <path id="Path_341" d="M943.656 768.306h-38.743c-6.3 0-12.257-6.133-12.257-12.619v-95.982h64.711c6.3 0 12.257 6.133 12.257 12.619v44.888h-6v-44.888c0-3.155-3.274-6.619-6.257-6.619h-58.711v89.982c0 3.155 3.275 6.619 6.257 6.619h38.743z" class="cls-1"/>
+    </g>
+    <g id="Stroke-5" transform="translate(-892.656 -659.705)">
+        <path id="Rectangle_429" d="M0 0H45.419V6H0z" class="cls-1" transform="translate(910.431 685.355)"/>
+    </g>
+    <g id="Stroke-7" transform="translate(-892.656 -659.705)">
+        <path id="Rectangle_430" d="M0 0H45.419V6H0z" class="cls-1" transform="translate(910.431 702.455)"/>
+    </g>
+    <g id="Stroke-9" transform="translate(-892.656 -659.705)">
+        <path id="Rectangle_431" d="M0 0H45.419V6H0z" class="cls-1" transform="translate(910.431 719.556)"/>
+    </g>
+    <g id="Stroke-11" transform="translate(-892.656 -659.705)">
+        <path id="Rectangle_432" d="M0 0H22.71V6H0z" class="cls-1" transform="translate(910.431 736.655)"/>
+    </g>
+    <g id="Stroke-15" transform="translate(-892.656 -659.705)">
+        <path id="Path_342" d="M964.366 779.705a24.375 24.375 0 1 1 24.29-24.377 24.361 24.361 0 0 1-24.29 24.377zm0-42.75a18.375 18.375 0 1 0 18.29 18.373 18.352 18.352 0 0 0-18.29-18.373z" class="cls-1"/>
+    </g>
+    <g id="Stroke-17" transform="translate(-892.656 -659.705)">
+        <path id="Path_343" d="M962.668 763.388l-9.407-8.588 4.045-4.432 5.362 4.895 10.464-9.554 4.045 4.432z" class="cls-1"/>
+    </g>
+</svg>

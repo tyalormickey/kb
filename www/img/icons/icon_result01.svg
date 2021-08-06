@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="icon_visual_needs" width="88" height="120" viewBox="0 0 88 120">
+    <defs>
+        <style>
+            .cls-1{fill:#fff}
+        </style>
+    </defs>
+    <g id="icon" transform="translate(-641.856 -721.938)">
+        <g id="Stroke-7">
+            <path id="Path_338" d="M661.827 827.688h-6.743a13.355 13.355 0 0 1-13.228-13.448v-92.3h63.363a13.358 13.358 0 0 1 13.23 13.452v6.3H712.4v-6.3a7.327 7.327 0 0 0-7.179-7.452h-57.313v86.3a7.323 7.323 0 0 0 7.176 7.448h6.743z" class="cls-1"/>
+        </g>
+        <g id="Stroke-7-2">
+            <path id="Path_339" d="M729.606 841.938h-60.794c-7.077 0-12.835-6.033-12.835-13.448v-92.3h61.041c7.079 0 12.838 6.035 12.838 13.452v71.3H723.8v-71.3c0-4.109-3.045-7.452-6.787-7.452h-54.984v86.3c0 4.108 3.043 7.448 6.783 7.448h60.794z" class="cls-1"/>
+        </g>
+        <g id="Stroke-9">
+            <path id="Path_340" d="M689.128 789.921l-12.81-17.627 4.909-3.508 7.9 10.871 18.256-25.122 4.909 3.508z" class="cls-1"/>
+        </g>
+        <g id="Stroke-11">
+            <path id="Rectangle_426" d="M0 0H31.065V6H0z" class="cls-1" transform="translate(678.772 798.889)"/>
+        </g>
+        <g id="Stroke-13">
+            <path id="Rectangle_427" d="M0 0H31.065V6H0z" class="cls-1" transform="translate(678.772 810.289)"/>
+        </g>
+    </g>
+</svg>

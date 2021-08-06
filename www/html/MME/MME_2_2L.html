@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-reset.min.css'/>
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-common.css'/>
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-style.css'/>
+
+  <script src='../../js/libs/jquery-3.1.1.min.js'></script>
+  <script src='../../js/swiper.min.js'></script>
+  <script src='../../js/ui.js'></script>
+</head>
+<body style="padding: 30px;">
+
+<button type="button" class="block small inline" onclick="modal.open($(this), '.modal-app-auth');">
+  다른 로그인 방식 선택
+</button>
+
+<br />
+<br />
+
+<button type="button" class="block small inline" onclick="modal.alert(false, bioEmptyConfig);">
+  생체 인증 미등록
+</button>
+
+<br />
+<br />
+
+<button type="button" class="block small inline" onclick="modal.alert($(this), bioUseConfig);">
+  생체 인증 등록
+</button>
+
+<!-- 팝업 // -->
+<div class="modal-popup modal-app-auth">
+  <div class="modal-popup__outer">
+    <section class="modal-popup__container">
+      <article class="modal-popup__header">
+        <button class="modal-popup__close only-icon">
+          <i class="icon-x icon-20">닫기</i>
+        </button>
+      </article>
+      <article class="modal-popup__body">
+        <div class="modal-app-auth__body">
+          <p class="modal-app-auth__title">
+            다른 로그인 방식을 선택해주세요.
+          </p>
+          <ul class="modal-app-auth__lists">
+            <li>
+              <button type="button" class="modal-app-auth__button active">
+                <i class="icon-phone icon-16"></i>
+                <span>앱이용비밀번호</span>
+              </button>
+            </li>
+            <li>
+              <button type="button" class="modal-app-auth__button">
+                <i class="icon-pattern icon-16"></i>
+                <span>패턴</span>
+              </button>
+            </li>
+            <li>
+              <button type="button" class="modal-app-auth__button" disabled>
+                <i class="icon-fingerprint icon-16"></i>
+                <span>생체인증</span>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </article>
+    </section>
+  </div>
+</div>
+<!-- // 팝업 -->
+
+<script>
+  $('.modal-app-auth__button').off('click').on('click', function () {
+    if (!$(this).hasClass('active')) {
+      $(this).addClass('active').parent().siblings().find('button').removeClass('active');
+      modal.close($('.modal-app-auth'));
+    }
+  });
+
+  var bioEmptyConfig = {
+    type: 'confirm',
+    text: '생체 인증이 등록되어 있지 않습니다.<br />' +
+      '설정에서 등록 가능합니다.<br />' +
+      '이동 하시겠습니까?',
+    okText: '설정',
+    ok: bioEmptyOk,
+    cancel: bioEmptyCancel
+  }
+
+  var bioUseConfig = {
+    type: 'confirm',
+    text: '생체인증을 사용하시겠습니까?',
+    okText: '등록',
+    ok: bioUseOk,
+    cancel: bioUseCancel
+  }
+
+  var bioRegConfig = {
+    type: 'alert',
+    text: '정상적으로 등록되었습니다.',
+    ok: bioRegOk
+  }
+
+  function bioEmptyOk () {
+    console.log('생체 인증 미등록 > 설정')
+  }
+
+  function bioEmptyCancel () {
+    console.log('생체 인증 미등록 > 취소')
+  }
+
+  function bioUseOk () {
+    console.log('생체 인증 사용 > 등록')
+    modal.alert(false, bioRegConfig)
+  }
+
+  function bioUseCancel () {
+    console.log('생체 인증 사용 > 취소')
+  }
+
+  function bioRegOk () {
+    console.log('정상 등록 확인')
+  }
+</script>
+
+</body>
+</html>

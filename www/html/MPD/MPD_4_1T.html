@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-reset.min.css'/>
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-common.css'/>
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-style.css'/>
+
+  <script src='../../js/libs/jquery-3.1.1.min.js'></script>
+  <script src='../../js/swiper.min.js'></script>
+  <script src='../../js/ui.js'></script>
+</head>
+<body>
+
+<div class="wrapper">
+  <div class="header">
+    <header>
+      <div class="header__back">
+        <div class="back">
+          <button type="button" class="only-icon">
+            <i class="icon-arrow_left icon-20">뒤로가기</i>
+          </button>
+        </div>
+        <div class="title">
+          식단관리
+        </div>
+        <div class="right-icons">
+          <button type="button" class="only-icon">
+            <i class="icon-camera_02 icon-20">카메라</i>
+          </button>
+          <button type="button" class="only-icon">
+            <i class="icon-alarm on icon-20">알람</i>
+          </button>
+        </div>
+      </div>
+    </header>
+  </div>
+  <div class="content-wrap">
+    <div class="scrollBox page-diet">
+      <section class="page-diet__top-date">
+        <strong>2021.06.20</strong>
+        <button type="button" class="icon-only" onclick="modal.open($(this), '.modal-calender', calenderSelectOpen)">
+          <i class="icon-cal icon-18">달력</i>
+        </button>
+      </section>
+
+      <section class="diet-main-title">
+        <i class="diet-main-title__icon"></i>
+        <p class="diet-main-title__text">
+          <strong>건강 관리의 시작</strong>은 좋은 것을 적절히 먹는
+          것이에요. 무엇을 얼마나 드시나요?
+        </p>
+      </section>
+
+      <!-- start: if data length > 0 -->
+      <section class="nutrition-info">
+        <div class="nutrition-info__title">
+          <strong>영양 정보</strong>
+          <span>고객님의 영양 섭취량 정보입니다.</span>
+        </div>
+        <ul class="nutrition-info__kcal">
+          <li>
+            <span>총 kcal</span>
+            <em>1120</em>
+          </li>
+          <li>
+            <span>권장 kcal</span>
+            <em>1600</em>
+          </li>
+        </ul>
+        <div class="nutrition-info__progress">
+          <p class="nutrition-info__text">
+            <strong>잔여 칼로리</strong>
+            <span>480/1600 kcal</span>
+          </p>
+          <div class="nutrition-info__progress-bar">
+            <span style="width: 50%;"><em>1120</em></span>
+          </div>
+        </div>
+        <div class="nutrition-info__graph">
+          <p class="nutrition-info__text">
+            <strong>섭취 칼로리 비교</strong>
+          </p>
+          <div class="nutrition-info__graph-box">
+            <ul class="nutrition-info__graph-grid">
+              <li>100%</li>
+              <li>75%</li>
+              <li>50%</li>
+              <li>25%</li>
+              <li>0%</li>
+            </ul>
+            <div class="nutrition-info__graph-table">
+              <ul>
+                <li>
+                  <span>아침</span>
+                  <i style="height: 25%;"><strong>160</strong></i>
+                </li>
+                <li>
+                  <span>점심</span>
+                  <i style="height: 50%;"><strong>320</strong></i>
+                </li>
+                <li>
+                  <span>저녁</span>
+                  <i style="height: 80%;"><strong>512</strong></i>
+                </li>
+                <li>
+                  <span>간식</span>
+                  <i style="height: 100%;"><strong>640</strong></i>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="diet-day-nutrition">
+        <p class="page-diet__title-h4">일일 권장량 대비 섭취량</p>
+        <div class="diet-day-nutrition__info">
+          <ul>
+            <li>
+              <span>탄수화물</span>
+              <em>400.0g / 8.5% </em>
+            </li>
+            <li>
+              <span>단백질</span>
+              <em>400.0g / 23% </em>
+            </li>
+            <li>
+              <span>지방</span>
+              <em>400.0g / 11.4% </em>
+            </li>
+          </ul>
+          <div class="diet-day-nutrition__buttons">
+            <button type="button" class="text-icon small-02">
+              <i class="icon-button"></i>
+              영양 정보 상세 보기
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="diet-detail">
+        <div class="diet-detail__title">
+          <p class="page-diet__title-h3">상세정보</p>
+          <label class="input-switch-text">
+            <input type="checkbox" data-on="diet-statistics" data-off="diet-photo"/>
+            <span><em>사진</em><em>통계</em></span>
+          </label>
+          <!--          <div class="button__flex-wrap">-->
+          <!--            <button type="button" class="block medium" data-target="diet-photo">-->
+          <!--              사진-->
+          <!--            </button>-->
+          <!--            <button type="button" class="block gray medium" data-target="diet-statistics">-->
+          <!--              통계-->
+          <!--            </button>-->
+          <!--          </div>-->
+        </div>
+
+        <!-- start : 포토 -->
+        <div class="diet-photo">
+          <!-- 아침 -->
+          <article class="diet-photo__item">
+            <div class="diet-photo__item-title">
+              <p class="page-diet__title-h4">아침</p>
+              <button type="button" class="text-icon small-01">
+                <i class="icon-button"></i>
+                변경
+              </button>
+            </div>
+            <div class="diet-photo__item-box">
+              <div class="diet-photo__item-image">
+                <img src="../../img/mask_group_6.jpg" alt="아침식사 이미지" />
+              </div>
+              <div class="diet-photo__item-text">
+                <span>700 kcal</span>
+                <p>마카롱, 계란프라이, 아메리카노, 블루베리잼</p>
+              </div>
+              <div class="diet-day-nutrition">
+                <p class="page-diet__title-h4">일일 권장량 대비 섭취량</p>
+                <div class="diet-day-nutrition__info">
+                  <ul>
+                    <li>
+                      <span>탄수화물</span>
+                      <em>400.0g / 8.5% </em>
+                    </li>
+                    <li>
+                      <span>단백질</span>
+                      <em>400.0g / 23% </em>
+                    </li>
+                    <li>
+                      <span>지방</span>
+                      <em>400.0g / 11.4% </em>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </article>
+          <!-- 점심 -->
+          <article class="diet-photo__item">
+            <div class="diet-photo__item-title">
+              <p class="page-diet__title-h4">점심</p>
+              <button type="button" class="text-icon small-01">
+                <i class="icon-button"></i>
+                변경
+              </button>
+            </div>
+            <div class="diet-photo__item-box">
+              <div class="diet-photo__item-image">
+                <!-- <img src="../../img/mask_group_6.jpg" alt="아침식사 이미지" /> -->
+                <div class="no-image"></div>
+              </div>
+              <div class="diet-photo__item-text">
+                <span>700 kcal</span>
+                <p>마카롱, 계란프라이, 아메리카노, 블루베리잼</p>
+              </div>
+              <div class="diet-day-nutrition">
+                <p class="page-diet__title-h4">일일 권장량 대비 섭취량</p>
+                <div class="diet-day-nutrition__info">
+                  <ul>
+                    <li>
+                      <span>탄수화물</span>
+                      <em>400.0g / 8.5% </em>
+                    </li>
+                    <li>
+                      <span>단백질</span>
+                      <em>400.0g / 23% </em>
+                    </li>
+                    <li>
+                      <span>지방</span>
+                      <em>400.0g / 11.4% </em>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+        <!-- end : 포토 -->
+
+        <!-- start : 통계 -->
+        <div class="diet-statistics">
+          <div class="diet-statistics__selector">
+            <p>식단을 선택하면 상세 영양 정보를 볼 수 있습니다.</p>
+            <div class="diet-statistics__selector-buttons">
+              <button type="button">아침</button>
+              <button type="button" class="active">점심</button>
+              <button type="button" disabled>저녁</button>
+              <button type="button" disabled>간식</button>
+            </div>
+          </div>
+          <article class="diet-statistics__data">
+            <div class="diet-statistics__data-title">
+              <p class="page-diet__title-h4">상세 영양 정보 - 점심</p>
+            </div>
+            <dl class="diet-statistics__data-list">
+              <dt>
+                <ul>
+                  <li>구분</li>
+                  <li>섭취량</li>
+                  <li>일일 권장량 대비</li>
+                </ul>
+              </dt>
+              <dd>
+                <ul>
+                  <li>칼로리</li>
+                  <li>24kcal</li>
+                  <li>2.1%</li>
+                </ul>
+              </dd>
+              <dd>
+                <ul>
+                  <li>탄수화물</li>
+                  <li>24kcal</li>
+                  <li>2.1%</li>
+                </ul>
+                <ul>
+                  <li>당분</li>
+                  <li>24kcal</li>
+                  <li>2.1%</li>
+                </ul>
+                <ul>
+                  <li>식이섬유</li>
+                  <li>24kcal</li>
+                  <li>2.1%</li>
+                </ul>
+              </dd>
+              <dd>
+                <ul>
+                  <li>단백질</li>
+                  <li>24kcal</li>
+                  <li>2.1%</li>
+                </ul>
+              </dd>
+              <dd>
+                <ul>
+                  <li>지방</li>
+                  <li>24kcal</li>
+                  <li>2.1%</li>
+                </ul>
+                <ul>
+                  <li>포화지방</li>
+                  <li>24kcal</li>
+                  <li>2.1%</li>
+                </ul>
+                <ul>
+                  <li>트랜스지방</li>
+                  <li>24kcal</li>
+                  <li>2.1%</li>
+                </ul>
+              </dd>
+              <dd>
+                <ul>
+                  <li>콜레스테롤</li>
+                  <li>24kcal</li>
+                  <li>2.1%</li>
+                </ul>
+              </dd>
+              <dd>
+                <ul>
+                  <li>나트륨</li>
+                  <li>24kcal</li>
+                  <li class="warning">2.1%</li>
+                </ul>
+              </dd>
+              <dd>
+                <ul>
+                  <li>칼슘</li>
+                  <li>24kcal</li>
+                  <li>2.1%</li>
+                </ul>
+              </dd>
+            </dl>
+            <ul class="diet-statistics__data-guide">
+              <li>칼로리 소비량에 따라 실제 값은 높거나 낮을 수
+                있습니다.</li>
+              <li>‘-’ 표시는 권장량 대비 표시할 수 없는 항목입니다.</li>
+            </ul>
+          </article>
+
+        </div>
+        <!-- end : 통계 -->
+      </section>
+      <!-- end: if data length > 0 -->
+
+      <!-- start: else no-data -->
+      <!--<div class="message-box">
+        <div class="message-box__wrap">
+          <div class="message-box__icon">
+            <i class="icon-nodata icon-40"></i>
+          </div>
+          <div class="message-box__sub-title">
+            등록된 식단 정보가 없습니다.
+          </div>
+        </div>
+      </div>-->
+      <!-- end: else no-data -->
+    </div>
+  </div>
+  <aside class="float-icon small">
+    <button type="button">
+      <span>식단<br/>입력</span>
+    </button>
+  </aside>
+  <div class="footer footer__nav">
+    <nav>
+        <ul>
+            <li class="on">
+                <button type="button">
+                    <i class="icon-home icon-16"></i>
+                    <span>홈</span>
+                </button>
+            </li>
+            <li>
+                <button type="button">
+                    <i class="icon-pro icon-16"></i>
+            <span>프로그램</span>
+          </button>
+        </li>
+        <li>
+          <button type="button">
+            <i class="icon-info icon-16"></i>
+            <span>증상ㆍ병원</span>
+          </button>
+        </li>
+        <li>
+          <button type="button">
+            <i class="icon-my icon-16"></i>
+            <span>MY</span>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+
+
+<!-- 팝업 // -->
+<div class="modal-popup modal-calender">
+  <div class="modal-popup__outer">
+    <section class="modal-popup__container">
+      <article class="modal-popup__header">
+        <h3 class="modal-popup__title">
+          날짜 선택
+        </h3>
+        <button class="modal-popup__close only-icon">
+          <i class="icon-x icon-20">닫기</i>
+        </button>
+      </article>
+      <article class="modal-popup__body">
+        <div class="modal-calender__container">
+          <article class="calender-swiper">
+            <div class="swiper-container calender-swiper--year">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">2013</div>
+                <div class="swiper-slide">2014</div>
+                <div class="swiper-slide">2015</div>
+                <div class="swiper-slide">2016</div>
+                <div class="swiper-slide">2017</div>
+                <div class="swiper-slide">2018</div>
+                <div class="swiper-slide">2019</div>
+                <div class="swiper-slide">2020</div>
+                <div class="swiper-slide">2021</div>
+              </div>
+            </div>
+          </article>
+          <article class="calender-swiper">
+            <div class="swiper-container calender-swiper--month">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">01</div>
+                <div class="swiper-slide">02</div>
+                <div class="swiper-slide">03</div>
+                <div class="swiper-slide">04</div>
+                <div class="swiper-slide">05</div>
+                <div class="swiper-slide">06</div>
+                <div class="swiper-slide">07</div>
+                <div class="swiper-slide">08</div>
+                <div class="swiper-slide">09</div>
+                <div class="swiper-slide">10</div>
+                <div class="swiper-slide">11</div>
+                <div class="swiper-slide">12</div>
+              </div>
+            </div>
+          </article>
+          <article class="calender-swiper">
+            <div class="swiper-container calender-swiper--day">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">01</div>
+                <div class="swiper-slide">02</div>
+                <div class="swiper-slide">03</div>
+                <div class="swiper-slide">04</div>
+                <div class="swiper-slide">05</div>
+                <div class="swiper-slide">06</div>
+                <div class="swiper-slide">07</div>
+                <div class="swiper-slide">08</div>
+                <div class="swiper-slide">09</div>
+                <div class="swiper-slide">10</div>
+                <div class="swiper-slide">11</div>
+                <div class="swiper-slide">12</div>
+                <div class="swiper-slide">13</div>
+                <div class="swiper-slide">14</div>
+                <div class="swiper-slide">15</div>
+                <div class="swiper-slide">16</div>
+                <div class="swiper-slide">17</div>
+                <div class="swiper-slide">18</div>
+                <div class="swiper-slide">19</div>
+                <div class="swiper-slide">20</div>
+                <div class="swiper-slide">21</div>
+                <div class="swiper-slide">22</div>
+                <div class="swiper-slide">23</div>
+                <div class="swiper-slide">24</div>
+                <div class="swiper-slide">25</div>
+                <div class="swiper-slide">26</div>
+                <div class="swiper-slide">27</div>
+                <div class="swiper-slide">28</div>
+                <div class="swiper-slide">29</div>
+                <div class="swiper-slide">30</div>
+                <div class="swiper-slide">31</div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </article>
+      <article class="modal-popup__footer">
+        <button class="block gray medium inline" onclick="modal.close($(this))">
+          취소
+        </button>
+        <button class="block medium inline" onclick="modal.close($(this))">
+          확인
+        </button>
+      </article>
+    </section>
+  </div>
+</div>
+<!-- // 팝업 -->
+
+<script>
+  var $detailButtons = $('.diet-detail .input-switch-text input');
+  var detailAction = function (target) {
+    var itemTarget = {
+      on: $detailButtons.data('on'),
+      off: $detailButtons.data('off')
+    }
+    $.each(itemTarget, function (item) {
+      if (item === target) {
+        $('.' + itemTarget[item]).show();
+      } else {
+        $('.' + itemTarget[item]).hide();
+      }
+    });
+  }
+  detailAction('off')
+  $detailButtons.off('change').on('change', function () {
+    if ($(this).is(':checked')) {
+      detailAction('on');
+    } else {
+      detailAction('off');
+    }
+  });
+
+  var calenderSwiperOption = {
+    direction: "vertical",
+    slidesPerView: 3,
+    loop: false,
+    spaceBetween: 0,
+    mousewheel: true,
+    centeredSlides: true,
+    init: false
+  }
+
+  var swiperYear = new Swiper(".calender-swiper--year", calenderSwiperOption);
+  var swiperMonth = new Swiper(".calender-swiper--month", calenderSwiperOption);
+  var swiperDay = new Swiper(".calender-swiper--day", calenderSwiperOption);
+
+  function calenderSelectOpen() {
+    swiperYear.init();
+    swiperMonth.init();
+    swiperDay.init();
+  }
+</script>
+</body>
+</html>

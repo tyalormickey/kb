@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="icon_m_trading" width="56" height="56" viewBox="0 0 56 56">
+    <defs>
+        <style>
+            .cls-1{fill:#fff}
+        </style>
+    </defs>
+    <g id="Rectangle-25" transform="translate(0 2.209)">
+        <path id="Path_325" d="M473.485 37.619a7.511 7.511 0 0 1-7.506-7.49V18.39l17.03-19.8 13.335 10.986 20.516-25.748 3.193 2.551-23.1 28.994L483.5 4.29l-13.436 15.618v10.211a3.419 3.419 0 0 0 3.421 3.409l47.715-.061.006 4.09-47.716.062z" class="cls-1" transform="translate(-465.979 16.172)"/>
+    </g>
+    <g id="Stroke-3" transform="translate(43.53)">
+        <path id="Path_326" d="M522.825-5.934h-4.148v-8.3h-8.321v-4.148h12.47z" class="cls-1" transform="translate(-510.355 18.381)"/>
+    </g>
+    <g id="Stroke-5" transform="translate(0 0.691)">
+        <path id="Rectangle_418" d="M0 0H4.148V27.66H0z" class="cls-1"/>
+    </g>
+</svg>

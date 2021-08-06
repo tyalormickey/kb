@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="icon_m__nodata_240" width="160" height="160" viewBox="0 0 152 160">
+    <defs>
+        <style>
+            .cls-1{fill:#999}
+        </style>
+    </defs>
+    <g id="icon_f_insurance-application_l_24" transform="translate(-4)">
+        <path id="Path_273" d="M112.775 159.976H24.242A20.143 20.143 0 0 1 4 139.979V0h92.354l37.463 35.764v44.224h-8v-40.8L93.148 8H12v131.98a12.136 12.136 0 0 0 12.242 12h88.533z" class="cls-1"/>
+        <path id="Path_274" d="M128.854 43.994h-17.715A20.145 20.145 0 0 1 90.9 24V5.281h8V24a12.136 12.136 0 0 0 12.243 12h17.715z" class="cls-1"/>
+        <path id="Rectangle_385" d="M0 0H48.728V7.999H0z" class="cls-1" transform="translate(44.545 55.991)"/>
+        <path id="Rectangle_386" d="M0 0H48.728V7.999H0z" class="cls-1" transform="translate(44.545 79.988)"/>
+        <path id="Path_275" d="M114.364 160l-29.152-.217v-27.967l52.269-50.73 11.379 11.208a23.781 23.781 0 0 1 0 33.978l-26.622 26.221zm-21.152-8.157l17.975.134 5.484-5.228 26.575-26.175a15.787 15.787 0 0 0 0-22.582l-5.807-5.718L93.212 135.2z" class="cls-1"/>
+        <path id="Rectangle_387" d="M0 0H7.999V35.083H0z" class="cls-1" transform="translate(120.045 102.372) rotate(-45.435)"/>
+    </g>
+</svg>

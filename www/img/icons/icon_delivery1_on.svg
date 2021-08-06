@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="icon_f_insurance-benefit02" width="64" height="80" viewBox="0 0 64 80">
+    <defs>
+        <style>
+            .cls-2{fill:#333}
+        </style>
+    </defs>
+    <path id="패스_492" fill="#fcaf17" d="M962 1058v72.714h58.333V1074l-17.275-16.656z" transform="translate(-958 -1054)"/>
+    <path id="패스_489" d="M371.292 1024.426h-54a10.011 10.011 0 0 1-10-10v-70h45.538l18.462 17.893v50.107h-4v-48.413l-16.082-15.587h-39.918v66a6.007 6.007 0 0 0 6 6h54z" class="cls-2" transform="translate(-307.292 -944.426)"/>
+    <path id="패스_490" d="M367.292 966.426h-8a10.011 10.011 0 0 1-10-10v-8h4v8a6.007 6.007 0 0 0 6 6h8z" class="cls-2" transform="translate(-307.292 -944.426)"/>
+    <path id="패스_491" d="M334.232 1001.045l-3.829-.086-6.073-21.927 3.855-1.067 4.3 15.529 4.426-13.581h3.8l4.387 13.554 4.294-15.506 3.855 1.067-6.073 21.927-3.83.082-4.543-14.035z" class="cls-2" transform="translate(-307.292 -944.426)"/>
+    <path id="사각형_612" d="M0 0H8V4H0z" class="cls-2" transform="translate(12.8 40.5)"/>
+    <path id="사각형_613" d="M0 0H8V4H0z" class="cls-2" transform="translate(42 40.5)"/>
+</svg>

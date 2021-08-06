@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-reset.min.css'/>
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-common.css'/>
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-style.css'/>
+
+  <script src='../../js/libs/jquery-3.1.1.min.js'></script>
+  <script src='../../js/swiper.min.js'></script>
+  <script src='../../js/ui.js'></script>
+</head>
+<body>
+
+<div class="wrapper">
+  <div class="header">
+    <header>
+      <div class="header__back">
+        <div class="back">
+          <button type="button" class="only-icon">
+            <i class="icon-arrow_left icon-20">뒤로가기</i>
+          </button>
+        </div>
+        <div class="title">
+          쿠폰상점
+        </div>
+        <div class="right-icons">
+          <button type="button" class="only-icon">
+            <i class="icon-camera_02 icon-20">카메라</i>
+          </button>
+          <button type="button" class="only-icon">
+            <i class="icon-alarm on icon-20">알람</i>
+          </button>
+        </div>
+      </div>
+    </header>
+  </div>
+  <div class="content-wrap">
+    <div class="scrollBox no-padding">
+      <div class="tab__wrap my-coupon">
+        <div class="tab__more">
+          <button type="button" class="only-icon" onclick="tabMore()"><i class="icon-accordion">열기</i></button>
+        </div>
+        <ul class="tab__more-and">
+          <li class="on">
+            <button type="button">
+              <span>카테고리1</span>
+            </button>
+          </li>
+          <li>
+            <button type="button">
+              <span>카테고리1</span>
+            </button>
+          </li>
+          <li>
+            <button type="button">
+              <span>카테고리1</span>
+            </button>
+          </li>
+          <li>
+            <button type="button">
+              <span>카테고리1</span>
+            </button>
+          </li>
+          <li>
+            <button type="button">
+              <span>카테고리1</span>
+            </button>
+          </li>
+          <li>
+            <button type="button">
+              <span>카테고리1</span>
+            </button>
+          </li>
+          <li>
+            <button type="button">
+              <span>카테고리1</span>
+            </button>
+          </li>
+          <li>
+            <button type="button">
+              <span>카테고리1</span>
+            </button>
+          </li>
+        </ul>
+        <ul class="tab with-depth with-aco">
+          <li class="tab__item">
+            <button type="button">
+              <span>영양제</span>
+            </button>
+          </li>
+          <li class="tab__item">
+            <button type="button">
+              <span>카테고리1</span>
+            </button>
+          </li>
+          <li class="tab__item">
+            <button type="button">
+              <span>카테고리1</span>
+            </button>
+          </li>
+          <li class="tab__item">
+            <button type="button">
+              <span>카테고리1</span>
+            </button>
+          </li>
+          <li class="tab__item">
+            <button type="button">
+              <span>카테고리1</span>
+            </button>
+          </li>
+        </ul>
+        <div class="tab__content-wrap">
+          <div class="tab__content">
+            <div class="tab__wrap">
+              <ul class="tab depth02">
+                <li class="tab__item">
+                  <button type="button">
+                    <span>브랜드1</span>
+                  </button>
+                </li>
+                <li class="tab__item">
+                  <button type="button">
+                    <span>브랜드1</span>
+                  </button>
+                </li>
+                <li class="tab__item">
+                  <button type="button">
+                    <span>브랜드1</span>
+                  </button>
+                </li>
+                <li class="tab__item">
+                  <button type="button">
+                    <span>브랜드1</span>
+                  </button>
+                </li>
+                <li class="tab__item">
+                  <button type="button">
+                    <span>브랜드1</span>
+                  </button>
+                </li>
+                <li class="tab__item">
+                  <button type="button">
+                    <span>브랜드1</span>
+                  </button>
+                </li>
+              </ul>
+              <div class="tab__content-wrap">
+                <div class="tab__content contents-padding">
+                  <div class="my-coupon__list my-product">
+                    <div class="card-item">
+                      <button type="button">
+                        <dl class="my-product__item">
+                          <dt>
+                            <img src="../../img/coffee_icon.png" />
+                          </dt>
+                          <dd>
+                            <span class="card-item__tag">
+                              <div class="card-item__tag-info">
+                                스타벅스
+                              </div>
+                            </span>
+                            <span class="card-item__title">
+                              아이스 카페 아메리카노 Tall
+                            </span>
+                            <span class="card-item__point">
+                              4,200 P
+                            </span>
+                          </dd>
+                        </dl>
+                      </button>
+                    </div>
+                    <div class="card-item">
+                      <button type="button">
+                        <dl class="my-product__item">
+                          <dt>
+                            <img src="../../img/coffee_icon.png" />
+                          </dt>
+                          <dd>
+                            <span class="card-item__tag">
+                              <div class="card-item__tag-info">
+                                스타벅스
+                              </div>
+                            </span>
+                            <span class="card-item__title">
+                              아이스 카페 아메리카노 Tall
+                            </span>
+                            <span class="card-item__point">
+                              4,200 P
+                            </span>
+                          </dd>
+                        </dl>
+                      </button>
+                    </div>
+                    <div class="card-item">
+                      <button type="button">
+                        <dl class="my-product__item">
+                          <dt>
+                            <img src="../../img/coffee_icon.png" />
+                          </dt>
+                          <dd>
+                            <span class="card-item__tag">
+                              <div class="card-item__tag-info">
+                                스타벅스
+                              </div>
+                            </span>
+                            <span class="card-item__title">
+                              아이스 카페 아메리카노 Tall
+                            </span>
+                            <span class="card-item__point">
+                              4,200 P
+                            </span>
+                          </dd>
+                        </dl>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab__content contents-padding">
+                  <div class="my-coupon__list my-product">
+                    <div class="card-item">
+                      <button type="button">
+                        <dl class="my-product__item">
+                          <dt>
+                            <img src="../../img/coffee_icon.png" />
+                          </dt>
+                          <dd>
+                            <span class="card-item__tag">
+                              <div class="card-item__tag-info">
+                                스타벅스
+                              </div>
+                            </span>
+                            <span class="card-item__title">
+                              아이스 카페 아메리카노 Tall
+                            </span>
+                            <span class="card-item__point">
+                              4,200 P
+                            </span>
+                          </dd>
+                        </dl>
+                      </button>
+                    </div>
+                    <div class="card-item">
+                      <button type="button">
+                        <dl class="my-product__item">
+                          <dt>
+                            <img src="../../img/coffee_icon.png" />
+                          </dt>
+                          <dd>
+                            <span class="card-item__tag">
+                              <div class="card-item__tag-info">
+                                스타벅스
+                              </div>
+                            </span>
+                            <span class="card-item__title">
+                              아이스 카페 아메리카노 Tall
+                            </span>
+                            <span class="card-item__point">
+                              4,200 P
+                            </span>
+                          </dd>
+                        </dl>
+                      </button>
+                    </div>
+                    <div class="card-item">
+                      <button type="button">
+                        <dl class="my-product__item">
+                          <dt>
+                            <img src="../../img/coffee_icon.png" />
+                          </dt>
+                          <dd>
+                            <span class="card-item__tag">
+                              <div class="card-item__tag-info">
+                                스타벅스
+                              </div>
+                            </span>
+                            <span class="card-item__title">
+                              아이스 카페 아메리카노 Tall
+                            </span>
+                            <span class="card-item__point">
+                              4,200 P
+                            </span>
+                          </dd>
+                        </dl>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab__content">
+            <div class="tab__wrap">
+              <ul class="tab depth02">
+                <li class="tab__item">
+                  <button type="button">
+                    <span>브랜드1</span>
+                  </button>
+                </li>
+                <li class="tab__item">
+                  <button type="button">
+                    <span>브랜드2</span>
+                  </button>
+                </li>
+              </ul>
+              <div class="tab__content-wrap">
+                <div class="tab__content contents-padding">
+                  <div class="my-coupon__list my-product">
+                    <div class="card-item">
+                      <button type="button">
+                        <dl class="my-product__item">
+                          <dt>
+                            <img src="../../img/coffee_icon.png" />
+                          </dt>
+                          <dd>
+                            <span class="card-item__tag">
+                              <div class="card-item__tag-info">
+                                스타벅스
+                              </div>
+                            </span>
+                            <span class="card-item__title">
+                              아이스 카페 아메리카노 Tall
+                            </span>
+                            <span class="card-item__point">
+                              4,200 P
+                            </span>
+                          </dd>
+                        </dl>
+                      </button>
+                    </div>
+                    <div class="card-item">
+                      <button type="button">
+                        <dl class="my-product__item">
+                          <dt>
+                            <img src="../../img/coffee_icon.png" />
+                          </dt>
+                          <dd>
+                            <span class="card-item__tag">
+                              <div class="card-item__tag-info">
+                                스타벅스
+                              </div>
+                            </span>
+                            <span class="card-item__title">
+                              아이스 카페 아메리카노 Tall
+                            </span>
+                            <span class="card-item__point">
+                              4,200 P
+                            </span>
+                          </dd>
+                        </dl>
+                      </button>
+                    </div>
+                    <div class="card-item">
+                      <button type="button">
+                        <dl class="my-product__item">
+                          <dt>
+                            <img src="../../img/coffee_icon.png" />
+                          </dt>
+                          <dd>
+                            <span class="card-item__tag">
+                              <div class="card-item__tag-info">
+                                스타벅스
+                              </div>
+                            </span>
+                            <span class="card-item__title">
+                              아이스 카페 아메리카노 Tall
+                            </span>
+                            <span class="card-item__point">
+                              4,200 P
+                            </span>
+                          </dd>
+                        </dl>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab__content contents-padding">
+                  <div class="my-coupon__list my-product">
+                    <div class="card-item">
+                      <button type="button">
+                        <dl class="my-product__item">
+                          <dt>
+                            <img src="../../img/coffee_icon.png" />
+                          </dt>
+                          <dd>
+                            <span class="card-item__tag">
+                              <div class="card-item__tag-info">
+                                스타벅스
+                              </div>
+                            </span>
+                            <span class="card-item__title">
+                              아이스 카페 아메리카노 Tall
+                            </span>
+                            <span class="card-item__point">
+                              4,200 P
+                            </span>
+                          </dd>
+                        </dl>
+                      </button>
+                    </div>
+                    <div class="card-item">
+                      <button type="button">
+                        <dl class="my-product__item">
+                          <dt>
+                            <img src="../../img/coffee_icon.png" />
+                          </dt>
+                          <dd>
+                            <span class="card-item__tag">
+                              <div class="card-item__tag-info">
+                                스타벅스
+                              </div>
+                            </span>
+                            <span class="card-item__title">
+                              아이스 카페 아메리카노 Tall
+                            </span>
+                            <span class="card-item__point">
+                              4,200 P
+                            </span>
+                          </dd>
+                        </dl>
+                      </button>
+                    </div>
+                    <div class="card-item">
+                      <button type="button">
+                        <dl class="my-product__item">
+                          <dt>
+                            <img src="../../img/coffee_icon.png" />
+                          </dt>
+                          <dd>
+                            <span class="card-item__tag">
+                              <div class="card-item__tag-info">
+                                스타벅스
+                              </div>
+                            </span>
+                            <span class="card-item__title">
+                              아이스 카페 아메리카노 Tall
+                            </span>
+                            <span class="card-item__point">
+                              4,200 P
+                            </span>
+                          </dd>
+                        </dl>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="tab__more-bg"></div>
+  <div class="footer footer__nav">
+    <nav>
+        <ul>
+            <li class="on">
+                <button type="button">
+                    <i class="icon-home icon-16"></i>
+                    <span>홈</span>
+                </button>
+            </li>
+            <li>
+                <button type="button">
+                    <i class="icon-pro icon-16"></i>
+            <span>프로그램</span>
+          </button>
+        </li>
+        <li>
+          <button type="button">
+            <i class="icon-info icon-16"></i>
+            <span>증상ㆍ병원</span>
+          </button>
+        </li>
+        <li>
+          <button type="button">
+            <i class="icon-my icon-16"></i>
+            <span>MY</span>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+
+<script>
+  tab.reset();
+    $('.tab__item').click(function() {
+      tab.action($(this));
+    })
+  function tabMore () {
+    if ($('.tab__more-and').hasClass('on')) {
+      $('.tab__more-and').removeClass('on')
+      $('.tab__more-bg').removeClass('on')
+    } else {
+      $('.tab__more-and').addClass('on')
+      $('.tab__more-bg').addClass('on')
+    }
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-reset.min.css'/>
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-common.css'/>
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-style.css'/>
+
+  <script src='../../js/libs/jquery-3.1.1.min.js'></script>
+  <script src='../../js/swiper.min.js'></script>
+  <script src='../../js/ui.js'></script>
+</head>
+<body>
+
+<div class="wrapper">
+  <div class="header visual-expand__header top">
+    <header>
+      <div class="header__back">
+        <div class="back">
+          <button type="button" class="only-icon">
+            <i class="icon-arrow_left icon-20">뒤로가기</i>
+          </button>
+        </div>
+      </div>
+    </header>
+  </div>
+  <div class="visual-expand mpd98">
+    <div class="sound-detail__visual">
+      <div class="sound-detail__visual-img">
+        <!-- <img src="../../img/img-01.png"/> -->
+        <div class="no-image big dark"></div>
+      </div>
+      <div class="sound-detail__visual-tag">
+        <span>
+          <i class="icon-sound icon-16">오디오</i>
+          <em>오디오</em>
+        </span>
+        <span>
+          <i class="icon-video icon-16">비디오</i>
+          <em>비디오</em>
+        </span>
+      </div>
+    </div>
+    <div class="sound-detail__contents">
+      <section class="sound-detail__title-part">
+        <div class="title-top">
+          <div class="category">
+            <span>스트레칭</span>
+            <span>러닝</span>
+          </div>
+          <div class="button">
+            <button type="button" class="text-icon small-01">
+              <i class="icon-clock2"></i>
+              운동알람
+            </button>
+          </div>
+        </div>
+        <div class="title mt20">
+          다이나믹 워밍업
+        </div>
+        <div class="hash mt10">
+          #기초체력 #호흡정리 #전신 #오디오 #10분
+        </div>
+        <div class="box mt25">
+          <p>
+            <i class="icon-countdown icon-16"></i>
+            <strong>15분</strong>
+          </p>
+          <p>
+            <i class="icon-exercise icon-16"></i>
+            <strong>약</strong>
+          </p>
+          <p>
+            <i class="icon-cook icon-16"></i>
+            <strong>402Kcal</strong>
+          </p>
+        </div>
+      </section>
+      <section class="sound-detail__instructor mt25">
+        <div class="sound-detail__instructor-wrap">
+          <div class="sound-detail__instructor-thumbnail">
+            <!-- <img src="../../img/mask_group_5.png" /> -->
+            <div class="no-profile">
+              <i class="icon-man3 icon-20"></i>
+            </div>
+          </div>
+          <div class="sound-detail__instructor-text">
+            <strong>김민지강사</strong>
+            <p>#야외러닝 #야외운동 #러닝 #조깅</p>
+          </div>
+        </div>
+      </section>
+      <section class="sound-detail__content">
+        <dl class="mt25">
+          <dt>컨텐츠 요약</dt>
+          <dd class="mt12">
+            고강도 러닝 전 워밍업이 필요하다면,<br>
+            근육을 풀어주는 동적 스트레칭
+          </dd>
+        </dl>
+        <dl class="mt25">
+          <dt>운동 설명</dt>
+          <dd class="mt12">
+            운동 구성 <br>
+            8~9가지 스트레칭 동작
+          </dd>
+        </dl>
+      </section>
+    </div>
+  </div>
+  <div class="footer footer__button-nav">
+    <button class="block" type="button">
+      운동 시작하기
+    </button>
+    <nav>
+      <ul>
+        <li class="on">
+          <button type="button">
+            <i class="icon-home icon-16"></i>
+            <span>홈</span>
+          </button>
+        </li>
+        <li>
+          <button type="button">
+            <i class="icon-pro icon-16"></i>
+            <span>프로그램</span>
+          </button>
+        </li>
+        <li>
+          <button type="button">
+            <i class="icon-info icon-16"></i>
+            <span>증상ㆍ병원</span>
+          </button>
+        </li>
+        <li>
+          <button type="button">
+            <i class="icon-my icon-16"></i>
+            <span>MY</span>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+
+<script>
+  function visualExpand() {
+    var $expand = $('.visual-expand');
+    var allH = $('body').height() - $expand.parent().find('.footer').height();
+    $expand.css('height', allH);
+
+    $expand.scroll(function () {
+      if ($(this).scrollTop() > 200) {
+        $('.header').removeClass('top')
+      } else {
+        $('.header').addClass('top')
+      }
+    });
+  }
+
+  visualExpand();
+</script>
+</body>
+</html>

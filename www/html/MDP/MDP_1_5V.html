@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-reset.min.css'/>
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-common.css'/>
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-style.css'/>
+
+  <script src='../../js/libs/jquery-3.1.1.min.js'></script>
+  <script src='../../js/swiper.min.js'></script>
+  <script src='../../js/ui.js'></script>
+</head>
+<body>
+
+<div class="wrapper">
+  <div class="header">
+    <header>
+      <div class="header__title">
+        <div class="title">
+          가입설문
+        </div>
+      </div>
+    </header>
+  </div>
+  <div class="content-wrap bottom-button-fixed">
+    <div class="scrollBox no-padding survey__wrap">
+      <section class="survey__content survey-height">
+        <article class="survey-height__title">
+          김국민님이 생각하는 <br>
+          <strong>이상적인 몸무게</strong>는 무엇인가요?
+        </article>
+
+        <div class="table-form__item mt40">
+          <span class="table-form__item-label">
+            <label>몸무게</label>
+            <i class="black">kg</i>
+          </span>
+          <div class="form-item">
+            <div class="custom-input">
+              <input type="text" placeholder="몸무게 입력" value="74"/>
+            </div>
+          </div>
+        </div>
+        
+      </section>
+      <!-- fixed -->
+      <section class="survey__progress">
+        <div class="survey__progress--active" style="width: 45%;"></div>
+      </section>
+    </div>
+  </div>
+  <div class="button__flex-wrap bottom-fixed">
+    <button type="button" class="block gray">
+      이전
+    </button>
+    <button type="button" class="block">
+      다음
+    </button>
+  </div>
+</div>
+
+<script>
+  var calenderSwiperOption = {
+    direction: "vertical",
+    slidesPerView: 5,
+    loop: false,
+    spaceBetween: 0,
+    mousewheel: true,
+    centeredSlides: true
+  }
+
+  var swiperYear = new Swiper(".calender-swiper--year", calenderSwiperOption);
+  var swiperMonth = new Swiper(".calender-swiper--month", calenderSwiperOption);
+  var swiperDay = new Swiper(".calender-swiper--day", calenderSwiperOption);
+
+</script>
+</body>
+</html>

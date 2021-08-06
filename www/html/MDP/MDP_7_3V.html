@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-reset.min.css'/>
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-common.css'/>
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-style.css'/>
+
+  <script src='../../js/libs/jquery-3.1.1.min.js'></script>
+  <script src='../../js/swiper.min.js'></script>
+  <script src='../../js/ui.js'></script>
+</head>
+<body>
+
+<div class="wrapper">
+  <div class="header">
+    <header>
+      <div class="header__back">
+        <div class="back">
+          <button type="button" class="only-icon">
+            <i class="icon-arrow_left icon-20">뒤로가기</i>
+          </button>
+        </div>
+        <div class="title">
+          건강점수
+        </div>
+        <div class="right-icons">
+          <button type="button" class="only-icon">
+            <i class="icon-camera_02 icon-20">카메라</i>
+          </button>
+          <button type="button" class="only-icon">
+            <i class="icon-alarm on icon-20">알람</i>
+          </button>
+        </div>
+      </div>
+    </header>
+  </div>
+  <!-- content-wrap -->
+  <div class="content-wrap">
+    <!-- scrollBox -->
+    <div class="scrollBox page-mdp-73">
+      <div class="tip-title">
+        <div class="tip-title__tip">
+          TIP!
+        </div>
+        <div class="tip-title__title">
+         <span class="gray">
+           건강점수는 어떻게 산정하나요?
+          </span>
+        </div>
+      </div>
+      <section class="manage-icon-box">
+        <i class="manage-icon-box__icon"></i>
+        <!-- text 분기 -->
+        <p class="manage-icon-box__text">
+          건강 정보ㆍ습관에 변화가 있다면 건강점수를 업데이트할까요?
+        </p>
+        <p class="manage-icon-box__box manage-icon-box__text">
+          <button type="button">
+            업데이트하기 <i class="icon-arrow_right icon-16"></i>
+          </button>
+        </p>
+      </section>
+      <section class="manage-gray-box ptb30">
+        <button type="button">
+          <div class="title">
+            홍길동님의 건강점수 <i class="icon-arrow_right icon-20"></i>
+          </div>
+          <div class="sub-title">
+            고객님은 백분위 87입니다.
+          </div>
+          <div class="big-text">
+            732점 / 1000점
+          </div>
+        </button>
+      </section>
+
+      <div style="display:none;">
+        <div class="manage-h3">
+          홍길동님은 <strong>40대 평균과 비교</strong>하여
+        </div>
+        <ul class="list__wrap list-border">
+          <li class="list-item">
+            <button type="button">
+              <span class="list-item__title">
+                건강점수는 <em class="decrease">200점 높아요</em>
+              </span>
+            </button>
+          </li>
+          <li class="list-item">
+            <button type="button">
+              <span class="list-item__title">
+                의료비 예측은 현재 <em class="increase">200,000원 많아요</em>
+              </span>
+            </button>
+          </li>
+        </ul>
+        <div class="manage-graph">
+          <!--        <div class="manage-graph__label">-->
+          <!--          <span>평균 혈압(mmHg)</span>-->
+          <!--          <label>어제</label>-->
+          <!--          <label>오늘</label>-->
+          <!--        </div>-->
+          <div class="manage-graph__box">
+            <ul class="manage-graph__grid">
+              <li>100%</li>
+              <li>75%</li>
+              <li>50%</li>
+              <li>25%</li>
+              <li>0%</li>
+            </ul>
+            <div class="manage-graph__table">
+              <ul>
+                <li>
+                  <span>2021.04.12</span>
+                  <div style="height: 50%; background: #fcaf17;"><em>320</em></div>
+                </li>
+                <li>
+                  <span>2021.05.31</span>
+                  <div style="height: 100%; background: #76b424;"><em>640</em></div>
+                </li>
+                <li>
+                  <span>2021.06.17</span>
+                  <div style="height: 100%; background: #fcaf17;"><em>640</em></div>
+                </li>
+                <li>
+                  <span class="bold">오늘</span>
+                  <div style="height: 100%; background: #fcaf17;"><em>640</em></div>
+                </li>
+              </ul>
+            </div>
+            <div class="manage-graph__line red-dotted-line" style="bottom: 37.5%;">
+              <p><span>600</span></p>
+            </div>
+            <div class="manage-graph__line blue-dotted-line" style="bottom: 50%;">
+              <p><span>700</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="manage-h3">
+          홍길동님 Peer 그룹 기준은 <strong>40대,<br> 남성</strong>입니다.
+        </div>
+        <ul class="list__wrap list-border">
+          <li class="list-item">
+            <button type="button">
+              <ul class="list-item__both">
+                <li class="list-item__title">건강분석 리포트</li>
+              </ul>
+            </button>
+          </li>
+          <li class="list-item">
+            <button type="button">
+              <ul class="list-item__both">
+                <li class="list-item__title">건강점수  변동내역 </li>
+                <li class="list-item__title"><strong>2건</strong></li>
+              </ul>
+            </button>
+          </li>
+          <li class="list-item">
+            <button type="button">
+              <ul class="list-item__both">
+                <li class="list-item__title">건강점수  올리기</li>
+              </ul>
+            </button>
+          </li>
+          <li class="list-item">
+            <button type="button">
+              <ul class="list-item__both">
+                <li class="list-item__title">건강 시뮬레이션</li>
+              </ul>
+            </button>
+          </li>
+        </ul>
+      </div>
+
+      <!-- 2021.08.05 추가 -->
+      <div class="monthly-goal__sub-title">건강분석질문 <strong class="bold-black">100점 단위로 건강점수만 제공합니다.</strong> 일반검진(공동인증서 필요), 종합검진 조회를 하시면 아래와 같이 자세한 정보를 확인할 수 있습니다.</div>
+      <ul class="list-type-circle mt12 txt_black">
+        <li>연령대, 성별 건강 점수 비교</li>
+        <li>의료비 예측</li>
+        <li>건강분석 리포트</li>
+        <li>건강점수올리기</li>
+        <li>건강 시뮬레이션</li>
+      </ul>
+      <!-- EOD : 2021.08.05 추가 -->
+
+    </div>
+    <!-- EOD : scrollBox -->
+  </div>
+  <!-- EOD : content-wrap -->
+  <div class="footer footer__nav">
+    <nav>
+      <ul>
+        <li class="on">
+          <button type="button">
+            <i class="icon-home icon-16"></i>
+            <span>홈</span>
+          </button>
+        </li>
+        <li>
+          <button type="button">
+            <i class="icon-pro icon-16"></i>
+            <span>프로그램</span>
+          </button>
+        </li>
+        <li>
+          <button type="button">
+            <i class="icon-info icon-16"></i>
+            <span>증상ㆍ병원</span>
+          </button>
+        </li>
+        <li>
+          <button type="button">
+            <i class="icon-my icon-16"></i>
+            <span>MY</span>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+
+<script>
+</script>
+
+</body>
+</html>

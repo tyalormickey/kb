@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0">
+  <link rel='stylesheet' type='text/css' href='../css/morpheus-reset.min.css'/>
+  <link rel='stylesheet' type='text/css' href='../css/morpheus-common.css'/>
+  <link rel='stylesheet' type='text/css' href='../css/morpheus-style.css'/>
+</head>
+<body>
+<div style="padding: 30px;">
+
+  <section class="manage-progress">
+    <ul>
+      <li>
+        <label><strong>어제</strong></label>
+        <p class="manage-progress__bar">
+          <span style="width: 80%; background: #fcaf17;"><em>732</em></span>
+        </p>
+      </li>
+      <li>
+        <label>21.06.03</label>
+        <p class="manage-progress__bar">
+          <span style="width: 100%; background: #76b424;"><em>100</em></span>
+        </p>
+      </li>
+      <li>
+        <label>21.06.03</label>
+        <p class="manage-progress__bar">
+          <span style="width: 50%; background: #fcaf17;"><em>100</em></span>
+        </p>
+      </li>
+      <li>
+        <label>21.06.03</label>
+        <p class="manage-progress__bar">
+          <span style="width: 75%; background: #fcaf17;"><em>100</em></span>
+        </p>
+      </li>
+      <li>
+        <label>21.06.03</label>
+        <p class="manage-progress__bar">
+          <span style="width: 45%; background: #fcaf17;"><em>100</em></span>
+        </p>
+      </li>
+    </ul>
+  </section>
+
+  <br />
+  <br />
+  <br />
+  <br />
+
+  <section class="manage-average-bar">
+    <ul>
+      <li>
+        <em>최소 78</em>
+      </li>
+      <li class="active">
+        <strong>평균 91</strong>
+      </li>
+      <li>
+        <em>최대 100</em>
+      </li>
+    </ul>
+  </section>
+  <br/>
+  <br/>
+  <br/>
+
+  <section class="manage-average-bar">
+    <ul>
+      <li>
+        <em>최소 78</em>
+      </li>
+      <li class="active">
+        <strong>평균 9100000</strong>
+      </li>
+    </ul>
+  </section>
+  <br/>
+  <br/>
+  <br/>
+
+  <div class="manage-time-graph">
+    <div class="manage-time-graph__bar">
+      <span style="width: 50%; margin-right: 10.67%;"></span>
+      <span style="width: 7.28%; margin-right: 24.77%;"></span>
+      <span style="width: 7.28%;"></span>
+    </div>
+    <div class="manage-time-graph__time">
+      <span>오전24</span>
+      <span>06</span>
+      <span>오후12</span>
+      <span>18</span>
+      <span>21</span>
+    </div>
+  </div>
+
+  <br/>
+  <br/>
+  <br/>
+
+  <div class="manage-graph">
+    <!--        <div class="manage-graph__label">-->
+    <!--          <span>평균 혈압(mmHg)</span>-->
+    <!--          <label>어제</label>-->
+    <!--          <label>오늘</label>-->
+    <!--        </div>-->
+    <div class="manage-graph__box">
+      <ul class="manage-graph__grid">
+        <li>100%</li>
+        <li>75%</li>
+        <li>50%</li>
+        <li>25%</li>
+        <li>0%</li>
+      </ul>
+      <div class="manage-graph__table">
+        <ul>
+          <li>
+            <span>2021.04.12</span>
+            <div style="height: 50%; background: #fcaf17;"><em>320</em></div>
+          </li>
+          <li>
+            <span>2021.05.31</span>
+            <div style="height: 100%; background: #76b424;"><em>640</em></div>
+          </li>
+          <li>
+            <span>2021.06.17</span>
+            <div style="height: 100%; background: #fcaf17;"><em>640</em></div>
+          </li>
+          <li>
+            <span class="bold">오늘</span>
+            <div style="height: 100%; background: #fcaf17;"><em>640</em></div>
+          </li>
+        </ul>
+      </div>
+      <div class="manage-graph__line red-dotted-line" style="bottom: 37.5%;">
+        <p><span>600</span></p>
+      </div>
+      <div class="manage-graph__line blue-dotted-line" style="bottom: 50%;">
+        <p><span>700</span></p>
+      </div>
+    </div>
+  </div>
+
+  <br />
+  <br />
+  <br />
+
+  <div class="manage-graph">
+    <div class="manage-graph__label">
+      <label>나</label>
+      <label>이상적인 건강점수</label>
+    </div>
+    <div class="manage-graph__box">
+      <ul class="manage-graph__grid">
+        <li>100%</li>
+        <li>75%</li>
+        <li>50%</li>
+        <li>25%</li>
+        <li>0%</li>
+      </ul>
+      <div class="manage-graph__table-dot">
+        <ul>
+          <li class="width-line" style="bottom: 75%; background: #fcaf17;"></li>
+          <li class="width-line" style="bottom: 50%; background: #76b424;"></li>
+          <li>
+            <span>현재</span>
+            <div style="bottom: 75%;"><i style="background: #fcaf17;"></i><em>320</em></div>
+            <div style="bottom: 50%;"><i style="background: #76b424;"></i><em>320</em></div>
+          </li>
+          <li>
+            <span class="bold">1년후</span>
+            <div style="bottom: 75%;"><i style="background: #fcaf17;"></i><em>320</em></div>
+            <div style="bottom: 50%;"><i style="background: #76b424;"></i><em>320</em></div>
+          </li>
+          <li>
+            <span>2년후</span>
+            <div style="bottom: 75%;"><i style="background: #fcaf17;"></i><em>320</em></div>
+            <div style="bottom: 50%;"><i style="background: #76b424;"></i><em>320</em></div>
+          </li>
+          <li>
+            <span>3년후</span>
+            <div style="bottom: 75%;"><i style="background: #fcaf17;"></i><em>320</em></div>
+            <div style="bottom: 50%;"><i style="background: #76b424;"></i><em>320</em></div>
+          </li>
+          <li>
+            <span>4년후</span>
+            <div style="bottom: 75%;"><i style="background: #fcaf17;"></i><em>320</em></div>
+            <div style="bottom: 50%;"><i style="background: #76b424;"></i><em>320</em></div>
+          </li>
+          <li>
+            <span>10년후</span>
+            <div style="bottom: 75%;"><i style="background: #fcaf17;"></i><em>320</em></div>
+            <div style="bottom: 50%;"><i style="background: #76b424;"></i><em>320</em></div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <br />
+  <br />
+  <br />
+
+  <div class="manage-graph show-number">
+    <div class="manage-graph__box small">
+      <ul class="manage-graph__grid small">
+        <li><span>10</span></li>
+        <li><span>8</span></li>
+        <li><span>6</span></li>
+        <li><span>4</span></li>
+        <li><span>2</span></li>
+        <li><span>0</span></li>
+      </ul>
+      <div class="manage-graph__table">
+        <ul>
+          <li>
+            <span class="bold">월</span>
+            <div class="full-bar">
+              <span style="height: 10%; background: #b47c1a"></span>
+              <span style="height: 80%; background: #fcaf2a"></span>
+            </div>
+          </li>
+          <li>
+            <span class="bold">화</span>
+            <div class="full-bar">
+              <span style="height: 10%; background: #b47c1a"></span>
+              <span style="height: 80%; background: #fcaf2a"></span>
+            </div>
+          </li>
+          <li>
+            <span class="bold">수</span>
+            <div class="full-bar">
+              <span style="height: 10%; background: #b47c1a"></span>
+              <span style="height: 80%; background: #fcaf2a"></span>
+            </div>
+          </li>
+          <li>
+            <span class="bold">목</span>
+            <div class="full-bar">
+              <span style="height: 10%; background: #b47c1a"></span>
+              <span style="height: 50%; background: #fcaf2a"></span>
+            </div>
+          </li>
+          <li>
+            <span class="bold">금</span>
+            <div class="full-bar">
+              <span style="height: 10%; background: #b47c1a"></span>
+              <span style="height: 80%; background: #fcaf2a"></span>
+            </div>
+          </li>
+          <li>
+            <span class="bold">토</span>
+            <div class="full-bar">
+              <span style="height: 10%; background: #b47c1a"></span>
+              <span style="height: 60%; background: #fcaf2a"></span>
+            </div>
+          </li>
+          <li>
+            <span class="bold">일</span>
+            <div class="full-bar">
+              <span style="height: 10%; background: #b47c1a"></span>
+              <span style="height: 70%; background: #fcaf2a"></span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <br />
+  <br />
+  <br />
+
+  <div class="manage-graph show-number">
+    <div class="manage-graph__label">
+      <label>수축기 혈압</label>
+      <label>이완기 혈압</label>
+    </div>
+    <div class="manage-graph__box">
+      <ul class="manage-graph__grid small">
+        <li><span>200</span></li>
+        <li><span>160</span></li>
+        <li><span>120</span></li>
+        <li><span>80</span></li>
+        <li><span>40</span></li>
+        <li><span>0</span></li>
+      </ul>
+      <div class="manage-graph__table-dot">
+        <ul>
+          <li>
+            <span class="bold">월</span>
+            <div style="bottom: 40%;"><i style="background: #fcaf17;"></i></div>
+            <div style="bottom: 80%;"><i style="background: #76b424;"></i></div>
+          </li>
+          <li>
+            <span class="bold">화</span>
+            <div style="bottom: 60%;"><i style="background: #fcaf17;"></i></div>
+            <div style="bottom: 80%;"><i style="background: #76b424;"></i></div>
+          </li>
+          <li class="manage-graph__today">
+            <span class="bold">수</span>
+            <div style="bottom: 40%;"><i style="background: #fcaf17;"></i></div>
+            <div style="bottom: 80%;"><i style="background: #76b424;"></i></div>
+          </li>
+          <li>
+            <span class="bold">목</span>
+            <div style="bottom: 40%;"><i style="background: #fcaf17;"></i></div>
+            <div style="bottom: 80%;"><i style="background: #76b424;"></i></div>
+          </li>
+          <li>
+            <span class="bold">금</span>
+            <div style="bottom: 40%;"><i style="background: #fcaf17;"></i></div>
+            <div style="bottom: 80%;"><i style="background: #76b424;"></i></div>
+          </li>
+          <li>
+            <span class="bold">토</span>
+            <div style="bottom: 40%;"><i style="background: #fcaf17;"></i></div>
+            <div style="bottom: 80%;"><i style="background: #76b424;"></i></div>
+          </li>
+          <li>
+            <span class="bold">일</span>
+            <div style="bottom: 40%;"><i style="background: #fcaf17;"></i></div>
+            <div style="bottom: 80%;"><i style="background: #76b424;"></i></div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <script src='../js/libs/jquery-3.1.1.min.js'></script>
+  <script src='../js/swiper.min.js'></script>
+  <script src='../js/ui.js'></script>
+</div>
+</body>
+</html>
+

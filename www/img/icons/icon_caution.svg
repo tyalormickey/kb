@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="icon_m_coution" width="72" height="72" viewBox="0 0 72 72">
+    <defs>
+        <style>
+            .cls-1{fill:#333}
+        </style>
+    </defs>
+    <g id="icon_m_coution_l_24" transform="translate(-88)">
+        <path id="Path_243" d="M124 72a35.992 35.992 0 1 1 30.044-16.161l-3.336-2.207a31.994 31.994 0 1 0-7.922 8.277l2.35 3.236A35.743 35.743 0 0 1 124 72z" class="cls-1"/>
+        <path id="Path_244" d="M124 46.737a3.579 3.579 0 1 1-3.579 3.578A3.581 3.581 0 0 1 124 46.737z" class="cls-1"/>
+        <path id="Path_245" d="M120.111 18.105h7.779l-1.945 25.053h-3.889z" class="cls-1"/>
+    </g>
+</svg>

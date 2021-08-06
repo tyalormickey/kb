@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-reset.min.css'/>
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-common.css'/>
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-style.css'/>
+
+  <script src='../../js/libs/jquery-3.1.1.min.js'></script>
+  <script src='../../js/swiper.min.js'></script>
+  <script src='../../js/ui.js'></script>
+</head>
+<body>
+
+<div class="wrapper">
+  <div class="header">
+    <header>
+      <div class="header__title">
+        <div class="title">
+          가입설문
+        </div>
+      </div>
+    </header>
+  </div>
+
+  <div class="content-wrap bottom-button-fixed">
+    <div class="scrollBox no-padding survey__wrap">
+      <section class="survey__content">
+        <div class="survary-selector">
+          <div class="survary-selector__title">
+            다음중 <strong>진단을 받았거나 치료중인
+            질환</strong>이 있나요? 있으면 제게 알려 주세요<br/>
+            (복수 선택 가능)
+          </div>
+          <div class="survary-selector__list" data-active-count="3">
+            <button type="button" class="survary-selector__list-item">
+              <p><strong>근골격계 질환</strong>(관절염, 디스크 등)</p>
+              <span><i>체크</i></span>
+            </button>
+            <button type="button" class="survary-selector__list-item">
+              <p><strong>대사질환</strong>(당뇨, 고지혈증, 고혈압 등)</p>
+              <span><i>체크</i></span>
+            </button>
+            <button type="button" class="survary-selector__list-item">
+              <p><strong>정신 질환</strong>(수면장애, 우울증,<br/>공황장애 등)</p>
+              <span><i>체크</i></span>
+            </button>
+            <button type="button" class="survary-selector__list-item">
+              <p><strong>소화기 질환</strong>(식도, 위, 대장, 소장,<br/>간 등)</p>
+              <span><i>체크</i></span>
+            </button>
+            <button type="button" class="survary-selector__list-item">
+              <p><strong>갑상선 호르몬 관련</strong>(갑상샘기능 항진증, 갑상샘기능저하증 등)</p>
+              <span><i>체크</i></span>
+            </button>
+            <button type="button" class="survary-selector__list-item">
+              <p><strong>암</strong></p>
+              <span><i>체크</i></span>
+            </button>
+            <button type="button" class="survary-selector__list-item">
+              <p><strong>기타</strong></p>
+              <span><i>체크</i></span>
+            </button>
+            <button type="button" class="survary-selector__list-item only">
+              <p><strong>해당 사항 없음</strong></p>
+              <span><i>체크</i></span>
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- fixed -->
+      <section class="survey__progress">
+        <div class="survey__progress--active" style="width: 10%;"></div>
+      </section>
+    </div>
+  </div>
+
+  <div class="button__flex-wrap bottom-fixed">
+    <button type="button" class="block gray">
+      이전
+    </button>
+    <button type="button" class="block" data-button="next" disabled> <!-- disabled 제거 -->
+      다음
+    </button>
+  </div>
+</div>
+
+<script>
+  $('.survary-selector__list').each(function () {
+    var $item = $(this).find('.survary-selector__list-item');
+    var count = parseInt($(this).data('active-count'));
+
+    $item.off('click').on('click', function () {
+      if (count === 1 || $(this).hasClass('only')) {
+        $(this).toggleClass('active').siblings().removeClass('active');
+      } else {
+        if ($(this).hasClass('active')) {
+          $(this).removeClass('active');
+        } else if ($item.filter('.active').length < count) {
+          $(this).addClass('active');
+          $item.filter('.only').removeClass('active');
+        }
+      }
+      var $nextBtn = $('.bottom-fixed button[data-button="next"]');
+      var $activeCount = $item.filter('.active').length
+      if ($activeCount >= 1 && $activeCount <= count) {
+        $nextBtn.attr('disabled', false)
+      } else {
+        $nextBtn.attr('disabled', true)
+      }
+    })
+  });
+</script>
+</body>
+</html>

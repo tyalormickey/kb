@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="L_ICON" width="80" height="80" viewBox="0 0 80 80">
+    <defs>
+        <style>
+            .cls-2{fill:#333}
+        </style>
+    </defs>
+    <g id="사각형_5" fill="none" stroke="#333" stroke-width="8px">
+        <rect width="80" height="80" stroke="none" rx="4"/>
+        <path d="M4 4H76V76H4z"/>
+    </g>
+    <rect id="사각형_6" width="36" height="8" class="cls-2" rx="4" transform="translate(16 20.571)"/>
+    <rect id="사각형_10" width="36" height="8" class="cls-2" rx="4" transform="translate(16 51.429)"/>
+    <rect id="사각형_9" width="44" height="8" class="cls-2" rx="4" transform="translate(16 36)"/>
+</svg>

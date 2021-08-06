@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-reset.min.css'/>
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-common.css'/>
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-style.css'/>
+
+  <script src='../../js/libs/jquery-3.1.1.min.js'></script>
+  <script src='../../js/swiper.min.js'></script>
+  <script src='../../js/ui.js'></script>
+</head>
+<body>
+
+<div class="wrapper">
+  <div class="header">
+    <header>
+      <div class="header__back">
+        <div class="back">
+          <button type="button" class="only-icon">
+            <i class="icon-arrow_left icon-20">뒤로가기</i>
+          </button>
+        </div>
+        <div class="title">
+          회원탈퇴
+        </div>
+        <div class="right-icons">
+          <button type="button" class="only-icon">
+            <i class="icon-camera_02 icon-20">카메라</i>
+          </button>
+          <button type="button" class="only-icon">
+            <i class="icon-alarm on icon-20">알람</i>
+          </button>
+        </div>
+      </div>
+    </header>
+  </div>
+  <div class="content-wrap bottom-button-fixed">
+    <div class="scrollBox">
+      <div class="withdraw">
+        <div class="withdraw__form">
+          <div class="withdraw__sub-title">
+            탈퇴 사유는 무엇인가요?
+          </div>
+          <section class="withdraw__form-section">
+            <div class="custom-select">
+              <dl class="default">
+                <dt>
+                  <button type="button">
+                    <span>선택해주세요.</span>
+                  </button>
+                </dt>
+                <dd>
+                  <ul>
+                    <li class="selected">
+                      <button type="button">이직/퇴사</button>
+                    </li>
+                  </ul>
+                </dd>
+              </dl>
+            </div>
+          </section>
+          <section class="withdraw__form-section">
+            <div class="table-form__item">
+              <div class="form-item">
+                <div class="custom-textarea">
+                  <textarea rows="9" placeholder="200자 이내로 작성해 주세요."></textarea>
+                </div>
+                <!-- <div class="form-item__error">Enter valid</div> -->
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="button__flex-wrap bottom-fixed">
+    <button type="button" class="block gray" onclick="modal.alert($(this), valid);">
+      다시 생각해보기
+    </button>
+    <button type="button" class="block" onclick="modal.alert($(this), withdrawOk);">
+      탈퇴하기
+    </button>
+  </div>
+</div>
+
+<script>
+  var valid = {
+    type: 'alert',
+    text: '탈퇴 사유를 입력해 주세요.',
+    ok: handleOk
+  }
+  var withdrawOk = {
+    type: 'confirm',
+    text: '회원탈퇴 시 포인트, 쿠폰 등 각종 혜택은<br/>소멸됩니다. 정말 탈퇴하시겠습니까?',
+    ok: withdrawAccept,
+    cancel: handleCancel
+  }
+  var withdrawDone = {
+    type: 'alert',
+    text: 'O-care 회원탈퇴가 완료되었습니다.<br/>서비스 이용에 감사드립니다.',
+    ok: handleOk
+  }
+  function withdrawAccept (target) {
+    modal.alert(target, withdrawDone)
+  }
+  function handleOk () {
+    console.log('확인')
+  }
+  function handleCancel () {
+    console.log('취소')
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 48.001">
+    <defs>
+        <style>
+            .cls-1{fill:#76b424}
+        </style>
+    </defs>
+    <rect width="12" height="34" class="cls-1" rx="6" transform="translate(0 23.959) rotate(-45)"/>
+    <rect width="12" height="55.019" class="cls-1" rx="6" transform="translate(55.515) rotate(45)"/>
+</svg>

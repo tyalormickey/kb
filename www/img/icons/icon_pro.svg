@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+    <g id="icon_visual_e-shopping_01" transform="translate(-139.449 -224.337)">
+        <path fill="#fcaf17" d="M200.769 273.926v-40.417a7.011 7.011 0 0 0-6.94-7.075h-52.977v40.931a6.5 6.5 0 0 0 6.435 6.561z"/>
+        <path  fill="#fff" d="M148.338 266.89h46.221v-33.42h-46.221z"/>
+        <path fill="#333" d="M0 0H39.374V4.195H0z"  transform="translate(151.762 284.142)"/>
+        <path fill="#333" d="M0 0H32.526V4.195H0z"  transform="translate(170.592 271.829)"/>
+        <path  fill="#333" d="M172.634 286.239h-4.083v-10.215h-20.213c-4.628 0-8.077-2.556-8.789-6.512-.039-.213-.068-.431-.09-.65l-.01-.212v-44.313h55.111a9.122 9.122 0 0 1 8.889 9.115v29.921h-4.084v-29.9a4.953 4.953 0 0 0-4.823-4.938h-51.01v40c.009.072.019.144.032.214.408 2.274 2.734 3.083 4.774 3.083h24.3z" />
+        <path fill="#333" d="M0 0H32.189V4.195H0z" transform="translate(154.973 259.634) rotate(-0.136)"/>
+        <path  fill="#333" d="M0 0H4.083V16.756H0z"  transform="translate(179.354 245.857)"/>
+        <path  fill="#333" d="M0 0H4.083V10.485H0z" transform="translate(158.279 252.129)"/>
+        <path  fill="#333" d="M0 0H4.083V23.037H0z"  transform="translate(168.814 239.576)"/>
+    </g>
+</svg>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-reset.min.css'/>
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-common.css'/>
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-style.css'/>
+
+  <script src='../../js/libs/jquery-3.1.1.min.js'></script>
+  <script src='../../js/swiper.min.js'></script>
+  <script src='../../js/ui.js'></script>
+</head>
+<body>
+
+<div class="wrapper">
+  <div class="header">
+    <header>
+      <div class="header__title">
+        <div class="title">
+          마케팅 정보 수신 동의
+        </div>
+        <div class="header__title--close">
+          <button class="only-icon" type="button">
+            <i class="icon-x icon-20">닫기</i>
+          </button>
+        </div>
+      </div>
+    </header>
+  </div>
+  <div class="content-wrap bottom-button-fixed">
+    <div class="scrollBox">
+      <div class="custom-select term-detail__select">
+        <dl class="default">
+          <dt>
+            <button type="button">
+              <span>선택해주세요.</span>
+            </button>
+          </dt>
+          <dd>
+            <ul>
+              <li class="selected">
+                <button type="button">개정일 2021.05.20</button>
+              </li>
+            </ul>
+          </dd>
+        </dl>
+      </div>
+      <section class="term-detail__section">
+        <div class="term-detail__text">
+          O-care 에서 제공하는 각종 차별화된 혜택 및 이벤트,사은품 등에 대한 안내를 받을 수 있습니다.
+        </div>
+      </section>
+    </div>
+  </div>
+  <button type="button" class="block bottom-fixed" onclick="modal.alert($(this), agreeConfig);">
+    동의하기
+  </button>
+  <!-- <button type="button" class="block bottom-fixed" onclick="modal.alert($(this), withdrawalConfig);">
+    철회하기
+  </button> -->
+</div>
+
+<script>
+  var agreeConfig = {
+    type: 'alert',
+    text: '마케팅 정보 수신에 동의하시겠습니까?',
+    ok: agreeHandleOk
+  }
+  var withdrawalConfig = {
+    type: 'alert',
+    text: '마케팅 정보 수신 동의를 철회하시겠습니까?',
+    ok: withdrawalHandleOk
+  }
+
+  function agreeHandleOk () {
+    console.log('동의')
+  }
+  function withdrawalHandleOk () {
+    console.log('철회')
+  }
+</script>
+</body>
+</html>

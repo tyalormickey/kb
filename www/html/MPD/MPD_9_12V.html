@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-reset.min.css'/>
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-common.css'/>
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-style.css'/>
+
+  <script src='../../js/libs/jquery-3.1.1.min.js'></script>
+  <script src='../../js/swiper.min.js'></script>
+  <script src='../../js/ui.js'></script>
+</head>
+<body>
+
+<div class="wrapper">
+  <div class="header">
+    <header>
+      <div class="header__back">
+        <div class="back">
+          <button type="button" class="only-icon">
+            <i class="icon-arrow_left icon-20">뒤로가기</i>
+          </button>
+        </div>
+        <div class="title">
+          운동 완료
+        </div>
+      </div>
+    </header>
+  </div>
+  <div class="content-wrap bottom-button-fixed">
+    <div class="scrollBox">
+      <section class="exercise-box manage-gray-box">
+        <div class="both-box center">
+          <dl>
+            <dt>시간</dt>
+            <dd>
+              00:05:10
+            </dd>
+          </dl>
+          <dl>
+            <dt>열량</dt>
+            <dd>1,497Kcal</dd>
+          </dl>
+        </div>
+      </section>
+      <div class="manage-h3 mt40">
+        <strong>오늘 운동 어땠나요?</strong>
+      </div>
+      <div class="exercise-score mt15">
+        <ul>
+          <li>
+            <i class="icon-bad">매우 나쁨</i>
+          </li>
+          <li>
+            <i class="icon-soso">나쁨</i>
+          </li>
+          <li>
+            <i class="icon-normal">보통</i>
+          </li>
+          <li>
+            <i class="icon-good">좋음</i>
+          </li>
+          <li>
+            <i class="icon-great">매우 좋음</i>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="button__flex-wrap bottom-fixed">
+    <button type="button" class="block">
+      저장
+    </button>
+  </div>
+</div>
+
+<script>
+  $('.exercise-score li').click(function() {
+    var $icon = $(this).find('i')
+    var $iconClass = $(this).find('i').attr('class')
+    var iconList = ['bad', 'soso', 'normal', 'good', 'great']
+    if($iconClass.indexOf('_on') > -1) {
+      $icon.attr('class', 'icon-'+iconList[$(this).index()])
+    } else {
+      // 형제 reset
+      $(this).siblings().each(function(){
+        $(this).find('i').attr('class', 'icon-'+iconList[$(this).index()])
+      })
+      $icon.attr('class', $iconClass+'_on')
+    }
+  })
+</script>
+</body>
+</html>

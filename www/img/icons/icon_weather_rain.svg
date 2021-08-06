@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="icon_m_rain" width="64" height="64" viewBox="0 0 64 64">
+    <defs>
+        <style>
+            .cls-1{fill:#fff}
+        </style>
+    </defs>
+    <g id="Stroke6" transform="translate(-97.297 -371.913)">
+        <path id="Path_361" d="M123.143 435.913a8.325 8.325 0 0 1-8.359-8.271v-2h4v2a4.36 4.36 0 0 0 8.718 0v-18.675h4v18.675a8.325 8.325 0 0 1-8.359 8.271z" class="cls-1"/>
+    </g>
+    <g id="Stroke4" transform="translate(-97.297 -371.913)">
+        <path id="Rectangle_448" d="M0 0H4V8.39H0z" class="cls-1" transform="translate(127.502 371.913)"/>
+    </g>
+    <g id="Oval9" transform="translate(-97.297 -371.913)">
+        <path id="Path_362" d="M161.3 411.966h-62a2 2 0 0 1-2-2c0-18.39 14.447-33.351 32.205-33.351 14.76 0 27.6 10.335 31.22 25.132l-3.886.951c-3.182-13-14.422-22.083-27.334-22.083-14.907 0-27.15 12.1-28.14 27.351H161.3z" class="cls-1"/>
+    </g>
+</svg>

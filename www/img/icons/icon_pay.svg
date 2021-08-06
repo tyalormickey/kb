@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="icon_m__pay" width="64" height="64" viewBox="0 0 64 64">
+    <defs>
+        <style>
+            .cls-2{fill:#333}
+        </style>
+    </defs>
+    <g id="icon_f_mobile-counter_l_24" transform="translate(-74 0.063)">
+        <path id="Rectangle_327" fill="none" d="M0 0H64V63.937H0z" transform="translate(74)"/>
+        <path id="Path_203" d="M104.651 56.129a2.5 2.5 0 1 1 2.435-2.5 2.47 2.47 0 0 1-2.435 2.5z" class="cls-2" transform="translate(0.526)"/>
+        <path id="Path_204" d="M103.255 32.305l-2.917-.054-3.089-14.1 2.931-.642 1.741 7.95 1.669-6.471h2.905l1.651 6.446 1.736-7.928 2.931.642-3.089 14.1-2.918.051-1.77-6.909z" class="cls-2" transform="translate(0.526)"/>
+        <path id="Rectangle_330" d="M0 0H4.797V3H0z" class="cls-2" transform="translate(95.043 21.904)"/>
+        <path id="Rectangle_331" d="M0 0H4.797V3H0z" class="cls-2" transform="translate(111.276 21.904)"/>
+        <path id="Path_205" d="M127.474 63.937H93.166a9.805 9.805 0 0 1-9.692-9.9v-9.9h34.769v4H87.474v5.9a5.8 5.8 0 0 0 5.692 5.9h30.308V9.832a5.8 5.8 0 0 0-5.693-5.895H87.474v35.08h-4V-.063h34.307a9.806 9.806 0 0 1 9.693 9.895z" class="cls-2" transform="translate(0.526)"/>
+    </g>
+</svg>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 56">
+    <defs>
+        <style>
+            .cls-1{fill:#333}
+        </style>
+    </defs>
+    <g id="icon_m_logout_l_24" transform="translate(-74 -226)">
+        <g id="Path-4">
+            <path id="Rectangle_456" d="M0 0H61.236V3.928H0z" class="cls-1" transform="translate(74 252.39)"/>
+        </g>
+        <g id="Path-5">
+            <path id="Path_359" d="M109.567 282l-2.65-2.835L132.472 254l-25.555-25.165 2.65-2.835L138 254z" class="cls-1"/>
+        </g>
+    </g>
+</svg>

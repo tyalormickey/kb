@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-reset.min.css'/>
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-common.css'/>
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-style.css'/>
+
+  <script src='../../js/libs/jquery-3.1.1.min.js'></script>
+  <script src='../../js/swiper.min.js'></script>
+  <script src='../../js/ui.js'></script>
+</head>
+<body>
+
+<div class="wrapper">
+  <div class="header">
+    <header>
+      <div class="header__back">
+        <div class="back">
+          <button type="button" class="only-icon">
+            <i class="icon-arrow_left icon-20">뒤로가기</i>
+          </button>
+        </div>
+        <div class="title">
+          상품정보
+        </div>
+        <div class="right-icons">
+          <button type="button" class="only-icon">
+            <i class="icon-camera_02 icon-20">카메라</i>
+          </button>
+          <button type="button" class="only-icon">
+            <i class="icon-alarm on icon-20">알람</i>
+          </button>
+        </div>
+      </div>
+    </header>
+  </div>
+  <div class="content-wrap footer-button">
+    <div class="scrollBox no-padding">
+      <div class="point-prod my-coupon-detail__thumbnail">
+          <img src="../../img/coffee_img.png" alt="star" />
+      </div>
+      <div class="my-coupon-detail__contents">
+        <div class="point-prod__top my-coupon-detail__top">
+          <div class="my-coupon-detail__top-tag">
+            <div class="my-coupon-detail__top-tag-info">
+              스타벅스
+            </div>
+          </div>
+          <div class="my-coupon-detail__top-title">
+            아이스 카페 아메리카노 Tall아이스 카페 아메리카노 Tall
+          </div>
+          <div class="point-prod__point my-coupon-detail__top-point">
+            4,100P
+          </div>
+        </div>
+        <div class="my-coupon-detail__text">
+          <div class="my-coupon-detail__text-cont">
+            <div class="my-coupon-detail__text-title">
+              이용안내
+            </div>
+            <ul class="my-coupon-detail__text-list">
+              <li>
+                전국 스타벅스 매장에서 사용 가능합니다. (일부 매장 제외)
+              </li>
+              <li>
+                결제 시 모바일 쿠폰을 제시해 주시면 됩니다.
+              </li>
+              <li>
+                타 쿠폰 중복 사용 가능하며, 스탬프 적립이 가능합니다.
+              </li>
+              <li>
+                현금으로 교환이 불가능 합니다.
+              </li>
+            </ul>
+          </div>
+          <div class="my-coupon-detail__text-cont">
+            <div class="my-coupon-detail__text-title">
+              사용 불가 매장
+            </div>
+            <ul class="my-coupon-detail__text-list">
+              <li>
+                공항, 리조트, 휴게소 등 특수매장 및 일부 매장
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="point-prod-purchase__slide">
+    <button type="button" onclick="purchase()">
+      <i class="icon-select icon-20"></i>
+    </button>
+    <dl>
+      <dt>스타벅스 아이스 카페 아메리카노 Tall</dt>
+      <dd>
+        4,200 P
+      </dd>
+    </dl>
+    <dl>
+      <dt>사용가능 포인트</dt>
+      <dd>
+        <strong>24,200 P</strong>
+      </dd>
+    </dl>
+    <dl>
+      <dt>구매 후 잔여 포인트</dt>
+      <dd class="last">
+        <strong>999,000 P</strong>
+      </dd>
+    </dl>
+  </div>
+  <div class="point-prod-purchase__more-bg"></div>
+  <div class="footer footer__button-nav">
+    <button class="block" type="button" onclick="purchase()">
+      구매하기
+    </button>
+    <nav>
+      <ul>
+        <li class="on">
+          <button type="button">
+            <i class="icon-home icon-16"></i>
+            <span>홈</span>
+          </button>
+        </li>
+        <li>
+          <button type="button">
+            <i class="icon-pro icon-16"></i>
+            <span>프로그램</span>
+          </button>
+        </li>
+        <li>
+          <button type="button">
+            <i class="icon-info icon-16"></i>
+            <span>증상ㆍ병원</span>
+          </button>
+        </li>
+        <li>
+          <button type="button">
+            <i class="icon-my icon-16"></i>
+            <span>MY</span>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+
+<script>
+  var alert = {
+    type: 'confirm',
+    text: '구매하신 쿠폰은 <span class="point-y-font">마이페이지 > 쿠폰함 ><br>상품 교환권</span>에서 확인하실 수 있습니다.<br>이동하시겠습니까?',
+    okText: '쿠폰함',
+    cancelText: '취소',
+    ok: handleOk,
+    cancel: cancel
+  }
+  function handleOk () {
+    console.log('확인')
+  }
+  function cancel () {
+    console.log('취소')
+  }
+  function purchase () {
+    if ($('.point-prod-purchase__slide').hasClass('on')) {
+      $('.point-prod-purchase__slide').removeClass('on')
+      $('.point-prod-purchase__more-bg').removeClass('on')
+    } else {
+      $('.point-prod-purchase__slide').addClass('on')
+      $('.point-prod-purchase__more-bg').addClass('on')
+    }
+  }
+</script>
+</body>
+</html>

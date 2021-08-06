@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-reset.min.css'/>
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-common.css'/>
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-style.css'/>
+
+  <script src='../../js/libs/jquery-3.1.1.min.js'></script>
+  <script src='../../js/swiper.min.js'></script>
+  <script src='../../js/ui.js'></script>
+</head>
+<body>
+
+<div class="wrapper">
+  <div class="header">
+    <header>
+      <div class="header__back">
+        <div class="back">
+          <button type="button" class="only-icon">
+            <i class="icon-arrow_left icon-20">뒤로가기</i>
+          </button>
+        </div>
+        <div class="title">
+          건강점수
+        </div>
+        <div class="right-icons">
+          <button type="button" class="only-icon">
+            <i class="icon-camera_02 icon-20">카메라</i>
+          </button>
+          <button type="button" class="only-icon">
+            <i class="icon-alarm on icon-20">알람</i>
+          </button>
+        </div>
+      </div>
+    </header>
+  </div>
+  <div class="content-wrap footer-button">
+    <div class="scrollBox mdp_72">
+      <div class="tip-title">
+        <div class="tip-title__tip">
+          TIP!
+        </div>
+        <div class="tip-title__title">
+         <span class="gray">
+           건강점수는 어떻게 산정하나요?
+          </span>
+        </div>
+      </div>
+      <div class="mdp_72__icon">
+        <i class="icon-application icon-80"></i>
+        <div class="mdp_72__icon-title">
+          나의 건강점수가 궁금하지 않으세요?
+        </div>
+        <div class="mdp_72__icon-content">
+          나의 건강점수와 이상적인 건강점수를 비교 및 <br>개인별 맞춤 목표까지 추천해드립니다.
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer footer__button-nav">
+    <button class="block" type="button" onclick="modal.open($(this), '.mdp_72__popup');">
+      건강점수 조회하기
+    </button>
+    <nav>
+        <ul>
+            <li class="on">
+                <button type="button">
+                    <i class="icon-home icon-16"></i>
+                    <span>홈</span>
+                </button>
+            </li>
+            <li>
+                <button type="button">
+                    <i class="icon-pro icon-16"></i>
+            <span>프로그램</span>
+          </button>
+        </li>
+        <li>
+          <button type="button">
+            <i class="icon-info icon-16"></i>
+            <span>증상ㆍ병원</span>
+          </button>
+        </li>
+        <li>
+          <button type="button">
+            <i class="icon-my icon-16"></i>
+            <span>MY</span>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+
+<!-- 팝업 // -->
+<div class="modal-popup mdp_72__popup">
+  <div class="modal-popup__outer">
+    <section class="modal-popup__container">
+      <article class="modal-popup__header">
+        <button class="modal-popup__close only-icon">
+          <i class="icon-x icon-20">닫기</i>
+        </button>
+      </article>
+      <div class="mdp_72__popup-cont">
+        <div class="mdp_72__popup-title">
+          건강검진조회 방식을 선택해주세요.
+        </div>
+        <ul class="mdp_72__popup-button">
+          <li>
+            <button type="button">
+              일반검진 조회
+            </button>
+          </li>
+          <li>
+            <button type="button">
+              GC녹십자 종합검진 조회
+            </button>
+          </li>
+          <li>
+            <button type="button">
+              직접입력
+            </button>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </div>
+</div>
+<!-- // 팝업 -->
+
+<script>
+</script>
+</body>
+</html>

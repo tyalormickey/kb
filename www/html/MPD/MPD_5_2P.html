@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-reset.min.css'/>
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-common.css'/>
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-style.css'/>
+
+  <script src='../../js/libs/jquery-3.1.1.min.js'></script>
+  <script src='../../js/swiper.min.js'></script>
+  <script src='../../js/ui.js'></script>
+</head>
+<body>
+
+<div class="wrapper">
+  <div class="header">
+    <header>
+      <div class="header__title">
+        <div class="title">
+          홍길동님의 이상지질혈증
+        </div>
+        <div class="header__title--close">
+          <button class="only-icon" type="button">
+            <i class="icon-x icon-20">닫기</i>
+          </button>
+        </div>
+      </div>
+    </header>
+  </div>
+  <div class="content-wrap footer-none">
+    <div class="scrollBox">
+      <div class="checkup-result__detail-date mt5">
+        검진일 : 2020.12.03
+      </div>
+
+      <div class="manage-h3 mt40">
+        <strong>총 콜레스테롤</strong>
+      </div>
+      <div class="checkup-result__box gray mt15">
+        총콜레스테롤 수치는 <strong class="yellow"> 222mg/dL(주의) </strong> 입니다.
+      </div>
+      <div class="manage-percent-bar mt25">
+        <div class="manage-percent-bar__label-top">
+          <p class="three-1">200</p>
+          <p class="three-2">240</p>
+        </div>
+        <div class="manage-percent-bar__percent">
+          <p style="background:#22a2d1; width: 33.333%">33.333%</p>
+          <p style="background:#f9cb12; width: 33.333%">33.333%</p>
+          <p style="background:#ff0000; width: 33.333%">33.333%</p>
+        </div>
+        <div class="manage-percent-bar__label-bottom">
+          <p class="six-1">정상</p>
+          <p class="half">주의</p>
+          <p class="six-5">위험</p>
+        </div>
+      </div>
+      <div class="manage-h4 mt25">
+        <strong>연도별 총 콜레스테롤 변화</strong>
+      </div>
+      <div class="manage-graph show-number mt15">
+        <div class="manage-graph__label">
+          <label class="blue">정상</label>
+          <label class="yellow">주의</label>
+          <label class="red">위험</label>
+        </div>
+        <div class="manage-graph__box">
+          <ul class="manage-graph__grid small">
+            <li><span>250</span></li>
+            <li><span>200</span></li>
+            <li><span>150</span></li>
+            <li><span>100</span></li>
+            <li><span>0</span></li>
+          </ul>
+          <div class="manage-graph__table-dot">
+            <ul>
+              <li class="width-line" style="bottom: 70%; background: #d3d4d6;"></li>
+              <li>
+                <span><b>2014</b></span>
+                <div style="bottom: 70%;"><i style="background: #fcaf17;"></i><em>213</em></div>
+              </li>
+              <li>
+                <span><b>2016</b></span>
+                <div style="bottom: 70%;"><i style="background: #22a2d1;"></i><em>164</em></div>
+              </li>
+              <li>
+                <span><b>2017</b></span>
+                <div style="bottom: 70%;"><i style="background: #ff0000;"></i><em>255</em></div>
+              </li>
+              <li>
+                <span><b>2018</b></span>
+                <div style="bottom: 70%;"><i style="background: #ff0000;"></i><em>255</em></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="manage-h3 mt40">
+        <strong>HDL 콜레스테롤</strong>
+      </div>
+      <div class="checkup-result__box gray mt15">
+        고밀도 콜레스테롤 수치는 <strong class="blue"> 52mg/dL(정상) </strong> <br/>입니다.
+      </div>
+      <div class="manage-percent-bar mt25">
+        <div class="manage-percent-bar__label-top">
+          <p class="three-1">40</p>
+          <p class="three-2">60</p>
+        </div>
+        <div class="manage-percent-bar__percent">
+          <p style="background:#ff0000; width: 33.333%">33.333%</p>
+          <p style="background:#f9cb12; width: 33.333%">33.333%</p>
+          <p style="background:#22a2d1; width: 33.333%">33.333%</p>
+        </div>
+        <div class="manage-percent-bar__label-bottom">
+          <p class="six-1">위험</p>
+          <p class="half">주의</p>
+          <p class="six-5">정상</p>
+        </div>
+      </div>
+      <div class="manage-h4 mt25">
+        <strong>연도별 HDL 콜레스테롤 변화</strong>
+      </div>
+      <div class="manage-graph show-number mt15">
+        <div class="manage-graph__label">
+          <label class="blue">정상</label>
+          <label class="yellow">주의</label>
+          <label class="red">위험</label>
+        </div>
+        <div class="manage-graph__box">
+          <ul class="manage-graph__grid small">
+            <li><span>250</span></li>
+            <li><span>200</span></li>
+            <li><span>150</span></li>
+            <li><span>100</span></li>
+            <li><span>0</span></li>
+          </ul>
+          <div class="manage-graph__table-dot">
+            <ul>
+              <li class="width-line" style="bottom: 70%; background: #d3d4d6;"></li>
+              <li>
+                <span><b>2014</b></span>
+                <div style="bottom: 70%;"><i style="background: #fcaf17;"></i><em>213</em></div>
+              </li>
+              <li>
+                <span><b>2016</b></span>
+                <div style="bottom: 70%;"><i style="background: #22a2d1;"></i><em>164</em></div>
+              </li>
+              <li>
+                <span><b>2017</b></span>
+                <div style="bottom: 70%;"><i style="background: #ff0000;"></i><em>255</em></div>
+              </li>
+              <li>
+                <span><b>2018</b></span>
+                <div style="bottom: 70%;"><i style="background: #ff0000;"></i><em>255</em></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <div class="manage-h3 mt40">
+        <strong>중성지방</strong>
+      </div>
+      <div class="checkup-result__box gray mt15">
+        중성지방 수치는 <strong class="red">200mg/dL(위험)</strong>입니다.
+      </div>
+      <div class="manage-percent-bar mt25">
+        <div class="manage-percent-bar__label-top">
+          <p class="three-1">150</p>
+          <p class="three-2">200</p>
+        </div>
+        <div class="manage-percent-bar__percent">
+          <p style="background:#22a2d1; width: 33.333%">33.333%</p>
+          <p style="background:#f9cb12; width: 33.333%">33.333%</p>
+          <p style="background:#ff0000; width: 33.333%">33.333%</p>
+        </div>
+        <div class="manage-percent-bar__label-bottom">
+          <p class="six-1">정상</p>
+          <p class="half">주의</p>
+          <p class="six-5">위험</p>
+        </div>
+      </div>
+      <div class="manage-h4 mt25">
+        <strong>연도별 중성지방 변화</strong>
+      </div>
+      <div class="manage-graph show-number mt15">
+        <div class="manage-graph__label">
+          <label class="blue">정상</label>
+          <label class="yellow">주의</label>
+          <label class="red">위험</label>
+        </div>
+        <div class="manage-graph__box">
+          <ul class="manage-graph__grid small">
+            <li><span>250</span></li>
+            <li><span>200</span></li>
+            <li><span>150</span></li>
+            <li><span>100</span></li>
+            <li><span>0</span></li>
+          </ul>
+          <div class="manage-graph__table-dot">
+            <ul>
+              <li class="width-line" style="bottom: 70%; background: #d3d4d6;"></li>
+              <li>
+                <span><b>2014</b></span>
+                <div style="bottom: 70%;"><i style="background: #fcaf17;"></i><em>213</em></div>
+              </li>
+              <li>
+                <span><b>2016</b></span>
+                <div style="bottom: 70%;"><i style="background: #22a2d1;"></i><em>164</em></div>
+              </li>
+              <li>
+                <span><b>2017</b></span>
+                <div style="bottom: 70%;"><i style="background: #ff0000;"></i><em>255</em></div>
+              </li>
+              <li>
+                <span><b>2018</b></span>
+                <div style="bottom: 70%;"><i style="background: #ff0000;"></i><em>255</em></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="manage-h3 mt40">
+        <strong>LDL 콜레스테롤</strong>
+      </div>
+      <div class="checkup-result__box gray mt15">
+        저밀도 콜레스테롤 수치는 <strong class="blue"> 86mg/dL(정상) </strong> <br/>입니다.
+      </div>
+      <div class="manage-percent-bar mt25">
+        <div class="manage-percent-bar__label-top">
+          <p class="three-1">130</p>
+          <p class="three-2">160</p>
+        </div>
+        <div class="manage-percent-bar__percent">
+          <p style="background:#22a2d1; width: 33.333%">33.333%</p>
+          <p style="background:#f9cb12; width: 33.333%">33.333%</p>
+          <p style="background:#ff0000; width: 33.333%">33.333%</p>
+        </div>
+        <div class="manage-percent-bar__label-bottom">
+          <p class="six-1">정상</p>
+          <p class="half">주의</p>
+          <p class="six-5">위험</p>
+        </div>
+      </div>
+      <div class="manage-h4 mt25">
+        <strong>연도별 LDL 콜레스테롤 변화</strong>
+      </div>
+      <div class="manage-graph show-number mt15 mb30">
+        <div class="manage-graph__label">
+          <label class="blue">정상</label>
+          <label class="yellow">주의</label>
+          <label class="red">위험</label>
+        </div>
+        <div class="manage-graph__box">
+          <ul class="manage-graph__grid small">
+            <li><span>250</span></li>
+            <li><span>200</span></li>
+            <li><span>150</span></li>
+            <li><span>100</span></li>
+            <li><span>0</span></li>
+          </ul>
+          <div class="manage-graph__table-dot">
+            <ul>
+              <li class="width-line" style="bottom: 70%; background: #d3d4d6;"></li>
+              <li>
+                <span><b>2014</b></span>
+                <div style="bottom: 70%;"><i style="background: #fcaf17;"></i><em>213</em></div>
+              </li>
+              <li>
+                <span><b>2016</b></span>
+                <div style="bottom: 70%;"><i style="background: #22a2d1;"></i><em>164</em></div>
+              </li>
+              <li>
+                <span><b>2017</b></span>
+                <div style="bottom: 70%;"><i style="background: #ff0000;"></i><em>255</em></div>
+              </li>
+              <li>
+                <span><b>2018</b></span>
+                <div style="bottom: 70%;"><i style="background: #ff0000;"></i><em>255</em></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<script>
+</script>
+</body>
+</html>

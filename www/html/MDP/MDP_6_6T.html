@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-reset.min.css'/>
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-common.css'/>
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-style.css'/>
+
+  <script src='../../js/libs/jquery-3.1.1.min.js'></script>
+  <script src='../../js/swiper.min.js'></script>
+  <script src='../../js/ui.js'></script>
+</head>
+<body>
+
+<div class="wrapper">
+  <div class="header">
+    <header>
+      <div class="header__back">
+        <div class="back">
+          <button type="button" class="only-icon">
+            <i class="icon-arrow_left icon-20">뒤로가기</i>
+          </button>
+        </div>
+        <div class="title">
+          쿠폰함
+        </div>
+        <div class="right-icons">
+          <button type="button" class="only-icon">
+            <i class="icon-camera_02 icon-20">카메라</i>
+          </button>
+          <button type="button" class="only-icon">
+            <i class="icon-alarm on icon-20">알람</i>
+          </button>
+        </div>
+      </div>
+    </header>
+  </div>
+  <div class="content-wrap bottom-button-fixed">
+    <div class="scrollBox no-padding">
+      <div class="tab__wrap point-change-tab">
+        <ul class="tab">
+          <li class="tab__item">
+            <button type="button">
+              <span>
+                O-care<i class="icon-arrow_r icon-16"></i>
+                <em>KB 포인트리</em>
+              </span>
+            </button>
+          </li>
+          <li class="tab__item">
+            <button type="button">
+              <span>
+                KB 포인트리<i class="icon-arrow_r icon-16"></i>
+                <em>O-care</em>
+              </span>
+            </button>
+          </li>
+        </ul>
+        <div class="tab__swiper swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide point-change-tab__wrap">
+              <article class="point-change-article point-gray-bg-box">
+                <div class="point-gray-bg-box__flex-sb point-change-both">
+                  <p>전환 가능 포인트</p>
+                  <p class="point">
+                    12,002 P
+                  </p>
+                </div>
+              </article>
+              <article class="point-change-article">
+                <div class="table-form__item">
+                  <span class="table-form__item-label">
+                    <label>전환할 포인트</label>
+                  </span>
+                  <div class="form-item">
+                    <div class="custom-input">
+                      <input type="text" placeholder="전환할 포인트를 입력하세요. " />
+                    </div>
+                  </div>
+                </div>
+                <div class="point-change-check">
+                  <label class="input-checkbox">
+                    <input type="checkbox" />
+                    <i></i>
+                    <span>
+                      모두 입력
+                    </span>
+                  </label>
+                </div>
+              </article>
+              <article class="point-change-article mt30">
+                <button type="button" class="block medium" onclick="modal.alert(false, alert)">
+                  개인(신용)정보 제 3자 동의 철회하기
+                </button>
+              </article>
+              <article>
+                <div class="accordion accordion--case3">
+                  <dl>
+                    <dt>
+                      <span>꼭 확인하세요</span>
+                      <button type="button" class="only-icon"><i>열기</i></button>
+                    </dt>
+                    <dd class="accordion__box-list">
+                      <ul class="point-change-detail">
+                        <li>O-care 1P는 KB 포인트리 1P로 교환됩니다.</li>
+                        <li>KB 포인트리는 1P단위로 교환되며, 월 최대 10만P까지 교환 가능합니다.</li>
+                        <li>KB 포인트로 교환 완료 시 취소 및 정정이 불가하며, 교환된 KB포인트리는 현금 인출이 불가합니다.</li>
+                        <li>교환 이후에는 KB포인트리의 이용규정 및 정책이 적용됩니다.</li>
+                      </ul>
+                    </dd>
+                  </dl>
+                </div>
+              </article>
+            </div>
+            <div class="swiper-slide point-change-tab__wrap">
+              <article class="point-change-article point-gray-bg-box">
+                <div class="point-gray-bg-box__flex-sb point-change-both">
+                  <p>전환 가능 포인트</p>
+                  <p class="point">
+                    500 P
+                  </p>
+                </div>
+              </article>
+              <article class="point-change-article">
+                <div class="table-form__item">
+                  <span class="table-form__item-label">
+                    <label>전환할 포인트</label>
+                  </span>
+                  <div class="form-item">
+                    <div class="custom-input">
+                      <input type="text" placeholder="전환할 포인트를 입력하세요. " />
+                    </div>
+                  </div>
+                </div>
+                <div class="point-change-check">
+                  <label class="input-checkbox">
+                    <input type="checkbox" />
+                    <i></i>
+                    <span>
+                      모두 입력
+                    </span>
+                  </label>
+                </div>
+              </article>
+              <article class="point-change-article mt30">
+                <button type="button" class="block medium" onclick="modal.alert(false, alert2)">
+                  개인(신용)정보 제 3자 동의 철회하기
+                </button>
+              </article>
+              <article>
+                <div class="accordion accordion--case3">
+                  <dl>
+                    <dt>
+                      <span>꼭 확인하세요</span>
+                      <button type="button" class="only-icon"><i>열기</i></button>
+                    </dt>
+                    <dd class="accordion__box-list">
+                      <ul class="point-change-detail">
+                        <li>KB 포인트리 1P는 O-care 1P로 교환됩니다.</li>
+                        <li>KB 포인트리는 1P단위로 교환되며, 월 최대 10만P까지 교환 가능합니다.</li>
+                        <li>KB 포인트로 교환 완료 시 취소 및 정정이 불가하며, 교환된 KB포인트리는 현금 인출이 불가합니다.</li>
+                        <li>교환 이후에는 KB포인트리의 이용규정 및 정책이 적용됩니다.</li>
+                      </ul>
+                    </dd>
+                  </dl>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button class="block bottom-fixed">
+    전환하기
+  </button>
+</div>
+
+<script>
+  tab.reset();
+  setTimeout(function() {
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 1,
+      observer: true
+    });
+    $('.tab__item').click(function() {
+      tab.action($(this), true, swiper)
+    });
+    swiper.on('slideChangeTransitionEnd', function() {
+      var onItem = 'tab__item--on'
+      const tabs = swiper.$el.prev('.tab').children('.tab__item')
+      tabs.removeClass(onItem)
+      tabs.eq(swiper.realIndex).addClass(onItem)
+    });
+  }, 100);
+  var alert = {
+    type: 'alert',
+    text: '교환 서비스 이용을 위한<br>개인(신용)정보 제 3자 동의를<br>철회 하시겠습니까?'
+  }
+  var alert2 = {
+    type: 'alert',
+    text: '포인트 전환은 1인 1일 3회 까지 가능합니다.'
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="icon_m_gift" width="320" height="320" viewBox="0 0 276 320">
+    <defs>
+        <style>
+            .cls-2{fill:#333}
+        </style>
+    </defs>
+    <path id="Path_303" fill="#fcaf17" d="M24.511 536.121H37.5v141.332c0 16.609 13.16 30.056 29.4 30.056h205.122V536.121h16.467" transform="translate(-18.5 -393.54)"/>
+    <path id="Path_304" d="M161.135 470.589l-6.416-10.2 60.681-38.434 6.416 10.2z" class="cls-2" transform="translate(-18.5 -393.54)"/>
+    <path id="Path_305" d="M163.643 467.952l-11.069-4.708 29.448-69.7 11.069 4.708z" class="cls-2" transform="translate(-18.5 -393.54)"/>
+    <path id="Path_306" d="M152.661 467.648l-25.106-69.7 11.306-4.1 25.106 69.7z" class="cls-2" transform="translate(-18.5 -393.54)"/>
+    <path id="Path_307" d="M155.406 470.669L91.3 432.233l6.167-10.354 64.1 38.436z" class="cls-2" transform="translate(-18.5 -393.54)"/>
+    <path id="Path_308" d="M294.5 536.121h-12.022v-35.057c0-17.1-10.295-29.025-19.535-29.025H30.522v64.082H18.5v-76.145h244.443c15.177 0 31.557 15.709 31.557 41.088z" class="cls-2" transform="translate(-18.5 -393.54)"/>
+    <path id="Path_309" d="M284.589 713.54H61.686c-15.294 0-31.8-15.411-31.8-40.309v-137.11h12.023v137.11c0 16.9 10.226 28.247 19.777 28.247h222.9z" class="cls-2" transform="translate(-18.5 -393.54)"/>
+    <path id="Rectangle_400" d="M0 0H12.022V116.856H0z" class="cls-2" transform="translate(252.592 142.58)"/>
+    <path id="Rectangle_401" d="M0 0H12.022V233.711H0z" class="cls-2" transform="translate(131.989 72.467)"/>
+</svg>

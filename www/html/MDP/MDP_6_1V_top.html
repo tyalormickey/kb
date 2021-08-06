@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-reset.min.css'/>
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-common.css'/>
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-style.css'/>
+
+  <script src='../../js/libs/jquery-3.1.1.min.js'></script>
+  <script src='../../js/swiper.min.js'></script>
+  <script src='../../js/ui.js'></script>
+</head>
+<body>
+
+<div class="wrapper main-reward main-top-image">
+  <div class="header visual-expand__header">
+    <header id="header">
+      <div class="header__logo">
+        <div class="logo">
+          <img src="../../img/logo.svg"/>
+        </div>
+        <div class="right-icons">
+          <button type="button" class="only-icon">
+            <i class="icon-camera_02 icon-20"></i>
+          </button>
+          <button type="button" class="only-icon">
+            <i class="icon-alarm on icon-20"></i>
+          </button>
+          <button type="button" class="only-icon">
+            <i class="icon-menu icon-20"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+  </div>
+
+  <div class="content-wrap">
+    <div class="scrollBox">
+      <div class="main-top-image__sec" style="background-image: url('../../img/main/home_reward_top.jpg');">
+        <section class="home-top-buttons">
+          <button type="button">
+            <i class="icon-left_move icon-16"></i>
+            <span>건강정보 Hub</span>
+          </button>
+          <button type="button" class="float_left">
+            <span>Home</span>
+            <i class="icon-right_move icon-16"></i>
+          </button>
+        </section>
+
+        <section class="main-reward__top">
+          <div class="main-reward__top-title">
+            <span>Reward</span>
+            <p>고객님을 위한 알찬 리워드를 경험해보세요.</p>
+          </div>
+          <ul class="main-reward__top-list">
+            <li>
+              <div class="main-reward__top-list-title tooltip-button" data-title="My 포인트?"
+                   data-text="포인트는 출석체크, 성취목표 달성,<br />이벤트 참여 등 서비스를 이용하시면 획득한<br />O-Care 리워드 포인트입니다.">
+                <span>My 포인트</span>
+                <button type="button" class="only-icon">
+                  <i class="icon-i icon-14" onclick="tooltip.open($(this), '#modal-reward1');"></i>
+                </button>
+              </div>
+              <button type="button" class="main-reward__top-list-button">
+                <strong>450,000</strong>
+                <span>P</span>
+                <i class="icon-arrow_right icon-18"></i>
+              </button>
+            </li>
+            <li>
+              <div class="main-reward__top-list-title tooltip-button" data-title="스타?"
+                   data-text="케어는 소속된 회사에서 O-Care 서비스를 이용할 수 있도록 지급한 결제 수단으로<br />프로그램 결제, 유전체 검사 신청 등에<br />이용할 수 있습니다.">
+                <span>스타</span>
+                <button type="button" class="only-icon">
+                  <i class="icon-i icon-14" onclick="tooltip.open($(this), '#modal-reward2');"></i>
+                </button>
+              </div>
+              <button type="button" class="main-reward__top-list-button">
+                <strong>590,000</strong>
+                <span>S</span>
+                <i class="icon-arrow_right icon-18"></i>
+              </button>
+            </li>
+          </ul>
+        </section>
+      </div>
+      <section class="main-reward__boxes">
+        <article class="main-reward__box">
+          <p class="main-reward__box-title">
+            <strong>김국민</strong>님이<br/>
+            좋아하실만한 상품들을 준비해봤어요
+          </p>
+          <!-- 슬라이드 -->
+          <div class="main-reward__slide-goods">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <button type="button">
+                    <div style="background-image: url('../../img/mask_group_6.jpg')">
+                      상품이미지
+                    </div>
+                    <p>1[스무디킹] 오렌지 레볼루션 [스무디킹] 오렌지 레볼루션</p>
+                  </button>
+                </div>
+                <div class="swiper-slide">
+                  <button type="button">
+                    <div style="background-image: url('../../img/mask_group_6.jpg')">
+                      상품이미지
+                    </div>
+                    <p>2[스무디킹] 오렌지 레볼루션</p>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="main-reward__box overflow">
+          <p class="main-reward__box-title">
+            <strong>리워드 혜택</strong>
+          </p>
+          <!-- 슬라이드 -->
+          <div class="main-reward__slide-benefit">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <button type="button">
+                    <div class="mrsb-box">
+                      <strong><i class="icon-point_main icon-30"></i></strong>
+                      <span>출금까지 가능한</span>
+                      <em>KB포인트리 전환하기</em>
+                    </div>
+                  </button>
+                </div>
+                <div class="swiper-slide">
+                  <button type="button">
+                    <div class="mrsb-box">
+                      <strong><i class="icon-shopping_main icon-30"></i></strong>
+                      <span>쇼핑할때 딱!</span>
+                      <em>포인트로 구매하기</em>
+                    </div>
+                  </button>
+                </div>
+                <div class="swiper-slide">
+                  <button type="button">
+                    <div class="mrsb-box">
+                      <strong><i class="icon-healthfood_main icon-30"></i></strong>
+                      <span>건강식품도</span>
+                      <em>포인트로 살 수 있다구요?</em>
+                    </div>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+    </div>
+  </div>
+
+  <div class="footer footer__nav">
+    <nav>
+      <ul>
+        <li class="on">
+          <button type="button">
+            <i class="icon-home icon-16"></i>
+            <span>홈</span>
+          </button>
+        </li>
+        <li>
+          <button type="button">
+            <i class="icon-pro icon-16"></i>
+            <span>프로그램</span>
+          </button>
+        </li>
+        <li>
+          <button type="button">
+            <i class="icon-info icon-16"></i>
+            <span>증상ㆍ병원</span>
+          </button>
+        </li>
+        <li>
+          <button type="button">
+            <i class="icon-my icon-16"></i>
+            <span>MY</span>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+
+<script>
+  var swiperGoods = new Swiper(".main-reward__slide-goods .swiper-container", {
+    slidesPerView: 1,
+    loop: true,
+    loopedSlides: 2
+  });
+
+  var swiperBenefit = new Swiper(".main-reward__slide-benefit .swiper-container", {
+    slidesPerView: 1,
+    loop: true,
+    loopedSlides: 2
+  });
+
+  function visualExpand() {
+    var $expand = $('.scrollBox');
+    var $topSec = $('.main-top-image__sec');
+
+    var boxHeight = $topSec.height();
+
+    $expand.scroll(function () {
+      if ($(this).scrollTop() < boxHeight - 30) {
+        $('header').removeClass('vh-scroll')
+      } else {
+        $('header').addClass('vh-scroll')
+      }
+    });
+  }
+
+  visualExpand();
+</script>
+
+</body>
+</html>
+

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-reset.min.css'/>
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-common.css'/>
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-style.css'/>
+
+  <script src='../../js/libs/jquery-3.1.1.min.js'></script>
+  <script src='../../js/swiper.min.js'></script>
+  <script src='../../js/ui.js'></script>
+</head>
+<body>
+
+<div class="wrapper">
+  <div class="header">
+    <header>
+      <div class="header__back">
+        <div class="back">
+          <button type="button" class="only-icon">
+            <i class="icon-arrow_left icon-20">뒤로가기</i>
+          </button>
+        </div>
+        <div class="title">
+          건강점수 변동내역
+        </div>
+        <div class="right-icons">
+          <button type="button" class="only-icon">
+            <i class="icon-camera_02 icon-20">카메라</i>
+          </button>
+          <button type="button" class="only-icon">
+            <i class="icon-alarm on icon-20">알람</i>
+          </button>
+        </div>
+      </div>
+    </header>
+  </div>
+  <div class="content-wrap">
+    <div class="scrollBox page-mdp-74 page-scroll-swiper">
+      <section class="manage-h3 mt50">
+        최근 1년간<br/>
+        <strong>최고 점수는 <b class="font-blue">1000점</b><br/>
+          최저 점수는 <b class="font-red">600점</b> 입니다.</strong>
+      </section>
+
+      <section class="tab__wrap mt40">
+        <ul class="tab">
+          <li class="tab__item">
+            <button type="button">
+              <span>점수내역</span>
+            </button>
+          </li>
+          <li class="tab__item">
+            <button type="button">
+              <span>변동내역</span>
+            </button>
+          </li>
+        </ul>
+        <div class="tab__swiper swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <section class="manage-progress mt30">
+                <ul>
+                  <li>
+                    <label><strong>어제</strong></label>
+                    <p class="manage-progress__bar">
+                      <span style="width: 80%; background: #fcaf17;"><em>732</em></span>
+                    </p>
+                  </li>
+                  <li>
+                    <label>21.06.03</label>
+                    <p class="manage-progress__bar">
+                      <span style="width: 100%; background: #76b424;"><em>100</em></span>
+                    </p>
+                  </li>
+                  <li>
+                    <label>21.06.03</label>
+                    <p class="manage-progress__bar">
+                      <span style="width: 50%; background: #fcaf17;"><em>100</em></span>
+                    </p>
+                  </li>
+                  <li>
+                    <label>21.06.03</label>
+                    <p class="manage-progress__bar">
+                      <span style="width: 75%; background: #fcaf17;"><em>100</em></span>
+                    </p>
+                  </li>
+                  <li>
+                    <label>21.06.03</label>
+                    <p class="manage-progress__bar">
+                      <span style="width: 45%; background: #fcaf17;"><em>100</em></span>
+                    </p>
+                  </li>
+                </ul>
+              </section>
+            </div>
+            <div class="swiper-slide">
+              <ul class="manage-list no-border mt15">
+                <li>
+                  <div class="gray">2021.05.03</div>
+                  <div class="grow center">9732점(<span class="red">+20</span>)</div>
+                  <div class="w50 center">체중감량</div>
+                </li>
+                <li>
+                  <div class="gray">2021.05.03</div>
+                  <div class="grow center">972점(<span class="blue">-20</span>)</div>
+                  <div class="w50 center">흡연</div>
+                </li>
+                <li>
+                  <div class="gray">2021.05.03</div>
+                  <div class="grow center">972점(<span class="blue">-20</span>)</div>
+                  <div class="w50 center">흡연</div>
+                </li>
+                <li>
+                  <div class="gray">2021.05.03</div>
+                  <div class="grow center">972점(<span class="blue">-20</span>)</div>
+                  <div class="w50 center">흡연</div>
+                </li>
+                <li>
+                  <div class="gray">2021.05.03</div>
+                  <div class="grow center">972점(<span class="blue">-20</span>)</div>
+                  <div class="w50 center">흡연</div>
+                </li>
+                <li>
+                  <div class="gray">2021.05.03</div>
+                  <div class="grow center">972점(<span class="blue">-20</span>)</div>
+                  <div class="w50 center">흡연</div>
+                </li>
+                <li>
+                  <div class="gray">2021.05.03</div>
+                  <div class="grow center">972점(<span class="blue">-20</span>)</div>
+                  <div class="w50 center">흡연</div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+  <div class="footer footer__nav">
+    <nav>
+      <ul>
+        <li class="on">
+          <button type="button">
+            <i class="icon-home icon-16"></i>
+            <span>홈</span>
+          </button>
+        </li>
+        <li>
+          <button type="button">
+            <i class="icon-pro icon-16"></i>
+            <span>프로그램</span>
+          </button>
+        </li>
+        <li>
+          <button type="button">
+            <i class="icon-info icon-16"></i>
+            <span>증상ㆍ병원</span>
+          </button>
+        </li>
+        <li>
+          <button type="button">
+            <i class="icon-my icon-16"></i>
+            <span>MY</span>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+
+<script>
+  tab.reset();
+  var swiper = new Swiper('.swiper-container', {
+    slidesPerView: 1,
+    autoHeight: true
+  });
+
+  $('.tab__item').click(function () {
+    tab.action($(this), true, swiper)
+  });
+
+  swiper.on('slideChangeTransitionEnd', function () {
+    var onItem = 'tab__item--on'
+    const tabs = swiper.$el.prev('.tab').children('.tab__item')
+    tabs.removeClass(onItem)
+    tabs.eq(swiper.realIndex).addClass(onItem)
+  });
+
+  var massageHi = $('.tab__wrap').height() - $('.tab').height();
+  $('.message-box').each(function () {
+    $(this).css('height', massageHi - 40)
+  })
+</script>
+
+</body>
+</html>

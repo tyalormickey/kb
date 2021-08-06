@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-reset.min.css'/>
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-common.css'/>
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-style.css'/>
+
+  <script src='../../js/libs/jquery-3.1.1.min.js'></script>
+  <script src='../../js/swiper.min.js'></script>
+  <script src='../../js/ui.js'></script>
+  <script src='../../js/chart.js'></script>
+  <script src='../../js/chart-datalabels.js'></script>
+</head>
+<body>
+
+  <div class="wrapper">
+    <div class="header">
+      <header>
+        <div class="header__title">
+          <div class="title">
+            건강 시뮬레이션 분석 결과
+          </div>
+          <div class="header__title--close">
+            <button class="only-icon" type="button">
+              <i class="icon-x icon-20">닫기</i>
+            </button>
+          </div>
+        </div>
+      </header>
+    </div>
+    <div class="content-wrap footer-none">
+      <div class="scrollBox">
+        <div class="manage-text-with-graph mt40">
+          <div class="manage-text-with-graph__text">
+            예상되는 건강점수는<br>
+            현재 건강점수보다<br>
+            <strong class="blue">
+              <em>200</em>점 상승했어요</strong>
+          </div>
+          <div class="manage-graph">
+            <div class="manage-graph__box">
+              <ul class="manage-graph__grid bbnone">
+                <li>100%</li>
+                <li>75%</li>
+                <li>50%</li>
+                <li>25%</li>
+                <li>0%</li>
+              </ul>
+              <div class="manage-graph__table">
+                <ul>
+                  <li>
+                    <div style="height: 60%; background: #999; color: #999;"><em>600</em></div>
+                  </li>
+                  <li>
+                    <div style="height: 90%; background: #4da3d1; color: #4da3d1"><em>800</em></div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="manage-h3 mt40">
+          <strong>건강점수 10년 예측</strong>
+        </div>
+        <div class="manage-graph mt25">
+          <div class="manage-graph__label">
+            <label>나</label>
+            <label>이상적인 건강점수</label>
+          </div>
+          <canvas class="manage-graph__box" id="afterchart" ></canvas>
+          <!--div class="manage-graph__box">
+            <ul class="manage-graph__grid">
+              <li>100%</li>
+              <li>75%</li>
+              <li>50%</li>
+              <li>25%</li>
+              <li>0%</li>
+            </ul>
+            <div class="manage-graph__table-dot" id="afterchart">
+              <ul>
+                <li class="width-line" style="bottom: 75%; background: #fcaf17;"></li>
+                <li class="width-line" style="bottom: 50%; background: #76b424;"></li>
+                <li>
+                  <span>현재</span>
+                  <div style="bottom: 75%;"><i style="background: #fcaf17;"></i><em>750</em></div>
+                  <div style="bottom: 50%;"><i style="background: #76b424;"></i><em>500</em></div>
+                </li>
+                <li>
+                  <span class="bold">1년후</span>
+                  <div style="bottom: 75%;"><i style="background: #fcaf17;"></i><em>750</em></div>
+                  <div style="bottom: 50%;"><i style="background: #76b424;"></i><em>500</em></div>
+                </li>
+                <li>
+                  <span>2년후</span>
+                  <div style="bottom: 75%;"><i style="background: #fcaf17;"></i><em>750</em></div>
+                  <div style="bottom: 50%;"><i style="background: #76b424;"></i><em>500</em></div>
+                </li>
+                <li>
+                  <span>3년후</span>
+                  <div style="bottom: 75%;"><i style="background: #fcaf17;"></i><em>500</em></div>
+                  <div style="bottom: 50%;"><i style="background: #76b424;"></i><em>250</em></div>
+                </li>
+                <li>
+                  <span>4년후</span>
+                  <div style="bottom: 75%;"><i style="background: #fcaf17;"></i><em>500</em></div>
+                  <div style="bottom: 50%;"><i style="background: #76b424;"></i><em>250</em></div>
+                </li>
+                <li>
+                  <span>10년후</span>
+                  <div style="bottom: 75%;"><i style="background: #fcaf17;"></i><em>500</em></div>
+                  <div style="bottom: 50%;"><i style="background: #76b424;"></i><em>250</em></div>
+                </li>
+              </ul>
+            </div>
+          </div-->
+        </div>
+        <div class="manage-h4 mt30">
+          <strong>이상적인 건강점수와 차이는 어떻게 날까요?</strong>
+        </div>
+        <div class="manage-text mt12">
+          X축 선택에 따라 이상적인 건강점수와 차이를 확인할 수 있습니다.
+        </div>
+        <ul class="manage-list mt12">
+          <li>
+            <div class="gray w50">1년 후</div>
+            <div class="center grow">흡연</div>
+            <div class="center nowrap w80">
+              <span class="blue">-20</span>
+            </div>
+          </li>
+          <li>
+            <div class="gray w50">1년 후</div>
+            <div class="center grow">혈압</div>
+            <div class="center nowrap w80">
+              <span class="blue">-20</span>
+            </div>
+          </li>
+          <li>
+            <div class="gray w50">1년 후</div>
+            <div class="center grow">저콜레스테롤(LDL)</div>
+            <div class="center nowrap w80">
+              <span class="red">+20</span>
+            </div>
+          </li>
+        </ul>
+        <div class="manage-text-with-graph mt40">
+          <div class="manage-text-with-graph__text">
+            예상되는 건강점수는<br>
+            현재 건강점수보다<br>
+            <strong class="red">
+              <em>132,000</em>점 낮아요</strong>
+          </div>
+          <div class="manage-graph">
+            <div class="manage-graph__box">
+              <ul class="manage-graph__grid bbnone">
+                <li>100%</li>
+                <li>75%</li>
+                <li>50%</li>
+                <li>25%</li>
+                <li>0%</li>
+              </ul>
+              <div class="manage-graph__table">
+                <ul>
+                  <li>
+                    <div style="height: 90%; background: #999; color: #999;"><em>254,000</em></div>
+                  </li>
+                  <li>
+                    <div style="height: 70%; background: #e72d15; color: #e72d15"><em>127,000</em></div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="manage-h3 mt40">
+          <strong>의료비 10년 예측</strong>
+        </div>
+        <div class="manage-graph mt25">
+          <div class="manage-graph__label">
+            <label>나</label>
+            <label>이상적인 건강점수</label>
+          </div>
+          <canvas class="manage-graph__box" id="afterchart2" ></canvas>
+          <!--div class="manage-graph__box">
+            <ul class="manage-graph__grid">
+              <li>100%</li>
+              <li>75%</li>
+              <li>50%</li>
+              <li>25%</li>
+              <li>0%</li>
+            </ul>
+            <div class="manage-graph__table-dot">
+              <ul>
+                <li class="width-line" style="bottom: 75%; background: #fcaf17;"></li>
+                <li class="width-line" style="bottom: 50%; background: #76b424;"></li>
+                <li>
+                  <span>현재</span>
+                  <div style="bottom: 75%;"><i style="background: #fcaf17;"></i><em>320</em></div>
+                  <div style="bottom: 50%;"><i style="background: #76b424;"></i><em>320</em></div>
+                </li>
+                <li>
+                  <span class="bold">1년후</span>
+                  <div style="bottom: 75%;"><i style="background: #fcaf17;"></i><em>320</em></div>
+                  <div style="bottom: 50%;"><i style="background: #76b424;"></i><em>320</em></div>
+                </li>
+                <li>
+                  <span>2년후</span>
+                  <div style="bottom: 75%;"><i style="background: #fcaf17;"></i><em>320</em></div>
+                  <div style="bottom: 50%;"><i style="background: #76b424;"></i><em>320</em></div>
+                </li>
+                <li>
+                  <span>3년후</span>
+                  <div style="bottom: 75%;"><i style="background: #fcaf17;"></i><em>320</em></div>
+                  <div style="bottom: 50%;"><i style="background: #76b424;"></i><em>320</em></div>
+                </li>
+                <li>
+                  <span>4년후</span>
+                  <div style="bottom: 75%;"><i style="background: #fcaf17;"></i><em>320</em></div>
+                  <div style="bottom: 50%;"><i style="background: #76b424;"></i><em>320</em></div>
+                </li>
+                <li>
+                  <span>10년후</span>
+                  <div style="bottom: 75%;"><i style="background: #fcaf17;"></i><em>320</em></div>
+                  <div style="bottom: 50%;"><i style="background: #76b424;"></i><em>320</em></div>
+                </li>
+              </ul>
+            </div>
+          </div-->
+        </div>
+        <div class="manage-h4 mt30">
+          <strong>이상적인 의료비와 차이는 어떻게 날까요? </strong>
+        </div>
+        <div class="manage-text mt12">
+          X축 선택에 따라 이상적인 의료비와 차이를 확인할 수 있습니다.
+        </div>
+        <ul class="manage-list mt12">
+          <li>
+            <div class="gray w50">1년 후</div>
+            <div class="center grow">흡연</div>
+            <div class="center nowrap w80">
+              <span class="blue">-20,000원</span>
+            </div>
+          </li>
+          <li>
+            <div class="gray w50">1년 후</div>
+            <div class="center grow">혈압</div>
+            <div class="center nowrap w80">
+              <span class="blue">-20,000원</span>
+            </div>
+          </li>
+          <li>
+            <div class="gray w50">1년 후</div>
+            <div class="center grow">저콜레스테롤(LDL)</div>
+            <div class="center nowrap w80">
+              <span class="red">+20,000원</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+<script>
+  ////// data 부분 /////////////////
+  var data1 = new Array();
+  var data2 = new Array();
+  var color = new Array();
+  var label = new Array();
+  label1 = ['현재', '1년후', '2년후', '3년후', '4년후', '10년후'];
+  label2 = ['현재', '1년후', '2년후', '3년후', '4년후', '10년후'];
+  data1[0] = [750, 750, 750, 500, 500, 500];
+  data1[1] = [500, 500, 500, 250, 250, 250];
+  data2[0] = [750, 750, 750, 500, 500, 500];
+  data2[1] = [500, 500, 500, 250, 250, 250];
+  color[0] = "#76b424";
+  color[1] = "#fcaf29";
+
+
+  ////// Chart 호출 부분 /////////////////
+  initLineCahrt('#afterchart',data1, color, label1);
+  initLineCahrt('#afterchart2',data2, color, label2);
+
+  ////// Line Chart 생성함수 //////////////////
+  function initLineCahrt(objID, Data, Color, Label) {
+    var ctx = $(objID);
+    var DATASET = new Array();
+    // label 앞뒤로 공백 넣기 필요 없을시 삭제
+    Label.unshift('');
+    Label.push('');
+    // 차트아래 label 앞뒤로 공백 넣기 필요 없을시 삭제
+
+    var MAX=0,MIN=0;
+    $.each(Data,function(key,val){
+      if (MIN == 0 || MIN > Math.min.apply(null, val)){MIN = Math.min.apply(null, val);}
+      if (MAX == 0 || Number(MAX) < Math.max.apply(null, val)) {MAX = Math.max.apply(null, val);}
+      // 차트 좌우로 공백 넣기 필요 없을시 삭제
+      val.unshift(null);
+      val.push(null);
+      // 차트 좌우로 공백 넣기 필요 없을시 삭제
+      DATASET[key] = {datalabels: {align:'end',anchor:'end'},backgroundColor: Color[key],borderColor:Color[key],data: val}
+    });
+    // 차트 위아래로 공백 넣기 숫자 변경조정 유
+    MIN=MIN-200;
+    MAX=MAX+200;
+    // 차트 위아래로 공백 넣기 숫자 변경조정 유
+    new Chart(ctx, {
+      type: 'line',
+      plugins: [ChartDataLabels],
+      data: {
+        labels: Label,
+        datasets: DATASET
+      },options: {
+        responsive: true,
+        layout: {padding: {top: 30, left: 0, right: 0, bottom: 0}},
+        plugins:{
+          legend: {display: false},
+          datalabels: {color: 'black',formatter: Math.round,padding: 0}
+        },
+        scales: {
+          x: {grid: {display: false}},
+          y: {min:MIN,max: MAX,type: 'linear', ticks: {display:false}},
+        },
+        animation: {
+          duration: 750,
+        },
+      },
+    });
+  }
+</script>
+</body>
+</html>
