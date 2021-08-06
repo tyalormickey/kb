@@ -251,7 +251,7 @@ var modal = (function () {
     if (link) { links.push(link); }
     openSet($alert);
 
-    /* 2021.08.05 수정 (multiple 케이스 추가) */
+    /* 2021.08.06 수정 (multiple, cancle 추가) */
     $alert.find('button').off('click').on('click', function () {
       if(!config.mode == "multiple"){ close($alert); }
 
@@ -290,7 +290,7 @@ var modal = (function () {
       return false;
     });
   }
-  /* EOD : 2021.08.05 수정 (multiple 케이스 추가) */
+  /* EOD : 2021.08.06 수정 (multiple, cancle 케이스 추가) */
 
   return {open: open, close: close, alert: alert}
 })();
