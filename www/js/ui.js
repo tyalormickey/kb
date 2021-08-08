@@ -258,13 +258,13 @@ var modal = (function () {
       if ($(this).hasClass('alert-popup__ok')) {
         if (alertSet.ok) { alertSet.ok(link); }
         if (config.mode == "multiple" ){
-            $alert.find(".multiple__change-text").html(config.modeChangeText);
-            if($alert.find(".alert-popup__cancel").length == 0){
-              close($alert);
-              setTimeout(function () { $alert.remove(); }, 300);
-            }else{
-              $alert.find(".alert-popup__cancel").remove();
-            }
+          $alert.find(".multiple__change-text").html(config.modeChangeText);
+          if($alert.find(".alert-popup__cancel").length == 0){
+            close($alert);
+            setTimeout(function () { $alert.remove(); }, 300);
+          }else{
+            $alert.find(".alert-popup__cancel").remove();
+          }
         }else{
           close($alert);
           setTimeout(function () { $alert.remove(); }, 300);

@@ -4908,6 +4908,7 @@ textarea::placeholder { color: #999; }
 .gray-icon-9 { background:#999;}
 
 .h20{height:20px;background:#f6f7fa;}
+.h120{height:120px;}
 .display_flex{display: flex;align-items: center}
 .display_grid{display: grid;align-items: center;align-content: center;padding:0px !important;}
 .pal5{padding-left:5rem !important;}
@@ -4953,5 +4954,9 @@ textarea::placeholder { color: #999; }
 .form-input_calender i { position:absolute; top:50%; margin:-0.9rem 0 0 0; right:1.5rem; }
 .form-input_time { position:relative; }
 .form-input_time i { position:absolute; top:50%; margin:-0.9rem 0 0 0; right:1.5rem; }
+<<<<<<< HEAD
 
+=======
+.width12{width:12.2rem !important;}
+>>>>>>> b9995fd346081c805510d38688da11674b9ef80f
 /*# sourceMappingURL=maps/base.css.map */
