@@ -2196,7 +2196,7 @@ textarea::placeholder { color: #999; }
 
 .program-list__item + .program-list__item-title { margin-top: 2.5rem; }
 
-.program-list__thumb { width: 8rem; height: 8rem; margin-right: 1.5rem; }
+.program-list__thumb { width: 8rem; height: 8rem; margin-right: 1.5rem; background-size:cover; background-position:center}
 
 .program-list__info { -ms-flex: 1 0 0px; flex: 1 0 0; }
 
@@ -2294,7 +2294,7 @@ textarea::placeholder { color: #999; }
 
 .program-teacher li + li { margin-left: 1.975rem; }
 
-.program-teacher__thumb { -ms-flex: 0 0 auto; flex: 0 0 auto; width: 6rem; height: 6rem; border-radius: 100%; overflow: hidden; }
+.program-teacher__thumb { -ms-flex: 0 0 auto; flex: 0 0 auto; width: 6rem; height: 6rem; border-radius: 100%; overflow: hidden; background-size:cover; background-position:center}
 
 .program-teacher__thumb img { max-width: 100%; }
 
@@ -4159,7 +4159,7 @@ textarea::placeholder { color: #999; }
 
 .certificate__card + .certificate__card { margin-top: 1rem; }
 
-.certificate__card span { display: block; }
+.certificate__card span { display: block; white-space:initial;}
 
 .certificate__card-icon { padding-right: 1.5rem; }
 
@@ -4753,7 +4753,7 @@ textarea::placeholder { color: #999; }
 
 .my-coupon-detail__code { padding-top: 1rem; margin-bottom: 1.5rem; }
 
-.my-coupon-detail__code-barcord { padding: 0 1.4rem; margin-bottom: 2.3rem; }
+.my-coupon-detail__code-barcord { padding: 0 1.4rem; margin-bottom: 2.3rem;height:91.34px;overflow: hidden;background-position: center !important;background-repeat: no-repeat !important;background-size: cover !important; }
 
 .my-coupon-detail__code-barcord img { width: 100%; }
 

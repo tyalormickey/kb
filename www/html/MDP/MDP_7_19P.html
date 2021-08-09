@@ -12,8 +12,7 @@
   <script src='../../js/libs/jquery-3.1.1.min.js'></script>
   <script src='../../js/swiper.min.js'></script>
   <script src='../../js/ui.js'></script>
-  <script src='../../js/chart.js'></script>
-  <script src='../../js/chart-datalabels.js'></script>
+  <script src='../../js/libs/chart.js'></script>
 </head>
 <body>
 
@@ -149,8 +148,8 @@
         </ul>
         <div class="manage-text-with-graph mt40">
           <div class="manage-text-with-graph__text">
-            예상되는 건강점수는<br>
-            현재 건강점수보다<br>
+            예상되는 의료비는<br>
+            현재 의료비보다<br>
             <strong class="red">
               <em>132,000</em>점 낮아요</strong>
           </div>
@@ -301,7 +300,7 @@
       val.unshift(null);
       val.push(null);
       // 차트 좌우로 공백 넣기 필요 없을시 삭제
-      DATASET[key] = {datalabels: {align:'end',anchor:'end'},backgroundColor: Color[key],borderColor:Color[key],data: val}
+      DATASET[key] = {datalabels: {align:'end',anchor:'end'},backgroundColor: Color[key],borderColor:Color[key],fill:false,data: val}
     });
     // 차트 위아래로 공백 넣기 숫자 변경조정 유
     MIN=MIN-200;
@@ -309,24 +308,43 @@
     // 차트 위아래로 공백 넣기 숫자 변경조정 유
     new Chart(ctx, {
       type: 'line',
-      plugins: [ChartDataLabels],
       data: {
         labels: Label,
         datasets: DATASET
       },options: {
         responsive: true,
-        layout: {padding: {top: 30, left: 0, right: 0, bottom: 0}},
-        plugins:{
-          legend: {display: false},
-          datalabels: {color: 'black',formatter: Math.round,padding: 0}
+        elements: {
+          line: {
+            tension: 0
+          }
         },
+        legend: {
+          display: false
+        },
+        layout: {padding: {top: 30, left: 0, right: 0, bottom: 0}},
         scales: {
-          x: {grid: {display: false}},
-          y: {min:MIN,max: MAX,type: 'linear', ticks: {display:false}},
+          xAxes: [{gridLines: {display: false}}],
+          yAxes: [{gridLines: {display: true,drawBorder: false,drawOnChartArea: true,drawTicks: false},ticks: {min:MIN,max: MAX,display:false}}]
         },
         animation: {
           duration: 750,
-        },
+          onComplete: function () {
+            var chartInstance = this.chart,
+                    ctx = chartInstance.ctx;
+            ctx.font = Chart.helpers.fontString(Chart.defaults.global.defaultFontSize, Chart.defaults.global.defaultFontStyle, Chart.defaults.global.defaultFontFamily);
+            ctx.fillStyle = '#000000';
+            ctx.textAlign = 'center';
+            ctx.textBaseline = 'bottom';
+
+            this.data.datasets.forEach(function (dataset, i) {
+              var meta = chartInstance.controller.getDatasetMeta(i);
+              meta.data.forEach(function (bar, index) {
+                var data = dataset.data[index];
+                ctx.fillText(data, bar._model.x, bar._model.y - 5);
+              });
+            });
+          }
+        }
       },
     });
   }
