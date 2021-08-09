@@ -4954,9 +4954,5 @@ textarea::placeholder { color: #999; }
 .form-input_calender i { position:absolute; top:50%; margin:-0.9rem 0 0 0; right:1.5rem; }
 .form-input_time { position:relative; }
 .form-input_time i { position:absolute; top:50%; margin:-0.9rem 0 0 0; right:1.5rem; }
-<<<<<<< HEAD
-
-=======
 .width12{width:12.2rem !important;}
->>>>>>> b9995fd346081c805510d38688da11674b9ef80f
 /*# sourceMappingURL=maps/base.css.map */
