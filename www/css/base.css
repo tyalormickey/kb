@@ -670,7 +670,7 @@ header .header__back { display: -ms-flexbox; display: flex; -ms-flex-pack: justi
 
 header .header__back .back { margin-left: -0.9rem; }
 
-header .header__back .title { padding-left: 1.2rem; text-align: left; margin-top: 0.25rem; }
+header .header__back .title { padding-left: 1.2rem; text-align: left; margin-top: 0.25rem; font-family: "KB FG DISPLAY";font-weight: 500;font-stretch: normal;font-style: normal;letter-spacing: normal;}
 
 header .header__title { position: relative; height: 5.6rem; padding: 1.5rem 0; }
 
@@ -878,7 +878,7 @@ button.bottom-fixed { position: absolute; bottom: 0; left: 0; width: 100%; z-ind
 
 .input-switch-text input:checked + span em:nth-of-type(2) { color: #fff; }
 
-input[type="text"], input[type="password"], input[type="number"], input[type="tel"], input[type="url"], input[type="email"] { height: 4.4rem; padding: 0 1.5rem; text-align: left; width: 100%; border: 1px solid #acacac; border-radius: 1rem; }
+input[type="text"], input[type="password"], input[type="number"], input[type="tel"], input[type="url"], input[type="email"] { height: 4.6rem; padding: 0 1.5rem; text-align: left; width: 100%; border: 1px solid #acacac; border-radius: 1rem; }
 
 input[type="text"]:focus, input[type="password"]:focus, input[type="number"]:focus, input[type="tel"]:focus, input[type="url"]:focus, input[type="email"]:focus { border-color: #76b424; }
 
@@ -4187,7 +4187,7 @@ textarea::placeholder { color: #999; }
 
 .certificate__card-inner.disabled .certificate__card-text, .certificate__card-inner.disabled .certificate__card-code, .certificate__card-inner.disabled .certificate__card-name, .certificate__card-inner.disabled .certificate__card-info, .certificate__card-inner:disabled .certificate__card-text, .certificate__card-inner:disabled .certificate__card-code, .certificate__card-inner:disabled .certificate__card-name, .certificate__card-inner:disabled .certificate__card-info { color: #bbb; }
 
-.certificate-import__title { font-size: 1.8rem; font-weight: 700; line-height: 1.67; margin-bottom: 1.5rem; word-break: keep-all; }
+.certificate-import__title { font-size: 1.8rem; font-weight: 700; line-height: 1.67; margin-bottom: 1.5rem; word-break: keep-all;font-family: "KB FG DISPLAY";font-weight: bold;font-stretch: normal;font-style: normal;letter-spacing: normal;}
 
 .certificate-import__list li { position: relative; padding-left: 1.6rem; word-break: keep-all; color: #666; line-height: 1.66; font-size: 1.6rem; }
 
