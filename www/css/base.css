@@ -4955,4 +4955,32 @@ textarea::placeholder { color: #999; }
 .form-input_time { position:relative; }
 .form-input_time i { position:absolute; top:50%; margin:-0.9rem 0 0 0; right:1.5rem; }
 .width12{width:12.2rem !important;}
+
+.mentailty__box { position:relative; padding:0 0 0 5.5rem; font-size:1.6rem; color:#666; line-height:1.55; }
+.mentailty__box:before { content:''; position:absolute; top:0; left:0; width:2rem; height:2rem; background:url("../img/icons/icon_achievement.png") no-repeat 50% 50% #fff; padding:1rem 1rem; background-size:1.5rem auto; border:1px solid #d3d4d6; border-radius:1rem; }
+.mentailty__box strong { color:#030303; vertical-align:baseline; font-weight:500; }
+.mentailty__list { font-size:1.4rem; margin:2rem 0; line-height:1.4; }
+.mentailty__list li { position:relative; margin:0.6rem 0 0 0; padding:0 0 0 3rem; }
+.mentailty__list li:first-child { margin:0; }
+.mentailty__list li .num { position:absolute; top:0; left:0; }
+.mentailty__bar { position:relative; height:1rem; margin:4rem 0 0 0; }
+.mentailty__bar .bar { position:absolute; top:0; right:2.8rem; width:15rem; height:0.5rem; background:#eaeaea; }
+.mentailty__bar .bar span { position:absolute; top:0; left:0; height:100%; background:#76b424; }
+.mentailty__bar .num { position:absolute; top:-0.4rem; right:0; font-size:1.1rem; color:#666; }
+.mentailty__bar .num .now { color:#000; font-weight:600; }
+.survary-selector.type02 { margin:3rem 0 0 0; }
+.survary-selector.type02 .survary-selector__title { margin-bottom:1rem; }
+.survary-selector.type02 .custom-select dt { border:none; font-size:1.5rem; color:#666; }
+.survary-selector.type02 .custom-select dt button { width:inherit; border:1px solid #acacac; height:4rem; border-radius:1rem; margin:0 1rem; }
+.survary-selector.type02 .custom-select dt .survary-custom-txt { display:flex; align-items:center; }
+.mentailty__chk { font-size:1.4rem; margin:1rem 0 0 0; }
+.icon_survary_check { display:inline-block; text-indent:-9999px; width:1.4rem; height:1.4rem; background:url(../img/icons/icon_survary_check.png) no-repeat 50% 50%; background-size:1.4rem auto; margin:0 0.6rem 0 0; vertical-align:baseline; line-height:1; }
+.survary-selector__sub { position:relative; margin:1rem 0; font-size:1.6rem; line-height:1.66; color:#666; padding:0 0 0 2.25rem; }
+.survary-selector__sub.type02 {  }
+.survary-selector.type02 .survary-selector__sub + .custom-select dt button.single { margin:0 0 0 2.25rem; }
+.survary-selector__sub .icon_survary_check { position:absolute; top:0.65rem; left:0; }
+.survary-textarea textarea { height:10rem; }
+.survary-area__text { margin:1rem 0 0 0; font-size:1.4rem; color:#999; text-align:right; }
+.mentality__end-text { font-size:1.8rem; font-weight:500; color:#000; text-align:center; margin:4rem 0 0 0; }
+
 /*# sourceMappingURL=maps/base.css.map */

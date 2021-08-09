@@ -265,26 +265,26 @@
   <!-- // 팝업 -->
 
   <script>
-    var calenderSwiperOption = {
-      direction: "vertical",
-      slidesPerView: 3,
-      loop: false,
-      spaceBetween: 0,
-      mousewheel: true,
-      centeredSlides: true,
-      init: false
-    }
+  var calenderSwiperOption = {
+    direction: "vertical",
+    slidesPerView: 3,
+    loop: false,
+    spaceBetween: 0,
+    mousewheel: true,
+    centeredSlides: true,
+    init: false
+  }
 
-    var swiperYear = new Swiper(".calender-swiper--year", calenderSwiperOption);
-    var swiperMonth = new Swiper(".calender-swiper--month", calenderSwiperOption);
-    var swiperDay = new Swiper(".calender-swiper--day", calenderSwiperOption);
+  var swiperYear = new Swiper(".calender-swiper--year", calenderSwiperOption);
+  var swiperMonth = new Swiper(".calender-swiper--month", calenderSwiperOption);
+  var swiperDay = new Swiper(".calender-swiper--day", calenderSwiperOption);
 
-    function calenderSelectOpen() {
-      swiperYear.init();
-      swiperMonth.init();
-      swiperDay.init();
-    }
-  </script>
+  function calenderSelectOpen() {
+    swiperYear.init();
+    swiperMonth.init();
+    swiperDay.init();
+  }
+</script>
 </div>
 
 </body>
