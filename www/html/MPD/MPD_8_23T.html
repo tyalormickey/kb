@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-reset.min.css'/>
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-common.css'/>
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-style.css'/>
+
+  <script src='../../js/libs/jquery-3.1.1.min.js'></script>
+  <script src='../../js/swiper.min.js'></script>
+  <script src='../../js/ui.js'></script>
+</head>
+<body>
+
+<div class="wrapper">
+  <div class="header">
+    <header>
+      <div class="header__back">
+        <div class="back">
+          <button type="button" class="only-icon">
+            <i class="icon-arrow_left icon-20">뒤로가기</i>
+          </button>
+        </div>
+        <div class="title">
+            검사 결과지
+        </div>
+      </div>
+    </header>
+  </div>
+
+  <!-- content-wrap -->
+  <div class="content-wrap">
+    <!-- scrollBox -->
+    <div class="scrollBox">
+
+      <!-- tab__noraml -->
+      <div class="tab__normal">
+        <div class="tab__normal-area">
+          <ul>
+            <li class="active"><a href="javascript:void(0);">검사결과안내</a></li>
+            <li><a href="javascript:void(0);">종합결과</a></li>
+            <li><a href="javascript:void(0);">맞춤솔루션</a></li>
+          </ul>
+        </div>
+        <button class="tab__normal-more" type="button"><span class="ico"></span><span class="txt">더보기</span></button>
+        <div class="tab__normal-list">
+          <ul>
+              <li><a href="javascript:void(0);">결과 이해하기 TIP</a></li>
+              <li><a href="javascript:void(0);">유전자 용어사전</a></li>
+              <li><a href="javascript:void(0);">고객 안내사항</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- EOD : tab__noraml -->
+
+      <div class="result__title"><strong>김국민님</strong>의<br/>건강한 일상을 응원합니다.</div>
+      <div class="result__info">
+        <p class="result__info-tit">오늘도 건강한 하루를 보내셨나요?</p>
+        <p>테라젠바이오느 고객님을 위한 많은 고민과 연구를 통해 <strong>"진스타일 웰니스"</strong>를 개발하였습니다.
+        오늘보다 내일이 더욱 건강하고 아름다울 수 있도록 당신의 DNA가 들려주는 진짜 이야기에 집중해 보세요.</p>
+        <p>앞으로 새롭게 바뀌어 갈 고객님의 멋진 삶을 기대할게요. 진스타일 웰니스 서비스를 이용해 주셔서 감사합니다.</p>
+      </div>
+
+      <div class="result__link">
+        <a href="javascript:void(0);">
+          유전자 분석결과를 한눈에 확인<strong>종합결과 보기</strong>
+        </a>
+      </div>
+
+      <div class="result__down">
+        김국민님의 종합 결과지를<br/>PDF 문서로 저장할 수 있습니다.
+        <button type="button" class="block small inline" onclick="modal.alert($(this),fnReslutCheck);">다운로드</button>
+      </div>
+
+      <section class="term-detail__section solution mt40">
+        <div class="term-detail__title">금주의 맞춤 솔루션
+          <button type="button" class="manage__program-link only-icon">
+          모두보기<i class="icon-arrow_right icon-16"></i>
+          </button>
+        </div>
+        <img src="../../img/img_reslut_example.png" alt="술이 나를 마신다."/>
+      </section>
+
+      <ul class="result__link-list">
+        <li><a href="javascript:void(0);"><img src="../../img/icons/icon_reslut_list01.png" alt="">결과 이해하기 TIP</a></li>
+        <li><a href="javascript:void(0);"><img src="../../img/icons/icon_reslut_list02.png" alt="">유전자 용어사전</a></li>
+        <li><a href="javascript:void(0);"><img src="../../img/icons/icon_reslut_list03.png" alt="">고객 안내사항</a></li>
+      </ul>
+
+    </div>
+    <!-- EOD : scrollBox -->
+  </div>
+  <!-- EOD : content-wrap -->
+
+
+  <div class="footer">
+    <nav>
+      <ul>
+        <li class="on">
+          <button type="button">
+            <i class="icon-home icon-16"></i>
+            <span>홈</span>
+          </button>
+        </li>
+        <li>
+          <button type="button">
+            <i class="icon-pro icon-16"></i>
+            <span>프로그램</span>
+          </button>
+        </li>
+        <li>
+          <button type="button">
+            <i class="icon-info icon-16"></i>
+            <span>증상ㆍ병원</span>
+          </button>
+        </li>
+        <li>
+          <button type="button">
+            <i class="icon-my icon-16"></i>
+            <span>MY</span>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+
+<script>
+  $(".tab__normal-more").on("click",function(){
+    if($(this).siblings(".tab__normal-list").css("display") == "block"){
+      $(this).siblings(".tab__normal-list").hide();
+    }else{
+      $(this).siblings(".tab__normal-list").show();
+    }
+  });
+
+  $("html").on("click",function(e){
+    if(!$(e.target).closest(".tab__normal-list").length == 1 && !$(e.target).hasClass("tab__normal-more") && !$(e.target).parent(".tab__normal-more").length == 1){
+      $(".tab__normal-list").hide();
+    }
+  });
+
+  /*
+  $(".tab__normal-area a").on("click",function(){
+    $(".tab__normal-area li").removeClass("active");
+    $(this).parent().addClass("active");
+  });
+  */
+
+  var fnReslutCheck = {
+    type: 'confirm',
+    text: '종합결과지를 저장하시겠습니까?',
+    ok: handleOk,
+    cancel: handleCancel,
+  }
+
+  function handleOk() {
+    console.log('확인');
+  }
+
+  function handleCancel() {
+    console.log('취소');
+  }
+</script>
+</body>
+</html>
