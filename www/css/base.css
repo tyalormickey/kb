@@ -35,11 +35,11 @@
 /* 간격 */
 .font-size-10 { font-size: 1rem; }
 
-.font-size-11, .tag { font-size: 1.1rem; }
+.font-size-11, .tag { font-size: 1.1rem !important; }
 
-.font-size-12, nav ul li span, .home-info__weather-etc span, .home-health-info__graph-box, .manage-graph__box, .manage-time-graph__time, .float-icon.small button span, .nutrition-info__text, .nutrition-info__progress-bar em, .nutrition-info__graph-box { font-size: 1.2rem; }
+.font-size-12, nav ul li span, .home-info__weather-etc span, .home-health-info__graph-box, .manage-graph__box, .manage-time-graph__time, .float-icon.small button span, .nutrition-info__text, .nutrition-info__progress-bar em, .nutrition-info__graph-box { font-size: 1.2rem !important; }
 
-.font-size-13 { font-size: 1.3rem; }
+.font-size-13 { font-size: 1.3rem !important; }
 
 .font-size-14, button.block.small, button.text.small-02, button.text-icon.small-02, .form-item__error, .table-form__item-label, .table-data dt, .table-data__showing, .accordion__button-list button, .accordion__box-list-text, .card-item__tag-info, .card-item__date, .list-item__date, .message-box__text, .tab.depth02 .tab__item span, .modal-popup__body, .home-info__active-progress-data, .home-health-compare .tab__item span, .point-change-detail li, .point-change-both, .point-end dl dt, .point-end dl dd, .point-prod-purchase__slide dl dt, .point-prod-purchase__slide dl dd, .tip-title__tip, .checkup-list__list .card-item__date > *, .certificate__card-code, .certificate__card-info, .certificate__card-info > *, .switch-list__item-sub-title, .health-info__no-device, .app-version, .my-info__profile-img-edit, .board__sub-text, .board__sub-text-and, .float-icon button span, .inquiry__list .card-item__date > *, .inquiry__question-date, .inquiry__answer-date, .inquiry__file-info, .nutrition-info__kcal span, .diet-day-nutrition__info li span, .diet-day-nutrition__info li em, .diet-photo__item-text p, .diet-statistics__data-title em, .my-page__profile-info, .my-page__counts li p, .my-page__point-care-sub, .my-care__item.sub, .my-coupon-detail__top-tag-info, .my-coupon-detail__top-date, .my-coupon-detail__text-sub, .my-payment__top-info, .my-payment-detail dl dt, .my-payment-detail dl dd, .my-payment-detail__method, .my-payment-detail__text-sub, .event_22__cal-title { font-size: 1.4rem; }
 
@@ -85,6 +85,10 @@
 
 .pa24{padding: 2.4rem !important;}
 
+.pl24{padding-left: 2.4rem !important;}
+
+.pl48{padding-left: 4.8rem !important;}
+
 .mt0 { margin-top:0px !important;}
 
 .mt5 { margin-top: 0.5rem !important; }
@@ -100,6 +104,8 @@
 .mt10 { margin-top: 1rem !important; }
 
 .mb10 { margin-bottom: 1rem !important; }
+
+.pt0 { padding-top: 0rem !important; }
 
 .pt10 { padding-top: 1rem !important; }
 
@@ -161,9 +167,25 @@
 
 .ptb35 { padding-top: 3.5rem !important; padding-bottom: 3.5rem !important; }
 
+.mt5 { margin-top: 0.5rem !important; }
+
+.mt10 { margin-top: 1rem !important; }
+
+.mt20 { margin-top: 2rem !important; }
+
+.mt30 { margin-top: 3rem !important; }
+
 .mt40 { margin-top: 4rem !important; }
 
 .mb40 { margin-bottom: 4rem !important; }
+
+.mb30 { margin-bottom: 3rem !important; }
+
+.mb20 { margin-bottom: 2rem !important; }
+
+.mb10 { margin-bottom: 1rem !important; }
+
+.mb5 { margin-bottom: 0.5rem !important; }
 
 .pt40 { padding-top: 4rem !important; }
 
@@ -1260,7 +1282,7 @@ textarea::placeholder { color: #999; }
 
 .tab__more-and { position: absolute; top: 3.9rem; display: none; -ms-flex-pack: justify; justify-content: space-between; -ms-flex-align: center; align-items: center; -ms-flex-wrap: wrap; flex-wrap: wrap; width: 100%; padding: 2.25rem 1.6rem; background-color: #fff; z-index: 203; }
 
-.tab__more-and.on { display: -ms-flexbox; display: flex; }
+.tab__more-and.on { display: -ms-flexbox; display: flex; z-index:997 }
 
 .tab__more-and li { width: calc(50% - 0.75rem); margin: 0.75rem 0; height: 4.4rem; border: 1px solid #acacac; border-radius: 1rem; text-align: center; color: #999; }
 
@@ -1386,7 +1408,10 @@ textarea::placeholder { color: #999; }
 
 .main-home header.vh-scroll, .main-health header.vh-scroll, .main-reward header.vh-scroll { background: #fff; }
 
-.main-home header.vh-scroll .right-icons .icon-camera_02, .main-home header.vh-scroll .right-icons .icon-alarm::before, .main-home header.vh-scroll .right-icons .icon-menu, .main-health header.vh-scroll .right-icons .icon-camera_02, .main-health header.vh-scroll .right-icons .icon-alarm::before, .main-health header.vh-scroll .right-icons .icon-menu, .main-reward header.vh-scroll .right-icons .icon-camera_02, .main-reward header.vh-scroll .right-icons .icon-alarm::before, .main-reward header.vh-scroll .right-icons .icon-menu { filter: none; }
+.main-home header.vh-scroll .right-icons .icon-camera_02, .main-home header.vh-scroll .right-icons .icon-alarm::before, .main-home header.vh-scroll .right-icons .icon-menu,
+.main-health header.vh-scroll .right-icons .icon-camera_02, .main-health header.vh-scroll .right-icons .icon-alarm::before,
+.main-health header.vh-scroll .right-icons .icon-menu, .main-reward header.vh-scroll .right-icons .icon-camera_02,
+.main-reward header.vh-scroll .right-icons .icon-alarm::before, .main-reward header.vh-scroll .right-icons .icon-menu { filter: none; }
 
 .main-home .content-wrap, .main-health .content-wrap, .main-reward .content-wrap { padding-top: calc(constant(safe-area-inset-top) + 5.6rem); padding-top: calc(env(safe-area-inset-top) + 5.6rem); }
 
@@ -1397,7 +1422,7 @@ textarea::placeholder { color: #999; }
 
 .main-home.active-sleep { background-image: url("../img/main/home_sleep.png"); }
 
-.home-top-buttons { display: -ms-flexbox; display: flex; width: 100%; -ms-flex-pack: justify; justify-content: space-between; -ms-flex-align: center; align-items: center; }
+.home-top-buttons {margin-top: 1.3rem;display: -ms-flexbox; display: flex; width: 100%; -ms-flex-pack: justify; justify-content: space-between; -ms-flex-align: center; align-items: center; }
 
 .home-top-buttons button { color: #fff; display: -ms-flexbox; display: flex; -ms-flex-align: center; align-items: center; }
 
@@ -2196,7 +2221,7 @@ textarea::placeholder { color: #999; }
 
 .program-list__item + .program-list__item-title { margin-top: 2.5rem; }
 
-.program-list__thumb { width: 8rem; height: 8rem; margin-right: 1.5rem; background-size:cover; background-position:center}
+.program-list__thumb { display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; width: 8rem; height: 8rem; background: 50% 50% no-repeat; overflow: hidden; background-size: cover;margin-right: 1.5rem;}
 
 .program-list__info { -ms-flex: 1 0 0px; flex: 1 0 0; }
 
@@ -4187,7 +4212,7 @@ textarea::placeholder { color: #999; }
 
 .certificate__card-inner.disabled .certificate__card-text, .certificate__card-inner.disabled .certificate__card-code, .certificate__card-inner.disabled .certificate__card-name, .certificate__card-inner.disabled .certificate__card-info, .certificate__card-inner:disabled .certificate__card-text, .certificate__card-inner:disabled .certificate__card-code, .certificate__card-inner:disabled .certificate__card-name, .certificate__card-inner:disabled .certificate__card-info { color: #bbb; }
 
-.certificate-import__title { font-size: 1.8rem; font-weight: 700; line-height: 1.67; margin-bottom: 1.5rem; word-break: keep-all; }
+.certificate-import__title { font-family: "KB FG DISPLAY"; font-size: 1.8rem; font-weight: 700; line-height: 1.67; margin-bottom: 1.5rem; word-break: keep-all; }
 
 .certificate-import__list li { position: relative; padding-left: 1.6rem; word-break: keep-all; color: #666; line-height: 1.66; font-size: 1.6rem; }
 
@@ -4215,7 +4240,7 @@ textarea::placeholder { color: #999; }
 
 .certificate-import__number { margin: 4rem 0 3rem; }
 
-.certificate-import__number dt { font-size: 1.8rem; color: #000; font-weight: 700; line-height: 1.24; margin-bottom: 1.5rem; }
+.certificate-import__number dt { font-family: "KB FG DISPLAY"; font-size: 1.8rem; color: #000; font-weight: 700; line-height: 1.24; margin-bottom: 1.5rem; }
 
 .certificate-import__number dd { display: -ms-flexbox; display: flex; }
 
@@ -4753,7 +4778,7 @@ textarea::placeholder { color: #999; }
 
 .my-coupon-detail__code { padding-top: 1rem; margin-bottom: 1.5rem; }
 
-.my-coupon-detail__code-barcord { padding: 0 1.4rem; margin-bottom: 2.3rem;height:91.34px;}
+.my-coupon-detail__code-barcord { padding: 0 1.4rem; margin-bottom: 2.3rem;}
 
 .my-coupon-detail__code-barcord img { width: 100%; }
 
@@ -4907,7 +4932,8 @@ textarea::placeholder { color: #999; }
 .gray_line > div {border-top: 1px solid #d3d4d6;width: 100% !important;height: 1px;padding: 0px;margin: 0px;}
 .gray-icon-9 { background:#999;}
 
-.h20{height:20px;background:#f6f7fa;}
+.whalf {width:50% !important;}
+.h20{height:20px;}
 .h120{height:120px;}
 .display_flex{display: flex;align-items: center}
 .display_grid{display: grid;align-items: center;align-content: center;padding:0px !important;}
@@ -4982,5 +5008,37 @@ textarea::placeholder { color: #999; }
 .survary-textarea textarea { height:10rem; }
 .survary-area__text { margin:1rem 0 0 0; font-size:1.4rem; color:#999; text-align:right; }
 .mentality__end-text { font-size:1.8rem; font-weight:500; color:#000; text-align:center; margin:4rem 0 0 0; }
-
+.txt-align-left {text-align: left !important;}
+.txt-align-right {text-align: right !important;}
+.fontNotoSansCJKKR {font-family: "Noto Sans CJK KR" !important;}
+.align-item-end {align-items: flex-end;}
+.tutorial-background {position: absolute;left: 0;top: 0;background: #000;z-index: 998;opacity: 0.85;}
+.z-index-999{z-index:999;}
+.icon_m_drag { font-size: 0; background-image: url("../img/icons/icon-m-drag.svg"); background-size: cover; background-repeat: no-repeat; background-position: 50% 50%; width:100%;height:100%}
+.icon_arrow_right_yellow { font-size: 0; background-image: url("../img/icons/icon_arrow_right_yellow.svg"); background-size: cover; background-repeat: no-repeat; background-position: 50% 50%; }
+.arrow_up_box{position:absolute;}
+.arrow_up_box > div {position:relative;top:-60px}
+.arrow_down_box{position:absolute;}
+.arrow_down_box > div {position:relative;top:-30px}
+.arrow_left_box{position:absolute;}
+.arrow_left_box > div:nth-child(1){position: relative;top: -40px;width: 30px;left: 60px;}
+.arrow_left_box > div:nth-child(2){position: relative;top: -85px;left: 80px;}
+.arrow_left_box > div:nth-child(2) > .arrow_down > img {width:120px;}
+.arrow_up {position:relative;top:-10px;left:-10px;width:20px;height:1px;}
+.arrow_up img {width:30px;}
+.arrow_down {position:relative;top:-10px;left:-10px;width:20px;height:10px;}
+.arrow_up img {width:30px;}
+.info_scroll_right_arrow {position: relative;left: -10px;margin-top: 3px !important;}
+.info_scroll_right_arrow_end {position: relative;left: -24px;margin-top: 3px !important;}
+.txt-yellow {color:#fcaf17;font-family: "KB FG DISPLAY";}
+.opacity4 {opacity: 0.4;}
+.opacity2 {opacity: 0.2;}
+.backtrans {background:transparent !important;}
+.icon-hand {position:relative;top:-17px;}
+.icon-hand img{width:40px;}
+.icon-btn-hand {position:absolute;top:0px;left:40px}
+.icon-btn-hand img{width:40px;}
+.noneborder {border:0px !important;}
+.scrollnone {overflow: hidden !important;}
+.h30per {height:30%;background-position: center}
 /*# sourceMappingURL=maps/base.css.map */
