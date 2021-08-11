@@ -216,8 +216,10 @@
     $expand.scroll(function () {
       if ($(this).scrollTop() < boxHeight - 30) {
         $('header').removeClass('vh-scroll')
+        $('header').parent('.header').removClass('vh-scroll-parent');
       } else {
         $('header').addClass('vh-scroll')
+        $('header').parent('.header').addClass('vh-scroll-parent');
       }
     });
   }

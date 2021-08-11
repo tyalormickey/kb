@@ -16,83 +16,11 @@
 <body>
 
 <div class="wrapper main-health main-top-image">
-  <div class="header">
-    <header id="header">
-      <div class="header__logo">
-        <div class="logo">
-          <img src="../../img/logo.svg"/>
-        </div>
-        <div class="right-icons">
-          <button type="button" class="only-icon">
-            <i class="icon-camera_02 icon-20"></i>
-          </button>
-          <button type="button" class="only-icon">
-            <i class="icon-alarm on icon-20"></i>
-          </button>
-          <button type="button" class="only-icon">
-            <i class="icon-menu icon-20"></i>
-          </button>
-        </div>
-      </div>
-    </header>
-  </div>
   <div class="content-wrap">
-    <div class="scrollBox">
+    <div class="scrollBox outer-overflow">
       <div class="main-top-image__sec" style="background-image: url('../../img/main/home_health_top.jpg');">
-        <section class="home-top-buttons">
-          <button type="button">
-            <i class="icon-left_move icon-16"></i>
-            <span>Home</span>
-          </button>
-          <button type="button">
-            <span>Reward</span>
-            <i class="icon-right_move icon-16"></i>
-          </button>
-        </section>
-
-        <section class="main-health__score">
-          <button type="button" class="main-health__score-button">
-          <span>
-            나의 건강점수 674점
-          </span>
-            <i class="icon-arrow_right icon-18"></i>
-          </button>
-          <p class="main-health__score-text1">
-            이전대비 ↑20
-          </p>
-          <p class="main-health__score-text2">
-            10년 후 나의 의료비는<br/>매 달 얼마가 필요할까요?
-          </p>
-          <button type="button" class="block small inline">
-            미래 의료비 예측 확인하기
-          </button>
-        </section>
 
         <section class="main-health__boxes">
-          <article class="main-health__box-slide mt50">
-            <div class="swiper-container">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <div>
-                    <p>
-                      김국민님 오늘 드셔야할 <strong>단백질 섭취량</strong>을
-                      초과하셨네요. 몸에 좋은 것도 과하면
-                      독이 될 수 있는 거 아시죠?
-                    </p>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div>
-                    <em>
-                      KB손해보험 임직원들 대상<br/>
-                      특별한 프로그램!!
-                    </em>
-                    <p>심리상담을 받아보세요</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </article>
         </section>
       </div>
 
@@ -124,44 +52,22 @@
           </div>
         </article>
 
-        <article class="main-health__box-col1 col-type1">
-          <div class="main-health__box-col1-buttons">
-            <div>
-              <button type="button" class="text-icon small-02">
-                <i class="icon-trading"></i>
-                성취목표
-              </button>
-              <button type="button" class="text-icon small-02">
-                <i class="icon-result02"></i>
-                성취결과
-              </button>
-            </div>
-          </div>
-          <div class="main-health__box-list-type4">
-            <p>
-              매일 성취목표를 달성하면 리워드를<br/>
-              받을 수 있어요
-            </p>
-          </div>
-        </article>
 
-        <article class="main-health__box-col3">
-          <ul class="main-health__box-list-type1">
-            <li>
-              <button type="button">
-                <i class="icon-confirm icon-30"></i>
+        <article class="main-health__box-col3 backtrans">
+          <ul class="main-health__box-list-type1 backtrans">
+            <li class="backtrans">
+              <button type="button" class="backtrans">
                 <span>
                   건강검진 조회
                 </span>
               </button>
               <button type="button">
-                <i class="icon-result02 icon-30"></i>
                 <span>
                   건강결과
                 </span>
               </button>
             </li>
-            <li>
+            <li class="backtrans">
               <button type="button">
                 <span>
                   유전체<br/>검사
@@ -171,34 +77,18 @@
           </ul>
         </article>
 
-        <article class="main-health__box-col1 col-type2">
-          <div class="main-health__box-col1-title">
-            <em>주간 활동 리포트</em>
+        <article class="main-health__box-col1 col-type2 backtrans">
+          <div class="main-health__box-col1-title backtrans">
+            <em class="colortrans">주간 활동 리포트</em>
           </div>
           <ul class="main-health__box-list-type3">
-            <li>
-              <label>평균 섭취량</label>
-              <em class="point">1,234 kal</em>
+            <li class="backtrans">
+              <label class="colortrans">평균 섭취량</label>
+              <em class="colortrans">-</em>
             </li>
-            <li>
-              <label>평균 운동량</label>
-              <em>1,234 kal</em>
-            </li>
-          </ul>
-        </article>
-
-        <article class="main-health__box-col1 col-type2">
-          <div class="main-health__box-col1-title">
-            <em>주간 활동 리포트</em>
-          </div>
-          <ul class="main-health__box-list-type3">
-            <li>
-              <label>평균 섭취량</label>
-              <em>-</em>
-            </li>
-            <li>
-              <label>평균 운동량</label>
-              <em>-</em>
+            <li class="backtrans">
+              <label class="colortrans">평균 운동량</label>
+              <em class="colortrans">-</em>
             </li>
           </ul>
         </article>
@@ -340,31 +230,25 @@
   </div>
 </div>
 
+
+<div class="wrapper main-home tutorial-background">
+  <div class="header">
+    <header id="header">
+      <div class="header__logo">
+        <div class="title color_white info_title">건강 Hub</div>
+      </div>
+    </header>
+  </div>
+  <div class="content-wrap">
+    <div class="scrollBox">
+      <section class="tutorial_content_05">
+        <img src="../../img/t05.png">
+      </section>
+    </div>
+  </div>
+</div>
+
 <script>
-  var swiper = new Swiper(".main-health__box-slide .swiper-container", {
-    slidesPerView: 1,
-    loop: true,
-    spaceBetween: 0
-  });
-
-  function visualExpand() {
-    var $expand = $('.scrollBox');
-    var $topSec = $('.main-top-image__sec');
-
-    var boxHeight = $topSec.height();
-
-    $expand.scroll(function () {
-      if ($(this).scrollTop() < boxHeight - 30) {
-        $('header').removeClass('vh-scroll')
-        $('header').parent('.header').removClass('vh-scroll-parent');
-      } else {
-        $('header').addClass('vh-scroll')
-        $('header').parent('.header').addClass('vh-scroll-parent');
-      }
-    });
-  }
-
-  visualExpand();
 </script>
 
 </body>
