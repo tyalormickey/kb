@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-reset.min.css'/>
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-common.css'/>
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-style.css'/>
+
+  <script src='../../js/libs/jquery-3.1.1.min.js'></script>
+  <script src='../../js/swiper.min.js'></script>
+  <script src='../../js/ui.js'></script>
+</head>
+<body>
+
+<div class="wrapper">
+  <div class="header">
+    <header>
+      <div class="header__back">
+        <div class="back">
+          <button type="button" class="only-icon">
+            <i class="icon-arrow_left icon-20">뒤로가기</i>
+          </button>
+        </div>
+        <div class="title">
+            검사 결과지
+        </div>
+      </div>
+    </header>
+  </div>
+
+  <!-- content-wrap -->
+  <div class="content-wrap">
+    <!-- scrollBox -->
+    <div class="scrollBox">
+      <!-- tab__noraml -->
+      <div class="tab__normal">
+        <div class="tab__normal-area">
+          <ul>
+            <li><a href="javascript:void(0);">검사결과안내</a></li>
+            <li class="active"><a href="javascript:void(0);">종합결과</a></li>
+            <li><a href="javascript:void(0);">맞춤솔루션</a></li>
+          </ul>
+        </div>
+        <button class="tab__normal-more" type="button"><span class="ico"></span><span class="txt">더보기</span></button>
+        <div class="tab__normal-list">
+          <ul>
+              <li><a href="javascript:void(0);">결과 이해하기 TIP</a></li>
+              <li><a href="javascript:void(0);">유전자 용어사전</a></li>
+              <li><a href="javascript:void(0);">고객 안내사항</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- EOD : tab__noraml -->
+
+      <div class="txt_default txt_gray">나의 유전자 분석결과를 카테고리 별로 한눈에 확인할 수 있습니다.<br/>색깔 별 예시는 아래와 같습니다.</div>
+      <ul class="reslut__color">
+        <li><span class="bar"></span>양호</li>
+        <li><span class="bar yellow"></span>경계</li>
+        <li><span class="bar red"></span>주의</li>
+      </ul>
+
+      <div class="txt_default mt40 txt_gray">각 카테고리를 선택하면 상세 결과를 볼 수 있습니다.</div>
+      <div class="reslut__category">
+        <ul>
+          <li>
+            <a href="javascript:void(0);">
+              <div class="reslut__categoryL">영양소</div>
+              <div class="reslut__categoryR">
+                <ul>
+                  <li>
+                    <span class="bar"><span></span></span>
+                    <span class="txt">100%</span>
+                  </li>
+                  <li>
+                    <span class="bar yellow"><span></span></span>
+                    <span class="txt">100%</span>
+                  </li>
+                  <li>
+                    <span class="bar red"><span></span></span>
+                    <span class="txt">100%</span>
+                  </li>
+                </ul>
+              </div>
+            </a>
+          </li>
+
+          <li>
+            <a href="javascript:void(0);">
+              <div class="reslut__categoryL">건강관리</div>
+              <div class="reslut__categoryR">
+                <ul>
+                  <li>
+                    <span class="bar"><span></span></span>
+                    <span class="txt">50%</span>
+                  </li>
+                  <li>
+                    <span class="bar yellow"><span></span></span>
+                    <span class="txt">30%</span>
+                  </li>
+                  <li>
+                    <span class="bar red"><span></span></span>
+                    <span class="txt">20%</span>
+                  </li>
+                </ul>
+              </div>
+            </a>
+          </li>
+
+          <li>
+            <a href="javascript:void(0);">
+              <div class="reslut__categoryL">피부/모발</div>
+              <div class="reslut__categoryR">
+                <ul>
+                  <li>
+                    <span class="bar"><span></span></span>
+                    <span class="txt">0%</span>
+                  </li>
+                  <li>
+                    <span class="bar yellow"><span></span></span>
+                    <span class="txt">35%</span>
+                  </li>
+                  <li>
+                    <span class="bar red"><span></span></span>
+                    <span class="txt">75%</span>
+                  </li>
+                </ul>
+              </div>
+            </a>
+          </li>
+
+          <li>
+            <a href="javascript:void(0);">
+              <div class="reslut__categoryL">운동특성</div>
+              <div class="reslut__categoryR">
+                <ul>
+                  <li>
+                    <span class="bar"><span></span></span>
+                    <span class="txt">0%</span>
+                  </li>
+                  <li>
+                    <span class="bar yellow"><span></span></span>
+                    <span class="txt">50%</span>
+                  </li>
+                  <li>
+                    <span class="bar red"><span></span></span>
+                    <span class="txt">15%</span>
+                  </li>
+                </ul>
+              </div>
+            </a>
+          </li>
+
+          <li>
+            <a href="javascript:void(0);">
+              <div class="reslut__categoryL">식습관/<br/>수면</div>
+              <div class="reslut__categoryR">
+                <ul>
+                  <li>
+                    <span class="bar"><span></span></span>
+                    <span class="txt">75%</span>
+                  </li>
+                  <li>
+                    <span class="bar yellow"><span></span></span>
+                    <span class="txt">89%</span>
+                  </li>
+                  <li>
+                    <span class="bar red"><span></span></span>
+                    <span class="txt">100%</span>
+                  </li>
+                </ul>
+              </div>
+            </a>
+          </li>
+
+          <li>
+            <a href="javascript:void(0);">
+              <div class="reslut__categoryL">카/알/니</div>
+              <div class="reslut__categoryR">
+                <ul>
+                  <li>
+                    <span class="bar"><span></span></span>
+                    <span class="txt">52%</span>
+                  </li>
+                  <li>
+                    <span class="bar yellow"><span></span></span>
+                    <span class="txt">33%</span>
+                  </li>
+                  <li>
+                    <span class="bar red"><span></span></span>
+                    <span class="txt">71%</span>
+                  </li>
+                </ul>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="txt_default txt_gray">해당 검사의 결과는 진단과는 무관하며, <b class="txt_black">진단 및 치료 결정을 위해서는 반드시 의사와 상담</b>이 필요합니다.</div>
+
+    </div>
+    <!-- EOD : scrollBox -->
+  </div>
+  <!-- EOD : content-wrap -->
+
+
+  <div class="footer">
+    <nav>
+      <ul>
+        <li class="on">
+          <button type="button">
+            <i class="icon-home icon-16"></i>
+            <span>홈</span>
+          </button>
+        </li>
+        <li>
+          <button type="button">
+            <i class="icon-pro icon-16"></i>
+            <span>프로그램</span>
+          </button>
+        </li>
+        <li>
+          <button type="button">
+            <i class="icon-info icon-16"></i>
+            <span>증상ㆍ병원</span>
+          </button>
+        </li>
+        <li>
+          <button type="button">
+            <i class="icon-my icon-16"></i>
+            <span>MY</span>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+
+<script>
+  $(".tab__normal-more").on("click",function(){
+    if($(this).siblings(".tab__normal-list").css("display") == "block"){
+      $(this).siblings(".tab__normal-list").hide();
+    }else{
+      $(this).siblings(".tab__normal-list").show();
+    }
+  });
+
+  $("html").on("click",function(e){
+    if(!$(e.target).closest(".tab__normal-list").length == 1 && !$(e.target).hasClass("tab__normal-more") && !$(e.target).parent(".tab__normal-more").length == 1){
+      $(".tab__normal-list").hide();
+    }
+  });
+
+  /*
+  $(".tab__normal-area a").on("click",function(){
+    $(".tab__normal-area li").removeClass("active");
+    $(this).parent().addClass("active");
+  });
+  */
+
+  //카테고리 리스트 width 계산
+  var categoryN = $(".reslut__category > ul > li").length;
+  var $this = $(".reslut__category > ul > li");
+  for(i=0;i<categoryN;i++){
+    var listN = $this.eq(i).find("li").length;
+    for(n=0;n<listN;n++){
+      txt = $this.eq(i).find("li").eq(n).find(".txt").text().replace(/[^0-9]/g,'');
+      $this.eq(i).find("li").eq(n).find(".bar span").css("width",txt+"%");
+    }
+  }
+</script>
+</body>
+</html>
