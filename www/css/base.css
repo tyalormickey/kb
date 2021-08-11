@@ -5105,4 +5105,11 @@ textarea::placeholder { color: #999; }
 .txt_red { color:#ff0000 !important; }
 .txt_yellow { color:#f9cb12 !important; }
 .txt_blue { color:#22a2d1 !important; }
+.main-health__test { text-align:left; }
+.main-health__test a { position:relative; display:block; padding:1.8rem 1.8rem 1.8rem 10rem; font-size:1.4rem; color:#fff; border-radius:1rem; background:#999088; }
+.main-health__test a:before { content:''; position:absolute; top:50%; margin:-3rem 0 0 0; left:1.8rem; width:6rem; height:6rem; background:url(../img/icons/icon_main_test.png) no-repeat #fff 54% 55%; background-size:3rem auto; border-radius:5rem; }
+.main-health__test a .tit { font-size:1.6rem; font-weight:500; }
+.main-health__test a .txt { margin:1rem 0 0 0; line-height:1.44; }
+.main-health__test.type02 a { background:rgba(255, 255, 255, 0.12); }
+
 /*# sourceMappingURL=maps/base.css.map */
