@@ -100,7 +100,7 @@
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <button type="button">
-                    <div style="background-image: url('../../img/mask_group_6.jpg')">
+                    <div style="background-image: url('../../img/testimg1.jpg')">
                       상품이미지
                     </div>
                     <p>1[스무디킹] 오렌지 레볼루션 [스무디킹] 오렌지 레볼루션</p>
@@ -214,9 +214,10 @@
     var boxHeight = $topSec.height();
 
     $expand.scroll(function () {
-      if ($(this).scrollTop() < boxHeight - 30) {
+      // if ($(this).scrollTop() < boxHeight - 30) {
+      if ($(this).scrollTop() < 70) {
         $('header').removeClass('vh-scroll')
-        $('header').parent('.header').removClass('vh-scroll-parent');
+        $('header').parent('.header').removeClass('vh-scroll-parent');
       } else {
         $('header').addClass('vh-scroll')
         $('header').parent('.header').addClass('vh-scroll-parent');

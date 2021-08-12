@@ -1264,7 +1264,7 @@ textarea::placeholder { color: #999; }
 
 .tag-pick--sub { background: #76b424; }
 
-.tab { position: relative; overflow-x: auto; overflow-y: hidden; text-align: center; font-size: 0; white-space: nowrap; border-bottom: 1px solid #e6e6e8; }
+.tab { position: relative; overflow-x: auto; overflow-y: hidden; text-align: center; font-size: 0; white-space: nowrap; border-bottom: 1px solid #e6e6e8; z-index:203;top:-8px;background: #FFFFFF;}
 
 .tab.with-depth { margin-bottom: 1.5rem; }
 
@@ -1272,7 +1272,7 @@ textarea::placeholder { color: #999; }
 
 .tab__wrap { position: relative; }
 
-.tab__more { position: absolute; top: 0.3rem; right: 0; padding: 0 0.6rem; z-index: 2; }
+.tab__more { position: absolute; top: 0.3rem; right: 0; padding: 0 0.6rem; z-index: 204; }
 
 .tab__more button { position: relative; z-index: 2; }
 
@@ -1280,7 +1280,7 @@ textarea::placeholder { color: #999; }
 
 .tab__more::after { content: ''; position: absolute; width: 5rem; height: 100%; right: 0; top: 0; background-image: linear-gradient(to left, #ffffff, rgba(255, 255, 255, 0.9) 63%, rgba(255, 255, 255, 0)); z-index: 1; }
 
-.tab__more-and { position: absolute; top: 3.9rem; display: none; -ms-flex-pack: justify; justify-content: space-between; -ms-flex-align: center; align-items: center; -ms-flex-wrap: wrap; flex-wrap: wrap; width: 100%; padding: 2.25rem 1.6rem; background-color: #fff; z-index: 203; }
+.tab__more-and { position: absolute; top: 3.9rem; display: none; -ms-flex-pack: justify; justify-content: space-between; -ms-flex-align: center; align-items: center; -ms-flex-wrap: wrap; flex-wrap: wrap; width: 100%; padding: 2.25rem 1.6rem; background-color: #fff; z-index: 205; }
 
 .tab__more-and.on { display: -ms-flexbox; display: flex; }
 
@@ -1408,6 +1408,7 @@ textarea::placeholder { color: #999; }
 
 .main-home header.vh-scroll, .main-health header.vh-scroll, .main-reward header.vh-scroll {
     background: #fff;
+    padding-top:  constant(safe-area-inset-top) !important;
     padding-top:  env(safe-area-inset-top) !important;
 }
 .vh-scroll-parent {top:0px !important; }
@@ -1417,7 +1418,7 @@ textarea::placeholder { color: #999; }
 .main-health header.vh-scroll .right-icons .icon-menu, .main-reward header.vh-scroll .right-icons .icon-camera_02,
 .main-reward header.vh-scroll .right-icons .icon-alarm::before, .main-reward header.vh-scroll .right-icons .icon-menu { filter: none; }
 
-.main-home .content-wrap, .main-health .content-wrap, .main-reward .content-wrap { padding-top: calc(constant(safe-area-inset-top) + 2.2rem); padding-top: calc(env(safe-area-inset-top) + 2.2rem); }
+.main-home .content-wrap, .main-health .content-wrap, .main-reward .content-wrap { padding-top:5.6rem;padding-top: calc(constant(safe-area-inset-top) + 5.6rem); padding-top: calc(env(safe-area-inset-top) + 5.6rem); }
 
 .main-home .scrollBox, .main-health .scrollBox, .main-reward .scrollBox { position: relative !important; height: inherit !important; padding: 1.3rem 1.6rem 0; padding-bottom: calc(constant(safe-area-inset-bottom)); padding-bottom: calc(env(safe-area-inset-bottom)); }
 
@@ -1611,7 +1612,7 @@ textarea::placeholder { color: #999; }
 
 .main-health__score, .main-health__boxes { padding-left: 2.2rem; }
 
-.main-health__score { color: #fff; margin-top: 4rem; }
+.main-health__score { color: #fff; margin-top: 10rem; }
 
 .main-health__score-button { display: -ms-flexbox; display: flex; -ms-flex-pack: start; justify-content: flex-start; -ms-flex-align: center; align-items: center; }
 
@@ -1839,7 +1840,7 @@ textarea::placeholder { color: #999; }
 
 .main-top-image .visual-expand__contents { position: absolute; bottom: 0; left: 0; width: 100%; }
 
-.main-top-image__sec { padding: 7.6rem 1.6rem 2rem; margin: 0 -1.6rem; background: 50% 100% no-repeat; background-size: cover; }
+.main-top-image__sec { padding: 7.6rem 1.6rem 2rem; padding-top: calc(constant(safe-area-inset-top) + 7.6rem); padding-top: calc(env(safe-area-inset-top) + 7.6rem);margin: 0 -1.6rem; background: 50% 100% no-repeat; background-size: cover; }
 
 .main-top-image .content-wrap, .main-top-image .scrollBox { padding-top: 0; }
 
@@ -4306,7 +4307,7 @@ textarea::placeholder { color: #999; }
 
 .my-info__profile-img button { position: relative; display: block; width: 8rem; height: 8rem; margin: 0 auto; overflow: hidden; border-radius: 50%; background: #f6f7fa; text-align: center; }
 
-/*.my-info__profile-img img { position: relative; width: 100%; height: 100%; z-index: 1; object-fit: cover; }*/
+.my-info__profile-img img { position: relative; width: 100%; height: 100%; z-index: 1; object-fit: cover; }
 
 .my-info__profile-img i { position: absolute; top: 0.8rem; left: calc(50% - 2rem); z-index: 1; filter: invert(78%) sepia(7%) saturate(24%) hue-rotate(0deg) brightness(97%) contrast(87%); }
 
