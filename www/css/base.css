@@ -5176,4 +5176,8 @@ textarea::placeholder { color: #999; }
 .manage-average-box li.active.red::after { background:#ff0000; }
 .manage-average-box li.active.blue::before { border:1px solid #22a2d1; }
 .manage-average-box li.active.blue::after { background:#22a2d1; }
+.main-reward__slide-goods.type02 .swiper-slide button { position:relative; }
+.main-reward__slide-goods.type02 .swiper-slide .txt__info { position:absolute; bottom:1rem; left:1rem; right:1rem; background:rgba(0, 0, 0, 0.4); height:inherit; padding:1.5rem; border-radius:1rem; }
+.main-reward__slide-goods.type02 .swiper-slide .txt__info .tit { display:block; margin:0; color:#fff; font-size:1.6rem; }
+.main-reward__slide-goods.type02 .swiper-slide .txt__info .txt { margin:0.25rem 0 0 0; color:#fff; font-size:1.8rem; font-family:'KB FG DISPLAY'; }
 /*# sourceMappingURL=maps/base.css.map */
