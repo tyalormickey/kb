@@ -85,9 +85,23 @@
 
 .pa24{padding: 2.4rem !important;}
 
+.pr0{padding-right: 0px !important;}
+
+.pr16{padding-right:1.6rem !important;}
+
+.pl0{padding-left: 0px !important;}
+
+.pl16{padding-left: 1.6rem !important;}
+
 .pl24{padding-left: 2.4rem !important;}
 
 .pl48{padding-left: 4.8rem !important;}
+
+.ml0 { margin-left:0px !important;}
+
+.mr0 { margin-right:0px !important;}
+
+.mr3 { margin-right:0.3rem !important;}
 
 .mt0 { margin-top:0px !important;}
 
@@ -654,7 +668,9 @@ html.outer-overflow body, html.outer-overflow .wrapper {
 
 .footer__button-nav nav { padding-right: env(safe-area-inset-right); padding-left: env(safe-area-inset-left); padding-right: constant(safe-area-inset-right); padding-left: constant(safe-area-inset-left); border-top: 1px solid #e6e6e8; }
 
-.content-wrap { padding: 5.6rem 0 6rem; padding-bottom: calc(constant(safe-area-inset-bottom) + 6rem); padding-bottom: calc(env(safe-area-inset-bottom) + 6rem); height: 100%; }
+.content-wrap { padding: 5.6rem 0 6rem;
+    /*padding-bottom: calc(constant(safe-area-inset-bottom) + 6rem); padding-bottom: calc(env(safe-area-inset-bottom) + 6rem);*/
+    height: 100%; }
 
 .content-wrap.header-large { padding-top: 9.1rem; }
 
@@ -1278,7 +1294,7 @@ textarea::placeholder { color: #999; }
 
 .tab__more i { font-size: 0; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Ccircle cx='40' cy='40' r='40' fill='%2376b424'/%3E%3Cpath fill='none' fill-rule='evenodd' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='6px' d='M36 20L18 0 0 20' transform='translate(57.605 52.5) rotate(180)'/%3E%3C/svg%3E%0A"); background-size: 100% auto; }
 
-.tab__more::after { content: ''; position: absolute; width: 5rem; height: 100%; right: 0; top: 0; background-image: linear-gradient(to left, #ffffff, rgba(255, 255, 255, 0.9) 63%, rgba(255, 255, 255, 0)); z-index: 1; }
+.tab__item::after { content: ''; position: absolute; width: 5rem; height: 100%; right: 0; top: 0; background-image: linear-gradient(to left, #ffffff, rgba(255, 255, 255, 0.9) 63%, rgba(255, 255, 255, 0)); z-index: 1; }
 
 .tab__more-and { position: absolute; top: 3.9rem; display: none; -ms-flex-pack: justify; justify-content: space-between; -ms-flex-align: center; align-items: center; -ms-flex-wrap: wrap; flex-wrap: wrap; width: 100%; padding: 2.25rem 1.6rem; background-color: #fff; z-index: 205; }
 
@@ -1303,6 +1319,16 @@ textarea::placeholder { color: #999; }
 .tab__item--on span { color: #000; font-weight: 700; }
 
 .tab__item--on span::after { content: ''; position: absolute; left: 0; bottom: 0; z-index: 2; width: 100%; height: 0.3rem; border-radius: 0.3rem; background-color: #000; }
+
+.tab__item { display: inline-block; position: relative; margin: 0 2rem; cursor: pointer; }
+
+.tab__item span { display: inline-block; padding: 1.2rem 0 1rem; white-space: nowrap; line-height: 1; color: #666; }
+
+.tab__item--on span { color: #000; font-weight: 700; }
+
+.tab__item--on span::after { content: ''; position: absolute; left: 0; bottom: 0; z-index: 2; width: 100%; height: 0.3rem; border-radius: 0.3rem; background-color: #000; }
+
+.tab__iterm_after_clean::after {width: auto !important; }
 
 .tab__content { display: none; }
 
@@ -1331,6 +1357,8 @@ textarea::placeholder { color: #999; }
 .tab.button-type { border: none; overflow-x: hidden; text-align: left; }
 
 .tab.button-type .tab__item { margin: 0 0.5rem; }
+
+.tab.button-type .tab__item::after { content: ''; position: absolute; width: auto; height: 100%; right: 0; top: 0; background-image: linear-gradient(to left, #ffffff, rgba(255, 255, 255, 0.9) 63%, rgba(255, 255, 255, 0)); z-index: 1; }
 
 .tab.button-type .tab__item button { width: 5.6rem; height: 5.6rem; border: 1px solid #acacac; border-radius: 1.1rem; }
 
@@ -2957,6 +2985,7 @@ textarea::placeholder { color: #999; }
 
 .manage-light-box b { font-weight: 700; }
 
+
 .manage-h3 { font-size: 1.8rem; line-height: 1.67; color: #000; }
 
 .manage-h3 strong { font-family: inherit; font-weight: 700; vertical-align: top; }
@@ -4438,7 +4467,7 @@ textarea::placeholder { color: #999; }
 .diet-main-title__text strong { font-weight: 600; color: #000; vertical-align: top; }
 
 /* 영양정보 */
-.nutrition-info { background: #776c61; border-radius: 1rem; color: #fff; padding: 3rem 2.4rem 4.5rem; margin-top: 1.5rem; }
+.nutrition-info { background: #776c61; /*border-radius: 1rem; 기존디자인 적용시 주석 풀어 주세요*/ color: #fff; padding: 3rem 2.4rem 4.5rem; margin-top: 1.5rem; margin: 0 -1.6rem; /*기존디자인 복원시 앞에 margin: 0 -1.6rem 지워주세요*/ }
 
 .nutrition-info__title strong { display: block; line-height: 1.24; }
 
@@ -5044,7 +5073,11 @@ textarea::placeholder { color: #999; }
 .info_box_type1{height:317px;}
 .info_scroll_leftpush{padding-left: 80px;}
 .info_box_right{position:absolute;right:0px;}
+.icon_arrow_down > img {width:15%;}
 .txt-yellow {color:#fcaf17;font-family: "KB FG DISPLAY";}
+.txt-blue {color:#22a2d1;font-family: "KB FG DISPLAY";}
+.txt-red {color:#ff0000;font-family: "KB FG DISPLAY";}
+.result_bar {background-image:url(../img/bar_bg.svg);background-repeat: no-repeat;background-position: center;background-size: cover;}
 .opacity4 {opacity: 0.4;}
 .opacity2 {opacity: 0.2;}
 .backtrans {background:transparent !important;}
@@ -5058,7 +5091,8 @@ textarea::placeholder { color: #999; }
 
 .h100per {height:100% !important;background-position: center}
 .w100per {width:100% !important;}
-.whalf {width:50%;}
+.w70per {width:70% !important;}
+.whalf {width:50% !important;}
 .tmain_1{background-image: url(../img/t01.png);transition: background 0.3s;}
 .colortrans{color:transparent !important}
 
@@ -5134,11 +5168,14 @@ textarea::placeholder { color: #999; }
 .reslut_heredity li b { vertical-align:baseline; }
 .term-detail__section.reslut .term-detail__text b { vertical-align:baseline; }
 .term-detail__section.reslut .term-detail__title.sub { font-size:1.6rem !important; margin-bottom:1.2rem !important; }
+.txt_green { color:#76b424 !important; }
 .txt_gray { color:#666 !important; }
+.txt_light_gray {color:#999999 !important;}
 .txt_black { color:#000 !important; }
 .txt_red { color:#ff0000 !important; }
 .txt_yellow { color:#f9cb12 !important; }
 .txt_blue { color:#22a2d1 !important; }
+.txt_vertical_bottom{vertical-align: bottom !important;}
 .main-health__test { text-align:left; }
 .main-health__test a { position:relative; display:block; padding:1.8rem 1.8rem 1.8rem 10rem; font-size:1.4rem; color:#fff; border-radius:1rem; background:#999088; }
 .main-health__test a:before { content:''; position:absolute; top:50%; margin:-3rem 0 0 0; left:1.8rem; width:6rem; height:6rem; background:url(../img/icons/icon_main_test.png) no-repeat #fff 54% 55%; background-size:3rem auto; border-radius:5rem; }
@@ -5176,4 +5213,34 @@ textarea::placeholder { color: #999; }
 .manage-average-box li.active.red::after { background:#ff0000; }
 .manage-average-box li.active.blue::before { border:1px solid #22a2d1; }
 .manage-average-box li.active.blue::after { background:#22a2d1; }
+
+
+/*about floating button*/
+.float{position:fixed;width:50px;height:50px;bottom:80px;right:30px;background-color:#fcaf17;color:#FFF;border-radius:50px;text-align:center;box-shadow: 2px 2px 3px #999;z-index:1000;animation: bot-to-top 2s ease-out;padding-top:16px;}
+.float img{width:40%;}
+.float-ul{position:fixed;right:38px;padding-bottom:20px;bottom:120px;z-index:999;}
+.float-ul li{list-style:none;margin-bottom:10px;text-align:center;display: flex;font-size: 1.6rem;align-items: center;color:#FFFFFF;justify-content: flex-end;}
+.float-ul li > div{padding-right:10px;}
+.float-ul li a{background-color:#FFFFFF;color:#FFF;border-radius:50px;text-align:center;box-shadow: 2px 2px 3px #999;width:40px;height:40px;display: flex;align-items: center;justify-content: center;}
+.float-ul li a img {width:50%;}
+.float-ul:hover{visibility:visible!important;opacity:1!important;}
+.my-float{font-size:24px !important;margin-top:14px;}
+a#menu-share + ul{visibility: hidden;}
+.floatRotate{transform: rotate(-135deg);animation: icon-rotate-in  0.5s;}
+.showmenu {visibility: visible !important;animation: scale-in 0.5s;animation: showmenu 0.5s ease-out;}
+.floatbackground {position:absolute;left:0px;top:0px;width:100%;height:100vh;background:#000000;display: none;z-index: 997;opacity: 0.8;}
+a#menu-share i{animation: rotate-in 0.5s;}
+a#menu-share:hover > i{animation: rotate-out 0.5s;}
+@keyframes showmenu {0%   {bottom:-120px}50%  {bottom:120px}}
+@keyframes bot-to-top {0%   {bottom:-80px}50%  {bottom:80px}}
+@keyframes icon-rotate-in {from {transform: rotate(0deg);}to {transform: rotate(-135deg);}}
+@keyframes scale-in {from {transform: scale(0);opacity: 0;}to {transform: scale(1);opacity: 1;}}
+@keyframes rotate-in {from {transform: rotate(0deg);}to {transform: rotate(360deg);}}
+@keyframes rotate-out {from {transform: rotate(360deg);}to {transform: rotate(0deg);}}
+
+.nutrition-info-back-img {background-image: url(../img/backimg_2_1.png) !important;background-size: cover;height: 250px;background-position: center;background-repeat: no-repeat;}
+.no-border{border:0px !important;border-width:0px; !important;}
+.text-data-list {display: inline-block;width: 80% !important;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
+.text-data-arrow > img{width:10px;}
+/*about floating button*/
 /*# sourceMappingURL=maps/base.css.map */

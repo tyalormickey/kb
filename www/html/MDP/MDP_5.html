@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
+    <link rel='stylesheet' type='text/css' href='../../css/morpheus-reset.min.css'/>
+    <link rel='stylesheet' type='text/css' href='../../css/morpheus-common.css'/>
+    <link rel='stylesheet' type='text/css' href='../../css/morpheus-style.css'/>
+
+    <script src='../../js/libs/jquery-3.1.1.min.js'></script>
+    <script src='../../js/swiper.min.js'></script>
+    <script src='../../js/ui.js'></script>
+</head>
+<body>
+
+<div class="wrapper main-home">
+    <div class="swiper-container-main">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <iframe style="width:100%;height:100vh;"  ondrop="drop(event)" ondragover="allowDrop(event)" ondragover="allowDrop(event)" border="0" src="./MDP_5_1V.html"></iframe>
+            </div>
+            <div class="swiper-slide">
+                <iframe style="width:100%;height:100vh;pointer-events:none;" border="0" src="./MDP_6_1V_top.html"></iframe>
+            </div>
+            <div class="swiper-slide">
+                <iframe style="width:100%;height:100vh;pointer-events:none;" border="0" src="./MDP_7_1V_top.html"></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function allowDrop(ev) {
+        alert("12123123123");
+    }
+
+    function allowDrop(ev) {
+        alert("123213");
+    }
+    function drop(ev) {
+        alet("asdfasdf");
+    }
+    /* swiper action */
+    var tabActiveAction = function (idx) {
+        var onItem = 'tab__item--on';
+        const tabs = $('.home-health-compare__content .tab__item');
+        tabs.removeClass(onItem);
+        tabs.eq(idx).addClass(onItem);
+    }
+
+
+    var swipermain = new Swiper('.swiper-container-main', {
+        on: {
+            slideChangeTransitionStart: function () {
+                tabActiveAction(swiper.realIndex);
+            },
+            init: function () {
+                tabActiveAction(0);
+            },
+            slideChangeTransitionEnd() {
+                const swiper = this;
+                var url = swiper.$wrapperEl.children('.swiper-slide').eq(swiper.activeIndex);
+                window.location = url;
+            }
+        },
+    });
+
+
+
+    function changeSwipe (i) {
+        swiper.slideTo(i, 300)
+    }
+
+    $('.home-health-compare__title').off('click').on('click', function () {
+        $('.home-health-compare').toggleClass('active');
+        $('.home-health-compare__content').stop().slideToggle(200);
+        if ($('.home-health-compare').hasClass('active')) {
+            $('.main-home').addClass('active-sleep');
+            swiper.init();
+        } else {
+            $('.main-home').removeClass('active-sleep');
+        }
+    });
+</script>
+
+</body>
+</html>
+

@@ -449,3 +449,14 @@ var tab = (function () {
   }
   return { reset: reset, action: action }
 })();
+
+//about floating box
+var floatmenuTogle = function() {
+    $(".float > img").toggleClass("floatRotate");
+    $(".float-ul").toggleClass("showmenu");
+    $(".floatbackground").toggle();
+};
+//about floating box
+
+
+
