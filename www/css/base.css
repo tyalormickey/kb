@@ -5092,6 +5092,7 @@ textarea::placeholder { color: #999; }
 .h100per {height:100% !important;background-position: center}
 .w100per {width:100% !important;}
 .w70per {width:70% !important;}
+.w60 {width:60px !important;}
 .whalf {width:50% !important;}
 .tmain_1{background-image: url(../img/t01.png);transition: background 0.3s;}
 .colortrans{color:transparent !important}
@@ -5266,5 +5267,8 @@ a#menu-share:hover > i{animation: rotate-out 0.5s;}
 .switch-list.medicine .switch-list__item:before { content:''; position:absolute; top:1.8rem; left:1.32rem; width:1.8rem; height:1.8rem; background:url(../img/icons/icon_medicine_list.png) no-repeat 50% 50%; background-size:1.8rem auto; }
 .switch-list.medicine .switch-list__item-sub { font-size:1.4rem; color:#999; margin:0.5rem 0 0 0; }
 
+
+.cardbox_01 {border: 1px solid #d3d4d6;border-radius: 1rem;text-align: left;}
+.cardbox_01 .cardtitle {background:#f6f7fa;border-top-left-radius: 1rem;border-top-right-radius: 1rem;padding:1.5rem;}
 /*about floating button*/
 /*# sourceMappingURL=maps/base.css.map */
