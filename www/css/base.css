@@ -5242,5 +5242,29 @@ a#menu-share:hover > i{animation: rotate-out 0.5s;}
 .no-border{border:0px !important;border-width:0px; !important;}
 .text-data-list {display: inline-block;width: 80% !important;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
 .text-data-arrow > img{width:10px;}
+
+
+.main-reward__slide-goods.type02 .swiper-slide button { position:relative; }
+.main-reward__slide-goods.type02 .swiper-slide .txt__info { position:absolute; bottom:1.5rem; left:1.5rem; right:1.5rem; background:rgba(0, 0, 0, 0.4); height:inherit; padding:1.5rem; border-radius:1rem; }
+.main-reward__slide-goods.type02 .swiper-slide .txt__info .tit { display:block; margin:0; color:#fff; font-size:1.6rem; }
+.main-reward__slide-goods.type02 .swiper-slide .txt__info .txt { margin:0.35rem 0 0 0; color:#fff; font-size:1.7rem; font-family:'KB FG DISPLAY'; }
+.medicine__img { margin:0 -1.6rem; }
+.medicine__box { margin:2.5rem 0 0 0; }
+.medicine__box .medicine__tit { color:#000; font-size:1.7rem; }
+.medicine__box ul { margin:1rem 0 0 0; font-size:1.4rem; color:#999; line-height:1.33; font-weight:300; }
+.medicine__box ul li { margin:0.5rem 0 0 0; }
+.medicine__box ul li:first-child { margin:0; }
+.medicine__font { font-weight:300 !important; }
+.tab__wrap.medicine { margin:3.5rem 0 0 0; }
+.tab__wrap.medicine .tab { top:inherit; margin:0 0 2.5rem 0; }
+.tab__wrap.medicine .tab .tab__item:first-child { margin:0 0.6rem 0 0; }
+.tab__wrap.medicine .swiper-slide .manage-h4 { margin:2.5rem 0 0 0; }
+.tab__wrap.medicine .swiper-slide .manage-h4:first-child { margin:0; }
+.w50per { width:50% !important; }
+.switch-list.medicine { margin:2.5rem 0 0 0; }
+.switch-list.medicine .switch-list__item { position:relative; padding:1.32rem 1.5rem 1.32rem 4.2rem; }
+.switch-list.medicine .switch-list__item:before { content:''; position:absolute; top:1.8rem; left:1.32rem; width:1.8rem; height:1.8rem; background:url(../img/icons/icon_medicine_list.png) no-repeat 50% 50%; background-size:1.8rem auto; }
+.switch-list.medicine .switch-list__item-sub { font-size:1.4rem; color:#999; margin:0.5rem 0 0 0; }
+
 /*about floating button*/
 /*# sourceMappingURL=maps/base.css.map */
