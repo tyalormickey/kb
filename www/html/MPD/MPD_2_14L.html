@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-reset.min.css'/>
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-common.css'/>
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-style.css'/>
+
+  <script src='../../js/libs/jquery-3.1.1.min.js'></script>
+  <script src='../../js/swiper.min.js'></script>
+  <script src='../../js/ui.js'></script>
+</head>
+<body>
+
+<!-- 팝업 // -->
+<div class="modal-popup modal-calender">
+  <div class="modal-popup__outer">
+    <section class="modal-popup__container">
+      <article class="modal-popup__header">
+        <h3 class="modal-popup__title">
+          아침 복약 시간 설정
+        </h3>
+        <button class="modal-popup__close only-icon">
+          <i class="icon-x icon-20">닫기</i>
+        </button>
+      </article>
+      <article class="modal-popup__body">
+        <div class="modal-calender__container">
+          <article class="calender-swiper">
+            <div class="swiper-container calender-swiper--year">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">오전</div>
+                <div class="swiper-slide">오후</div>
+              </div>
+            </div>
+          </article>
+          <article class="calender-swiper">
+            <div class="swiper-container calender-swiper--month">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">01</div>
+                <div class="swiper-slide">02</div>
+                <div class="swiper-slide">03</div>
+                <div class="swiper-slide">04</div>
+                <div class="swiper-slide">05</div>
+                <div class="swiper-slide">06</div>
+                <div class="swiper-slide">07</div>
+                <div class="swiper-slide">08</div>
+                <div class="swiper-slide">09</div>
+                <div class="swiper-slide">10</div>
+                <div class="swiper-slide">11</div>
+                <div class="swiper-slide">12</div>
+              </div>
+            </div>
+          </article>
+          <article class="calender-swiper">
+            <div class="swiper-container calender-swiper--day">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">00</div>
+                <div class="swiper-slide">01</div>
+                <div class="swiper-slide">02</div>
+                <div class="swiper-slide">03</div>
+                <div class="swiper-slide">04</div>
+                <div class="swiper-slide">05</div>
+                <div class="swiper-slide">06</div>
+                <div class="swiper-slide">07</div>
+                <div class="swiper-slide">08</div>
+                <div class="swiper-slide">09</div>
+                <div class="swiper-slide">10</div>
+                <div class="swiper-slide">11</div>
+                <div class="swiper-slide">12</div>
+                <div class="swiper-slide">13</div>
+                <div class="swiper-slide">14</div>
+                <div class="swiper-slide">15</div>
+                <div class="swiper-slide">16</div>
+                <div class="swiper-slide">17</div>
+                <div class="swiper-slide">18</div>
+                <div class="swiper-slide">19</div>
+                <div class="swiper-slide">20</div>
+                <div class="swiper-slide">21</div>
+                <div class="swiper-slide">22</div>
+                <div class="swiper-slide">23</div>
+                <div class="swiper-slide">24</div>
+                <div class="swiper-slide">25</div>
+                <div class="swiper-slide">26</div>
+                <div class="swiper-slide">27</div>
+                <div class="swiper-slide">28</div>
+                <div class="swiper-slide">29</div>
+                <div class="swiper-slide">30</div>
+                <div class="swiper-slide">31</div>
+                <div class="swiper-slide">32</div>
+                <div class="swiper-slide">33</div>
+                <div class="swiper-slide">34</div>
+                <div class="swiper-slide">35</div>
+                <div class="swiper-slide">36</div>
+                <div class="swiper-slide">37</div>
+                <div class="swiper-slide">38</div>
+                <div class="swiper-slide">39</div>
+                <div class="swiper-slide">40</div>
+                <div class="swiper-slide">41</div>
+                <div class="swiper-slide">42</div>
+                <div class="swiper-slide">43</div>
+                <div class="swiper-slide">44</div>
+                <div class="swiper-slide">45</div>
+                <div class="swiper-slide">46</div>
+                <div class="swiper-slide">47</div>
+                <div class="swiper-slide">48</div>
+                <div class="swiper-slide">49</div>
+                <div class="swiper-slide">50</div>
+                <div class="swiper-slide">51</div>
+                <div class="swiper-slide">52</div>
+                <div class="swiper-slide">53</div>
+                <div class="swiper-slide">54</div>
+                <div class="swiper-slide">55</div>
+                <div class="swiper-slide">56</div>
+                <div class="swiper-slide">57</div>
+                <div class="swiper-slide">58</div>
+                <div class="swiper-slide">59</div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </article>
+      <article class="modal-popup__footer">
+        <button class="block gray medium inline" onclick="modal.close($(this))">
+          취소
+        </button>
+        <button class="block medium inline choicebtn" onclick="toast.open('아침(점심/저녁/취침전) 복약 시간이 저장되었습니다.')">
+          확인
+        </button>
+      </article>
+    </section>
+  </div>
+</div>
+<!-- // 팝업 -->
+
+
+
+
+<script>
+  modal.open('', '.modal-calender', timerSelectOpen)
+
+  tab.reset();
+  setTimeout(function() {
+    $('.tab__item').click(function() {
+      tab.action($(this))
+    });
+  }, 100);
+
+  var timerSwiperOption = {
+    direction: "vertical",
+    slidesPerView: 3,
+    loop: false,
+    spaceBetween: 0,
+    mousewheel: true,
+    centeredSlides: true,
+    init: false
+  }
+  var swiperYear = new Swiper(".calender-swiper--year", timerSwiperOption);
+  var swiperMonth = new Swiper(".calender-swiper--month", timerSwiperOption);
+  var swiperDay = new Swiper(".calender-swiper--day", timerSwiperOption);
+
+  function timerSelectOpen() {
+    swiperYear.init();
+    swiperMonth.init();
+    swiperDay.init();
+  }
+
+</script>
+</body>
+</html>

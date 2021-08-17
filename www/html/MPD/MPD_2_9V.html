@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
+    <link rel='stylesheet' type='text/css' href='../../css/morpheus-reset.min.css'/>
+    <link rel='stylesheet' type='text/css' href='../../css/morpheus-common.css'/>
+    <link rel='stylesheet' type='text/css' href='../../css/morpheus-style.css'/>
+
+    <script src='../../js/libs/jquery-3.1.1.min.js'></script>
+    <script src='../../js/swiper.min.js'></script>
+    <script src='../../js/ui.js'></script>
+</head>
+<body>
+<div class="wrapper">
+    <div class="header">
+        <header>
+            <div class="header__back">
+                <div class="back">
+                    <button type="button" class="only-icon">
+                        <i class="icon-arrow_left icon-20">뒤로가기</i>
+                    </button>
+                </div>
+                <div class="title">
+                    의약품 등록
+                </div>
+                <div class="right-icons">
+                    <button type="button" class="only-icon">
+                        <i class="icon-camera_02 icon-20">카메라</i>
+                    </button>
+                    <button type="button" class="only-icon">
+                        <i class="icon-alarm on icon-20">알람</i>
+                    </button>
+                </div>
+            </div>
+        </header>
+    </div>
+    <div class="content-wrap">
+        <div class="scrollBox ">
+            <div class="manage-h3"><strong> 의약품을 추가한 후 알람을 설정하세요.</strong></div>
+            <div class="main-event-popup__content-buttons mt0">
+                <button type="button" class="block small">추가</button>
+            </div>
+            <ul class="switch-list medicine">
+                <li class="switch-list__item">
+                    <div class="switch-list__item-title">
+                        [일반] 게보린쿨다운정
+                        <div class="switch-list__item-sub">7일동안,매일,아침/점심/저녁</div>
+                    </div>
+                    <div class="switch-list__item-button width52">
+                        <label class="input-switch"><input type="checkbox" checked=""><i></i></label>
+                    </div>
+                </li>
+
+                <li class="switch-list__item">
+                    <div class="switch-list__item-title">[일반] 가스펠현탁액</div>
+                    <div class="switch-list__item-button width52">
+                        <label class="input-switch"><input type="checkbox"><i></i></label>
+                    </div>
+                </li>
+
+                <li class="switch-list__item">
+                    <div class="switch-list__item-title">[일반] 게보린정</div>
+                    <div class="switch-list__item-button width52">
+                        <label class="input-switch"><input type="checkbox"><i></i></label>
+                    </div>
+                </li>
+            </ul>
+
+
+            <div class="manage-h3 mt30"><strong> 의약품을 추가한 후 알람을 설정하세요.</strong></div>
+            <div class="main-event-popup__content-buttons mt0">
+                <button type="button" class="block small">추가</button>
+            </div>
+            <ul class="switch-list medicine">
+                <li class="switch-list__item">
+                    <div class="switch-list__item-title">
+                        [일반] 게보린쿨다운정
+                        <div class="switch-list__item-sub">7일동안,매일,아침/점심/저녁</div>
+                    </div>
+                    <div class="switch-list__item-button width52">
+                        <label class="input-switch"><input type="checkbox" checked=""><i></i></label>
+                    </div>
+                </li>
+
+                <li class="switch-list__item">
+                    <div class="switch-list__item-title">[일반] 가스펠현탁액</div>
+                    <div class="switch-list__item-button width52">
+                        <label class="input-switch"><input type="checkbox"><i></i></label>
+                    </div>
+                </li>
+
+                <li class="switch-list__item">
+                    <div class="switch-list__item-title">[일반] 게보린정</div>
+                    <div class="switch-list__item-button width52">
+                        <label class="input-switch"><input type="checkbox"><i></i></label>
+                    </div>
+                </li>
+            </ul>
+
+
+
+
+            <div class="manage-h3 mt30"><strong>약 봉투를 입력해 주세요.</strong></div>
+            <div class="counseling-type-item mt15">
+                <label class="input-radio">
+                    <input type="radio" checked="" name="radioGroup"><i></i><span>신규 약 봉투 입력</span>
+                </label>
+            </div>
+            <div class="counseling-type-item mt15">
+                <label class="input-radio">
+                    <input type="radio" name="radioGroup"><i></i><span>기존 약 봉투 선택</span>
+                </label>
+            </div>
+            <div class="gene-radio__reslut mt15">
+                <div class="custom-input">
+                    <input type="text" value="" placeholder="약 봉투 이름을 20자 이내로 입력해 주세요.">
+                </div>
+
+                <div class="custom-select" style="display:none;">
+                    <dl class="default">
+                        <dt>
+                            <button type="button"><span>두통약</span></button>
+                        </dt>
+                        <dd>
+                            <ul>
+                                <li><button type="button">두통약</button></li>
+                                <li><button type="button">두통약</button></li>
+                            </ul>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+<div class="footer footer__nav">
+    <section class="survey__progress">
+        <div class="survey__progress--active" style="width: 10%;"></div>
+    </section>
+    <div class="button__flex-wrap">
+        <button type="button" class="block gray" data-button="prev">
+            이전
+        </button>
+        <button type="button" class="block gray" data-button="next">
+            다음
+        </button>
+    </div>
+</div>
+<script>
+    toast.open('아침(점심/저녁/취침전) 복약 시간이 저장되었습니다.');
+    var fnReslutCheck1 = {
+        type: 'confirm',
+        text: '현재 등록된 의약품은 초기화되고<br>다시 스캔이 진행됩니다.',
+        okText: '취소',
+        cancelText: '확인',
+        ok: handleOk,
+        cancel: handleCancel,
+    }
+
+    var fnReslutCheck2 = {
+        type: 'confirm',
+        text: '게보린쿨다운정 외 N개의 의약품을<br>등록 하시겠습니까?',
+        okText: '직접입력',
+        cancelText: '다시하기',
+        ok: test,
+        cancel: cancel,
+    }
+
+    function test() {
+        console.log('확인되었지롱');
+    }
+
+    function cancel() {
+        console.log('취소');
+    }
+
+</script>
+</body>
+</html>
