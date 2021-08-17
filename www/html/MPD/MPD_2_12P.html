@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
+    <link rel='stylesheet' type='text/css' href='../../css/morpheus-reset.min.css'/>
+    <link rel='stylesheet' type='text/css' href='../../css/morpheus-common.css'/>
+    <link rel='stylesheet' type='text/css' href='../../css/morpheus-style.css'/>
+
+    <script src='../../js/libs/jquery-3.1.1.min.js'></script>
+    <script src='../../js/swiper.min.js'></script>
+    <script src='../../js/ui.js'></script>
+</head>
+<body>
+<div class="wrapper">
+    <div class="header">
+        <header>
+            <div class="header__title">
+                <div class="title">
+                    복약 알람 설정
+                </div>
+                <div class="header__title--close">
+                    <button class="only-icon" type="button">
+                        <i class="icon-x icon-20">닫기</i>
+                    </button>
+                </div>
+            </div>
+        </header>
+    </div>
+    <div class="content-wrap">
+        <div class="scrollBox ">
+            <div class="my-page__point-box">
+                <div class="my-page__point-care">
+                    <p class="my-page__point-care-title">
+                        [일반] 게보린쿨다운정
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="manage-h3"><strong>복용 기간</strong></div>
+            <div class="counseling-type-item mt15">
+                <div class="custom-select">
+                    <dl class="default">
+                        <dt>
+                            <button type="button">
+                                <span>선택해주세요.</span>
+                            </button>
+                        </dt>
+                        <dd>
+                            <ul>
+                                <li class="selected"><button type="button">7일</button></li>
+                                <li><button type="button">8일</button></li>
+                            </ul>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+
+            <div class="manage-h3 mt30"><strong>복용 주기</strong></div>
+            <div class="counseling-type-item mt15">
+                <div class="counseling-type-item mt15">
+                    <label class="input-radio">
+                        <input type="radio" checked="" name="radioGroup" class="dosingcycle" value="매일"><i></i><span>매일</span>
+                    </label>
+                    <label class="input-radio pl24">
+                        <input type="radio" name="radioGroup" class="dosingcycle" value="요일"><i></i><span>요일</span>
+                    </label>
+                </div>
+
+                <div class="counseling-type-item mt15">
+                    <label class="input-radio">
+                        <input type="radio" name="radioGroup" class="dosingcycle" value="월1회"><i></i><span>월1회</span>
+                    </label>
+                    <label class="input-radio pl16">
+                        <input type="radio" name="radioGroup" class="dosingcycle" value="수기입력"><i></i><span>수기입력</span>
+                    </label>
+                </div>
+            </div>
+
+
+            <!-- tab__noraml -->
+            <div class="tab__weekend mt15">
+                <div class="tab__weekend-area weekend">
+                    <ul>
+                        <li><!--class="active"--><a href="javascript:void(0);">일</a></li>
+                        <li><a href="javascript:void(0);">월</a></li>
+                        <li><a href="javascript:void(0);">화</a></li>
+                        <li><a href="javascript:void(0);">수</a></li>
+                        <li><a href="javascript:void(0);">목</a></li>
+                        <li><a href="javascript:void(0);">금</a></li>
+                        <li><a href="javascript:void(0);">토</a></li>
+                    </ul>
+                </div>
+                <div class="tab__weekend-area month">
+                    <ul>
+                        <li><!--class="active"--><a href="javascript:void(0);">1개월</a></li>
+                        <li><a href="javascript:void(0);">2개월</a></li>
+                        <li><a href="javascript:void(0);">3개월</a></li>
+                        <li><a href="javascript:void(0);">4개월</a></li>
+                        <li><a href="javascript:void(0);">5개월</a></li>
+                        <li><a href="javascript:void(0);">6개월</a></li>
+                    </ul>
+                </div>
+                <div class="tab__weekend-area custom-input">
+                    <input type="text" placeholder="주기 입력, ex) 60일"/>
+                    <button type="button" class="custom-input__suffix">
+                        일/1회
+                    </button>
+                </div>
+            </div>
+            <!-- EOD : tab__noraml -->
+
+
+            <div class="manage-h3 mt30"><strong>복약 알람 시간</strong></div>
+            <div class="counseling-type-item mt15">
+                <ul class="switch-list medicinealram">
+                    <li class="switch-list__item">
+                        <div class="switch-list__item-title">
+                            아침
+                        </div>
+                        <div class="switch-list__item-normal">
+                            오전 08:00 >
+                        </div>
+                        <div class="switch-list__item-button width52">
+                            <label class="input-switch"><input type="checkbox" checked><i></i></label>
+                        </div>
+                    </li>
+                    <li class="switch-list__item">
+                        <div class="switch-list__item-title">
+                            점심
+                        </div>
+                        <div class="switch-list__item-normal">
+                            오후 12:00 >
+                        </div>
+                        <div class="switch-list__item-button width52">
+                            <label class="input-switch"><input type="checkbox" checked><i></i></label>
+                        </div>
+                    </li>
+                    <li class="switch-list__item">
+                        <div class="switch-list__item-title">
+                            저녁
+                        </div>
+                        <div class="switch-list__item-normal">
+                            오후 18:00 >
+                        </div>
+                        <div class="switch-list__item-button width52">
+                            <label class="input-switch"><input type="checkbox" checked><i></i></label>
+                        </div>
+                    </li>
+                    <li class="switch-list__item">
+                        <div class="switch-list__item-title">
+                            취침 전
+                        </div>
+                        <div class="switch-list__item-normal">알림 없음 ></div>
+                        <div class="switch-list__item-button width52">
+                            <label class="input-switch"><input type="checkbox" checked disabled><i></i></label>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer footer__nav">
+    <button type="button" class="block gray">
+        입력
+    </button>
+</div>
+<script>
+    $(".dosingcycle").change(function() {
+        $(".tab__weekend-area ul li").removeClass("active");
+        $(".tab__weekend-area ul li a").prop("disabled","");
+        $(".tab__weekend-area").hide();
+        switch ($(this).val()) {
+            case "매일":
+                $(".tab__weekend-area ul li a").prop("disabled","disabled");
+                $(".tab__weekend-area.weekend").show();
+                break;
+            case "요일":
+                $(".tab__weekend-area.weekend").show();
+                break;
+            case "월1회":
+                $(".tab__weekend-area.month").show();
+                break;
+            case "수기입력":
+                $(".tab__weekend-area.custom-input").show();
+                break;
+            default:
+                break;
+        }
+    });
+
+    /*
+    toast.open('게보닐쿨다운정 이(가) 적용 되었습니다.', 1000);
+    setTimeout(function () {
+        modal.close($('.modal-goal-event'))
+    }, 300);
+
+    toast.open('게보닐쿨다운정 외 N개의 의약품이 등록 되었습니다.', 1000);
+    setTimeout(function () {
+        modal.close($('.modal-goal-event'))
+    }, 300);
+    */
+
+</script>
+</body>
+</html>

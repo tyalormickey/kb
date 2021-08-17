@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
+    <link rel='stylesheet' type='text/css' href='../../css/morpheus-reset.min.css'/>
+    <link rel='stylesheet' type='text/css' href='../../css/morpheus-common.css'/>
+    <link rel='stylesheet' type='text/css' href='../../css/morpheus-style.css'/>
+
+    <script src='../../js/libs/jquery-3.1.1.min.js'></script>
+    <script src='../../js/swiper.min.js'></script>
+    <script src='../../js/ui.js'></script>
+</head>
+<body>
+
+<!-- 팝업 // -->
+<div class="modal-popup">
+    <div class="modal-popup__outer">
+        <section class="modal-popup__container w100per h100per mt60 medicinelist">
+            <article class="modal-popup__header">
+                <h3 class="modal-popup__title center">
+                    약 봉투 목록
+                </h3>
+                <button class="modal-popup__close only-icon">
+                    <i class="icon-x icon-20">닫기</i>
+                </button>
+            </article>
+            <article class="modal-popup__body">
+                <div class="manage-h3 mt30"><strong>복사할 약봉투를 입력해 주세요.</strong></div>
+
+                <div class="my-coupon-detail__top-date">
+                    6개월 이내 만들어진 약 봉투만 보여집니다.
+                </div>
+                    <ul class="list__wrap list-border page-mpd-515 mt10">
+                        <li class="medicine-list-item active">
+                            <button type="button">
+                                <span class="list-item__title">
+                                두통약
+                                </span>
+                                <span class="list-item__date">
+                                총 3종, 최대 일2회 복용/부분 알람
+                                </span>
+                            </button>
+                        </li>
+                        <li class="medicine-list-item">
+                            <button type="button">
+                                <span class="list-item__title">
+                                복통약
+                                </span>
+                                <span class="list-item__date">
+                                총 3종, 최대 일2회 복용/부분 알람
+                                </span>
+                            </button>
+                        </li>
+                        <li class="medicine-list-item">
+                            <button type="button">
+                                <span class="list-item__title">
+                                하복부 수술 후 먹는 약
+                                </span>
+                                <span class="list-item__date">
+                                총 3종, 최대 일2회 복용/부분 알람
+                                </span>
+                            </button>
+                        </li>
+                        <li class="medicine-list-item">
+                            <button type="button">
+                                <span class="list-item__title">
+                                약봉투명1
+                                </span>
+                                <span class="list-item__date">
+                                총 5종, 최대 일2회 복용/부분 알람
+                                </span>
+                            </button>
+                        </li>
+                        <li class="medicine-list-item">
+                            <button type="button">
+                                <span class="list-item__title">
+                                약봉투명2
+                                </span>
+                                <span class="list-item__date">
+                                총 3종, 최대 일2회 복용/부분 알람
+                                </span>
+                            </button>
+                        </li>
+                        <li class="medicine-list-item">
+                            <button type="button">
+                                <span class="list-item__title">
+                                약봉투명3
+                                </span>
+                                <span class="list-item__date">
+                                총 3종, 최대 일2회 복용/부분 알람
+                                </span>
+                            </button>
+                        </li>
+                        <li class="medicine-list-item">
+                            <button type="button">
+                                <span class="list-item__title">
+                                약봉투명4
+                                </span>
+                                <span class="list-item__date">
+                                총 3종, 최대 일2회 복용/부분 알람
+                                </span>
+                            </button>
+                        </li>
+                    </ul>
+            </article>
+            <article class="modal-popup__footer mt0 medicine-modal-popup__footer">
+                <button class="block gray medium inline" onclick="modal.close($(this))">
+                    취소
+                </button>
+                <button class="block medium inline">
+                    복사
+                </button>
+            </article>
+        </section>
+    </div>
+</div>
+<!-- // 팝업 -->
+
+
+
+
+<script>
+    $(".list__wrap.list-border li").on("click",function(){
+        $(".list__wrap.list-border li").removeClass("active");
+        $(this).addClass("active");
+    });
+    modal.open('', '.modal-popup', '');
+
+
+</script>
+</body>
+</html>
