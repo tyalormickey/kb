@@ -5270,5 +5270,21 @@ a#menu-share:hover > i{animation: rotate-out 0.5s;}
 
 .cardbox_01 {border: 1px solid #d3d4d6;border-radius: 1rem;text-align: left;}
 .cardbox_01 .cardtitle {background:#f6f7fa;border-top-left-radius: 1rem;border-top-right-radius: 1rem;padding:1.5rem;}
+
+.medicine_pop { display:none; position:absolute; top:3rem; left:0; width:100%; height:100%; background:#fff; z-index:1003; border-radius:3rem 3rem 0 0; }
+.medicine_pop .medicine_pop_title { position:relative; padding:3rem; text-align:center; font-size:2rem; }
+.medicine_pop .medicine_pop_title .medicine_pop_close { position:absolute; top:2.65rem; right:1rem; }
+.medicine_pop .medicine_pop_title span { display:block; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.medicine_pop .medicine_pop_box { margin:0 1.6rem 3rem 1.6rem; height:calc(100vh - 19.8rem); overflow-x:hidden; overflow-y:auto; }
+.medicine_pop .medicine_pop_btn { }
+.medicine_copy_list { margin:1.5rem 0 0 0; }
+.medicine_copy_list li { border-bottom:1px solid #d3d4d6; }
+.medicine_copy_list li:first-child { border-top:1px solid #d3d4d6; }
+.medicine_copy_list li .medicine_copy_box { position:relative; display:block; padding:1.5rem; }
+.medicine_copy_list li .medicine_copy_box .tit { display:block; font-size:1.6rem; line-height:1.55; }
+.medicine_copy_list li .medicine_copy_box .txt { display:block; font-size:1.5rem; margin:0.8rem 0 0 0; line-height:1.44; color:#999; font-weight:300; }
+.medicine_copy_list li .medicine_copy_box input { position:absolute; }
+.medicine_copy_list li .medicine_copy_box i { position:absolute; top:50%; right:1.5rem; margin:-0.7rem 0 0 0; width:2rem; height:1.4rem; }
+.medicine_copy_list li .medicine_copy_box input:checked + i { background:url(../img/icons/icon_survary_check.png) no-repeat; background-size:2rem auto; }
 /*about floating button*/
 /*# sourceMappingURL=maps/base.css.map */

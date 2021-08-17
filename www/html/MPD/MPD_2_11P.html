@@ -18,21 +18,13 @@
 <div class="wrapper">
   <div class="header">
     <header>
-      <div class="header__back">
-        <div class="back">
-          <button type="button" class="only-icon">
-            <i class="icon-arrow_left icon-20">뒤로가기</i>
-          </button>
-        </div>
+      <div class="header__title">
         <div class="title">
-          의약품 직접 등록
+          두통약(2)
         </div>
-        <div class="right-icons">
-          <button type="button" class="only-icon">
-            <i class="icon-camera_02 icon-20">카메라</i>
-          </button>
-          <button type="button" class="only-icon">
-            <i class="icon-alarm on icon-20">알람</i>
+        <div class="header__title--close">
+          <button class="only-icon" type="button">
+            <i class="icon-x icon-20">닫기</i>
           </button>
         </div>
       </div>
@@ -40,54 +32,18 @@
   </div>
 
   <!-- content-wrap -->
-  <div class="content-wrap footer-button">
+  <div class="content-wrap bottom-button-fixed">
     <!-- scrollBox -->
     <div class="scrollBox">
 
-
-      <div class="manage-h3"><strong>약 봉투를 입력해 주세요.</strong></div>
-      <div class="counseling-type-item mt15">
-        <label class="input-radio">
-          <input type="radio" checked="" name="radioGroup"><i></i><span>신규 약 봉투 입력</span>
-        </label>
-      </div>
-
-      <div class="counseling-type-item mt15">
-        <label class="input-radio">
-          <input type="radio" name="radioGroup"><i></i><span>기존 약 봉투 선택</span>
-        </label>
-      </div>
-
-      <div class="gene-radio__reslut mt15">
-        <div class="custom-input">
-          <input type="text" value="" placeholder="약 봉투 이름을 20자 이내로 입력해 주세요.">
-        </div>
-
-        <div class="custom-select" style="display:none;">
-          <dl class="default">
-            <dt>
-              <button type="button"><span>두통약</span></button>
-            </dt>
-            <dd>
-              <ul>
-                <li><button type="button">두통약</button></li>
-                <li><button type="button">두통약</button></li>
-              </ul>
-            </dd>
-          </dl>
-        </div>
-      </div>
-
-      <div class="manage-h3 mt40 mb15"><strong>조제 일자를 선택해 주세요.</strong></div>
+      <div class="manage-h3 mb15"><strong>조제 일자를 선택해 주세요.</strong></div>
       <div class="form-item__input form-input_calender w50per">
         <input type="text" onclick="modal.open($(this), '.modal-calender', calenderSelectOpen)" placeholder="2020.10.08">
         <i class="icon-cal icon-18">달력</i>
       </div>
 
       <div class="manage-h3 mt40 mb15"><strong>의약품을 추가한 후 알람을 설정하세요.</strong></div>
-      <!-- 2021.08.17 수정 -->
       <div><button type="button" class="block medium">추가</button></div>
-      <!-- EOD : 2021.08.17 수정 -->
 
       <ul class="switch-list medicine">
         <li class="switch-list__item">
@@ -118,42 +74,11 @@
     </div>
   </div>
   <!-- EOD : scrollBox -->
+  <div class="button__flex-wrap bottom-fixed">
+    <button type="button" class="block" onclick="modal.alert($(this), fnRegisterBtn);">등록</button>
+  </div>
 </div>
 <!-- EOD : content-wrap -->
-
-<div class="footer footer__nav">
-  <button type="button" class="block" onclick="modal.alert($(this),fnReslutCheck);">
-    등록
-  </button>
-  <nav>
-    <ul>
-      <li class="on">
-        <button type="button">
-          <i class="icon-home icon-16"></i>
-          <span>홈</span>
-        </button>
-      </li>
-      <li>
-        <button type="button">
-          <i class="icon-pro icon-16"></i>
-          <span>프로그램</span>
-        </button>
-      </li>
-      <li>
-        <button type="button">
-          <i class="icon-info icon-16"></i>
-          <span>증상ㆍ병원</span>
-        </button>
-      </li>
-      <li>
-        <button type="button">
-          <i class="icon-my icon-16"></i>
-          <span>MY</span>
-        </button>
-      </li>
-    </ul>
-  </nav>
-</div>
 
 <!-- 팝업 // -->
 <div class="modal-popup modal-calender">
@@ -285,15 +210,16 @@ function calenderSelectOpen() {
   swiperDay.init();
 }
 
-var fnReslutCheck = {
+var fnRegisterBtn = {
   type: 'confirm',
-  text: '게보린쿨다운정 외 N개의 의약품을<br/>등록 하시겠습니까?',
+  text: '두통약(2) 약 봉투를 등록 하시겠습니까?',
   ok: handleOk,
   cancel: handleCancel,
 }
 
 function handleOk() {
   console.log('확인');
+  toast.open('두통약(2) 약 봉투가 등록 되었습니다.');
 }
 
 function handleCancel() {

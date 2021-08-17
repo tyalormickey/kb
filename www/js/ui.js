@@ -457,6 +457,3 @@ var floatmenuTogle = function() {
     $(".floatbackground").toggle();
 };
 //about floating box
-
-
-
