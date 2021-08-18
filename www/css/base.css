@@ -5371,6 +5371,12 @@ a#menu-share:hover > i{animation: rotate-out 0.5s;}
 .medicine-modal-popup__footer {margin: 0 -2rem;background: #c6c6c6c6;height: 60px;display: flex}
 .medicine-modal-popup__footer button {width:50% !important;margin:0px !important;height:100% !important}
 
-
+.tab__wrap.custom .tab { top:inherit; }
+.custom-select.record { margin:0 auto; margin-top:-2rem; }
+.custom-select.record dt { width:15rem; border:none; border-bottom:2px solid #000; border-radius:0; margin:0 auto; }
+.custom-select.record dt button { width:15rem; font-size:2.2rem; color:#000; font-weight:500; padding:0 1.5rem 0 0; }
+.custom-select.record dt button span { color:#000; font-size:2.2rem; }
+.custom-select.record dt button::after { right:-1.5rem; }
+.with-tag .record__txt { font-size:1.2rem; color:#000; font-weight:300; font-family:'Noto Sans KR'; font-weight:400; }
 /*about floating button*/
 /*# sourceMappingURL=maps/base.css.map */
