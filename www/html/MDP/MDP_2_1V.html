@@ -15,7 +15,38 @@
 </head>
 <body>
 
+<div class="swiper-container-main">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      <iframe style="width:100%;height:100vh;pointer-events:none;" border="0" src="./MDP_2_2V.html"></iframe>
+    </div>
+    <div class="swiper-slide">
+      <iframe style="width:100%;height:100vh;pointer-events:none;" border="0" src="./MDP_2_3V.html"></iframe>
+    </div>
+    <div class="swiper-slide">
+      <iframe style="width:100%;height:100vh;pointer-events:none;" border="0" src="./MDP_2_4V.html"></iframe>
+    </div>
+    <div class="swiper-slide">
+      <iframe style="width:100%;height:100vh;pointer-events:none;" border="0" src="./MDP_2_5V.html"></iframe>
+    </div>
+    <div class="swiper-slide">
+      <iframe style="width:100%;height:100vh;pointer-events:none;" border="0" src="./MDP_2_5_2V.html"></iframe>
+    </div>
+    <div class="swiper-slide">
+      <iframe style="width:100%;height:100vh;pointer-events:none;" border="0" src="./MDP_2_5_3V.html"></iframe>
+    </div>
+    <div class="swiper-slide">
+      <iframe style="width:100%;height:100vh;pointer-events:none;" border="0" src="./MDP_2_6V.html"></iframe>
+    </div>
+    <div class="swiper-slide">
+      <iframe style="width:100%;height:100vh;pointer-events:none;" border="0" src="./MDP_2_7V.html"></iframe>
+    </div>
+  </div>
+</div>
 <div class="wrapper">
+
+
+
   <div class="header">
     <header>
       <div class="header__back">
@@ -45,13 +76,57 @@
     </div>
   </div>
   <div class="button__flex-wrap bottom-fixed">
-    <button type="button" class="block">
+    <button type="button" class="block tutorialbtn">
       네, 해볼게요.
     </button>
   </div>
 </div>
 
 <script>
+  $(".swiper-container-main").hide();
+  $(".tutorialbtn").on("click",function() {
+    $(".swiper-container-main").show();
+    var swiper = new Swiper('.swiper-container-main', {
+      on: {
+        slideChangeTransitionStart: function () {
+          tabActiveAction(swiper.realIndex);
+        },
+        init: function () {
+         tabActiveAction(0);
+        },
+        slideChangeTransitionEnd() {
+          // const swiper = this;
+          // var url = swiper.$wrapperEl.children('.swiper-slide').eq(swiper.activeIndex);
+          // window.location = url;
+        }
+      },
+    });
+  });
+
+  /* swiper action */
+  var tabActiveAction = function (idx) {
+    var onItem = 'tab__item--on';
+    const tabs = $('.home-health-compare__content .tab__item');
+    tabs.removeClass(onItem);
+    tabs.eq(idx).addClass(onItem);
+  }
+
+  function changeSwipe (i) {
+    swiper.slideTo(i, 300)
+  }
+
+  $('.home-health-compare__title').off('click').on('click', function () {
+    $('.home-health-compare').toggleClass('active');
+    $('.home-health-compare__content').stop().slideToggle(200);
+    if ($('.home-health-compare').hasClass('active')) {
+      $('.main-home').addClass('active-sleep');
+      swiper.init();
+    } else {
+      $('.main-home').removeClass('active-sleep');
+    }
+  });
+
+
 </script>
 </body>
 </html>
