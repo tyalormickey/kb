@@ -88,7 +88,8 @@
 .pa24{padding: 2.4rem !important;}
 
 .pr0{padding-right: 0px !important;}
-
+.pr5{padding-right: 5px !important;}
+.pr10{padding-right: 10px !important;}
 .pr16{padding-right:1.6rem !important;}
 
 .pl0{padding-left: 0px !important;}
@@ -3512,8 +3513,6 @@ textarea::placeholder { color: #999; }
 
 .full-schedule__title-text .subcontent {color:#fff;font-size: 1.4rem;line-height: 1.48;}
 
-
-
 .full-schedule__contents { padding: 0 1.6rem; }
 
 .full-schedule__contents-title { font-weight: 700; font-size: 1.8rem; }
@@ -4996,6 +4995,7 @@ textarea::placeholder { color: #999; }
 .pal10{padding-left:10rem !important;}
 .justify-space-between {justify-content: space-between !important;}
 .justify-center {justify-content: center !important;}
+.justify-right {justify-content: flex-end !important;}
 .font-blue{color:#22a2d1;}
 .font-red{color:#ff0000;}
 #afterchart .line-class-data1 {stroke-width: 2px; }
@@ -5131,7 +5131,14 @@ textarea::placeholder { color: #999; }
 
 .h100per {height:100% !important;background-position: center}
 .w100per {max-width:100% !important;width:100% !important;}
+.w10per {width:10% !important;}
+.w20per {width:20% !important;}
+.w30per {width:30% !important;}
+.w40per {width:40% !important;}
+.w50per {width:50% !important;}
+.w60per {width:60% !important;}
 .w70per {width:70% !important;}
+.w30per {width:30% !important;}
 .w60 {width:60px !important;}
 .whalf {width:50% !important;}
 .tmain_1{background-image: url(../img/t01.png);transition: background 0.3s;}
@@ -5399,5 +5406,11 @@ a#menu-share:hover > i{animation: rotate-out 0.5s;}
 .custom-select.record dt button span { color:#000; font-size:2.2rem; }
 .custom-select.record dt button::after { right:-1.5rem; }
 .with-tag .record__txt { font-size:1.2rem; color:#000; font-weight:300; font-family:'Noto Sans KR'; font-weight:400; }
+
+.card-box {border-radius: 1rem;}
+.txt-border {text-shadow: -1px 0 #4c4c4c, 0 1px #4c4c4c, 1px 0 #4c4c4c, 0 -1px #4c4c4c;}
+
+.scroll-none {-ms-overflow-style: none;scrollbar-width: none;}
+.scroll-none::-webkit-scrollbar {display: none;}
 /*about floating button*/
 /*# sourceMappingURL=maps/base.css.map */
