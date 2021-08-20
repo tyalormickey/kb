@@ -5393,9 +5393,9 @@ a#menu-share:hover > i{animation: rotate-out 0.5s;}
 .main-home.activeBg03 { background-image:url("../img/main/main_daily_img03.jpg"); }
 .main-home.activeBg04 { background-image:url("../img/main/main_daily_img04.jpg"); }
 .main-home.activeBg05 { background-image:url("../img/main/main_daily_img05.jpg"); }
-/*
-.main-top-image .main-health__box-list-type1.bg__add li:first-child { background:url("../img/main/main_daily_img01.jpg") 50% 50% no-repeat; background-size:100% auto; }
-.main-top-image .main-health__box-list-type1.bg__add li:last-child { background:url("../img/main/main_daily_img02.jpg") 50% 50% no-repeat; background-size:100% auto; }
-*/
+
+.main-top-image .main-health__box-list-type1.bg__add li:first-child { background:url("../img/main_home_img01.png") 50% 50% no-repeat; background-size:100% auto; }
+.main-top-image .main-health__box-list-type1.bg__add li:last-child { background:url("../img/main_home_img02.png") 50% 50% no-repeat; background-size:100% auto; }
+
 /*about floating button*/
 /*# sourceMappingURL=maps/base.css.map */
