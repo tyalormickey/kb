@@ -735,6 +735,7 @@
   </div>
 </aside>
 
+<!--
 <script>
 
   /* swiper action */
@@ -773,7 +774,71 @@
     }
   });
 </script>
+-->
+
+<script>
+
+  /* swiper action */
+  var tabActiveAction = function (idx) {
+    var onItem = 'tab__item--on';
+    const tabs = $('.home-health-compare__content .tab__item');
+    tabs.removeClass(onItem);
+    tabs.eq(idx).addClass(onItem);
+
+    var tabN = tabs.length;
+    for(i=0;i<tabN;i++){
+      console.log(Number(idx) + "//" +  i);
+      if(parseInt(i) == parseInt(idx)){
+        $('.main-home').addClass('activeBg0'+(i+1));
+      }else{
+        $('.main-home').removeClass('activeBg0'+(i+1));
+      }
+    }
+  }
+
+  var swiper = new Swiper('.swiper-container', {
+    slidesPerView: 1,
+    observer: true,
+    init: false,
+    on: {
+      slideChangeTransitionStart: function () {
+        tabActiveAction(swiper.realIndex);
+      },
+      init: function () {
+        tabActiveAction(0);
+      }
+    },
+  });
+
+  function changeSwipe (i) {
+    swiper.slideTo(i, 300)
+  }
+
+  $('.home-health-compare__title').off('click').on('click', function () {
+    $('.home-health-compare').toggleClass('active');
+    $('.home-health-compare__content').stop().slideToggle(200);
+
+    var tabs = $('.home-health-compare__content .tab.backtrans');
+    var tabN = tabs.find(".tab__item").length;
+    var idxN = tabs.find(".tab__item--on").index();
+
+    if ($('.home-health-compare').hasClass('active')) {
+      //$('.main-home').addClass('active-sleep');
+      swiper.init();
+      for(i=0;i<tabN;i++){
+        if(parseInt(i) == parseInt(idxN)){
+          $('.main-home').addClass('activeBg0'+(i+1));
+        }
+      }
+    } else {
+      //$('.main-home').removeClass('active-sleep');
+      for(i=0;i<tabN;i++){
+        $('.main-home').removeClass('activeBg0'+(i+1));
+      }
+      console.log("닫기");
+    }
+  });
+</script>
 
 </body>
 </html>
-
