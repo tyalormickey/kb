@@ -251,9 +251,24 @@
                         취침전
                     </div>
                 </div>
+                <!-- EOD : swiper-slide -->
+
+              </div>
+              <!-- EOD : swiper-wrapper -->
             </div>
+            <!-- EOD : tab__swiper -->
+          </div>
+          <!-- EOD : tab_wrap -->
+
+          <!--
+          <div class="tab__wrap">
+
+          </div>
+          -->
+
         </div>
     </div>
+
     <div class="footer footer__nav">
         <nav>
             <ul>
@@ -408,56 +423,47 @@
 <div class="floatbackground"></div>
 <!--floatingbox-->
 
-
-
 <script>
     tab.reset();
     setTimeout(function() {
-        $('.tab__item').click(function() {
-            tab.action($(this))
-        });
+      var swiper = new Swiper('.tab__swiper.swiper-container', {
+        slidesPerView: 1,
+        autoHeight: true
+      });
+      $('.tab__item').click(function() {
+        tab.action($(this), true, swiper)
+      });
+      swiper.on('slideChangeTransitionEnd', function() {
+        var onItem = 'tab__item--on'
+        const tabs = swiper.$el.prev('.tab').children('.tab__item')
+        tabs.removeClass(onItem)
+        tabs.eq(swiper.realIndex).addClass(onItem)
+      });
+      var massageHi = $('.tab__wrap').height() - $('.tab').height()
+      console.log(massageHi)
+      $('.message-box').each(function() {
+        $(this).css('height', massageHi - 40)
+      })
     }, 100);
 
-    var $detailButtons = $('.diet-detail .input-switch-text input');
-    var detailAction = function (target) {
-        var itemTarget = {
-            on: $detailButtons.data('on'),
-            off: $detailButtons.data('off')
-        }
-        $.each(itemTarget, function (item) {
-            if (item === target) {
-                $('.' + itemTarget[item]).show();
-            } else {
-                $('.' + itemTarget[item]).hide();
-            }
-        });
-    }
-    detailAction('off')
-    $detailButtons.off('change').on('change', function () {
-        if ($(this).is(':checked')) {
-            detailAction('on');
-        } else {
-            detailAction('off');
-        }
-    });
-
     var calenderSwiperOption = {
-        direction: "vertical",
-        slidesPerView: 3,
-        loop: false,
-        spaceBetween: 0,
-        mousewheel: true,
-        centeredSlides: true,
-        init: false
+      direction: "vertical",
+      slidesPerView: 3,
+      loop: false,
+      spaceBetween: 0,
+      mousewheel: true,
+      centeredSlides: true,
+      init: false
     }
+
     var swiperYear = new Swiper(".calender-swiper--year", calenderSwiperOption);
     var swiperMonth = new Swiper(".calender-swiper--month", calenderSwiperOption);
     var swiperDay = new Swiper(".calender-swiper--day", calenderSwiperOption);
 
     function calenderSelectOpen() {
-        swiperYear.init();
-        swiperMonth.init();
-        swiperDay.init();
+      swiperYear.init();
+      swiperMonth.init();
+      swiperDay.init();
     }
 </script>
 </body>
