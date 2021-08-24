@@ -5473,6 +5473,8 @@ a#menu-share:hover > i{animation: rotate-out 0.5s;}
 .one-list-item > button .decrease { color: #22a2d1; }
 .one-list-item .icon{font-style: normal;font-size: 1.3rem;color: #FFFFFF;background: #8b6e4d;border-radius: 20px;padding: 2px 10px;}
 
+.tip-title__tip-top15 {top:-15px !important;}
+.boxgray {background:#f7f7fa;border-radius: 10px;}
 
 /*about floating button*/
 /*# sourceMappingURL=maps/base.css.map */
