@@ -79,7 +79,9 @@
 
 .right { text-align: right !important; }
 
-.center { text-align: center !important; justify-content: center !important;}
+.center { text-align: center !important; justify-content: center !important; align-items: center;}
+
+.align-items-center {align-items: center;}
 
 .left0{left:0px !important;}
 
@@ -3058,6 +3060,8 @@ textarea::placeholder { color: #999; }
 
 .manage-graph__label label:nth-of-type(1)::before { background: #76b424; }
 
+.manage-graph__label label.yellow::before { background: #fcaf17 !important; }
+
 .manage-graph__label label:nth-of-type(2)::before { background: #fcaf17; }
 
 .manage-graph__label label.green::before { background: #76b424; }
@@ -3180,7 +3184,11 @@ textarea::placeholder { color: #999; }
 
 .manage-average-bar ul { display: -ms-flexbox; display: flex; -ms-flex-line-pack: center; align-content: center; -ms-flex-pack: justify; justify-content: space-between; }
 
-/*.manage-average-bar ul::before, .manage-average-bar ul::after { content: ''; display: block; border-radius: 100%; width: 1.1rem; height: 1.1rem; background: #999; position: absolute; bottom: 0.6rem; }*/
+.manage-average-bar ul::before, .manage-average-bar ul::after { content: ''; display: block; border-radius: 100%; width: 1.1rem; height: 1.1rem; background: #999; position: absolute; bottom: 0.6rem; }
+
+.square-bar ul::before, .square-bar ul::after {width: 0rem !important; height: 0rem !important;}
+.square-bar li.active::after {width: 0rem !important;height: 0rem !important;}
+
 
 .manage-average-bar ul::before { left: 0; }
 
@@ -3196,9 +3204,9 @@ textarea::placeholder { color: #999; }
     content: ''; display: block; border-radius: 100%; position: absolute; left: 50%; -ms-transform: translateX(-50%); transform: translateX(-50%);
 }
 
-.manage-average-bar li.active::before { bottom: 0; width: 2.3rem; height: 2.3rem; opacity: 0.8; box-shadow: 0 0.3rem 1.2rem 0 rgba(0, 0, 0, 0.3); border: 1px solid #fcaf17; background-color: #fcaf17; }
+.manage-average-bar li.active::before { bottom: 0; width: 2.3rem; height: 2.3rem; opacity: 0.8; box-shadow: 0 0.3rem 1.2rem 0 rgba(0, 0, 0, 0.3); border: 1px solid #fcaf17; background-color: #FFFFFF; }
 
-/*.manage-average-bar li.active::after { width: 1.1rem; height: 1.1rem; bottom: 0.7rem; background: #fcaf17; }*/
+.manage-average-bar li.active::after { width: 1.1rem; height: 1.1rem; bottom: 0.7rem; background: #fcaf17; }
 
 .manage-average-bar li:last-child.active::before, .manage-average-bar li:last-child.active::after { left: inherit; right: 0; -ms-transform: none; transform: none; }
 
@@ -5264,10 +5272,10 @@ textarea::placeholder { color: #999; }
 .txt_blue { color:#22a2d1 !important; }
 .txt_vertical_bottom{vertical-align: bottom !important;}
 .main-health__test { text-align:left; }
-.main-health__test a { position:relative; display:block; padding:1.8rem 1.8rem 1.8rem 10rem; font-size:1.4rem; color:#fff; border-radius:1rem; background:#999088; }
-.main-health__test a:before { content:''; position:absolute; top:50%; margin:-3rem 0 0 0; left:1.8rem; width:6rem; height:6rem; background:url(../img/icons/icon_main_test.png) no-repeat #fff 54% 55%; background-size:3rem auto; border-radius:5rem; }
-.main-health__test a .tit { font-size:1.6rem; font-weight:500; }
-.main-health__test a .txt { margin:1rem 0 0 0; line-height:1.44; }
+.main-health__test button { position:relative; display:block; padding:1.8rem 1.8rem 1.8rem 10rem; font-size:1.4rem; color:#fff; border-radius:1rem; background:#999088; }
+.main-health__test button:before { content:''; position:absolute; top:50%; margin:-3rem 0 0 0; left:1.8rem; width:6rem; height:6rem; background:url(../img/icons/icon_main_test.png) no-repeat #fff 54% 55%; background-size:3rem auto; border-radius:5rem; }
+.main-health__test button .tit { font-size:1.6rem; font-weight:500; }
+.main-health__test button .txt { margin:1rem 0 0 0; line-height:1.44; }
 .main-health__test.type02 a { background:rgba(255, 255, 255, 0.12); }
 .reslut__color { display:flex; margin:2.5rem 0 0 0; font-size:1.2rem; font-weight:500; text-align:center; }
 .reslut__color li { flex:1; }
@@ -5507,5 +5515,7 @@ a#menu-share:hover > i{animation: rotate-out 0.5s;}
 .survary-agree-info ul li { flex:1; font-size:1.4rem; color:#666; font-weight:300; text-align:center; line-height:1.44; }
 .survary-agree-info ul li:first-child { text-align:left; }
 .survary-agree-info ul li:last-child { text-align:right; }
+
+.check-on::after {position:relative;right:-9px;top:-4px;content: '';display: block;width: 8px;height:8px;border-radius: 50%;background: #fcaf17;}
 /*about floating button*/
 /*# sourceMappingURL=maps/base.css.map */
