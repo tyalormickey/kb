@@ -71,7 +71,7 @@
           <section class="swiper-slide">
             <div class="survary-selector type02">
               <div class="survary-selector__title">2. 어려운 상황에서도 즐겁게 생활하려고 노력했다.</div>
-              <div class="survary-selector__list" data-active-count="3"> <!--복수선택일 때 옆에 있는 data-active-count 수를 올려 주세요-->
+              <div class="survary-selector__list" data-active-count="2"> <!-- data-active-count = 선택 가능한 갯수 -->
                 <button type="button" class="survary-selector__list-item">
                   <p>1. 전혀 그렇지 않다</p>
                   <span><i>체크</i></span>
@@ -99,14 +99,13 @@
 
             <div class="survary-selector type02">
               <div class="survary-selector__title">지난 6개월 동안 당신은 하루에 얼마나 담배를 피웠는가?</div>
-              <div class="custom-select">
+              <div class="custom-select inputs">
                 <dl>
                   <dt>
                     <span class="survary-custom-txt">하루에
-                      <span>
-                        <input type="text" name="">
-                      </span>
-                      개피(1갑=20개피)</span>
+                      <!-- <button type="button"><span>00</span></button>개피(1갑=20개피) -->
+                      <input type="text" value="" placeholder="00" maxlength="2"/> 개피(1갑=20개피)
+                    </span>
                   </dt>
                   <dd>
                     <ul>
@@ -195,6 +194,38 @@
               <ul>
                 <li>그렇다</li>
                 <li>보통</li>
+                <li>그렇지<br/>않다</li>
+              </ul>
+            </div>
+
+            <div class="survary-selector type02">
+              <div class="survary-selector__title">나는 우리아이와 항상 마음이 잘 맞아 즐겁다.</div>
+              <div class="survary-selector__line">
+                <ul>
+                  <li>
+                    <label class="input-radio"><input type="radio" name="radio__group"><i></i><span></span></label>
+                  </li>
+                  <li>
+                    <label class="input-radio"><input type="radio" name="radio__group"><i></i><span></span></label>
+                  </li>
+                  <li>
+                    <label class="input-radio"><input type="radio" name="radio__group"><i></i><span></span></label>
+                  </li>
+                  <li>
+                    <label class="input-radio"><input type="radio" name="radio__group"><i></i><span></span></label>
+                  </li>
+                  <li>
+                    <label class="input-radio"><input type="radio" name="radio__group"><i></i><span></span></label>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="survary-agree-info">
+              <ul>
+                <li>매우<br/>그렇다</li>
+                <li>대체로<br/>그렇다</li>
+                <li>보통</li>
+                <li>매우<br/>그렇지<br/>않다</li>
                 <li>그렇지<br/>않다</li>
               </ul>
             </div>

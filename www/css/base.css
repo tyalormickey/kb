@@ -5504,17 +5504,18 @@ a#menu-share:hover > i{animation: rotate-out 0.5s;}
 .survary-list__info li:first-child { margin:0; }
 .survary__check { color:#999; font-size:1.4rem; text-align:right; font-weight:300; }
 .survary-selector__line { margin:2rem 0 0 0; }
-.survary-selector__line ul { position:relative; display:flex;  }
+.survary-selector__line ul { position:relative; display:flex; justify-content:space-between; }
 .survary-selector__line ul:after { content:''; position:absolute; top:50%; margin:-0.1rem 0 0 0; left:0; width:100%; height:0.1rem; background:#d3d4d6; }
-.survary-selector__line ul li { text-align:center; flex:1; }
+.survary-selector__line ul li { text-align:center; width:4rem; }
 .survary-selector__line ul li:first-child { text-align:left; }
 .survary-selector__line ul li:last-child { text-align:right; }
 .survary-selector__line ul li .input-radio { position:relative; z-index:3; }
 .survary-selector__line .input-radio i::before { margin:0; }
-.survary-agree-info ul { display:flex; margin:1rem 0 0 0; }
-.survary-agree-info ul li { flex:1; font-size:1.4rem; color:#666; font-weight:300; text-align:center; line-height:1.44; }
+.survary-agree-info ul { display:flex; margin:1rem 0 0 0; justify-content:space-between; }
+.survary-agree-info ul li { font-size:1.4rem; color:#666; font-weight:300; line-height:1.44; text-align:center; width:4rem; }
 .survary-agree-info ul li:first-child { text-align:left; }
 .survary-agree-info ul li:last-child { text-align:right; }
+.custom-select.inputs dl dt input { display:flex; width:5rem; height:4rem; border:1px solid #acacac; border-radius:1rem; margin:0 1rem; }
 
 .check-on::after {position:relative;right:-9px;top:-4px;content: '';display: block;width: 8px;height:8px;border-radius: 50%;background: #fcaf17;}
 /*about floating button*/
