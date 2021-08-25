@@ -5006,6 +5006,7 @@ textarea::placeholder { color: #999; }
 .h20{height:20px;background:#f6f7fa;}
 .h4rem {height:4rem !important;}
 .h25rem {height:25rem !important;}
+.h60{height:60px;}
 .h120{height:120px;}
 .display_flex{display: flex;align-items: center}
 .display_grid{display: grid;align-items: center;align-content: center;padding:0px !important;}
