@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
+    <link rel='stylesheet' type='text/css' href='../../css/morpheus-reset.min.css'/>
+    <link rel='stylesheet' type='text/css' href='../../css/morpheus-common.css'/>
+    <link rel='stylesheet' type='text/css' href='../../css/morpheus-style.css'/>
+
+    <script src='../../js/libs/jquery-3.1.1.min.js'></script>
+    <script src='../../js/swiper.min.js'></script>
+    <script src='../../js/ui.js'></script>
+</head>
+<body>
+
+<div class="wrapper back_dark_gray">
+    <div class="header">
+        <header class="backtrans">
+            <div class="header__title color_white">
+                <div class="title font-size-25">
+                </div>
+                <div class="header__title--close">
+                    <button type="button" class="only-icon">
+                        <i class="icon-x-white icon-20">닫기</i>
+                    </button>
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <section class="app-auth pt55 swiper guid-main-swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide app-auth__box guid-main ">
+                <div class="app-auth-bio color_white">
+                    <div class="title font-size-25">
+                        어제와 오늘의 나
+                    </div>
+                    <p class="app-auth-bio__text font-size-12 mt5">
+                        생활 속에서 쌓이는 Daily 건강기록을<br>
+                        비교하며 더욱 건강해지는 나를 확인해요
+                    </p>
+                    <img src="../../img/guide_img_1.png" class="mt0">
+                </div>
+            </div>
+
+
+            <div class="swiper-slide app-auth__box guid-main">
+                <div class="app-auth-bio color_white">
+                    <div class="title font-size-25">
+                        데일리 성취 미션
+                    </div>
+                    <p class="app-auth-bio__text font-size-12 mt5">
+                        선택한 성취 목표를 달성하고<br>
+                        하루 최대 2,000 포인트까지 리워드를 받아보세요
+                    </p>
+                    <img src="../../img/guide_img_2.png" class="mt0">
+                </div>
+            </div>
+            <div class="swiper-slide app-auth__box guid-main">
+                <div class="app-auth-bio color_white">
+                    <div class="title font-size-25">
+                        한 눈에 보는 건강정보
+                    </div>
+                    <p class="app-auth-bio__text font-size-12 mt5">
+                        흩어져있던 건강 정보를 모두 모아 확인하고<br>
+                        미래 건강 예측까지 확인해보세요
+                    </p>
+                    <img src="../../img/guide_img_3.png" class="mt0">
+                </div>
+            </div>
+
+            <div class="swiper-slide app-auth__box guid-main">
+                <div class="app-auth-bio color_white">
+                    <div class="title font-size-25">
+                        건강 맞춤 프로그램
+                    </div>
+                    <p class="app-auth-bio__text font-size-12 mt5">
+                        나의 건강관리에<br>
+                        꼭 맞는 프로그램을 추천해 드릴께요
+                    </p>
+                    <img src="../../img/guide_img_4.png" class="mt0">
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <div class="footer footer__nav backtrans no-border guid-main-nav">
+        <ul class="color_white font-size-18 pl16 pr16 pb15 flex_box">
+            <li>
+                <span class="guid-main-nav-prev guid-main-nav-btn">이전</span>
+            </li>
+            <li class="align-items-center justify-center">
+                <div class="swiper-pagination pt5"></div>
+            </li>
+            <li class="txt-align-right">
+                <span class="guid-main-nav-right guid-main-nav-btn">다음</span>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<script>
+var swiper = new Swiper(".guid-main-swiper", {
+    pagination: {
+        el: ".swiper-pagination",
+    },on : {
+        slideChangeTransitionStart: function () {
+            var swiperLength = Number(swiper.slides.length)-1;
+            $(".guid-main-nav-btn").show();
+            if (swiper.realIndex>0 && swiper.realIndex < swiperLength) {
+                $(".guid-main-nav-prev").show();
+            } else if (swiper.realIndex == swiperLength) {
+                $(".guid-main-nav-right").hide();
+            } else {
+                $(".guid-main-nav-right").show();
+                $(".guid-main-nav-prev").hide();
+            }
+        },
+    }
+});
+
+$(".guid-main-nav-prev").on("click",function(){
+    swiper.slideTo(swiper.activeIndex - 1);
+});
+
+$(".guid-main-nav-right").on("click",function(){
+    swiper.slideTo(swiper.activeIndex + 1);
+});
+
+</script>
+</body>
+</html>
