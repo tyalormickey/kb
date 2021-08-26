@@ -37,11 +37,11 @@
 
 .font-size-11, .tag { font-size: 1.1rem; }
 
-.font-size-12, nav ul li span, .home-info__weather-etc span, .home-health-info__graph-box, .manage-graph__box, .manage-time-graph__time, .float-icon.small button span, .nutrition-info__text, .nutrition-info__progress-bar em, .nutrition-info__graph-box { font-size: 1.2rem; }
+.font-size-12, nav ul li span, .home-info__weather-etc span, .home-health-info__graph-box, .manage-graph__box, .manage-time-graph__time, .float-icon.small button span, .nutrition-info__text, .nutrition-info__progress-bar em, .nutrition-info__graph-box { font-size: 1.2rem !important; }
 
 .font-size-13 { font-size: 1.3rem; }
 
-.font-size-14, button.block.small, button.text.small-02, button.text-icon.small-02, .form-item__error, .table-form__item-label, .table-data dt, .table-data__showing, .accordion__button-list button, .accordion__box-list-text, .card-item__tag-info, .card-item__date, .list-item__date, .message-box__text, .tab.depth02 .tab__item span, .modal-popup__body, .home-info__active-progress-data, .home-health-compare .tab__item span, .point-change-detail li, .point-change-both, .point-end dl dt, .point-end dl dd, .point-prod-purchase__slide dl dt, .point-prod-purchase__slide dl dd, .tip-title__tip, .checkup-list__list .card-item__date > *, .certificate__card-code, .certificate__card-info, .certificate__card-info > *, .switch-list__item-sub-title, .health-info__no-device, .app-version, .my-info__profile-img-edit, .board__sub-text, .board__sub-text-and, .float-icon button span, .inquiry__list .card-item__date > *, .inquiry__question-date, .inquiry__answer-date, .inquiry__file-info, .nutrition-info__kcal span, .diet-day-nutrition__info li span, .diet-day-nutrition__info li em, .diet-photo__item-text p, .diet-statistics__data-title em, .my-page__profile-info, .my-page__counts li p, .my-page__point-care-sub, .my-care__item.sub, .my-coupon-detail__top-tag-info, .my-coupon-detail__top-date, .my-coupon-detail__text-sub, .my-payment__top-info, .my-payment-detail dl dt, .my-payment-detail dl dd, .my-payment-detail__method, .my-payment-detail__text-sub, .event_22__cal-title { font-size: 1.4rem; }
+.font-size-14, button.block.small, button.text.small-02, button.text-icon.small-02, .form-item__error, .table-form__item-label, .table-data dt, .table-data__showing, .accordion__button-list button, .accordion__box-list-text, .card-item__tag-info, .card-item__date, .list-item__date, .message-box__text, .tab.depth02 .tab__item span, .modal-popup__body, .home-info__active-progress-data, .home-health-compare .tab__item span, .point-change-detail li, .point-change-both, .point-end dl dt, .point-end dl dd, .point-prod-purchase__slide dl dt, .point-prod-purchase__slide dl dd, .tip-title__tip, .checkup-list__list .card-item__date > *, .certificate__card-code, .certificate__card-info, .certificate__card-info > *, .switch-list__item-sub-title, .health-info__no-device, .app-version, .my-info__profile-img-edit, .board__sub-text, .board__sub-text-and, .float-icon button span, .inquiry__list .card-item__date > *, .inquiry__question-date, .inquiry__answer-date, .inquiry__file-info, .nutrition-info__kcal span, .diet-day-nutrition__info li span, .diet-day-nutrition__info li em, .diet-photo__item-text p, .diet-statistics__data-title em, .my-page__profile-info, .my-page__counts li p, .my-page__point-care-sub, .my-care__item.sub, .my-coupon-detail__top-tag-info, .my-coupon-detail__top-date, .my-coupon-detail__text-sub, .my-payment__top-info, .my-payment-detail dl dt, .my-payment-detail dl dd, .my-payment-detail__method, .my-payment-detail__text-sub, .event_22__cal-title { font-size: 1.4rem !important; }
 
 .font-size-15 { font-size: 1.5rem; }
 
@@ -49,7 +49,7 @@
 
 .font-size-17 { font-size: 1.7rem; }
 
-.font-size-18, button.text.medium, button.text-icon.medium, .point-info__popup dl dt, .point-gray-bg-box__center, .point-change-both .point, .tip-title__title, .pass-agree__title, .term-detail__title, .my-info__profile-text, .page-diet__top-date strong, .page-diet__title-h3, .my-page__profile-text, .my-page__counts li b, .my-page__point-care-title, .my-coupon-detail__top-title, .event_22__title { font-size: 1.8rem; }
+.font-size-18, button.text.medium, button.text-icon.medium, .point-info__popup dl dt, .point-gray-bg-box__center, .point-change-both .point, .tip-title__title, .pass-agree__title, .term-detail__title, .my-info__profile-text, .page-diet__top-date strong, .page-diet__title-h3, .my-page__profile-text, .my-page__counts li b, .my-page__point-care-title, .my-coupon-detail__top-title, .event_22__title { font-size: 1.8rem !important; }
 
 .font-size-19 { font-size: 1.9rem; }
 
@@ -63,7 +63,7 @@
 
 .font-size-24, .home-info__top-name { font-size: 2.4rem; }
 
-.font-size-25, .point-end__title dl dd, .my-payment-detail__pay dl dd { font-size: 2.5rem; }
+.font-size-25, .point-end__title dl dd, .my-payment-detail__pay dl dd { font-size: 2.5rem !important; }
 
 .font-size-26 { font-size: 2.6rem; }
 
@@ -391,6 +391,8 @@
 .icon-smartwatch { font-size: 0; background-image: url("../img/icons/icon_smartwatch.svg"); background-size: contain; background-repeat: no-repeat; background-position: 50% 50%; }
 
 .icon-x { font-size: 0; background-image: url("../img/icons/icon_x.svg"); background-size: contain; background-repeat: no-repeat; background-position: 50% 50%; }
+
+.icon-x-white { font-size: 0; background-image: url("../img/icons/icon_x_white.svg"); background-size: contain; background-repeat: no-repeat; background-position: 50% 50%; }
 
 .icon-arrowL { font-size: 0; background-image: url("../img/icons/icon_arrowL.svg"); background-size: contain; background-repeat: no-repeat; background-position: 50% 50%; }
 
@@ -1467,7 +1469,7 @@ textarea::placeholder { color: #999; }
 .main-home .scrollBox, .main-health .scrollBox, .main-reward .scrollBox { position: relative !important; height: inherit !important; padding: 1.3rem 1.6rem 0; padding-bottom: calc(constant(safe-area-inset-bottom)); padding-bottom: calc(env(safe-area-inset-bottom)); }
 
 /* home - 메인 */
-.main-home { background-image: url("../img/main/home.png"); transition: background 0.3s; }
+.main-home { background-image: url("../img/main/home.png"); transition: background 0.3s; transition-property: -apple-color-filter}
 
 .main-home.active-sleep { background-image: url("../img/main/home_sleep.png"); }
 
@@ -4980,6 +4982,7 @@ textarea::placeholder { color: #999; }
 .color_white {color:#FFFFFF !important;}
 .color_gray {color:#666666 !important;}
 .color_black {color:#000000 !important;}
+.back_dark_gray {background:#2a2c2d !important;}
 .box_margin {margin: 2rem 1.6rem;}
 .flex_box {display: flex;}
 .flex_box .w50{width:50%;display: block;}
@@ -5519,5 +5522,19 @@ a#menu-share:hover > i{animation: rotate-out 0.5s;}
 .custom-select.inputs dl dt input { display:flex; width:5rem; height:4rem; border:1px solid #acacac; border-radius:1rem; margin:0 1rem; }
 
 .check-on::after {position:relative;right:-9px;top:-4px;content: '';display: block;width: 8px;height:8px;border-radius: 50%;background: #fcaf17;}
+
+.guid-main img {height:70%;}
+.guid-main .app-auth-bio {height:100%;}
+.guid-main-nav ul li:first-child > span{display:none;}
+.guid-main-nav ul li:first-child,.guid-main-nav ul li:last-child {width:20%}
+.guid-main-nav ul li:nth-child(2) {width:80%}
+.guid-main-nav ul li:nth-child(2)>div {position: initial;}
+.guid-main-nav .swiper-pagination-bullet-active {width:2rem;border-radius: 10px; background:#76b424 !important;}
+.guid-main-nav .swiper-pagination-bullet {background:#FFFFFF; opacity:1;margin:1.8px;box-shadow: 0 0.3rem 1.2rem 0 rgb(0 0 0 / 30%);}
+
+
+
+.program-banner li {border-radius: 1rem;background: rgba(255, 255, 255, 0.12);margin: 0 0 0 0.9rem;-ms-flex: 0 1 calc(46.8% - 0.9rem);flex: 0 1 calc(46.8% - 0.9rem);height: auto !important;-ms-flex-align: center;align-items: center;}
+.program-banner img {width:100%;}
 /*about floating button*/
 /*# sourceMappingURL=maps/base.css.map */
