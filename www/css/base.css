@@ -1467,7 +1467,7 @@ textarea::placeholder { color: #999; }
 .main-home .scrollBox, .main-health .scrollBox, .main-reward .scrollBox { position: relative !important; height: inherit !important; padding: 1.3rem 1.6rem 0; padding-bottom: calc(constant(safe-area-inset-bottom)); padding-bottom: calc(env(safe-area-inset-bottom)); }
 
 /* home - 메인 */
-.main-home { background-image: url("../img/main/home.png"); transition: background 0.3s; }
+.main-home { background-image: url("../img/main/home.png"); transition: none; }
 
 .main-home.active-sleep { background-image: url("../img/main/home_sleep.png"); }
 
@@ -5496,7 +5496,7 @@ a#menu-share:hover > i{animation: rotate-out 0.5s;}
 .survary-selector__radio .tit { font-size:1.4em; color:#666; margin:0 0 1rem 0; font-weight:300; }
 .survary-selector__radio .tit.ar { text-align:right; margin:1rem 0 0 0; }
 .survary-selector.type02 .custom-select.type02 dt { display:table; width:100%; table-layout:fixed; }
-.survary-selector.type02 .custom-select.type02 dt .tit { display:table-cell; font-size:1.6rem; color:#999; width:6rem; position:relative; top:-0.2rem; }
+.survary-selector.type02 .custom-select.type02 dt .tit { display:table-cell; font-size:1.6rem; color:#999; width:6rem; position:relative; top:0; }
 .survary-selector.type02 .custom-select.type02 dt .info { display:table-cell; }
 .survary-selector.type02 .custom-select.type02 dt .info button { width:100%; margin:0; }
 .survary-selector.type02 .custom-select.type02 dl { margin:0.75rem 0 0 0; }
@@ -5517,7 +5517,9 @@ a#menu-share:hover > i{animation: rotate-out 0.5s;}
 .survary-agree-info ul li:first-child { text-align:left; }
 .survary-agree-info ul li:last-child { text-align:right; }
 .custom-select.inputs dl dt input { display:flex; width:5rem; height:4rem; border:1px solid #acacac; border-radius:1rem; margin:0 1rem; }
-
+.page-mdp-79  .survey__group-intro + .swiper-container { min-height:calc(100% - 4rem); }
 .check-on::after {position:relative;right:-9px;top:-4px;content: '';display: block;width: 8px;height:8px;border-radius: 50%;background: #fcaf17;}
+
+
 /*about floating button*/
 /*# sourceMappingURL=maps/base.css.map */
