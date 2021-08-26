@@ -1296,7 +1296,7 @@ textarea::placeholder { color: #999; }
 
 .tag-pick--sub { background: #76b424; }
 
-.tab { position: relative; overflow-x: auto; overflow-y: hidden; text-align: center; font-size: 0; white-space: nowrap; border-bottom: 1px solid #e6e6e8; z-index:203;top:-8px;}
+.tab { position: relative; overflow-x: auto; overflow-y: hidden; text-align: center; font-size: 0; white-space: nowrap; border-bottom: 1px solid #e6e6e8; z-index:203;top:-8px;background:#FFFFFF;}
 
 .tab.with-depth { margin-bottom: 1.5rem; }
 
