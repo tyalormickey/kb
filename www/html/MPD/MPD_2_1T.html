@@ -421,26 +421,22 @@
 
 <script>
     tab.reset();
-    setTimeout(function() {
-        var swiper = new Swiper('.tab__swiper.swiper-container', {
-            slidesPerView: 1,
-            autoHeight: true
-        });
-        $('.tab__item').click(function() {
-            tab.action($(this), true, swiper)
-        });
-        swiper.on('slideChangeTransitionEnd', function() {
-            var onItem = 'tab__item--on'
-            const tabs = swiper.$el.prev('.tab').children('.tab__item')
-            tabs.removeClass(onItem)
-            tabs.eq(swiper.realIndex).addClass(onItem)
-        });
-        var massageHi = $('.tab__wrap').height() - $('.tab').height()
-        console.log(massageHi)
-        $('.message-box').each(function() {
-            $(this).css('height', massageHi - 40)
-        })
-    }, 100);
+    var swiper = new Swiper('.tab__swiper.swiper-container', {
+        slidesPerView: 1,
+        autoHeight: true,
+        on : {
+            slideChangeTransitionStart: function () {
+                var swiperLength = Number(swiper.slides.length)-1;
+                $(".tab__item").removeClass("tab__item--on");
+                $(".tab__item").eq(swiper.realIndex).addClass("tab__item--on");
+            },
+        }
+    });
+    $('.tab__item').click(function() {
+        tab.action($(this), true, swiper)
+    });
+
+
 
     var calenderSwiperOption = {
         direction: "vertical",

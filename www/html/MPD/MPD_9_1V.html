@@ -40,7 +40,7 @@
     </div>
 
     <div class="content-wrap">
-        <div class="scrollBox no-padding">
+        <div class="scrollBox">
 
             <div class="full-schedule__title">
                 <div class="full-schedule__title-img">
@@ -97,13 +97,33 @@
                 <li class="one-list-item">
                     <button type="button">
                         <span class="list-item__title">
-                          <i class="icon">사운드전</i>
+                          <i class="icon">사운드짐</i>
                           프로그램이 예정되어 있어요
                         </span>
                     </button>
+                    <div class="one-list-item-list">
+                        <button type="button">
+                            <span class="list-item__title">
+                              <i class="icon back_green">AAI</i>
+                              <span>이번 주에 체중을 측정하셨나요?</span>
+                            </span>
+                        </button>
+                        <button type="button">
+                            <span class="list-item__title">
+                              <i class="icon back_blue">휴노</i>
+                              <span>ㅇㅇㅇ ㅇㅇㅇㅇㅇ 상담예약일입니다.</span>
+                            </span>
+                        </button>
+                        <button type="button">
+                            <span class="list-item__title">
+                              <i class="icon back_red">닥터콜</i>
+                              오늘은 ㅇㅇ병원 예약일입니다
+                            </span>
+                        </button>
+                    </div>
                 </li>
             </ul>
-            <section class="main-reward__boxes">
+            <section class="main-reward__boxes pl0">
                 <article class="main-reward__box">
                     <p class="main-reward__box-title color_black">
                         등록된 프로그램
@@ -226,17 +246,57 @@
                 </article>
                 <article class="main-health__box-col3 mb30 mt0">
                     <ul class="main-health__box-list-type2 program-banner">
-                        <li class="txt_black">
+                        <li class="txt_black p-banner-content">
                             <img src="../../img/p-banner-01.png">
+                            <ul class="p-banner-content-info">
+                                <li class="w100per backtrans pl16">
+                                    <img src="../../img/sound-logo.png">
+                                </li>
+                                <li class="txt-align-left backtrans color_white pl16 font-size-12 line-height-14 pt5">
+                                    사운드짐과 함께<br>
+                                    나에게 맞는 운동법을<br>
+                                    찾아볼까요?
+                                </li>
+                            </ul>
                         </li>
-                        <li class="txt_black">
+                        <li class="txt_black p-banner-content">
                             <img src="../../img/p-banner-02.png">
+                            <ul class="p-banner-content-info">
+                                <li class="w100per backtrans pl16">
+                                    <img src="../../img/sound-logo.png">
+                                </li>
+                                <li class="txt-align-left backtrans color_white pl16 font-size-12 line-height-14 pt5">
+                                    1:1 관리를 통해<br>
+                                    만성질환을 개선할 수<br>
+                                    있어요.
+                                </li>
+                            </ul>
                         </li>
-                        <li class="txt_black">
+                        <li class="txt_black p-banner-content">
                             <img src="../../img/p-banner-03.png">
+                            <ul class="p-banner-content-info">
+                                <li class="w100per backtrans pl16">
+                                    <img src="../../img/lifesemantics-logo.png">
+                                </li>
+                                <li class="txt-align-left backtrans color_white pl16 font-size-12 line-height-14 pt5">
+                                    비대면으로 어디서든<br>
+                                    간편하게 전문의를<br>
+                                    만나보세요.
+                                </li>
+                            </ul>
                         </li>
-                        <li class="txt_black">
+                        <li class="txt_black p-banner-content">
                             <img src="../../img/p-banner-04.png">
+                            <ul class="p-banner-content-info">
+                                <li class="w100per backtrans pl16">
+                                    <img src="../../img/sound-logo.png">
+                                </li>
+                                <li class="txt-align-left backtrans color_white pl16 font-size-12 line-height-14 pt5">
+                                    사운드짐과 함께<br>
+                                    나에게 맞는 운동법을<br>
+                                    찾아볼까요?
+                                </li>
+                            </ul>
                         </li>
                     </ul>
                 </article>
@@ -277,6 +337,10 @@
 </div>
 
 <script>
+    $(".one-list-item>button").on("click",function(){
+        $(this).toggleClass("active");
+        $(".one-list-item-list").toggle($(this).hasClass("active"));
+    });
     var swiperGoods = new Swiper(".main-reward__slide-goods .swiper-container", {
         slidesPerView: 1,
         loop: true,

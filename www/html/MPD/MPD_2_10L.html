@@ -38,174 +38,231 @@
             </div>
         </header>
     </div>
+
     <div class="content-wrap">
-        <div class="scrollBox page-mpd-61">
-            <div class="tab__wrap">
+        <div class="scrollBox pd0">
+
+            <!-- tab_wrap -->
+            <div class="tab__wrap mt10 modify">
+                <!-- tab -->
                 <ul class="tab button-type">
-                    <li class="tab__item">
-                        <button type="button">
-                            <span>아침</span>
-                        </button>
-                    </li>
-                    <li class="tab__item">
-                        <button type="button">
-                            <span>점심</span>
-                        </button>
-                    </li>
-                    <li class="tab__item">
-                        <button type="button">
-                            <span>저녁</span>
-                        </button>
-                    </li>
-                    <li class="tab__item">
-                        <button type="button">
-                            <span>취침전</span>
-                        </button>
-                    </li>
+                    <li class="tab__item"><button type="button"><span>아침</span></button></li>
+                    <li class="tab__item"><button type="button"><span>점심</span></button></li>
+                    <li class="tab__item"><button type="button"><span>저녁</span></button></li>
+                    <li class="tab__item"><button type="button"><span>취침전</span></button></li>
                 </ul>
-                <div class="tab__content-wrap">
-                    <div class="tab__content">
-                        <section class="page-diet__top-date">
-                            <strong>2021.06.20</strong>
-                            <button type="button" class="icon-only" onclick="modal.open($(this), '.modal-calender', calenderSelectOpen)">
-                                <i class="icon-cal icon-18">달력</i>
+                <!-- EOD : tab -->
+
+                <section class="page-diet__top-date mt20 modify">
+                    <strong>2021.06.20</strong>
+                    <button type="button" class="icon-only" onclick="modal.open($(this), '.modal-calender', calenderSelectOpen)">
+                        <i class="icon-cal icon-18">달력</i>
+                    </button>
+                </section>
+
+                <!-- tab__swiper -->
+                <div class="tab__swiper swiper-container">
+                    <!-- swiper-wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- swiper-slide -->
+                        <div class="swiper-slide">
+                            <section class="nutrition-info nutrition-info-back-img mt40 modify">
+                                <div class="nutrition-info__title">
+                                    <strong>영양 정보</strong>
+                                    <span>복약 정보를 등록하고 알람을 설정하시면<br>시간에 맞춰 복약 알람을 드려요</span>
+                                </div>
+                            </section>
+                        </div>
+                        <!-- EOD : swiper-slide -->
+
+                        <!-- swiper-slide -->
+                        <div class="swiper-slide">
+                            <section class="nutrition-info mt40 modify">
+                                <div class="nutrition-info__title">
+                                    <strong>홍길동님</strong>
+                                    <span>아침 두통약 드셨나요? 알맞은 시간에<br>복약 후 복약 체크 [v] 잊지 마세요! </span>
+                                </div>
+                            </section>
+
+                            <div class="point-swipe__box">
+                                <section class="point-change-contents cardbox_01 mt30">
+                                    <div class="point-change-agree__all cardtitle no-border">
+                          <span class="card-item__title">
+                            두통약
+                              <button type="button" class="text-icon small-01 float-right">
+                                  <i class="icon-edit"></i>
+                              </button>
+                          </span>
+                          <span class="card-item__tag">
+                            <div class="card-item__tag-info">
+                              총 3종, 최대 일2회 복용 / 전체 알람
+                            </div>
+                          </span>
+                                    </div>
+                                    <ul class="point-change-agree__list pl24">
+                                        <!--두통약 list -->
+                                        <li class="point-change-agree__item">
+                                            <button type="button">
+                                                <label class="input-checkbox">
+                                                    <input type="checkbox">
+                                                    <i></i>
+                                                    <span>
+                                          <dl class="diet-statistics__data-list medicine mt0">
+                                              <dd class="no-border pa0">
+                                                <ul>
+                                                    <li class="pl0 w60"><strong class="txt_black">05:00</strong></li>
+                                                  <li class="text-data-list">[일반] 우먼스타이레놀정</li>
+                                                </ul>
+                                              </dd>
+                                          </dl>
+                                      </span>
+                                                </label>
+                                            </button>
+                                        </li>
+                                        <li class="point-change-agree__item">
+                                            <button type="button">
+                                                <label class="input-checkbox">
+                                                    <input type="checkbox">
+                                                    <i></i>
+                                                    <span>
+                                          <dl class="diet-statistics__data-list medicine mt0">
+                                              <dd class="no-border pa0">
+                                                <ul>
+                                                    <li class="pl0 w60"><strong class="txt_black">05:30</strong></li>
+                                                  <li class="text-data-list">[전문] 대웅 바이오 두바이어 이란우라라라</li>
+                                                </ul>
+                                              </dd>
+                                          </dl>
+                                      </span>
+                                                </label>
+                                            </button>
+                                        </li>
+                                        <li class="point-change-agree__item">
+                                            <button type="button">
+                                                <label class="input-checkbox">
+                                                    <input type="checkbox">
+                                                    <i></i>
+                                                    <span>
+                                          <dl class="diet-statistics__data-list medicine mt0">
+                                              <dd class="no-border pa0">
+                                                <ul>
+                                                    <li class="pl0 w60"><strong class="txt_black">06:00</strong></li>
+                                                  <li class="text-data-list line-through">[전문] OO캡슐60mg </li>
+                                                </ul>
+                                              </dd>
+                                          </dl>
+                                      </span>
+                                                </label>
+                                            </button>
+                                        </li>
+                                        <!--두통약 list -->
+                                    </ul>
+                                </section>
+
+                                <section class="point-change-contents cardbox_01 mt30">
+                                    <div class="point-change-agree__all cardtitle no-border">
+                        <span class="card-item__title">
+                          두통약
+                            <button type="button" class="text-icon small-01 float-right">
+                                <i class="icon-edit"></i>
                             </button>
-                        </section>
-                        <!-- start: if data length > 0 -->
-                        <section class="nutrition-info nutrition-info-back-img">
-                            <div class="nutrition-info__title">
-                                <strong>영양 정보</strong>
-                                <span>복약 정보를 등록하고 알람을 설정하시면<br>시간에 맞춰 복약 알람을 드려요</span>
-                            </div>
-                        </section>
-                    </div>
-                    <div class="tab__content">
-                        <section class="page-diet__top-date">
-                            <strong>2021.06.20</strong>
-                            <button type="button" class="icon-only" onclick="modal.open($(this), '.modal-calender', calenderSelectOpen)">
-                                <i class="icon-cal icon-18">달력</i>
-                            </button>
-                        </section>
-                        <!-- start: if data length > 0 -->
-                        <section class="nutrition-info">
-                            <div class="nutrition-info__title">
-                                <strong>홍길동님</strong>
-                                <span>아침 두통약 드셨나요? 알맞은 시간에<br>복약 후 복약 체크 [v] 잊지 마세요! </span>
-                            </div>
-                        </section>
+                        </span>
+                                        <span class="card-item__tag">
+                          <div class="card-item__tag-info">
+                            총 3종, 최대 일2회 복용 / 전체 알람
+                          </div>
+                        </span>
+                                    </div>
+                                    <ul class="point-change-agree__list pl24">
+                                        <!--두통약 list -->
+                                        <li class="point-change-agree__item">
+                                            <button type="button">
+                                                <label class="input-checkbox">
+                                                    <input type="checkbox">
+                                                    <i></i>
+                                                    <span>
+                                        <dl class="diet-statistics__data-list medicine mt0">
+                                            <dd class="no-border pa0">
+                                              <ul>
+                                                  <li class="pl0 w60"><strong class="txt_black">05:00</strong></li>
+                                                <li class="text-data-list">[일반] 우먼스타이레놀정</li>
+                                              </ul>
+                                            </dd>
+                                        </dl>
+                                    </span>
+                                                </label>
+                                            </button>
+                                        </li>
+                                        <li class="point-change-agree__item">
+                                            <button type="button">
+                                                <label class="input-checkbox">
+                                                    <input type="checkbox">
+                                                    <i></i>
+                                                    <span>
+                                        <dl class="diet-statistics__data-list medicine mt0">
+                                            <dd class="no-border pa0">
+                                              <ul>
+                                                  <li class="pl0 w60"><strong class="txt_black">05:30</strong></li>
+                                                <li class="text-data-list">[전문] 대웅 바이오 두바이어 이란우라라라</li>
+                                              </ul>
+                                            </dd>
+                                        </dl>
+                                    </span>
+                                                </label>
+                                            </button>
+                                        </li>
+                                        <li class="point-change-agree__item">
+                                            <button type="button">
+                                                <label class="input-checkbox">
+                                                    <input type="checkbox">
+                                                    <i></i>
+                                                    <span>
+                                        <dl class="diet-statistics__data-list medicine mt0">
+                                            <dd class="no-border pa0">
+                                              <ul>
+                                                  <li class="pl0 w60"><strong class="txt_black">06:00</strong></li>
+                                                <li class="text-data-list line-through">[전문] OO캡슐60mg </li>
+                                              </ul>
+                                            </dd>
+                                        </dl>
+                                    </span>
+                                                </label>
+                                            </button>
+                                        </li>
+                                        <!--두통약 list -->
+                                    </ul>
+                                </section>
 
-
-                        <section class="point-change-contents cardbox_01 mt30">
-                            <div class="point-change-agree__all cardtitle">
-                                <span class="card-item__title">
-                                  두통약
-                                </span>
-                                <span class="card-item__tag">
-                                  <div class="card-item__tag-info">
-                                    총 3종, 최대 일2회 복용 / 전체 알람
-                                  </div>
-                                </span>
                             </div>
-                            <ul class="point-change-agree__list pl24">
-                                <li class="point-change-agree__item">
-                                    <button type="button">
-                                        <label class="input-checkbox">
-                                            <input type="checkbox">
-                                            <i></i>
-                                            <span>
-                                                <dl class="diet-statistics__data-list mt0">
-                                                    <dd class="no-border pa0">
-                                                      <ul>
-                                                          <li class="pl0 w60"><strong class="txt_black">05:00</strong></li>
-                                                        <li class="text-data-list">[일반] 우먼스타이레놀정</li>
-                                                      </ul>
-                                                    </dd>
-                                                </dl>
-                                            </span>
-                                        </label>
-                                    </button>
-                                </li>
-                                <li class="point-change-agree__item">
-                                    <button type="button">
-                                        <label class="input-checkbox">
-                                            <input type="checkbox">
-                                            <i></i>
-                                            <span>
-                                                <dl class="diet-statistics__data-list mt0">
-                                                    <dd class="no-border pa0">
-                                                      <ul>
-                                                          <li class="pl0 w60"><strong class="txt_black">05:30</strong></li>
-                                                        <li class="text-data-list">[일반] 우먼스타이레놀정</li>
-                                                      </ul>
-                                                    </dd>
-                                                </dl>
-                                            </span>
-                                        </label>
-                                    </button>
-                                </li>
-                            </ul>
-                        </section>
 
+                        </div>
+                        <!-- EOD : swiper-slide -->
 
-                        <section class="point-change-contents cardbox_01 mt30">
-                            <div class="point-change-agree__all cardtitle">
-                                <span class="card-item__title">
-                                  복통약
-                                </span>
-                                <span class="card-item__tag">
-                                  <div class="card-item__tag-info">
-                                    총 3종, 최대 일2회 복용 / 전체 알람
-                                  </div>
-                                </span>
-                            </div>
-                            <ul class="point-change-agree__list pl24">
-                                <li class="point-change-agree__item">
-                                    <button type="button">
-                                        <label class="input-checkbox">
-                                            <input type="checkbox">
-                                            <i></i>
-                                            <span>
-                                                <dl class="diet-statistics__data-list mt0">
-                                                    <dd class="no-border pa0">
-                                                      <ul>
-                                                          <li class="pl0 w60"><strong class="txt_black">05:00</strong></li>
-                                                        <li class="text-data-list">[일반] 우먼스타이레놀정</li>
-                                                      </ul>
-                                                    </dd>
-                                                </dl>
-                                            </span>
-                                        </label>
-                                    </button>
-                                </li>
-                                <li class="point-change-agree__item">
-                                    <button type="button">
-                                        <label class="input-checkbox">
-                                            <input type="checkbox">
-                                            <i></i>
-                                            <span>
-                                                <dl class="diet-statistics__data-list mt0">
-                                                    <dd class="no-border pa0">
-                                                      <ul>
-                                                          <li class="pl0 w60"><strong class="txt_black">05:30</strong></li>
-                                                        <li class="text-data-list">[일반] 우먼스타이레놀정</li>
-                                                      </ul>
-                                                    </dd>
-                                                </dl>
-                                            </span>
-                                        </label>
-                                    </button>
-                                </li>
-                            </ul>
-                        </section>
+                        <!-- swiper-slide -->
+                        <div class="swiper-slide">
+                            저녁
+                        </div>
+                        <!-- EOD : swiper-slide -->
+
+                        <!-- swiper-slide -->
+                        <div class="swiper-slide">
+                            취침전
+                        </div>
+                        <!-- EOD : swiper-slide -->
+
                     </div>
-                    <div class="tab__content">
-                        저녁
-                    </div>
-                    <div class="tab__content">
-                        취침전
-                    </div>
+                    <!-- EOD : swiper-wrapper -->
                 </div>
+                <!-- EOD : tab__swiper -->
             </div>
+            <!-- EOD : tab_wrap -->
+
+            <!--
+            <div class="tab__wrap">
+
+            </div>
+            -->
+
         </div>
     </div>
     <div class="footer footer__nav">
@@ -452,6 +509,23 @@
             tab.action($(this))
         });
     }, 100);
+
+    tab.reset();
+    var swiper = new Swiper('.tab__swiper.swiper-container', {
+        slidesPerView: 1,
+        autoHeight: true,
+        on : {
+            slideChangeTransitionStart: function () {
+                var swiperLength = Number(swiper.slides.length)-1;
+                $(".tab__item").removeClass("tab__item--on");
+                $(".tab__item").eq(swiper.realIndex).addClass("tab__item--on");
+            },
+        }
+    });
+    $('.tab__item').click(function() {
+        tab.action($(this), true, swiper)
+    });
+
 
     var $detailButtons = $('.diet-detail .input-switch-text input');
     var detailAction = function (target) {
