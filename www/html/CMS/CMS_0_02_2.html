@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-reset.min.css'/>
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-common.css'/>
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-style.css'/>
+
+  <script src='../../js/libs/jquery-3.1.1.min.js'></script>
+  <script src='../../js/swiper.min.js'></script>
+  <script src='../../js/ui.js'></script>
+</head>
+<body>
+
+<div class="wrapper">
+  <div class="header">
+    <header>
+      <div class="header__title">
+        <div class="title">
+          그룹1
+        </div>
+      </div>
+    </header>
+  </div>
+  <div class="content-wrap">
+
+    <div class="scrollBox">
+
+      <div class="survey__group-intro">
+        <div class="mentailty__bar mt0">
+          <div class="tit">설문2</div>
+          <div class="bar"><span></span></div>
+          <div class="num">
+            <span class="now"></span>/<span class="all"></span>
+          </div>
+        </div>
+      </div>
+
+      <section class="swiper-slide">
+        <div class="survary-selector type02">
+          <div class="survary-selector__title">자녀에게 신체 문제 외 기타 발달이나<br>정신건강상의 문제 혹은 장애가 있습니까?</div>
+          <div class="survary-selector__list" data-active-count="1"> <!-- data-active-count = 선택 가능한 갯수 -->
+
+            <input type="checkbox" name="survery-item" id="survery-item-1" value="아니오">
+            <label for="survery-item-1" class="survary-selector__list-item" data-type="etc">
+              <p>1. 아이오</p>
+              <span><i>체크</i></span>
+            </label>
+            <textarea name="survery-item-1-etc" class="survary-selector__list-item h240 etctextarea" style="display: none" placeholder="구체적인 내용을 적어주세요."></textarea>
+
+            <input type="checkbox" name="survery-item" id="survery-item-2" value="예">
+            <label for="survery-item-2"  type="button" class="survary-selector__list-item" data-type="etc">
+              <p>2. 예(구체적 내용)</p>
+              <span><i>체크</i></span>
+            </label>
+
+            <textarea name="survery-item-2-etc" class="survary-selector__list-item h240 etctextarea" style="display: none" placeholder="구체적인 내용을 적어주세요."></textarea>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </div>
+  <div class="footer footer__nav">
+    <div class="button__flex-wrap">
+      <button class="block gray" type="button" data-button="prev">
+        이전
+      </button>
+      <button class="block" type="button" data-button="next">
+        다음
+      </button>
+    </div>
+  </div>
+</div>
+
+
+<script>
+  var idxNGroup = 4;
+  $(".mentailty__bar").find(".now").text("2").siblings(".all").text(idxNGroup);
+  $(".mentailty__bar").find(".bar span").css("width", (2/idxNGroup)*100 +"%");
+
+
+  $('.survary-selector__list').each(function () {
+    var $item = $(this).find('.survary-selector__list-item');
+    var count = parseInt($(this).data('active-count'));
+
+    $item.off('click').on('click', function () {
+      if (count === 1 || $(this).hasClass('only')) {
+        $(this).toggleClass('active').siblings().removeClass('active');
+        $(".etctextarea").hide();
+        if($(this).data("type")=="etc") {
+          $(this).next().toggle($(this).hasClass('active'));
+        }
+      } else {
+        if ($(this).hasClass('active')) {
+          $(this).removeClass('active');
+        } else if ($item.filter('.active').length < count) {
+          $(this).addClass('active');
+          $item.filter('.only').removeClass('active');
+        }
+      }
+    })
+  });
+</script>
+</body>
+</html>
