@@ -5605,5 +5605,11 @@ a#menu-share:hover > i{animation: rotate-out 0.5s;}
 .survary-selector_radio li input:checked + span { background:#76b424; color:#fff; }
 .survary-selector_radio .tit { font-size:1.4em; color:#666; margin:0 0 1rem 0; font-weight:300; }
 .survary-selector_radio .tit.ar { text-align:right; margin:1rem 0 0 0; }
+
+
+.selectbox {position: relative;width: 100%;z-index: 1;}
+.selectbox:before {content: "";position: absolute;top: 38%;right: 15px;width: 15px;height: 15px;margin-top: -1px;background: url(../img/icons/icon_select.svg) no-repeat;background-size: contain;}
+select {width: 100%;padding: 1.3rem;font-family: inherit;border: 1px solid #acacac;-webkit-appearance: none;-moz-appearance: none;appearance: none;background-size: contain;border-radius: 10px;}
+select::-ms-expand {display: none;}
 /*about floating button*/
 /*# sourceMappingURL=maps/base.css.map */
