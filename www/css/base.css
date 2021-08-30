@@ -77,6 +77,7 @@
 
 .line-height-14 { line-height: 1.43; }
 
+.line-height-24 { line-height: 2.43; }
 
 .left { text-align: left !important; }
 
@@ -723,6 +724,7 @@ html.outer-overflow body, html.outer-overflow .wrapper {
 header { background-color: #fff; padding: 0 1.6rem; }
 
 header .logo { width: 5.1rem; }
+header .logo:after {position: absolute;top: 0;right: 0;bottom: 0;left: 0;content: '';background: rgba(0, 0, 0, 0.2);}
 
 header .logo img { width: 100%; }
 
@@ -1537,7 +1539,7 @@ textarea::placeholder { color: #999; }
 
 .home-info__active-progress-title button { position: absolute; top: 50%; right: 0; -ms-transform: translateY(-50%); transform: translateY(-50%); color: #fff; }
 
-.home-info__active-progress-title button.only-icon i { filter: invert(98%) sepia(10%) saturate(48%) hue-rotate(76deg) brightness(119%) contrast(100%); }
+.home-info__active-progress-title button.only-icon i {position: relative;top: 15px;right: -15px;filter: invert(98%) sepia(10%) saturate(48%) hue-rotate(76deg) brightness(119%) contrast(100%); }
 
 .home-info__active-progress-data { line-height: 1.48; display: -ms-flexbox; display: flex; -ms-flex-align: center; align-items: center; }
 
@@ -5562,7 +5564,7 @@ a#menu-share:hover > i{animation: rotate-out 0.5s;}
 .survary-agree-info ul li { font-size:1.4rem; color:#666; font-weight:300; line-height:1.44; text-align:center; width:4rem; }
 .survary-agree-info ul li:first-child { text-align:left; }
 .survary-agree-info ul li:last-child { text-align:right; }
-.custom-select.inputs dl dt input { display:flex; width:5rem; height:4rem; border:1px solid #acacac; border-radius:1rem; margin:0 1rem; }
+.custom-select.inputs dl dt input { width:5rem; height:4rem; border:1px solid #acacac; border-radius:1rem; margin:0 1rem; }
 .page-mdp-79  .survey__group-intro + .swiper-container { min-height:calc(100% - 4rem); }
 .check-on::after {position:relative;right:-9px;top:-4px;content: '';display: block;width: 8px;height:8px;border-radius: 50%;background: #fcaf17;}
 
