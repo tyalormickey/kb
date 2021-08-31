@@ -306,6 +306,11 @@
 
 .icon-arrow_right, .card-item.arrow::after, .list-item > button::after, .modal-program-teacher .swiper-button-next, .modal-program-teacher .swiper-button-prev, .point-change-agree__item button::after, .manage-link-box::after, .service-agree__item button::after, .all-menu__nav dd button::after, .setting-nav li > button::after { font-size: 0; background-image: url("../img/icons/icon_arrow_right.svg"); background-size: contain; background-repeat: no-repeat; background-position: 50% 50%; }
 
+.icon-arrow_right_white{ font-size: 0; background-image: url("../img/icons/icon_arrow_right_white.svg"); background-size: contain; background-repeat: no-repeat; background-position: 50% 50%; }
+
+.home-info__active-progress-title .icon-arrow_right_white {position:absolute;top:6px;}
+
+
 .icon-bluetooth { font-size: 0; background-image: url("../img/icons/icon_bluetooth.svg"); background-size: contain; background-repeat: no-repeat; background-position: 50% 50%; }
 
 .icon-button { font-size: 0; background-image: url("../img/icons/icon_button.svg"); background-size: contain; background-repeat: no-repeat; background-position: 50% 50%; }
@@ -1674,7 +1679,7 @@ textarea::placeholder { color: #999; }
 
 .main-health .scrollBox { padding-bottom: 2.875rem; }
 
-.main-health__score, .main-health__boxes { padding-left: 2.2rem; }
+.main-health__score, .main-health__boxes { /*padding-left: 2.2rem;*/ }
 
 .main-health__score { color: #fff; margin-top: 10rem; position: relative; z-index:1;}
 
@@ -2392,7 +2397,7 @@ textarea::placeholder { color: #999; }
 
 .program-teacher__thumb img { max-width: 100%; }
 
-.program-teacher__name { margin: 0.6rem -0.8rem 0; text-align: center; font-size: 1.4rem; line-height: 1.89; color: #666; }
+.program-teacher__name { margin: 0.6rem -0.8rem 0; text-align: center; font-size: 1.4rem; /*line-height: 1.89;*/ color: #666; }
 
 .program-teacher__info { margin-left: 1rem; }
 
@@ -2434,7 +2439,7 @@ textarea::placeholder { color: #999; }
 
 .mpd95 .tab__content { padding-top: 1.4rem; }
 
-.mpd95 .visual-expand__box { min-height: 23.4rem; background-color: #8e9090; }
+.mpd95 .visual-expand__box { min-height: 23.4rem;background-size:cover !important;}
 
 .mpd95 .visual-expand__contents { padding: 7.6rem 1.6rem 2rem; }
 
@@ -3296,7 +3301,7 @@ textarea::placeholder { color: #999; }
 
 .manage-list { border-top: 1px solid #d3d4d6; }
 
-.manage-list.no-border { border-top: 0; }
+.manage-list.no-border { border-top: 0;}
 
 .manage-list > li { display: -ms-flexbox; display: flex; border-bottom: 1px solid #d3d4d6; padding: 1.5rem; -ms-flex-pack: justify; justify-content: space-between; -ms-flex-align: center; align-items: center; line-height: 1.66; font-size: 1.6rem; color: #000; }
 
@@ -4591,7 +4596,7 @@ textarea::placeholder { color: #999; }
 
 .diet-day-nutrition__info li { display: -ms-flexbox; display: flex; -ms-flex-pack: justify; justify-content: space-between; -ms-flex-align: center; align-items: center; text-align: left; }
 
-.diet-day-nutrition__info li + li { margin-top: 2rem; }
+.diet-day-nutrition__info li + li { margin-top: 0.72rem; }
 
 .diet-day-nutrition__info li span { line-height: 1.42; color: #666; }
 
@@ -4625,11 +4630,11 @@ textarea::placeholder { color: #999; }
 
 .diet-photo__item-title button.text-icon .icon-button { position: relative; top: 0.1rem; background-size: auto 100%; }
 
-.diet-photo__item-text { line-height: 1.65625; margin-top: 1rem; }
+.diet-photo__item-text { /*line-height: 1.65625;*/ margin-top: 1rem; }
 
 .diet-photo__item-text p { color: #999; margin-top: 1rem; }
 
-.diet-photo__item-box { border: 1px solid #d3d4d6; border-radius: 1rem; padding: 1.5rem 1.5rem 2.5rem; margin-top: 1.2rem; }
+.diet-photo__item-box { border: 1px solid #d3d4d6; border-radius: 1rem; padding: 1.5rem; margin-top: 1.2rem; }
 
 .diet-photo__item-image .no-image { height: 15rem; }
 
@@ -5106,6 +5111,7 @@ textarea::placeholder { color: #999; }
 .mentality__end-text { font-size:1.8rem; font-weight:500; color:#000; text-align:center; margin:4rem 0 0 0; }
 .txt-align-left {text-align: left !important;}
 .txt-align-right {text-align: right !important;}
+.txt-outline {text-shadow: -1px 0 #4c4c4c, 0 1px #4c4c4c, 1px 0 #4c4c4c, 0 -1px #4c4c4c;}
 .fontNotoSansCJKKR {font-family: "Noto Sans CJK KR" !important;}
 .align-item-end {align-items: flex-end;}
 .tutorial-background {position: absolute;left: 0;top: 0;background: #000;z-index: 997;opacity: 0.85;}
@@ -5391,7 +5397,7 @@ a#menu-share:hover > i{animation: rotate-out 0.5s;}
 @keyframes rotate-out {from {transform: rotate(360deg);}to {transform: rotate(0deg);}}
 
 .nutrition-info-back-img {background-image: url(../img/backimg_2_1.png) !important;background-size: cover;height: 250px;background-position: center;background-repeat: no-repeat;}
-.no-border{border:0px !important;border-width:0px; !important;}
+.no-border{border:0px !important;border-width:0px; !important;box-shadow:0 0 0 0;}
 .no-margin{margin:0px !important;}
 .text-data-list {display: inline-block;width: 80% !important;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
 .text-data-arrow > img{width:10px;}
@@ -5620,5 +5626,8 @@ select::-ms-expand {display: none;}
 .healthtable tbody td {padding:0.7rem;font-size:1.4rem}
 .healthtable tbody td:first-child{border-left:1px solid #cccccc;border-right:1px solid #cccccc;border-bottom:1px solid #cccccc;}
 .healthtable tbody td:last-child{text-align:center;border-left:1px solid #cccccc;border-right:1px solid #cccccc;border-bottom:1px solid #cccccc;}
+
+
+.health_title i {position: relative;right: -30px;top: -2px;}
 /*about floating button*/
 /*# sourceMappingURL=maps/base.css.map */
