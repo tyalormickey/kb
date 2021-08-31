@@ -5621,13 +5621,20 @@ select {width: 100%;padding: 1.3rem;font-family: inherit;border: 1px solid #acac
 select::-ms-expand {display: none;}
 
 .healthtable {width:100%;}
-.healthtable thead{background:#cccccc;}
-.healthtable thead th {border-left:1px solid #cccccc;border-right:1px solid #cccccc;border-top:1px solid #cccccc;padding:0.7rem;font-size:1.4rem;}
-.healthtable tbody td {padding:0.7rem;font-size:1.4rem}
-.healthtable tbody td:first-child{border-left:1px solid #cccccc;border-right:1px solid #cccccc;border-bottom:1px solid #cccccc;}
-.healthtable tbody td:last-child{text-align:center;border-left:1px solid #cccccc;border-right:1px solid #cccccc;border-bottom:1px solid #cccccc;}
+.healthtable thead {background:#f6f7fa;}
+.healthtable thead th {border-top:1px solid #d3d4d6;border-bottom:1px solid #d3d4d6;padding:0.7rem;font-size:1.4rem;color:#99999;font-weight: normal}
+.healthtable thead th:first-child {border-right:1px solid #d3d4d6;}
 
+.healthtable tbody td {padding:0.7rem;font-size:1.4rem;border-bottom:1px solid #d3d4d6;padding:1.5rem}
+.healthtable tbody td:first-child{border-bottom:1px solid #d3d4d6;}
+.healthtable tbody td:last-child{border-left:1px solid #d3d4d6;}
 
 .health_title i {position: relative;right: -30px;top: -2px;}
+
+.cms-wrapper .header {height:auto !important;position:sticky !important;}
+.cms-wrapper .header .header__title {height:auto !important;position:sticky !important;padding-bottom:0px !important;}
+.cms-wrapper .content-wrap {padding:0px !important;}
+.cms-wrapper .content-wrap .scrollBox{margin-top:0px !important;padding-top:0px !important;}
+
 /*about floating button*/
 /*# sourceMappingURL=maps/base.css.map */
