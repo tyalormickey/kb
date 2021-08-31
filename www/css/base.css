@@ -5613,5 +5613,12 @@ a#menu-share:hover > i{animation: rotate-out 0.5s;}
 .selectbox:before {content: "";position: absolute;top: 38%;right: 15px;width: 15px;height: 15px;margin-top: -1px;background: url(../img/icons/icon_select.svg) no-repeat;background-size: contain;}
 select {width: 100%;padding: 1.3rem;font-family: inherit;border: 1px solid #acacac;-webkit-appearance: none;-moz-appearance: none;appearance: none;background-size: contain;border-radius: 10px;}
 select::-ms-expand {display: none;}
+
+.healthtable {width:100%;}
+.healthtable thead{background:#cccccc;}
+.healthtable thead th {border-left:1px solid #cccccc;border-right:1px solid #cccccc;border-top:1px solid #cccccc;padding:0.7rem;font-size:1.4rem;}
+.healthtable tbody td {padding:0.7rem;font-size:1.4rem}
+.healthtable tbody td:first-child{border-left:1px solid #cccccc;border-right:1px solid #cccccc;border-bottom:1px solid #cccccc;}
+.healthtable tbody td:last-child{text-align:center;border-left:1px solid #cccccc;border-right:1px solid #cccccc;border-bottom:1px solid #cccccc;}
 /*about floating button*/
 /*# sourceMappingURL=maps/base.css.map */
