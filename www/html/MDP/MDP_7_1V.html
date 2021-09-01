@@ -415,10 +415,10 @@
       $expand.scroll(function () {
         if ($(this).scrollTop() < 70) {
           $('header').removeClass('vh-scroll')
-          $('header').parent('.header').removeClass('vh-scroll-parent');
+          $('header').parent('.wrapper > .header').removeClass('vh-scroll-parent');
         } else {
           $('header').addClass('vh-scroll')
-          $('header').parent('.header').addClass('vh-scroll-parent');
+          $('header').parent('.wrapper > .header').addClass('vh-scroll-parent');
         }
       });
     }

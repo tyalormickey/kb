@@ -120,6 +120,10 @@
 
 .mt5 { margin-top: 0.5rem !important; }
 
+.mt10 { margin-top: 1rem !important; }
+
+.mt13 { margin-top: 1rem !important; }
+
 .mb0 { margin-bottom: 0px !important;}
 
 .mb5 { margin-bottom: 0.5rem !important; }
@@ -133,8 +137,6 @@
 .pb0 { padding-bottom: 0rem !important; }
 
 .pb5 { padding-bottom: 0.5rem !important; }
-
-.mt10 { margin-top: 1rem !important; }
 
 .mb10 { margin-bottom: 1rem !important; }
 
@@ -302,7 +304,7 @@
 
 .icon-80, .app-auth-bio__target, .blood-method__searching-icon { display: inline-block; width: 8rem; height: 8rem; }
 
-.icon-arrow_left { font-size: 0; background-image: url("../img/icons/icon_arrow_left.svg"); background-size: contain; background-repeat: no-repeat; background-position: 50% 50%; }
+.icon-arrow_left { font-size: 0; background-image: url("../img/icons/icon_arrow_left.svg"); background-size: contain; background-repeat: no-repeat; background-position: 50% 50%;z-index:997 }
 
 .icon-arrow_right, .card-item.arrow::after, .list-item > button::after, .modal-program-teacher .swiper-button-next, .modal-program-teacher .swiper-button-prev, .point-change-agree__item button::after, .manage-link-box::after, .service-agree__item button::after, .all-menu__nav dd button::after, .setting-nav li > button::after { font-size: 0; background-image: url("../img/icons/icon_arrow_right.svg"); background-size: contain; background-repeat: no-repeat; background-position: 50% 50%; }
 
@@ -2427,7 +2429,7 @@ textarea::placeholder { color: #999; }
 
 .visual-expand__header.top header { background-color: transparent; }
 
-.visual-expand__header.top header i { filter: invert(98%) sepia(10%) saturate(48%) hue-rotate(76deg) brightness(119%) contrast(100%); }
+.visual-expand__header.top header i { filter: invert(98%) sepia(10%) saturate(48%) hue-rotate(76deg) brightness(119%) contrast(100%) drop-shadow(0px 0px 1px #000000); }
 
 .visual-expand__header.top header .title { opacity: 0; transition: all 0.3s linear; }
 
@@ -2447,7 +2449,7 @@ textarea::placeholder { color: #999; }
 
 .mpd95 .visual-expand__contents .program-list__icons span { color: #fff; }
 
-.mpd95 .visual-expand__contents .program-list__icons i { filter: invert(98%) sepia(10%) saturate(48%) hue-rotate(76deg) brightness(119%) contrast(100%); }
+.mpd95 .visual-expand__contents .program-list__icons i { filter: invert(98%) sepia(10%) saturate(48%) hue-rotate(76deg) brightness(119%) contrast(100%) drop-shadow(0px 0px 1px #000000); }
 
 .mpd95 .visual-expand__contents .program-list__price { font-size: 2.5rem; color: #fff; line-height: 0.9; margin-top: 1rem; }
 
@@ -5664,5 +5666,10 @@ select::-ms-expand {display: none;}
 }
 .scale_info .txt { margin:3rem 0 0 0; font-size:1.6rem; line-height:1.55; }
 .scale_info .txt.type02 { text-align:left; }
+
+
+.posi-initial {position:initial !important}
+.gene-box li:first-child {border-right:1px solid #cccccc;padding-right:10px;color: #000 !important; }
+.gene-box li:last-child {padding-left:10px; }
 /*about floating button*/
 /*# sourceMappingURL=maps/base.css.map */
