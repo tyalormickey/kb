@@ -75,9 +75,11 @@
 
 .font-size-30, .page-auth-email__title { font-size: 3rem; }
 
-.line-height-14 { line-height: 1.43; }
+.line-height-14 { line-height: 1.43 !important; }
 
-.line-height-24 { line-height: 2.43; }
+.line-height-18 { line-height: 1.83 !important; }
+
+.line-height-24 { line-height: 2.43 !important; }
 
 .left { text-align: left !important; }
 
@@ -88,6 +90,8 @@
 .align-items-center {align-items: center;}
 
 .left0{left:0px !important;}
+
+.top40{top:40px !important;}
 
 .pa0 {padding:0px !important;}
 
@@ -2426,6 +2430,8 @@ textarea::placeholder { color: #999; }
 .visual-expand img { max-width: 100%; }
 
 .visual-expand__header header { transition: all 0.3s linear; }
+
+.visual-expand__header header .title { text-shadow: 0px 0 transparent, 0 0px transparent, 0px 0 transparent, 0 0px transparent; }
 
 .visual-expand__header.top header { background-color: transparent; }
 
@@ -5399,7 +5405,7 @@ a#menu-share:hover > i{animation: rotate-out 0.5s;}
 @keyframes rotate-out {from {transform: rotate(360deg);}to {transform: rotate(0deg);}}
 
 .nutrition-info-back-img {background-image: url(../img/backimg_2_1.png) !important;background-size: cover;height: 250px;background-position: center;background-repeat: no-repeat;}
-.no-border{border:0px !important;border-width:0px; !important;box-shadow:0 0 0 0;}
+.no-border{border:0px !important;box-shadow:0 0 0 0;}
 .no-margin{margin:0px !important;}
 .text-data-list {display: inline-block;width: 80% !important;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
 .text-data-arrow > img{width:10px;}
@@ -5624,7 +5630,7 @@ select::-ms-expand {display: none;}
 
 .healthtable {width:100%;}
 .healthtable thead {background:#f6f7fa;}
-.healthtable thead th {border-top:1px solid #d3d4d6;border-bottom:1px solid #d3d4d6;padding:0.7rem;font-size:1.4rem;color:#99999;font-weight: normal}
+.healthtable thead th {border-top:1px solid #d3d4d6;border-bottom:1px solid #d3d4d6;padding:0.7rem;font-size:1.4rem;color:#999999;font-weight: normal}
 .healthtable thead th:first-child {border-right:1px solid #d3d4d6;}
 
 .healthtable tbody td {padding:0.7rem;font-size:1.4rem;border-bottom:1px solid #d3d4d6;padding:1.5rem}
@@ -5671,5 +5677,10 @@ select::-ms-expand {display: none;}
 .posi-initial {position:initial !important}
 .gene-box li:first-child {border-right:1px solid #cccccc;padding-right:10px;color: #000 !important; }
 .gene-box li:last-child {padding-left:10px; }
+
+.widthfullwide {margin: 0 -1.6rem;width: auto;}
+.overinherit {overflow: inherit !important;}
+.overflowxhidden {overflow-x:hidden !important;}
+/*.overflow: inherit;*/
 /*about floating button*/
 /*# sourceMappingURL=maps/base.css.map */

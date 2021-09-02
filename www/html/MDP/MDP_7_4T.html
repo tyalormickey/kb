@@ -39,7 +39,7 @@
     </header>
   </div>
   <div class="content-wrap">
-    <div class="scrollBox page-mdp-74 page-scroll-swiper">
+    <div class="scrollBox page-mdp-74 page-scroll-swiper overflowxhidden">
       <section class="manage-h3 mt0">
         최근 1년간<br/>
         <strong>최고 점수는 <b class="font-blue">1000점</b><br/>
@@ -59,7 +59,7 @@
             </button>
           </li>
         </ul>
-        <div class="tab__swiper swiper-container">
+        <div class="tab__swiper swiper-container overinherit">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <section class="manage-progress mt30">
@@ -94,6 +94,60 @@
                       <span style="width: 45%; background: #fcaf17;"><em>100</em></span>
                     </p>
                   </li>
+                  <li>
+                    <label>21.06.03</label>
+                    <p class="manage-progress__bar">
+                      <span style="width: 50%; background: #76b424;"><em>100</em></span>
+                    </p>
+                  </li>
+                  <li>
+                    <label>21.06.03</label>
+                    <p class="manage-progress__bar">
+                      <span style="width: 75%; background: #fcaf17;"><em>100</em></span>
+                    </p>
+                  </li>
+                  <li>
+                    <label>21.06.03</label>
+                    <p class="manage-progress__bar">
+                      <span style="width: 45%; background: #fcaf17;"><em>100</em></span>
+                    </p>
+                  </li>
+                  <li>
+                    <label>21.06.03</label>
+                    <p class="manage-progress__bar">
+                      <span style="width: 50%; background: #76b424;"><em>100</em></span>
+                    </p>
+                  </li>
+                  <li>
+                    <label>21.06.03</label>
+                    <p class="manage-progress__bar">
+                      <span style="width: 75%; background: #fcaf17;"><em>100</em></span>
+                    </p>
+                  </li>
+                  <li>
+                    <label>21.06.03</label>
+                    <p class="manage-progress__bar">
+                      <span style="width: 45%; background: #fcaf17;"><em>100</em></span>
+                    </p>
+                  </li>
+                  <li>
+                    <label>21.06.03</label>
+                    <p class="manage-progress__bar">
+                      <span style="width: 50%; background: #76b424;"><em>100</em></span>
+                    </p>
+                  </li>
+                  <li>
+                    <label>21.06.03</label>
+                    <p class="manage-progress__bar">
+                      <span style="width: 75%; background: #fcaf17;"><em>100</em></span>
+                    </p>
+                  </li>
+                  <li>
+                    <label>21.06.03</label>
+                    <p class="manage-progress__bar">
+                      <span style="width: 45%; background: #fcaf17;"><em>9999</em></span>
+                    </p>
+                  </li>
                 </ul>
               </section>
             </div>
@@ -101,37 +155,37 @@
               <ul class="manage-list no-border mt15">
                 <li>
                   <div class="gray">2021.05.03</div>
-                  <div class="grow center">9732점(<span class="red">+20</span>)</div>
+                  <div class="grow left pl16">9732점(<span class="red">+20</span>)</div>
                   <div class="w50 center">체중감량</div>
                 </li>
                 <li>
                   <div class="gray">2021.05.03</div>
-                  <div class="grow center">972점(<span class="blue">-20</span>)</div>
+                  <div class="grow left pl16">972점(<span class="blue">-20</span>)</div>
                   <div class="w50 center">흡연</div>
                 </li>
                 <li>
                   <div class="gray">2021.05.03</div>
-                  <div class="grow center">972점(<span class="blue">-20</span>)</div>
+                  <div class="grow left pl16">972점(<span class="blue">-20</span>)</div>
                   <div class="w50 center">흡연</div>
                 </li>
                 <li>
                   <div class="gray">2021.05.03</div>
-                  <div class="grow center">972점(<span class="blue">-20</span>)</div>
+                  <div class="grow left pl16">972점(<span class="blue">-20</span>)</div>
                   <div class="w50 center">흡연</div>
                 </li>
                 <li>
                   <div class="gray">2021.05.03</div>
-                  <div class="grow center">972점(<span class="blue">-20</span>)</div>
+                  <div class="grow left pl16">972점(<span class="blue">-20</span>)</div>
                   <div class="w50 center">흡연</div>
                 </li>
                 <li>
                   <div class="gray">2021.05.03</div>
-                  <div class="grow center">972점(<span class="blue">-20</span>)</div>
+                  <div class="grow left pl16">972점(<span class="blue">-20</span>)</div>
                   <div class="w50 center">흡연</div>
                 </li>
                 <li>
                   <div class="gray">2021.05.03</div>
-                  <div class="grow center">972점(<span class="blue">-20</span>)</div>
+                  <div class="grow left pl16">972점(<span class="blue">-20</span>)</div>
                   <div class="w50 center">흡연</div>
                 </li>
               </ul>
@@ -177,7 +231,8 @@
   tab.reset();
   var swiper = new Swiper('.swiper-container', {
     slidesPerView: 1,
-    autoHeight: true
+    autoHeight: true,
+    spaceBetween : 16, // 슬라이드간 간격
   });
 
   $('.tab__item').click(function () {
