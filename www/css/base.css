@@ -45,13 +45,13 @@
 
 .font-size-15 { font-size: 1.5rem; }
 
-.font-size-16, button.block.medium, button.text.small-01, button.text-icon.small-01, .input-radio, .input-checkbox, input[type="text"], input[type="password"], input[type="number"], input[type="tel"], input[type="url"], input[type="email"], textarea, .custom-select dt button span, .form-item, .table-data dd, .table-data__gray-box, .accordion--case1 > dl > dt span, .accordion--case2 > dl > dt span, .accordion--case3 > dl > dt span, .accordion--case3 > dl > dt em, .accordion__text-list, .card-item__title, .card-item__point, .list-item__title, .message-box__sub-title, .tab__more-and li, .tab__item span, .modal-popup__title, .tooltip-modal__title, .tooltip-modal__message, .home-top-buttons button span, .home-info__top-weather, .home-info__weather-etc em, .home-info__active-progress-title em, .home-health-compare__title button, .main-event-popup__buttons button, .monthly-goal-title__text, .monthly-goal-title__text button, .point-info__popup dl dd, .point-change-title__text, .point-change-agree__item button, .point-end__text, .mdp_72__icon-content, .mdp_72__popup, .mdp_72__popup-button button, .manage-icon-box__text, .manage-icon-box__text button, .modal-address-select__title, .modal-address-select__button span, .page-auth-email__guide, .modal-app-auth__title, .modal-app-auth__button span, .service-agree__item button, .service-agree__sms, .page-error__text, .photo-popup-buttons__box button, .blood-method__guide, .term-detail__text, .term-detail__sub-title, .certificate__card-name, .certificate__card-del, .switch-list__item-title, .setting-nav li > button, .my-info__item, .my-info__item button, .board__title, .board__content, .inquiry__question-title, .inquiry__question-content, .inquiry__answer-title, .inquiry__answer-content, .inquiry__file-name span, .page-diet__title-h4, .diet-main-title__text, .nutrition-info__title span, .diet-photo__item-text span, .diet-statistics__selector p, .diet-statistics__selector-buttons button, .diet-input-popup__title p, .diet-input-popup__guide li, .diet-input-popup__buttons button, .my-care__item, .my-coupon-detail__text-cont, .my-payment__title, .my-payment__item, .my-payment__top-title, .event_22__icon-title-t, .event_22__sub-title, .event_22__cal-col button, .event_22__cal-col .cover { font-size: 1.6rem; }
+.font-size-16, button.block.medium, button.text.small-01, button.text-icon.small-01, .input-radio, .input-checkbox, input[type="text"], input[type="password"], input[type="number"], input[type="tel"], input[type="url"], input[type="email"], textarea, .custom-select dt button span, .form-item, .table-data dd, .table-data__gray-box, .accordion--case1 > dl > dt span, .accordion--case2 > dl > dt span, .accordion--case3 > dl > dt span, .accordion--case3 > dl > dt em, .accordion__text-list, .card-item__title, .card-item__point, .list-item__title, .message-box__sub-title, .tab__more-and li, .tab__item span, .modal-popup__title, .tooltip-modal__title, .tooltip-modal__message, .home-top-buttons button span, .home-info__top-weather, .home-info__weather-etc em, .home-info__active-progress-title em, .home-health-compare__title button, .main-event-popup__buttons button, .monthly-goal-title__text, .monthly-goal-title__text button, .point-info__popup dl dd, .point-change-title__text, .point-change-agree__item button, .point-end__text, .mdp_72__icon-content, .mdp_72__popup, .mdp_72__popup-button button, .manage-icon-box__text, .manage-icon-box__text button, .modal-address-select__title, .modal-address-select__button span, .page-auth-email__guide, .modal-app-auth__title, .modal-app-auth__button span, .service-agree__item button, .service-agree__sms, .page-error__text, .photo-popup-buttons__box button, .blood-method__guide, .term-detail__text, .term-detail__sub-title, .certificate__card-name, .certificate__card-del, .switch-list__item-title, .setting-nav li > button, .my-info__item, .my-info__item button, .board__title, .board__content, .inquiry__question-title, .inquiry__question-content, .inquiry__answer-title, .inquiry__answer-content, .inquiry__file-name span, .page-diet__title-h4, .diet-main-title__text, .nutrition-info__title span, .diet-photo__item-text span, .diet-statistics__selector p, .diet-statistics__selector-buttons button, .diet-input-popup__title p, .diet-input-popup__guide li, .diet-input-popup__buttons button, .my-care__item, .my-coupon-detail__text-cont, .my-payment__title, .my-payment__item, .my-payment__top-title, .event_22__icon-title-t, .event_22__sub-title, .event_22__cal-col button, .event_22__cal-col .cover { font-size: 1.6rem !important; }
 
 .font-size-17 { font-size: 1.7rem; }
 
 .font-size-18, button.text.medium, button.text-icon.medium, .point-info__popup dl dt, .point-gray-bg-box__center, .point-change-both .point, .tip-title__title, .pass-agree__title, .term-detail__title, .my-info__profile-text, .page-diet__top-date strong, .page-diet__title-h3, .my-page__profile-text, .my-page__counts li b, .my-page__point-care-title, .my-coupon-detail__top-title, .event_22__title { font-size: 1.8rem !important; }
 
-.font-size-19 { font-size: 1.9rem; }
+.font-size-19 { font-size: 1.9rem !important; }
 
 .font-size-20, header .title, button.block, button.text, button.text-icon, .message-box__title, .point-prod-purchase__slide dl dd.last, .mdp_72__icon-title, .service-agree__title, .nutrition-info__title strong, .diet-input-popup__title h1, .event_22__popup-cont p { font-size: 2rem; }
 
@@ -73,7 +73,7 @@
 
 .font-size-29 { font-size: 2.9rem; }
 
-.font-size-30, .page-auth-email__title { font-size: 3rem; }
+.font-size-30, .page-auth-email__title { font-size: 3rem !important; }
 
 .line-height-14 { line-height: 1.43 !important; }
 
@@ -90,6 +90,8 @@
 .align-items-center {align-items: center;}
 
 .left0{left:0px !important;}
+
+.top0{top:0px !important;}
 
 .top40{top:40px !important;}
 
@@ -735,7 +737,7 @@ html.outer-overflow body, html.outer-overflow .wrapper {
 header { background-color: #fff; padding: 0 1.6rem; }
 
 header .logo { width: 5.1rem; }
-header .logo:after {position: absolute;top: 0;right: 0;bottom: 0;left: 0;content: '';background: rgba(0, 0, 0, 0.2);}
+header .logo:after {position: absolute;top: 0;right: 0;bottom: 0;left: 0;content: '';}
 
 header .logo img { width: 100%; }
 
@@ -5681,6 +5683,41 @@ select::-ms-expand {display: none;}
 .widthfullwide {margin: 0 -1.6rem;width: auto;}
 .overinherit {overflow: inherit !important;}
 .overflowxhidden {overflow-x:hidden !important;}
+.dropshadow {filter:drop-shadow(0px 0px 1px #000000);}
+
+.mbti-box {display: flex;overflow: inherit !important;justify-content: space-around;}
+.mbti-box li {margin:0px !important;}
+.mbti-sub-box {flex-grow: 2;width:100%;}
+.mbti-box-info{position:absolute;left:33%;}
+.mbti-box-info button{position:relative;top:20px;height:24px !important;border-radius: 5px;width:120px !important;z-index:997}
+.txt-strong {vertical-align:top;font-weight: 600;color:#000}
+.mbti-box-img {position: relative;max-height: 25rem;font-size: 0;z-index: 1;margin:0 -1.6rem;}
+
+.mbti-box__top-title {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    height: 5.775rem;
+}
+.mbti-box__top-title span {
+    font-size: 2.5rem;
+    line-height: 1.24;
+    color: #000;
+    text-align: left;
+    font-weight: 500;
+    font-family: 'KB FG DISPLAY';
+    vertical-align: top;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
 /*.overflow: inherit;*/
 /*about floating button*/
 /*# sourceMappingURL=maps/base.css.map */

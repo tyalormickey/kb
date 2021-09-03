@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
+    <link rel='stylesheet' type='text/css' href='../../css/morpheus-reset.min.css'/>
+    <link rel='stylesheet' type='text/css' href='../../css/morpheus-common.css'/>
+    <link rel='stylesheet' type='text/css' href='../../css/morpheus-style.css'/>
+
+    <script src='../../js/libs/jquery-3.1.1.min.js'></script>
+    <script src='../../js/swiper.min.js'></script>
+    <script src='../../js/ui.js'></script>
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="header">
+        <header>
+            <div class="header__back">
+                <div class="back">
+                    <button type="button" class="only-icon">
+                        <i class="icon-arrow_left icon-20">뒤로가기</i>
+                    </button>
+                </div>
+                <div class="title">
+                    성격 유형 검사
+                </div>
+                <div class="right-icons">
+                    <button type="button" class="only-icon">
+                        <i class="icon-camera_02 icon-20">카메라</i>
+                    </button>
+                    <button type="button" class="only-icon">
+                        <i class="icon-alarm on icon-20">알람</i>
+                    </button>
+                </div>
+            </div>
+        </header>
+    </div>
+    <div class="content-wrap">
+        <div class="scrollBox no-padding pb35">
+            <div class="tab__wrap">
+                <ul class="tab mbti-box top0">
+                    <li class="tab__item">
+                        <button type="button">
+                            <span>검사 안내</span>
+                        </button>
+                    </li>
+                    <li class="tab__item">
+                        <button type="button">
+                            <span>유형 예시</span>
+                        </button>
+                    </li>
+                    <li class="tab__item">
+                        <button type="button">
+                            <span>유형 검사</span>
+                        </button>
+                    </li>
+                    <li class="tab__item">
+                        <button type="button">
+                            <span>검사 결과</span>
+                        </button>
+                    </li>
+                </ul>
+                <div class="tab__swiper swiper-container first">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide contents-padding">
+                            <section class="term-detail__section">
+                                <div class="term-detail__sub-title">
+                                    성격 유형 검사는
+                                </div>
+                                <div class="term-detail__text">
+                                    개인의 성격 특성이 삶의 다양한 영역에 어떤 영향<br>
+                                    을 주는지 파악하기 위한 평가 도구입니다. 판단 과<br>
+                                    정, 행동양식, 대인관계 스타일과 같은 3가지 차원<br>
+                                    에 따라 16가지 성격유형 중 하나로 분류되며, 직업<br>
+                                    생활과 대인관계에 영향을 많이 주는 5가지 성격<br>
+                                    특성을 좀 더 깊이 있게 분석하여 제시합니다.
+                                </div>
+                            </section>
+                            <section class="term-detail__section">
+                                <div class="term-detail__sub-title">
+                                    검사 대상 및 문항 구성
+                                </div>
+                                <div class="term-detail__text">
+                                    검사는 성인을 대상으로 하며, 성격 유형 척도를<br>
+                                    판단하는 27개의 문항으로 구성됩니다.<br>
+                                    검사 시간은 약 30분 정도 소요됩니다.
+                                </div>
+                            </section>
+
+                            <div class="event_21__button">
+                                <button class="block medium" type="button" onclick="">
+                                    유형 예시 보기
+                                </button>
+                            </div>
+
+                        </div>
+                        <div class="swiper-slide contents-padding">
+
+                            <section class="term-detail__section">
+                                <div class="term-detail__sub-title">
+                                    성격 유형 검사는
+                                </div>
+                                <div class="term-detail__text">
+                                    각각의 차원은 어느 한 쪽이 더 좋고 나쁜 것이 없으며,<br>
+                                    단순히 개인의 선호 경향이 다름을 의미합니다.
+                                </div>
+                            </section>
+
+                            <div class="mbti-box-info">
+                                <button type="button" class="block inline small tooltip-button" >
+                                    내적 판단과정
+                                </button>
+                            </div>
+                            <div class="form-item__flex mt30">
+                                <div class="custom-input boxgray pb15 mbti-sub-box">
+                                    <div class="term-detail__sub-title font-size-25 center mt10">
+                                        T
+                                    </div>
+                                    <div class="term-detail__sub-title center mt15">
+                                        과제 지향형
+                                    </div>
+                                    <div class="term-detail__text center">
+                                        과제 중심적인<br>
+                                        결정을 잘 내리는 유형
+                                    </div>
+                                </div>
+                                <div class="custom-input boxgray pb15 mbti-sub-box">
+                                    <div class="term-detail__sub-title font-size-25 center mt10">
+                                        P
+                                    </div>
+                                    <div class="term-detail__sub-title center mt15">
+                                        과제 지향형
+                                    </div>
+                                    <div class="term-detail__text center">
+                                        다른 사람들과의 관계를<br>
+                                        중요시하는 유형
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mbti-box-info">
+                                <button type="button" class="block inline small tooltip-button" >
+                                    행동양식
+                                </button>
+                            </div>
+                            <div class="form-item__flex mt30">
+                                <div class="custom-input boxgray pb15 mbti-sub-box">
+                                    <div class="term-detail__sub-title font-size-25 center mt10">
+                                        C
+                                    </div>
+                                    <div class="term-detail__sub-title center mt15">
+                                        안전 지향형
+                                    </div>
+                                    <div class="term-detail__text center">
+                                        기존의 질서와 규칙을<br>
+                                        중요시하는 유형
+                                    </div>
+                                </div>
+                                <div class="custom-input boxgray pb15 mbti-sub-box">
+                                    <div class="term-detail__sub-title font-size-25 center mt10">
+                                        L
+                                    </div>
+                                    <div class="term-detail__sub-title center mt15">
+                                        혁신 지향형
+                                    </div>
+                                    <div class="term-detail__text center">
+                                        개성적이고 변화와<br>
+                                        혁신을 추구하는 유형
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mbti-box-info">
+                                <button type="button" class="block inline small tooltip-button" >
+                                    대인관계 스타일
+                                </button>
+                            </div>
+                            <div class="form-item__flex mt30">
+                                <div class="custom-input boxgray pb15 mbti-sub-box">
+                                    <div class="term-detail__sub-title font-size-25 center mt10">
+                                        E
+                                    </div>
+                                    <div class="term-detail__sub-title center mt15">
+                                        외향형
+                                    </div>
+                                    <div class="term-detail__text center">
+                                        많은 사람들과 잘<br>
+                                        어울리고 자기 표현을<br>
+                                        잘하는 유형
+                                    </div>
+                                </div>
+                                <div class="custom-input boxgray pb15 mbti-sub-box">
+                                    <div class="term-detail__sub-title font-size-25 center mt10">
+                                        I
+                                    </div>
+                                    <div class="term-detail__sub-title center mt15">
+                                        내향형
+                                    </div>
+                                    <div class="term-detail__text center">
+                                        보다 독립적이고,<br>
+                                        수용적인 경향을<br>
+                                        나타내는 유형
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide contents-padding">
+
+
+                            <!--성격유형을 받았다면-->
+                            <section class="survey__content" style="display: none">
+                                <div class="survary-guide">
+                                    <i class="icon-survey icon-80"></i>
+                                    <div class="survary-guide__title">
+                                        김국민님께서는<br>
+                                        이미 성격 유형 검사를 받으셨습니다.
+                                    </div>
+                                    <div class="survary-guide__text txt_gray">
+                                        검사 결과를 보시려면 아래의 [검사 결과 보기]<br>
+                                        를 선택하십시오.<br>
+                                        재검사를 원하시면 아래의 [다시 검사하기]를<br>
+                                        선택하십시오.<br>
+                                        재검사를 실행하시면 이전에 받으신 검사<br>
+                                        결과는 삭제됨을 유의하시기 바랍니다.
+                                    </div>
+                                </div>
+                            </section>
+                            <!--성격유형을 받았다면-->
+
+
+                            <section class="term-detail__section">
+                                <div class="term-detail__sub-title">
+                                    성격 유형 검사는
+                                </div>
+                                <div class="term-detail__text">
+                                    각 문항을 주의 깊게 읽은 다음, 2개의 예시 중에서<br>
+                                    자신이 일상적으로 느끼고 행동하는데 더 가깝다고<br>
+                                    생각되는 것을 선택하세요.
+                                </div>
+                            </section>
+
+
+
+                            <div class="term-detail__sub-title">
+                                1번문항
+                            </div>
+                            <div class="survary-selector__list" data-active-count="1">
+                                <button type="button" class="survary-selector__list-item">
+                                    <p>냉철한 사고력이 요구되는 일이<br>편하다.</p>
+                                    <span><i>체크</i></span>
+                                </button>
+                                <button type="button" class="survary-selector__list-item">
+                                    <p>섬세한 감성이 요구되는 일이 편하다.</p>
+                                    <span><i>체크</i></span>
+                                </button>
+                            </div>
+                            <div class="term-detail__sub-title">
+                                2번문항
+                            </div>
+                            <div class="survary-selector__list" data-active-count="1">
+                                <button type="button" class="survary-selector__list-item">
+                                    <p>정해진 틀이 있는 환경에서 주어진<br>일을 하는 것이 편하다.</p>
+                                    <span><i>체크</i></span>
+                                </button>
+                                <button type="button" class="survary-selector__list-item">
+                                    <p>정해진 틀이 없는 환경에서 자유롭게<br>일을 하는 것이 편하다.</p>
+                                    <span><i>체크</i></span>
+                                </button>
+                            </div>
+                            <div class="term-detail__sub-title">
+                                27번문항
+                            </div>
+                            <div class="survary-selector__list" data-active-count="1">
+                                <button type="button" class="survary-selector__list-item">
+                                    <p>모임에서 다양한 사람과 어울려<br>이야기한다.</p>
+                                    <span><i>체크</i></span>
+                                </button>
+                                <button type="button" class="survary-selector__list-item">
+                                    <p>모임에서 친한 소수의 사람과만<br>이야기한다.</p>
+                                    <span><i>체크</i></span>
+                                </button>
+                            </div>
+
+                            <section class="term-detail__section">
+                                <div class="term-detail__text">
+                                    성격 유형 검사에 참여해 주셔서 감사합니다.<br>
+                                    <strong class="txt-strong">김국민님</strong>이 선택한 내용을 제출하시겠습니까?
+                                </div>
+                            </section>
+
+                        </div>
+                        <!--검사결과-->
+                        <div class="swiper-slide contents-padding pa0">
+                            <div class="mbti-box-img">
+                                <img src="../../img/cp-e-img.png"/>
+                            </div>
+                            <div class="full-schedule__title-text" style="height:auto;">
+                                <section class="main-reward__top mt0">
+                                    <div class="main-reward__top-title h4rem">
+                                        <span class="txt_gray font-size-16">홍길동님은</span>
+                                        <span class="txt_black font-size-19 mt10">외향적인 조력자 입니다.</span>
+                                        <span class="txt_black font-size-30 mt20">ENTP</span>
+                                    </div>
+                                </section>
+                            </div>
+
+
+
+                            <div class="swiper-container second pb35">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide contents-padding">
+                                        <section class="term-detail__section">
+                                            <div class="term-detail__sub-title">
+                                                체계적이고 활동적인 사람
+                                            </div>
+                                            <div class="term-detail__text">
+                                                실제적이고 현실적인 방식으로 사람들에게 필요한<br>
+                                                존재가 될 때 성취감을 느끼는 조력자입니다.<br>
+                                                규칙과 전통이 있는 상황에서 좀 더 편안하게<br>
+                                                느끼고 자신의 잠재력을 잘 발휘할 수 있습니다.<br>
+                                                다른 사람을 만나고 대화하는 것을 즐기며<br>
+                                                대인관계가 넓고 사람에 대한 관심이나 배려가<br>
+                                                많은 사람입니다.<br>
+                                                다만 새로운 상황에 적응하는 것이 익숙하지<br>
+                                                않으며, 정해진 규칙을 위반하는 사람은 불편해<br>
+                                                할 수 있습니다.
+                                            </div>
+                                        </section>
+                                    </div>
+                                    <div class="swiper-slide contents-padding">
+                                        <section class="term-detail__section">
+                                            <div class="term-detail__sub-title">
+                                                유형의 강점
+                                            </div>
+                                            <div class="term-detail__text">
+                                                <ul class="list-type-circle mt12">
+                                                    <li>안정적이고 성실하여 신뢰감을 준다.</li>
+                                                    <li>보수적인 직장에서도 잘 적응할 수 있다.</li>
+                                                    <li>헌신적이고 책임감이 강해 자상하고 존경 받는<br>
+                                                        윗사람이 될 수 있다.</li>
+                                                    <li>양심적이고 정해진 규칙을 잘 지킨다.</li>
+                                                    <li>조직의 권위를 존중하며 예의 바르다.</li>
+                                                </ul>
+                                            </div>
+                                        </section>
+                                    </div>
+                                    <div class="swiper-slide contents-padding">
+                                        <section class="term-detail__section">
+                                            <div class="term-detail__sub-title">
+                                                보완할 점
+                                            </div>
+                                            <div class="term-detail__text">
+                                                <ul class="list-type-circle mt12">
+                                                    <li>새로운 상황에 적응하는 것이 힘들다.</li>
+                                                    <li>기존의 방식과 다른 방식이나 새로운 의견을<br>
+                                                        잘 받아들이려 하지 않는다.</li>
+                                                    <li>집단의 규칙을 바꾸려는 사람과 갈등이 생기면<br>
+                                                        화해가 어려울 수 있다.</li>
+                                                    <li>사람들로부터 인정과 격려가 지속되지 않으면
+                                                        흥미를 상실할 수 있다.</li>
+                                                </ul>
+                                            </div>
+                                        </section>
+                                    </div>
+                                    <div class="swiper-slide contents-padding">
+                                        <section class="term-detail__section">
+                                            <div class="term-detail__sub-title">
+                                                적합한 일과 직업환경
+                                            </div>
+                                            <div class="term-detail__text">
+                                                <ul class="list-type-circle mt12">
+                                                    <li>목표와 방식이 명확히 정해져 있는 일</li>
+                                                    <li>일을 하기 위해 준비할 시간이 충분히 주어지는 일</li>
+                                                    <li>노력을 들인 만큼의 대가를 정확히 예상할 수<br>
+                                                        있는 환경</li>
+                                                    <li>조직이 안정되고 예측할 수 없는 일들이 많지<br>
+                                                        않은 환경</li>
+                                                </ul>
+                                            </div>
+                                        </section>
+                                    </div>
+                                    <div class="swiper-slide contents-padding">
+                                        <section class="term-detail__section">
+                                            <div class="term-detail__sub-title">
+                                                어려움과 스트레스
+                                            </div>
+                                            <div class="term-detail__text">
+                                                성실하고 책임감이 강하기에 자신이 맡은 바를
+                                                잘 해내는 장점이 있으며 변화가 그리 크지 않은
+                                                안정적인 환경을 선호합니다. 반면 많은 정보를
+                                                파악하여 스스로 자신에 맞는 목표를 정하고
+                                                그에 맞는 계획을 융통성 있게 실천하는 능력은
+                                                상대적으로 부족할 수 있습니다. 스스로 모든 것을
+                                                알아서 처리해야 하는 상황에 봉착하게 되면
+                                                스트레스를 느끼고 심리적으로 부담을 겪게 됩니다.
+                                                또한, 새로운 환경이나 변화에 적응해야 할 때
+                                                주변으로부터 충분한 지지와 격려를 받지 않으면
+                                                자신감을 잃을 수 있습니다.
+                                                대인관계에서 갈등이 생기면 일에 지장을 많이
+                                                받을 수 있어 주의가 필요합니다.
+                                            </div>
+                                        </section>
+                                    </div>
+                                    <div class="swiper-slide contents-padding">
+                                        <section class="term-detail__section">
+                                            <div class="term-detail__sub-title">
+                                                이렇게 해보세요
+                                            </div>
+                                            <div class="term-detail__text">
+                                                기존의 질서와 규범이 어느 정도 고정된 직장
+                                                환경이라 할지라도 변화는 생기기 마련이고
+                                                이에 따라 융통성 있게 대처하는 기술을 습득하는
+                                                것이 가장 중요할 것입니다.
+                                                즉, 새로운 것에 대한 심리적인 저항을 줄이고
+                                                자기만의 독창성을 개발할 필요가 있습니다.
+                                                타인과의 관계를 좋게 유지하되 객관적인 일 처리에
+                                                있어서는 사소한 감정에 휘둘리지 않도록 조심하고,
+                                                고집스럽게 자신만의 방식을 고수하기보다는 유연하게
+                                                타인의 의견을 받아들이는 태도를 기르기 위해 노력한다면
+                                                도움이 될 것입니다.
+                                            </div>
+                                        </section>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer footer__nav">
+
+        <div class="button__flex-wrap">
+            <button type="button" class="block gray" onclick="modal.alert($(this), fnTicketBuying)" style="display: none">
+                검사 결과 보기
+            </button>
+            <button class="block okbtn" type="button">
+                성격 유형 검사하기
+            </button>
+        </div>
+        <nav>
+            <ul>
+                <li class="on">
+                    <button type="button">
+                        <i class="icon-home icon-16"></i>
+                        <span>홈</span>
+                    </button>
+                </li>
+                <li>
+                    <button type="button">
+                        <i class="icon-pro icon-16"></i>
+                        <span>프로그램</span>
+                    </button>
+                </li>
+                <li>
+                    <button type="button">
+                        <i class="icon-info icon-16"></i>
+                        <span>증상ㆍ병원</span>
+                    </button>
+                </li>
+                <li>
+                    <button type="button">
+                        <i class="icon-my icon-16"></i>
+                        <span>MY</span>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>
+
+<script>
+    tab.reset();
+    setTimeout(function() {
+        var swiper = new Swiper('.first', {
+            slidesPerView: 1,
+            autoHeight: true
+        });
+        $('.tab__item').click(function() {
+            tab.action($(this), true, swiper)
+        });
+        swiper.on('slideChangeTransitionEnd', function() {
+            $(".button__flex-wrap").show();
+            var onItem = 'tab__item--on'
+            const tabs = swiper.$el.prev('.tab').children('.tab__item')
+            var btntxt = "";
+            switch(swiper.realIndex) {
+                case 2:
+                    btntxt = "제출";
+                    //btntxt = "다시검사하기";
+                    break;
+                case 4:
+                    $(".button__flex-wrap").hide();
+                default:
+                    btntxt = "성격 유형 검사하기";
+                    break;
+            }
+            $(".okbtn").html(btntxt);
+            tabs.removeClass(onItem)
+            tabs.eq(swiper.realIndex).addClass(onItem)
+        });
+        var massageHi = $('.tab__wrap').height() - $('.tab').height()
+        console.log(massageHi)
+        $('.message-box').each(function() {
+            $(this).css('height', massageHi - 40)
+        });
+
+        var swipersub = new Swiper('.second', {
+            slidesPerView: 1,
+            autoHeight: true
+        });
+    }, 100);
+
+    $('.survary-selector__list').each(function () {
+        var $item = $(this).find('.survary-selector__list-item');
+        var count = parseInt($(this).data('active-count'));
+
+        $item.off('click').on('click', function () {
+            if (count === 1 || $(this).hasClass('only')) {
+                $(this).toggleClass('active').siblings().removeClass('active');
+            } else {
+                if ($(this).hasClass('active')) {
+                    $(this).removeClass('active');
+                } else if ($item.filter('.active').length < count) {
+                    $(this).addClass('active');
+                    $item.filter('.only').removeClass('active');
+                }
+            }
+            var $nextBtn = $('.bottom-fixed button[data-button="next"]');
+            var $activeCount = $item.filter('.active').length
+            if ($activeCount >= 1 && $activeCount <= count) {
+                $nextBtn.attr('disabled', false)
+            } else {
+                $nextBtn.attr('disabled', true)
+            }
+        })
+    });
+
+    var fnTicketBuying = {
+        type: 'confirm',
+        text: '성격 유형 재검사를 실행합니다.<br>[확인]을 선택하면 이전의 검사 결과는<br>삭제됩니다.',
+        modeChangeText:'구매를 취소하셨습니다.',
+        ok: handleOk,
+        cancel: handleCancel,
+    }
+
+    function handleOk() {
+        console.log('확인');
+    }
+
+    function handleCancel() {
+        console.log('취소');
+    }
+</script>
+</body>
+</html>
