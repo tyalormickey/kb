@@ -5748,6 +5748,8 @@ select::-ms-expand {display: none;}
 .cms__ending img { width:6.2rem; }
 .cms__ending strong { display:block; font-size:2rem; margin:4rem 0 0 0; font-weight:500; }
 .mbt-foot .swiper-pagination-bullet {background:#999999;}
+.home-health-compare .home-health-compare__content .message-box__btn-wrap button { width:13rem; }
+
 /*.overflow: inherit;*/
 /*about floating button*/
 /*# sourceMappingURL=maps/base.css.map */
