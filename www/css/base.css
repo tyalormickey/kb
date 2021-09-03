@@ -75,9 +75,11 @@
 
 .font-size-30, .page-auth-email__title { font-size: 3rem; }
 
-.line-height-14 { line-height: 1.43; }
+.line-height-14 { line-height: 1.43 !important; }
 
-.line-height-24 { line-height: 2.43; }
+.line-height-18 { line-height: 1.83 !important; }
+
+.line-height-24 { line-height: 2.43 !important; }
 
 .left { text-align: left !important; }
 
@@ -88,6 +90,8 @@
 .align-items-center {align-items: center;}
 
 .left0{left:0px !important;}
+
+.top40{top:40px !important;}
 
 .pa0 {padding:0px !important;}
 
@@ -120,6 +124,10 @@
 
 .mt5 { margin-top: 0.5rem !important; }
 
+.mt10 { margin-top: 1rem !important; }
+
+.mt13 { margin-top: 1rem !important; }
+
 .mb0 { margin-bottom: 0px !important;}
 
 .mb5 { margin-bottom: 0.5rem !important; }
@@ -133,8 +141,6 @@
 .pb0 { padding-bottom: 0rem !important; }
 
 .pb5 { padding-bottom: 0.5rem !important; }
-
-.mt10 { margin-top: 1rem !important; }
 
 .mb10 { margin-bottom: 1rem !important; }
 
@@ -302,7 +308,7 @@
 
 .icon-80, .app-auth-bio__target, .blood-method__searching-icon { display: inline-block; width: 8rem; height: 8rem; }
 
-.icon-arrow_left { font-size: 0; background-image: url("../img/icons/icon_arrow_left.svg"); background-size: contain; background-repeat: no-repeat; background-position: 50% 50%; }
+.icon-arrow_left { font-size: 0; background-image: url("../img/icons/icon_arrow_left.svg"); background-size: contain; background-repeat: no-repeat; background-position: 50% 50%;z-index:997 }
 
 .icon-arrow_right, .card-item.arrow::after, .list-item > button::after, .modal-program-teacher .swiper-button-next, .modal-program-teacher .swiper-button-prev, .point-change-agree__item button::after, .manage-link-box::after, .service-agree__item button::after, .all-menu__nav dd button::after, .setting-nav li > button::after { font-size: 0; background-image: url("../img/icons/icon_arrow_right.svg"); background-size: contain; background-repeat: no-repeat; background-position: 50% 50%; }
 
@@ -2425,9 +2431,11 @@ textarea::placeholder { color: #999; }
 
 .visual-expand__header header { transition: all 0.3s linear; }
 
+.visual-expand__header header .title { text-shadow: 0px 0 transparent, 0 0px transparent, 0px 0 transparent, 0 0px transparent; }
+
 .visual-expand__header.top header { background-color: transparent; }
 
-.visual-expand__header.top header i { filter: invert(98%) sepia(10%) saturate(48%) hue-rotate(76deg) brightness(119%) contrast(100%); }
+.visual-expand__header.top header i { filter: invert(98%) sepia(10%) saturate(48%) hue-rotate(76deg) brightness(119%) contrast(100%) drop-shadow(0px 0px 1px #000000); }
 
 .visual-expand__header.top header .title { opacity: 0; transition: all 0.3s linear; }
 
@@ -2447,7 +2455,7 @@ textarea::placeholder { color: #999; }
 
 .mpd95 .visual-expand__contents .program-list__icons span { color: #fff; }
 
-.mpd95 .visual-expand__contents .program-list__icons i { filter: invert(98%) sepia(10%) saturate(48%) hue-rotate(76deg) brightness(119%) contrast(100%); }
+.mpd95 .visual-expand__contents .program-list__icons i { filter: invert(98%) sepia(10%) saturate(48%) hue-rotate(76deg) brightness(119%) contrast(100%) drop-shadow(0px 0px 1px #000000); }
 
 .mpd95 .visual-expand__contents .program-list__price { font-size: 2.5rem; color: #fff; line-height: 0.9; margin-top: 1rem; }
 
@@ -5397,7 +5405,7 @@ a#menu-share:hover > i{animation: rotate-out 0.5s;}
 @keyframes rotate-out {from {transform: rotate(360deg);}to {transform: rotate(0deg);}}
 
 .nutrition-info-back-img {background-image: url(../img/backimg_2_1.png) !important;background-size: cover;height: 250px;background-position: center;background-repeat: no-repeat;}
-.no-border{border:0px !important;border-width:0px; !important;box-shadow:0 0 0 0;}
+.no-border{border:0px !important;box-shadow:0 0 0 0;}
 .no-margin{margin:0px !important;}
 .text-data-list {display: inline-block;width: 80% !important;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
 .text-data-arrow > img{width:10px;}
@@ -5622,7 +5630,7 @@ select::-ms-expand {display: none;}
 
 .healthtable {width:100%;}
 .healthtable thead {background:#f6f7fa;}
-.healthtable thead th {border-top:1px solid #d3d4d6;border-bottom:1px solid #d3d4d6;padding:0.7rem;font-size:1.4rem;color:#99999;font-weight: normal}
+.healthtable thead th {border-top:1px solid #d3d4d6;border-bottom:1px solid #d3d4d6;padding:0.7rem;font-size:1.4rem;color:#999999;font-weight: normal}
 .healthtable thead th:first-child {border-right:1px solid #d3d4d6;}
 
 .healthtable tbody td {padding:0.7rem;font-size:1.4rem;border-bottom:1px solid #d3d4d6;padding:1.5rem}
@@ -5664,5 +5672,30 @@ select::-ms-expand {display: none;}
 }
 .scale_info .txt { margin:3rem 0 0 0; font-size:1.6rem; line-height:1.55; }
 .scale_info .txt.type02 { text-align:left; }
+
+
+.posi-initial {position:initial !important}
+.gene-box li:first-child {border-right:1px solid #cccccc;padding-right:10px;color: #000 !important; }
+.gene-box li:last-child {padding-left:10px; }
+
+.widthfullwide {margin: 0 -1.6rem;width: auto;}
+.overinherit {overflow: inherit !important;}
+.overflowxhidden {overflow-x:hidden !important;}
+
+.cms-wrapper.type02 { padding-bottom:5.6rem !important; }
+.scrollBox.cms-scrollbox { padding:0 0 3rem 0; }
+.cms-scrollboxIn { padding:0 1.6rem; }
+.survey__cms-box { background:#776c61; color:#fff; padding:2rem 1.6rem 2.5rem 1.6rem; }
+.survey__cms-box .survey__cms-title { font-size:1.9rem; text-align:center; line-height:1.44; }
+.survey__cms-box .mentailty__bar .num .now { color:#fff; font-weight:normal; }
+.survey__cms-box .mentailty__bar .num  { color:#fff; }
+.survey__cms-box .survey__group-intro { margin:3rem 0 0 0; }
+.survary-selector_radio.cms__type li em { line-height:1.3; }
+.survary-selector_radio.cms__type .survey-bar::before { display:none; }
+.cms__ending { display:table; width:100%; height:100%; }
+.cms__ending > div { display:table-cell; vertical-align:middle; text-align:center; padding-top:3rem; }
+.cms__ending img { width:6.2rem; }
+.cms__ending strong { display:block; font-size:2rem; margin:4rem 0 0 0; font-weight:500; }
+/*.overflow: inherit;*/
 /*about floating button*/
 /*# sourceMappingURL=maps/base.css.map */
