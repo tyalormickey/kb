@@ -432,8 +432,20 @@
             </div>
         </div>
     </div>
+    <div class="footer footer__nav backtrans mbt-foot no-border guid-main-nav" style="bottom:50px;">
+        <ul class="color_white font-size-18 pl16 pr16 pb15 flex_box">
+            <li>
+                <span class="guid-main-nav-prev guid-main-nav-btn">이전</span>
+            </li>
+            <li class="align-items-center justify-center">
+                <div class="swiper-pagination pt5"></div>
+            </li>
+            <li class="txt-align-right">
+                <span class="guid-main-nav-right guid-main-nav-btn">다음</span>
+            </li>
+        </ul>
+    </div>
     <div class="footer footer__nav">
-
         <div class="button__flex-wrap">
             <button type="button" class="block gray" onclick="modal.alert($(this), fnTicketBuying)" style="display: none">
                 검사 결과 보기
@@ -442,6 +454,7 @@
                 성격 유형 검사하기
             </button>
         </div>
+
         <nav>
             <ul>
                 <li class="on">
@@ -493,7 +506,7 @@
                     btntxt = "제출";
                     //btntxt = "다시검사하기";
                     break;
-                case 4:
+                case 3:
                     $(".button__flex-wrap").hide();
                 default:
                     btntxt = "성격 유형 검사하기";
@@ -511,7 +524,10 @@
 
         var swipersub = new Swiper('.second', {
             slidesPerView: 1,
-            autoHeight: true
+            autoHeight: true,
+            pagination: {
+                el: ".swiper-pagination",
+            }
         });
     }, 100);
 
