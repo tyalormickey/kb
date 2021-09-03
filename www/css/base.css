@@ -743,7 +743,7 @@ header .logo img { width: 100%; }
 
 header .title { -ms-flex-positive: 1; flex-grow: 1; text-align: center; line-height: 3rem; }
 
-header .right-icons { font-size: 0; margin-right: -0.5rem; }
+header .right-icons { font-size: 0; margin-right: -0.5rem;z-index:997 }
 
 header .right-icons button + button { margin-left: 1.3rem; }
 
