@@ -5696,6 +5696,7 @@ select::-ms-expand {display: none;}
 .cms__ending > div { display:table-cell; vertical-align:middle; text-align:center; padding-top:3rem; }
 .cms__ending img { width:6.2rem; }
 .cms__ending strong { display:block; font-size:2rem; margin:4rem 0 0 0; font-weight:500; }
+.home-health-compare .home-health-compare__content .message-box__btn-wrap button { width:12rem; }
 /*.overflow: inherit;*/
 /*about floating button*/
 /*# sourceMappingURL=maps/base.css.map */
