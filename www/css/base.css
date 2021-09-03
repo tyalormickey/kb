@@ -91,8 +91,6 @@
 
 .left0{left:0px !important;}
 
-.top0{top:0px !important;}
-
 .top40{top:40px !important;}
 
 .pa0 {padding:0px !important;}
@@ -5718,6 +5716,33 @@ select::-ms-expand {display: none;}
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
+
+
+
+
+.posi-initial {position:initial !important}
+.gene-box li:first-child {border-right:1px solid #cccccc;padding-right:10px;color: #000 !important; }
+.gene-box li:last-child {padding-left:10px; }
+
+.widthfullwide {margin: 0 -1.6rem;width: auto;}
+.overinherit {overflow: inherit !important;}
+.overflowxhidden {overflow-x:hidden !important;}
+
+.cms-wrapper.type02 { padding-bottom:5.6rem !important; }
+.scrollBox.cms-scrollbox { padding:0 0 3rem 0; }
+.cms-scrollboxIn { padding:0 1.6rem; }
+.survey__cms-box { background:#776c61; color:#fff; padding:2rem 1.6rem 2.5rem 1.6rem; }
+.survey__cms-box .survey__cms-title { font-size:1.9rem; text-align:center; line-height:1.44; }
+.survey__cms-box .mentailty__bar .num .now { color:#fff; font-weight:normal; }
+.survey__cms-box .mentailty__bar .num  { color:#fff; }
+.survey__cms-box .survey__group-intro { margin:3rem 0 0 0; }
+.survary-selector_radio.cms__type li em { line-height:1.3; }
+.survary-selector_radio.cms__type .survey-bar::before { display:none; }
+.cms__ending { display:table; width:100%; height:100%; }
+.cms__ending > div { display:table-cell; vertical-align:middle; text-align:center; padding-top:3rem; }
+.cms__ending img { width:6.2rem; }
+.cms__ending strong { display:block; font-size:2rem; margin:4rem 0 0 0; font-weight:500; }
+
 /*.overflow: inherit;*/
 /*about floating button*/
 /*# sourceMappingURL=maps/base.css.map */
