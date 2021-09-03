@@ -1,0 +1,18 @@
+<svg id="icon_m_hospital_80" xmlns="http://www.w3.org/2000/svg" width="79.999" height="80.001">
+    <defs>
+        <style>
+            .cls-2{fill:#333}
+        </style>
+    </defs>
+    <g id="icon_visual_company-customer" data-name="icon visual company-customer">
+        <path id="Path_291" data-name="Path 291" d="M267.905 273.694h-40.474a6.686 6.686 0 0 1-6.742-6.631v-40.2h40.475a6.687 6.687 0 0 1 6.741 6.633z" transform="translate(-209.358 -224.328)" style="fill:#fcaf17"/>
+        <path id="Path_292" data-name="Path 292" class="cls-2" d="M268.418 304.836h-38.636a11.112 11.112 0 0 1-11.145-11.05v-68.95h41.191a11.111 11.111 0 0 1 11.142 11.051v12.091h-5.117v-12.091a6.007 6.007 0 0 0-6.025-5.975h-36.074v63.872a6.01 6.01 0 0 0 6.027 5.976h38.636z" transform="translate(-209.871 -224.836)"/>
+        <path id="Rectangle_398" data-name="Rectangle 398" class="cls-2" transform="translate(0 74.925)" d="M0 0h79.324v5.075H0z"/>
+        <path id="Path_293" data-name="Path 293" class="cls-2" d="M237.443 249.634h-8.225v-13.776h5.118v8.7h3.107z" transform="translate(-207.225 -222.081)"/>
+        <path id="Path_294" data-name="Path 294" class="cls-2" d="M249.53 249.634h-8.224v-13.776h5.118v8.7h3.106z" transform="translate(-204.204 -222.081)"/>
+        <path id="Path_295" data-name="Path 295" class="cls-2" d="M237.443 264.619h-8.225v-13.777h5.118v8.7h3.107z" transform="translate(-207.225 -218.334)"/>
+        <path id="Path_296" data-name="Path 296" class="cls-2" d="M237.443 279.6h-8.225v-13.772h5.118v8.7h3.107z" transform="translate(-207.225 -214.588)"/>
+        <path id="Path_297" data-name="Path 297" d="M281.127 273.954H266.4v13.956h-2.79a6.639 6.639 0 0 1-6.574-6.705v-7.251h-7.115a6.643 6.643 0 0 1-6.574-6.706v-2.841h13.689v-13.958h3.06a6.362 6.362 0 0 1 6.3 6.426v7.53h8.15a6.641 6.641 0 0 1 6.574 6.706z" transform="translate(-203.693 -218.433)" style="fill:#fff"/>
+        <path id="Path_298" data-name="Path 298" class="cls-2" d="M269.466 290.955h-5.344a9.207 9.207 0 0 1-9.134-9.279V277h-4.555a9.212 9.212 0 0 1-9.134-9.277v-5.345h13.689v-13.96h5.619a8.929 8.929 0 0 1 8.859 9v4.957h5.591a9.21 9.21 0 0 1 9.132 9.279L284.2 277h-14.734zm-11.919-19.031h2.559v9.789a4.1 4.1 0 0 0 4.052 4.168h.19v-13.957h14.725v-.3a4.109 4.109 0 0 0-4.052-4.175h-10.672v-10.065a3.828 3.828 0 0 0-3.777-3.89h-.465v13.957h-13.689v.305a4.107 4.107 0 0 0 4.054 4.167z" transform="translate(-204.205 -218.941)"/>
+    </g>
+</svg>

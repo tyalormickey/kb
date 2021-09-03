@@ -95,6 +95,8 @@
 
 .pa0 {padding:0px !important;}
 
+.pa14{padding: 1.4rem !important;}
+
 .pa24{padding: 2.4rem !important;}
 
 .pr0{padding-right: 0px !important;}
@@ -4183,6 +4185,8 @@ textarea::placeholder { color: #999; }
 
 .all-menu__nav dl { margin-top: 3rem; }
 
+.all-menu__nav dt img { height:22px;margin-right:5px;vertical-align: inherit; }
+
 .all-menu__nav dt, .all-menu__nav dd { border-bottom: 1px solid #d3d4d6; }
 
 .all-menu__nav dt button, .all-menu__nav dd button { font-size: 1.6rem; white-space: nowrap; }
@@ -5020,7 +5024,8 @@ textarea::placeholder { color: #999; }
 .flex_box.w100{width:100%;}
 .flex_box_text {line-height:2.1rem;}
 .flex_box .graybtn{background:#dddddd;}
-.box_list {padding: 0 1.6rem;background: #FFFFFF;border-left:1px solid #d3d4d6;border-right:1px solid #d3d4d6;}
+.box_list {padding: 0 1.6rem;background: #FFFFFF;border-left:1px solid #d3d4d6;border-right:1px solid #d3d4d6;text-align:center}
+.box_list img {width:13%;margin:2rem 1.4rem 1rem 2rem;}
 .box_list li {display: flex;-ms-flex-align: center;align-items: center;-ms-flex-pack: justify;justify-content: space-between;padding: 2rem 0;}
 .box_list li span {color:#666666;font-size:1.4rem;width:40%;}
 .box_list li > p,.box_list li >  div {color:#000000;font-size:1.6rem;width:50%;}

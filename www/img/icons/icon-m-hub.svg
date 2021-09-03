@@ -1,0 +1,10 @@
+<svg id="icon_m_hub_80" xmlns="http://www.w3.org/2000/svg" width="56" height="80">
+    <defs>
+        <style>
+            .cls-2{fill:#333}
+        </style>
+    </defs>
+    <path id="Rectangle_709" data-name="Rectangle 709" transform="translate(17.999 5)" style="fill:#eeae24" d="M0 0h34v71H0z"/>
+    <path id="Path_210" data-name="Path 210" class="cls-2" d="M475.842 56.192a2.5 2.5 0 1 1 2.436-2.5 2.469 2.469 0 0 1-2.436 2.5z" transform="translate(-448.916 16)"/>
+    <path id="Path_211" data-name="Path 211" class="cls-2" d="M510.665 80H467a12.365 12.365 0 0 1-12.335-12.369V55.262h44.253v5h-39.162v7.369A7.316 7.316 0 0 0 467 75h38.574V12.369A7.316 7.316 0 0 0 498.33 5h-38.574v43.85h-5.091V0h43.665a12.365 12.365 0 0 1 12.335 12.369z" transform="translate(-454.665)"/>
+</svg>
