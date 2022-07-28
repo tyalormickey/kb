@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-reset.min.css'/>
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-common.css'/>
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-style.css'/>
+
+  <script src='../../js/libs/jquery-3.1.1.min.js'></script>
+  <script src='../../js/swiper.min.js'></script>
+  <script src='../../js/ui.js'></script>
+</head>
+<body>
+
+<div class="wrapper">
+  <div class="header">
+    <header>
+      <div class="header__back">
+        <div class="back">
+          <button type="button" class="only-icon">
+            <i class="icon-arrow_left icon-20">뒤로가기</i>
+          </button>
+        </div>
+        <div class="title">
+          의약품 직접 등록
+        </div>
+        <div class="right-icons">
+          <button type="button" class="only-icon">
+            <i class="icon-camera_02 icon-20">카메라</i>
+          </button>
+          <button type="button" class="only-icon">
+            <i class="icon-alarm on icon-20">알람</i>
+          </button>
+        </div>
+      </div>
+    </header>
+  </div>
+
+  <!-- content-wrap -->
+  <div class="content-wrap footer-button">
+    <!-- scrollBox -->
+    <div class="scrollBox">
+
+
+      <div class="manage-h3"><strong>약 봉투를 입력해 주세요.</strong></div>
+      <div class="counseling-type-item mt15">
+        <label class="input-radio">
+          <input type="radio" checked="" name="radioGroup"><i></i><span>신규 약 봉투 입력</span>
+        </label>
+      </div>
+
+      <div class="counseling-type-item mt15">
+        <label class="input-radio">
+          <input type="radio" name="radioGroup"><i></i><span>기존 약 봉투 선택</span>
+        </label>
+      </div>
+
+      <div class="gene-radio__reslut mt15">
+        <div class="custom-input">
+          <input type="text" value="" placeholder="약 봉투 이름을 20자 이내로 입력해 주세요.">
+        </div>
+
+        <div class="custom-select" style="display:none;">
+          <dl class="default">
+            <dt>
+              <button type="button"><span>두통약</span></button>
+            </dt>
+            <dd>
+              <ul>
+                <li><button type="button">두통약</button></li>
+                <li><button type="button">두통약</button></li>
+              </ul>
+            </dd>
+          </dl>
+        </div>
+      </div>
+
+      <div class="manage-h3 mt40 mb15"><strong>조제 일자를 선택해 주세요.</strong></div>
+      <div class="form-item__input form-input_calender w50per">
+        <input type="text" onclick="modal.open($(this), '.modal-calender', calenderSelectOpen)" placeholder="2020.10.08">
+        <i class="icon-cal icon-18">달력</i>
+      </div>
+
+      <div class="manage-h3 mt40 mb15"><strong>의약품을 추가한 후 알람을 설정하세요.</strong></div>
+      <!-- 2021.08.17 수정 -->
+      <div><button type="button" class="block medium">추가</button></div>
+      <!-- EOD : 2021.08.17 수정 -->
+
+      <ul class="switch-list medicine">
+        <li class="switch-list__item">
+          <div class="switch-list__item-title">
+            [일반] 게보린쿨다운정
+            <div class="switch-list__item-sub">7일동안,매일,아침/점심/저녁</div>
+          </div>
+          <div class="switch-list__item-button width52">
+            <label class="input-switch"><input type="checkbox" checked><i></i></label>
+          </div>
+        </li>
+
+        <li class="switch-list__item">
+          <div class="switch-list__item-title">[일반] 가스펠현탁액</div>
+          <div class="switch-list__item-button width52">
+            <label class="input-switch"><input type="checkbox"><i></i></label>
+          </div>
+        </li>
+
+        <li class="switch-list__item">
+          <div class="switch-list__item-title">[일반] 게보린정</div>
+          <div class="switch-list__item-button width52">
+            <label class="input-switch"><input type="checkbox"><i></i></label>
+          </div>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+  <!-- EOD : scrollBox -->
+</div>
+<!-- EOD : content-wrap -->
+
+<div class="footer footer__nav">
+  <button type="button" class="block" onclick="modal.alert($(this),fnReslutCheck);">
+    등록
+  </button>
+  <nav>
+    <ul>
+      <li class="on">
+        <button type="button">
+          <i class="icon-home icon-16"></i>
+          <span>홈</span>
+        </button>
+      </li>
+      <li>
+        <button type="button">
+          <i class="icon-pro icon-16"></i>
+          <span>프로그램</span>
+        </button>
+      </li>
+      <li>
+        <button type="button">
+          <i class="icon-info icon-16"></i>
+          <span>증상ㆍ병원</span>
+        </button>
+      </li>
+      <li>
+        <button type="button">
+          <i class="icon-my icon-16"></i>
+          <span>MY</span>
+        </button>
+      </li>
+    </ul>
+  </nav>
+</div>
+
+<!-- 팝업 // -->
+<div class="modal-popup modal-calender">
+  <div class="modal-popup__outer">
+    <section class="modal-popup__container">
+      <article class="modal-popup__header">
+        <h3 class="modal-popup__title">
+          날짜 선택
+        </h3>
+        <button class="modal-popup__close only-icon">
+          <i class="icon-x icon-20">닫기</i>
+        </button>
+      </article>
+      <article class="modal-popup__body">
+        <div class="modal-calender__container">
+          <article class="calender-swiper">
+            <div class="swiper-container calender-swiper--year">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">2013</div>
+                <div class="swiper-slide">2014</div>
+                <div class="swiper-slide">2015</div>
+                <div class="swiper-slide">2016</div>
+                <div class="swiper-slide">2017</div>
+                <div class="swiper-slide">2018</div>
+                <div class="swiper-slide">2019</div>
+                <div class="swiper-slide">2020</div>
+                <div class="swiper-slide">2021</div>
+              </div>
+            </div>
+          </article>
+          <article class="calender-swiper">
+            <div class="swiper-container calender-swiper--month">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">01</div>
+                <div class="swiper-slide">02</div>
+                <div class="swiper-slide">03</div>
+                <div class="swiper-slide">04</div>
+                <div class="swiper-slide">05</div>
+                <div class="swiper-slide">06</div>
+                <div class="swiper-slide">07</div>
+                <div class="swiper-slide">08</div>
+                <div class="swiper-slide">09</div>
+                <div class="swiper-slide">10</div>
+                <div class="swiper-slide">11</div>
+                <div class="swiper-slide">12</div>
+              </div>
+            </div>
+          </article>
+          <article class="calender-swiper">
+            <div class="swiper-container calender-swiper--day">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">01</div>
+                <div class="swiper-slide">02</div>
+                <div class="swiper-slide">03</div>
+                <div class="swiper-slide">04</div>
+                <div class="swiper-slide">05</div>
+                <div class="swiper-slide">06</div>
+                <div class="swiper-slide">07</div>
+                <div class="swiper-slide">08</div>
+                <div class="swiper-slide">09</div>
+                <div class="swiper-slide">10</div>
+                <div class="swiper-slide">11</div>
+                <div class="swiper-slide">12</div>
+                <div class="swiper-slide">13</div>
+                <div class="swiper-slide">14</div>
+                <div class="swiper-slide">15</div>
+                <div class="swiper-slide">16</div>
+                <div class="swiper-slide">17</div>
+                <div class="swiper-slide">18</div>
+                <div class="swiper-slide">19</div>
+                <div class="swiper-slide">20</div>
+                <div class="swiper-slide">21</div>
+                <div class="swiper-slide">22</div>
+                <div class="swiper-slide">23</div>
+                <div class="swiper-slide">24</div>
+                <div class="swiper-slide">25</div>
+                <div class="swiper-slide">26</div>
+                <div class="swiper-slide">27</div>
+                <div class="swiper-slide">28</div>
+                <div class="swiper-slide">29</div>
+                <div class="swiper-slide">30</div>
+                <div class="swiper-slide">31</div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </article>
+      <article class="modal-popup__footer">
+        <button class="block gray medium inline" onclick="modal.close($(this))">
+          취소
+        </button>
+        <button class="block medium inline" onclick="modal.close($(this))">
+          확인
+        </button>
+      </article>
+    </section>
+  </div>
+</div>
+<!-- // 팝업 -->
+
+<script>
+$(".counseling-type-item").find("input").on("click",function(){
+  idxN = $(this).closest(".counseling-type-item").index();
+  if(idxN == 1){
+    $(".gene-radio__reslut").find(".custom-input").show().siblings(".custom-select").hide();
+  }else{
+    $(".gene-radio__reslut").find(".custom-select").show().siblings(".custom-input").hide();
+  }
+});
+
+
+var calenderSwiperOption = {
+  direction: "vertical",
+  slidesPerView: 3,
+  loop: false,
+  spaceBetween: 0,
+  mousewheel: true,
+  centeredSlides: true,
+  init: false
+}
+
+var swiperYear = new Swiper(".calender-swiper--year", calenderSwiperOption);
+var swiperMonth = new Swiper(".calender-swiper--month", calenderSwiperOption);
+var swiperDay = new Swiper(".calender-swiper--day", calenderSwiperOption);
+
+function calenderSelectOpen() {
+  swiperYear.init();
+  swiperMonth.init();
+  swiperDay.init();
+}
+
+var fnReslutCheck = {
+  type: 'confirm',
+  text: '게보린쿨다운정 외 N개의 의약품을<br/>등록 하시겠습니까?',
+  ok: handleOk,
+  cancel: handleCancel,
+}
+
+function handleOk() {
+  console.log('확인');
+}
+
+function handleCancel() {
+  console.log('취소');
+}
+
+
+</script>
+</body>
+</html>

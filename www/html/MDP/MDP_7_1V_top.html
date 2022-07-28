@@ -113,11 +113,11 @@
           <div class="main-health__box-list-type4">
             <ul>
               <li>
-                <label class="tag-pick tag-pick--main">Main pick</label>
+                <label class="tag-pick tag-pick--main">주요 성취</label>
                 <span>식단관리</span>
               </li>
               <li>
-                <label class="tag-pick tag-pick--sub">Sub pick</label>
+                <label class="tag-pick tag-pick--sub">추가 성취</label>
                 <span>혈압관리, 혈당관리</span>
               </li>
             </ul>
@@ -146,7 +146,7 @@
         </article>
 
         <article class="main-health__box-col3">
-          <ul class="main-health__box-list-type1">
+          <ul class="main-health__box-list-type1 bg__add"> <!-- 2021.08.20 class 추가 -->
             <li>
               <button type="button">
                 <i class="icon-confirm icon-30"></i>
@@ -305,6 +305,16 @@
             </li>
           </ul>
         </article>
+
+        <!-- 2021.08.11 추가 -->
+        <article class="main-health__test">
+          <button class="w100per txt-align-left">
+            <p class="tit">성격유형검사</p>
+            <p class="txt">16가지 성격유형 중 나는<br/>무슨 유형일까요?</p>
+          </button>
+        </article>
+        <!-- EOD : 2021.08.11 추가 -->
+
       </section>
     </div>
   </div>
@@ -354,10 +364,13 @@
     var boxHeight = $topSec.height();
 
     $expand.scroll(function () {
-      if ($(this).scrollTop() < boxHeight - 30) {
+      // if ($(this).scrollTop() < boxHeight - 30) {
+      if ($(this).scrollTop() < 70) {
         $('header').removeClass('vh-scroll')
+        $('header').parent('.wrapper > .header').removeClass('vh-scroll-parent');
       } else {
         $('header').addClass('vh-scroll')
+        $('header').parent('.wrapper > .header').addClass('vh-scroll-parent');
       }
     });
   }
@@ -367,4 +380,3 @@
 
 </body>
 </html>
-

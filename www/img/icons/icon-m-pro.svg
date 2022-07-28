@@ -1,0 +1,18 @@
+<svg id="icon_m__pro" xmlns="http://www.w3.org/2000/svg" width="64" height="64">
+    <defs>
+        <style>
+            .cls-3{fill:#333}
+        </style>
+    </defs>
+    <g id="icon_visual_e-shopping_01" data-name="icon visual e-shopping 01" transform="translate(-139.449 -224.337)">
+        <path id="패스_288" data-name="패스 288" d="M200.769 273.926v-40.417a7.011 7.011 0 0 0-6.94-7.075h-52.977v40.931a6.5 6.5 0 0 0 6.435 6.561z" style="fill:#fcaf17"/>
+        <path id="패스_289" data-name="패스 289" d="M148.338 266.89h46.221v-33.42h-46.221z" style="fill:#fff"/>
+        <path id="사각형_392" data-name="사각형 392" class="cls-3" transform="translate(151.762 284.142)" d="M0 0h39.374v4.195H0z"/>
+        <path id="사각형_393" data-name="사각형 393" class="cls-3" transform="translate(170.592 271.829)" d="M0 0h32.526v4.195H0z"/>
+        <path id="패스_290" data-name="패스 290" class="cls-3" d="M172.634 286.239h-4.083v-10.215h-20.213c-4.628 0-8.077-2.556-8.789-6.512a8.13 8.13 0 0 1-.09-.65l-.01-.212v-44.313h55.111a9.122 9.122 0 0 1 8.889 9.115v29.921h-4.084v-29.9a4.953 4.953 0 0 0-4.823-4.938h-51.01v40c.009.072.019.144.032.214.408 2.274 2.734 3.083 4.774 3.083h24.3z"/>
+        <path id="사각형_394" data-name="사각형 394" class="cls-3" transform="rotate(-.136 109459.291 -65159.114)" d="M0 0h32.189v4.195H0z"/>
+        <path id="사각형_395" data-name="사각형 395" class="cls-3" transform="translate(179.354 245.857)" d="M0 0h4.083v16.756H0z"/>
+        <path id="사각형_396" data-name="사각형 396" class="cls-3" transform="translate(158.279 252.129)" d="M0 0h4.083v10.485H0z"/>
+        <path id="사각형_397" data-name="사각형 397" class="cls-3" transform="translate(168.814 239.576)" d="M0 0h4.083v23.037H0z"/>
+    </g>
+</svg>

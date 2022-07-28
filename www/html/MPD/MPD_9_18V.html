@@ -46,8 +46,14 @@
 
       <div class="manage-h3 mt30 mb10"><strong>상담 일자와 시간을 선택해 주세요.</strong></div>
       <div class="form-item__flex">
-        <div class="form-item__input"><input type="text"></div>
-        <div class="form-item__input"><input type="text"></div>
+        <div class="form-item__input form-input_calender">
+          <input type="text" onclick="modal.open($(this), '.modal-calender', calenderSelectOpen)" placeholder="2020.10.08">
+          <i class="icon-cal icon-18">달력</i>
+        </div>
+        <div class="form-item__input form-input_time">
+          <input type="text" placeholder="13:00">
+          <i class="icon-clock2 icon-18">시간</i>
+        </div>
       </div>
 
       <div class="manage-h3 mt30 mb10"><strong>상담 받으실 지역을 선택해 주세요.</strong></div>
@@ -126,7 +132,7 @@
   <!-- EOD : content-wrap -->
 
   <!-- footer -->
-  <div class="footer footer__button-nav">
+  <div class="footer footer__nav">
     <button type="button" class="block">선택하기</button>
     <nav>
       <ul>
@@ -158,6 +164,127 @@
     </nav>
   </div>
   <!-- EOD : footer -->
+
+  <!-- 팝업 // -->
+  <div class="modal-popup modal-calender">
+    <div class="modal-popup__outer">
+      <section class="modal-popup__container">
+        <article class="modal-popup__header">
+          <h3 class="modal-popup__title">
+            날짜 선택
+          </h3>
+          <button class="modal-popup__close only-icon">
+            <i class="icon-x icon-20">닫기</i>
+          </button>
+        </article>
+        <article class="modal-popup__body">
+          <div class="modal-calender__container">
+            <article class="calender-swiper">
+              <div class="swiper-container calender-swiper--year">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">2013</div>
+                  <div class="swiper-slide">2014</div>
+                  <div class="swiper-slide">2015</div>
+                  <div class="swiper-slide">2016</div>
+                  <div class="swiper-slide">2017</div>
+                  <div class="swiper-slide">2018</div>
+                  <div class="swiper-slide">2019</div>
+                  <div class="swiper-slide">2020</div>
+                  <div class="swiper-slide">2021</div>
+                </div>
+              </div>
+            </article>
+            <article class="calender-swiper">
+              <div class="swiper-container calender-swiper--month">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">01</div>
+                  <div class="swiper-slide">02</div>
+                  <div class="swiper-slide">03</div>
+                  <div class="swiper-slide">04</div>
+                  <div class="swiper-slide">05</div>
+                  <div class="swiper-slide">06</div>
+                  <div class="swiper-slide">07</div>
+                  <div class="swiper-slide">08</div>
+                  <div class="swiper-slide">09</div>
+                  <div class="swiper-slide">10</div>
+                  <div class="swiper-slide">11</div>
+                  <div class="swiper-slide">12</div>
+                </div>
+              </div>
+            </article>
+            <article class="calender-swiper">
+              <div class="swiper-container calender-swiper--day">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">01</div>
+                  <div class="swiper-slide">02</div>
+                  <div class="swiper-slide">03</div>
+                  <div class="swiper-slide">04</div>
+                  <div class="swiper-slide">05</div>
+                  <div class="swiper-slide">06</div>
+                  <div class="swiper-slide">07</div>
+                  <div class="swiper-slide">08</div>
+                  <div class="swiper-slide">09</div>
+                  <div class="swiper-slide">10</div>
+                  <div class="swiper-slide">11</div>
+                  <div class="swiper-slide">12</div>
+                  <div class="swiper-slide">13</div>
+                  <div class="swiper-slide">14</div>
+                  <div class="swiper-slide">15</div>
+                  <div class="swiper-slide">16</div>
+                  <div class="swiper-slide">17</div>
+                  <div class="swiper-slide">18</div>
+                  <div class="swiper-slide">19</div>
+                  <div class="swiper-slide">20</div>
+                  <div class="swiper-slide">21</div>
+                  <div class="swiper-slide">22</div>
+                  <div class="swiper-slide">23</div>
+                  <div class="swiper-slide">24</div>
+                  <div class="swiper-slide">25</div>
+                  <div class="swiper-slide">26</div>
+                  <div class="swiper-slide">27</div>
+                  <div class="swiper-slide">28</div>
+                  <div class="swiper-slide">29</div>
+                  <div class="swiper-slide">30</div>
+                  <div class="swiper-slide">31</div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </article>
+        <article class="modal-popup__footer">
+          <button class="block gray medium inline" onclick="modal.close($(this))">
+            취소
+          </button>
+          <button class="block medium inline" onclick="modal.close($(this))">
+            확인
+          </button>
+        </article>
+      </section>
+    </div>
+  </div>
+  <!-- // 팝업 -->
+
+  <script>
+  var calenderSwiperOption = {
+    direction: "vertical",
+    slidesPerView: 3,
+    loop: false,
+    spaceBetween: 0,
+    mousewheel: true,
+    centeredSlides: true,
+    init: false
+  }
+
+  var swiperYear = new Swiper(".calender-swiper--year", calenderSwiperOption);
+  var swiperMonth = new Swiper(".calender-swiper--month", calenderSwiperOption);
+  var swiperDay = new Swiper(".calender-swiper--day", calenderSwiperOption);
+
+  function calenderSelectOpen() {
+    swiperYear.init();
+    swiperMonth.init();
+    swiperDay.init();
+  }
+</script>
 </div>
 
 </body>

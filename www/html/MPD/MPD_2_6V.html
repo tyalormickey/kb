@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
+    <link rel='stylesheet' type='text/css' href='../../css/morpheus-reset.min.css'/>
+    <link rel='stylesheet' type='text/css' href='../../css/morpheus-common.css'/>
+    <link rel='stylesheet' type='text/css' href='../../css/morpheus-style.css'/>
+
+    <script src='../../js/libs/jquery-3.1.1.min.js'></script>
+    <script src='../../js/swiper.min.js'></script>
+    <script src='../../js/ui.js'></script>
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="header">
+        <header>
+            <div class="header__back">
+                <div class="back">
+                    <button type="button" class="only-icon">
+                        <i class="icon-arrow_left icon-20">뒤로가기</i>
+                    </button>
+                </div>
+                <div class="title">
+                    약 봉투/처방전 스캔
+                </div>
+                <div class="right-icons">
+                    <button type="button" class="only-icon">
+                        <i class="icon-camera_02 icon-20">카메라</i>
+                    </button>
+                    <button type="button" class="only-icon">
+                        <i class="icon-alarm on icon-20">알람</i>
+                    </button>
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <!-- content-wrap -->
+    <div class="content-wrap footer-button">
+        <!-- scrollBox -->
+        <div class="scrollBox">
+
+
+            <div class="manage-h3"><strong>스캔할 대상을 선택해 주세요.</strong></div>
+            <div class="counseling-type-item mt15">
+                <ul class="scanlist">
+                    <li>
+                        <button type="button" class="btn1">
+                            <img src="../../img/icons/icon_float_02.svg">
+                            <p>약복투</p>
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" class="btn2">
+                            <img src="../../img/icons/icon_float_02_2.svg">
+                            <p>처방전</p>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+
+
+            <div class="manage-h3 mt40 mb15"><strong>조제 일자를 선택해 주세요.</strong></div>
+            <div class="form-item__input form-input_calender w50per">
+                <input type="text" onclick="modal.open($(this), '.modal-calender', calenderSelectOpen)" placeholder="2020.10.08">
+                <i class="icon-cal icon-18">달력</i>
+            </div>
+
+
+        </div>
+    </div>
+    <!-- EOD : scrollBox -->
+</div>
+<!-- EOD : content-wrap -->
+
+<div class="footer footer__nav">
+    <button type="button" class="block" onclick="modal.alert($(this),fnReslutCheck);">
+        등록
+    </button>
+    <nav>
+        <ul>
+            <li class="on">
+                <button type="button">
+                    <i class="icon-home icon-16"></i>
+                    <span>홈</span>
+                </button>
+            </li>
+            <li>
+                <button type="button">
+                    <i class="icon-pro icon-16"></i>
+                    <span>프로그램</span>
+                </button>
+            </li>
+            <li>
+                <button type="button">
+                    <i class="icon-info icon-16"></i>
+                    <span>증상ㆍ병원</span>
+                </button>
+            </li>
+            <li>
+                <button type="button">
+                    <i class="icon-my icon-16"></i>
+                    <span>MY</span>
+                </button>
+            </li>
+        </ul>
+    </nav>
+</div>
+
+<!-- 팝업 // -->
+
+<div class="diet-input-popup" id="diet-input-popup">
+    <div class="diet-input-popup__outer">
+        <div class="diet-input-popup__inner">
+            <div class="diet-input-popup__title">
+                <h1>
+                    식단 입력 안내
+                </h1>
+            </div>
+            <div class="diet-eatinput-popup__guide">
+                <ul>
+                    <li style="word-break:inherit">
+                        <span>1.</span>
+                        오늘 날씨와 날씨에 따라 주의해야할 질병 등 개인정보는 인식 및 저장하지 않습니다.
+                    </li>
+                    <li>
+                        <span>2.</span>
+                        약 봉투 / 처방전의 의약품명이 나오는 영역만
+                        스캔해 주세요.
+
+                        <div class="diet-eatinput-popup__guide__image">
+                            <img src="../../img/info_26v.png" alt="식단 입력 안내 이미지" />
+                        </div>
+                    </li>
+                    <li>
+                        <span>3.</span>
+                        인식이 안된 의약품은 직접 입력하거나,
+                        추가 스캔 하실 수 있습니다.
+                    </li>
+                    <li>
+                        <span>4.</span>
+                        흔들리거나 그림자, 빛 반사 등 인식이 어려운
+                        경우 스캔 되지않을 수 있습니다.
+                    </li>
+                </ul>
+            </div>
+            <div class="diet-input-popup__buttons">
+                <button type="button">
+                    다시 보지 않기
+                </button>
+                <button type="button" onclick="popupClose()">
+                    닫기
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="diet-input-popup" id="diet-paper-input-popup">
+    <div class="diet-input-popup__outer">
+        <div class="diet-input-popup__inner">
+            <div class="diet-input-popup__title">
+                <h1>
+                    약 봉투 / 처방전 스캔하기
+                </h1>
+            </div>
+            <div class="diet-eatinput-popup__guide camerapaper">
+
+            </div>
+            <div class="diet-input-popup__buttons camerabtn">
+                <ul class="flashbtn">
+                    <li>
+                        <img src="../../img/flash-on-btn.png"/>
+                    </li>
+                    <li>
+                        <img src="../../img/flash-off-btn.png"/>
+                    </li>
+                </ul>
+                <img src="../../img/photo-btn.png"/>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- // 팝업 -->
+
+<script>
+    function popupClose () {
+        var $dietPop = $('.diet-input-popup');
+        $dietPop.removeClass('active')
+    }
+    $(".btn1").on("click",function(){
+        $("#diet-input-popup").addClass("active");
+    });
+    $(".btn2").on("click",function(){
+        $("#diet-paper-input-popup").addClass("active");
+    });
+
+
+    $(".counseling-type-item").find("input").on("click",function(){
+        idxN = $(this).closest(".counseling-type-item").index();
+        if(idxN == 1){
+            $(".gene-radio__reslut").find(".custom-input").show().siblings(".custom-select").hide();
+        }else{
+            $(".gene-radio__reslut").find(".custom-select").show().siblings(".custom-input").hide();
+        }
+    });
+
+
+    var calenderSwiperOption = {
+        direction: "vertical",
+        slidesPerView: 3,
+        loop: false,
+        spaceBetween: 0,
+        mousewheel: true,
+        centeredSlides: true,
+        init: false
+    }
+
+    var swiperYear = new Swiper(".calender-swiper--year", calenderSwiperOption);
+    var swiperMonth = new Swiper(".calender-swiper--month", calenderSwiperOption);
+    var swiperDay = new Swiper(".calender-swiper--day", calenderSwiperOption);
+
+    function calenderSelectOpen() {
+        swiperYear.init();
+        swiperMonth.init();
+        swiperDay.init();
+    }
+
+    var fnReslutCheck = {
+        type: 'confirm',
+        text: '게보린쿨다운정 외 N개의 의약품을<br/>등록 하시겠습니까?',
+        ok: handleOk,
+        cancel: handleCancel,
+    }
+
+    function handleOk() {
+        console.log('확인');
+    }
+
+    function handleCancel() {
+        console.log('취소');
+    }
+
+    var fnReslutCheck1 = {
+        type: 'confirm',
+        text: '약 봉투 스캔에 실패 했습니다.',
+        okText: '취소',
+        cancelText: '확인',
+        ok: handleOk,
+        cancel: handleCancel,
+    }
+
+    var fnReslutCheck2 = {
+        type: 'confirm',
+        text: '약품명 영역만 카메라로 스캔해 주세요.<br>멀리서 찍거나 빛 반사 그림자 등이 있으면<br>인식률이 떨어집니다.',
+        okText: '직접입력',
+        cancelText: '다시하기',
+        ok: test,
+        cancel: cancel,
+    }
+
+    function test() {
+        console.log('확인되었지롱');
+    }
+
+    function cancel() {
+        console.log('취소');
+    }
+</script>
+</body>
+</html>

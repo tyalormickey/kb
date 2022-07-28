@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-reset.min.css'/>
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-common.css'/>
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-style.css'/>
+
+  <script src='../../js/libs/jquery-3.1.1.min.js'></script>
+  <script src='../../js/swiper.min.js'></script>
+  <script src='../../js/ui.js'></script>
+</head>
+<body>
+<div class="wrapper">
+  <div class="header">
+    <header>
+      <div class="header__title">
+        <div class="title">
+          의약품 검색
+        </div>
+        <div class="header__title--close">
+          <button class="only-icon" type="button">
+            <i class="icon-x icon-20">닫기</i>
+          </button>
+        </div>
+      </div>
+    </header>
+  </div>
+  <div class="content-wrap footer-none">
+    <div class="scrollBox page-mpd-515">
+      <section class="search-sec">
+        <div class="custom-input">
+          <input type="text" placeholder="건강검진 센터명을 검색해 주세요."/>
+          <button type="button" class="custom-input__suffix">
+            <i class="icon-search icon-18">검색</i>
+          </button>
+        </div>
+        <div class="search-text-list">
+          <li>
+            <button type="button">[일반] <span>게보</span>린릴랙스연질캡슐</button>
+          </li>
+          <li>
+            <button type="button">[일반] <span>게보</span>린릴랙스연질캡슐</button>
+          </li>
+          <li>
+            <button type="button">[일반] <span>게보</span>린에스정(수출용)</button>
+          </li>
+          <li>
+            <button type="button">[일반] <span>게보</span>린정</button>
+          </li>
+          <li>
+            <button type="button">[일반] <span>게보</span>린쿨다운정</button>
+          </li>
+          <li>
+            <button type="button">[일반] <span>게보</span>콜캡슐</button>
+          </li>
+          <li>
+            <button type="button">[전문] 소아용<span>게보</span>린아이츄정</button>
+          </li>
+          <li>
+            <button type="button">[전문] 아미<span>게보</span>린캡슐</button>
+          </li>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
+<div class="footer footer__nav">
+  <button type="button" class="block gray">
+    입력
+  </button>
+</div>
+<script>
+$(".search-text-list li").on("click",function(){
+  $(".search-text-list li").removeClass("active");
+  $(this).addClass("active");
+  $(".footer__nav .block").removeClass("gray");
+});
+$(".footer__nav button").on("click",function(){
+  if (!$(this).hasClass("gray")) {
+    let title = $(".search-text-list .active").text();
+    toast.open(title+' 이(가) 적용 되었습니다.', 1000);
+    setTimeout(function () {
+      modal.close($('.modal-goal-event'))
+    }, 300);
+  }
+});
+</script>
+</body>
+</html>

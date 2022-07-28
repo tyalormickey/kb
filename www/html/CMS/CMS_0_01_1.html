@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
+    <link rel='stylesheet' type='text/css' href='../../css/morpheus-reset.min.css'/>
+    <link rel='stylesheet' type='text/css' href='../../css/morpheus-common.css'/>
+    <link rel='stylesheet' type='text/css' href='../../css/morpheus-style.css'/>
+
+    <script src='../../js/libs/jquery-3.1.1.min.js'></script>
+    <script src='../../js/swiper.min.js'></script>
+    <script src='../../js/ui.js'></script>
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="header">
+        <header>
+            <div class="header__title">
+                <div class="title">
+                    그룹1
+                </div>
+            </div>
+        </header>
+    </div>
+    <div class="content-wrap">
+
+        <div class="scrollBox">
+
+            <div class="survey__group-intro">
+                <div class="mentailty__bar mt0">
+                    <div class="tit">설문1</div>
+                    <div class="bar"><span></span></div>
+                    <div class="num">
+                        <span class="now"></span>/<span class="all"></span>
+                    </div>
+                </div>
+            </div>
+
+
+            <section class="swiper-slide">
+
+                <div class="survary-selector type02">
+                    <div class="survary-selector__title">나는 우리 아이와 항상 좋은 관계를 유지한다.</div>
+                    <div class="survary-selector__radio">
+                        <div class="tit">그렇다</div>
+                        <ul>
+                            <li><label class="input-radio"><input type="radio" name="radio__group"><span>1</span></label></li>
+                            <li><label class="input-radio"><input type="radio" name="radio__group" checked><span>2</span></label></li>
+                            <li><label class="input-radio"><input type="radio" name="radio__group"><span>3</span></label></li>
+                            <li><label class="input-radio"><input type="radio" name="radio__group"><span>4</span></label></li>
+                            <li><label class="input-radio"><input type="radio" name="radio__group"><span>5</span></label></li>
+                            <li><label class="input-radio"><input type="radio" name="radio__group"><span>6</span></label></li>
+                            <li><label class="input-radio"><input type="radio" name="radio__group"><span>7</span></label></li>
+                            <li><label class="input-radio"><input type="radio" name="radio__group"><span>8</span></label></li>
+                            <li><label class="input-radio"><input type="radio" name="radio__group"><span>9</span></label></li>
+                            <li><label class="input-radio"><input type="radio" name="radio__group"><span>10</span></label></li>
+                        </ul>
+                        <div class="tit ar">그렇지 않다</div>
+                    </div>
+                </div>
+
+            </section>
+
+        </div>
+    </div>
+    <div class="footer footer__nav">
+        <div class="button__flex-wrap">
+            <button class="block" type="button" data-button="next">
+                다음
+            </button>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    var idxNGroup = 4;
+    $(".mentailty__bar").find(".now").text("1").siblings(".all").text(idxNGroup);
+    $(".mentailty__bar").find(".bar span").css("width", (1/idxNGroup)*100 +"%");
+
+    $(".survey-question li").on("click",function(){
+        $(".survey-question li").removeClass("active");
+        $(this).addClass("active");
+        $(this).parents("section").find("input[type='hidden']").val($(this).data("value"));
+    });
+</script>
+</body>
+</html>

@@ -1,43 +1,342 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <title>Title</title>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
-  <link rel='stylesheet' type='text/css' href='../../css/morpheus-reset.min.css'/>
-  <link rel='stylesheet' type='text/css' href='../../css/morpheus-common.css'/>
-  <link rel='stylesheet' type='text/css' href='../../css/morpheus-style.css'/>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
+    <link rel='stylesheet' type='text/css' href='../../css/morpheus-reset.min.css'/>
+    <link rel='stylesheet' type='text/css' href='../../css/morpheus-common.css'/>
+    <link rel='stylesheet' type='text/css' href='../../css/morpheus-style.css'/>
 
-  <script src='../../js/libs/jquery-3.1.1.min.js'></script>
-  <script src='../../js/swiper.min.js'></script>
-  <script src='../../js/ui.js'></script>
+    <script src='../../js/libs/jquery-3.1.1.min.js'></script>
+    <script src='../../js/swiper.min.js'></script>
+    <script src='../../js/ui.js'></script>
+    <script src='../../js/chart.js'></script>
+    <script src='../../js/libs/chart-datalabels.js'></script>
 </head>
 <body>
 
 <div class="wrapper">
-  <div class="header">
-    <header>
-      <div class="header__title">
-        <div class="title">
-          건강점수란?
-        </div>
-        <div class="header__title--close">
-          <button class="only-icon" type="button">
-            <i class="icon-x icon-20">닫기</i>
-          </button>
-        </div>
-      </div>
-    </header>
-  </div>
-  <div class="content-wrap footer-none">
-    <div class="scrollBox page-mdp-720">
+    <div class="header">
+        <header>
+            <div class="header__title">
+                <div class="title">
+                    건강점수란?
+                </div>
+                <div class="header__title--close">
+                    <button class="only-icon" type="button">
+                        <i class="icon-x icon-20">닫기</i>
+                    </button>
+                </div>
+            </div>
+        </header>
     </div>
-  </div>
+    <div class="content-wrap footer-none">
+        <div class="scrollBox">
+            <ul class="setting-nav">
+                <li class="accordion accordion--case2 bottom-border0">
+                    <dl>
+                        <dt class="qnalistitem">
+                            <button type="button">
+                                <ul>
+                                    <li class="float-left">
+                                        <span class="list-item__title">
+                                            건강점수는 무엇인가요?
+                                        </span>
+                                    </li>
+                                    <li class="float-right">
+                                        <i>열기</i>
+                                    </li>
+                                </ul>
+                            </button>
+                        </dt>
+                        <dd class="accordion__button-list" style="display: none;">
+                            <ul class="page-auth-email__guide mt0 no-border">
+                                <li class="all-border-no">
+                                    건강점수는 고객님이 제공한 일반건강검진정보를 분석해 산출하는 건강수준 평가 지표입니다.
+                                </li>
+                                <li class="all-border-no">
+                                    건강점수는 신용점수와 유사하게 개인의 잠재적인 건강위험을 쉽게 이해하고 해석할 수 있도록 건강수준을 0-1000점 사이의 점수로 제시합니다.
+                                </li>
+                                <li class="all-border-no">
+                                    따라서 건강점수가 높을수록 건강검진항목을 활용해 평가한 건강위험이 낮다고 해석할 수 있으며 건강점수가 낮을수록 건강위험이 높다는 것을 의미합니다.
+                                </li>
+                            </ul>
+                        </dd>
+                    </dl>
+                </li>
+
+                <li class="accordion accordion--case2 bottom-border0">
+                    <dl>
+                        <dt class="qnalistitem">
+                            <button type="button">
+                                <ul>
+                                    <li class="float-left">
+                                        <span class="list-item__title">
+                                            건강점수 산출에 활용되는 정보는<br>무엇인가요?
+                                        </span>
+                                    </li>
+                                    <li class="float-right">
+                                        <i>열기</i>
+                                    </li>
+                                </ul>
+                            </button>
+                        </dt>
+                        <dd class="accordion__button-list" style="display: none;">
+                            <ul class="page-auth-email__guide mt0 no-border">
+                                <li class="all-border-no">
+                                    건강점수는 고객님이 제공한 일반건강검진정보를 활용해 산출합니다.
+                                </li>
+                                <li class="all-border-no">
+                                    구체적으로 일반건강검진의 설문을 통해 수집되는 가족력과 복약여부, 생활습관(음주, 흡연 등)과 같은 문진정보들과 신체검사를 통해 측정하는 체질량, 혈압, 혈당, 콜레스테롤, 간수치와 같은 임상정보들을 활용합니다.
+                                </li>
+                            </ul>
+                        </dd>
+                    </dl>
+                </li>
+
+                <li class="accordion accordion--case2 bottom-border0">
+                    <dl>
+                        <dt class="qnalistitem">
+                            <button type="button">
+                                <ul>
+                                    <li class="float-left">
+                                        <span class="list-item__title">
+                                            건강점수는 어떻게 산출되나요?
+                                        </span>
+                                    </li>
+                                    <li class="float-right">
+                                        <i>열기</i>
+                                    </li>
+                                </ul>
+                            </button>
+                        </dt>
+                        <dd class="accordion__button-list" style="display: none;">
+                            <ul class="page-auth-email__guide mt0 no-border">
+                                <li class="all-border-no">
+                                    건강점수는 머신러닝과 통계적 방법론을 기반으로 개발된 건강점수 모형을 통해 산출됩니다.
+                                </li>
+                                <li class="all-border-no">
+                                    건강점수 모형을 통한 건강점수 산출은 크게 세 단계로 구성됩니다.
+                                </li>
+                                <li class="all-border-no">
+                                    첫 번째 단계에서는 건강위험 발생확률을 예측합니다. 여기서 건강위험이란 10년내 주요 만성질환의 발병(당뇨, 심뇌혈관 질환)과 암, 그리고 사망의 발생여부를 의미합니다.
+                                </li>
+                                <li class="all-border-no">
+                                    두번째 단계에서는 산출된 건강위험 발생확률을 절대적 건강수준과 상대적 건강수준으로 정의합니다. 여기서 절대적 건강수준은 산출된 건강위험의 발생확률의 절대적 크기만을 고려해 정의하며 상대적 건강수준은 동일연령과 성별그룹과 비교한 건강위험 발생확률의 상대적 크기를 고려해 정의합니다.
+                                </li>
+                                <li class="all-border-no">
+                                    마지막으로 세번째 단계에서는 건강점수 체계에 적용하여 0과 1사이의 값으로 정의되는 상대적 건강수준과 절대적 건강수준을 결합하여 0-1000점의 점수체계로 변환합니다.
+                                </li>
+                            </ul>
+                        </dd>
+                    </dl>
+                </li>
+
+                <li class="accordion accordion--case2 bottom-border0">
+                    <dl>
+                        <dt class="qnalistitem">
+                            <button type="button">
+                                <ul>
+                                    <li class="float-left">
+                                        <span class="list-item__title">
+                                            일반건강검진정보가 없다면 건강<br>점수를 산출할 수 없나요?
+                                        </span>
+                                    </li>
+                                    <li class="float-right">
+                                        <i>열기</i>
+                                    </li>
+                                </ul>
+                            </button>
+                        </dt>
+                        <dd class="accordion__button-list" style="display: none;">
+                            <ul class="page-auth-email__guide mt0 no-border">
+                                <li class="all-border-no">
+                                    일반건강검진 정보의 이용이 어려운 경우에도 설문을 통해 건강점수 산출할 수 있습니다.
+                                </li>
+                                <li class="all-border-no">
+                                    다만, 설문은 주관적인 건강상태 정보만을 수집하기 때문에 측정을 통해 수집되는 검진정보와 비교해 입력정보의 오차가 존재합니다.
+                                </li>
+                                <li class="all-border-no">
+                                    입력정보의 차이와 오차의 가능성을 고려해 설문을 통해 산출되는 건강점수는 100 단위의 구간으로 한정하여 제공합니다. 따라서 보다 정확한 건강점수 산출을 위해서는 일반건강검진 정보의 활용을 권장하고 있습니다.
+                                </li>
+                            </ul>
+                        </dd>
+                    </dl>
+                </li>
+
+                <li class="accordion accordion--case2 bottom-border0">
+                    <dl>
+                        <dt class="qnalistitem">
+                            <button type="button">
+                                <ul>
+                                    <li class="float-left">
+                                        <span class="list-item__title">
+                                            건강점수를 높이려면 어떻게 해야 <br>하나요?
+                                        </span>
+                                    </li>
+                                    <li class="float-right">
+                                        <i>열기</i>
+                                    </li>
+                                </ul>
+                            </button>
+                        </dt>
+                        <dd class="accordion__button-list" style="display: none;">
+                            <ul class="page-auth-email__guide mt0 no-border">
+                                <li class="all-border-no">
+                                    일반적으로 연령이 증가함에 따라 건강위험은 증가합니다. 따라서 연령이 증가함에 따라 기본적으로 건강점수는 일정 수준으로 감소하는 특성을 보유하고 있습니다.
+                                </li>
+                                <li class="all-border-no">
+                                    다만 건강관리와 생활습관 개선을 통해 건강검진 지표를 개선하고 개선된 정보를 주기적으로 업데이트 함으로써 연령 증가에 따른 건강점수의 감소 속도를 낮출 수 있습니다.
+                                </li>
+                                <li class="all-border-no">
+                                    이와 더불어 건강점수는 동일연령 및 성별과 비교한 상대적인 건강수준을 반영하기 때문에 다른 사람과 비교했을 때의 건강수준도 매우 중요한 요소입니다.
+                                </li>
+                                <li class="all-border-no">
+                                    즉, 내 건강수준이 이전과 동일하더라도 다른 사람들의 건강수준이 전반적으로 개선된다면 나의 건강점수는 감소할 수 있습니다.
+                                </li>
+                                <li class="all-border-no">
+                                    따라서 건강점수를 높이기 위해서는 일상적 건강관리를 통해 검진지표를 개선하고, 다른 사람들의 건강수준과 나의 건강수준을 주기적인 모니터링함으로써 계획적이고 주기적인 건강관리 실천이 필요합니다.
+                                </li>
+                            </ul>
+                        </dd>
+                    </dl>
+                </li>
+
+                <li class="accordion accordion--case2 bottom-border0">
+                    <dl>
+                        <dt class="qnalistitem">
+                            <button type="button">
+                                <ul>
+                                    <li class="float-left">
+                                        <span class="list-item__title">
+                                            백분위란?
+                                        </span>
+                                    </li>
+                                    <li class="float-right">
+                                        <i>열기</i>
+                                    </li>
+                                </ul>
+                            </button>
+                        </dt>
+                        <dd class="accordion__button-list" style="display: none;">
+                            <ul class="page-auth-email__guide mt0 no-border">
+                                <li class="all-border-no">
+                                    백분위는 개인의 상대적인 서열을 보여주는 통계지표로 0과 100사이의 값을 가집니다.
+                                </li>
+                                <li class="all-border-no">
+                                    예를 들어 나의 건강점수의 백분위가 90이라면 건강점수를 보유한 전체 인구에서 나보다 낮은 건강점수를 가진 사람들의 비율이 90%라는 것을 의미합니다.
+                                </li>
+                                <li class="all-border-no">
+                                    따라서 백분위가 높을 수록 나의 건강점수가 상대적으로 높다는 것을 의미합니다.
+                                </li>
+                            </ul>
+                        </dd>
+                    </dl>
+                </li>
+
+                <li class="accordion accordion--case2 bottom-border0">
+                    <dl>
+                        <dt class="qnalistitem">
+                            <button type="button">
+                                <ul>
+                                    <li class="float-left">
+                                        <span class="list-item__title">
+                                            건강검진지표의 지역별 peer 그룹의<br>평균값은 어떻게 산정하나요?
+                                        </span>
+                                    </li>
+                                    <li class="float-right">
+                                        <i>열기</i>
+                                    </li>
+                                </ul>
+                            </button>
+                        </dt>
+                        <dd class="accordion__button-list" style="display: none;">
+                            <ul class="page-auth-email__guide mt0 no-border">
+                                <li class="all-border-no">
+                                    건강검진지표의 지역별 Peer그룹의 기초통계 정보는 국민건강보험공단이 매년 공개하는  통계연보와 통계청의 인구통계 정보를 활용합니다.
+                                </li>
+                                <li class="all-border-no">
+                                    이들 정보를 활용해 건강검진지표의 지역별 Peer 그룹의 기초통계 정보를 추정해 활용합니다.
+                                </li>
+                                <li class="all-border-no">
+                                    지역의 건강검진 인구가 매우 작거나, 거주인구와 특정 연령과 성별의 인구 수가 상대적으로 작은 경우 기초통계정보의 오차가 존재할 수 있습니다.
+                                </li>
+                            </ul>
+                        </dd>
+                    </dl>
+                </li>
+
+                <li class="accordion accordion--case2 bottom-border0">
+                    <dl>
+                        <dt class="qnalistitem">
+                            <button type="button">
+                                <ul>
+                                    <li class="float-left">
+                                        <span class="list-item__title">
+                                            활용하는 의료비 정보는 무엇인가요?
+                                        </span>
+                                    </li>
+                                    <li class="float-right">
+                                        <i>열기</i>
+                                    </li>
+                                </ul>
+                            </button>
+                        </dt>
+                        <dd class="accordion__button-list" style="display: none;">
+                            <ul class="page-auth-email__guide mt0 no-border">
+                                <li class="all-border-no">
+                                    의료비 정보는 건강보험공단이 보유한 진료와 의료이용내역을 기반으로 산출된 의료비입니다.
+                                </li>
+                                <li class="all-border-no">
+                                    건강보험공단이 보유하는 의료비정보는 건강보험의 적용을 받는 급여의료비 정보만을 활용하기 때문에 본 서비스에서 제시되는 의료비 정보는 급여 의료비를 기준으로 합니다.
+                                </li>
+                                <li class="all-border-no">
+                                    따라서 본인부담 비급여 정보를 포함하지 않기 때문에 실제 지출한 의료비 지출액과 차이가 존재할 수 있습니다.
+                                </li>
+                            </ul>
+                        </dd>
+                    </dl>
+                </li>
+
+                <li class="accordion accordion--case2 bottom-border0">
+                    <dl>
+                        <dt class="qnalistitem">
+                            <button type="button">
+                                <ul>
+                                    <li class="float-left">
+                                        <span class="list-item__title">
+                                            의료비 예측은 무엇인가요?
+                                        </span>
+                                    </li>
+                                    <li class="float-right">
+                                        <i>열기</i>
+                                    </li>
+                                </ul>
+                            </button>
+                        </dt>
+                        <dd class="accordion__button-list" style="display: none;">
+                            <ul class="page-auth-email__guide mt0 no-border">
+                                <li class="all-border-no">
+                                    의료비 예측은 고객님이 제공한 의료비 정보와 건강점수 예측을 통해 산출된 향후 10년간 급여의료비 지출 정보입니다.
+                                </li>
+                                <li class="all-border-no">
+                                    일반적으로 연령의 증가와 건강수준 악화에 따라 의료비는 증가하는 만큼 예측된 건강점수가 현재의 건강점수 보다 낮다면 예측된 의료비 지출 규모는 증가할 것입니다.
+                                </li>
+                                <li class="all-border-no">
+                                    또한 본 예측은 급여의료비만을 대상으로 예측한 결과이며 개인이 실제 지출한 의료비와 차이가 존재합니다.
+                                </li>
+                            </ul>
+                        </dd>
+                    </dl>
+                </li>
+            </ul>
+        </div>
+    </div>
 </div>
 
 <script>
-
 </script>
 </body>
 </html>

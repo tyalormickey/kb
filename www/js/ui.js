@@ -251,20 +251,20 @@ var modal = (function () {
     if (link) { links.push(link); }
     openSet($alert);
 
-    /* 2021.08.05 수정 (multiple 케이스 추가) */
+    /* 2021.08.06 수정 (multiple, cancle 추가) */
     $alert.find('button').off('click').on('click', function () {
       if(!config.mode == "multiple"){ close($alert); }
 
       if ($(this).hasClass('alert-popup__ok')) {
         if (alertSet.ok) { alertSet.ok(link); }
         if (config.mode == "multiple" ){
-            $alert.find(".multiple__change-text").html(config.modeChangeText);
-            if($alert.find(".alert-popup__cancel").length == 0){
-              close($alert);
-              setTimeout(function () { $alert.remove(); }, 300);
-            }else{
-              $alert.find(".alert-popup__cancel").remove();
-            }
+          $alert.find(".multiple__change-text").html(config.modeChangeText);
+          if($alert.find(".alert-popup__cancel").length == 0){
+            close($alert);
+            setTimeout(function () { $alert.remove(); }, 300);
+          }else{
+            $alert.find(".alert-popup__cancel").remove();
+          }
         }else{
           close($alert);
           setTimeout(function () { $alert.remove(); }, 300);
@@ -290,7 +290,7 @@ var modal = (function () {
       return false;
     });
   }
-  /* EOD : 2021.08.05 수정 (multiple 케이스 추가) */
+  /* EOD : 2021.08.06 수정 (multiple, cancle 케이스 추가) */
 
   return {open: open, close: close, alert: alert}
 })();
@@ -449,3 +449,11 @@ var tab = (function () {
   }
   return { reset: reset, action: action }
 })();
+
+//about floating box
+var floatmenuTogle = function() {
+    $(".float > img").toggleClass("floatRotate");
+    $(".float-ul").toggleClass("showmenu");
+    $(".floatbackground").toggle();
+};
+//about floating box

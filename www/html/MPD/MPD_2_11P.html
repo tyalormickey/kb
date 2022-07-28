@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-reset.min.css'/>
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-common.css'/>
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-style.css'/>
+
+  <script src='../../js/libs/jquery-3.1.1.min.js'></script>
+  <script src='../../js/swiper.min.js'></script>
+  <script src='../../js/ui.js'></script>
+</head>
+<body>
+
+<div class="wrapper">
+  <div class="header">
+    <header>
+      <div class="header__title">
+        <div class="title">
+          두통약(2)
+        </div>
+        <div class="header__title--close">
+          <button class="only-icon" type="button">
+            <i class="icon-x icon-20">닫기</i>
+          </button>
+        </div>
+      </div>
+    </header>
+  </div>
+
+  <!-- content-wrap -->
+  <div class="content-wrap bottom-button-fixed">
+    <!-- scrollBox -->
+    <div class="scrollBox">
+
+      <div class="manage-h3 mb15"><strong>조제 일자를 선택해 주세요.</strong></div>
+      <div class="form-item__input form-input_calender w50per">
+        <input type="text" onclick="modal.open($(this), '.modal-calender', calenderSelectOpen)" placeholder="2020.10.08">
+        <i class="icon-cal icon-18">달력</i>
+      </div>
+
+      <div class="manage-h3 mt40 mb15"><strong>의약품을 추가한 후 알람을 설정하세요.</strong></div>
+      <div><button type="button" class="block medium">추가</button></div>
+
+      <ul class="switch-list medicine">
+        <li class="switch-list__item">
+          <div class="switch-list__item-title">
+            [일반] 게보린쿨다운정
+            <div class="switch-list__item-sub">7일동안,매일,아침/점심/저녁</div>
+          </div>
+          <div class="switch-list__item-button width52">
+            <label class="input-switch"><input type="checkbox" checked><i></i></label>
+          </div>
+        </li>
+
+        <li class="switch-list__item">
+          <div class="switch-list__item-title">[일반] 가스펠현탁액</div>
+          <div class="switch-list__item-button width52">
+            <label class="input-switch"><input type="checkbox"><i></i></label>
+          </div>
+        </li>
+
+        <li class="switch-list__item">
+          <div class="switch-list__item-title">[일반] 게보린정</div>
+          <div class="switch-list__item-button width52">
+            <label class="input-switch"><input type="checkbox"><i></i></label>
+          </div>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+  <!-- EOD : scrollBox -->
+  <div class="button__flex-wrap bottom-fixed">
+    <button type="button" class="block" onclick="modal.alert($(this), fnRegisterBtn);">등록</button>
+  </div>
+</div>
+<!-- EOD : content-wrap -->
+
+<!-- 팝업 // -->
+<div class="modal-popup modal-calender">
+  <div class="modal-popup__outer">
+    <section class="modal-popup__container">
+      <article class="modal-popup__header">
+        <h3 class="modal-popup__title">
+          날짜 선택
+        </h3>
+        <button class="modal-popup__close only-icon">
+          <i class="icon-x icon-20">닫기</i>
+        </button>
+      </article>
+      <article class="modal-popup__body">
+        <div class="modal-calender__container">
+          <article class="calender-swiper">
+            <div class="swiper-container calender-swiper--year">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">2013</div>
+                <div class="swiper-slide">2014</div>
+                <div class="swiper-slide">2015</div>
+                <div class="swiper-slide">2016</div>
+                <div class="swiper-slide">2017</div>
+                <div class="swiper-slide">2018</div>
+                <div class="swiper-slide">2019</div>
+                <div class="swiper-slide">2020</div>
+                <div class="swiper-slide">2021</div>
+              </div>
+            </div>
+          </article>
+          <article class="calender-swiper">
+            <div class="swiper-container calender-swiper--month">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">01</div>
+                <div class="swiper-slide">02</div>
+                <div class="swiper-slide">03</div>
+                <div class="swiper-slide">04</div>
+                <div class="swiper-slide">05</div>
+                <div class="swiper-slide">06</div>
+                <div class="swiper-slide">07</div>
+                <div class="swiper-slide">08</div>
+                <div class="swiper-slide">09</div>
+                <div class="swiper-slide">10</div>
+                <div class="swiper-slide">11</div>
+                <div class="swiper-slide">12</div>
+              </div>
+            </div>
+          </article>
+          <article class="calender-swiper">
+            <div class="swiper-container calender-swiper--day">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">01</div>
+                <div class="swiper-slide">02</div>
+                <div class="swiper-slide">03</div>
+                <div class="swiper-slide">04</div>
+                <div class="swiper-slide">05</div>
+                <div class="swiper-slide">06</div>
+                <div class="swiper-slide">07</div>
+                <div class="swiper-slide">08</div>
+                <div class="swiper-slide">09</div>
+                <div class="swiper-slide">10</div>
+                <div class="swiper-slide">11</div>
+                <div class="swiper-slide">12</div>
+                <div class="swiper-slide">13</div>
+                <div class="swiper-slide">14</div>
+                <div class="swiper-slide">15</div>
+                <div class="swiper-slide">16</div>
+                <div class="swiper-slide">17</div>
+                <div class="swiper-slide">18</div>
+                <div class="swiper-slide">19</div>
+                <div class="swiper-slide">20</div>
+                <div class="swiper-slide">21</div>
+                <div class="swiper-slide">22</div>
+                <div class="swiper-slide">23</div>
+                <div class="swiper-slide">24</div>
+                <div class="swiper-slide">25</div>
+                <div class="swiper-slide">26</div>
+                <div class="swiper-slide">27</div>
+                <div class="swiper-slide">28</div>
+                <div class="swiper-slide">29</div>
+                <div class="swiper-slide">30</div>
+                <div class="swiper-slide">31</div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </article>
+      <article class="modal-popup__footer">
+        <button class="block gray medium inline" onclick="modal.close($(this))">
+          취소
+        </button>
+        <button class="block medium inline" onclick="modal.close($(this))">
+          확인
+        </button>
+      </article>
+    </section>
+  </div>
+</div>
+<!-- // 팝업 -->
+
+<script>
+$(".counseling-type-item").find("input").on("click",function(){
+  idxN = $(this).closest(".counseling-type-item").index();
+  if(idxN == 1){
+    $(".gene-radio__reslut").find(".custom-input").show().siblings(".custom-select").hide();
+  }else{
+    $(".gene-radio__reslut").find(".custom-select").show().siblings(".custom-input").hide();
+  }
+});
+
+
+var calenderSwiperOption = {
+  direction: "vertical",
+  slidesPerView: 3,
+  loop: false,
+  spaceBetween: 0,
+  mousewheel: true,
+  centeredSlides: true,
+  init: false
+}
+
+var swiperYear = new Swiper(".calender-swiper--year", calenderSwiperOption);
+var swiperMonth = new Swiper(".calender-swiper--month", calenderSwiperOption);
+var swiperDay = new Swiper(".calender-swiper--day", calenderSwiperOption);
+
+function calenderSelectOpen() {
+  swiperYear.init();
+  swiperMonth.init();
+  swiperDay.init();
+}
+
+var fnRegisterBtn = {
+  type: 'confirm',
+  text: '두통약(2) 약 봉투를 등록 하시겠습니까?',
+  ok: handleOk,
+  cancel: handleCancel,
+}
+
+function handleOk() {
+  console.log('확인');
+  toast.open('두통약(2) 약 봉투가 등록 되었습니다.');
+}
+
+function handleCancel() {
+  console.log('취소');
+}
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
+    <link rel='stylesheet' type='text/css' href='../../css/morpheus-reset.min.css'/>
+    <link rel='stylesheet' type='text/css' href='../../css/morpheus-common.css'/>
+    <link rel='stylesheet' type='text/css' href='../../css/morpheus-style.css'/>
+
+    <script src='../../js/libs/jquery-3.1.1.min.js'></script>
+    <script src='../../js/swiper.min.js'></script>
+    <script src='../../js/ui.js'></script>
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="header">
+        <header>
+            <div class="header__back">
+                <div class="back">
+                    <button type="button" class="only-icon">
+                        <i class="icon-arrow_left icon-20">뒤로가기</i>
+                    </button>
+                </div>
+                <div class="title">
+                    검사결과지
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <!-- content-wrap -->
+    <div class="content-wrap">
+        <!-- scrollBox -->
+        <div class="scrollBox">
+
+            <!-- tab__noraml -->
+            <div class="tab__normal">
+                <div class="tab__normal-area">
+                    <ul>
+                        <li><a href="javascript:void(0);">검사결과안내</a></li>
+                        <li><a href="javascript:void(0);">종합결과</a></li>
+                        <li class="active"><a href="javascript:void(0);">맞춤솔루션</a></li>
+                    </ul>
+                </div>
+                <button class="tab__normal-more" type="button"><span class="ico"></span><span class="txt">더보기</span></button>
+                <div class="tab__normal-list">
+                    <ul>
+                        <li><a href="javascript:void(0);">결과 이해하기 TIP</a></li>
+                        <li><a href="javascript:void(0);">유전자 용어사전</a></li>
+                        <li><a href="javascript:void(0);">고객 안내사항</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- EOD : tab__noraml -->
+
+
+            <!-- start: else no-data -->
+<!--            <div class="message-box">-->
+<!--                <div class="message-box__wrap">-->
+<!--                    <div class="message-box__icon">-->
+<!--                        <i class="icon-nodata icon-40"></i>-->
+<!--                    </div>-->
+<!--                    <div class="message-box__text">-->
+<!--                        김국민을 위한 맞춤솔루션을<br>-->
+<!--                        준비중입니다.<br>-->
+<!--                        솔루션이 마련되 알림톡으로 알려 드릴께요.-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+            <!-- end: else no-data -->
+            <!-- list -->
+<!--            <section class="term-detail__section solution mt20">-->
+<!--                <div class="term-detail__title">4주차 / 이번주 </div>-->
+<!--                <img src="../../img/img_reslut_example.png" alt="술이 나를 마신다."/>-->
+<!--            </section>-->
+<!--            <section class="term-detail__section solution mt20">-->
+<!--                <div class="term-detail__title">3주차 / 이번주 </div>-->
+<!--                <img src="../../img/list_tmp_03.jpg" alt="까무잡잡, 건강한 피부의 비밀"/>-->
+<!--            </section>-->
+<!--            <section class="term-detail__section solution mt20">-->
+<!--                <div class="term-detail__title">2주차 / 이번주 </div>-->
+<!--                <img src="../../img/list_tmp_02.jpg" alt="얼굴 위의 잡것들 잡.티"/>-->
+<!--            </section>-->
+<!--            <section class="term-detail__section solution mt20">-->
+<!--                <div class="term-detail__title">1주차 / 이번주 </div>-->
+<!--                <img src="../../img/list_tmp_01.jpg" alt="알코올에 대처하는 우리의 자세"/>-->
+<!--            </section>-->
+            <!-- list -->
+
+        </div>
+        <!-- EOD : scrollBox -->
+    </div>
+    <!-- EOD : content-wrap -->
+
+    <div class="footer">
+        <nav>
+            <ul>
+                <li class="on">
+                    <button type="button">
+                        <i class="icon-home icon-16"></i>
+                        <span>홈</span>
+                    </button>
+                </li>
+                <li>
+                    <button type="button">
+                        <i class="icon-pro icon-16"></i>
+                        <span>프로그램</span>
+                    </button>
+                </li>
+                <li>
+                    <button type="button">
+                        <i class="icon-info icon-16"></i>
+                        <span>증상ㆍ병원</span>
+                    </button>
+                </li>
+                <li>
+                    <button type="button">
+                        <i class="icon-my icon-16"></i>
+                        <span>MY</span>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>
+
+<script>
+    tab.reset();
+    setTimeout(function() {
+        $('.tab__item').click(function() {
+            tab.action($(this))
+        });
+    }, 100);
+
+</script>
+</body>
+</html>

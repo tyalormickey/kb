@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
+    <link rel='stylesheet' type='text/css' href='../../css/morpheus-reset.min.css'/>
+    <link rel='stylesheet' type='text/css' href='../../css/morpheus-common.css'/>
+    <link rel='stylesheet' type='text/css' href='../../css/morpheus-style.css'/>
+
+    <script src='../../js/libs/jquery-3.1.1.min.js'></script>
+    <script src='../../js/swiper.min.js'></script>
+    <script src='../../js/ui.js'></script>
+</head>
+<body>
+
+  <div class="wrapper cms-wrapper type02">
+      <div class="content-wrap">
+
+          <div class="scrollBox cms-scrollbox">
+
+            <div class="survey__cms-box">
+              <div class="survey__cms-title">
+                  그룹1234
+              </div>
+              <div class="survey__group-intro">
+                  <div class="mentailty__bar mt0">
+                      <div class="tit">설문 3</div>
+                      <div class="bar"><span></span></div>
+                      <div class="num">
+                          <span class="now"></span>/<span class="all"></span>
+                      </div>
+                  </div>
+              </div>
+            </div>
+
+            <div class="cms-scrollboxIn">
+              <section>
+                  <div class="survary-selector type02">
+                      <div class="survary-selector__title">
+                          100. 위의 적힌 문제 외에 댁의 자녀가<br>
+                          보이는 문제가 있다면 아래에 적어 주시기<br>
+                          바랍니다.
+                      </div>
+                      <div class="custom-select type02">
+                          <dl class="default">
+                              <dt>
+                                  <div class="tit w18rem">1.</div>
+                                  <div class="info"><input type="text" name="" id="" class="h60 mb5"/></div>
+                              </dt>
+                              <dt>
+                                  <div class="tit w18rem"></div>
+                                  <div class="selectbox">
+                                      <select id="select">
+                                          <option selected>이직/퇴사</option>
+                                          <option>이직/퇴사</option>
+                                          <option>이직/퇴사</option>
+                                          <option>이직/퇴사</option>
+                                      </select>
+                                  </div>
+                              </dt>
+                          </dl>
+
+                          <dl class="default">
+                              <dt>
+                                  <div class="tit w18rem">2.</div>
+                                  <div class="info"><input type="text" name="" id="" class="h60 mb5"/></div>
+                              </dt>
+                              <dt>
+                                  <div class="tit w18rem"></div>
+                                  <div class="selectbox">
+                                      <select id="select">
+                                          <option selected>이직/퇴사</option>
+                                          <option>이직/퇴사</option>
+                                          <option>이직/퇴사</option>
+                                          <option>이직/퇴사</option>
+                                      </select>
+                                  </div>
+                              </dt>
+                          </dl>
+
+                          <dl class="default">
+                              <dt>
+                                  <div class="tit w18rem">3.</div>
+                                  <div class="info"><input type="text" name="" id="" class="h60 mb5"/></div>
+                              </dt>
+                              <dt>
+                                  <div class="tit w18rem"></div>
+                                  <div class="selectbox">
+                                      <select id="select">
+                                          <option selected>이직/퇴사</option>
+                                          <option>이직/퇴사</option>
+                                          <option>이직/퇴사</option>
+                                          <option>이직/퇴사</option>
+                                      </select>
+                                  </div>
+                              </dt>
+                          </dl>
+                      </div>
+                  </div>
+              </section>
+            </div>
+
+        </div>
+    </div>
+    <div class="footer footer__nav">
+        <div class="button__flex-wrap">
+            <button class="block gray" type="button" data-button="prev">
+                이전
+            </button>
+            <button class="block" type="button" data-button="next">
+                다음
+            </button>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    var idxNGroup = 4;
+    $(".mentailty__bar").find(".now").text("3").siblings(".all").text(idxNGroup);
+    $(".mentailty__bar").find(".bar span").css("width", (3/idxNGroup)*100 +"%");
+
+
+    $('.survary-selector__list').each(function () {
+        var $item = $(this).find('.survary-selector__list-item');
+        var count = parseInt($(this).data('active-count'));
+
+        $item.off('click').on('click', function () {
+            if (count === 1 || $(this).hasClass('only')) {
+                $(this).toggleClass('active').siblings().removeClass('active');
+                $(".etctextarea").hide();
+                if($(this).data("type")=="etc") {
+                    $(this).next().toggle($(this).hasClass('active'));
+                }
+            } else {
+                if ($(this).hasClass('active')) {
+                    $(this).removeClass('active');
+                } else if ($item.filter('.active').length < count) {
+                    $(this).addClass('active');
+                    $item.filter('.only').removeClass('active');
+                }
+            }
+        })
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-reset.min.css'/>
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-common.css'/>
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-style.css'/>
+
+  <script src='../../js/libs/jquery-3.1.1.min.js'></script>
+  <script src='../../js/swiper.min.js'></script>
+  <script src='../../js/ui.js'></script>
+</head>
+<body>
+
+<div class="wrapper">
+  <div class="header">
+    <header>
+      <div class="header__back">
+        <div class="back">
+          <button type="button" class="only-icon">
+            <i class="icon-arrow_left icon-20">뒤로가기</i>
+          </button>
+        </div>
+        <div class="title">
+          심리 검사 문항
+        </div>
+        <div class="right-icons">
+          <button type="button" class="only-icon">
+            <i class="icon-camera_02 icon-20">카메라</i>
+          </button>
+          <button type="button" class="only-icon">
+            <i class="icon-alarm on icon-20">알람</i>
+          </button>
+        </div>
+      </div>
+    </header>
+  </div>
+  <div class="content-wrap">
+    <div class="scrollBox page-mdp-79">
+
+      <div class="mentailty__box">
+        다음 항목을 읽고 <strong>현재나 지난 6개월 내</strong>에 본인의 모습과 가장 가까운 쪽에 표시해주세요.<br/>
+        직접적인 해당사항이 없는 문항이라도 끝까지 응답해주시기 바랍니다.<br/>
+        <ul class="mentailty__list">
+          <li><span class="num">(0) : </span>전혀 해당되지 않는다.</li>
+          <li><span class="num">(1) : </span>가끔 그렇거나 그런 편이다.</li>
+          <li><span class="num">(2) : </span>자주 그런일이 있거나 많이 그렇다.</li>
+        </ul>
+      </div>
+
+      <div class="mentailty__bar">
+        <div class="bar"><span></span></div>
+        <div class="num">
+          <span class="now"></span>/<span class="all"></span>
+        </div>
+      </div>
+
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+
+          <!-- swiper-slide -->
+          <section class="swiper-slide">
+
+            <div class="survary-selector type02">
+              <div class="survary-selector__title">1. 나는 지나치게 잘 잊어버린다.</div>
+              <div class="survary-selector__list" data-active-count="1">
+                <button type="button" class="survary-selector__list-item">
+                  <p>전혀 해당되지 않는다.</p>
+                  <span><i>체크</i></span>
+                </button>
+                <button type="button" class="survary-selector__list-item">
+                  <p>가끔 그런 일이 있다.</p>
+                  <span><i>체크</i></span>
+                </button>
+                <button type="button" class="survary-selector__list-item">
+                  <p>전혀 해당되지 않는다.</p>
+                  <span><i>체크</i></span>
+                </button>
+              </div>
+            </div>
+
+            <div class="survary-selector type02">
+              <div class="survary-selector__title">2. 나는 나의 기회를 잘 이용한다.</div>
+              <div class="survary-selector__list" data-active-count="1">
+                <button type="button" class="survary-selector__list-item">
+                  <p>전혀 해당되지 않는다.</p>
+                  <span><i>체크</i></span>
+                </button>
+                <button type="button" class="survary-selector__list-item">
+                  <p>가끔 그런 일이 있다.</p>
+                  <span><i>체크</i></span>
+                </button>
+                <button type="button" class="survary-selector__list-item">
+                  <p>전혀 해당되지 않는다.</p>
+                  <span><i>체크</i></span>
+                </button>
+              </div>
+            </div>
+          </section>
+          <!-- EOD : swiper-slide -->
+
+          <!-- swiper-slide -->
+          <section class="swiper-slide">
+            <div class="survary-selector type02">
+              <div class="survary-selector__title">21. 다른사람의 물건을 망가뜨리거나 부순다.</div>
+              <div class="survary-selector__list" data-active-count="1">
+                <button type="button" class="survary-selector__list-item">
+                  <p>전혀 해당되지 않는다.</p>
+                  <span><i>체크</i></span>
+                </button>
+                <button type="button" class="survary-selector__list-item">
+                  <p>가끔 그런 일이 있다.</p>
+                  <span><i>체크</i></span>
+                </button>
+                <button type="button" class="survary-selector__list-item">
+                  <p>전혀 해당되지 않는다.</p>
+                  <span><i>체크</i></span>
+                </button>
+              </div>
+            </div>
+
+            <div class="survary-selector type02">
+              <div class="survary-selector__title">22. 나의 미래에 대해 걱정한다.</div>
+              <div class="survary-selector__list" data-active-count="1">
+                <button type="button" class="survary-selector__list-item">
+                  <p>전혀 해당되지 않는다.</p>
+                  <span><i>체크</i></span>
+                </button>
+                <button type="button" class="survary-selector__list-item">
+                  <p>가끔 그런 일이 있다.</p>
+                  <span><i>체크</i></span>
+                </button>
+                <button type="button" class="survary-selector__list-item">
+                  <p>전혀 해당되지 않는다.</p>
+                  <span><i>체크</i></span>
+                </button>
+              </div>
+            </div>
+          </section>
+          <!-- EOD : swiper-slide -->
+
+          <!-- swiper-slide -->
+          <section class="swiper-slide">
+            <div class="survary-selector type02">
+              <div class="survary-selector__title">131. 나는 행복한 사람이다.</div>
+              <div class="survary-selector__list" data-active-count="1">
+                <button type="button" class="survary-selector__list-item">
+                  <p>전혀 해당되지 않는다.</p>
+                  <span><i>체크</i></span>
+                </button>
+                <button type="button" class="survary-selector__list-item">
+                  <p>가끔 그런 일이 있다.</p>
+                  <span><i>체크</i></span>
+                </button>
+                <button type="button" class="survary-selector__list-item">
+                  <p>전혀 해당되지 않는다.</p>
+                  <span><i>체크</i></span>
+                </button>
+              </div>
+            </div>
+
+            <div class="survary-selector type02">
+              <div class="survary-selector__title">132. 지난 6개월 동안 당신은 하루에 얼마나 담배를 피웠는가?</div>
+              <div class="custom-select">
+                <dl>
+                  <dt>
+                    <span class="survary-custom-txt">하루에<button type="button"><span>00</span></button>개피(1갑=20개피)</span>
+                  </dt>
+                  <dd>
+                    <ul>
+                      <li><button type="button">5</button></li>
+                      <li class="selected"><button type="button">10</button></li>
+                    </ul>
+                  </dd>
+                </dl>
+              </div>
+            </div>
+
+            <div class="survary-selector type02">
+              <div class="survary-selector__title">133. 지난 6개월 동안 당신은 한 달 평균 며칠이나 술을 마셨는가? (1-2잔 정도 취하지 않을 만큼 마신 일수는 제외)</div>
+              <div class="custom-select">
+                <dl>
+                  <dt>
+                    <span class="survary-custom-txt">한 달에<button type="button"><span>00</span></button></span>
+                  </dt>
+                  <dd>
+                    <ul>
+                      <li><button type="button">5</button></li>
+                      <li class="selected"><button type="button">10</button></li>
+                    </ul>
+                  </dd>
+                </dl>
+              </div>
+            </div>
+          </section>
+          <!-- EOD : swiper-slide -->
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="footer footer__nav">
+    <div class="button__flex-wrap">
+      <button class="block gray" type="button" data-button="prev">
+        이전
+      </button>
+      <button class="block" type="button" data-button="next">
+        다음
+      </button>
+    </div>
+  </div>
+</div>
+
+
+<script>
+  var $buttons = $('.button__flex-wrap');
+  var swiper = new Swiper('.swiper-container', {
+    effect: 'fade',
+    allowTouchMove: false,
+    autoHeight: true,
+    on: {
+      init: function () {
+        if (this.activeIndex === 0) {
+          $buttons.find('button').eq(0).addClass('none');
+        }
+      },
+      slideChangeTransitionStart: function () {
+        if (this.activeIndex === 0) {
+          $buttons.find('button').eq(0).addClass('none');
+        } else {
+          $buttons.find('button').eq(0).removeClass('none');
+        }
+        var idxN = swiper.realIndex + 1;
+        var idxNGroup =  Number($(".mentailty__bar").find(".all").text());
+        $(".mentailty__bar").find(".now").text(idxN);
+        $(".mentailty__bar").find(".bar span").css("width", (idxN/idxNGroup)*100 +"%");
+      },
+    },
+  });
+
+  var idxNGroup = $(".swiper-container").find(".swiper-slide").length;
+  $(".mentailty__bar").find(".now").text("1").siblings(".all").text(idxNGroup);
+  $(".mentailty__bar").find(".bar span").css("width", (1/idxNGroup)*100 +"%");
+
+  checkN = 0;
+  $buttons.find('button').off('click').on('click', function () {
+    var action = $(this).data('button');
+    if (action === 'next'){
+      $(".swiper-wrapper .swiper-slide").eq(swiper.activeIndex).each(function(){
+        if($(this).find(".active").length < $(this).find(".survary-selector__list").length){
+            modal.alert($(this),fnMentalChangeConfig);
+        }else{
+          swiper.slideTo(swiper.activeIndex + 1);
+        }
+      });
+    }else if (action === 'prev') {
+      swiper.slideTo(swiper.activeIndex - 1);
+    }
+  });
+
+  $('.survary-selector__list').each(function () {
+    var $item = $(this).find('.survary-selector__list-item');
+    var count = parseInt($(this).data('active-count'));
+
+    $item.off('click').on('click', function () {
+      if (count === 1 || $(this).hasClass('only')) {
+        $(this).toggleClass('active').siblings().removeClass('active');
+      } else {
+        if ($(this).hasClass('active')) {
+          $(this).removeClass('active');
+        } else if ($item.filter('.active').length < count) {
+          $(this).addClass('active');
+          $item.filter('.only').removeClass('active');
+        }
+      }
+    })
+  });
+
+  var fnMentalChangeConfig = {
+    type: 'alert',
+    text: '1-1 문항을 입력해주세요.',
+    ok: handleOk,
+  }
+
+  function handleOk() {
+    console.log('확인');
+  }
+
+</script>
+</body>
+</html>

@@ -89,21 +89,26 @@
         </section>
       </div>
       <section class="main-reward__boxes">
-        <article class="main-reward__box">
+        <article class="main-reward__box mt30">
           <p class="main-reward__box-title">
-            <strong>김국민</strong>님이<br/>
+            <strong>김국민</strong>님께서<br/>
             좋아하실만한 상품들을 준비해봤어요
           </p>
           <!-- 슬라이드 -->
-          <div class="main-reward__slide-goods">
+          <div class="main-reward__slide-goods type02"> <!-- 2021.08.13 class 추가 -->
             <div class="swiper-container">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <button type="button">
-                    <div style="background-image: url('../../img/mask_group_6.jpg')">
+                    <div style="background-image: url('../../img/testimg1.jpg')">
                       상품이미지
                     </div>
-                    <p>1[스무디킹] 오렌지 레볼루션 [스무디킹] 오렌지 레볼루션</p>
+                    <!-- 2021.08.13 수정 -->
+                    <div class="txt__info">
+                      <p class="tit">[스무디킹]</p>
+                      <p class="txt">오렌지 레볼루션 오렌지 레볼루션 오렌지 레볼루션</p>
+                    </div>
+                    <!-- EOD : 2021.08.13 수정 -->
                   </button>
                 </div>
                 <div class="swiper-slide">
@@ -111,7 +116,12 @@
                     <div style="background-image: url('../../img/mask_group_6.jpg')">
                       상품이미지
                     </div>
-                    <p>2[스무디킹] 오렌지 레볼루션</p>
+                    <!-- 2021.08.13 수정 -->
+                    <div class="txt__info">
+                      <p class="tit">[스무디킹]</p>
+                      <p class="txt">오렌지 레볼루션 오렌지 레볼루션 오렌지 레볼루션</p>
+                    </div>
+                    <!-- EOD : 2021.08.13 수정 -->
                   </button>
                 </div>
               </div>
@@ -119,9 +129,9 @@
           </div>
         </article>
 
-        <article class="main-reward__box overflow">
+        <article class="main-reward__box overflow mt30">
           <p class="main-reward__box-title">
-            <strong>리워드 혜택</strong>
+            <strong>리워드 혜택 살펴보기</strong>
           </p>
           <!-- 슬라이드 -->
           <div class="main-reward__slide-benefit">
@@ -214,10 +224,13 @@
     var boxHeight = $topSec.height();
 
     $expand.scroll(function () {
-      if ($(this).scrollTop() < boxHeight - 30) {
+      // if ($(this).scrollTop() < boxHeight - 30) {
+      if ($(this).scrollTop() < 70) {
         $('header').removeClass('vh-scroll')
+        $('header').parent('.wrapper > .header').removeClass('vh-scroll-parent');
       } else {
         $('header').addClass('vh-scroll')
+        $('header').parent('.wrapper > .header').addClass('vh-scroll-parent');
       }
     });
   }
@@ -227,4 +240,3 @@
 
 </body>
 </html>
-

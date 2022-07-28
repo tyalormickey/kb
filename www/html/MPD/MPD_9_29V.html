@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-reset.min.css'/>
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-common.css'/>
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-style.css'/>
+
+  <script src='../../js/libs/jquery-3.1.1.min.js'></script>
+  <script src='../../js/swiper.min.js'></script>
+  <script src='../../js/ui.js'></script>
+</head>
+<body>
+
+<div class="wrapper">
+  <div class="header">
+    <header>
+      <div class="header__back">
+        <div class="back">
+          <button type="button" class="only-icon">
+            <i class="icon-arrow_left icon-20">뒤로가기</i>
+          </button>
+        </div>
+        <div class="title">
+          심리 검사 문항
+        </div>
+        <div class="right-icons">
+          <button type="button" class="only-icon">
+            <i class="icon-camera_02 icon-20">카메라</i>
+          </button>
+          <button type="button" class="only-icon">
+            <i class="icon-alarm on icon-20">알람</i>
+          </button>
+        </div>
+      </div>
+    </header>
+  </div>
+  <div class="content-wrap">
+    <div class="scrollBox page-mdp-79">
+
+      <div class="mentailty__box">
+        다음 적응수준과 관련된 기초 설문입니다.<br/>
+        직접적인 해당사항이 없는 문항이라도 끝까지 응답해주시기 바랍니다.<br/>
+        <div class="mentailty__chk"><span class="icon_survary_check">필수</span>표시는 입력 필수입니다.</div>
+      </div>
+
+      <div class="survary-selector type02">
+        <div class="survary-selector__title">1. 친구 (동료나 선후배 포함)</div>
+        <div class="survary-selector__sub"><span class="icon_survary_check">필수</span>1) 친한사람이 대략 몇 명 정도 있습니까?(가족은 제외)</div>
+        <div class="custom-select">
+          <dl>
+            <dt>
+              <button class="single" type="button"><span>2~3명</span></button>
+            </dt>
+            <dd>
+              <ul>
+                <li><button type="button">0명</button></li>
+                <li class="selected"><button type="button">2~3명</button></li>
+              </ul>
+            </dd>
+          </dl>
+        </div>
+      </div>
+
+      <div class="survary-selector type02">
+        <div class="survary-selector__title">2. 결혼 및 이성 관계</div>
+        <div class="survary-selector__sub">1) 친한사람이 대략 몇 명 정도 있습니까?(가족은 제외)</div>
+        <div class="custom-select">
+          <dl>
+            <dt>
+              <button class="single" type="button"><span>선택</span></button>
+            </dt>
+            <dd>
+              <ul>
+                <li><button type="button">선택</button></li>
+                <li class="selected"><button type="button">미혼</button></li>
+              </ul>
+            </dd>
+          </dl>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="footer footer__nav">
+    <div class="button__flex-wrap">
+      <button class="block" type="button" onclick="modal.alert($(this), fnMentalChangeConfig)">다음</button>
+    </div>
+  </div>
+</div>
+
+
+<script>
+  $('.survary-selector__list').each(function () {
+    var $item = $(this).find('.survary-selector__list-item');
+    var count = parseInt($(this).data('active-count'));
+
+    $item.off('click').on('click', function () {
+      if (count === 1 || $(this).hasClass('only')) {
+        $(this).toggleClass('active').siblings().removeClass('active');
+      } else {
+        if ($(this).hasClass('active')) {
+          $(this).removeClass('active');
+        } else if ($item.filter('.active').length < count) {
+          $(this).addClass('active');
+          $item.filter('.only').removeClass('active');
+        }
+      }
+    })
+  });
+
+  var fnMentalChangeConfig = {
+    type: 'alert',
+    text: '2-1 문항을 입력해주세요.',
+    ok: handleOk,
+  }
+
+  function handleOk() {
+    console.log('확인');
+  }
+
+</script>
+</body>
+</html>

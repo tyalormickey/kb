@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-reset.min.css'/>
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-common.css'/>
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-style.css'/>
+
+  <script src='../../js/libs/jquery-3.1.1.min.js'></script>
+  <script src='../../js/swiper.min.js'></script>
+  <script src='../../js/ui.js'></script>
+</head>
+<body>
+
+<div class="wrapper">
+  <div class="header">
+    <header>
+      <div class="header__title">
+        <div class="title">
+          그룹1
+        </div>
+      </div>
+    </header>
+  </div>
+  <div class="content-wrap">
+
+    <div class="scrollBox page-mdp-79">
+
+      <div class="survey__group-intro">
+        <div class="mentailty__bar mt0">
+          <div class="tit"></div>
+          <div class="bar"><span></span></div>
+          <div class="num">
+            <span class="now"></span>/<span class="all"></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+
+          <!-- swiper-slide -->
+          <section class="swiper-slide">
+
+            <div class="survary-selector type02">
+              <div class="survary-selector__title">나는 우리 아이와 항상 마음이 잘 맞아 즐겁다.</div>
+              <div class="survary-selector_radio">
+                <section class="survey-bar mt25">
+                  <input type="hidden" name="question1" id="question1" value="보통">
+                  <ul class="survey-question">
+                    <li data-value="그렇다"><em>그렇다.</em></li>
+                    <li data-value="보통" class="active">
+                       <em>보통</em>
+                    </li>
+                    <li data-value="그렇지않다"><em>그렇지<br>않다.</em></li>
+                  </ul>
+                </section>
+              </div>
+            </div>
+
+          </section>
+          <!-- EOD : swiper-slide -->
+
+          <!-- swiper-slide -->
+          <section class="swiper-slide">
+            <div class="survary-selector type02">
+              <div class="survary-selector__title">자녀에게 신체 문제 외 기타 발달이나<br>정신건강상의 문제 혹은 장애가 있습니까?</div>
+              <div class="survary-selector__list" data-active-count="1"> <!-- data-active-count = 선택 가능한 갯수 -->
+
+                <input type="checkbox" name="survery-item" id="survery-item-1" value="아니오">
+                <label for="survery-item-1" class="survary-selector__list-item" data-type="etc">
+                  <p>1. 아이오</p>
+                  <span><i>체크</i></span>
+                </label>
+                <textarea name="survery-item-1-etc" class="survary-selector__list-item h240 etctextarea" style="display: none" placeholder="구체적인 내용을 적어주세요."></textarea>
+
+                <input type="checkbox" name="survery-item" id="survery-item-2" value="예">
+                <label for="survery-item-2"  type="button" class="survary-selector__list-item" data-type="etc">
+                  <p>2. 예(구체적 내용)</p>
+                  <span><i>체크</i></span>
+                </label>
+
+                <textarea name="survery-item-2-etc" class="survary-selector__list-item h240 etctextarea" style="display: none" placeholder="구체적인 내용을 적어주세요."></textarea>
+              </div>
+            </div>
+          </section>
+          <!-- EOD : swiper-slide -->
+
+          <!-- swiper-slide -->
+          <section class="swiper-slide">
+            <div class="survary-selector type02">
+              <div class="survary-selector__title">
+                100. 위의 적힌 문제 외에 댁의 자녀가<br>
+                보이는 문제가 있다면 아래에 적어 주시기<br>
+                바랍니다.
+              </div>
+              <div class="custom-select type02">
+                <dl class="default">
+                  <dt>
+                    <div class="tit w18rem">1.</div>
+                    <div class="info"><input type="text" name="" id="" class="h60 mb5"/></div>
+                  </dt>
+                  <dt>
+
+                    <div class="tit w18rem"></div>
+                    <div class="info"><button type="button"><span>전혀 해당되지 않는다.</span></button></div>
+                  </dt>
+                  <dd>
+                    <ul>
+                      <li class="selected"><button type="button">이직/퇴사</button></li>
+                      <li class="selected"><button type="button">이직/퇴사</button></li>
+                      <li class="selected"><button type="button">이직/퇴사</button></li>
+                      <li class="selected"><button type="button">이직/퇴사</button></li>
+                      <li class="selected"><button type="button">이직/퇴사</button></li>
+                    </ul>
+                  </dd>
+                </dl>
+
+                <dl class="default">
+                  <dt>
+                    <div class="tit w18rem">2.</div>
+                    <div class="info"><input type="text" name="" id="" class="h60 mb5"/></div>
+                  </dt>
+                  <dt>
+                    <div class="tit w18rem"></div>
+                    <div class="info"><button type="button"><span>전혀 해당되지 않는다.</span></button></div>
+                  </dt>
+                  <dd>
+                    <ul>
+                      <li class="selected"><button type="button">이직/퇴사</button></li>
+                      <li class="selected"><button type="button">이직/퇴사</button></li>
+                      <li class="selected"><button type="button">이직/퇴사</button></li>
+                      <li class="selected"><button type="button">이직/퇴사</button></li>
+                      <li class="selected"><button type="button">이직/퇴사</button></li>
+                    </ul>
+                  </dd>
+                </dl>
+
+                <dl class="default">
+                  <dt>
+                    <div class="tit w18rem">3.</div>
+                    <div class="info"><input type="text" name="" id="" class="h60 mb5"/></div>
+                  </dt>
+                  <dt>
+                    <div class="tit w18rem"></div>
+                    <div class="info"><button type="button"><span>전혀 해당되지 않는다.</span></button></div>
+                  </dt>
+                  <dd>
+                    <ul>
+                      <li class="selected"><button type="button">이직/퇴사</button></li>
+                      <li class="selected"><button type="button">이직/퇴사</button></li>
+                      <li class="selected"><button type="button">이직/퇴사</button></li>
+                      <li class="selected"><button type="button">이직/퇴사</button></li>
+                      <li class="selected"><button type="button">이직/퇴사</button></li>
+                    </ul>
+                  </dd>
+                </dl>
+              </div>
+            </div>
+          </section>
+          <!-- EOD : swiper-slide -->
+
+          <!-- swiper-slide -->
+          <section class="swiper-slide">
+
+            <div class="survary-selector type02">
+              <div class="survary-selector__title">
+                댁의 자녀가 가장 즐기는 운동을 있는 대로<br>
+                적어 주십시오. (예를 들면, 수영, 야구,<br>
+                스케이트, 인 라인 스케이트, 자전거, 낚시,<br>
+                농구, 축구, 달리기, 태권도 등)
+              </div>
+              <div class="term-detail__text">
+                * 즐기는 운동이 전혀 없는 경우 다음 문항으로 넘어가<br>
+                주시기 바랍니다.
+              </div>
+              <div class="custom-select type02">
+                <dl class="default">
+                  <dt>
+                    <div class="tit w18rem">1.</div>
+                    <div class="info"><input type="text" name="" id="" class="h60 mb5"/></div>
+                  </dt>
+                </dl>
+                <dl class="default">
+                  <dt>
+                    <div class="tit w18rem">2.</div>
+                    <div class="info"><input type="text" name="" id="" class="h60 mb5"/></div>
+                  </dt>
+                </dl>
+                <dl class="default">
+                  <dt>
+                    <div class="tit w18rem">3.</div>
+                    <div class="info"><input type="text" name="" id="" class="h60 mb5"/></div>
+                  </dt>
+                </dl>
+
+              </div>
+            </div>
+          </section>
+          <!-- EOD : swiper-slide -->
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="footer footer__nav">
+    <div class="button__flex-wrap">
+      <button class="block gray" type="button" data-button="prev">
+        이전
+      </button>
+      <button class="block" type="button" data-button="next">
+        다음
+      </button>
+    </div>
+  </div>
+</div>
+
+
+<script>
+  // $(".info button").on("click",function(){
+  //
+  //   $(this).parents("dl").find("dd").toggleClass("overflowrevert");
+  // });
+  var $buttons = $('.button__flex-wrap');
+
+  var swiper = new Swiper('.swiper-container', {
+    effect: 'fade',
+    allowTouchMove: false,
+    autoHeight: true,
+    on: {
+      init: function () {
+        if (this.activeIndex === 0) {
+          $buttons.find('button').eq(0).addClass('none');
+        }
+      },
+      slideChangeTransitionStart: function () {
+        if (this.activeIndex === 0) {
+          $buttons.find('button').eq(0).addClass('none');
+        } else {
+          $buttons.find('button').eq(0).removeClass('none');
+        }
+        var idxN = swiper.realIndex + 1;
+        var idxNGroup =  Number($(".mentailty__bar").find(".all").text());
+        $(".mentailty__bar").find(".now").text(idxN);
+        $(".mentailty__bar").find(".bar span").css("width", (idxN/idxNGroup)*100 +"%");
+      },
+    },
+  });
+
+  var idxNGroup = $(".swiper-container").find(".swiper-slide").length;
+  $(".mentailty__bar").find(".now").text("1").siblings(".all").text(idxNGroup);
+  $(".mentailty__bar").find(".bar span").css("width", (1/idxNGroup)*100 +"%");
+  var tit = "설문";
+  $(".mentailty__bar").find(".tit").text(tit+ " " +(swiper.realIndex+1));
+
+  $buttons.find('button').off('click').on('click', function () {
+    var action = $(this).data('button');
+    if (action === 'next'){
+      swiper.slideTo(swiper.activeIndex + 1);
+    }else if (action === 'prev') {
+      swiper.slideTo(swiper.activeIndex - 1);
+    }
+    $(".mentailty__bar").find(".tit").text(tit+ " " +(swiper.realIndex+1));
+  });
+
+  $('.survary-selector__list').each(function () {
+    var $item = $(this).find('.survary-selector__list-item');
+    var count = parseInt($(this).data('active-count'));
+
+    $item.off('click').on('click', function () {
+      if (count === 1 || $(this).hasClass('only')) {
+        $(this).toggleClass('active').siblings().removeClass('active');
+        $(".etctextarea").hide();
+        if($(this).data("type")=="etc") {
+          $(this).next().toggle($(this).hasClass('active'));
+        }
+      } else {
+        if ($(this).hasClass('active')) {
+          $(this).removeClass('active');
+        } else if ($item.filter('.active').length < count) {
+          $(this).addClass('active');
+          $item.filter('.only').removeClass('active');
+        }
+      }
+    })
+  });
+
+
+  $(".survey-question li").on("click",function(){
+    $(".survey-question li").removeClass("active");
+    $(this).addClass("active");
+    $(this).parents("section").find("input[type='hidden']").val($(this).data("value"));
+  });
+</script>
+</body>
+</html>

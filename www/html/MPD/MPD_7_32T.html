@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
+    <link rel='stylesheet' type='text/css' href='../../css/morpheus-reset.min.css'/>
+    <link rel='stylesheet' type='text/css' href='../../css/morpheus-common.css'/>
+    <link rel='stylesheet' type='text/css' href='../../css/morpheus-style.css'/>
+
+    <script src='../../js/libs/jquery-3.1.1.min.js'></script>
+    <script src='../../js/swiper.min.js'></script>
+    <script src='../../js/ui.js'></script>
+</head>
+<body>
+
+<div class="wrapper">
+  <div class="header">
+      <header>
+        <div class="header__title">
+          <div class="title">
+
+          </div>
+          <div class="header__title--close">
+            <button class="only-icon" type="button">
+              <i class="icon-x icon-20">닫기</i>
+            </button>
+          </div>
+        </div>
+      </header>
+    </div>
+    <div class="content-wrap">
+        <div class="scrollBox">
+
+          <div class="custom-select record">
+            <dl class="default">
+              <dt>
+                <button type="button"><span>BMI</span></button>
+              </dt>
+              <dd>
+                <ul>
+                  <li><button type="button">BMI</button></li>
+                  <li><button type="button">체지방량</button></li>
+                  <li><button type="button">수분</button></li>
+                  <li><button type="button">골격량</button></li>
+                </ul>
+              </dd>
+            </dl>
+          </div>
+
+            <!-- tab__wrap -->
+            <div class="tab__wrap custom mt40">
+                <ul class="tab button-type">
+                    <li class="tab__item">
+                        <button type="button">
+                            <span>일</span>
+                        </button>
+                    </li>
+                    <li class="tab__item">
+                        <button type="button">
+                            <span>주</span>
+                        </button>
+                    </li>
+                    <li class="tab__item">
+                        <button type="button">
+                            <span>월</span>
+                        </button>
+                    </li>
+                    <li class="tab__item">
+                        <button type="button">
+                            <span>년</span>
+                        </button>
+                    </li>
+                </ul>
+                <!-- tab__content-wrap -->
+                <div class="tab__content-wrap">
+                    <!-- tab__content -->
+                    <div class="tab__content">
+                      <div class="manage-select-date mt25">
+                        <button type="button" class="left-icon only-icon">
+                          <i class="icon-arrow_left icon-20"></i>
+                        </button>
+                        <div class="date">
+                          2021.06.30
+                        </div>
+                        <button type="button" class="right-icon only-icon">
+                          <i class="icon-arrow_right icon-20"></i>
+                        </button>
+                      </div>
+
+                      <div class="manage-gray-box center mt30">
+                        <span class="middle-title">28kg/m2</span>
+                        <p class="small mt15">기록 시간: 오후 4시 30분</p>
+                      </div>
+
+                      <div class="manage-h3 with-tag mt35">BMI 정보</div>
+                      <div class="manage-h4 with-tag mt15">
+                        <strong>일일 체중</strong>
+                        <p class="record__txt">단위: kg/m2</p>
+                      </div>
+
+                      <section class="manage-average-bar mt25">
+                        <ul>
+                          <li><em>전일 80</em></li>
+                          <li></li>
+                          <li class="active"><strong>오늘 85.5</strong></li>
+                        </ul>
+                      </section>
+
+                      <div class="manage-graph show-number">
+                        <div class="manage-graph__box">
+                          <ul class="manage-graph__grid small">
+                            <li><span>40</span></li>
+                            <li><span>30</span></li>
+                            <li><span>20</span></li>
+                            <li><span>10</span></li>
+                            <li><span>0</span></li>
+                          </ul>
+                          <div class="manage-graph__table-dot">
+                            <ul>
+                              <li>
+                                <span><b>24</b></span>
+                                <div style="bottom: 50%;"><i style="background: #fcaf17;"></i></div>
+                              </li>
+                              <li>
+                                <span><b>3</b></span>
+                                <div style="bottom: 50%;"><i style="background: #fcaf17;"></i></div>
+                              </li>
+                              <li>
+                                <span><b>6</b></span>
+                                <div style="bottom: 50%;"><i style="background: #fcaf17;"></i></div>
+                              </li>
+                              <li>
+                                <span><b>9</b></span>
+                                <div style="bottom: 50%;"><i style="background: #fcaf17;"></i></div>
+                              </li>
+                              <li>
+                                <span><b>12</b></span>
+                                <div style="bottom: 50%;"><i style="background: #fcaf17;"></i></div>
+                              </li>
+                              <li>
+                                <span><b>15</b></span>
+                                <div style="bottom: 50%;"><i style="background: #fcaf17;"></i></div>
+                              </li>
+                              <li>
+                                <span><b>18</b></span>
+                                <div style="bottom: 50%;"><i style="background: #fcaf17;"></i></div>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="manage-super-text mt25">2021.06.13 오후 14시</div>
+                      <ul class="manage-list mt10">
+                        <li>
+                          <div class="gray small">기록시간</div>
+                          <div class="right">2021.06.13 오후 4:40</div>
+                        </li>
+                        <li>
+                          <div class="gray small">BMI</div>
+                          <div class="right">28kg/m2</div>
+                        </li>
+                      </ul>
+
+                    </div>
+                    <!-- EOD : tab__content -->
+
+                    <!-- tab__content -->
+                    <div class="tab__content">
+                      <div class="manage-select-date mt25">
+                        <button type="button" class="left-icon only-icon">
+                          <i class="icon-arrow_left icon-20"></i>
+                        </button>
+                        <div class="date">
+                          2021.05.27 ~ 2021.06.11
+                        </div>
+                        <button type="button" class="right-icon only-icon">
+                          <i class="icon-arrow_right icon-20"></i>
+                        </button>
+                      </div>
+
+                      <div class="manage-gray-box center mt30">
+                        <span class="middle-title">28kg/m2</span>
+                        <p class="small mt15">기록 시간: 오후 4시 30분</p>
+                      </div>
+
+                      <div class="manage-h3 with-tag mt35">BMI 정보</div>
+                      <div class="manage-h4 with-tag mt15">
+                        <strong>주간 BMI</strong>
+                        <p class="record__txt">단위: kg/m2</p>
+                      </div>
+
+                      <section class="manage-average-bar mt25">
+                        <ul>
+                          <li><em>최소 78</em></li>
+                          <li class="active"><strong>평균 91</strong></li>
+                          <li><em>최소 100</em></li>
+                        </ul>
+                      </section>
+
+                      <div class="manage-graph show-number">
+                        <div class="manage-graph__box">
+                          <ul class="manage-graph__grid small">
+                            <li><span>40</span></li>
+                            <li><span>30</span></li>
+                            <li><span>20</span></li>
+                            <li><span>10</span></li>
+                            <li><span>0</span></li>
+                          </ul>
+                          <div class="manage-graph__table-dot">
+                            <ul>
+                              <li>
+                                <span><b>월</b></span>
+                                <div style="bottom: 50%;"><i style="background: #fcaf17;"></i></div>
+                              </li>
+                              <li>
+                                <span><b>화</b></span>
+                                <div style="bottom: 50%;"><i style="background: #fcaf17;"></i></div>
+                              </li>
+                              <li>
+                                <span><b>수</b></span>
+                                <div style="bottom: 50%;"><i style="background: #fcaf17;"></i></div>
+                              </li>
+                              <li>
+                                <span><b>목</b></span>
+                                <div style="bottom: 50%;"><i style="background: #fcaf17;"></i></div>
+                              </li>
+                              <li>
+                                <span><b>금</b></span>
+                                <div style="bottom: 50%;"><i style="background: #fcaf17;"></i></div>
+                              </li>
+                              <li>
+                                <span><b>토</b></span>
+                                <div style="bottom: 50%;"><i style="background: #fcaf17;"></i></div>
+                              </li>
+                              <li>
+                                <span><b>일</b></span>
+                                <div style="bottom: 50%;"><i style="background: #fcaf17;"></i></div>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="manage-super-text mt25">2021.06.13 토</div>
+                      <ul class="manage-list mt10">
+                        <li>
+                          <div class="gray small">기록시간</div>
+                          <div class="right">2021.06.13 오후 4:40</div>
+                        </li>
+                        <li>
+                          <div class="gray small">BMI</div>
+                          <div class="right">28kg/m2</div>
+                        </li>
+                      </ul>
+
+                    </div>
+                    <!-- EOD : tab__content -->
+
+                    <!-- tab__content -->
+                    <div class="tab__content">
+                      <div class="manage-select-date mt25">
+                        <button type="button" class="left-icon only-icon">
+                          <i class="icon-arrow_left icon-20"></i>
+                        </button>
+                        <div class="date">
+                          2021.06
+                        </div>
+                        <button type="button" class="right-icon only-icon">
+                          <i class="icon-arrow_right icon-20"></i>
+                        </button>
+                      </div>
+
+                      <div class="manage-gray-box center mt30">
+                        <span class="middle-title">평균 28kg/m2</span>
+                      </div>
+
+                      <div class="manage-h3 with-tag mt35">BMI 정보</div>
+                      <div class="manage-h4 with-tag mt15">
+                        <strong>월간 BMI</strong>
+                        <p class="record__txt">단위: kg/m2</p>
+                      </div>
+
+                      <section class="manage-average-bar mt25">
+                        <ul>
+                          <li><em>최소 78</em></li>
+                          <li class="active"><strong>평균 91</strong></li>
+                          <li><em>최소 100</em></li>
+                        </ul>
+                      </section>
+
+                      <div class="manage-graph show-number">
+                        <div class="manage-graph__box">
+                          <ul class="manage-graph__grid small">
+                            <li><span>40</span></li>
+                            <li><span>30</span></li>
+                            <li><span>20</span></li>
+                            <li><span>10</span></li>
+                            <li><span>0</span></li>
+                          </ul>
+                          <div class="manage-graph__table-dot">
+                            <ul>
+                              <li>
+                                <span><b>24</b></span>
+                                <div style="bottom: 50%;"><i style="background: #fcaf17;"></i></div>
+                              </li>
+                              <li>
+                                <span><b>3</b></span>
+                                <div style="bottom: 50%;"><i style="background: #fcaf17;"></i></div>
+                              </li>
+                              <li>
+                                <span><b>6</b></span>
+                                <div style="bottom: 50%;"><i style="background: #fcaf17;"></i></div>
+                              </li>
+                              <li>
+                                <span><b>9</b></span>
+                                <div style="bottom: 50%;"><i style="background: #fcaf17;"></i></div>
+                              </li>
+                              <li>
+                                <span><b>12</b></span>
+                                <div style="bottom: 50%;"><i style="background: #fcaf17;"></i></div>
+                              </li>
+                              <li>
+                                <span><b>15</b></span>
+                                <div style="bottom: 50%;"><i style="background: #fcaf17;"></i></div>
+                              </li>
+                              <li>
+                                <span><b>18</b></span>
+                                <div style="bottom: 50%;"><i style="background: #fcaf17;"></i></div>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="manage-super-text mt25">2021.06.13 4주차(20일 ~ 26일)</div>
+                      <ul class="manage-list mt10">
+                        <li>
+                          <div class="gray small">평균 BMI</div>
+                          <div class="right">28kg/m2</div>
+                        </li>
+                      </ul>
+
+                    </div>
+                    <!-- EOD : tab__content -->
+
+                    <!-- tab__content -->
+                    <div class="tab__content">
+                      <div class="manage-select-date mt25">
+                        <button type="button" class="left-icon only-icon">
+                          <i class="icon-arrow_left icon-20"></i>
+                        </button>
+                        <div class="date">
+                          2021.06
+                        </div>
+                        <button type="button" class="right-icon only-icon">
+                          <i class="icon-arrow_right icon-20"></i>
+                        </button>
+                      </div>
+
+                      <div class="manage-gray-box center mt30">
+                        <span class="middle-title">평균 28kg/m2</span>
+                      </div>
+
+                      <div class="manage-h3 with-tag mt35">BMI 정보</div>
+                      <div class="manage-h4 with-tag mt15">
+                        <strong>월간 BMI</strong>
+                        <p class="record__txt">단위: kg/m2</p>
+                      </div>
+
+                      <section class="manage-average-bar mt25">
+                        <ul>
+                          <li><em>최소 78</em></li>
+                          <li class="active"><strong>평균 91</strong></li>
+                          <li><em>최소 100</em></li>
+                        </ul>
+                      </section>
+
+                      <div class="manage-graph show-number">
+                        <div class="manage-graph__box">
+                          <ul class="manage-graph__grid small">
+                            <li><span>40</span></li>
+                            <li><span>30</span></li>
+                            <li><span>20</span></li>
+                            <li><span>10</span></li>
+                            <li><span>0</span></li>
+                          </ul>
+                          <div class="manage-graph__table-dot">
+                            <ul>
+                              <li>
+                                <span><b>24</b></span>
+                                <div style="bottom: 50%;"><i style="background: #fcaf17;"></i></div>
+                              </li>
+                              <li>
+                                <span><b>3</b></span>
+                                <div style="bottom: 50%;"><i style="background: #fcaf17;"></i></div>
+                              </li>
+                              <li>
+                                <span><b>6</b></span>
+                                <div style="bottom: 50%;"><i style="background: #fcaf17;"></i></div>
+                              </li>
+                              <li>
+                                <span><b>9</b></span>
+                                <div style="bottom: 50%;"><i style="background: #fcaf17;"></i></div>
+                              </li>
+                              <li>
+                                <span><b>12</b></span>
+                                <div style="bottom: 50%;"><i style="background: #fcaf17;"></i></div>
+                              </li>
+                              <li>
+                                <span><b>15</b></span>
+                                <div style="bottom: 50%;"><i style="background: #fcaf17;"></i></div>
+                              </li>
+                              <li>
+                                <span><b>18</b></span>
+                                <div style="bottom: 50%;"><i style="background: #fcaf17;"></i></div>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="manage-super-text mt25">2021.06</div>
+                      <ul class="manage-list mt10">
+                        <li>
+                          <div class="gray small">평균 BMI</div>
+                          <div class="right">28kg/m2</div>
+                        </li>
+                      </ul>
+
+                    </div>
+                    <!-- EOD : tab__content -->
+                </div>
+                <!-- EOD : tab__content-wrap -->
+            </div>
+            <!-- EOD : tab__wrap -->
+        </div>
+    </div>
+    <div class="footer footer__nav">
+        <nav>
+            <ul>
+                <li class="on">
+                    <button type="button">
+                        <i class="icon-home icon-16"></i>
+                        <span>홈</span>
+                    </button>
+                </li>
+                <li>
+                    <button type="button">
+                        <i class="icon-pro icon-16"></i>
+                        <span>프로그램</span>
+                    </button>
+                </li>
+                <li>
+                    <button type="button">
+                        <i class="icon-info icon-16"></i>
+                        <span>증상ㆍ병원</span>
+                    </button>
+                </li>
+                <li>
+                    <button type="button">
+                        <i class="icon-my icon-16"></i>
+                        <span>MY</span>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>
+
+
+
+<!-- 팝업 // -->
+<div class="modal-popup modal-calender">
+    <div class="modal-popup__outer">
+        <section class="modal-popup__container">
+            <article class="modal-popup__header">
+                <h3 class="modal-popup__title">
+                    날짜 선택
+                </h3>
+                <button class="modal-popup__close only-icon">
+                    <i class="icon-x icon-20">닫기</i>
+                </button>
+            </article>
+            <article class="modal-popup__body">
+                <div class="modal-calender__container">
+                    <article class="calender-swiper">
+                        <div class="swiper-container calender-swiper--year">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">2013</div>
+                                <div class="swiper-slide">2014</div>
+                                <div class="swiper-slide">2015</div>
+                                <div class="swiper-slide">2016</div>
+                                <div class="swiper-slide">2017</div>
+                                <div class="swiper-slide">2018</div>
+                                <div class="swiper-slide">2019</div>
+                                <div class="swiper-slide">2020</div>
+                                <div class="swiper-slide">2021</div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="calender-swiper">
+                        <div class="swiper-container calender-swiper--month">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">01</div>
+                                <div class="swiper-slide">02</div>
+                                <div class="swiper-slide">03</div>
+                                <div class="swiper-slide">04</div>
+                                <div class="swiper-slide">05</div>
+                                <div class="swiper-slide">06</div>
+                                <div class="swiper-slide">07</div>
+                                <div class="swiper-slide">08</div>
+                                <div class="swiper-slide">09</div>
+                                <div class="swiper-slide">10</div>
+                                <div class="swiper-slide">11</div>
+                                <div class="swiper-slide">12</div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="calender-swiper">
+                        <div class="swiper-container calender-swiper--day">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">01</div>
+                                <div class="swiper-slide">02</div>
+                                <div class="swiper-slide">03</div>
+                                <div class="swiper-slide">04</div>
+                                <div class="swiper-slide">05</div>
+                                <div class="swiper-slide">06</div>
+                                <div class="swiper-slide">07</div>
+                                <div class="swiper-slide">08</div>
+                                <div class="swiper-slide">09</div>
+                                <div class="swiper-slide">10</div>
+                                <div class="swiper-slide">11</div>
+                                <div class="swiper-slide">12</div>
+                                <div class="swiper-slide">13</div>
+                                <div class="swiper-slide">14</div>
+                                <div class="swiper-slide">15</div>
+                                <div class="swiper-slide">16</div>
+                                <div class="swiper-slide">17</div>
+                                <div class="swiper-slide">18</div>
+                                <div class="swiper-slide">19</div>
+                                <div class="swiper-slide">20</div>
+                                <div class="swiper-slide">21</div>
+                                <div class="swiper-slide">22</div>
+                                <div class="swiper-slide">23</div>
+                                <div class="swiper-slide">24</div>
+                                <div class="swiper-slide">25</div>
+                                <div class="swiper-slide">26</div>
+                                <div class="swiper-slide">27</div>
+                                <div class="swiper-slide">28</div>
+                                <div class="swiper-slide">29</div>
+                                <div class="swiper-slide">30</div>
+                                <div class="swiper-slide">31</div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </article>
+            <article class="modal-popup__footer">
+                <button class="block gray medium inline" onclick="modal.close($(this))">
+                    취소
+                </button>
+                <button class="block medium inline" onclick="modal.close($(this))">
+                    확인
+                </button>
+            </article>
+        </section>
+    </div>
+</div>
+<!-- // 팝업 -->
+
+
+<script>
+    tab.reset();
+    setTimeout(function() {
+        $('.tab__item').click(function() {
+            tab.action($(this))
+        });
+    }, 100);
+
+    var $detailButtons = $('.diet-detail .input-switch-text input');
+    var detailAction = function (target) {
+        var itemTarget = {
+            on: $detailButtons.data('on'),
+            off: $detailButtons.data('off')
+        }
+        $.each(itemTarget, function (item) {
+            if (item === target) {
+                $('.' + itemTarget[item]).show();
+            } else {
+                $('.' + itemTarget[item]).hide();
+            }
+        });
+    }
+    detailAction('off')
+    $detailButtons.off('change').on('change', function () {
+        if ($(this).is(':checked')) {
+            detailAction('on');
+        } else {
+            detailAction('off');
+        }
+    });
+</script>
+</body>
+</html>

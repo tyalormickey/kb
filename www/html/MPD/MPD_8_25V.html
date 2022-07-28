@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-reset.min.css'/>
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-common.css'/>
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-style.css'/>
+
+  <script src='../../js/libs/jquery-3.1.1.min.js'></script>
+  <script src='../../js/swiper.min.js'></script>
+  <script src='../../js/ui.js'></script>
+</head>
+<body>
+
+<div class="wrapper">
+  <div class="header">
+    <header>
+      <div class="header__back">
+        <div class="back">
+          <button type="button" class="only-icon">
+            <i class="icon-arrow_left icon-20">뒤로가기</i>
+          </button>
+        </div>
+        <div class="title">
+            검사 카테고리 상세 결과
+        </div>
+      </div>
+    </header>
+  </div>
+
+  <!-- content-wrap -->
+  <div class="content-wrap">
+    <!-- scrollBox -->
+    <div class="scrollBox">
+      <!-- tab__noraml -->
+      <div class="manage-h3"><strong>영양소</strong></div>
+      <!--ul class="reslut__color">
+        <li>
+          <span class="txt">2</span>
+          <span class="bar"></span>양호
+        </li>
+        <li>
+          <span class="txt yellow">2</span>
+          <span class="bar yellow"></span>경계
+        </li>
+        <li>
+          <span class="txt red">1</span>
+          <span class="bar red"></span>주의
+        </li>
+      </ul-->
+
+      <!-- noData Case -->
+      <div class="checkup-result__no message-box" style="display:none;">
+        <div class="message-box__wrap">
+          <div class="message-box__icon">
+            <i class="icon-nodata icon-40"></i>
+          </div>
+          <div class="message-box__sub-title">
+            김국민님은 영양소 카테고리 내에서<br/>경계 또는 주의 단계의 항목이 없습니다.
+          </div>
+        </div>
+      </div>
+      <!-- EOD : noData Case -->
+
+      <div class="txt_default txt_gray mt20">검사항목을 선택해보세요.<br/>각 항목에 대한 상세결과를 확인할 수 있습니다.</div>
+
+      <a class="manage__link mt25" href="javascript:void(0);">
+        <div class="manage-h4">
+          <strong>비타민C</strong>
+        </div>
+      </a>
+
+      <ul class="reslut__color">
+        <li>
+          <span class="txt icon_arrow_down"></span>
+        </li>
+        <li>
+          <span class="txt icon_arrow_down"><img src="../../img/icons/icon_arrow_down.svg"></span>
+        </li>
+        <li>
+          <span class="txt icon_arrow_down"></span>
+        </li>
+      </ul>
+      <ul class="w100per result_bar">
+        <li>&nbsp;</li>
+      </ul>
+      <ul class="reslut__color mt5">
+        <li>주의</li>
+        <li>경계</li>
+        <li>주의</li>
+      </ul>
+
+      <a class="manage__link mt25" href="javascript:void(0);">
+        <div class="manage-h4">
+          <strong>비타민D</strong>
+        </div>
+      </a>
+
+      <ul class="reslut__color">
+        <li>
+          <span class="txt icon_arrow_down"></span>
+        </li>
+        <li>
+          <span class="txt icon_arrow_down"><img src="../../img/icons/icon_arrow_down.svg"></span>
+        </li>
+        <li>
+          <span class="txt icon_arrow_down"></span>
+        </li>
+      </ul>
+      <ul class="w100per result_bar">
+        <li>&nbsp;</li>
+      </ul>
+      <ul class="reslut__color mt5">
+        <li>주의</li>
+        <li>경계</li>
+        <li>주의</li>
+      </ul>
+
+      <a class="manage__link mt25" href="javascript:void(0);">
+        <div class="manage-h4">
+          <strong>마그네슘</strong>
+        </div>
+      </a>
+
+      <ul class="reslut__color">
+        <li>
+          <span class="txt icon_arrow_down"></span>
+        </li>
+        <li>
+          <span class="txt icon_arrow_down"><img src="../../img/icons/icon_arrow_down.svg"></span>
+        </li>
+        <li>
+          <span class="txt icon_arrow_down"></span>
+        </li>
+      </ul>
+      <ul class="w100per result_bar">
+        <li>&nbsp;</li>
+      </ul>
+      <ul class="reslut__color mt5">
+        <li>주의</li>
+        <li>경계</li>
+        <li>주의</li>
+      </ul>
+
+      <a class="manage__link mt25" href="javascript:void(0);">
+        <div class="manage-h4">
+          <strong>비타민A</strong>
+        </div>
+      </a>
+
+      <ul class="reslut__color">
+        <li>
+          <span class="txt icon_arrow_down"></span>
+        </li>
+        <li>
+          <span class="txt icon_arrow_down"><img src="../../img/icons/icon_arrow_down.svg"></span>
+        </li>
+        <li>
+          <span class="txt icon_arrow_down"></span>
+        </li>
+      </ul>
+      <ul class="w100per result_bar">
+        <li>&nbsp;</li>
+      </ul>
+      <ul class="reslut__color mt5">
+        <li>주의</li>
+        <li>경계</li>
+        <li>주의</li>
+      </ul>
+      <a class="manage__link mt25" href="javascript:void(0);">
+        <div class="manage-h4">
+          <strong>칼슘</strong>
+        </div>
+      </a>
+
+      <ul class="reslut__color">
+        <li>
+          <span class="txt icon_arrow_down"></span>
+        </li>
+        <li>
+          <span class="txt icon_arrow_down"><img src="../../img/icons/icon_arrow_down.svg"></span>
+        </li>
+        <li>
+          <span class="txt icon_arrow_down"></span>
+        </li>
+      </ul>
+      <ul class="w100per result_bar">
+        <li>&nbsp;</li>
+      </ul>
+      <ul class="reslut__color mt5">
+        <li>주의</li>
+        <li>경계</li>
+        <li>주의</li>
+      </ul>
+      <!--
+      <a class="manage__link mt25" href="javascript:void(0);">
+        <div class="manage-h4">
+          <strong>마그네슘</strong>
+          <i class="icon-arrow_right icon-16"></i>
+        </div>
+      </a>
+
+      <section class="manage-average-box mt12">
+        <div class="manage-average-bar">
+          <ul>
+            <li><em></em></li>
+            <li class="active blue"><strong>양호 20</strong></li>
+            <li><em></em></li>
+          </ul>
+        </div>
+      </section>
+      -->
+      <div class="txt_default txt_gray mt25">해당 검사의 결과는 진단과는 무관하며, <b class="txt_black">진단 및 치료 결정을 위해서는 반드시 의사와 상담</strong>이 필요합니다.</div>
+
+    </div>
+    <!-- EOD : scrollBox -->
+  </div>
+  <!-- EOD : content-wrap -->
+
+
+  <div class="footer">
+    <nav>
+      <ul>
+        <li class="on">
+          <button type="button">
+            <i class="icon-home icon-16"></i>
+            <span>홈</span>
+          </button>
+        </li>
+        <li>
+          <button type="button">
+            <i class="icon-pro icon-16"></i>
+            <span>프로그램</span>
+          </button>
+        </li>
+        <li>
+          <button type="button">
+            <i class="icon-info icon-16"></i>
+            <span>증상ㆍ병원</span>
+          </button>
+        </li>
+        <li>
+          <button type="button">
+            <i class="icon-my icon-16"></i>
+            <span>MY</span>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+
+<script>
+  $(".tab__normal-more").on("click",function(){
+    if($(this).siblings(".tab__normal-list").css("display") == "block"){
+      $(this).siblings(".tab__normal-list").hide();
+    }else{
+      $(this).siblings(".tab__normal-list").show();
+    }
+  });
+
+  $("html").on("click",function(e){
+    if(!$(e.target).closest(".tab__normal-list").length == 1 && !$(e.target).hasClass("tab__normal-more") && !$(e.target).parent(".tab__normal-more").length == 1){
+      $(".tab__normal-list").hide();
+    }
+  });
+
+  /*
+  $(".tab__normal-area a").on("click",function(){
+    $(".tab__normal-area li").removeClass("active");
+    $(this).parent().addClass("active");
+  });
+  */
+
+  //카테고리 리스트 width 계산
+  var categoryN = $(".reslut__category > ul > li").length;
+  var $this = $(".reslut__category > ul > li");
+  for(i=0;i<categoryN;i++){
+    var listN = $this.eq(i).find("li").length;
+    for(n=0;n<listN;n++){
+      txt = $this.eq(i).find("li").eq(n).find(".txt").text().replace(/[^0-9]/g,'');
+      $this.eq(i).find("li").eq(n).find(".bar span").css("width",txt+"%");
+    }
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
+    <link rel='stylesheet' type='text/css' href='../../css/morpheus-reset.min.css'/>
+    <link rel='stylesheet' type='text/css' href='../../css/morpheus-common.css'/>
+    <link rel='stylesheet' type='text/css' href='../../css/morpheus-style.css'/>
+
+    <script src='../../js/libs/jquery-3.1.1.min.js'></script>
+    <script src='../../js/swiper.min.js'></script>
+    <script src='../../js/ui.js'></script>
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="header">
+        <header>
+            <div class="header__back">
+                <div class="back">
+                    <button type="button" class="only-icon">
+                        <i class="icon-arrow_left icon-20">뒤로가기</i>
+                    </button>
+                </div>
+                <div class="title">
+                    복약 관리
+                </div>
+                <div class="right-icons">
+                    <button type="button" class="only-icon">
+                        <i class="icon-camera_02 icon-20">카메라</i>
+                    </button>
+                    <button type="button" class="only-icon">
+                        <i class="icon-alarm on icon-20">알람</i>
+                    </button>
+                </div>
+            </div>
+        </header>
+    </div>
+    <div class="content-wrap">
+        <div class="scrollBox pd0">
+
+            <!-- tab_wrap -->
+            <div class="tab__wrap mt10 modify">
+                <!-- tab -->
+                <ul class="tab button-type">
+                    <li class="tab__item"><button type="button"><span>아침</span></button></li>
+                    <li class="tab__item"><button type="button"><span>점심</span></button></li>
+                    <li class="tab__item"><button type="button"><span>저녁</span></button></li>
+                    <li class="tab__item"><button type="button"><span>취침전</span></button></li>
+                </ul>
+                <!-- EOD : tab -->
+
+                <section class="page-diet__top-date mt20 modify">
+                    <strong>2021.06.20</strong>
+                    <button type="button" class="icon-only" onclick="modal.open($(this), '.modal-calender', calenderSelectOpen)">
+                        <i class="icon-cal icon-18">달력</i>
+                    </button>
+                </section>
+
+                <!-- tab__swiper -->
+                <div class="tab__swiper swiper-container">
+                    <!-- swiper-wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- swiper-slide -->
+                        <div class="swiper-slide">
+                            <section class="nutrition-info nutrition-info-back-img mt40 modify">
+                                <div class="nutrition-info__title">
+                                    <strong>영양 정보</strong>
+                                    <span>복약 정보를 등록하고 알람을 설정하시면<br>시간에 맞춰 복약 알람을 드려요</span>
+                                </div>
+                            </section>
+                        </div>
+                        <!-- EOD : swiper-slide -->
+
+                        <!-- swiper-slide -->
+                        <div class="swiper-slide">
+                            <section class="nutrition-info mt40 modify">
+                                <div class="nutrition-info__title">
+                                    <strong>홍길동님</strong>
+                                    <span>아침 두통약 드셨나요? 알맞은 시간에<br>복약 후 복약 체크 [v] 잊지 마세요! </span>
+                                </div>
+                            </section>
+
+                            <div class="point-swipe__box">
+                                <section class="point-change-contents cardbox_01 mt30">
+                                    <div class="point-change-agree__all cardtitle no-border">
+                          <span class="card-item__title">
+                            두통약
+                              <button type="button" class="text-icon small-01 float-right">
+                                  <i class="icon-edit"></i>
+                              </button>
+                          </span>
+                                        <span class="card-item__tag">
+                            <div class="card-item__tag-info">
+                              총 3종, 최대 일2회 복용 / 전체 알람
+                            </div>
+                          </span>
+                                    </div>
+                                    <ul class="point-change-agree__list pl24">
+                                        <!--두통약 list -->
+                                        <li class="point-change-agree__item">
+                                            <button type="button">
+                                                <label class="input-checkbox">
+                                                    <input type="checkbox">
+                                                    <i></i>
+                                                    <span>
+                                          <dl class="diet-statistics__data-list medicine mt0">
+                                              <dd class="no-border pa0">
+                                                <ul>
+                                                    <li class="pl0 w60"><strong class="txt_black">05:00</strong></li>
+                                                  <li class="text-data-list">[일반] 우먼스타이레놀정</li>
+                                                </ul>
+                                              </dd>
+                                          </dl>
+                                      </span>
+                                                </label>
+                                            </button>
+                                        </li>
+                                        <li class="point-change-agree__item">
+                                            <button type="button">
+                                                <label class="input-checkbox">
+                                                    <input type="checkbox">
+                                                    <i></i>
+                                                    <span>
+                                          <dl class="diet-statistics__data-list medicine mt0">
+                                              <dd class="no-border pa0">
+                                                <ul>
+                                                    <li class="pl0 w60"><strong class="txt_black">05:30</strong></li>
+                                                  <li class="text-data-list">[전문] 대웅 바이오 두바이어 이란우라라라</li>
+                                                </ul>
+                                              </dd>
+                                          </dl>
+                                      </span>
+                                                </label>
+                                            </button>
+                                        </li>
+                                        <li class="point-change-agree__item">
+                                            <button type="button">
+                                                <label class="input-checkbox">
+                                                    <input type="checkbox">
+                                                    <i></i>
+                                                    <span>
+                                          <dl class="diet-statistics__data-list medicine mt0">
+                                              <dd class="no-border pa0">
+                                                <ul>
+                                                    <li class="pl0 w60"><strong class="txt_black">06:00</strong></li>
+                                                  <li class="text-data-list line-through">[전문] OO캡슐60mg </li>
+                                                </ul>
+                                              </dd>
+                                          </dl>
+                                      </span>
+                                                </label>
+                                            </button>
+                                        </li>
+                                        <!--두통약 list -->
+                                    </ul>
+                                </section>
+
+                                <section class="point-change-contents cardbox_01 mt30">
+                                    <div class="point-change-agree__all cardtitle no-border">
+                        <span class="card-item__title">
+                          두통약
+                            <button type="button" class="text-icon small-01 float-right">
+                                <i class="icon-edit"></i>
+                            </button>
+                        </span>
+                                        <span class="card-item__tag">
+                          <div class="card-item__tag-info">
+                            총 3종, 최대 일2회 복용 / 전체 알람
+                          </div>
+                        </span>
+                                    </div>
+                                    <ul class="point-change-agree__list pl24">
+                                        <!--두통약 list -->
+                                        <li class="point-change-agree__item">
+                                            <button type="button">
+                                                <label class="input-checkbox">
+                                                    <input type="checkbox">
+                                                    <i></i>
+                                                    <span>
+                                        <dl class="diet-statistics__data-list medicine mt0">
+                                            <dd class="no-border pa0">
+                                              <ul>
+                                                  <li class="pl0 w60"><strong class="txt_black">05:00</strong></li>
+                                                <li class="text-data-list">[일반] 우먼스타이레놀정</li>
+                                              </ul>
+                                            </dd>
+                                        </dl>
+                                    </span>
+                                                </label>
+                                            </button>
+                                        </li>
+                                        <li class="point-change-agree__item">
+                                            <button type="button">
+                                                <label class="input-checkbox">
+                                                    <input type="checkbox">
+                                                    <i></i>
+                                                    <span>
+                                        <dl class="diet-statistics__data-list medicine mt0">
+                                            <dd class="no-border pa0">
+                                              <ul>
+                                                  <li class="pl0 w60"><strong class="txt_black">05:30</strong></li>
+                                                <li class="text-data-list">[전문] 대웅 바이오 두바이어 이란우라라라</li>
+                                              </ul>
+                                            </dd>
+                                        </dl>
+                                    </span>
+                                                </label>
+                                            </button>
+                                        </li>
+                                        <li class="point-change-agree__item">
+                                            <button type="button">
+                                                <label class="input-checkbox">
+                                                    <input type="checkbox">
+                                                    <i></i>
+                                                    <span>
+                                        <dl class="diet-statistics__data-list medicine mt0">
+                                            <dd class="no-border pa0">
+                                              <ul>
+                                                  <li class="pl0 w60"><strong class="txt_black">06:00</strong></li>
+                                                <li class="text-data-list line-through">[전문] OO캡슐60mg </li>
+                                              </ul>
+                                            </dd>
+                                        </dl>
+                                    </span>
+                                                </label>
+                                            </button>
+                                        </li>
+                                        <!--두통약 list -->
+                                    </ul>
+                                </section>
+
+                            </div>
+
+                        </div>
+                        <!-- EOD : swiper-slide -->
+
+                        <!-- swiper-slide -->
+                        <div class="swiper-slide">
+                            저녁
+                        </div>
+                        <!-- EOD : swiper-slide -->
+
+                        <!-- swiper-slide -->
+                        <div class="swiper-slide">
+                            취침전
+                        </div>
+                        <!-- EOD : swiper-slide -->
+
+                    </div>
+                    <!-- EOD : swiper-wrapper -->
+                </div>
+                <!-- EOD : tab__swiper -->
+            </div>
+            <!-- EOD : tab_wrap -->
+
+            <!--
+            <div class="tab__wrap">
+
+            </div>
+            -->
+
+        </div>
+    </div>
+
+    <div class="footer footer__nav">
+        <nav>
+            <ul>
+                <li class="on">
+                    <button type="button">
+                        <i class="icon-home icon-16"></i>
+                        <span>홈</span>
+                    </button>
+                </li>
+                <li>
+                    <button type="button">
+                        <i class="icon-pro icon-16"></i>
+                        <span>프로그램</span>
+                    </button>
+                </li>
+                <li>
+                    <button type="button">
+                        <i class="icon-info icon-16"></i>
+                        <span>증상ㆍ병원</span>
+                    </button>
+                </li>
+                <li>
+                    <button type="button">
+                        <i class="icon-my icon-16"></i>
+                        <span>MY</span>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>
+
+
+
+<!-- 팝업 // -->
+<div class="modal-popup modal-calender">
+    <div class="modal-popup__outer">
+        <section class="modal-popup__container">
+            <article class="modal-popup__header">
+                <h3 class="modal-popup__title">
+                    날짜 선택
+                </h3>
+                <button class="modal-popup__close only-icon">
+                    <i class="icon-x icon-20">닫기</i>
+                </button>
+            </article>
+            <article class="modal-popup__body">
+                <div class="modal-calender__container">
+                    <article class="calender-swiper">
+                        <div class="swiper-container calender-swiper--year">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">2013</div>
+                                <div class="swiper-slide">2014</div>
+                                <div class="swiper-slide">2015</div>
+                                <div class="swiper-slide">2016</div>
+                                <div class="swiper-slide">2017</div>
+                                <div class="swiper-slide">2018</div>
+                                <div class="swiper-slide">2019</div>
+                                <div class="swiper-slide">2020</div>
+                                <div class="swiper-slide">2021</div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="calender-swiper">
+                        <div class="swiper-container calender-swiper--month">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">01</div>
+                                <div class="swiper-slide">02</div>
+                                <div class="swiper-slide">03</div>
+                                <div class="swiper-slide">04</div>
+                                <div class="swiper-slide">05</div>
+                                <div class="swiper-slide">06</div>
+                                <div class="swiper-slide">07</div>
+                                <div class="swiper-slide">08</div>
+                                <div class="swiper-slide">09</div>
+                                <div class="swiper-slide">10</div>
+                                <div class="swiper-slide">11</div>
+                                <div class="swiper-slide">12</div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="calender-swiper">
+                        <div class="swiper-container calender-swiper--day">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">01</div>
+                                <div class="swiper-slide">02</div>
+                                <div class="swiper-slide">03</div>
+                                <div class="swiper-slide">04</div>
+                                <div class="swiper-slide">05</div>
+                                <div class="swiper-slide">06</div>
+                                <div class="swiper-slide">07</div>
+                                <div class="swiper-slide">08</div>
+                                <div class="swiper-slide">09</div>
+                                <div class="swiper-slide">10</div>
+                                <div class="swiper-slide">11</div>
+                                <div class="swiper-slide">12</div>
+                                <div class="swiper-slide">13</div>
+                                <div class="swiper-slide">14</div>
+                                <div class="swiper-slide">15</div>
+                                <div class="swiper-slide">16</div>
+                                <div class="swiper-slide">17</div>
+                                <div class="swiper-slide">18</div>
+                                <div class="swiper-slide">19</div>
+                                <div class="swiper-slide">20</div>
+                                <div class="swiper-slide">21</div>
+                                <div class="swiper-slide">22</div>
+                                <div class="swiper-slide">23</div>
+                                <div class="swiper-slide">24</div>
+                                <div class="swiper-slide">25</div>
+                                <div class="swiper-slide">26</div>
+                                <div class="swiper-slide">27</div>
+                                <div class="swiper-slide">28</div>
+                                <div class="swiper-slide">29</div>
+                                <div class="swiper-slide">30</div>
+                                <div class="swiper-slide">31</div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </article>
+            <article class="modal-popup__footer">
+                <button class="block gray medium inline" onclick="modal.close($(this))">
+                    취소
+                </button>
+                <button class="block medium inline" onclick="modal.close($(this))">
+                    확인
+                </button>
+            </article>
+        </section>
+    </div>
+</div>
+<!-- // 팝업 -->
+
+<!--floatingbox-->
+<a href="#" class="float" id="menu-share" onClick="floatmenuTogle()">
+    <img src="../../img/icons/icon_floating_plus.svg">
+</a>
+<ul class="float-ul">
+    <li>
+        <div>의약품 직접 등록</div>
+        <a href="#"><img src="../../img/icons/icon_float_03.svg"></a>
+    </li>
+    <li>
+        <div>약 봉투/처방전 스캔 </div>
+        <a href="#"><img src="../../img/icons/icon_float_02.svg"></a>
+    </li>
+    <li>
+        <div>약 봉투 복사 </div>
+        <a href="#"><img src="../../img/icons/icon_float_01.svg"></a>
+    </li>
+</ul>
+<div class="floatbackground"></div>
+<!--floatingbox-->
+
+<script>
+    tab.reset();
+    var swiper = new Swiper('.tab__swiper.swiper-container', {
+        slidesPerView: 1,
+        autoHeight: true,
+        on : {
+            slideChangeTransitionStart: function () {
+                var swiperLength = Number(swiper.slides.length)-1;
+                $(".tab__item").removeClass("tab__item--on");
+                $(".tab__item").eq(swiper.realIndex).addClass("tab__item--on");
+            },
+        }
+    });
+    $('.tab__item').click(function() {
+        tab.action($(this), true, swiper)
+    });
+
+
+
+    var calenderSwiperOption = {
+        direction: "vertical",
+        slidesPerView: 3,
+        loop: false,
+        spaceBetween: 0,
+        mousewheel: true,
+        centeredSlides: true,
+        init: false
+    }
+
+    var swiperYear = new Swiper(".calender-swiper--year", calenderSwiperOption);
+    var swiperMonth = new Swiper(".calender-swiper--month", calenderSwiperOption);
+    var swiperDay = new Swiper(".calender-swiper--day", calenderSwiperOption);
+
+    function calenderSelectOpen() {
+        swiperYear.init();
+        swiperMonth.init();
+        swiperDay.init();
+    }
+</script>
+</body>
+</html>

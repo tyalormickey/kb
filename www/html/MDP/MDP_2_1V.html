@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-reset.min.css'/>
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-common.css'/>
+  <link rel='stylesheet' type='text/css' href='../../css/morpheus-style.css'/>
+
+  <script src='../../js/libs/jquery-3.1.1.min.js'></script>
+  <script src='../../js/swiper.min.js'></script>
+  <script src='../../js/ui.js'></script>
+</head>
+<body>
+
+<div class="swiper-container-main">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      <iframe style="width:100%;height:100vh;pointer-events:none;" border="0" src="./MDP_2_2V.html"></iframe>
+    </div>
+    <div class="swiper-slide">
+      <iframe style="width:100%;height:100vh;pointer-events:none;" border="0" src="./MDP_2_3V.html"></iframe>
+    </div>
+    <div class="swiper-slide">
+      <iframe style="width:100%;height:100vh;pointer-events:none;" border="0" src="./MDP_2_4V.html"></iframe>
+    </div>
+    <div class="swiper-slide">
+      <iframe style="width:100%;height:100vh;pointer-events:none;" border="0" src="./MDP_2_5V.html"></iframe>
+    </div>
+    <div class="swiper-slide">
+      <iframe style="width:100%;height:100vh;pointer-events:none;" border="0" src="./MDP_2_5_2V.html"></iframe>
+    </div>
+    <div class="swiper-slide">
+      <iframe style="width:100%;height:100vh;pointer-events:none;" border="0" src="./MDP_2_5_3V.html"></iframe>
+    </div>
+    <div class="swiper-slide">
+      <iframe style="width:100%;height:100vh;pointer-events:none;" border="0" src="./MDP_2_6V.html"></iframe>
+    </div>
+    <div class="swiper-slide">
+      <iframe style="width:100%;height:100vh;pointer-events:none;" border="0" src="./MDP_2_6_2V.html"></iframe>
+    </div>
+    <div class="swiper-slide">
+      <iframe style="width:100%;height:100vh;pointer-events:none;" border="0" src="./MDP_2_7V.html"></iframe>
+    </div>
+  </div>
+
+  <div class="footer footer__nav backtrans no-border guid-main-nav top40">
+    <ul class="color_white font-size-18 pl16 pr16 pb15 flex_box">
+      <li>
+      </li>
+      <li class="align-items-center justify-center">
+        <div class="swiper-pagination pt5"></div>
+      </li>
+      <li class="txt-align-right">
+      </li>
+    </ul>
+  </div>
+</div>
+<div class="wrapper">
+
+
+
+  <div class="header">
+    <header>
+      <div class="header__back">
+        <div class="back">
+        </div>
+        <div class="title txt-align-right font-size-13 color_gray fontNotoSansCJKKR">
+          다음에 할래요
+        </div>
+        <div class="right-icons">
+        </div>
+      </div>
+    </header>
+  </div>
+  <div class="content-wrap bottom-button-fixed">
+    <div class="scrollBox no-padding survey__wrap">
+      <section class="survey__content flex_box align-item-end">
+        <div class="survary-index mb40">
+          <i class="icon-info icon-80"></i>
+          <p class="survary-index__sub-title">O-care에 처음 오셨나요?</p>
+          <p class="survary-index__text">
+            O-Care가 처음이신 분들을 위해 <br>
+            정말 쉽고 간단한 튜토리얼을 준비했어요<br>
+            지금 시작해볼까요?
+          </p>
+        </div>
+      </section>
+    </div>
+  </div>
+  <div class="button__flex-wrap bottom-fixed">
+    <button type="button" class="block tutorialbtn">
+      네, 해볼게요.
+    </button>
+  </div>
+</div>
+
+<script>
+  $(".swiper-container-main").hide();
+  $(".tutorialbtn").on("click",function() {
+    $(".swiper-container-main").show();
+    var swiper = new Swiper('.swiper-container-main', {
+      pagination: {
+        el: ".swiper-pagination",
+      },on : {
+        slideChangeTransitionStart: function () {
+          tabActiveAction(swiper.realIndex);
+        },
+        init: function () {
+         tabActiveAction(0);
+        },
+        slideChangeTransitionEnd() {
+          // const swiper = this;
+          // var url = swiper.$wrapperEl.children('.swiper-slide').eq(swiper.activeIndex);
+          // window.location = url;
+        }
+      },
+    });
+  });
+
+  /* swiper action */
+  var tabActiveAction = function (idx) {
+    var onItem = 'tab__item--on';
+    const tabs = $('.home-health-compare__content .tab__item');
+    tabs.removeClass(onItem);
+    tabs.eq(idx).addClass(onItem);
+  }
+
+  function changeSwipe (i) {
+    swiper.slideTo(i, 300)
+  }
+
+  $('.home-health-compare__title').off('click').on('click', function () {
+    $('.home-health-compare').toggleClass('active');
+    $('.home-health-compare__content').stop().slideToggle(200);
+    if ($('.home-health-compare').hasClass('active')) {
+      $('.main-home').addClass('active-sleep');
+      swiper.init();
+    } else {
+      $('.main-home').removeClass('active-sleep');
+    }
+  });
+
+
+</script>
+</body>
+</html>

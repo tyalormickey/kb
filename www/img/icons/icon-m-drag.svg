@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="icon_m_drag" width="207.999" height="56" viewBox="0 0 207.999 56">
+    <defs>
+        <style>
+            .cls-1{fill:#fcce17}
+        </style>
+    </defs>
+    <path id="사각형_514" d="M0 0H198V4H0z" class="cls-1" transform="translate(5.749 25.99)"/>
+    <path id="패스_383" d="M912.025 1892l-2.938-2.743L932.661 1864l-23.573-25.257 2.938-2.743 26.134 28z" class="cls-1" transform="translate(-730.159 -1836)"/>
+    <path id="패스_384" d="M891.334 1892l-26.134-28 26.133-28 2.938 2.742L870.7 1864l23.573 25.257z" class="cls-1" transform="translate(-865.201 -1836)"/>
+</svg>
